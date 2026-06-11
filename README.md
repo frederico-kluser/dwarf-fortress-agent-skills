@@ -58,8 +58,8 @@ Descriptions are bilingual; article content is the original English wiki text.
 2. Agent picks the relevant skill by description match (PT or EN triggers).
 3. Agent loads that skill's SKILL.md (short index + search instructions).
 4. Agent searches, then reads the specific references/*.md article:
-     python3 ../scripts/search.py --skill df-materiais "steel smelting"
-     python3 ../scripts/search.py --json "magma forge"
+     python3 .agents/skills/scripts/search.py --skill df-materiais "steel smelting"
+     python3 .agents/skills/scripts/search.py --json "magma forge"
 5. Agent answers in the user's language, citing the source wiki page.
 ```
 
@@ -88,6 +88,35 @@ with FTS5) — no network, no external packages — so it is portable to any age
 runtime. A `grep -ril` fallback is documented in each SKILL.md for index-less use.
 
 ## Installation
+
+### Via npm (recommended) — interactive installer
+
+```bash
+npm install -g dwarf-fortress-agent-skills
+# or straight from GitHub (no registry needed):
+npm install -g github:frederico-kluser/dwarf-fortress-agent-skills
+
+cd your-project
+df-skills            # interactive: pick your code agent with ↑/↓
+```
+
+The installer asks which code agent you use and sets everything up for it:
+
+| Agent | What `df-skills` does |
+|---|---|
+| **Claude Code** | copies skills to `.claude/skills/` (or `~/.claude/skills/` with `--global`) |
+| **pi** | copies skills to `.agents/skills/` (auto-discovered) |
+| **Cursor** | copies skills + creates `.cursor/rules/dwarf-fortress-skills.mdc` router rule |
+| **Codex (OpenAI)** | copies skills + appends a routed section to `AGENTS.md` (idempotent) |
+| **Other / OpenRouter** | copies skills + writes a system-prompt snippet (`INSTRUCTIONS.md`) |
+
+It rewrites the search paths inside each `SKILL.md` for the chosen target, and ends
+by telling you the **initial skill** (`df-fortress-geral`) and the exact phrasing to
+reference it in your agent.
+
+Non-interactive: `df-skills --agent claude|pi|cursor|codex|generic [--global] [--force]`
+
+### Manual (clone)
 
 **pi / `.agents/skills` (automatic discovery):** just clone — no config needed.
 

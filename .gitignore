@@ -3,6 +3,10 @@
 __pycache__/
 *.pyc
 
+# npm
+node_modules/
+*.tgz
+
 # Conteúdo bruto re-coletável da API (regenerável via .work/crawl_api.py).
 # Grande demais para versionar; o crawl reconstrói a partir da wiki viva.
 .work/*.jsonl

@@ -13,13 +13,13 @@ metadata:
 
 Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
 perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
-`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+`.agents/skills/scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
 Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
 ## Como buscar (faça isto primeiro)
 Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-    python3 ../scripts/search.py --skill df-materiais "steel smelting"     # use --json para saída estruturada
+    python3 .agents/skills/scripts/search.py --skill df-materiais "steel smelting"     # use --json para saída estruturada
 
 Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
 
