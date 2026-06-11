@@ -1,207 +1,155 @@
-# Guia Técnico Completo: RAG da Wiki do Dwarf Fortress com um Copilot de IA
+# Dwarf Fortress Agent Skills
 
-## TL;DR
-- **Não faça scraping bruto.** O dwarffortresswiki.org é um MediaWiki 1.35.11 com API pública (`api.php`) e dumps XML prontos. Baixe com `wikiteam3` (crawl-delay padrão de 1,5s) ou pegue o dump pronto de novembro de 2023 no Internet Archive (`-history.xml.zst`, 31,5 MB). A wiki tem **9.832 artigos atualizados para v50** (mais 8 parcialmente migrados e 275 restantes) e **10.128 artigos no total**; licença **GFDL & MIT** (texto livre para reuso com atribuição).
-- **Stack recomendada:** Python + **LlamaIndex** (melhor para RAG puro de documentação), embeddings locais **BGE-M3** (1024 dims, até 8192 tokens, MIT, grátis), vector store **ChromaDB** (persistência automática, ideal para o volume de ~15-40k chunks), e LLM via **OpenRouter** com o pacote dedicado `llama-index-llms-openrouter`. Modelo recomendado: **Gemini 2.5 Flash Lite** ($0,10/M input, $0,40/M output) ou **DeepSeek V4 Flash** ($0,0983/M input).
-- **Pipeline:** dump XML → parse wikitext com `mwparserfromhell` (`strip_code()`) → chunk por seção (512-1024 tokens, ~15% overlap) com metadados (título/categoria/URL) → embeddings BGE-M3 → ChromaDB → query/chat engine LlamaIndex + OpenRouter → interface **Gradio** (`gr.ChatInterface`).
+> A complete **Agent Skills** knowledge base for [Dwarf Fortress](https://www.bay12games.com/dwarves/), built from the official [Dwarf Fortress Wiki](https://dwarffortresswiki.org) — **no RAG, no embeddings, no vector database**. Just plain Markdown + progressive disclosure + `ripgrep`.
 
-## Key Findings
+[![License: GFDL & MIT](https://img.shields.io/badge/content-GFDL%20%26%20MIT-blue)](#attribution--license)
+[![Articles](https://img.shields.io/badge/articles-5694-green)](#whats-inside)
+[![Modes](https://img.shields.io/badge/modes-adventure%20%2B%20fortress-orange)](#two-game-modes)
 
-### A wiki já tem dumps prontos — esse é o caminho mais rápido
-O dwarffortresswiki.org documenta oficialmente um método de download na própria página `Dwarf_Fortress_Wiki:Offline_wiki`. O wiki roda **MediaWiki 1.35.11** (confirmado pela meta-tag generator), tem **API pública funcional** em `http://dwarffortresswiki.org/api.php` (responde a `action=query&meta=siteinfo`, o endpoint que o wikiteam3 usa), e o conteúdo é licenciado sob **GFDL & MIT**. Há **dumps prontos no Internet Archive na coleção WikiTeam**:
+## What is this?
 
-| Data | Item / arquivo XML | Tamanho XML | Imagens |
-|------|--------------------|-------------|---------|
-| **2023-11-07** (mais recente) | `wiki-dwarffortresswiki.org-20231107` / `-history.xml.zst` | **31,5 MB** | `images.7z` 583,3 MB |
-| 2020-02-10 | `wiki-dwarffortresswikiorg` / `-history.xml.7z` | 399,3 KB | `wikidump.7z` 358,8 MB |
-| 2018-05-05 | (mesmo item) `-history.xml.7z` | 27,1 MB | `wikidump.7z` 298,3 MB |
-| 2016-02-29 | `wiki-dwarffortresswikiorg-20160229` | 9,5 MB | 259,6 MB |
-| 2014-03-25 | `wiki-dwarffortresswikiorg` | 25,3 MB | `wikidump.7z` 257,7 MB |
+This repo turns the ~10k-article Dwarf Fortress Wiki into a set of **Agent Skills** that any LLM coding agent (Claude Code, Cursor, Codex, or a custom OpenRouter agent) can load to answer gameplay questions accurately — **without inventing mechanics from memory**.
 
-**Não foi localizado dump de 2024/2025/2026** na coleção WikiTeam (verificado em junho de 2026). Para conteúdo v50 atual, gere um dump novo com wikiteam3. O dump de 2023 contém `-history.xml.zst` (com históricos); para RAG você quer só a revisão atual — gere com `--curonly`.
+Instead of a heavyweight RAG pipeline (chunking → embeddings → vector store → reranker), it uses the **progressive disclosure** pattern:
 
-### Tamanho do corpus
-**9.832 artigos atualizados para v50** ("9832 articles up-to-date for v50; 8 partially migrated; 275 remaining", per Main_Page) e **10.128 artigos no total** contando todos os namespaces de versão (DF2014, v0.34, etc. — "It launched on October 29, 2007, and has 10,128 articles"). É um corpus pequeno-médio: o XML comprimido tem só ~31 MB, gerando estimadamente 15.000-40.000 chunks após processamento. Isso é importante porque define toda a escolha de infraestrutura (cabe trivialmente em memória, embeddings locais rodam em minutos numa CPU/GPU modesta).
+1. **Level 1 — Router metadata.** Tiny `SKILL.md` files (just `name` + `description`) tell the agent *when* a skill is relevant.
+2. **Level 2 — Category instructions.** When a category is relevant, the agent loads its `SKILL.md`, which contains an index of articles.
+3. **Level 3 — Reference articles.** The agent reads **only** the specific Markdown article(s) it needs.
 
-### LlamaIndex vence para este caso de uso
-Para RAG focado em recuperação de documentação (exatamente este caso), **LlamaIndex** tem vantagem: query engines, routers e rerankers prontos, curva de aprendizado mais suave e API de alto nível ("ingerir e consultar em 5 linhas"). LangChain é mais flexível para orquestração complexa multi-ferramenta/multi-agente, mas é overkill aqui. Recomendação: **LlamaIndex** para o núcleo RAG; adicione LangChain só se evoluir para um agente com ferramentas depois. Os dois também podem ser combinados (LlamaIndex como retriever, LangChain como camada de agente).
+Lexical search over the ~5.7k Markdown files is done with `ripgrep` — for this corpus size it's faster, simpler, and far more transparent than a vector store.
 
-### ChromaDB vence FAISS para este volume
-Para ~15-40k chunks, **ChromaDB** é a melhor escolha: persistência automática (SQLite + DuckDB/Parquet), armazena vetores + documentos + metadados juntos, filtragem por metadados, índice HNSW com busca O(log n), e integração nativa com LlamaIndex/LangChain. FAISS é mais rápido em escala de milhões (e tem GPU/IVF) mas é só uma biblioteca de busca — sem armazenamento de documentos, sem metadados, exige save/load manual. Neste volume a diferença de velocidade é irrelevante; a simplicidade e persistência do Chroma vencem. Ambos são open-source (MIT/Apache).
+> **Why not RAG?** For a fixed, ~33 MB documentation corpus, `ripgrep` retrieval is instant, deterministic, and needs zero infrastructure. The agent sees exactly which file it's reading and can cite the source wiki page. See [`docs/why-not-rag.md`](#design-notes) below.
 
-### Não existe um projeto RAG pronto para a wiki do DF
-Há projetos relacionados mas nenhum é um RAG aberto da wiki: `Ramblurr/Dwarf-Fortress-Portable-Wiki` (servidor offline com renderizador de wikitext do dump XML), `DF-Wiki/DFRawFunctions` (extensões MediaWiki da própria wiki). Copilots fechados existem — o GPT "Dwarf Fortress Dwarf" (requer ChatGPT Plus) e "Fortress Buddy" (ai4chat.co) — mas sem RAG aberto. Projetos de IA *jogando* DF (Ben Lubar `df-ai`, agente LLM via DFHack/TCP porta 5050) são outra categoria (controle do jogo, não Q&A sobre a wiki). **Há espaço para construir o que você quer do zero.**
+## Two game modes
 
-## Details
+Dwarf Fortress has two very different ways to play, so the knowledge base is split into **two self-contained skill trees**. A top-level router first asks the player which mode they're in:
 
-### FASE 1 — Download da documentação
+| Mode | Description | Articles | Categories |
+|---|---|---|---|
+| 🗺️ **Adventure Mode** | First-person roguelike: create a character, travel, explore sites, talk to NPCs, fight | 2,642 | 8 |
+| 🏰 **Fortress Mode** | Manage a dwarven fortress: labors, industry, construction, trade, defense | 3,052 | 12 |
 
-**Opção A (mais rápida para prototipar): dump pronto do Internet Archive**
+**Shared content** (creatures, combat, materials, geology, health, modding, interface) is **duplicated into both trees**, so each mode is fully portable and self-sufficient.
+
+## Structure
+
+```
+.agents/df-skills/
+├── SKILL.md                 # 🧭 MASTER router — asks: Adventure or Fortress mode?
+├── README.md                # detailed docs + rebuild instructions
+├── scripts/
+│   └── search.sh            # local lexical search (ripgrep) — the "retriever"
+├── adventure-mode/
+│   ├── SKILL.md             # mode router: situation → category
+│   └── skills/<category>/
+│       ├── SKILL.md         # category index: when to use + article list
+│       └── references/*.md  # one wiki article per file
+└── fortress-mode/
+    ├── SKILL.md
+    └── skills/<category>/...
+```
+
+### Categories
+
+| Category | Modes | Covers |
+|---|---|---|
+| `combate` | both | weapons, armor, wounds, syndromes, military |
+| `criaturas` | both | animals, megabeasts, races, bestiary |
+| `materiais` | both | metals, stone, gems, material properties |
+| `geologia-mundo` | both | biomes, stone layers, worldgen, locations |
+| `saude-alimentacao` | both | food, drink, hospital, diseases |
+| `modding` | both | raw tokens, tilesets, init files |
+| `interface-controles` | both | keys, menus, designations (v50) |
+| `industria` | fortress | smithing, farming, brewing, crafting |
+| `construcao` | fortress | workshops, furniture, traps, mechanisms |
+| `dwarves-gestao` | fortress | labors, moods, nobles, justice |
+| `comercio-economia` | fortress | trade, caravans, wealth |
+| `fortress-geral` | fortress | defense, events, overview |
+| `adventure-geral` | adventure | character creation, travel, conversation |
+
+> Category `SKILL.md` descriptions are in Portuguese (the project's working language); article content is the original English wiki text.
+
+## How an agent uses it
+
+```
+1. Load  SKILL.md                                  → confirm Adventure vs Fortress mode
+2. Load  <mode>/SKILL.md                            → route situation → category
+3. Load  <mode>/skills/<category>/SKILL.md          → pick the article from the index
+4. Read  <mode>/skills/<category>/references/*.md   → answer, citing the source page
+```
+
+When the agent doesn't know the exact file, it searches locally:
+
 ```bash
-wget https://archive.org/download/wiki-dwarffortresswiki.org-20231107/dwarffortresswiki.org-20231107-history.xml.zst
-zstd -d dwarffortresswiki.org-20231107-history.xml.zst
+bash scripts/search.sh all "steel armor"               # both modes
+bash scripts/search.sh adventure-mode "bleeding"        # one mode
+bash scripts/search.sh fortress-mode/industria "magma"  # one category
 ```
 
-**Opção B (recomendada para conteúdo v50 atual): gerar dump novo com wikiteam3**
-`wikiteam3` é o porte Python 3 mantido do WikiTeam (instalável via PyPI, GPLv3). Por padrão "We crawl sites with 1.5s crawl-delay by default, and we respect Retry-After header":
+## Installation
+
+**Claude Code / Cursor / Codex (native skills):**
+
 ```bash
-pip install wikiteam3
-wikiteam3dumpgenerator \
-  --api http://dwarffortresswiki.org/api.php \
-  --index http://dwarffortresswiki.org/index.php \
-  --xml --curonly \
-  --delay 1.5 \
-  --path dfwiki
-# --curonly  = só revisão atual (pula históricos; menor e mais rápido)
-# --namespaces 0  ou  --exnamespaces para excluir Talk/File/User
+# personal (all projects)
+cp -r .agents/df-skills/* ~/.claude/skills/
+# or per-project, versioned in git:
+mkdir -p .claude/skills && cp -r .agents/df-skills/* .claude/skills/
 ```
-Verificação de integridade do XML (os três primeiros números devem ser iguais entre si):
+
+(Cursor → `.cursor/skills/`, Codex → `~/.codex/skills/`.)
+
+**Custom OpenRouter agent:** implement the three disclosure levels yourself — inject the `name`+`description` catalog into the system prompt, expose `load_skill` / `read_skill_file` / `search_skills` tools, and let the model decide what to load. See `.work/` for the data layout the tools should read.
+
+## How it was built
+
+The whole pipeline lives in [`.work/`](.work) and is fully reproducible:
+
 ```bash
-grep -E '<title(.*?)>' *.xml -c; grep -E '<page(.*?)>' *.xml -c; grep "</page>" *.xml -c
+# 1. download the prebuilt dump (WikiTeam, 2023-11-07, ~31 MB compressed)
+curl -L -o df-history.xml.zst \
+  "https://archive.org/download/wiki-dwarffortresswiki.org-20231107/dwarffortresswiki.org-20231107-history.xml.zst"
+zstd -d --long=31 df-history.xml.zst -o .work/df-history.xml
+
+# 2. run the pipeline (Python venv with: mwparserfromhell mwxml pyyaml)
+.venv/bin/python .work/parse_dump.py          # XML → pages.jsonl (dedupe Main/DF2014)
+.venv/bin/python .work/extract_taxonomy.py     # mine 157 real {{category}} tags
+.venv/bin/python .work/build_skills.py         # clean wikitext + pandoc → gfm → references/*.md
+.venv/bin/python .work/build_dispatchers.py    # generate search.sh + routers
 ```
 
-**Rate limiting / robots.txt:** wikiteam3 usa 1,5s de crawl-delay e respeita `Retry-After`. O opt-out de um wiki seria adicionar `User-agent: wikiteam3` / `Disallow: /` ao `robots.txt`; como dumps foram gerados com sucesso e a API é totalmente aberta a consultas anônimas, o crawling **não está bloqueado**. Use `--curonly` para reduzir drasticamente carga e volume. **Evite httrack/wget recursivo** na renderização HTML — é mais pesado para o servidor e o HTML é muito mais difícil de limpar do que o wikitext do dump.
+**Pipeline stages:**
 
-### FASE 2 — Processamento do conteúdo
+1. **Collect** — prebuilt XML dump from the Internet Archive (WikiTeam scan, 2023-11-07).
+2. **Parse** — `mwxml` over the all-revisions dump, deduplicating pages by `(namespace, title)` and keeping the latest revision. The `Main` (v50) and `DF2014` (v0.47) namespaces are merged per title, preferring the more complete version (the Nov-2023 dump caught the v50 migration mid-flight).
+3. **Clean** — `mwparserfromhell` strips navigation/infobox templates; `[[File:]]`, interwiki links, and category tags are removed; HTML/entities are decoded.
+4. **Convert** — `pandoc -f mediawiki -t gfm-raw_html` produces clean GitHub-Flavored Markdown (links flattened to plain text, images dropped).
+5. **Classify** — 157 real `{{category|X}}` tags are mapped to 13 high-level skill categories, each assigned to fortress, adventure, or both.
+6. **Generate** — per-category `SKILL.md` with navigable index, per-mode routers, the master router, and the `ripgrep` search script.
 
-Parse **wikitext** (não HTML): o XML do dump já vem em wikitext, e `mwparserfromhell` é o parser maduro padrão (`pip install mwparserfromhell`). Use `mwxml` para iterar o dump.
+Dependencies: `pandoc`, `zstd`, `ripgrep`, and a Python venv with `mwparserfromhell mwxml pyyaml`.
 
-```python
-import mwxml, mwparserfromhell  # pip install mwxml mwparserfromhell
+> The 2.2 GB raw XML dump and large intermediate JSON files are **gitignored** — only the generated skills and the build scripts are versioned.
 
-def wikitext_to_text(wikitext):
-    code = mwparserfromhell.parse(wikitext)
-    # remove templates {{...}} e tags; links [[bar]] -> "bar"; headings -> título
-    return code.strip_code(normalize=True, collapse=True)
+## Design notes
 
-def extract_categories(wikitext):
-    code = mwparserfromhell.parse(wikitext)
-    return [str(l.title).split(":",1)[1] for l in code.filter_wikilinks()
-            if str(l.title).lower().startswith("category:")]
+- **No embeddings on purpose.** ~5.7k Markdown files fit trivially in `ripgrep`'s wheelhouse; retrieval is sub-second and the agent can cite the exact source file. A vector store would add infrastructure and opacity for zero benefit at this scale.
+- **Version targeting.** Content reflects **v50 / v0.47**. Where Main (v50) and DF2014 (v0.47) describe the same mechanic, the larger/more-complete page wins. Agents are instructed to assume **v50** on ambiguity and flag it.
+- **"Pushy" descriptions.** Router `description` fields use assertive language ("Use SEMPRE que…") to combat under-triggering — the common failure mode for skills.
 
-dump = mwxml.Dump.from_file(open("dfwiki.xml"))
-docs = []
-for page in dump:
-    if page.namespace != 0:          # só namespace principal (artigos v50)
-        continue
-    for revision in page:
-        raw = revision.text or ""
-        docs.append({
-            "title": page.title,
-            "url": f"https://dwarffortresswiki.org/index.php/{page.title.replace(' ', '_')}",
-            "categories": extract_categories(raw),
-            "text": wikitext_to_text(raw),
-        })
-```
+## Attribution & License
 
-`strip_code()` remove templates e tags, transforma `[[bar]]` em "bar" e reduz headings ao título. **Limpeza adicional:** remover linhas de navegação/`Category:` órfãs e templates de infobox que viram ruído; aplicar regex para resíduos de `[[File:...]]` (limitação conhecida do `strip_code`, que pode deixar texto como "135px"). Alternativa: `wikitextparser` (`remove_markup()` / `plain_text()`).
+- **Wiki text** is licensed under **GFDL & MIT** ("All editors publish their contributions under the GNU Free Documentation License and the MIT License") — reusable with attribution. Every generated article links back to its source wiki page.
+- **Game-derived data** (raw tokens, etc.) is © 2002–2026 **Tarn Adams / Bay 12 Games**.
+- The **build scripts** in this repo are released under the **MIT License** (see `LICENSE`).
 
-**Chunking inteligente por seção:** divida por headings (`==Seção==`) preservando **título da página + seção** como contexto em cada chunk. Metadados por chunk: `title`, `section`, `categories`, `url`, `version_namespace` (v50/DF2014).
+This is an unofficial, community resource and is not affiliated with Bay 12 Games.
 
-### FASE 3 — Embeddings e Vector Store
+## Contributing
 
-**Modelo de embedding recomendado: BGE-M3** (BAAI) — licença **MIT** (grátis, self-hosted), **1024 dimensões**, processa "inputs... spanning from short sentences to long documents of up to 8192 tokens", e suporta dense/sparse/multi-vetor (ColBERT-style) numa única arquitetura, com forte desempenho no MTEB para retrieval e contexto longo. Para protótipo rápido/leve: `all-MiniLM-L6-v2` (384 dims, ~14ms/1K tokens, mas ~5-8% menos preciso). Para qualidade self-hosted alternativa, a família E5.
+Issues and PRs welcome — especially:
+- improved taxonomy mappings (`.work/taxonomy.py`),
+- cleaner wikitext→Markdown conversion edge cases,
+- a refreshed dump from a newer wiki snapshot (v50 content keeps evolving).
 
-```python
-# LlamaIndex + BGE-M3 local + ChromaDB
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.vector_stores.chroma import ChromaVectorStore
-from llama_index.core import VectorStoreIndex, StorageContext, Settings
-from llama_index.core.node_parser import SentenceSplitter
-import chromadb
-
-Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-m3")
-Settings.node_parser = SentenceSplitter(chunk_size=512, chunk_overlap=75)
-
-db = chromadb.PersistentClient(path="./df_chroma")
-collection = db.get_or_create_collection("dwarf_fortress")
-vector_store = ChromaVectorStore(chroma_collection=collection)
-storage_context = StorageContext.from_defaults(vector_store=vector_store)
-
-# nodes = lista de TextNode com metadados (gerados na fase 2)
-index = VectorStoreIndex(nodes, storage_context=storage_context)
-# Recarregar depois sem re-embedar:
-# index = VectorStoreIndex.from_vector_store(vector_store)
-```
-
-**Chunking:** tamanho ideal **512-1024 tokens**, overlap **~15% (75-150 tokens)**. Para documentação técnica como wiki de jogo, **512 tokens** é o baseline (consultas factuais "como faço X"); use chunks maiores (1024) se as perguntas forem mais analíticas/estratégicas. Respeite limites de seção ao dividir.
-
-### FASE 4 — Integração com OpenRouter
-
-OpenRouter é um gateway OpenAI-compatível para centenas de modelos com uma única chave. LlamaIndex tem pacote dedicado `llama-index-llms-openrouter` (subclasse de `OpenAILike`):
-
-```python
-# pip install llama-index-llms-openrouter
-from llama_index.llms.openrouter import OpenRouter
-from llama_index.core import Settings
-import os
-
-Settings.llm = OpenRouter(
-    api_key=os.environ["OPENROUTER_API_KEY"],
-    model="google/gemini-2.5-flash-lite",
-    max_tokens=1024,
-    context_window=1048576,
-)
-
-query_engine = index.as_query_engine(similarity_top_k=5)
-print(query_engine.query("Como começo uma fortaleza e evito inundações?"))
-```
-
-Alternativa LangChain (sem classe dedicada — use `ChatOpenAI` com `base_url`):
-```python
-from langchain_openai import ChatOpenAI
-llm = ChatOpenAI(
-    model="google/gemini-2.5-flash-lite",
-    base_url="https://openrouter.ai/api/v1",
-    api_key=os.environ["OPENROUTER_API_KEY"],
-)
-```
-
-**Modelo recomendado:** para um copilot de jogo (Q&A factual, barato), **Gemini 2.5 Flash Lite** — "$0.10 per million input tokens, $0.40 per million output tokens. 1,048,576 token context window" — ou **DeepSeek V4 Flash** — "$0.0983 per million input tokens, $0.1966 per million output tokens" (MoE de 284B params totais / 13B ativados, contexto de 1M). Para **prototipar de graça**, OpenRouter oferece modelos `:free` (variantes de DeepSeek/Llama/Gemma): limite de **20 requisições/minuto**; com menos de 10 créditos comprados, **50 requisições/dia** a modelos `:free`; com ≥10 créditos, o limite sobe para **1000/dia**.
-
-### FASE 5 — Interface do copilot
-
-**Recomendação: Gradio** para o chatbot — tem `gr.ChatInterface` pronto (estilo ChatGPT), gerencia histórico automaticamente e não recarrega o estado a cada interação (ao contrário do Streamlit, que recarrega o script inteiro e exige gerenciar `session_state`). Streamlit é superior para dashboards; Gradio é superior para chatbots LLM. Ambos rodam em Python puro e dockerizam.
-
-```python
-import gradio as gr
-
-SYSTEM_PROMPT = """Você é Urist, um copilot especialista em Dwarf Fortress.
-Use SOMENTE o contexto recuperado da wiki oficial para responder.
-Cite o título da página da wiki usada. Se não houver contexto suficiente, diga que não sabe.
-Seja prático e direto, focando em mecânicas de jogo acionáveis (versão v50/Premium)."""
-
-chat_engine = index.as_chat_engine(
-    chat_mode="context",
-    system_prompt=SYSTEM_PROMPT,
-    similarity_top_k=5,
-)
-
-def respond(message, history):
-    return str(chat_engine.chat(message))
-
-gr.ChatInterface(respond, title="Urist — Dwarf Fortress Copilot").launch()
-```
-
-Para um MVP de linha de comando, basta o loop `query_engine.query()` em um `while True`.
-
-## Recommendations
-
-1. **Comece pelo dump pronto** (Internet Archive, nov/2023) para ter um protótipo funcionando hoje. Migre para um dump fresco via `wikiteam3 --curonly --delay 1.5` quando precisar do conteúdo v50 mais recente.
-2. **Stack inicial:** LlamaIndex + BGE-M3 (local) + ChromaDB + OpenRouter (Gemini 2.5 Flash Lite ou um modelo `:free` para testes) + Gradio. Tudo grátis exceto os tokens do LLM (centavos por dia neste volume).
-3. **Chunking:** comece com 512 tokens / ~15% overlap por seção, com metadados de título + categoria + URL + namespace de versão. **Avalie com um conjunto fixo de ~20 perguntas reais** (taxa de acerto de recuperação, qualidade da resposta) e ajuste se a recuperação falhar.
-4. **Adicione reranking** (BGE-reranker-v2) se a precisão de recuperação for insuficiente: recupere top-20, reranqueie para top-5. O fluxo recomendado pelo próprio BGE é "hybrid retrieval + re-ranking".
-5. **Benchmarks/limiares que mudam a decisão:**
-   - Corpus cresce >1M vetores ou latência de busca vira gargalo → migrar para **FAISS IVF** (com GPU se necessário).
-   - Precisa de ações/ferramentas além de Q&A (ex.: consultar estado do jogo via DFHack) → adicionar **LangChain/agente**.
-   - Respostas factuais ruins mesmo com bom contexto → subir para **Gemini 2.5 Flash** ou **Claude Sonnet**.
-   - Recuperação traz chunks da versão errada → reforçar **filtro de metadados por namespace v50**.
-
-## Caveats
-- **Licença:** o texto da wiki é GFDL & MIT ("All editors publish their contributions under GNU Free Documentation License and the MIT License"), reutilizável com atribuição; imagens têm licenças individuais; conteúdo derivado dos arquivos do jogo é "Copyright (c) 2002-2026. All rights are retained by Tarn Adams" (Bay 12 Games). **Atribua a wiki nas respostas** do copilot.
-- **Namespaces de versão duplicam conteúdo:** v50 fica no namespace principal, v0.47 em DF2014, etc. **Filtre o namespace principal (0)** para v50 ou marque a versão como metadado — caso contrário o RAG pode retornar mecânicas desatualizadas/conflitantes.
-- **Não existe dump oficial de 2024-2026** no WikiTeam (verificado jun/2026); o dump mais recente é de 2023-11-07. Gere um novo se precisar de atualidade v50.
-- **`strip_code()` tem limitações conhecidas** com `[[File:...]]` e interwiki links (pode deixar resíduos como "135px"); faça limpeza extra com regex.
-- **`mwparserfromhell` é parser offline** — não expande templates (não conhece o conteúdo de `{{...}}`), então dados em infoboxes/templates podem se perder. Para páginas críticas com muitos templates, considere usar a API `action=parse` para obter o HTML renderizado e parsear com `mwparserfromhtml` ou BeautifulSoup.
-- **Preços do OpenRouter flutuam** e variam por provider/roteamento (Balanced/Nitro/Exacto); confirme no momento do uso. Modelos `:free` têm rate limits que inviabilizam produção.
-- A página oficial `Offline_wiki` que documenta o método de dump foi editada pela última vez em 2015 e referencia o WikiTeam antigo (Python 2); use o **wikiteam3** (Python 3, PyPI) no lugar dos comandos legados.
+To regenerate after changing the pipeline, re-run the four scripts above and commit the diff under `.agents/df-skills/`.
