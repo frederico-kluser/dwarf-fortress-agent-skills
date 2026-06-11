@@ -1,9 +1,0 @@
-# Polar bear
-
-> Fonte: [Polar bear](https://dwarffortresswiki.org/index.php/Polar_bear) — Dwarf Fortress Wiki (GFDL/MIT)
-
-**Polar bears** are large, solitary animals found in tundras and glaciers and are the only purely carnivorous bears aside from their savage variants. These predators are over 6 times the size of a dwarf (twice the size of a grizzly bear in comparison) and as such are extremely dangerous to unarmed civilians; on top of that, they're also food and alcohol thieves who are more than eager to steal from your stocks if they get the chance. While they possess a very low frequency rate, the low number of species who inhabit their biomes (especially glaciers) means you'll eventually come across them at some point. Note, however, that no more than 2-3 polar bears will exist in a single region before they're locally extinct. They possess thick fur which provides them with increased insulation compared to most other animals, which helps them survive in the cold, and their infants are called *cubs* like other species of bear.
-
-Polar bears can be captured in cage traps and trained into valuable exotic pets. Given their thieving disposition, food stockpiles can be used as bait to lure them into traps. They can be trained into war and hunting beasts, with their large size making them the best mundane species of bear for the job. Provided you manage to get a breeding pair, polar bears also make great livestock, providing lots of returns when butchered which are worth thrice more than products coming out of more common domestic animals. They're also exotic mounts and can be theoretically used by humans during sieges, but as human settlements rarely, if ever, exist in freezing regions, their civilizations will often not have access to polar bears anyway.
-
-Some dwarves like polar bears for their *strength*.

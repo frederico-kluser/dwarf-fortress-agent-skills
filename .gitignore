@@ -3,18 +3,18 @@
 __pycache__/
 *.pyc
 
-# Raw wiki dump (2.2GB descomprimido) — regenerar via .work/parse_dump.py
+# Raw wiki dump + intermediates (regenerable via .work/parse_dump.py)
 .work/*.xml
 .work/*.xml.zst
 .work/*.jsonl
 
-# Artefatos intermediários de análise (regeneráveis pelos scripts .work/*.py)
+# Analysis intermediates (regenerable)
 .work/page_cats.json
 .work/cat_to_pages.json
 .work/categories.json
 .work/cat_counts.json
 
-# Mantém versionado:
-#   .agents/df-skills/**   (o produto: skills + artigos markdown)
-#   .work/*.py             (pipeline de geração)
+# Kept versioned:
+#   .agents/skills/**          (product: flat skill tree + articles)
+#   .work/*.py                 (generation pipeline)
 #   .work/build_summary.json

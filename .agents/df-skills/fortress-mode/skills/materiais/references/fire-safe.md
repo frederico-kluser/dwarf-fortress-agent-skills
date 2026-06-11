@@ -1,9 +1,0 @@
-# Fire-safe
-
-> Fonte: [Fire-safe](https://dwarffortresswiki.org/index.php/Fire-safe) — Dwarf Fortress Wiki (GFDL/MIT)
-
-**Fire-safe materials** are those that are not damaged by fire. These materials include glass, most metal (bismuth, lead, tin, zinc, and all three pewters melt), and most stone. Nether-cap is the only wood that can withstand fire (and even magma) thanks to its fixed temperature, but the game does not recognize it as fire-safe building material. More esoteric fire-safe materials include ash, potash, pearlash, and dragon tallow soap "bars". Bituminous coal, lignite, charcoal, and coke are all flammable and ought not to be fire-safe, but the bug mentioned below allows them to be used as fire-safe building materials. Furthermore, the game only considers bars, blocks, stone, logs, and anvils to be capable of being fire-safe - all other item types are rejected outright.
-
-Fire-safe materials are only required when the object is going to come into contact with extreme heat, such as all conventional furnaces and the forge. For the magma-powered versions of these buildings, as well as anything that will be in direct contact with magma (such as floodgates), fire-safe material is not enough: it has to be magma-safe.
-
-As far as the game is concerned, only materials which are stable at the temperature (i.e. MELTING_POINT/BOILING_POINT/IGNITE_POINT/HEATDAM_POINT greater than 11000 and COLDDAM_POINT less than 11000) are considered fire-safe. Despite this temperature being considered fire-safe, actual fire can generate temperatures significantly higher (in particular, any burning item will heat up to 200 degrees above its material's ignite point). For practical purposes, anything which has an IGNITE_POINT should be treated as not fire-safe, so as to avoid triggering this bug.
