@@ -1,0 +1,26 @@
+{
+ "fortress-mode": {
+  "interface-controles": 71,
+  "modding": 1453,
+  "criaturas": 504,
+  "fortress-geral": 168,
+  "geologia-mundo": 195,
+  "saude-alimentacao": 71,
+  "materiais": 161,
+  "combate": 109,
+  "comercio-economia": 50,
+  "construcao": 96,
+  "dwarves-gestao": 126,
+  "industria": 48
+ },
+ "adventure-mode": {
+  "interface-controles": 71,
+  "modding": 1453,
+  "criaturas": 504,
+  "geologia-mundo": 195,
+  "saude-alimentacao": 71,
+  "materiais": 161,
+  "combate": 109,
+  "adventure-geral": 78
+ }
+}

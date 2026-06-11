@@ -1,0 +1,1468 @@
+---
+name: modding
+description: Modding e raws — tokens, arquivos raw, init, tilesets, gráficos e edição de definições do jogo. Use quando o jogador quiser modificar o jogo, entender tokens, criaturas custom, ou estrutura de raws.
+---
+
+# Modding (Dwarf Fortress — adventure-mode)
+
+Localize e leia **apenas** o artigo relevante em `references/` (progressive disclosure — não leia tudo).
+
+## Como buscar
+Se não souber o arquivo exato, rode a busca local (a partir da raiz `df-skills/`):
+`bash scripts/search.sh adventure-mode/modding "termo de busca"`
+e leia o arquivo retornado.
+
+## Índice de artigos (1453)
+- Aardvark man/raw → `references/aardvark-man-raw.md`
+- Aardvark/raw → `references/aardvark-raw.md`
+- Abaca tree/raw → `references/abaca-tree-raw.md`
+- Abaca/raw → `references/abaca-raw.md`
+- Acacia/raw → `references/acacia-raw.md`
+- Acorn fly/raw → `references/acorn-fly-raw.md`
+- Adamantine/raw → `references/adamantine-raw.md`
+- Adder man/raw → `references/adder-man-raw.md`
+- Adder/raw → `references/adder-raw.md`
+- Alabaster/raw → `references/alabaster-raw.md`
+- Albatross man/raw → `references/albatross-man-raw.md`
+- Albatross/raw → `references/albatross-raw.md`
+- Alder/raw → `references/alder-raw.md`
+- Alexandrite/raw → `references/alexandrite-raw.md`
+- Alfalfa/raw → `references/alfalfa-raw.md`
+- Alligator man/raw → `references/alligator-man-raw.md`
+- Alligator snapping turtle/raw → `references/alligator-snapping-turtle-raw.md`
+- Alligator/raw → `references/alligator-raw.md`
+- Almandine/raw → `references/almandine-raw.md`
+- Almond/raw → `references/almond-raw.md`
+- Alpaca/raw → `references/alpaca-raw.md`
+- Aluminum/raw → `references/aluminum-raw.md`
+- Alunite/raw → `references/alunite-raw.md`
+- Amber opal/raw → `references/amber-opal-raw.md`
+- Amethyst man/raw → `references/amethyst-man-raw.md`
+- Amethyst/raw → `references/amethyst-raw.md`
+- Ammo token → `references/ammo-token.md`
+- Amphibian man/raw → `references/amphibian-man-raw.md`
+- Anaconda man/raw → `references/anaconda-man-raw.md`
+- Anaconda/raw → `references/anaconda-raw.md`
+- Anchovy/raw → `references/anchovy-raw.md`
+- Andesite/raw → `references/andesite-raw.md`
+- Angelshark/raw → `references/angelshark-raw.md`
+- Anhydrite/raw → `references/anhydrite-raw.md`
+- Announcements.txt/raw → `references/announcements-txt-raw.md`
+- Anole man/raw → `references/anole-man-raw.md`
+- Anole/raw → `references/anole-raw.md`
+- Ant/raw → `references/ant-raw.md`
+- Antman/raw → `references/antman-raw.md`
+- Apple/raw → `references/apple-raw.md`
+- Apricot/raw → `references/apricot-raw.md`
+- Aquamarine/raw → `references/aquamarine-raw.md`
+- Armadillo man/raw → `references/armadillo-man-raw.md`
+- Armadillo/raw → `references/armadillo-raw.md`
+- Armor token → `references/armor-token.md`
+- Arrow bamboo/raw → `references/arrow-bamboo-raw.md`
+- Artichoke/raw → `references/artichoke-raw.md`
+- Ash (tree)/raw → `references/ash-tree-raw.md`
+- Ash glaze/raw → `references/ash-glaze-raw.md`
+- Asparagus/raw → `references/asparagus-raw.md`
+- Aventurine/raw → `references/aventurine-raw.md`
+- Avocado/raw → `references/avocado-raw.md`
+- Axolotl man/raw → `references/axolotl-man-raw.md`
+- Axolotl/raw → `references/axolotl-raw.md`
+- Aye-aye man/raw → `references/aye-aye-man-raw.md`
+- Aye-aye/raw → `references/aye-aye-raw.md`
+- Baby toes succulent/raw → `references/baby-toes-succulent-raw.md`
+- Badger man/raw → `references/badger-man-raw.md`
+- Badger/raw → `references/badger-raw.md`
+- Bambara groundnut/raw → `references/bambara-groundnut-raw.md`
+- Banana/raw → `references/banana-raw.md`
+- Banded agate/raw → `references/banded-agate-raw.md`
+- Banded knifefish/raw → `references/banded-knifefish-raw.md`
+- Bandfire opal/raw → `references/bandfire-opal-raw.md`
+- Bark scorpion man/raw → `references/bark-scorpion-man-raw.md`
+- Bark scorpion/raw → `references/bark-scorpion-raw.md`
+- Barley/raw → `references/barley-raw.md`
+- Barn owl man/raw → `references/barn-owl-man-raw.md`
+- Barn owl/raw → `references/barn-owl-raw.md`
+- Basalt/raw → `references/basalt-raw.md`
+- Basking shark/raw → `references/basking-shark-raw.md`
+- Bat man/raw → `references/bat-man-raw.md`
+- Bat ray/raw → `references/bat-ray-raw.md`
+- Bat/raw → `references/bat-raw.md`
+- Battle axe/raw → `references/battle-axe-raw.md`
+- Bauxite/raw → `references/bauxite-raw.md`
+- Bayberry/raw → `references/bayberry-raw.md`
+- Beak dog/raw → `references/beak-dog-raw.md`
+- Beaver man/raw → `references/beaver-man-raw.md`
+- Beaver/raw → `references/beaver-raw.md`
+- Beet/raw → `references/beet-raw.md`
+- Beetle man/raw → `references/beetle-man-raw.md`
+- Beetle/raw → `references/beetle-raw.md`
+- Bentgrass/raw → `references/bentgrass-raw.md`
+- Bilberry/raw → `references/bilberry-raw.md`
+- Billon/raw → `references/billon-raw.md`
+- Bilou/raw → `references/bilou-raw.md`
+- Biome token → `references/biome-token.md`
+- Birch/raw → `references/birch-raw.md`
+- Bismuth bronze/raw → `references/bismuth-bronze-raw.md`
+- Bismuth/raw → `references/bismuth-raw.md`
+- Bismuthinite/raw → `references/bismuthinite-raw.md`
+- Bitter melon/raw → `references/bitter-melon-raw.md`
+- Bitter orange/raw → `references/bitter-orange-raw.md`
+- Bitter vetch/raw → `references/bitter-vetch-raw.md`
+- Bituminous coal/raw → `references/bituminous-coal-raw.md`
+- Black bear man/raw → `references/black-bear-man-raw.md`
+- Black bear/raw → `references/black-bear-raw.md`
+- Black bronze/raw → `references/black-bronze-raw.md`
+- Black bullhead/raw → `references/black-bullhead-raw.md`
+- Black diamond/raw → `references/black-diamond-raw.md`
+- Black mamba man/raw → `references/black-mamba-man-raw.md`
+- Black mamba/raw → `references/black-mamba-raw.md`
+- Black opal/raw → `references/black-opal-raw.md`
+- Black pyrope/raw → `references/black-pyrope-raw.md`
+- Black sand/raw → `references/black-sand-raw.md`
+- Black zircon/raw → `references/black-zircon-raw.md`
+- Black-cap/raw → `references/black-cap-raw.md`
+- Black-crested gibbon/raw → `references/black-crested-gibbon-raw.md`
+- Black-handed gibbon/raw → `references/black-handed-gibbon-raw.md`
+- Blackberry/raw → `references/blackberry-raw.md`
+- Blacktip reef shark/raw → `references/blacktip-reef-shark-raw.md`
+- Blade weed/raw → `references/blade-weed-raw.md`
+- Blind cave bear/raw → `references/blind-cave-bear-raw.md`
+- Blind cave ogre/raw → `references/blind-cave-ogre-raw.md`
+- Blizzard man/raw → `references/blizzard-man-raw.md`
+- Bloated tuber/raw → `references/bloated-tuber-raw.md`
+- Blood amaranth/raw → `references/blood-amaranth-raw.md`
+- Blood gnat/raw → `references/blood-gnat-raw.md`
+- Blood man/raw → `references/blood-man-raw.md`
+- Blood thorn/raw → `references/blood-thorn-raw.md`
+- Blood/raw → `references/blood-raw.md`
+- Bloodstone/raw → `references/bloodstone-raw.md`
+- Blowgun/raw → `references/blowgun-raw.md`
+- Blue diamond/raw → `references/blue-diamond-raw.md`
+- Blue garnet/raw → `references/blue-garnet-raw.md`
+- Blue jade/raw → `references/blue-jade-raw.md`
+- Blue jay/raw → `references/blue-jay-raw.md`
+- Blue peafowl/raw → `references/blue-peafowl-raw.md`
+- Blue sedge/raw → `references/blue-sedge-raw.md`
+- Blue shark/raw → `references/blue-shark-raw.md`
+- Blueberry/raw → `references/blueberry-raw.md`
+- Bluefin tuna/raw → `references/bluefin-tuna-raw.md`
+- Bluefish/raw → `references/bluefish-raw.md`
+- Bluejay man/raw → `references/bluejay-man-raw.md`
+- Bobcat man/raw → `references/bobcat-man-raw.md`
+- Bobcat/raw → `references/bobcat-raw.md`
+- Body detail plan token → `references/body-detail-plan-token.md`
+- Body token → `references/body-token.md`
+- Bodygloss → `references/bodygloss.md`
+- Bone opal/raw → `references/bone-opal-raw.md`
+- Bone/raw → `references/bone-raw.md`
+- Bonobo/raw → `references/bonobo-raw.md`
+- Borax/raw → `references/borax-raw.md`
+- Bow/raw → `references/bow-raw.md`
+- Brass/raw → `references/brass-raw.md`
+- Brimstone/raw → `references/brimstone-raw.md`
+- Broad bean/raw → `references/broad-bean-raw.md`
+- Bronze colossus/raw → `references/bronze-colossus-raw.md`
+- Bronze/raw → `references/bronze-raw.md`
+- Brook lamprey/raw → `references/brook-lamprey-raw.md`
+- Brown bullhead/raw → `references/brown-bullhead-raw.md`
+- Brown jasper/raw → `references/brown-jasper-raw.md`
+- Brown recluse spider man/raw → `references/brown-recluse-spider-man-raw.md`
+- Brown recluse spider/raw → `references/brown-recluse-spider-raw.md`
+- Brown zircon/raw → `references/brown-zircon-raw.md`
+- Bubble bulb/raw → `references/bubble-bulb-raw.md`
+- Buckwheat/raw → `references/buckwheat-raw.md`
+- Bugbat/raw → `references/bugbat-raw.md`
+- Building token → `references/building-token.md`
+- Bull shark/raw → `references/bull-shark-raw.md`
+- Bumblebee/raw → `references/bumblebee-raw.md`
+- Bushmaster man/raw → `references/bushmaster-man-raw.md`
+- Bushmaster/raw → `references/bushmaster-raw.md`
+- Bushtit man/raw → `references/bushtit-man-raw.md`
+- Bushtit/raw → `references/bushtit-raw.md`
+- Buzzard man/raw → `references/buzzard-man-raw.md`
+- Buzzard/raw → `references/buzzard-raw.md`
+- Cabbage/raw → `references/cabbage-raw.md`
+- Cacao tree/raw → `references/cacao-tree-raw.md`
+- Calcareous ooze/raw → `references/calcareous-ooze-raw.md`
+- Calcite/raw → `references/calcite-raw.md`
+- Candlenut/raw → `references/candlenut-raw.md`
+- Cap hopper/raw → `references/cap-hopper-raw.md`
+- Caper/raw → `references/caper-raw.md`
+- Capuchin man/raw → `references/capuchin-man-raw.md`
+- Capuchin/raw → `references/capuchin-raw.md`
+- Capybara man/raw → `references/capybara-man-raw.md`
+- Capybara/raw → `references/capybara-raw.md`
+- Carambola/raw → `references/carambola-raw.md`
+- Cardinal man/raw → `references/cardinal-man-raw.md`
+- Cardinal/raw → `references/cardinal-raw.md`
+- Carnelian/raw → `references/carnelian-raw.md`
+- Carp/raw → `references/carp-raw.md`
+- Carpetgrass/raw → `references/carpetgrass-raw.md`
+- Cartilage/raw → `references/cartilage-raw.md`
+- Cashew/raw → `references/cashew-raw.md`
+- Cassava/raw → `references/cassava-raw.md`
+- Cassiterite/raw → `references/cassiterite-raw.md`
+- Cassowary man/raw → `references/cassowary-man-raw.md`
+- Cassowary/raw → `references/cassowary-raw.md`
+- Cat's eye/raw → `references/cat-s-eye-raw.md`
+- Cat/raw → `references/cat-raw.md`
+- Cattail/raw → `references/cattail-raw.md`
+- Cave blob/raw → `references/cave-blob-raw.md`
+- Cave crocodile/raw → `references/cave-crocodile-raw.md`
+- Cave dragon/raw → `references/cave-dragon-raw.md`
+- Cave fish man/raw → `references/cave-fish-man-raw.md`
+- Cave fish/raw → `references/cave-fish-raw.md`
+- Cave floater/raw → `references/cave-floater-raw.md`
+- Cave lobster/raw → `references/cave-lobster-raw.md`
+- Cave moss/raw → `references/cave-moss-raw.md`
+- Cave spider/raw → `references/cave-spider-raw.md`
+- Cave swallow man/raw → `references/cave-swallow-man-raw.md`
+- Cave swallow/raw → `references/cave-swallow-raw.md`
+- Cave wheat/raw → `references/cave-wheat-raw.md`
+- Cavy/raw → `references/cavy-raw.md`
+- Cedar/raw → `references/cedar-raw.md`
+- Celery/raw → `references/celery-raw.md`
+- Centaur/raw → `references/centaur-raw.md`
+- Chalk/raw → `references/chalk-raw.md`
+- Chameleon man/raw → `references/chameleon-man-raw.md`
+- Chameleon/raw → `references/chameleon-raw.md`
+- Char/raw → `references/char-raw.md`
+- Character table → `references/character-table.md`
+- Cheetah man/raw → `references/cheetah-man-raw.md`
+- Cheetah/raw → `references/cheetah-raw.md`
+- Cherry opal/raw → `references/cherry-opal-raw.md`
+- Cherry/raw → `references/cherry-raw.md`
+- Chert/raw → `references/chert-raw.md`
+- Chestnut/raw → `references/chestnut-raw.md`
+- Chicken/raw → `references/chicken-raw.md`
+- Chickpea/raw → `references/chickpea-raw.md`
+- Chicory/raw → `references/chicory-raw.md`
+- Chimera/raw → `references/chimera-raw.md`
+- Chimpanzee/raw → `references/chimpanzee-raw.md`
+- Chinchilla man/raw → `references/chinchilla-man-raw.md`
+- Chinchilla/raw → `references/chinchilla-raw.md`
+- Chipmunk man/raw → `references/chipmunk-man-raw.md`
+- Chipmunk/raw → `references/chipmunk-raw.md`
+- Chromite/raw → `references/chromite-raw.md`
+- Chrysoberyl/raw → `references/chrysoberyl-raw.md`
+- Chrysocolla/raw → `references/chrysocolla-raw.md`
+- Chrysoprase/raw → `references/chrysoprase-raw.md`
+- Cinnabar/raw → `references/cinnabar-raw.md`
+- Cinnamon grossular/raw → `references/cinnamon-grossular-raw.md`
+- Citrine/raw → `references/citrine-raw.md`
+- Citron/raw → `references/citron-raw.md`
+- Claro opal/raw → `references/claro-opal-raw.md`
+- Clay loam/raw → `references/clay-loam-raw.md`
+- Clay/raw → `references/clay-raw.md`
+- Claystone/raw → `references/claystone-raw.md`
+- Clear diamond/raw → `references/clear-diamond-raw.md`
+- Clear garnet/raw → `references/clear-garnet-raw.md`
+- Clear tourmaline/raw → `references/clear-tourmaline-raw.md`
+- Clear zircon/raw → `references/clear-zircon-raw.md`
+- Cloudberry/raw → `references/cloudberry-raw.md`
+- Clown loach/raw → `references/clown-loach-raw.md`
+- Clownfish/raw → `references/clownfish-raw.md`
+- Coati man/raw → `references/coati-man-raw.md`
+- Coati/raw → `references/coati-raw.md`
+- Cobaltite/raw → `references/cobaltite-raw.md`
+- Cockatiel man/raw → `references/cockatiel-man-raw.md`
+- Cockatiel/raw → `references/cockatiel-raw.md`
+- Coconut palm/raw → `references/coconut-palm-raw.md`
+- Cod/raw → `references/cod-raw.md`
+- Coelacanth/raw → `references/coelacanth-raw.md`
+- Coffee/raw → `references/coffee-raw.md`
+- Color → `references/color.md`
+- Common reed/raw → `references/common-reed-raw.md`
+- Common skate/raw → `references/common-skate-raw.md`
+- Common snapping turtle/raw → `references/common-snapping-turtle-raw.md`
+- Conger eel/raw → `references/conger-eel-raw.md`
+- Conglomerate/raw → `references/conglomerate-raw.md`
+- Copper/raw → `references/copper-raw.md`
+- Copperhead snake man/raw → `references/copperhead-snake-man-raw.md`
+- Copperhead snake/raw → `references/copperhead-snake-raw.md`
+- Cotton/raw → `references/cotton-raw.md`
+- Cottongrass/raw → `references/cottongrass-raw.md`
+- Cougar man/raw → `references/cougar-man-raw.md`
+- Cougar/raw → `references/cougar-raw.md`
+- Cow/raw → `references/cow-raw.md`
+- Cowpea/raw → `references/cowpea-raw.md`
+- Coyote man/raw → `references/coyote-man-raw.md`
+- Coyote/raw → `references/coyote-raw.md`
+- Crab man/raw → `references/crab-man-raw.md`
+- Crab/raw → `references/crab-raw.md`
+- Cranberry/raw → `references/cranberry-raw.md`
+- Creature examples → `references/creature-examples.md`
+- Creature mannerism token → `references/creature-mannerism-token.md`
+- Creature texture token → `references/creature-texture-token.md`
+- Creature token → `references/creature-token.md`
+- Creature variation token → `references/creature-variation-token.md`
+- Creeping eye/raw → `references/creeping-eye-raw.md`
+- Creepy crawler → `references/creepy-crawler.md`
+- Creepy crawler/raw → `references/creepy-crawler-raw.md`
+- Crossbow/raw → `references/crossbow-raw.md`
+- Crow man/raw → `references/crow-man-raw.md`
+- Crow/raw → `references/crow-raw.md`
+- Crundle/raw → `references/crundle-raw.md`
+- Cryolite/raw → `references/cryolite-raw.md`
+- Crystal opal/raw → `references/crystal-opal-raw.md`
+- Cucumber/raw → `references/cucumber-raw.md`
+- Custard-apple/raw → `references/custard-apple-raw.md`
+- Cuttlefish man/raw → `references/cuttlefish-man-raw.md`
+- Cuttlefish/raw → `references/cuttlefish-raw.md`
+- Cyclops/raw → `references/cyclops-raw.md`
+- D init.txt → `references/d-init-txt.md`
+- D init.txt/raw → `references/d-init-txt-raw.md`
+- Dacite/raw → `references/dacite-raw.md`
+- Dagger/raw → `references/dagger-raw.md`
+- Dallisgrass/raw → `references/dallisgrass-raw.md`
+- Damselfly man/raw → `references/damselfly-man-raw.md`
+- Damselfly/raw → `references/damselfly-raw.md`
+- Dark gnome/raw → `references/dark-gnome-raw.md`
+- Date palm/raw → `references/date-palm-raw.md`
+- Deer man/raw → `references/deer-man-raw.md`
+- Deer/raw → `references/deer-raw.md`
+- Demantoid/raw → `references/demantoid-raw.md`
+- Demon rat/raw → `references/demon-rat-raw.md`
+- Dendritic agate/raw → `references/dendritic-agate-raw.md`
+- Descriptor color token → `references/descriptor-color-token.md`
+- Descriptor pattern token → `references/descriptor-pattern-token.md`
+- Descriptor shape token → `references/descriptor-shape-token.md`
+- Desert lime/raw → `references/desert-lime-raw.md`
+- Desert tortoise man/raw → `references/desert-tortoise-man-raw.md`
+- Desert tortoise/raw → `references/desert-tortoise-raw.md`
+- Dimple cup/raw → `references/dimple-cup-raw.md`
+- Dingo man/raw → `references/dingo-man-raw.md`
+- Dingo/raw → `references/dingo-raw.md`
+- Diorite/raw → `references/diorite-raw.md`
+- Dipscript → `references/dipscript.md`
+- Dog's tooth grass/raw → `references/dog-s-tooth-grass-raw.md`
+- Dog/raw → `references/dog-raw.md`
+- Dolomite/raw → `references/dolomite-raw.md`
+- Donkey/raw → `references/donkey-raw.md`
+- Downy grass/raw → `references/downy-grass-raw.md`
+- Dragon/raw → `references/dragon-raw.md`
+- Dragonfly man/raw → `references/dragonfly-man-raw.md`
+- Dragonfly/raw → `references/dragonfly-raw.md`
+- Draltha/raw → `references/draltha-raw.md`
+- Dropseed grass/raw → `references/dropseed-grass-raw.md`
+- Drunian/raw → `references/drunian-raw.md`
+- Duck/raw → `references/duck-raw.md`
+- Dungeon master/raw → `references/dungeon-master-raw.md`
+- Duplicated raws → `references/duplicated-raws.md`
+- Durian/raw → `references/durian-raw.md`
+- Dwarf/entity raw → `references/dwarf-entity-raw.md`
+- Dwarf/raw → `references/dwarf-raw.md`
+- Dwarven language/raw → `references/dwarven-language-raw.md`
+- Eagle man/raw → `references/eagle-man-raw.md`
+- Eagle/raw → `references/eagle-raw.md`
+- Earthenware/raw → `references/earthenware-raw.md`
+- Echidna man/raw → `references/echidna-man-raw.md`
+- Echidna/raw → `references/echidna-raw.md`
+- Eggplant/raw → `references/eggplant-raw.md`
+- Electrum/raw → `references/electrum-raw.md`
+- Elephant man/raw → `references/elephant-man-raw.md`
+- Elephant seal man/raw → `references/elephant-seal-man-raw.md`
+- Elephant seal/raw → `references/elephant-seal-raw.md`
+- Elephant-head amaranth/raw → `references/elephant-head-amaranth-raw.md`
+- Elephant/raw → `references/elephant-raw.md`
+- Elf/raw → `references/elf-raw.md`
+- Elk bird/raw → `references/elk-bird-raw.md`
+- Elk man/raw → `references/elk-man-raw.md`
+- Elk/raw → `references/elk-raw.md`
+- Elvish language/raw → `references/elvish-language-raw.md`
+- Emerald/raw → `references/emerald-raw.md`
+- Emperor penguin/raw → `references/emperor-penguin-raw.md`
+- Emu man/raw → `references/emu-man-raw.md`
+- Emu/raw → `references/emu-raw.md`
+- Entity examples → `references/entity-examples.md`
+- Entity token → `references/entity-token.md`
+- Ethic → `references/ethic.md`
+- Ettin/raw → `references/ettin-raw.md`
+- Faint yellow diamond/raw → `references/faint-yellow-diamond-raw.md`
+- Fairy/raw → `references/fairy-raw.md`
+- Fat/raw → `references/fat-raw.md`
+- Feather tree/raw → `references/feather-tree-raw.md`
+- Feather/raw → `references/feather-raw.md`
+- Fescue grass/raw → `references/fescue-grass-raw.md`
+- Field sedge/raw → `references/field-sedge-raw.md`
+- Fine pewter/raw → `references/fine-pewter-raw.md`
+- Finger lime/raw → `references/finger-lime-raw.md`
+- Finger millet/raw → `references/finger-millet-raw.md`
+- Fire agate/raw → `references/fire-agate-raw.md`
+- Fire clay/raw → `references/fire-clay-raw.md`
+- Fire imp/raw → `references/fire-imp-raw.md`
+- Fire man/raw → `references/fire-man-raw.md`
+- Fire opal/raw → `references/fire-opal-raw.md`
+- Fire snake/raw → `references/fire-snake-raw.md`
+- Firefly man/raw → `references/firefly-man-raw.md`
+- Firefly/raw → `references/firefly-raw.md`
+- Fisher berry/raw → `references/fisher-berry-raw.md`
+- Fixed Creature RAWs → `references/fixed-creature-raws.md`
+- Flail/raw → `references/flail-raw.md`
+- Flax/raw → `references/flax-raw.md`
+- Flesh ball/raw → `references/flesh-ball-raw.md`
+- Floating guts/raw → `references/floating-guts-raw.md`
+- Floor fungus/raw → `references/floor-fungus-raw.md`
+- Flounder/raw → `references/flounder-raw.md`
+- Fluffy wambler/raw → `references/fluffy-wambler-raw.md`
+- Fly man/raw → `references/fly-man-raw.md`
+- Fly/raw → `references/fly-raw.md`
+- Flying squirrel man/raw → `references/flying-squirrel-man-raw.md`
+- Flying squirrel/raw → `references/flying-squirrel-raw.md`
+- Fonio/raw → `references/fonio-raw.md`
+- Fortification agate/raw → `references/fortification-agate-raw.md`
+- Foul blendec/raw → `references/foul-blendec-raw.md`
+- Fox man/raw → `references/fox-man-raw.md`
+- Fox squirrel/raw → `references/fox-squirrel-raw.md`
+- Fox/raw → `references/fox-raw.md`
+- Foxtail millet/raw → `references/foxtail-millet-raw.md`
+- Frill shark/raw → `references/frill-shark-raw.md`
+- Fungiwood/raw → `references/fungiwood-raw.md`
+- Gabbro man/raw → `references/gabbro-man-raw.md`
+- Gabbro/raw → `references/gabbro-raw.md`
+- Gait → `references/gait.md`
+- Galena/raw → `references/galena-raw.md`
+- Garden cress/raw → `references/garden-cress-raw.md`
+- Garlic/raw → `references/garlic-raw.md`
+- Garnierite/raw → `references/garnierite-raw.md`
+- Gazelle man/raw → `references/gazelle-man-raw.md`
+- Gazelle/raw → `references/gazelle-raw.md`
+- Genetics → `references/genetics.md`
+- Giant aardvark/raw → `references/giant-aardvark-raw.md`
+- Giant adder/raw → `references/giant-adder-raw.md`
+- Giant albatross/raw → `references/giant-albatross-raw.md`
+- Giant alligator/raw → `references/giant-alligator-raw.md`
+- Giant anaconda/raw → `references/giant-anaconda-raw.md`
+- Giant anole/raw → `references/giant-anole-raw.md`
+- Giant armadillo/raw → `references/giant-armadillo-raw.md`
+- Giant axolotl/raw → `references/giant-axolotl-raw.md`
+- Giant aye-aye/raw → `references/giant-aye-aye-raw.md`
+- Giant badger/raw → `references/giant-badger-raw.md`
+- Giant bark scorpion/raw → `references/giant-bark-scorpion-raw.md`
+- Giant barn owl/raw → `references/giant-barn-owl-raw.md`
+- Giant bat/raw → `references/giant-bat-raw.md`
+- Giant beaver/raw → `references/giant-beaver-raw.md`
+- Giant beetle/raw → `references/giant-beetle-raw.md`
+- Giant black bear/raw → `references/giant-black-bear-raw.md`
+- Giant black mamba/raw → `references/giant-black-mamba-raw.md`
+- Giant bluejay/raw → `references/giant-bluejay-raw.md`
+- Giant bobcat/raw → `references/giant-bobcat-raw.md`
+- Giant brown recluse spider/raw → `references/giant-brown-recluse-spider-raw.md`
+- Giant bushmaster/raw → `references/giant-bushmaster-raw.md`
+- Giant bushtit/raw → `references/giant-bushtit-raw.md`
+- Giant buzzard/raw → `references/giant-buzzard-raw.md`
+- Giant capuchin/raw → `references/giant-capuchin-raw.md`
+- Giant capybara/raw → `references/giant-capybara-raw.md`
+- Giant cardinal/raw → `references/giant-cardinal-raw.md`
+- Giant cassowary/raw → `references/giant-cassowary-raw.md`
+- Giant cave spider/raw → `references/giant-cave-spider-raw.md`
+- Giant cave swallow/raw → `references/giant-cave-swallow-raw.md`
+- Giant cave toad/raw → `references/giant-cave-toad-raw.md`
+- Giant chameleon/raw → `references/giant-chameleon-raw.md`
+- Giant cheetah/raw → `references/giant-cheetah-raw.md`
+- Giant chinchilla/raw → `references/giant-chinchilla-raw.md`
+- Giant chipmunk/raw → `references/giant-chipmunk-raw.md`
+- Giant coati/raw → `references/giant-coati-raw.md`
+- Giant cockatiel/raw → `references/giant-cockatiel-raw.md`
+- Giant copperhead snake/raw → `references/giant-copperhead-snake-raw.md`
+- Giant cougar/raw → `references/giant-cougar-raw.md`
+- Giant coyote/raw → `references/giant-coyote-raw.md`
+- Giant crab/raw → `references/giant-crab-raw.md`
+- Giant crow/raw → `references/giant-crow-raw.md`
+- Giant cuttlefish/raw → `references/giant-cuttlefish-raw.md`
+- Giant damselfly/raw → `references/giant-damselfly-raw.md`
+- Giant deer/raw → `references/giant-deer-raw.md`
+- Giant desert scorpion/raw → `references/giant-desert-scorpion-raw.md`
+- Giant desert tortoise/raw → `references/giant-desert-tortoise-raw.md`
+- Giant dingo/raw → `references/giant-dingo-raw.md`
+- Giant dragonfly/raw → `references/giant-dragonfly-raw.md`
+- Giant eagle/raw → `references/giant-eagle-raw.md`
+- Giant earthworm/raw → `references/giant-earthworm-raw.md`
+- Giant echidna/raw → `references/giant-echidna-raw.md`
+- Giant elephant seal/raw → `references/giant-elephant-seal-raw.md`
+- Giant elephant/raw → `references/giant-elephant-raw.md`
+- Giant elk/raw → `references/giant-elk-raw.md`
+- Giant emu/raw → `references/giant-emu-raw.md`
+- Giant firefly/raw → `references/giant-firefly-raw.md`
+- Giant fly/raw → `references/giant-fly-raw.md`
+- Giant flying squirrel/raw → `references/giant-flying-squirrel-raw.md`
+- Giant fox/raw → `references/giant-fox-raw.md`
+- Giant gazelle/raw → `references/giant-gazelle-raw.md`
+- Giant gila monster/raw → `references/giant-gila-monster-raw.md`
+- Giant giraffe/raw → `references/giant-giraffe-raw.md`
+- Giant grackle/raw → `references/giant-grackle-raw.md`
+- Giant grasshopper/raw → `references/giant-grasshopper-raw.md`
+- Giant gray langur/raw → `references/giant-gray-langur-raw.md`
+- Giant gray squirrel/raw → `references/giant-gray-squirrel-raw.md`
+- Giant great horned owl/raw → `references/giant-great-horned-owl-raw.md`
+- Giant green tree frog/raw → `references/giant-green-tree-frog-raw.md`
+- Giant grey parrot/raw → `references/giant-grey-parrot-raw.md`
+- Giant grizzly bear/raw → `references/giant-grizzly-bear-raw.md`
+- Giant groundhog/raw → `references/giant-groundhog-raw.md`
+- Giant grouper/raw → `references/giant-grouper-raw.md`
+- Giant hamster/raw → `references/giant-hamster-raw.md`
+- Giant hare/raw → `references/giant-hare-raw.md`
+- Giant harp seal/raw → `references/giant-harp-seal-raw.md`
+- Giant hedgehog/raw → `references/giant-hedgehog-raw.md`
+- Giant hippo/raw → `references/giant-hippo-raw.md`
+- Giant hoary marmot/raw → `references/giant-hoary-marmot-raw.md`
+- Giant honey badger/raw → `references/giant-honey-badger-raw.md`
+- Giant hornbill/raw → `references/giant-hornbill-raw.md`
+- Giant horseshoe crab/raw → `references/giant-horseshoe-crab-raw.md`
+- Giant hyena/raw → `references/giant-hyena-raw.md`
+- Giant ibex/raw → `references/giant-ibex-raw.md`
+- Giant iguana/raw → `references/giant-iguana-raw.md`
+- Giant impala/raw → `references/giant-impala-raw.md`
+- Giant jackal/raw → `references/giant-jackal-raw.md`
+- Giant jaguar/raw → `references/giant-jaguar-raw.md`
+- Giant jumping spider/raw → `references/giant-jumping-spider-raw.md`
+- Giant kakapo/raw → `references/giant-kakapo-raw.md`
+- Giant kangaroo/raw → `references/giant-kangaroo-raw.md`
+- Giant kea/raw → `references/giant-kea-raw.md`
+- Giant kestrel/raw → `references/giant-kestrel-raw.md`
+- Giant king cobra/raw → `references/giant-king-cobra-raw.md`
+- Giant kingsnake/raw → `references/giant-kingsnake-raw.md`
+- Giant kiwi/raw → `references/giant-kiwi-raw.md`
+- Giant koala/raw → `references/giant-koala-raw.md`
+- Giant leech/raw → `references/giant-leech-raw.md`
+- Giant leopard gecko/raw → `references/giant-leopard-gecko-raw.md`
+- Giant leopard seal/raw → `references/giant-leopard-seal-raw.md`
+- Giant leopard/raw → `references/giant-leopard-raw.md`
+- Giant lion tamarin/raw → `references/giant-lion-tamarin-raw.md`
+- Giant lion/raw → `references/giant-lion-raw.md`
+- Giant lizard/raw → `references/giant-lizard-raw.md`
+- Giant loon/raw → `references/giant-loon-raw.md`
+- Giant lorikeet/raw → `references/giant-lorikeet-raw.md`
+- Giant louse/raw → `references/giant-louse-raw.md`
+- Giant lynx/raw → `references/giant-lynx-raw.md`
+- Giant magpie/raw → `references/giant-magpie-raw.md`
+- Giant mandrill/raw → `references/giant-mandrill-raw.md`
+- Giant mantis/raw → `references/giant-mantis-raw.md`
+- Giant masked lovebird/raw → `references/giant-masked-lovebird-raw.md`
+- Giant mink/raw → `references/giant-mink-raw.md`
+- Giant mole/raw → `references/giant-mole-raw.md`
+- Giant monarch butterfly/raw → `references/giant-monarch-butterfly-raw.md`
+- Giant mongoose/raw → `references/giant-mongoose-raw.md`
+- Giant monitor lizard/raw → `references/giant-monitor-lizard-raw.md`
+- Giant moon snail/raw → `references/giant-moon-snail-raw.md`
+- Giant moose/raw → `references/giant-moose-raw.md`
+- Giant mosquito/raw → `references/giant-mosquito-raw.md`
+- Giant moth/raw → `references/giant-moth-raw.md`
+- Giant mountain goat/raw → `references/giant-mountain-goat-raw.md`
+- Giant muskox/raw → `references/giant-muskox-raw.md`
+- Giant narwhal/raw → `references/giant-narwhal-raw.md`
+- Giant nautilus/raw → `references/giant-nautilus-raw.md`
+- Giant ocelot/raw → `references/giant-ocelot-raw.md`
+- Giant octopus/raw → `references/giant-octopus-raw.md`
+- Giant olm/raw → `references/giant-olm-raw.md`
+- Giant one-humped camel/raw → `references/giant-one-humped-camel-raw.md`
+- Giant opossum/raw → `references/giant-opossum-raw.md`
+- Giant orca/raw → `references/giant-orca-raw.md`
+- Giant oriole/raw → `references/giant-oriole-raw.md`
+- Giant osprey/raw → `references/giant-osprey-raw.md`
+- Giant ostrich/raw → `references/giant-ostrich-raw.md`
+- Giant otter/raw → `references/giant-otter-raw.md`
+- Giant pangolin/raw → `references/giant-pangolin-raw.md`
+- Giant parakeet/raw → `references/giant-parakeet-raw.md`
+- Giant peach-faced lovebird/raw → `references/giant-peach-faced-lovebird-raw.md`
+- Giant penguin/raw → `references/giant-penguin-raw.md`
+- Giant peregrine falcon/raw → `references/giant-peregrine-falcon-raw.md`
+- Giant platypus/raw → `references/giant-platypus-raw.md`
+- Giant polar bear/raw → `references/giant-polar-bear-raw.md`
+- Giant pond turtle/raw → `references/giant-pond-turtle-raw.md`
+- Giant porcupine/raw → `references/giant-porcupine-raw.md`
+- Giant puffin/raw → `references/giant-puffin-raw.md`
+- Giant python/raw → `references/giant-python-raw.md`
+- Giant raccoon/raw → `references/giant-raccoon-raw.md`
+- Giant rat/raw → `references/giant-rat-raw.md`
+- Giant rattlesnake/raw → `references/giant-rattlesnake-raw.md`
+- Giant raven/raw → `references/giant-raven-raw.md`
+- Giant red panda/raw → `references/giant-red-panda-raw.md`
+- Giant red squirrel/raw → `references/giant-red-squirrel-raw.md`
+- Giant red-winged blackbird/raw → `references/giant-red-winged-blackbird-raw.md`
+- Giant rhesus macaque/raw → `references/giant-rhesus-macaque-raw.md`
+- Giant rhinoceros/raw → `references/giant-rhinoceros-raw.md`
+- Giant roach/raw → `references/giant-roach-raw.md`
+- Giant saltwater crocodile/raw → `references/giant-saltwater-crocodile-raw.md`
+- Giant skink/raw → `references/giant-skink-raw.md`
+- Giant skunk/raw → `references/giant-skunk-raw.md`
+- Giant sloth bear/raw → `references/giant-sloth-bear-raw.md`
+- Giant sloth/raw → `references/giant-sloth-raw.md`
+- Giant slug/raw → `references/giant-slug-raw.md`
+- Giant snail/raw → `references/giant-snail-raw.md`
+- Giant snapping turtle/raw → `references/giant-snapping-turtle-raw.md`
+- Giant snowy owl/raw → `references/giant-snowy-owl-raw.md`
+- Giant sparrow/raw → `references/giant-sparrow-raw.md`
+- Giant sperm whale/raw → `references/giant-sperm-whale-raw.md`
+- Giant spider monkey/raw → `references/giant-spider-monkey-raw.md`
+- Giant sponge/raw → `references/giant-sponge-raw.md`
+- Giant stoat/raw → `references/giant-stoat-raw.md`
+- Giant swan/raw → `references/giant-swan-raw.md`
+- Giant tapir/raw → `references/giant-tapir-raw.md`
+- Giant thrips/raw → `references/giant-thrips-raw.md`
+- Giant tick/raw → `references/giant-tick-raw.md`
+- Giant tiger/raw → `references/giant-tiger-raw.md`
+- Giant toad/raw → `references/giant-toad-raw.md`
+- Giant tortoise man/raw → `references/giant-tortoise-man-raw.md`
+- Giant tortoise/raw → `references/giant-tortoise-raw.md`
+- Giant two-humped camel/raw → `references/giant-two-humped-camel-raw.md`
+- Giant vulture/raw → `references/giant-vulture-raw.md`
+- Giant walrus/raw → `references/giant-walrus-raw.md`
+- Giant warthog/raw → `references/giant-warthog-raw.md`
+- Giant weasel/raw → `references/giant-weasel-raw.md`
+- Giant white stork/raw → `references/giant-white-stork-raw.md`
+- Giant wild boar/raw → `references/giant-wild-boar-raw.md`
+- Giant wolf/raw → `references/giant-wolf-raw.md`
+- Giant wolverine/raw → `references/giant-wolverine-raw.md`
+- Giant wombat/raw → `references/giant-wombat-raw.md`
+- Giant wren/raw → `references/giant-wren-raw.md`
+- Giant/raw → `references/giant-raw.md`
+- Gigantic panda/raw → `references/gigantic-panda-raw.md`
+- Gigantic squid/raw → `references/gigantic-squid-raw.md`
+- Gigantic tortoise/raw → `references/gigantic-tortoise-raw.md`
+- Gila monster man/raw → `references/gila-monster-man-raw.md`
+- Gila monster/raw → `references/gila-monster-raw.md`
+- Ginkgo/raw → `references/ginkgo-raw.md`
+- Giraffe man/raw → `references/giraffe-man-raw.md`
+- Giraffe/raw → `references/giraffe-raw.md`
+- Glasseye/raw → `references/glasseye-raw.md`
+- Glumprong/raw → `references/glumprong-raw.md`
+- Gneiss/raw → `references/gneiss-raw.md`
+- Goat/raw → `references/goat-raw.md`
+- Goblin language/raw → `references/goblin-language-raw.md`
+- Goblin-cap/raw → `references/goblin-cap-raw.md`
+- Goblin/raw → `references/goblin-raw.md`
+- Gold opal/raw → `references/gold-opal-raw.md`
+- Gold/raw → `references/gold-raw.md`
+- Golden bamboo/raw → `references/golden-bamboo-raw.md`
+- Golden beryl/raw → `references/golden-beryl-raw.md`
+- Goose/raw → `references/goose-raw.md`
+- Gorilla/raw → `references/gorilla-raw.md`
+- Gorlak/raw → `references/gorlak-raw.md`
+- Goshenite/raw → `references/goshenite-raw.md`
+- Grackle man/raw → `references/grackle-man-raw.md`
+- Grackle/raw → `references/grackle-raw.md`
+- Grama/raw → `references/grama-raw.md`
+- Granite/raw → `references/granite-raw.md`
+- Grape/raw → `references/grape-raw.md`
+- Graphics → `references/graphics.md`
+- Graphics set repository → `references/graphics-set-repository.md`
+- Graphics token → `references/graphics-token.md`
+- Graphite/raw → `references/graphite-raw.md`
+- Grasshopper man/raw → `references/grasshopper-man-raw.md`
+- Grasshopper/raw → `references/grasshopper-raw.md`
+- Gray chalcedony/raw → `references/gray-chalcedony-raw.md`
+- Gray gibbon/raw → `references/gray-gibbon-raw.md`
+- Gray langur man/raw → `references/gray-langur-man-raw.md`
+- Gray langur/raw → `references/gray-langur-raw.md`
+- Gray squirrel man/raw → `references/gray-squirrel-man-raw.md`
+- Gray squirrel/raw → `references/gray-squirrel-raw.md`
+- Great axe/raw → `references/great-axe-raw.md`
+- Great barracuda/raw → `references/great-barracuda-raw.md`
+- Great horned owl man/raw → `references/great-horned-owl-man-raw.md`
+- Great horned owl/raw → `references/great-horned-owl-raw.md`
+- Great white shark/raw → `references/great-white-shark-raw.md`
+- Green devourer/raw → `references/green-devourer-raw.md`
+- Green diamond/raw → `references/green-diamond-raw.md`
+- Green jade/raw → `references/green-jade-raw.md`
+- Green tourmaline/raw → `references/green-tourmaline-raw.md`
+- Green tree frog man/raw → `references/green-tree-frog-man-raw.md`
+- Green tree frog/raw → `references/green-tree-frog-raw.md`
+- Green zircon/raw → `references/green-zircon-raw.md`
+- Gremlin/raw → `references/gremlin-raw.md`
+- Grey parrot man/raw → `references/grey-parrot-man-raw.md`
+- Grey parrot/raw → `references/grey-parrot-raw.md`
+- Griffon/raw → `references/griffon-raw.md`
+- Grimeling/raw → `references/grimeling-raw.md`
+- Grizzly bear man/raw → `references/grizzly-bear-man-raw.md`
+- Grizzly bear/raw → `references/grizzly-bear-raw.md`
+- Groundhog man/raw → `references/groundhog-man-raw.md`
+- Groundhog/raw → `references/groundhog-raw.md`
+- Guava/raw → `references/guava-raw.md`
+- Guineafowl/raw → `references/guineafowl-raw.md`
+- Guppy/raw → `references/guppy-raw.md`
+- Gypsum plaster/raw → `references/gypsum-plaster-raw.md`
+- Gypsum/raw → `references/gypsum-raw.md`
+- Hagfish/raw → `references/hagfish-raw.md`
+- Hair grass/raw → `references/hair-grass-raw.md`
+- Hair/raw → `references/hair-raw.md`
+- Hake/raw → `references/hake-raw.md`
+- Halberd/raw → `references/halberd-raw.md`
+- Halibut/raw → `references/halibut-raw.md`
+- Hammerhead shark/raw → `references/hammerhead-shark-raw.md`
+- Hamster man/raw → `references/hamster-man-raw.md`
+- Hamster/raw → `references/hamster-raw.md`
+- Hard wheat/raw → `references/hard-wheat-raw.md`
+- Hare man/raw → `references/hare-man-raw.md`
+- Hare/raw → `references/hare-raw.md`
+- Harlequin opal/raw → `references/harlequin-opal-raw.md`
+- Harp seal man/raw → `references/harp-seal-man-raw.md`
+- Harp seal/raw → `references/harp-seal-raw.md`
+- Harpy/raw → `references/harpy-raw.md`
+- Hazel/raw → `references/hazel-raw.md`
+- Hedge bamboo/raw → `references/hedge-bamboo-raw.md`
+- Hedgehog man/raw → `references/hedgehog-man-raw.md`
+- Hedgehog/raw → `references/hedgehog-raw.md`
+- Heliodor/raw → `references/heliodor-raw.md`
+- Helmet snake/raw → `references/helmet-snake-raw.md`
+- Hematite/raw → `references/hematite-raw.md`
+- Hemp/raw → `references/hemp-raw.md`
+- Herring/raw → `references/herring-raw.md`
+- Hide root/raw → `references/hide-root-raw.md`
+- Highwood/raw → `references/highwood-raw.md`
+- Hippo man/raw → `references/hippo-man-raw.md`
+- Hippo/raw → `references/hippo-raw.md`
+- Hoary marmot man/raw → `references/hoary-marmot-man-raw.md`
+- Hoary marmot/raw → `references/hoary-marmot-raw.md`
+- Honey badger man/raw → `references/honey-badger-man-raw.md`
+- Honey badger/raw → `references/honey-badger-raw.md`
+- Honey bee/raw → `references/honey-bee-raw.md`
+- Honey yellow beryl/raw → `references/honey-yellow-beryl-raw.md`
+- Horn silver/raw → `references/horn-silver-raw.md`
+- Horn/raw → `references/horn-raw.md`
+- Hornbill man/raw → `references/hornbill-man-raw.md`
+- Hornbill/raw → `references/hornbill-raw.md`
+- Hornblende/raw → `references/hornblende-raw.md`
+- Horned melon/raw → `references/horned-melon-raw.md`
+- Horse/raw → `references/horse-raw.md`
+- Horseshoe crab man/raw → `references/horseshoe-crab-man-raw.md`
+- Horseshoe crab/raw → `references/horseshoe-crab-raw.md`
+- Human language/raw → `references/human-language-raw.md`
+- Human/raw → `references/human-raw.md`
+- Hungry head/raw → `references/hungry-head-raw.md`
+- Hydra/raw → `references/hydra-raw.md`
+- Hyena man/raw → `references/hyena-man-raw.md`
+- Hyena/raw → `references/hyena-raw.md`
+- Ibex man/raw → `references/ibex-man-raw.md`
+- Ibex/raw → `references/ibex-raw.md`
+- Ice wolf/raw → `references/ice-wolf-raw.md`
+- Iguana man/raw → `references/iguana-man-raw.md`
+- Iguana/raw → `references/iguana-raw.md`
+- Ilmenite/raw → `references/ilmenite-raw.md`
+- Impala man/raw → `references/impala-man-raw.md`
+- Impala/raw → `references/impala-raw.md`
+- Indigo tourmaline/raw → `references/indigo-tourmaline-raw.md`
+- Info.txt file → `references/info-txt-file.md`
+- Init.txt → `references/init-txt.md`
+- Init.txt/raw → `references/init-txt-raw.md`
+- Init.txt/raw/classic → `references/init-txt-raw-classic.md`
+- Init.txt/raw/premium → `references/init-txt-raw-premium.md`
+- Inorganic material definition token → `references/inorganic-material-definition-token.md`
+- Instrument token → `references/instrument-token.md`
+- Interaction examples → `references/interaction-examples.md`
+- Interaction token → `references/interaction-token.md`
+- Interface.txt → `references/interface-txt.md`
+- Interface.txt/raw → `references/interface-txt-raw.md`
+- Iron man/raw → `references/iron-man-raw.md`
+- Iron/raw → `references/iron-raw.md`
+- Item definition token → `references/item-definition-token.md`
+- Item token → `references/item-token.md`
+- Ivory/raw → `references/ivory-raw.md`
+- Jabberer/raw → `references/jabberer-raw.md`
+- Jackal man/raw → `references/jackal-man-raw.md`
+- Jackal/raw → `references/jackal-raw.md`
+- Jaguar man/raw → `references/jaguar-man-raw.md`
+- Jaguar/raw → `references/jaguar-raw.md`
+- Jasper opal/raw → `references/jasper-opal-raw.md`
+- Jelly opal/raw → `references/jelly-opal-raw.md`
+- Jet/raw → `references/jet-raw.md`
+- Jumping spider man/raw → `references/jumping-spider-man-raw.md`
+- Jumping spider/raw → `references/jumping-spider-raw.md`
+- Jute/raw → `references/jute-raw.md`
+- Kakapo man/raw → `references/kakapo-man-raw.md`
+- Kakapo/raw → `references/kakapo-raw.md`
+- Kangaroo man/raw → `references/kangaroo-man-raw.md`
+- Kangaroo/raw → `references/kangaroo-raw.md`
+- Kaniwa/raw → `references/kaniwa-raw.md`
+- Kaolinite → `references/kaolinite.md`
+- Kaolinite/raw → `references/kaolinite-raw.md`
+- Kapok/raw → `references/kapok-raw.md`
+- Kea man/raw → `references/kea-man-raw.md`
+- Kea/raw → `references/kea-raw.md`
+- Kenaf/raw → `references/kenaf-raw.md`
+- Kestrel man/raw → `references/kestrel-man-raw.md`
+- Kestrel/raw → `references/kestrel-raw.md`
+- Kimberlite/raw → `references/kimberlite-raw.md`
+- King cobra man/raw → `references/king-cobra-man-raw.md`
+- King cobra/raw → `references/king-cobra-raw.md`
+- Kingsnake man/raw → `references/kingsnake-man-raw.md`
+- Kingsnake/raw → `references/kingsnake-raw.md`
+- Kiwi man/raw → `references/kiwi-man-raw.md`
+- Kiwi/raw → `references/kiwi-raw.md`
+- Knotgrass/raw → `references/knotgrass-raw.md`
+- Knuckle worm/raw → `references/knuckle-worm-raw.md`
+- Koala man/raw → `references/koala-man-raw.md`
+- Koala/raw → `references/koala-raw.md`
+- Kobold bulb/raw → `references/kobold-bulb-raw.md`
+- Kobold/raw → `references/kobold-raw.md`
+- Kumquat/raw → `references/kumquat-raw.md`
+- Kunzite/raw → `references/kunzite-raw.md`
+- Labor token → `references/labor-token.md`
+- Lace agate/raw → `references/lace-agate-raw.md`
+- Language SYM.txt → `references/language-sym-txt.md`
+- Language SYM.txt/Aquatic/raw → `references/language-sym-txt-aquatic-raw.md`
+- Language SYM.txt/Artifice/raw → `references/language-sym-txt-artifice-raw.md`
+- Language SYM.txt/Assertive/raw → `references/language-sym-txt-assertive-raw.md`
+- Language SYM.txt/Balance/raw → `references/language-sym-txt-balance-raw.md`
+- Language SYM.txt/Boundary/raw → `references/language-sym-txt-boundary-raw.md`
+- Language SYM.txt/Color/raw → `references/language-sym-txt-color-raw.md`
+- Language SYM.txt/Dance/raw → `references/language-sym-txt-dance-raw.md`
+- Language SYM.txt/Darkness/raw → `references/language-sym-txt-darkness-raw.md`
+- Language SYM.txt/Death/raw → `references/language-sym-txt-death-raw.md`
+- Language SYM.txt/Domestic/raw → `references/language-sym-txt-domestic-raw.md`
+- Language SYM.txt/Earth/raw → `references/language-sym-txt-earth-raw.md`
+- Language SYM.txt/Evil/raw → `references/language-sym-txt-evil-raw.md`
+- Language SYM.txt/Family/raw → `references/language-sym-txt-family-raw.md`
+- Language SYM.txt/Festival/raw → `references/language-sym-txt-festival-raw.md`
+- Language SYM.txt/Fire/raw → `references/language-sym-txt-fire-raw.md`
+- Language SYM.txt/Flowery/raw → `references/language-sym-txt-flowery-raw.md`
+- Language SYM.txt/Food/raw → `references/language-sym-txt-food-raw.md`
+- Language SYM.txt/Freedom/raw → `references/language-sym-txt-freedom-raw.md`
+- Language SYM.txt/Games/raw → `references/language-sym-txt-games-raw.md`
+- Language SYM.txt/Good/raw → `references/language-sym-txt-good-raw.md`
+- Language SYM.txt/Holy/raw → `references/language-sym-txt-holy-raw.md`
+- Language SYM.txt/Leader/raw → `references/language-sym-txt-leader-raw.md`
+- Language SYM.txt/Light/raw → `references/language-sym-txt-light-raw.md`
+- Language SYM.txt/Luck/raw → `references/language-sym-txt-luck-raw.md`
+- Language SYM.txt/Magic/raw → `references/language-sym-txt-magic-raw.md`
+- Language SYM.txt/Music/raw → `references/language-sym-txt-music-raw.md`
+- Language SYM.txt/Mystery/raw → `references/language-sym-txt-mystery-raw.md`
+- Language SYM.txt/Mythic/raw → `references/language-sym-txt-mythic-raw.md`
+- Language SYM.txt/Nature/raw → `references/language-sym-txt-nature-raw.md`
+- Language SYM.txt/Negative/raw → `references/language-sym-txt-negative-raw.md`
+- Language SYM.txt/Negator/raw → `references/language-sym-txt-negator-raw.md`
+- Language SYM.txt/New/raw → `references/language-sym-txt-new-raw.md`
+- Language SYM.txt/Old/raw → `references/language-sym-txt-old-raw.md`
+- Language SYM.txt/Order/raw → `references/language-sym-txt-order-raw.md`
+- Language SYM.txt/Peace/raw → `references/language-sym-txt-peace-raw.md`
+- Language SYM.txt/Primitive/raw → `references/language-sym-txt-primitive-raw.md`
+- Language SYM.txt/Protect/raw → `references/language-sym-txt-protect-raw.md`
+- Language SYM.txt/Restrain/raw → `references/language-sym-txt-restrain-raw.md`
+- Language SYM.txt/Romantic/raw → `references/language-sym-txt-romantic-raw.md`
+- Language SYM.txt/Silence/raw → `references/language-sym-txt-silence-raw.md`
+- Language SYM.txt/Sky/raw → `references/language-sym-txt-sky-raw.md`
+- Language SYM.txt/Subordinate/raw → `references/language-sym-txt-subordinate-raw.md`
+- Language SYM.txt/Thought/raw → `references/language-sym-txt-thought-raw.md`
+- Language SYM.txt/Trade/raw → `references/language-sym-txt-trade-raw.md`
+- Language SYM.txt/Travel/raw → `references/language-sym-txt-travel-raw.md`
+- Language SYM.txt/Truth/raw → `references/language-sym-txt-truth-raw.md`
+- Language SYM.txt/Ugly/raw → `references/language-sym-txt-ugly-raw.md`
+- Language SYM.txt/Violent/raw → `references/language-sym-txt-violent-raw.md`
+- Language SYM.txt/Wealth/raw → `references/language-sym-txt-wealth-raw.md`
+- Language SYM.txt/Wild/raw → `references/language-sym-txt-wild-raw.md`
+- Language token → `references/language-token.md`
+- Languages raws → `references/languages-raws.md`
+- Lapis lazuli/raw → `references/lapis-lazuli-raw.md`
+- Larch/raw → `references/larch-raw.md`
+- Large rat/raw → `references/large-rat-raw.md`
+- Large roach/raw → `references/large-roach-raw.md`
+- Lavender jade/raw → `references/lavender-jade-raw.md`
+- Lay pewter/raw → `references/lay-pewter-raw.md`
+- Lead/raw → `references/lead-raw.md`
+- Leather/raw → `references/leather-raw.md`
+- Leech man/raw → `references/leech-man-raw.md`
+- Leech/raw → `references/leech-raw.md`
+- Leek/raw → `references/leek-raw.md`
+- Lentil/raw → `references/lentil-raw.md`
+- Leopard gecko man/raw → `references/leopard-gecko-man-raw.md`
+- Leopard gecko/raw → `references/leopard-gecko-raw.md`
+- Leopard man/raw → `references/leopard-man-raw.md`
+- Leopard seal man/raw → `references/leopard-seal-man-raw.md`
+- Leopard seal/raw → `references/leopard-seal-raw.md`
+- Leopard/raw → `references/leopard-raw.md`
+- Lesser yam/raw → `references/lesser-yam-raw.md`
+- Lettuce/raw → `references/lettuce-raw.md`
+- Levin opal/raw → `references/levin-opal-raw.md`
+- Light yellow diamond/raw → `references/light-yellow-diamond-raw.md`
+- Lignite/raw → `references/lignite-raw.md`
+- Lime/raw → `references/lime-raw.md`
+- Limestone/raw → `references/limestone-raw.md`
+- Limonite/raw → `references/limonite-raw.md`
+- Lion man/raw → `references/lion-man-raw.md`
+- Lion tamarin man/raw → `references/lion-tamarin-man-raw.md`
+- Lion tamarin/raw → `references/lion-tamarin-raw.md`
+- Lion/raw → `references/lion-raw.md`
+- Little penguin/raw → `references/little-penguin-raw.md`
+- Lizard man/raw → `references/lizard-man-raw.md`
+- Lizard/raw → `references/lizard-raw.md`
+- Llama/raw → `references/llama-raw.md`
+- Loam/raw → `references/loam-raw.md`
+- Loamy sand/raw → `references/loamy-sand-raw.md`
+- Long sword/raw → `references/long-sword-raw.md`
+- Long yam/raw → `references/long-yam-raw.md`
+- Longfin mako shark/raw → `references/longfin-mako-shark-raw.md`
+- Longland grass/raw → `references/longland-grass-raw.md`
+- Longnose gar/raw → `references/longnose-gar-raw.md`
+- Loon man/raw → `references/loon-man-raw.md`
+- Loon/raw → `references/loon-raw.md`
+- Lorikeet man/raw → `references/lorikeet-man-raw.md`
+- Lorikeet/raw → `references/lorikeet-raw.md`
+- Louse man/raw → `references/louse-man-raw.md`
+- Louse/raw → `references/louse-raw.md`
+- Lungfish/raw → `references/lungfish-raw.md`
+- Lychee/raw → `references/lychee-raw.md`
+- Lynx man/raw → `references/lynx-man-raw.md`
+- Lynx/raw → `references/lynx-raw.md`
+- Macadamia/raw → `references/macadamia-raw.md`
+- Mace/raw → `references/mace-raw.md`
+- Mackerel/raw → `references/mackerel-raw.md`
+- Magma crab/raw → `references/magma-crab-raw.md`
+- Magma man/raw → `references/magma-man-raw.md`
+- Magnetite/raw → `references/magnetite-raw.md`
+- Magpie man/raw → `references/magpie-man-raw.md`
+- Magpie/raw → `references/magpie-raw.md`
+- Mahogany/raw → `references/mahogany-raw.md`
+- Maize/raw → `references/maize-raw.md`
+- Malachite/raw → `references/malachite-raw.md`
+- Mandrill man/raw → `references/mandrill-man-raw.md`
+- Mandrill/raw → `references/mandrill-raw.md`
+- Manera/raw → `references/manera-raw.md`
+- Mango tree/raw → `references/mango-tree-raw.md`
+- Mangrove/raw → `references/mangrove-raw.md`
+- Manta ray/raw → `references/manta-ray-raw.md`
+- Mantis man/raw → `references/mantis-man-raw.md`
+- Mantis/raw → `references/mantis-raw.md`
+- Maple/raw → `references/maple-raw.md`
+- Marble/raw → `references/marble-raw.md`
+- Marcasite/raw → `references/marcasite-raw.md`
+- Marlin/raw → `references/marlin-raw.md`
+- Marsh thistle/raw → `references/marsh-thistle-raw.md`
+- Masked lovebird man/raw → `references/masked-lovebird-man-raw.md`
+- Masked lovebird/raw → `references/masked-lovebird-raw.md`
+- Material definition token → `references/material-definition-token.md`
+- Material token → `references/material-token.md`
+- Maul/raw → `references/maul-raw.md`
+- Meadow-grass/raw → `references/meadow-grass-raw.md`
+- Meadowsweet/raw → `references/meadowsweet-raw.md`
+- Melanite/raw → `references/melanite-raw.md`
+- Merperson/raw → `references/merperson-raw.md`
+- Mica/raw → `references/mica-raw.md`
+- Microcline/raw → `references/microcline-raw.md`
+- Milk of lime/raw → `references/milk-of-lime-raw.md`
+- Milk opal/raw → `references/milk-opal-raw.md`
+- Milk quartz/raw → `references/milk-quartz-raw.md`
+- Milkfish/raw → `references/milkfish-raw.md`
+- Mink man/raw → `references/mink-man-raw.md`
+- Mink/raw → `references/mink-raw.md`
+- Minotaur/raw → `references/minotaur-raw.md`
+- Mod → `references/mod.md`
+- Mod info token → `references/mod-info-token.md`
+- Modding → `references/modding.md`
+- Modding pitfalls → `references/modding-pitfalls.md`
+- Moghopper/raw → `references/moghopper-raw.md`
+- Molemarian/raw → `references/molemarian-raw.md`
+- Monarch butterfly man/raw → `references/monarch-butterfly-man-raw.md`
+- Monarch butterfly/raw → `references/monarch-butterfly-raw.md`
+- Mongoose man/raw → `references/mongoose-man-raw.md`
+- Mongoose/raw → `references/mongoose-raw.md`
+- Monitor lizard man/raw → `references/monitor-lizard-man-raw.md`
+- Monitor lizard/raw → `references/monitor-lizard-raw.md`
+- Moon snail man/raw → `references/moon-snail-man-raw.md`
+- Moon snail/raw → `references/moon-snail-raw.md`
+- Moonstone/raw → `references/moonstone-raw.md`
+- Moose man/raw → `references/moose-man-raw.md`
+- Moose/raw → `references/moose-raw.md`
+- Morganite/raw → `references/morganite-raw.md`
+- Morion/raw → `references/morion-raw.md`
+- Morningstar/raw → `references/morningstar-raw.md`
+- Mosquito man/raw → `references/mosquito-man-raw.md`
+- Mosquito/raw → `references/mosquito-raw.md`
+- Moss agate/raw → `references/moss-agate-raw.md`
+- Moss opal/raw → `references/moss-opal-raw.md`
+- Moth man/raw → `references/moth-man-raw.md`
+- Moth/raw → `references/moth-raw.md`
+- Mountain avens/raw → `references/mountain-avens-raw.md`
+- Mountain gnome/raw → `references/mountain-gnome-raw.md`
+- Mountain goat man/raw → `references/mountain-goat-man-raw.md`
+- Mountain goat/raw → `references/mountain-goat-raw.md`
+- Muck root/raw → `references/muck-root-raw.md`
+- Mud man/raw → `references/mud-man-raw.md`
+- Mudstone/raw → `references/mudstone-raw.md`
+- Mule/raw → `references/mule-raw.md`
+- Mung bean/raw → `references/mung-bean-raw.md`
+- Muskmelon/raw → `references/muskmelon-raw.md`
+- Muskox man/raw → `references/muskox-man-raw.md`
+- Muskox/raw → `references/muskox-raw.md`
+- Mussel/raw → `references/mussel-raw.md`
+- Nail/raw → `references/nail-raw.md`
+- Naked mole dog/raw → `references/naked-mole-dog-raw.md`
+- Narwhal man/raw → `references/narwhal-man-raw.md`
+- Narwhal/raw → `references/narwhal-raw.md`
+- Native aluminum/raw → `references/native-aluminum-raw.md`
+- Native copper/raw → `references/native-copper-raw.md`
+- Native gold/raw → `references/native-gold-raw.md`
+- Native platinum/raw → `references/native-platinum-raw.md`
+- Native silver/raw → `references/native-silver-raw.md`
+- Nautilus man/raw → `references/nautilus-man-raw.md`
+- Nautilus/raw → `references/nautilus-raw.md`
+- Needle grass/raw → `references/needle-grass-raw.md`
+- Nervous tissue/raw → `references/nervous-tissue-raw.md`
+- Nether-cap/raw → `references/nether-cap-raw.md`
+- Nickel silver/raw → `references/nickel-silver-raw.md`
+- Nickel/raw → `references/nickel-raw.md`
+- Nightwing/raw → `references/nightwing-raw.md`
+- Nurse shark/raw → `references/nurse-shark-raw.md`
+- Oak/raw → `references/oak-raw.md`
+- Oats/raw → `references/oats-raw.md`
+- Obsidian/raw → `references/obsidian-raw.md`
+- Ocean sunfish/raw → `references/ocean-sunfish-raw.md`
+- Ocelot man/raw → `references/ocelot-man-raw.md`
+- Ocelot/raw → `references/ocelot-raw.md`
+- Octopus man/raw → `references/octopus-man-raw.md`
+- Octopus/raw → `references/octopus-raw.md`
+- Ogre/raw → `references/ogre-raw.md`
+- Olive/raw → `references/olive-raw.md`
+- Olivine/raw → `references/olivine-raw.md`
+- Olm man/raw → `references/olm-man-raw.md`
+- Olm/raw → `references/olm-raw.md`
+- One-humped camel man/raw → `references/one-humped-camel-man-raw.md`
+- One-humped camel/raw → `references/one-humped-camel-raw.md`
+- Onion/raw → `references/onion-raw.md`
+- Onyx opal/raw → `references/onyx-opal-raw.md`
+- Onyx/raw → `references/onyx-raw.md`
+- Opah/raw → `references/opah-raw.md`
+- Opossum man/raw → `references/opossum-man-raw.md`
+- Opossum/raw → `references/opossum-raw.md`
+- Orange tree/raw → `references/orange-tree-raw.md`
+- Orange/raw → `references/orange-raw.md`
+- Orangutan/raw → `references/orangutan-raw.md`
+- Orca man/raw → `references/orca-man-raw.md`
+- Orca/raw → `references/orca-raw.md`
+- Oriole man/raw → `references/oriole-man-raw.md`
+- Oriole/raw → `references/oriole-raw.md`
+- Orpiment/raw → `references/orpiment-raw.md`
+- Orthoclase/raw → `references/orthoclase-raw.md`
+- Osprey man/raw → `references/osprey-man-raw.md`
+- Osprey/raw → `references/osprey-raw.md`
+- Ostrich man/raw → `references/ostrich-man-raw.md`
+- Ostrich/raw → `references/ostrich-raw.md`
+- Otter man/raw → `references/otter-man-raw.md`
+- Oyster/raw → `references/oyster-raw.md`
+- Panda man/raw → `references/panda-man-raw.md`
+- Panda/raw → `references/panda-raw.md`
+- Pangolin man/raw → `references/pangolin-man-raw.md`
+- Pangolin/raw → `references/pangolin-raw.md`
+- Papaya/raw → `references/papaya-raw.md`
+- Papyrus sedge/raw → `references/papyrus-sedge-raw.md`
+- Paradise nut/raw → `references/paradise-nut-raw.md`
+- Parakeet man/raw → `references/parakeet-man-raw.md`
+- Parakeet/raw → `references/parakeet-raw.md`
+- Parsnip/raw → `references/parsnip-raw.md`
+- Passion fruit/raw → `references/passion-fruit-raw.md`
+- Pea/raw → `references/pea-raw.md`
+- Peach-faced lovebird man/raw → `references/peach-faced-lovebird-man-raw.md`
+- Peach-faced lovebird/raw → `references/peach-faced-lovebird-raw.md`
+- Peach/raw → `references/peach-raw.md`
+- Peanut/raw → `references/peanut-raw.md`
+- Pear/raw → `references/pear-raw.md`
+- Pearl millet/raw → `references/pearl-millet-raw.md`
+- Peat/raw → `references/peat-raw.md`
+- Pebble plant/raw → `references/pebble-plant-raw.md`
+- Pecan/raw → `references/pecan-raw.md`
+- Pelagic clay/raw → `references/pelagic-clay-raw.md`
+- Pendant amaranth/raw → `references/pendant-amaranth-raw.md`
+- Penguin man/raw → `references/penguin-man-raw.md`
+- Penguin/raw → `references/penguin-raw.md`
+- Pepper/raw → `references/pepper-raw.md`
+- Perch/raw → `references/perch-raw.md`
+- Peregrine falcon man/raw → `references/peregrine-falcon-man-raw.md`
+- Peregrine falcon/raw → `references/peregrine-falcon-raw.md`
+- Periclase/raw → `references/periclase-raw.md`
+- Peridot/raw → `references/peridot-raw.md`
+- Persimmon/raw → `references/persimmon-raw.md`
+- Personality trait → `references/personality-trait.md`
+- Petrified wood/raw → `references/petrified-wood-raw.md`
+- Phantom spider/raw → `references/phantom-spider-raw.md`
+- Phyllite/raw → `references/phyllite-raw.md`
+- Pick/raw → `references/pick-raw.md`
+- Picture jasper/raw → `references/picture-jasper-raw.md`
+- Pig iron/raw → `references/pig-iron-raw.md`
+- Pig tail/raw → `references/pig-tail-raw.md`
+- Pig/raw → `references/pig-raw.md`
+- Pike (fish)/raw → `references/pike-fish-raw.md`
+- Pike (weapon)/raw → `references/pike-weapon-raw.md`
+- Pike/raw → `references/pike-raw.md`
+- Pileated gibbon/raw → `references/pileated-gibbon-raw.md`
+- Pine/raw → `references/pine-raw.md`
+- Pineapple opal/raw → `references/pineapple-opal-raw.md`
+- Pineapple/raw → `references/pineapple-raw.md`
+- Pinfire opal/raw → `references/pinfire-opal-raw.md`
+- Pink garnet/raw → `references/pink-garnet-raw.md`
+- Pink jade/raw → `references/pink-jade-raw.md`
+- Pink tourmaline/raw → `references/pink-tourmaline-raw.md`
+- Pipe opal/raw → `references/pipe-opal-raw.md`
+- Pitchblende/raw → `references/pitchblende-raw.md`
+- Pixie/raw → `references/pixie-raw.md`
+- Plant fiber/raw → `references/plant-fiber-raw.md`
+- Plant token → `references/plant-token.md`
+- Platinum/raw → `references/platinum-raw.md`
+- Platypus man/raw → `references/platypus-man-raw.md`
+- Platypus/raw → `references/platypus-raw.md`
+- Plum/raw → `references/plum-raw.md`
+- Plume agate/raw → `references/plume-agate-raw.md`
+- Plump helmet man/raw → `references/plump-helmet-man-raw.md`
+- Plump helmet/raw → `references/plump-helmet-raw.md`
+- Polar bear man/raw → `references/polar-bear-man-raw.md`
+- Polar bear/raw → `references/polar-bear-raw.md`
+- Pomegranate/raw → `references/pomegranate-raw.md`
+- Pomelo/raw → `references/pomelo-raw.md`
+- Pond grabber/raw → `references/pond-grabber-raw.md`
+- Pond turtle man/raw → `references/pond-turtle-man-raw.md`
+- Pond turtle/raw → `references/pond-turtle-raw.md`
+- Porcelain/raw → `references/porcelain-raw.md`
+- Porcupine man/raw → `references/porcupine-man-raw.md`
+- Porcupine/raw → `references/porcupine-raw.md`
+- Position token → `references/position-token.md`
+- Potato/raw → `references/potato-raw.md`
+- Prase opal/raw → `references/prase-opal-raw.md`
+- Prase/raw → `references/prase-raw.md`
+- Precious fire opal/raw → `references/precious-fire-opal-raw.md`
+- Prickle berry/raw → `references/prickle-berry-raw.md`
+- Puddingstone/raw → `references/puddingstone-raw.md`
+- Puffin man/raw → `references/puffin-man-raw.md`
+- Puffin/raw → `references/puffin-raw.md`
+- Purple amaranth/raw → `references/purple-amaranth-raw.md`
+- Purple moor grass/raw → `references/purple-moor-grass-raw.md`
+- Purple spinel/raw → `references/purple-spinel-raw.md`
+- Purple yam/raw → `references/purple-yam-raw.md`
+- Purring maggot/raw → `references/purring-maggot-raw.md`
+- Pyrite/raw → `references/pyrite-raw.md`
+- Pyrolusite/raw → `references/pyrolusite-raw.md`
+- Python man/raw → `references/python-man-raw.md`
+- Python/raw → `references/python-raw.md`
+- Quarry bush/raw → `references/quarry-bush-raw.md`
+- Quartzite/raw → `references/quartzite-raw.md`
+- Quicklime/raw → `references/quicklime-raw.md`
+- Quinoa/raw → `references/quinoa-raw.md`
+- Rabbit/raw → `references/rabbit-raw.md`
+- Raccoon man/raw → `references/raccoon-man-raw.md`
+- Raccoon/raw → `references/raccoon-raw.md`
+- Radish/raw → `references/radish-raw.md`
+- Rainbow trout/raw → `references/rainbow-trout-raw.md`
+- Rambutan/raw → `references/rambutan-raw.md`
+- Ramie/raw → `references/ramie-raw.md`
+- Raspberry bush/raw → `references/raspberry-bush-raw.md`
+- Raspberry/raw → `references/raspberry-raw.md`
+- Rat man/raw → `references/rat-man-raw.md`
+- Rat weed/raw → `references/rat-weed-raw.md`
+- Rat/raw → `references/rat-raw.md`
+- Rattlesnake man/raw → `references/rattlesnake-man-raw.md`
+- Rattlesnake/raw → `references/rattlesnake-raw.md`
+- Raven man/raw → `references/raven-man-raw.md`
+- Raven/raw → `references/raven-raw.md`
+- Raw adamantine/raw → `references/raw-adamantine-raw.md`
+- Raw file → `references/raw-file.md`
+- Reacher/raw → `references/reacher-raw.md`
+- Reaction → `references/reaction.md`
+- Reaction examples → `references/reaction-examples.md`
+- Realgar/raw → `references/realgar-raw.md`
+- Red bean/raw → `references/red-bean-raw.md`
+- Red beryl/raw → `references/red-beryl-raw.md`
+- Red diamond/raw → `references/red-diamond-raw.md`
+- Red flash opal/raw → `references/red-flash-opal-raw.md`
+- Red grossular/raw → `references/red-grossular-raw.md`
+- Red panda man/raw → `references/red-panda-man-raw.md`
+- Red panda/raw → `references/red-panda-raw.md`
+- Red pyrope/raw → `references/red-pyrope-raw.md`
+- Red sand/raw → `references/red-sand-raw.md`
+- Red spinach/raw → `references/red-spinach-raw.md`
+- Red spinel/raw → `references/red-spinel-raw.md`
+- Red squirrel man/raw → `references/red-squirrel-man-raw.md`
+- Red squirrel/raw → `references/red-squirrel-raw.md`
+- Red tourmaline/raw → `references/red-tourmaline-raw.md`
+- Red zircon/raw → `references/red-zircon-raw.md`
+- Red-winged blackbird man/raw → `references/red-winged-blackbird-man-raw.md`
+- Red-winged blackbird/raw → `references/red-winged-blackbird-raw.md`
+- Reedgrass/raw → `references/reedgrass-raw.md`
+- Reindeer/raw → `references/reindeer-raw.md`
+- Reptile man/raw → `references/reptile-man-raw.md`
+- Required Raw Files → `references/required-raw-files.md`
+- Resin opal/raw → `references/resin-opal-raw.md`
+- Rhesus macaque man/raw → `references/rhesus-macaque-man-raw.md`
+- Rhesus macaque/raw → `references/rhesus-macaque-raw.md`
+- Rhinoceros man/raw → `references/rhinoceros-man-raw.md`
+- Rhinoceros/raw → `references/rhinoceros-raw.md`
+- Rhodolite/raw → `references/rhodolite-raw.md`
+- Rhubarb/raw → `references/rhubarb-raw.md`
+- Rhyolite/raw → `references/rhyolite-raw.md`
+- Rice/raw → `references/rice-raw.md`
+- River otter/raw → `references/river-otter-raw.md`
+- Roach man/raw → `references/roach-man-raw.md`
+- Roc/raw → `references/roc-raw.md`
+- Rock crystal/raw → `references/rock-crystal-raw.md`
+- Rock salt/raw → `references/rock-salt-raw.md`
+- Rodent man/raw → `references/rodent-man-raw.md`
+- Rope reed/raw → `references/rope-reed-raw.md`
+- Rose gold/raw → `references/rose-gold-raw.md`
+- Rose quartz/raw → `references/rose-quartz-raw.md`
+- Round lime/raw → `references/round-lime-raw.md`
+- Rubber tree/raw → `references/rubber-tree-raw.md`
+- Rubicelle/raw → `references/rubicelle-raw.md`
+- Ruby/raw → `references/ruby-raw.md`
+- Rush/raw → `references/rush-raw.md`
+- Rutherer/raw → `references/rutherer-raw.md`
+- Rutile/raw → `references/rutile-raw.md`
+- Rye/raw → `references/rye-raw.md`
+- Ryegrass/raw → `references/ryegrass-raw.md`
+- Saguaro/raw → `references/saguaro-raw.md`
+- Sailfin molly/raw → `references/sailfin-molly-raw.md`
+- Salmon/raw → `references/salmon-raw.md`
+- Saltpeter/raw → `references/saltpeter-raw.md`
+- Saltwater crocodile man/raw → `references/saltwater-crocodile-man-raw.md`
+- Saltwater crocodile/raw → `references/saltwater-crocodile-raw.md`
+- Sand pear/raw → `references/sand-pear-raw.md`
+- Sand/raw → `references/sand-raw.md`
+- Sandstone/raw → `references/sandstone-raw.md`
+- Sandy clay loam/raw → `references/sandy-clay-loam-raw.md`
+- Sandy clay/raw → `references/sandy-clay-raw.md`
+- Sandy loam/raw → `references/sandy-loam-raw.md`
+- Sapphire/raw → `references/sapphire-raw.md`
+- Sard/raw → `references/sard-raw.md`
+- Sardonyx/raw → `references/sardonyx-raw.md`
+- Sasquatch/raw → `references/sasquatch-raw.md`
+- Satinspar/raw → `references/satinspar-raw.md`
+- Satintail/raw → `references/satintail-raw.md`
+- Satyr/raw → `references/satyr-raw.md`
+- Saved game folder → `references/saved-game-folder.md`
+- Sawgrass/raw → `references/sawgrass-raw.md`
+- Scamps/raw → `references/scamps-raw.md`
+- Schist/raw → `references/schist-raw.md`
+- Schorl/raw → `references/schorl-raw.md`
+- Scimitar/raw → `references/scimitar-raw.md`
+- Scourge/raw → `references/scourge-raw.md`
+- Screw press/raw → `references/screw-press-raw.md`
+- Sea lamprey/raw → `references/sea-lamprey-raw.md`
+- Sea monster/raw → `references/sea-monster-raw.md`
+- Sea nettle jellyfish/raw → `references/sea-nettle-jellyfish-raw.md`
+- Sea otter/raw → `references/sea-otter-raw.md`
+- Sea serpent/raw → `references/sea-serpent-raw.md`
+- Seahorse/raw → `references/seahorse-raw.md`
+- Seed/raw → `references/seed-raw.md`
+- Selenite/raw → `references/selenite-raw.md`
+- Serpent man/raw → `references/serpent-man-raw.md`
+- Serpentine/raw → `references/serpentine-raw.md`
+- Shad/raw → `references/shad-raw.md`
+- Shale/raw → `references/shale-raw.md`
+- Sheep/raw → `references/sheep-raw.md`
+- Shell opal/raw → `references/shell-opal-raw.md`
+- Shell/raw → `references/shell-raw.md`
+- Short sword/raw → `references/short-sword-raw.md`
+- Shortfin mako shark/raw → `references/shortfin-mako-shark-raw.md`
+- Siamang/raw → `references/siamang-raw.md`
+- Siliceous ooze/raw → `references/siliceous-ooze-raw.md`
+- Silk/raw → `references/silk-raw.md`
+- Silt loam/raw → `references/silt-loam-raw.md`
+- Silt/raw → `references/silt-raw.md`
+- Siltstone/raw → `references/siltstone-raw.md`
+- Silty clay loam/raw → `references/silty-clay-loam-raw.md`
+- Silty clay/raw → `references/silty-clay-raw.md`
+- Silver/raw → `references/silver-raw.md`
+- Silvery gibbon/raw → `references/silvery-gibbon-raw.md`
+- Single-grain wheat/raw → `references/single-grain-wheat-raw.md`
+- Size → `references/size.md`
+- Skill token → `references/skill-token.md`
+- Skink man/raw → `references/skink-man-raw.md`
+- Skink/raw → `references/skink-raw.md`
+- Skunk man/raw → `references/skunk-man-raw.md`
+- Skunk/raw → `references/skunk-raw.md`
+- Slade/raw → `references/slade-raw.md`
+- Slate/raw → `references/slate-raw.md`
+- Sliver barb/raw → `references/sliver-barb-raw.md`
+- Sloth bear man/raw → `references/sloth-bear-man-raw.md`
+- Sloth bear/raw → `references/sloth-bear-raw.md`
+- Sloth man/raw → `references/sloth-man-raw.md`
+- Sloth/raw → `references/sloth-raw.md`
+- Slug man/raw → `references/slug-man-raw.md`
+- Slug/raw → `references/slug-raw.md`
+- Smoky quartz/raw → `references/smoky-quartz-raw.md`
+- Snail man/raw → `references/snail-man-raw.md`
+- Snail/raw → `references/snail-raw.md`
+- Snapping turtle man/raw → `references/snapping-turtle-man-raw.md`
+- Snowy owl man/raw → `references/snowy-owl-man-raw.md`
+- Snowy owl/raw → `references/snowy-owl-raw.md`
+- Soap maker's workshop/raw → `references/soap-maker-s-workshop-raw.md`
+- Soap/raw → `references/soap-raw.md`
+- Soft wheat/raw → `references/soft-wheat-raw.md`
+- Sole/raw → `references/sole-raw.md`
+- Sorghum/raw → `references/sorghum-raw.md`
+- Soybean/raw → `references/soybean-raw.md`
+- Sparrow man/raw → `references/sparrow-man-raw.md`
+- Sparrow/raw → `references/sparrow-raw.md`
+- Spear/raw → `references/spear-raw.md`
+- Speech file → `references/speech-file.md`
+- Spelt/raw → `references/spelt-raw.md`
+- Sperm whale man/raw → `references/sperm-whale-man-raw.md`
+- Sperm whale/raw → `references/sperm-whale-raw.md`
+- Sphalerite/raw → `references/sphalerite-raw.md`
+- Spider monkey man/raw → `references/spider-monkey-man-raw.md`
+- Spider monkey/raw → `references/spider-monkey-raw.md`
+- Spinach/raw → `references/spinach-raw.md`
+- Spiny dogfish/raw → `references/spiny-dogfish-raw.md`
+- Spit/raw → `references/spit-raw.md`
+- Sponge man/raw → `references/sponge-man-raw.md`
+- Sponge/raw → `references/sponge-raw.md`
+- Spore tree/raw → `references/spore-tree-raw.md`
+- Spotted ratfish/raw → `references/spotted-ratfish-raw.md`
+- Spotted wobbegong/raw → `references/spotted-wobbegong-raw.md`
+- Squash/raw → `references/squash-raw.md`
+- Squid man/raw → `references/squid-man-raw.md`
+- Squid/raw → `references/squid-raw.md`
+- Star ruby/raw → `references/star-ruby-raw.md`
+- Star sapphire/raw → `references/star-sapphire-raw.md`
+- Staring eyeball/raw → `references/staring-eyeball-raw.md`
+- Steel/raw → `references/steel-raw.md`
+- Steelhead trout/raw → `references/steelhead-trout-raw.md`
+- Sterling silver/raw → `references/sterling-silver-raw.md`
+- Stibnite/raw → `references/stibnite-raw.md`
+- Still/raw → `references/still-raw.md`
+- Stingray/raw → `references/stingray-raw.md`
+- Stoat man/raw → `references/stoat-man-raw.md`
+- Stoat/raw → `references/stoat-raw.md`
+- Stoneware/raw → `references/stoneware-raw.md`
+- Strangler/raw → `references/strangler-raw.md`
+- Strawberry → `references/strawberry.md`
+- Strawberry/raw → `references/strawberry-raw.md`
+- String bean/raw → `references/string-bean-raw.md`
+- String dump/raw → `references/string-dump-raw.md`
+- Sturgeon/raw → `references/sturgeon-raw.md`
+- Sun berry/raw → `references/sun-berry-raw.md`
+- Sunstone/raw → `references/sunstone-raw.md`
+- Swan man/raw → `references/swan-man-raw.md`
+- Swan/raw → `references/swan-raw.md`
+- Sweat/raw → `references/sweat-raw.md`
+- Sweet pod/raw → `references/sweet-pod-raw.md`
+- Sweet potato/raw → `references/sweet-potato-raw.md`
+- Swordfish/raw → `references/swordfish-raw.md`
+- Sylvite/raw → `references/sylvite-raw.md`
+- Syndrome → `references/syndrome.md`
+- Syndrome examples → `references/syndrome-examples.md`
+- Talc/raw → `references/talc-raw.md`
+- Tallow/raw → `references/tallow-raw.md`
+- Tanzanite/raw → `references/tanzanite-raw.md`
+- Tapir man/raw → `references/tapir-man-raw.md`
+- Tapir/raw → `references/tapir-raw.md`
+- Taro/raw → `references/taro-raw.md`
+- Tea/raw → `references/tea-raw.md`
+- Tears/raw → `references/tears-raw.md`
+- Teff/raw → `references/teff-raw.md`
+- Termite/raw → `references/termite-raw.md`
+- Tetrahedrite/raw → `references/tetrahedrite-raw.md`
+- Text book instruction.txt/raw → `references/text-book-instruction-txt-raw.md`
+- Text curse.txt/raw → `references/text-curse-txt-raw.md`
+- Text dwarf.txt/raw → `references/text-dwarf-txt-raw.md`
+- Text general.txt/raw → `references/text-general-txt-raw.md`
+- Text viewer → `references/text-viewer.md`
+- Thornback ray/raw → `references/thornback-ray-raw.md`
+- Thrips man/raw → `references/thrips-man-raw.md`
+- Thrips/raw → `references/thrips-raw.md`
+- Tick man/raw → `references/tick-man-raw.md`
+- Tick/raw → `references/tick-raw.md`
+- Tiger iron/raw → `references/tiger-iron-raw.md`
+- Tiger man/raw → `references/tiger-man-raw.md`
+- Tiger shark/raw → `references/tiger-shark-raw.md`
+- Tiger/raw → `references/tiger-raw.md`
+- Tigereye/raw → `references/tigereye-raw.md`
+- Tigerfish/raw → `references/tigerfish-raw.md`
+- Tileset repository → `references/tileset-repository.md`
+- Tilesets → `references/tilesets.md`
+- Tin glaze/raw → `references/tin-glaze-raw.md`
+- Tin/raw → `references/tin-raw.md`
+- Tissue definition token → `references/tissue-definition-token.md`
+- Toad man/raw → `references/toad-man-raw.md`
+- Toad/raw → `references/toad-raw.md`
+- Token → `references/token.md`
+- Tomatillo/raw → `references/tomatillo-raw.md`
+- Tomato plant/raw → `references/tomato-plant-raw.md`
+- Tomato/raw → `references/tomato-raw.md`
+- Tool token → `references/tool-token.md`
+- Topaz/raw → `references/topaz-raw.md`
+- Topazolite/raw → `references/topazolite-raw.md`
+- Tower-cap/raw → `references/tower-cap-raw.md`
+- Trap component token → `references/trap-component-token.md`
+- Trifle pewter/raw → `references/trifle-pewter-raw.md`
+- Troglodyte/raw → `references/troglodyte-raw.md`
+- Troll/raw → `references/troll-raw.md`
+- Tsavorite/raw → `references/tsavorite-raw.md`
+- Tube agate/raw → `references/tube-agate-raw.md`
+- Tunnel tube/raw → `references/tunnel-tube-raw.md`
+- Turkey/raw → `references/turkey-raw.md`
+- Turnip/raw → `references/turnip-raw.md`
+- Turquoise/raw → `references/turquoise-raw.md`
+- Two-grain wheat/raw → `references/two-grain-wheat-raw.md`
+- Two-handed sword/raw → `references/two-handed-sword-raw.md`
+- Two-humped camel man/raw → `references/two-humped-camel-man-raw.md`
+- Two-humped camel/raw → `references/two-humped-camel-raw.md`
+- Two-legged rhino lizard/raw → `references/two-legged-rhino-lizard-raw.md`
+- Underlichen/raw → `references/underlichen-raw.md`
+- Unicorn/raw → `references/unicorn-raw.md`
+- Unit type token → `references/unit-type-token.md`
+- Urad bean/raw → `references/urad-bean-raw.md`
+- Utilities → `references/utilities.md`
+- Valley herb/raw → `references/valley-herb-raw.md`
+- Variscite/raw → `references/variscite-raw.md`
+- Velvet grass/raw → `references/velvet-grass-raw.md`
+- Violet spessartine/raw → `references/violet-spessartine-raw.md`
+- Voracious cave crawler/raw → `references/voracious-cave-crawler-raw.md`
+- Vulture man/raw → `references/vulture-man-raw.md`
+- Vulture/raw → `references/vulture-raw.md`
+- Wagon/raw → `references/wagon-raw.md`
+- Walnut/raw → `references/walnut-raw.md`
+- Walrus man/raw → `references/walrus-man-raw.md`
+- Walrus/raw → `references/walrus-raw.md`
+- War hammer/raw → `references/war-hammer-raw.md`
+- Warthog man/raw → `references/warthog-man-raw.md`
+- Warthog/raw → `references/warthog-raw.md`
+- Water buffalo/raw → `references/water-buffalo-raw.md`
+- Watermelon vine/raw → `references/watermelon-vine-raw.md`
+- Watermelon/raw → `references/watermelon-raw.md`
+- Wax opal/raw → `references/wax-opal-raw.md`
+- Weapon token → `references/weapon-token.md`
+- Weasel man/raw → `references/weasel-man-raw.md`
+- Weasel/raw → `references/weasel-raw.md`
+- Whale shark/raw → `references/whale-shark-raw.md`
+- Whip vine/raw → `references/whip-vine-raw.md`
+- Whip/raw → `references/whip-raw.md`
+- White chalcedony/raw → `references/white-chalcedony-raw.md`
+- White jade/raw → `references/white-jade-raw.md`
+- White millet/raw → `references/white-millet-raw.md`
+- White mountain heather/raw → `references/white-mountain-heather-raw.md`
+- White opal/raw → `references/white-opal-raw.md`
+- White sand/raw → `references/white-sand-raw.md`
+- White stork man/raw → `references/white-stork-man-raw.md`
+- White stork/raw → `references/white-stork-raw.md`
+- White yam/raw → `references/white-yam-raw.md`
+- White-browed gibbon/raw → `references/white-browed-gibbon-raw.md`
+- White-handed gibbon/raw → `references/white-handed-gibbon-raw.md`
+- White-spotted puffer/raw → `references/white-spotted-puffer-raw.md`
+- Whitetip reef shark/raw → `references/whitetip-reef-shark-raw.md`
+- Wild boar man/raw → `references/wild-boar-man-raw.md`
+- Wild boar/raw → `references/wild-boar-raw.md`
+- Wild carrot/raw → `references/wild-carrot-raw.md`
+- Willow/raw → `references/willow-raw.md`
+- Winter melon/raw → `references/winter-melon-raw.md`
+- Wolf man/raw → `references/wolf-man-raw.md`
+- Wolf/raw → `references/wolf-raw.md`
+- Wolverine man/raw → `references/wolverine-man-raw.md`
+- Wolverine/raw → `references/wolverine-raw.md`
+- Wombat man/raw → `references/wombat-man-raw.md`
+- Wombat/raw → `references/wombat-raw.md`
+- Wood opal/raw → `references/wood-opal-raw.md`
+- Wood/raw → `references/wood-raw.md`
+- World gen.txt/raw → `references/world-gen-txt-raw.md`
+- World token → `references/world-token.md`
+- Worm man/raw → `references/worm-man-raw.md`
+- Worm/raw → `references/worm-raw.md`
+- Wormy tendril/raw → `references/wormy-tendril-raw.md`
+- Wren man/raw → `references/wren-man-raw.md`
+- Wren/raw → `references/wren-raw.md`
+- Yak/raw → `references/yak-raw.md`
+- Yellow bullhead/raw → `references/yellow-bullhead-raw.md`
+- Yellow diamond/raw → `references/yellow-diamond-raw.md`
+- Yellow grossular/raw → `references/yellow-grossular-raw.md`
+- Yellow jasper/raw → `references/yellow-jasper-raw.md`
+- Yellow sand/raw → `references/yellow-sand-raw.md`
+- Yellow spessartine/raw → `references/yellow-spessartine-raw.md`
+- Yellow zircon/raw → `references/yellow-zircon-raw.md`
+- Yeti/raw → `references/yeti-raw.md`
+- Zinc/raw → `references/zinc-raw.md`
+- Zoysia/raw → `references/zoysia-raw.md`

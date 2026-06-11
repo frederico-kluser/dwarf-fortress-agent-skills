@@ -1,0 +1,519 @@
+---
+name: criaturas
+description: Criaturas do Dwarf Fortress — animais, humanoides, megabestas, semi-megabestas, mortos-vivos, vermes, raças jogáveis e bestiário. Use quando o jogador perguntar sobre um bicho específico, monstros, inimigos, montarias, animais domésticos ou criaturas selvagens.
+---
+
+# Criaturas (Dwarf Fortress — fortress-mode)
+
+Localize e leia **apenas** o artigo relevante em `references/` (progressive disclosure — não leia tudo).
+
+## Como buscar
+Se não souber o arquivo exato, rode a busca local (a partir da raiz `df-skills/`):
+`bash scripts/search.sh fortress-mode/criaturas "termo de busca"`
+e leia o arquivo retornado.
+
+## Índice de artigos (504)
+- Adder → `references/adder.md`
+- Adder man → `references/adder-man.md`
+- Agent → `references/agent.md`
+- Alligator → `references/alligator.md`
+- Alligator man → `references/alligator-man.md`
+- Alpaca → `references/alpaca.md`
+- Alternate creature sorting → `references/alternate-creature-sorting.md`
+- Amethyst man → `references/amethyst-man.md`
+- Amphibian man → `references/amphibian-man.md`
+- Amphibious → `references/amphibious.md`
+- Angel → `references/angel.md`
+- Angelshark → `references/angelshark.md`
+- Animal caretaker → `references/animal-caretaker.md`
+- Animal dissector → `references/animal-dissector.md`
+- Animal person → `references/animal-person.md`
+- Animal sponsorship drive → `references/animal-sponsorship-drive.md`
+- Animal trainer → `references/animal-trainer.md`
+- Animal trap → `references/animal-trap.md`
+- Anole man → `references/anole-man.md`
+- Antman → `references/antman.md`
+- Aquatic → `references/aquatic.md`
+- Axolotl man → `references/axolotl-man.md`
+- Aye-aye → `references/aye-aye.md`
+- Aye-aye man → `references/aye-aye-man.md`
+- Badger → `references/badger.md`
+- Badger man → `references/badger-man.md`
+- Barn owl → `references/barn-owl.md`
+- Barn owl man → `references/barn-owl-man.md`
+- Basking shark → `references/basking-shark.md`
+- Bat man → `references/bat-man.md`
+- Beaching → `references/beaching.md`
+- Beak dog → `references/beak-dog.md`
+- Beast hunter → `references/beast-hunter.md`
+- Beaver → `references/beaver.md`
+- Beaver man → `references/beaver-man.md`
+- Beetle man → `references/beetle-man.md`
+- Bilou → `references/bilou.md`
+- Black bear → `references/black-bear.md`
+- Black bear man → `references/black-bear-man.md`
+- Black mamba → `references/black-mamba.md`
+- Black mamba man → `references/black-mamba-man.md`
+- Black-crested gibbon → `references/black-crested-gibbon.md`
+- Black-handed gibbon → `references/black-handed-gibbon.md`
+- Blacktip reef shark → `references/blacktip-reef-shark.md`
+- Blind cave bear → `references/blind-cave-bear.md`
+- Blind cave ogre → `references/blind-cave-ogre.md`
+- Blizzard man → `references/blizzard-man.md`
+- Blood man → `references/blood-man.md`
+- Blue peafowl → `references/blue-peafowl.md`
+- Blue shark → `references/blue-shark.md`
+- Bluefin tuna → `references/bluefin-tuna.md`
+- Bluefish → `references/bluefish.md`
+- Bluejay man → `references/bluejay-man.md`
+- Bogeyman → `references/bogeyman.md`
+- Bonobo → `references/bonobo.md`
+- Boss → `references/boss.md`
+- Breeding → `references/breeding.md`
+- Bronze colossus → `references/bronze-colossus.md`
+- Bugbat → `references/bugbat.md`
+- Building destroyer → `references/building-destroyer.md`
+- Bull shark → `references/bull-shark.md`
+- Bushmaster → `references/bushmaster.md`
+- Bushmaster man → `references/bushmaster-man.md`
+- Buzzard → `references/buzzard.md`
+- Buzzard man → `references/buzzard-man.md`
+- Camel → `references/camel.md`
+- Captured live fish → `references/captured-live-fish.md`
+- Capybara → `references/capybara.md`
+- Capybara man → `references/capybara-man.md`
+- Cardinal man → `references/cardinal-man.md`
+- Carp → `references/carp.md`
+- Cat → `references/cat.md`
+- Cave blob → `references/cave-blob.md`
+- Cave crocodile → `references/cave-crocodile.md`
+- Cave dragon → `references/cave-dragon.md`
+- Cave fish man → `references/cave-fish-man.md`
+- Cave floater → `references/cave-floater.md`
+- Cave swallow man → `references/cave-swallow-man.md`
+- Cavy → `references/cavy.md`
+- Chameleon → `references/chameleon.md`
+- Chameleon man → `references/chameleon-man.md`
+- Cheetah → `references/cheetah.md`
+- Cheetah man → `references/cheetah-man.md`
+- Chicken → `references/chicken.md`
+- Chimpanzee → `references/chimpanzee.md`
+- Chipmunk man → `references/chipmunk-man.md`
+- Clowns → `references/clowns.md`
+- Cod → `references/cod.md`
+- Coelacanth → `references/coelacanth.md`
+- Common skate → `references/common-skate.md`
+- Community of Dwarf Fortress → `references/community-of-dwarf-fortress.md`
+- Conger eel → `references/conger-eel.md`
+- Construct creature → `references/construct-creature.md`
+- Copperhead snake → `references/copperhead-snake.md`
+- Copperhead snake man → `references/copperhead-snake-man.md`
+- Cougar → `references/cougar.md`
+- Cougar man → `references/cougar-man.md`
+- Cow → `references/cow.md`
+- Craftsdwarf's workshop → `references/craftsdwarf-s-workshop.md`
+- Creature → `references/creature.md`
+- Creature flags in DF memory → `references/creature-flags-in-df-memory.md`
+- Creature/Edit notice → `references/creature-edit-notice.md`
+- Creatures → `references/creatures.md`
+- Creeping eye → `references/creeping-eye.md`
+- Criminal → `references/criminal.md`
+- Crow man → `references/crow-man.md`
+- Crundle → `references/crundle.md`
+- Current resident → `references/current-resident.md`
+- Cyclops → `references/cyclops.md`
+- Damselfly → `references/damselfly.md`
+- Damselfly man → `references/damselfly-man.md`
+- Dark gnome → `references/dark-gnome.md`
+- Deer → `references/deer.md`
+- Deer man → `references/deer-man.md`
+- Demon → `references/demon.md`
+- Demonic fortress → `references/demonic-fortress.md`
+- Dog → `references/dog.md`
+- Domestic animal → `references/domestic-animal.md`
+- Donkey → `references/donkey.md`
+- Dragon → `references/dragon.md`
+- Dragonfire → `references/dragonfire.md`
+- Dragonfly → `references/dragonfly.md`
+- Dragonfly man → `references/dragonfly-man.md`
+- Draltha → `references/draltha.md`
+- Drunian → `references/drunian.md`
+- Drunk → `references/drunk.md`
+- Duck → `references/duck.md`
+- Dwarf → `references/dwarf.md`
+- Dwarf Fortress → `references/dwarf-fortress.md`
+- Dwarf Fortress Development → `references/dwarf-fortress-development.md`
+- Dwarf Fortress Italia → `references/dwarf-fortress-italia.md`
+- Dwarf Fortress RPG → `references/dwarf-fortress-rpg.md`
+- Dwarf Fortress Talk → `references/dwarf-fortress-talk.md`
+- Dwarf Fortress Wiki → `references/dwarf-fortress-wiki.md`
+- Dwarf Fortress webcomics → `references/dwarf-fortress-webcomics.md`
+- Dwarf cancels Construct Building: Item blocking site → `references/dwarf-cancels-construct-building-item-blocking-site.md`
+- Dwarf cancels Construct Building: cannot reach site → `references/dwarf-cancels-construct-building-cannot-reach-site.md`
+- Dwarf cancels Store Item: Item inaccessible → `references/dwarf-cancels-store-item-item-inaccessible.md`
+- Dwarf cancels Store Item: Job item misplaced → `references/dwarf-cancels-store-item-job-item-misplaced.md`
+- Dwarf cancels construct "Rock object": Needs non-economic rock → `references/dwarf-cancels-construct-rock-object-needs-non-economic-rock.md`
+- Dwarf cancels construction of Wall: Creature occupying site → `references/dwarf-cancels-construction-of-wall-creature-occupying-site.md`
+- Dwarf cancels fill pond: Inappropriate building → `references/dwarf-cancels-fill-pond-inappropriate-building.md`
+- Dwarf cancels task: Could not find path → `references/dwarf-cancels-task-could-not-find-path.md`
+- Dwarf cancels task: Dangerous terrain → `references/dwarf-cancels-task-dangerous-terrain.md`
+- Dwarf cancels task: Dropoff inaccessible → `references/dwarf-cancels-task-dropoff-inaccessible.md`
+- Dwarf cancels task: Forbidden area → `references/dwarf-cancels-task-forbidden-area.md`
+- Dwarf cancels task: Handling dangerous creature → `references/dwarf-cancels-task-handling-dangerous-creature.md`
+- Dwarf cancels task: Hunting vermin for food → `references/dwarf-cancels-task-hunting-vermin-for-food.md`
+- Dwarf cancels task: Interrupted → `references/dwarf-cancels-task-interrupted.md`
+- Dwarf cancels task: Job item lost or destroyed → `references/dwarf-cancels-task-job-item-lost-or-destroyed.md`
+- Eagle → `references/eagle.md`
+- Eagle man → `references/eagle-man.md`
+- Egg → `references/egg.md`
+- Elephant → `references/elephant.md`
+- Elephant man → `references/elephant-man.md`
+- Elf → `references/elf.md`
+- Elk → `references/elk.md`
+- Elk bird → `references/elk-bird.md`
+- Elk man → `references/elk-man.md`
+- Emperor penguin → `references/emperor-penguin.md`
+- Exotic pet → `references/exotic-pet.md`
+- Fanciful → `references/fanciful.md`
+- Fire snake → `references/fire-snake.md`
+- Firefly man → `references/firefly-man.md`
+- Fisherdwarf → `references/fisherdwarf.md`
+- Flesh ball → `references/flesh-ball.md`
+- Floating guts → `references/floating-guts.md`
+- Fly man → `references/fly-man.md`
+- Flying → `references/flying.md`
+- Flying squirrel man → `references/flying-squirrel-man.md`
+- Forgotten beast → `references/forgotten-beast.md`
+- Forgotten beast/gallery → `references/forgotten-beast-gallery.md`
+- Foul blendec → `references/foul-blendec.md`
+- Fox → `references/fox.md`
+- Fox man → `references/fox-man.md`
+- Frill shark → `references/frill-shark.md`
+- Gabbro man → `references/gabbro-man.md`
+- Gazelle → `references/gazelle.md`
+- Gazelle man → `references/gazelle-man.md`
+- Genderless → `references/genderless.md`
+- Genetics → `references/genetics.md`
+- Ghost → `references/ghost.md`
+- Giant → `references/giant.md`
+- Giant adder → `references/giant-adder.md`
+- Giant alligator → `references/giant-alligator.md`
+- Giant animal → `references/giant-animal.md`
+- Giant anole → `references/giant-anole.md`
+- Giant axolotl → `references/giant-axolotl.md`
+- Giant aye-aye → `references/giant-aye-aye.md`
+- Giant badger → `references/giant-badger.md`
+- Giant barn owl → `references/giant-barn-owl.md`
+- Giant bat → `references/giant-bat.md`
+- Giant beaver → `references/giant-beaver.md`
+- Giant beetle → `references/giant-beetle.md`
+- Giant black bear → `references/giant-black-bear.md`
+- Giant black mamba → `references/giant-black-mamba.md`
+- Giant bluejay → `references/giant-bluejay.md`
+- Giant bushmaster → `references/giant-bushmaster.md`
+- Giant buzzard → `references/giant-buzzard.md`
+- Giant capybara → `references/giant-capybara.md`
+- Giant cardinal → `references/giant-cardinal.md`
+- Giant cave spider → `references/giant-cave-spider.md`
+- Giant cave swallow → `references/giant-cave-swallow.md`
+- Giant cave toad → `references/giant-cave-toad.md`
+- Giant chameleon → `references/giant-chameleon.md`
+- Giant cheetah → `references/giant-cheetah.md`
+- Giant chipmunk → `references/giant-chipmunk.md`
+- Giant copperhead snake → `references/giant-copperhead-snake.md`
+- Giant cougar → `references/giant-cougar.md`
+- Giant crow → `references/giant-crow.md`
+- Giant damselfly → `references/giant-damselfly.md`
+- Giant deer → `references/giant-deer.md`
+- Giant desert scorpion → `references/giant-desert-scorpion.md`
+- Giant dragonfly → `references/giant-dragonfly.md`
+- Giant eagle → `references/giant-eagle.md`
+- Giant earthworm → `references/giant-earthworm.md`
+- Giant elephant → `references/giant-elephant.md`
+- Giant elk → `references/giant-elk.md`
+- Giant firefly → `references/giant-firefly.md`
+- Giant fly → `references/giant-fly.md`
+- Giant flying squirrel → `references/giant-flying-squirrel.md`
+- Giant fox → `references/giant-fox.md`
+- Giant gazelle → `references/giant-gazelle.md`
+- Giant gila monster → `references/giant-gila-monster.md`
+- Giant giraffe → `references/giant-giraffe.md`
+- Giant grackle → `references/giant-grackle.md`
+- Giant gray squirrel → `references/giant-gray-squirrel.md`
+- Giant great horned owl → `references/giant-great-horned-owl.md`
+- Giant grizzly bear → `references/giant-grizzly-bear.md`
+- Giant groundhog → `references/giant-groundhog.md`
+- Giant grouper → `references/giant-grouper.md`
+- Giant hippo → `references/giant-hippo.md`
+- Giant hoary marmot → `references/giant-hoary-marmot.md`
+- Giant honey badger → `references/giant-honey-badger.md`
+- Giant hornbill → `references/giant-hornbill.md`
+- Giant iguana → `references/giant-iguana.md`
+- Giant jaguar → `references/giant-jaguar.md`
+- Giant kea → `references/giant-kea.md`
+- Giant leopard → `references/giant-leopard.md`
+- Giant lion → `references/giant-lion.md`
+- Giant lizard → `references/giant-lizard.md`
+- Giant mandrill → `references/giant-mandrill.md`
+- Giant mole → `references/giant-mole.md`
+- Giant monarch butterfly → `references/giant-monarch-butterfly.md`
+- Giant moon snail → `references/giant-moon-snail.md`
+- Giant moose → `references/giant-moose.md`
+- Giant mountain goat → `references/giant-mountain-goat.md`
+- Giant muskox → `references/giant-muskox.md`
+- Giant nautilus → `references/giant-nautilus.md`
+- Giant olm → `references/giant-olm.md`
+- Giant one-humped camel → `references/giant-one-humped-camel.md`
+- Giant oriole → `references/giant-oriole.md`
+- Giant pangolin → `references/giant-pangolin.md`
+- Giant penguin → `references/giant-penguin.md`
+- Giant platypus → `references/giant-platypus.md`
+- Giant polar bear → `references/giant-polar-bear.md`
+- Giant raccoon → `references/giant-raccoon.md`
+- Giant rat → `references/giant-rat.md`
+- Giant red squirrel → `references/giant-red-squirrel.md`
+- Giant red-winged blackbird → `references/giant-red-winged-blackbird.md`
+- Giant rhesus macaque → `references/giant-rhesus-macaque.md`
+- Giant rhinoceros → `references/giant-rhinoceros.md`
+- Giant roach → `references/giant-roach.md`
+- Giant saltwater crocodile → `references/giant-saltwater-crocodile.md`
+- Giant skink → `references/giant-skink.md`
+- Giant tiger → `references/giant-tiger.md`
+- Giant toad → `references/giant-toad.md`
+- Giant two-humped camel → `references/giant-two-humped-camel.md`
+- Giant vulture → `references/giant-vulture.md`
+- Giant walrus → `references/giant-walrus.md`
+- Giant warthog → `references/giant-warthog.md`
+- Giant wolf → `references/giant-wolf.md`
+- Gigantic panda → `references/gigantic-panda.md`
+- Gila monster → `references/gila-monster.md`
+- Gila monster man → `references/gila-monster-man.md`
+- Giraffe → `references/giraffe.md`
+- Giraffe man → `references/giraffe-man.md`
+- Goat → `references/goat.md`
+- Goblin → `references/goblin.md`
+- Goblin christmas → `references/goblin-christmas.md`
+- Goblin language → `references/goblin-language.md`
+- Goose → `references/goose.md`
+- Gorilla → `references/gorilla.md`
+- Gorlak → `references/gorlak.md`
+- Grackle man → `references/grackle-man.md`
+- Gray gibbon → `references/gray-gibbon.md`
+- Gray squirrel man → `references/gray-squirrel-man.md`
+- Great barracuda → `references/great-barracuda.md`
+- Great horned owl → `references/great-horned-owl.md`
+- Great horned owl man → `references/great-horned-owl-man.md`
+- Great white shark → `references/great-white-shark.md`
+- Green devourer → `references/green-devourer.md`
+- Gremlin → `references/gremlin.md`
+- Grimeling → `references/grimeling.md`
+- Grizzly bear → `references/grizzly-bear.md`
+- Grizzly bear man → `references/grizzly-bear-man.md`
+- Groundhog → `references/groundhog.md`
+- Groundhog man → `references/groundhog-man.md`
+- Guineafowl → `references/guineafowl.md`
+- Halibut → `references/halibut.md`
+- Hammerhead shark → `references/hammerhead-shark.md`
+- Harpy → `references/harpy.md`
+- Hateable → `references/hateable.md`
+- Hearthperson → `references/hearthperson.md`
+- Helmet snake → `references/helmet-snake.md`
+- Hippo → `references/hippo.md`
+- Hippo man → `references/hippo-man.md`
+- Hoary marmot → `references/hoary-marmot.md`
+- Hoary marmot man → `references/hoary-marmot-man.md`
+- Honey badger → `references/honey-badger.md`
+- Honey badger man → `references/honey-badger-man.md`
+- Hornbill → `references/hornbill.md`
+- Horse → `references/horse.md`
+- Human → `references/human.md`
+- Human language → `references/human-language.md`
+- Hungry head → `references/hungry-head.md`
+- Hunting animal → `references/hunting-animal.md`
+- Hydra → `references/hydra.md`
+- Ice wolf → `references/ice-wolf.md`
+- Iguana → `references/iguana.md`
+- Iguana man → `references/iguana-man.md`
+- Iron man → `references/iron-man.md`
+- Jabberer → `references/jabberer.md`
+- Jaguar → `references/jaguar.md`
+- Jaguar man → `references/jaguar-man.md`
+- Kea → `references/kea.md`
+- King of beasts → `references/king-of-beasts.md`
+- Kobold → `references/kobold.md`
+- Kobold bulb → `references/kobold-bulb.md`
+- Kobold language → `references/kobold-language.md`
+- Large rat → `references/large-rat.md`
+- Learning → `references/learning.md`
+- Legacy of Dwarf Fortress → `references/legacy-of-dwarf-fortress.md`
+- Leopard → `references/leopard.md`
+- Leopard man → `references/leopard-man.md`
+- Lion → `references/lion.md`
+- Lion man → `references/lion-man.md`
+- List of Dwarf Fortress developer interviews → `references/list-of-dwarf-fortress-developer-interviews.md`
+- List of Dwarf Fortress references → `references/list-of-dwarf-fortress-references.md`
+- List of creatures by adult size → `references/list-of-creatures-by-adult-size.md`
+- List of creatures by pet value → `references/list-of-creatures-by-pet-value.md`
+- Little penguin → `references/little-penguin.md`
+- Lizard man → `references/lizard-man.md`
+- Llama → `references/llama.md`
+- Longfin mako shark → `references/longfin-mako-shark.md`
+- Longnose gar → `references/longnose-gar.md`
+- Magma crab → `references/magma-crab.md`
+- Magma man → `references/magma-man.md`
+- Mandrill → `references/mandrill.md`
+- Mandrill man → `references/mandrill-man.md`
+- Manera → `references/manera.md`
+- Manta ray → `references/manta-ray.md`
+- Marlin → `references/marlin.md`
+- Megabeast → `references/megabeast.md`
+- Mercenary → `references/mercenary.md`
+- Milk → `references/milk.md`
+- Milkfish → `references/milkfish.md`
+- Minotaur → `references/minotaur.md`
+- Molemarian → `references/molemarian.md`
+- Monarch butterfly man → `references/monarch-butterfly-man.md`
+- Monk → `references/monk.md`
+- Monster slayer → `references/monster-slayer.md`
+- Monsterkiller → `references/monsterkiller.md`
+- Moose → `references/moose.md`
+- Moose man → `references/moose-man.md`
+- Mount → `references/mount.md`
+- Mountain gnome → `references/mountain-gnome.md`
+- Mountain goat → `references/mountain-goat.md`
+- Mountain goat man → `references/mountain-goat-man.md`
+- Mud man → `references/mud-man.md`
+- Mule → `references/mule.md`
+- Mummy → `references/mummy.md`
+- Muskox → `references/muskox.md`
+- Muskox man → `references/muskox-man.md`
+- Naked mole dog → `references/naked-mole-dog.md`
+- Necromancer → `references/necromancer.md`
+- Night creature → `references/night-creature.md`
+- Night troll → `references/night-troll.md`
+- Nightwing → `references/nightwing.md`
+- No Exert → `references/no-exert.md`
+- No Pain → `references/no-pain.md`
+- No Stun → `references/no-stun.md`
+- Nurse shark → `references/nurse-shark.md`
+- Ocean sunfish → `references/ocean-sunfish.md`
+- Ogre → `references/ogre.md`
+- Olm man → `references/olm-man.md`
+- One-humped camel → `references/one-humped-camel.md`
+- One-humped camel man → `references/one-humped-camel-man.md`
+- Opah → `references/opah.md`
+- Orangutan → `references/orangutan.md`
+- Oriole man → `references/oriole-man.md`
+- Panda → `references/panda.md`
+- Panda man → `references/panda-man.md`
+- Pangolin → `references/pangolin.md`
+- Pangolin man → `references/pangolin-man.md`
+- Peddler → `references/peddler.md`
+- Penguin → `references/penguin.md`
+- Penguin man → `references/penguin-man.md`
+- Pig → `references/pig.md`
+- Pike (fish) → `references/pike-fish.md`
+- Pileated gibbon → `references/pileated-gibbon.md`
+- Pilgrim → `references/pilgrim.md`
+- Platypus → `references/platypus.md`
+- Platypus man → `references/platypus-man.md`
+- Plump helmet man → `references/plump-helmet-man.md`
+- Polar bear → `references/polar-bear.md`
+- Polar bear man → `references/polar-bear-man.md`
+- Pond grabber → `references/pond-grabber.md`
+- Priest → `references/priest.md`
+- Prophet → `references/prophet.md`
+- Quester → `references/quester.md`
+- Rabbit → `references/rabbit.md`
+- Raccoon → `references/raccoon.md`
+- Raccoon man → `references/raccoon-man.md`
+- Random creature profile → `references/random-creature-profile.md`
+- Rat man → `references/rat-man.md`
+- Raven → `references/raven.md`
+- Reacher → `references/reacher.md`
+- Reception of Dwarf Fortress → `references/reception-of-dwarf-fortress.md`
+- Red squirrel man → `references/red-squirrel-man.md`
+- Red-winged blackbird man → `references/red-winged-blackbird-man.md`
+- Reindeer → `references/reindeer.md`
+- Reptile man → `references/reptile-man.md`
+- Rhesus macaque → `references/rhesus-macaque.md`
+- Rhesus macaque man → `references/rhesus-macaque-man.md`
+- Rhinoceros → `references/rhinoceros.md`
+- Rhinoceros man → `references/rhinoceros-man.md`
+- Roach man → `references/roach-man.md`
+- Roc → `references/roc.md`
+- Rodent man → `references/rodent-man.md`
+- Rutherer → `references/rutherer.md`
+- Saltwater crocodile → `references/saltwater-crocodile.md`
+- Saltwater crocodile man → `references/saltwater-crocodile-man.md`
+- Sasquatch → `references/sasquatch.md`
+- Sea lamprey → `references/sea-lamprey.md`
+- Sea monster → `references/sea-monster.md`
+- Sea nettle jellyfish → `references/sea-nettle-jellyfish.md`
+- Sea serpent → `references/sea-serpent.md`
+- Semi-megabeast → `references/semi-megabeast.md`
+- Serpent man → `references/serpent-man.md`
+- Shark → `references/shark.md`
+- Sheep → `references/sheep.md`
+- Shell → `references/shell.md`
+- Shortfin mako shark → `references/shortfin-mako-shark.md`
+- Siamang → `references/siamang.md`
+- Silvery gibbon → `references/silvery-gibbon.md`
+- Skink man → `references/skink-man.md`
+- Smell → `references/smell.md`
+- Speaking → `references/speaking.md`
+- Spiny dogfish → `references/spiny-dogfish.md`
+- Sponge → `references/sponge.md`
+- Spotted wobbegong → `references/spotted-wobbegong.md`
+- Steals drink → `references/steals-drink.md`
+- Steals food → `references/steals-food.md`
+- Steals items → `references/steals-items.md`
+- Stingray → `references/stingray.md`
+- Strangler → `references/strangler.md`
+- Sturgeon → `references/sturgeon.md`
+- Swordfish → `references/swordfish.md`
+- Syndrome → `references/syndrome.md`
+- Text dwarf.txt → `references/text-dwarf-txt.md`
+- Tiger → `references/tiger.md`
+- Tiger man → `references/tiger-man.md`
+- Tiger shark → `references/tiger-shark.md`
+- Tigerfish → `references/tigerfish.md`
+- Titan → `references/titan.md`
+- Toad man → `references/toad-man.md`
+- Trapavoid → `references/trapavoid.md`
+- Troglodyte → `references/troglodyte.md`
+- Troll → `references/troll.md`
+- Turkey → `references/turkey.md`
+- Two-humped camel → `references/two-humped-camel.md`
+- Two-humped camel man → `references/two-humped-camel-man.md`
+- Undead → `references/undead.md`
+- Underworld → `references/underworld.md`
+- Underworld spire → `references/underworld-spire.md`
+- Unicorn → `references/unicorn.md`
+- Vampire → `references/vampire.md`
+- Vault → `references/vault.md`
+- Venom → `references/venom.md`
+- Vermin → `references/vermin.md`
+- Villain → `references/villain.md`
+- Visitor → `references/visitor.md`
+- Voracious cave crawler → `references/voracious-cave-crawler.md`
+- Vulture → `references/vulture.md`
+- Vulture man → `references/vulture-man.md`
+- Walrus → `references/walrus.md`
+- Walrus man → `references/walrus-man.md`
+- War animal → `references/war-animal.md`
+- Warthog → `references/warthog.md`
+- Warthog man → `references/warthog-man.md`
+- Water buffalo → `references/water-buffalo.md`
+- Web → `references/web.md`
+- Werebeast → `references/werebeast.md`
+- Whale shark → `references/whale-shark.md`
+- White-browed gibbon → `references/white-browed-gibbon.md`
+- White-handed gibbon → `references/white-handed-gibbon.md`
+- Whitetip reef shark → `references/whitetip-reef-shark.md`
+- Wolf → `references/wolf.md`
+- Wolf man → `references/wolf-man.md`
+- Wolverine → `references/wolverine.md`
+- Worm man → `references/worm-man.md`
+- Yak → `references/yak.md`
+- Yeti → `references/yeti.md`

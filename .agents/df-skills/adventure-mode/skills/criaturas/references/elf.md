@@ -1,0 +1,81 @@
+# Elf
+
+> Fonte: [Elf](https://dwarffortresswiki.org/index.php/Elf) — Dwarf Fortress Wiki (GFDL/MIT)
+
+**Elves** (singular, **Elf**) are smelly, stuck-up, arrogant tree-fondling hippies intelligent humanoids dedicated to the protection of *their* concept of nature (centered around trees, and the worship of elemental forces that permeate the forests, as opposed to the deities worshipped by other races). They are one of the main civilizations of the game, featured in fortress mode and playable in adventurer mode.
+
+By default, they are often allies of dwarves and humans, however, elves' conflicting view on nature compared to other races, can create tension between them and their erstwhile allies. Elves often prefer using grown wood (and sometimes glass) for their weapons and armor, which do very little damage and offers little protection respectively compared to metal. If you go to war with them, you'll find that their primary danger comes from their numbers, archers, and dangerous tamed animals that may accompany them.
+
+In fortress mode, hippie wagons elven caravans arrive in late spring, bringing only plants and their own "grown" wood-related items, caged tame animals, or various types of clay and sand. When trading with elves, unless the player seeks to intentionally antagonize them, they must be very careful to not offer any wooden objects/animal-derived goods, see here for specifics. You may also steal from them, or even kill them, without fear of immediate repercussion, as elven caravans are unguarded, and merchants will not resist if you seize their goods, or competently fight back if attacked.
+
+Offending elves by attempting to trade wooden items normally causes them to angrily refuse further trade that year and leave early. *Repeatedly* offending elves by attempting to trade wooden items may cause them to attack your fortress with an ambush, which may later evolve into a full siege.
+
+Elves appear as usually thin and/or frail humanoids similar to humans, but with pointy ears,having no facial hair, but, rarely,at least stubble. Like goblins, they are biologically immortal and will only die to violence and disease, and also like with goblins this tends to result in high populations. Their life of harmony with the land and its wild beauty and creatures (due to elven civs possessing the token) leads to them often settling in high-savagery regions. Elves speak the elvish language.
+
+Some stupid, useless, tree-fondling traitors *highly misguided* dwarves like elves for their *grace*.
+
+## Fortress mode
+
+### Diplomats
+
+Once your fort has a baron, elven civilizations in diplomatic contact send a diplomat to meet with them approximately halfway through the first month in spring.
+
+If this is their first visit to your fort and you aren't at war with their civilization, the diplomat will either congratulate you for your respect for the trees, or, in the more-likely event that you've cut even one down, chastise you for your disrespect. At some point, the diplomat may revisit your fortress to establish a treecutting quota, requesting that the dwarves keep the amount of trees cut down to a variable quota. It is possible to negotiate for a higher number, and the quota seems to be affected by your noble's office quality, stress, and social skills. If the player agrees to a treecutting quota, it will be visible after selecting the elves in the Civilizations screen, . This quota lasts until the next year's meeting, and keeping to it will improve diplomatic relations, while violating it will worsen them and can lead to all-out war. If the player rejects any quota at all, this also damages relations.
+
+Note that the quota is measured in trees, not logs, so be sure to fell only the largest trees on your map to get the most out of your agreement. The elves also do not care if you damage saplings that haven't yet properly developed a trunk. Elves do, however, care about tree-like subterranean fungus like tower-caps and tunnel tubes; cutting fungus "trees" down does count toward your quota.
+
+In addition to haggling over tree-cutting quotas, these meetings work like any other diplomatic meeting. Your civilization screen will be updated with new info from the world, and depending on relations the diplomat may come to declare war or sue for peace.
+
+### Elven caravans
+
+Friendly elven civilizations send a caravan in late spring bringing a mix of natural trade goods, such as tamed animals, plant clothes, and various grown wood objects.
+
+#### Trading
+
+Elven traders are very picky about what items they will accept, and consider most items made from wood or animal byproducts to be unethical, often rejecting items merely for requiring wood or ash in their preparation. Offering them even one of these items, either in a trade or as a gift, will cause their trader to insult you and leave in a huff, ending trading for that year and damaging your diplomatic relationship with their civilization. In general, items made from stone, metal, gemstone, non-woody plants, or silk are acceptable, as are live animals or "grown" wooden items (generally only available from elves), but even these items can be rendered taboo with inappropriate «decorations» or by containing or being contained in an inappropriate item.
+
+The Trading article has specific info on taboo and accepted items.
+
+#### Stock
+
+Elven caravans will never have stone, metal, or animal products. What you can expect in an average elven caravan:
+
+- Wooden logs: Always useful, unless you are in a forest biome and already drowning in wooden logs. The quantity depends on how many logs you have already: lower means more. However, caravans with grown logs tend to be rare.
+- Plant-based food, both from crops and picked from trees. These can be handy for avoiding negative thoughts from eating or drinking the same old thing, or satisfying a dwarf's unusual preference. They can also be a source of seeds for your own above-ground farms, if you live in a compatible biome.
+- Wooden containers: chests, cages, buckets, and barrels. These are usually cheap if not decorated and useful in bulk, but even if you don't have access to wood and don't want to waste metal, there are stone, clay, and glass alternatives that you can easily make on your own.
+- Soil types: sand in bags, various types of clay. They don't bring enough of either for large-scale production of either ceramic or glass, and neither of these are very important to have in small quantities. A bit of sand can be used to make raw glass, which is occasionally demanded by dwarves in a strange mood, but other races can sell you that cheaply without needing an intervening step.
+- Bags and ropes made from plant cloth. A few extra bags never hurt, but plant cloth bags are a bit expensive.
+- A few above-ground tame animals in wooden cages. It may be a disappointingly useless animal or an incredibly awesome one. Elves bring animals from the environment surrounding their settlements, so you may be able to guess what they will bring next. Elves who live in savage tropical lands bring the best ones. Exotic animals are considered fully tame and will never require training.
+- Caged tame vermin. These are only even slightly useful for pleasing dwarves with a preference for that specific type of vermin, and they may even annoy other dwarves. The vermin itself is probably worthless, but the possibly-useful cage comes included.
+- Plant fiber thread, cloth, and clothing. These are mainly useful for jumpstarting or replacing a textile industry. Elves wear and sell the same-sized clothing as dwarves, and may sell cosmetically-different "foreign" clothes items like turbans, skirts, or sandals.
+- Plant cloth quivers. Dwarves can't make quivers out of plant cloth, but they can easily make them out of leather.
+- Wooden crutches and splints. Easy to make, but just as easy to forget, and they're fairly cheap.
+- Wooden armor and weapons. This includes weapons and armor dwarves can't normally make out of wood, but wood melee weapons and armor are basically useless in combat. You can use elven melee weapons to train with before making proper weapons, but that's probably not worth bothering with.
+- Bows and arrows, both made of wood. While dwarves can't make bows, it's very easy to make your own superior crossbows and bolts from wood, bone, or metal. Bows are less dependent on material or quality than melee weapons, which makes them a bit more useful than most weapons bought from traders. Unfortunately, bows use a separate combat skill from crossbows, can't be used for hunting, and leave you reliant on trade with or scavenging from non-dwarven civilizations for arrow ammunition.
+- Miscellaneous other finished goods made from wood or plant fiber. These might include instruments that dwarves cannot make or copies of new books, but other items are only marginally useful at best. Note that instrument *parts* are useless, since your dwarves do not know how to assemble them into a completed instrument unless they already knew how to make that instrument in the first place.
+
+Unless you have a shortage of something, the main unique goods elves can bring are foreign plants (especially ones you can then grow yourself), foreign tame animals (especially large war-trainable carnivores), or possibly foreign instruments or new books. Everything else is relatively easy to produce on your own, and as with all traders, any dwarf with any amount of relevant crafting skill at all will make as-good- or better-quality items.
+
+All wooden products made by elves are called "grown". Unlike regular wood, these may be traded back to the elves without repercussions; otherwise, they are identical to the wood items that you can produce.
+
+## Ethics
+
+Elven civilizations' ethics often differ from those of other races. Their position on moral philosophy will likely put them at odds with humans, goblins, dwarves, and sometimes kobolds and animal people, although they favor war with goblins over other races. At any given point in time, elves and dwarves are likely to be at peace, but it is certainly possible for an elven civilization to be at war with a dwarven one at the end of worldgen. Use the tab button when selecting an embark site to view whether elves are at war with the currently selected dwarven culture, and cycle dwarven cultures to find out.
+
+Elves are the only race which wholeheartedly accepts the devouring of enemy combatants. Looking in legends mode shows that an elven combatant will sometimes devour the other person they were fighting when they win. In spite of this, elves refuse to butcher and consume intelligent beings under other conditions. Elves find torture as an example acceptable, but condemn other forms of torture and consider torturing for information misguided. To elves, keeping any trophy of any kind is an unthinkable act. Elves begrudgingly allow for killing animals when done in self-defense, and the killing of other elves by an elf is justified if there is an extremely good reason for doing so. For elves, the killing of plants, *especially* trees, is unthinkable, on the other hand, the killing of neutral beings and enemies is acceptable. Elven society seems to be regulated by shame from the community, rather than by threat of punishment; as such, elves never offer serious or capital punishment to criminals; instead, elves found to have committed vandalism, trespassing or theft are reprimanded, while those convicted of treason, lying, oath-breaking, assault or participating in slavery are forced into exile.
+
+Elves value nature incredibly highly, and they also place a degree of value on family, eloquence, cunning, artwork, fairness, merriment, competition, and romance, but they do not especially respect commerce and have a dislike for self-control.
+
+(Note that these are merely the ethics of elven *civilizations*. Elves may adopt the cultures of other races via wandering individuals joining civilizations, or when conquest absorbs elves into another civilization. Sentient creatures adopt the values and ethics of their culture, regardless of race. Elves living among, or even leading, dwarves will have dwarven ethics and values, and vice versa.)
+
+As ghastly as the concept may be, elven cultures have become more powerful since the days of Tholtig Cryptbrain, and it is entirely possible for one or more dwarven civilizations to be extinct due to elven aggression. What elves lack in engineering, crafting, intelligence, bravery, skill, or hygiene, they make up for in raw, unwashed numbers, and once-mighty dwarven civilizations may crumble to the hordes. Even more troubling is their employment of mercenaries, often much better equipped than the elves themselves. Embarking with (possibly homeless wandering survivor) dwarves claiming to be from that civilization is possible, but always starts at war with the elves that claimed the lives of those tragically unfortunate dwarves' friends, and you may not get migrants.
+
+## In combat
+
+Elves are rarely considered a threat due to their insistence in using equipment purely made out of wood in battle, which is only marginally better than fighting unarmed and generally stands no chance against a half-competent, metal-clad dwarven militia \[see Material science for more info\]. However, elves will also employ mercenaries, often much better equipped than the elves themselves. During sieges their archers and potential numbers can still be dangerous, and perhaps the greatest threat they pose is if they bring tamed animals along with them, which may range from easily dispatched creatures to huge sources of fun depending upon what animals their civ has access to, which in theory can include any exotic land animal.
+
+## Community outlook
+
+Due to *Dwarf Fortress* making ample use of the *wood-elven*, or "elves as stuck-up jerks who live in trees" stereotype (which is especially noticeable when talking to their diplomats), the race as a whole tends to be widely disliked by players, who aren't too happy about said stuck-up jerks trying to tell their dwarves how to live their lives and who will gladly ambush and likely eat dwarven children while they play in the woods. However, due to their wooden weaponry only being *really* effective on said children and unarmed dwarves, elves have a reputation among the community of being all-*bark*-and-no-bite wimps who serve as the perfect punching bags to be on the receiving end of whatever stupid dwarf trick the fortress is currently conducting, especially if it's a particularly violent one - many gruesome stories involve at least one elf as the victim. The elves' nigh-religious devotion to trees is also a point of note; many players will go as far as to raze their map clean of trees, for no reason but to spite the elves and provoke them into attacking, just for the chance to slaughter them all.
+
+Unlike many other fantasy settings, *Dwarf Fortress* elves don't really have any redeeming characteristics (they aren't any more attractive than a dwarf, human or goblin, aren't good smiths, and don't have any superhuman abilities beyond biological immortality, a peculiar ability to walk through grass and other ground covering plants without disturbing them, and a (currently) off-screen ability to "shape" wood via magic), though most long-time players play their antics for laughs, resulting in them essentially being the community's collective chew-toys. Many players will take on a Tolkien-esque dwarven spirit of hatred towards elves, slaughtering them for their actions against dwarven kind; or perhaps, compelled by some god of murder for the simple glee of the resulting elven blood rain. Being compared to an elf is particularly insulting, as it implies you're an unwashed, tree-loving, cannibalistic hippie (*or, as some have said, the kind of being that's prone to sitting around and living **in** the world, rather than acting upon it*). That's not to say that elves are universally disliked, however: some have earned the liking of the player base, typically due to them being part of a dwarven civilization (and as such not acting like elves), with Cacame Awemedinade being one of the community's most well-known and beloved characters.

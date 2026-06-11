@@ -1,0 +1,13 @@
+# Cave dragon
+
+> Fonte: [Cave dragon](https://dwarffortresswiki.org/index.php/Cave_dragon) — Dwarf Fortress Wiki (GFDL/MIT)
+
+**Cave dragons** are gigantic evil beasts which were once dragons, but have now adapted to life underground. Unlike their above-ground brethren, they do not breathe dragonfire, but they do possess an immunity to being set on fire. Happily, they are not immune to the effects of a dwarf's best friend or extreme heat in general. They have wings (which lack the ability to fly) and white scales, but besides this are not nearly as dangerous as their above ground cousins (due to being smaller and not breathing fire). Oddly, despite their description, regular dragons do not have wings, much less functional ones, though cave dragons do. All cave dragons are born with Talented skill in fighting, biting, kicking and dodging.
+
+Cave dragons are one of the more dangerous things you can face in the caverns, due to their immense size and their natural fighting skills, and they will make mincemeat out of any dwarf civilian or recruit unfortunate enough to get in their way. Cave dragons are building destroyers which means, among other things, that doors are useless as defense. They should be disposed of as if they were megabeasts, with a well equipped military squad and preferably high numbers. Cave dragons are very rare in the underground, but a goblin siege can bring several to your fort, which may be a lot more fun than you can handle.
+
+Cave dragons are among the largest creatures in the game and the largest species in the underground (larger even than forgotten beasts), and grow into their adult size of 15,000,000cm³ after 1000 years. The butchery values in the right-hand column assume that an adult is being butchered: worlds younger than 1000 years will only have juvenile cave dragons, which drop far less meat.
+
+Despite their gigantic size, cave dragons are still vulnerable to cage traps. They are trainable, provide an insanely wonderful pet value of 10,000 and are very good war animals, due to their natural skills and sheer size. Cave dragons lay eggs, and are marginally easier to start a breeding program with than standard dragons due to being normally spawning creatures. Provided you're lucky enough to get a pair of opposite-sex specimens, you can breed these monsters for yourself and become the envy of every goblin pit in the land - just don't use the hatchlings in fortress defense, as they're born as small as foxes. Cave dragons are born adults, so their offspring cannot be turned fully tame. Additionally, they can't be spawned in the object testing arena.
+
+Some dwarves like cave dragons for their *large eyes* and their *impressive teeth*.

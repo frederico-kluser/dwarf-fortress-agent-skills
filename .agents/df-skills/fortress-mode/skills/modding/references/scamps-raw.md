@@ -1,0 +1,141 @@
+# Scamps/raw
+
+> Fonte: [Scamps/raw](https://dwarffortresswiki.org/index.php/Scamps/raw) — Dwarf Fortress Wiki (GFDL/MIT)
+
+\ \[CREATURE:SCAMPS\]
+
+`   [DESCRIPTION:A small mammalian carnivore.  It is the pet of Toady One.]`\
+`   [NAME:Scamps:Scamps:cat]`\
+`   [CASTE_NAME:Scamps:Scamps:cat]`\
+`   [CREATURE_TILE:'c'][COLOR:0:0:1]`\
+`   [LARGE_ROAMING]`\
+`   [AT_PEACE_WITH_WILDLIFE]`\
+`   [HUNTS_VERMIN]`\
+`   [RETURNS_VERMIN_KILLS_TO_OWNER]`\
+`   [ADOPTS_OWNER]`\
+`   [PETVALUE:50]`\
+`   [NOT_BUTCHERABLE]`\
+`   [CARNIVORE][NATURAL][PET]`\
+`   [COMMON_DOMESTIC][BENIGN]`\
+`   [CURIOUSBEAST_ITEM]`\
+`   [BUILDINGDESTROYER:2]`\
+`   [PREFSTRING:legendary owner]`\
+`   [BODY:QUADRUPED:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]`\
+`   [BODYGLOSS:PAW]`\
+`   [BODY_DETAIL_PLAN:STANDARD_MATERIALS]`\
+`   [BODY_DETAIL_PLAN:STANDARD_TISSUES]`\
+`   [BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]`\
+`   [BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]`\
+`   [USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]`\
+`   [USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]`\
+`   [TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]`\
+`   [SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]`\
+`    [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]`\
+`       [TL_MAJOR_ARTERIES]`\
+`   [BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]`\
+`   [BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]`\
+`   [USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]`\
+`   [TENDONS:LOCAL_CREATURE_MAT:SINEW:200]`\
+`   [LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]`\
+`   [HAS_NERVES]`\
+`   [USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]`\
+`   [BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]`\
+`   [CREATURE_CLASS:GENERAL_POISON]`\
+`   [GETS_WOUND_INFECTIONS]`\
+`   [GETS_INFECTIONS_FROM_ROT]`\
+`   [USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]`\
+`   [PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]`\
+`   [BODY_SIZE:0:0:500]`\
+`   [BODY_SIZE:1:0:1500]`\
+`   [BODY_SIZE:2:0:2500]`\
+`   [BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]`\
+`   [BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]`\
+`   [BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]`\
+`   [MAXAGE:10:20]`\
+`   [ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]`\
+`       [ATTACK_SKILL:BITE]`\
+`       [ATTACK_VERB:bite:bites]`\
+`       [ATTACK_CONTACT_PERC:100]`\
+`       [ATTACK_PENETRATION_PERC:100]`\
+`       [ATTACK_FLAG_EDGE]`\
+`       [ATTACK_PRIORITY:MAIN]`\
+`       [ATTACK_FLAG_CANLATCH]`\
+`   [ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]`\
+`       [ATTACK_SKILL:STANCE_STRIKE]`\
+`       [ATTACK_VERB:scratch:scratches]`\
+`       [ATTACK_CONTACT_PERC:100]`\
+`       [ATTACK_PENETRATION_PERC:100]`\
+`       [ATTACK_FLAG_EDGE]`\
+`       [ATTACK_PRIORITY:MAIN]`\
+`   [CHILD:1][GENERAL_CHILD_NAME:scampling:scamplings]`\
+`   [DIURNAL]`\
+`   [HOMEOTHERM:10070]`\
+`   [SWIMS_INNATE][SWIM_SPEED:2500]`\
+`   [MUNDANE]`\
+`   [CASTE:MALE]`\
+`       [MALE]`\
+`   [SELECT_CASTE:ALL]`\
+`       [SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]`\
+`        [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]`\
+`        [PLUS_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]`\
+`        [PLUS_TL_GROUP:BY_CATEGORY:LEG_REAR:HAIR]`\
+`   [TL_COLOR_MODIFIER:SLATE_GRAY:1]`\
+`               [TLCM_NOUN:hair:SINGULAR]`\
+`       [SET_TL_GROUP:BY_CATEGORY:EAR:HAIR]`\
+`   [TL_COLOR_MODIFIER:BLACK:1]`\
+`               [TLCM_NOUN:ears:PLURAL]`\
+`       [SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]`\
+`   [TL_COLOR_MODIFIER:SLATE_GRAY:1]`\
+`               [TLCM_NOUN:head:SINGULAR]`\
+`       [SET_TL_GROUP:BY_CATEGORY:FOOT_FRONT:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RFTOE1:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RFTOE2:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RFTOE3:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RFTOE4:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RFTOE5:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LFTOE1:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LFTOE2:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LFTOE3:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LFTOE4:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LFTOE5:HAIR]`\
+`   [TL_COLOR_MODIFIER:BLACK:1]`\
+`               [TLCM_NOUN:front paws:PLURAL]`\
+`       [SET_TL_GROUP:BY_CATEGORY:FOOT_REAR:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RRTOE1:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RRTOE2:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RRTOE3:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:RRTOE4:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LRTOE1:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LRTOE2:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LRTOE3:HAIR]`\
+`        [PLUS_TL_GROUP:BY_TOKEN:LRTOE4:HAIR]`\
+`   [TL_COLOR_MODIFIER:BLACK:1]`\
+`               [TLCM_NOUN:rear paws:PLURAL]`\
+`       [SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]`\
+`   [TL_COLOR_MODIFIER:SLATE_GRAY:1]`\
+`               [TLCM_NOUN:skin:SINGULAR]`\
+`       [SET_TL_GROUP:BY_CATEGORY:EYE:EYE]`\
+`           [TL_COLOR_MODIFIER:BLACK:1]`\
+`               [TLCM_NOUN:eyes:PLURAL]`\
+`   [CAN_DO_INTERACTION:CLEANING]`\
+`       [CDI:ADV_NAME:Clean]`\
+`       [CDI:USAGE_HINT:CLEAN_SELF]`\
+`       [CDI:USAGE_HINT:CLEAN_FRIEND]`\
+`       [CDI:BP_REQUIRED:BY_CATEGORY:TONGUE]`\
+`       [CDI:VERB:lick:licks:lick each other]`\
+`       [CDI:CAN_BE_MUTUAL]`\
+`       [CDI:TARGET:A:SELF_ALLOWED:TOUCHABLE]`\
+`       [CDI:TARGET_RANGE:A:1]`\
+`       [CDI:MAX_TARGET_NUMBER:A:1]`\
+`       [CDI:WAIT_PERIOD:10]`\
+`   [CAN_DO_INTERACTION:BP_BUMP]`\
+`       [CDI:ADV_NAME:Head bump]`\
+`       [CDI:USAGE_HINT:GREETING]`\
+`       [CDI:BP_REQUIRED:BY_CATEGORY:HEAD]`\
+`       [CDI:VERB:head-bump:head-bumps:bump heads]`\
+`       [CDI:CAN_BE_MUTUAL]`\
+`       [CDI:TARGET:A:SELF_ONLY]`\
+`       [CDI:TARGET:B:TOUCHABLE]`\
+`       [CDI:TARGET_RANGE:B:1]`\
+`       [CDI:MAX_TARGET_NUMBER:B:1]`\
+`       [CDI:WAIT_PERIOD:20]`

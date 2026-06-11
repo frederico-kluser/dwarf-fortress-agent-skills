@@ -1,0 +1,20 @@
+# Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# Raw wiki dump (2.2GB descomprimido) — regenerar via .work/parse_dump.py
+.work/*.xml
+.work/*.xml.zst
+.work/*.jsonl
+
+# Artefatos intermediários de análise (regeneráveis pelos scripts .work/*.py)
+.work/page_cats.json
+.work/cat_to_pages.json
+.work/categories.json
+.work/cat_counts.json
+
+# Mantém versionado:
+#   .agents/df-skills/**   (o produto: skills + artigos markdown)
+#   .work/*.py             (pipeline de geração)
+#   .work/build_summary.json
