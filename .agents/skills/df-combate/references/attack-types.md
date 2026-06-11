@@ -1,6 +1,8 @@
 # Attack types
 
-> Fonte: [Attack types](https://dwarffortresswiki.org/index.php/Attack_types) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Attack types](https://dwarffortresswiki.org/index.php/Attack_types) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 All physical weapons have one of two **attack types**: blunt weapons, which deal damage through crushing blows that break bones and penetrate armor, and edged ones, which deal damage by cutting into and slicing through foes. Edged weapons can be further broken down based on the shape of the blade, into "slashing" weapons that aim to slice into your foe, and "piercing" ones that penetrate vital organs. Some weapons have more than one attack type: for instance, the multipurpose short sword has a slashing cut, a piercing stab, and a blunt pommel strike. For a greater discussion on the properties of the weapons themselves, see weapon.
 
@@ -20,7 +22,7 @@ Slashing weapons have a long, sharp blade that is designed for cutting and sever
 
 ### Piercing weapons
 
-Piercing weapons focus large forces on a single sharpened point, allowing deep penetration on even the largest of creatures. The weapons often get stuck within their targets, allowing your dwarves to leverage them into tearing apart your foes internally. This gives piercing weapons such as spears, daggers, bolts, arrows, and pikes "pikes") combat properties between those of the blunt and slashing weapons, not quite as good at piercing armor as blunt weapons, not quite as good at cutting off things as slashing ones. These properties are correlated to the contact area of the weapon; as the weapon's point of contact becomes smaller, it becomes better at penetrating armour, but worse at cutting things off.
+Piercing weapons focus large forces on a single sharpened point, allowing deep penetration on even the largest of creatures. The weapons often get stuck within their targets, allowing your dwarves to leverage them into tearing apart your foes internally. This gives piercing weapons such as spears, daggers, bolts, arrows, and pikes "Pike (weapon)") combat properties between those of the blunt and slashing weapons, not quite as good at piercing armor as blunt weapons, not quite as good at cutting off things as slashing ones. These properties are correlated to the contact area of the weapon; as the weapon's point of contact becomes smaller, it becomes better at penetrating armour, but worse at cutting things off.
 
 Piercing weapons are the most effective weapon class at killing large, unarmored creatures due to their ability to penetrate vital organs: although hits to the limbs will be largely ineffective, it doesn't take much for a spear strike to puncture a lung or a kidney, so it's possible (although unlikely) to kill even a dragon with one decisive hit from a spear or pike. Piercing weapons remain viable against equivalent and better armors, although they do not maintain blunt weapons' levels of penetration.
 

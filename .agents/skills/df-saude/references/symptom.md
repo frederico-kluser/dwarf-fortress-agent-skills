@@ -1,12 +1,14 @@
 # Symptom
 
-> Fonte: [Symptom](https://dwarffortresswiki.org/index.php/Symptom) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Symptom](https://dwarffortresswiki.org/index.php/Symptom) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 A **symptom** is a status effect most often caused by contracting a syndrome. Individual symptoms can range from mild temporary annoyances to lifelong disabilities to even death if untreated. An affected dwarf will need to be diagnosed at a hospital before a treatment can be prescribed.
 
 ## Blisters
 
-**Effects**: Areas affected become prone to infection, this becomes more and more likely as severity goes up. While usually harmless in itself^(\*), a resulting infection might cause a loss of life or limb if not properly dealt with.
+**Effects**: Areas affected become prone to infection, this becomes more and more likely as severity goes up. While usually harmless in itself\*, a resulting infection might cause a loss of life or limb if not properly dealt with.
 
 (\* unless in the lungs, in which case the unlucky dwarf may be unable to breathe if the effect or a subsequent infection is severe.)
 

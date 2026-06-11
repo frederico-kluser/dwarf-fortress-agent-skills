@@ -1,49 +1,60 @@
 ---
 name: df-comercio
-description: Comércio e economia do forte — negociação, caravanas, trade depot, riqueza, mandatos e moeda. Use para perguntas sobre negociar com caravanas, montar depot, valor do forte ou economia. Exclusivo do Fortress Mode.
+description: >-
+  Comércio e economia da fortaleza no Dwarf Fortress: negociação, caravanas, trade depot, riqueza, mercadorias, mandatos e moeda. Use quando o usuário perguntar (inclusive em português) sobre negociar, caravana, depot, valor do forte ou economia. Termos EN: trade, caravan, depot, merchant, wealth, economy, coin, item. Exclusivo do Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: fortress
 ---
 
-# Df Comercio (Dwarf Fortress)
+# DF Comercio (Dwarf Fortress)
 
-Comércio e economia do forte — negociação, caravanas, trade depot, riqueza, mandatos e moeda. Use para perguntas sobre negociar com caravanas, montar depot, valor do forte ou economia. Exclusivo do Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-comercio" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-comercio "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 45)
-- Trading → `references/trading.md`
-- Book → `references/book.md`
-- Item value → `references/item-value.md`
-- Maximizing value → `references/maximizing-value.md`
-- Legendary artifact → `references/legendary-artifact.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 33 artigos — use o search.py para o resto)
+- Block → `references/block.md`
 - Caravan → `references/caravan.md`
-- Anvil → `references/anvil.md`
-- Trade depot → `references/trade-depot.md`
+- Animal trap → `references/animal-trap.md`
+- Bucket → `references/bucket.md`
+- Tool → `references/tool.md`
+- Barrel → `references/barrel.md`
+- Finished goods → `references/finished-goods.md`
+- Currency → `references/currency.md`
+- Bag → `references/bag.md`
+- Bin → `references/bin.md`
+- Decoration → `references/decoration.md`
 - Item quality → `references/item-quality.md`
 - Storage → `references/storage.md`
-- Finished goods → `references/finished-goods.md`
+- Jug → `references/jug.md`
+- Instrument → `references/instrument.md`
 - Wealth → `references/wealth.md`
-- Die → `references/die.md`
-- Decoration → `references/decoration.md`
-- Currency → `references/currency.md`
-- Web → `references/web.md`
-- Block → `references/block.md`
 - Large pot → `references/large-pot.md`
 - Wheelbarrow → `references/wheelbarrow.md`
-- Item → `references/item.md`
-- Jewelry → `references/jewelry.md`
 - Flask → `references/flask.md`
-- Body parts → `references/body-parts.md`
-- Item designations → `references/item-designations.md`
-- Tool → `references/tool.md`
-- Stepladder → `references/stepladder.md`
-- Stack → `references/stack.md`
+- Weight → `references/weight.md`
+- Jewelry → `references/jewelry.md`
+- Item → `references/item.md`
 - Honeycomb → `references/honeycomb.md`
-- Chain → `references/chain.md`
+- Stepladder → `references/stepladder.md`
 - Their wagons have bypassed your inaccessible site → `references/their-wagons-have-bypassed-your-inaccessible-site.md`
+- Stack → `references/stack.md`
+- Figurine → `references/figurine.md`
+- Item designations → `references/item-designations.md`
+- Dwarven economy → `references/dwarven-economy.md`
+- Trade agreement → `references/trade-agreement.md`
 
-*...e mais 15 artigos (use o search.sh para encontrá-los)*
+*…e mais 3 artigos (use o search.py).*

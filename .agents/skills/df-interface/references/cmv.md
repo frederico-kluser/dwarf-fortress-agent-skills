@@ -1,8 +1,10 @@
 # CMV
 
-> Fonte: [CMV](https://dwarffortresswiki.org/index.php/CMV) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [CMV](https://dwarffortresswiki.org/index.php/CMV) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-The **CMV** file format is used for recording movies within *Dwarf Fortress*. Movies can be recorded in-game by pressing from anywhere within the game and following the instructions. CMV files can be played back in-game from the same menu (which works from any screen, including the opening menu screen) or by using a 3rd party player (of which there had been only two in the game's entire existence so far) .
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+The **CMV** file format is used for recording movies within *Dwarf Fortress*. Movies can be recorded in-game by pressing  ; from anywhere within the game and following the instructions. CMV files can be played back in-game from the same  ; menu (which works from any screen, including the opening menu screen) or by using a 3rd party player (of which there had been only two in the game's entire existence so far) .
 
 Tools also exist to convert CMV files to animated .gif format, such as milo christiansen's CMV to GIF command line utility.
 
@@ -23,4 +25,11 @@ In order to boost the compression of CMV files, SL introduced a Compressed CMV f
 - Jifodus's user page has a table describing the CMV file format.
 - Markavian's user page has an updated version expressed as a C# CMV Class, based on optimization code written by SL, and header information forwarded by Toady One.
 
+\
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 Some dwarves claim to see Armok holding a strange device with a red light, though these are merely passed off as rumors.

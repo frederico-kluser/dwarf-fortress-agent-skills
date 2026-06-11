@@ -1,9 +1,13 @@
 # Dormitory
 
-> Fonte: [Dormitory](https://dwarffortresswiki.org/index.php/Dormitory) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Dormitory](https://dwarffortresswiki.org/index.php/Dormitory) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Dormitories** are a type of multiple-bed bedroom, similar to the barracks. Instead of hosting the military, dormitories host civilians, although military members may sleep on a bed in the dormitory. A dormitory is designated from a bed.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-To create a dormitory, first, construct a bed in a carpenter's workshop, and place it near the middle of the future dormitory area, using . Press , highlight that bed, and then press , then / until you have the size you want. Then press . The dormitory will automatically include every bed in the area you highlighted. Dwarves don't all sleep at the same time, so even a large fortress generally only needs a handful of beds. Dwarves will sleep on the dormitory ground if there are no unoccupied beds, however this will give them a negative thought (*if not smoothed, that is*).
+**Dormitories** are a type of multiple-bed bedroom, similar to barracks. Dormitories will primarily host civilians, though squad assigned dwarves will sleep in them when no other bed is available. A dormitory is designated via the zones menu.
 
-Having individual bedrooms requires more space and resources, but greatly contributes to happiness, however, it's a good idea to have at least one dormitory to accommodate newly-arrived immigrants. A higher value dormitory will give better thoughts than a meager one, and larger rooms can easily be made valuable by simply adding many beds.
+To create a dormitory, first, open the z Zones menu from the taskbar. Select Dormitory from the menu that appears. Then use the mouse to select the area you wish to become the dormitory. Finally, click accept. You may then redraw it, pause it, rename it, remove it or assign it to a location. Some players report (unconfirmed) that residents are not using dormitory beds even with no other option.\[Verify\]
+
+Dormitories contribute less to happiness compared to bedrooms, but it is a good practice to have a dormitory available for newly arrived migrants.
+
+\

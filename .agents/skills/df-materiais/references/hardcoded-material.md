@@ -1,8 +1,10 @@
 # Hardcoded material
 
-> Fonte: [Hardcoded material](https://dwarffortresswiki.org/index.php/Hardcoded_material) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Hardcoded material](https://dwarffortresswiki.org/index.php/Hardcoded_material) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Hardcoded materials** are written into the game code itself, rather than being defined in raw files, and as such they cannot be altered manually. They usually play special roles within the game. There are currently 19 hardcoded materials, excluding subtypes, which are as follows:
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Hardcoded materials** are written into the game code itself, rather than being defined in raw files, and, as such, they cannot be altered manually, usually playing special roles within the game. There are currently 20 hardcoded materials, excluding subtypes, which are as follows:
 
 - AMBER - amber
 - ASH - ash
@@ -17,6 +19,7 @@
 - INORGANIC - magma
 - LYE - lye
 - MUD - mud
+- NONE - unknown material
 - PEARLASH - pearlash
 - POTASH - potash
 - SALT - salt

@@ -1,49 +1,58 @@
 ---
 name: df-adventure
-description: Mecânicas do Adventure Mode — criação de personagem, viagem no mapa, fast travel, conversas com NPCs, acampamento, exploração de sítios e masmorras, retire/reclaim de personagem. Use quando o jogador estiver no modo Aventureiro ou perguntar sobre exploração, quests, diálogos com NPCs ou mecânicas específicas de aventura. Exclusivo do Adventure Mode.
+description: >-
+  Adventure Mode do Dwarf Fortress: criação de personagem, viagem, fast travel, conversas com NPCs, acampamento, exploração de sítios e masmorras, retire/reclaim. Use quando o usuário estiver no modo Aventureiro ou perguntar (inclusive em português) sobre aventura, exploração, quests, diálogos ou viagem. Termos EN: adventurer, travel, camp, quest, conversation, retire, site, dungeon. Exclusivo do Adventure Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: adventure
 ---
 
-# Df Adventure (Dwarf Fortress)
+# DF Adventure (Dwarf Fortress)
 
-Mecânicas do Adventure Mode — criação de personagem, viagem no mapa, fast travel, conversas com NPCs, acampamento, exploração de sítios e masmorras, retire/reclaim de personagem. Use quando o jogador estiver no modo Aventureiro ou perguntar sobre exploração, quests, diálogos com NPCs ou mecânicas específicas de aventura. Exclusivo do Adventure Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-adventure" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-adventure "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 46)
-- Adventurer mode gameplay → `references/adventurer-mode-gameplay.md`
-- Adventurer mode character creation → `references/adventurer-mode-character-creation.md`
-- Adventure mode quick start → `references/adventure-mode-quick-start.md`
-- Adventurer mode F.A.Q. → `references/adventurer-mode-f-a-q.md`
-- Quest → `references/quest.md`
-- Legends → `references/legends.md`
-- History of Adventure Mode → `references/history-of-adventure-mode.md`
-- Scholar → `references/scholar.md`
-- Frequently Asked Questions → `references/frequently-asked-questions.md`
-- Site → `references/site.md`
-- Calendar → `references/calendar.md`
-- Town → `references/town.md`
-- Guide to intelligent wilderness creatures in adventurer mode → `references/guide-to-intelligent-wilderness-creatures-in-adventurer-mode.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 30 artigos — use o search.py para o resto)
 - Historical figure → `references/historical-figure.md`
-- World activities → `references/world-activities.md`
-- Quickstart guide/Starting site → `references/quickstart-guide-starting-site.md`
-- Level of conflict → `references/level-of-conflict.md`
-- Tower (necromancy) → `references/tower-necromancy.md`
-- Claim → `references/claim.md`
 - Performer → `references/performer.md`
-- Talking → `references/talking.md`
-- Camp → `references/camp.md`
-- Campfire → `references/campfire.md`
-- Lair → `references/lair.md`
-- Dungeon (structure) → `references/dungeon-structure.md`
-- Dungeon → `references/dungeon.md`
+- Scholar → `references/scholar.md`
+- Knapper → `references/knapper.md`
+- Clothing → `references/clothing.md`
+- Legends → `references/legends.md`
+- Messenger → `references/messenger.md`
+- Wrestling → `references/wrestling.md`
+- Claim → `references/claim.md`
 - Tavern keeper → `references/tavern-keeper.md`
-- Art → `references/art.md`
-- Mead hall → `references/mead-hall.md`
+- Scribe → `references/scribe.md`
+- Quest → `references/quest.md`
+- Intrigue → `references/intrigue.md`
+- Adventurer mode gameplay → `references/adventurer-mode-gameplay.md`
+- Reputation → `references/reputation.md`
+- Rumor → `references/rumor.md`
+- Level of conflict → `references/level-of-conflict.md`
+- Adventure mode quick start → `references/adventure-mode-quick-start.md`
+- Talking → `references/talking.md`
+- Die → `references/die.md`
 - Occupation → `references/occupation.md`
-
-*...e mais 16 artigos (use o search.sh para encontrá-los)*
+- Adventurer mode character creation → `references/adventurer-mode-character-creation.md`
+- Campfire → `references/campfire.md`
+- Adventure mode quick reference → `references/adventure-mode-quick-reference.md`
+- Adventurer mode F.A.Q. → `references/adventurer-mode-f-a-q.md`
+- Bestiary → `references/bestiary.md`
+- Guide to intelligent wilderness creatures in adventurer mode → `references/guide-to-intelligent-wilderness-creatures-in-adventurer-mode.md`
+- History of Adventure Mode → `references/history-of-adventure-mode.md`
+- Surrender → `references/surrender.md`
+- Kisat Dur → `references/kisat-dur.md`

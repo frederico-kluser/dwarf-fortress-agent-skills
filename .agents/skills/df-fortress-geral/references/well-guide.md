@@ -1,14 +1,16 @@
 # Well guide
 
-> Fonte: [Well guide](https://dwarffortresswiki.org/index.php/Well_guide) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Well guide](https://dwarffortresswiki.org/index.php/Well_guide) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*This guide assumes you've read the main article on **wells** and are familiar with the basic information found in that article, of what a well does and what is required to build one.*
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*This guide assumes you've read the main article on **wells** and are familiar with the basic information found in that article, of what a well is used for and what is required to build one.*
 
 A well can be vital to any fortress, but deciding that you need one and building one are two different things. Draining water from the surface can flood your fortress if you aren't careful, and building a well, only to see the water source dry up or freeze, is beyond frustrating. This guide will walk you through a number of different situations, and explain solutions that have been found for these problems.
 
 ## Why Build a Well?
 
-Honestly, not every fortress NEEDS a well. But they all need some form of safe *water source* to bring water to patients and prisoners. If they do not have this and you find yourself in a siege with six injured dwarves, you're in for a little bit of Fun... But a hole full of water can be just as good for that as a well.
+Not every fortress needs a well. But they all need some form of safe *water source* to bring water to patients and prisoners. If they do not have this and you find yourself in a siege with six injured dwarves, you're in for a little bit of Fun... But a hole full of water can be just as good for that as a well.
 
 ### Why You Might Not
 
@@ -17,12 +19,14 @@ Honestly, not every fortress NEEDS a well. But they all need some form of safe *
 - They take a lot of time and effort to construct, especially when compared to alternatives.
 - Because of the way wells are, a single hole in a flat ceiling, it makes it more difficult for creatures to get out, should they find themselves in your water source.
 - Technically, tiles adjacent to a trench full of water can be designated as a water source just as easily as a well, and dwarves will sanely path around such a trench, as well as bathe in it more easily.
+- It is much faster for dwarves to run down and up stairs to a water source and scooping a bucket of water than waiting for a well bucket to make the journey, furthermore unlimited dwarves can scoop water in parallel while a well can only be used by a single dwarf at a time. Dwarves do not get bad thoughts for the lack of a well when scooping buckets of water.
+- A water source can be protected by a grate or floor bars, dwarves can still scoop buckets of water through a grate, but nothing can fall in it, or come up through it.
 - If you do make a shallow pool (mixture of 3/7 and 4/7 water) as a water source, and have a meeting hall designated therein, unoccupied dwarves will hang out in the water, gaining swimming skill.
 
 ### Why You Might
 
 - While a trench full of water can be used as a water source, a well can draw water from a source that is 30+ levels below. Also, a trench water source can only be one level deep, dwarves will not draw water from any level deeper than that. A well will.
-- Wells can be made to have high value, due to the various skills and materials, each with their own quality levels, which go into its construction. This can be especially true if you have an artifact bucket, chain or mechanisms. Thus, as the center piece for a meeting room, even if they have no water, wells can be very handy in making dwarves very happy.
+- Wells can be made to have high value, due to the various skills and materials, each with their own quality levels, which go into its construction, as well as the overall quality of the finished product. This can be especially true if you have an artifact bucket, mechanism, and/or chain or rope. Thus, as the center piece for a meeting room, even if they have no water, wells can be very handy in making dwarves very happy.
 - As far as the well itself goes, they take up very little space in your actual fortress. With a water-filled channel, the reservoir is equivalent to the floor space occupied.
 - This is a glitch, but wells are the easiest method for making salt water drinkable. Wells will ignore salinity and allow dwarves to drink salt water directly from its source, so long as it isn't murky.
 - Drinking from a well is much faster than drinking from a trench. Also less annoying to dwarves.
@@ -34,17 +38,17 @@ Once you've decided it's time to construct a well, you need to consider where th
 
 You want a well central to your dwarves, so they'll all get good thoughts from seeing it, and near any hospital beds you have, but you want it off the main traffic routes. You can have more than one well, which solves that problem, but raises the one of engineering water to feed them all. If it's indoors (or behind walls), then there's little threat from carp, goblins, or animals, and it can provide a safe source of drinking water during a siege.
 
-Depending on your start location, you may already have a pre-existing water source, such as a flooded cavern, which you can just build a well over. Or, as is usually the case, you may need to transport water from some other location to where you want your well to be. This is where things get complicated.
+Depending on your start location, you may already have a preexisting water source, such as a flooded cavern, which you can just build a well over. Or, as is usually the case, you may need to transport water from some other location to where you want your well to be. This is where things get complicated.
 
 ## Water sources
 
-A well needs a water source of at least 3/7 depth, at least 1 z-level somewhere directly below its opening, with no obstructions between itself and said water. Pre-existing water is safe because it's the most predictable - what you see is what you've got, no surprises. You can instead use dwarven engineering to bring water from a distant source to beneath your well, with a safety factor based on your experience and the complexity of the project. (See flood.)
+A well needs a water source of at least 3/7 depth, at least 1 z-level somewhere directly below its opening, with no obstructions between itself and said water. Preexisting water is safe because it's the most predictable - what you see is what you've got, no surprises. You can instead use dwarven engineering to bring water from a distant source to beneath your well, with a safety factor based on your experience and the complexity of the project. (See flood.)
 
 The important part about the well is to make sure that you don't create a situation where the water will flood your fortress, due to pressure from a source at a higher level. If the water is stable before you build the well above it, it will be safe (unless your dwarves change things), but if you are introducing a flow, make sure you understand how *dwarven* pressure works and will not fall victim to its surprises. (See pressure.)
 
-### Pre-existing sources
+### Preexisting sources
 
-A brook, river, murky pool, or cavern lakes can provide water under a well. If the water source is only one z-level deep and contains a pile of mud, the water produced will be muddy. 'A dusting of mud', however, is not an issue - your well and its water is fine wonderful.
+A brook, river, murky pool, or cavern lakes can provide water under a well. If the water source is only one z-level deep and contains a pile of mud, the water produced will be muddy. 'A dusting of mud', however, is not an issue - your well and its water is ~~fine~~ wonderful.
 
 The surface of a brook tile will have to be channeled out, but it otherwise works just fine.
 
@@ -54,11 +58,11 @@ Murky pools are not optimal: they can dry up in warm seasons, and water directly
 
 If you have an aquifer, just channel a 1x1 square in any open stretch of floor above it and build the well. It will automatically fill and never flood. You'll have other construction projects to worry about.
 
-Water coming into contact with a floor or slope may create "a dusting of mud". However, both 'A dusting of mud' and a 'Muddy Upward Slope' are not an issue - your well and its water are fine wonderful.
+Water coming into contact with a floor or slope may create "a dusting of mud". However, both 'A dusting of mud' and a 'Muddy Upward Slope' are not an issue - your well and its water are ~~fine~~ wonderful.
 
 ### Oceans
 
-Oceans and aquifers near oceans carry salty water. This is normally unusable for treating wounds or drinking. However, salty water obtained from a well is used just like normal. This is a bug.
+Oceans and aquifers near oceans carry salty water. This is normally unusable for treating wounds or drinking. However, salty water obtained from a well is used just like normal. This is a bug. Bug:1260
 
 ### Reservoirs
 
@@ -70,7 +74,7 @@ Another consideration is safety. Specifically, dwarves fighting near wells can f
 
 If you are filling the reservoir by aqueduct, consider the fill point. If you are using only gravity to fill the well, but the water needs to flow up to do so, you may experience problems when it comes time to refill your well. Specifically, water floods upwards into empty space very easily, but for some reason doesn't like to flood through still water. Thus, it may be more appropriate to have the reservoir fill from its top, though keep in mind that this is a very fast fill method and can flood a bit if you aren't watching and have a small reservoir. (As a side note on that, it is possible to fill a well by pouring water directly through the well opening itself)
 
-Finally, you may find some circumstance where you'd wish to make changes to the well. For example, building a statue in its reservoir, or recovering a lost loved one who fell in and cracked his skull open. In these instances, you may wish to construct a manual drain. All it requires is a hatch or floodgate at the bottom of the well, connected to a lever, covering a tunnel leading to an appropriate dump site... Like your subterranean farming operation. Or your obsidian factory. Or a room full of captured nobles goblins. If you already have a drain for the aqueduct, you can easily connect the two.
+Finally, you may find some circumstance where you'd wish to make changes to the well. For example, building a statue in its reservoir, or recovering a lost loved one who fell in and cracked his skull open. In these instances, you may wish to construct a manual drain. All it requires is a hatch or floodgate at the bottom of the well, connected to a lever, covering a tunnel leading to an appropriate dump site... Like your subterranean farming operation. Or your obsidian factory. Or a room full of captured ~~nobles~~ goblins. If you already have a drain for the aqueduct, you can easily connect the two.
 
 ## Filling the Well
 
@@ -106,7 +110,7 @@ A well is not an obstructing object. That is to say, it doesn't stop things from
 
 ### Flooding
 
-More fortresses have fallen at the hands of a flooding well than they have to megabeasts, sieges or the infamous HFS. If you are going to be shifting water around in any form other than buckets including buckets and Urist McDrownseasily, be prepared for the worst.
+More fortresses have fallen at the hands of a flooding well than they have to megabeasts, sieges or the infamous HFS. If you are going to be shifting water around in any form ~~other than buckets~~ including buckets and Urist McDrownseasily, be prepared for the worst.
 
 There are several solutions to the flooding problem.
 
@@ -201,5 +205,5 @@ You could use your well to dispose of unwanted life forms, such as siegers, elve
 
 I built this in an experiment. At the top of the reservoir is a platform with a pressure plate on it. When the pressure plate senses 5/7 water, it triggers, closing the fill pipe, and opening the drain. So, when you pull the lever to fill the thing, it fills up to the top, then drains. Just like a giant toilet. I have not found any functional use for this. In all honesty, it was a simple accident I made, connecting the pressure plate to the drain as well as the plug. But, hey, what the heck, I made a giant toilet. There ya' go. Perhaps you could use this to get rid of the crud that accumulates in a well as dwarves clean themselves in it?
 
-This can be VERY useful when you have a larger reservoir that fills your well. This way every pull of the lever delivers a set amount of water into your well. Thus eliminating¹ the risk of flooding due to the well becoming pressurized.\
-¹Beware dwarves that throw tantrums, they randomly pull levers.
+This can be VERY useful when you have a larger reservoir that fills your well. This way every pull of the lever delivers a set amount of water into your well. Thus eliminating1 the risk of flooding due to the well becoming pressurized.\
+1Beware dwarves that throw tantrums, they randomly pull levers.

@@ -1,6 +1,12 @@
 # Stockpile design
 
-> Fonte: [Stockpile design](https://dwarffortresswiki.org/index.php/Stockpile_design) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Stockpile design](https://dwarffortresswiki.org/index.php/Stockpile_design) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Production flowchart for most workshops**.\
+Not all items are represented!\
+*(Click to enlarge)*
 
 Stockpiles can be created almost anywhere, can have almost any size, and have many different options. Choosing where to place them, how big to make them, and how to configure their settings constitutes the art of **stockpile design**. Efficient stockpile design is one of the most critical aspects of overall fortress efficiency. Stockpile and workflow design is, perhaps, the third most important thing you need to do in your fortress, after keeping dwarves fed and protected. A fortress with poor stockpile layouts will grind to an FPS death much faster than one designed with efficiency in mind.
 
@@ -50,18 +56,18 @@ It's also worth mentioning that heavily congested corridors are extremely ineffi
 
 One strategy is to place the feeder stockpile immediately around the workshop. This works well for single workshops with just one input (like a mason's or mechanic's workshop).
 
-` SSSSS   S feeder stockpile`\
-` SWWWS   W workshop`\
-` SWWWS`\
-` SWWWS`\
-` SSSSS`
+     SSSSS   S feeder stockpile
+     SWWWS   W workshop
+     SWWWS
+     SWWWS
+     SSSSS
 
 Another strategy is to put the workshop's stockpile above or below it. This keeps the stockpiles close to the workshops, and lets the workshops expand, even adding workshops on additional Z-levels as necessary. It works particularly well with multiple similar workshops working off the same stockpile.
 
-`          adjacent z-level`\
-` WWW WWW      SSSSSSS`\
-` WWWSSS`\
-` WWW WWW      SSSSSSS`
+              adjacent z-level
+     WWW WWW      SSSSSSS
+     WWWSSS
+     WWW WWW      SSSSSSS
 
 ## Specific industry designs
 
@@ -97,9 +103,7 @@ Also include a barrel stockpile near your still to ensure a steady supply of emp
 
 Wheelbarrows are tremendously useful tools, when properly applied. They allow a dwarf to move a single item at the dwarf's normal walking speed, *regardless of the item's weight*. But they have trade-offs, so they should not be used in every stockpile.
 
-The first trade-off is that you may only use 3 wheelbarrows per stockpile. This limits the number of active hauling jobs a single stockpile can generate to 3 (or however many wheelbarrows you assign). This can be worked around by creating multiple small stockpiles with 3 wheelbarrows each, rather than a single large stockpile.
-
-The second trade-off is that the dwarf has to walk to the stockpile first to fetch the wheelbarrow, then take the wheelbarrow to the item, and finally back to the stockpile. So, each hauling job may involve a much greater travel distance, and even though all the walking done at full speed, the total time spent may actually increase if you aren't careful.
+A major trade-off is that the dwarf has to walk to the stockpile first to fetch the wheelbarrow, then take the wheelbarrow to the item, and finally back to the stockpile. So, each hauling job may involve a much greater travel distance, and even though all the walking done at full speed, the total time spent may actually increase if you aren't careful.
 
 Wheelbarrows are used by default in stone stockpiles, and for good reason -- stones are *heavy*! Dwarves, especially weak ones, will move extremely slowly when hauling a stone without a wheelbarrow or minecart. It is strongly recommend that if you have any workshops which process stones, you use a feeder stockpile near them (linked to give to the workshop, so the mason doesn't carry a stone all the way from her bedroom!), and use wheelbarrows in that stockpile. This way, the stone is only ever carried by hand for a few tiles, from the stockpile to the workshop, by the mason/mechanic/craftsdwarf doing the work.
 

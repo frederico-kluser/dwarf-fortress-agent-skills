@@ -1,6 +1,18 @@
 # Unfortunate accident
 
-> Fonte: [Unfortunate accident](https://dwarffortresswiki.org/index.php/Unfortunate_accident) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Unfortunate accident](https://dwarffortresswiki.org/index.php/Unfortunate_accident) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
+|  |
+|----|
+| "Unfortunate accident" in other / Languages / Dwarven / : / nasakam kuthdéng / Elven / : / seno-favane matirè / Goblin / : / rotsnuna smaxa / Human / : / ob-jalew kepfu |
 
 Nobles are particularly fragile, delicate, put-upon dwarves, burdened with responsibilities which are far more taxing than any lowly commoner could ever hope to wrap their booze-soaked brains around. However, your dear friends at Happy Fun Surprises Incorporated (Stock Exchange Symbol: "HFS") have prepared a wide variety of Fun activities to help your administrators unwind.
 
@@ -12,13 +24,13 @@ Be sure to use the Workshop Profile screen to restrict the lever to the noble in
 
 ## Dwarven Spaceheater
 
-Are your nobles abusing their mandate privileges? Perhaps they find their quarters to be on the chilly side. Simply construct one of the newest innovations in comfort, the Dwarven Spaceheater! Simply build a radiator base directed towards an adjacent lever. then, order the lever hooked up and pulled *once*, to confirm its function, and *then* place a fueled radiator on it. Your nobles will now bask in the tropical warmth of their quarters. Should they continue with their demands for adamantine socks and steel buckets, the most likely scenario is that the device has malfunctioned and their pleas for repair work are being interpreted as demands for yet another crystal glass window. The solution is simple, simply have the lever repeatedly pulled until it resumes operation. It is recommended to have the noble perform this themselves alone, to preserve their privacy and so that they may repair it themselves if it malfunctions again, through this is yet to occur.
+Are your nobles abusing their mandate privileges? Perhaps they find their quarters to be on the chilly side. Simply construct one of the newest innovations in comfort, the Dwarven Spaceheater! Build a radiator base directed towards an adjacent lever, then, order the lever hooked up and pulled *once*, to confirm its function, and *then* place a fueled radiator on it. Your nobles will now bask in the tropical warmth of their quarters. Should they continue with their demands for adamantine socks and steel buckets, the most likely scenario is that the device has malfunctioned and their pleas for repair work are being interpreted as demands for yet another crystal glass window. The solution is simple, simply have the lever repeatedly pulled until it resumes operation. It is recommended to have the noble perform this themselves alone, to preserve their privacy and so that they may repair it themselves if it malfunctions again, though this is yet to occur.
 
 The resumption of heating should be easily discernible. Your noble will be bathed with warm air and will be contented to cease their demands. NOTE: the device and the furniture in the room should be of high-melting point construction, as the device can leak, particularly during 'maintenance'. An alternate method is to direct the airflow toward a bed, with maintenance controlled from a central control room.
 
 ## Underground safari
 
-The fantastic beasts lurking in the darkness of the underground caverns would surely captivate any noble with an appreciation for nature. Why not send them out into the darkness so they can experience these wonders for themselves? While your noble is out and about, make sure to keep an eye on the entryway in case any unruly commoners should attempt to wall it off. After all, what would happen if your baron got hungry, or was attacked by giant cave swallows, or had his face melted by a forgotten beast's venom, and there was no way for him to return to the safety of the fortress? The horror!
+The many majestic and fantastical beasts lurking in the darkness of the underground caverns would surely captivate any noble with an appreciation for nature. Why not send them out into the darkness so they can experience these wonders for themselves? While your noble is out and about, make sure to keep an eye on the entryway in case any unruly commoners should attempt to wall it off. After all, what would happen if your baron got hungry, or upset the natives, or was attacked by giant cave swallows, or had his face melted by a forgotten beast's venom, and there was no way for him to return to the safety of the fortress? The horror!
 
 ## Throne room over troubled magma
 
@@ -44,15 +56,15 @@ What more could your nobles want than some truly fantastic housing to call their
 
 ## Grave(n) image
 
-The nobles serve everyday, day after day, to tirelessly serve your fort. All they demand is some nice furniture for their personal rooms and some recognition. Symbolizing their eternal bond with the mountains, be sure to sculpt it from obsidian. What could be better? Make sure it's fresh by casting it on near the noble. To ensure that the image is special, arrange for the likeness to be created by only the finest mason. If done correctly, the noble will be forever invested in the fortress, to the delight of the workers.
+The nobles serve everyday, day after day, to tirelessly serve your fort. All they demand is some nice furniture for their personal rooms and some recognition. Symbolizing their eternal bond with the mountains, be sure to sculpt it from obsidian. What could be better? Make sure it's fresh by casting it ~~on~~ near the noble. To ensure that the image is special, arrange for the likeness to be created by only the finest mason. If done correctly, the noble will be forever invested in the fortress, to the delight of the workers.
 
 ## Artifact
 
-What could be possibly better than a big, imposing artifact made from for a noble, as a tribute to how special the noble is? Simply house a noble next to a craftsdwarf's, leatherworker's, or butcher's workshop, and house as well the unhappy, disgruntled hauler next to it. Wait. And when a beautiful laughter is heard, make sure the happy dwarf is next to the noble, so he can share the fun! Make also sure the resulting artifact is made so it records the noble's life!
+What could possibly be better than a big, imposing artifact made ~~from~~ for a noble, as a tribute to how special the noble is? Simply house a noble next to a craftsdwarf's, leatherworker's, or butcher's workshop, and house as well the unhappy, disgruntled hauler next to it. Wait. And when a beautiful laughter is heard, make sure the happy dwarf is next to the noble, so he can share the fun! Also make sure the resulting artifact is made so it records the noble's life!
 
 ## Immortality
 
-Every noble's dream is to rule forever, so make them happy ! Rather than murdering honoring the noble, what about making them eternal and fit to rule? Make them drink the blood of the children of the night! Let them partake in the gift of shapechanging beasts! Then isolate them to let them ponder on their new status for a while, make sure they do not have a room worthy of their standing, then when they are suitably happy about immortality, or suddenly unhappy about it, let them outside and welcome them as utterly insane and harmless the reasonable rulers they are! If the dwarf is frustrated by the experience, though, there is no need to worry! Build an engraved gold house, persuade them into their new home and let them rule from there!
+Every noble's dream is to rule forever, so make them happy ! Rather than ~~murdering~~ honoring the noble, what about making them eternal and fit to rule? Make them drink the blood of the children of the night! Let them partake in the gift of shapechanging beasts! Then isolate them to let them ponder on their new status for a while, make sure they do ~~not~~ have a room worthy of their standing, then when they are suitably happy about immortality, or suddenly unhappy about it, let them outside and welcome them as ~~utterly insane and harmless~~ the reasonable rulers they are! If the dwarf is frustrated by the experience, though, there is no need to worry! Build an engraved gold house, persuade them into their new home and let them rule from there!
 
 ## Diplomatic outreach
 
@@ -62,7 +74,15 @@ There's nothing a good noble loves more than politics and diplomacy. In fact, th
 
 Plenty of nobles enjoy celebrating International Talk Like a Pirate Day, on the 19th of Limestone. So let your favorite member of the nobility have a little fun with it, to get into the spirit of the holiday. Maybe give him a pet parrot. Or build a ship and let him sail the ocean blue. If he doesn't feel in the mood, the other scurvy dogs will be quite pleased to make that landlubber walk the plank.
 
+## Outside Intervention
+
+Sometimes, a noble’s reign takes an unexpected turn—or perhaps destiny simply calls for a fresh perspective. Retire your fortress and return as an unexpected guest to "observe" the state of affairs and ensure everything is in proper order. Pay a visit to the nobles, of course—they’re sure to appreciate the attention. Should their tenure be cut short by some mysterious... twist of fate, well… these things happen. It’s not as though anyone would suspect the charming lord who happened to depart just as swiftly as he arrived. Who was telling everyone those wonderful stories about that time he stole an elder stone from that Mysterious dungeon...
+
 ## Tropical vacation
+
+|  |
+|:--:|
+|   This article or section contains **minor spoilers**. You may want to avoid reading it. |
 
 Every noble would love to go to areas with a warm climate, but why stop there? Take him to a place fit for a dwarf king, somewhere hot and underground! He could chat with the locals, and have lots of Fun! If he gets stressed, there are plenty of native hot tubs to take a break in! If he doesn't feel convinced, there is always room for the king!
 

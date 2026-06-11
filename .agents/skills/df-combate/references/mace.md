@@ -1,6 +1,8 @@
 # Mace
 
-> Fonte: [Mace](https://dwarffortresswiki.org/index.php/Mace) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Mace](https://dwarffortresswiki.org/index.php/Mace) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *For a comparison of different weapons, see Weapon.*
 
@@ -15,3 +17,15 @@ If dwarves have a specific word for maces or similar weapons, it's not explicitl
 - Maces cost **one** metal bar to forge, or **three** adamantine wafers.
 - When a non-adamantine mace is melted down, it will return **0.9** metal bars, for an **efficiency of 90%**.
 - When an adamantine mace is melted down, it will produce **0.9** wafers, for an **efficiency of 30%**
+
+\
+
+    [ITEM_WEAPON:ITEM_WEAPON_MACE]
+    [NAME:mace:maces]
+    [SIZE:800]
+    [SKILL:MACE]
+    [TWO_HANDED:37500]
+    [MINIMUM_SIZE:32500]
+    [MATERIAL_SIZE:3]
+    [ATTACK:BLUNT:20:200:bash:bashes:NO_SUB:2000]
+        [ATTACK_PREPARE_AND_RECOVER:3:3]

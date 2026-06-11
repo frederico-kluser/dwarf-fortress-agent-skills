@@ -1,10 +1,12 @@
 # Military
 
-> Fonte: [Military](https://dwarffortresswiki.org/index.php/Military) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Military](https://dwarffortresswiki.org/index.php/Military) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **military** is one of the most important aspects of a successful fortress. Even with many traps, drawbridges and other defenses, your military will still need to fend off goblin sieges, megabeasts, titans, and fiendish underground beasties. Using a combination of squad orders and scheduling, you can set up an elaborate offensive, defensive, or balanced military structure for your well-equipped soldiers to follow. Turning your dwarves from useless migrants into bloodthirsty killing machines never hurts (except the enemy, of course).
 
-**WARNING! Mining, woodcutting, and hunting have a "civilian uniform" that conflicts with *all* military equipment. Assigning any dwarf with the mining, woodcutting, or hunting labors enabled to the military is strongly discouraged.**
+**WARNING! Mining, woodcutting, and hunting have a "civilian uniform" that conflicts with *all* military equipment. Assigning any dwarf with the mining, woodcutting, or hunting labors enabled to the military is strongly discouraged.**Bug:1451
 
 The military system is rather extensive and complex, and there is a lot of documentation. Here is a list of key documents categorized by expertise level:
 
@@ -33,22 +35,16 @@ The rest of this guide contains an overview of military features (with links to 
 
 From the main menu:
 
-- The **military** screen is accessible through the key.
-- The **squad** screen is accessible through the key.
-- The **points/routes/notes** screen is accessible through the key.
-- The **burrows** screen is accessible through the key.
-
-The military screen and all its tabs are mouse-compatible, and can be navigated through mouse clicks rather than strictly keys (when in windowed mode).
+- The **squad** screen is accessible through the q key.
+- The **burrows** screen is accessible through the U key.
 
 ## Creating a Military
 
 While it may be confusing to a new player, the military system makes up for its initial impenetrability with its versatility. Using the military interface, squads can be assigned, reordered and restructured at will, dwarves can be set to equip a highly specified uniform along with the rest of their squad or stand out and equip something unique, and you can give incredibly detailed commands and programming to your squads to follow out based on time of year, circumstance, location, and user convenience. That being said, there's a lot to be learned.
 
-This article is about the general aspects of what a military comprises. For more detailed information including specific key commands, see the associated article expanding on a subject. In particular you may want to check out the military interface article since the interface is one of the most confusing aspects.
-
 ### Squads
 
-**Squads** are the groups of soldiers that make up your military. Your military is led by the appointed **militia commander** (or, if the monarch is present, the general), and has many other squads led by **militia captains** (or captains) under him. Creating a squad in the military screen is one of the first things you should do when starting your military.
+**Squads** are the groups of soldiers that make up your military. Your military is led by the appointed **militia commander** (or, if the monarch is present, the general), and has many other squads led by **militia captains** (or captains) under them. Creating a squad in the military screen is one of the first things you should do when starting your military.
 
 ### Equipping Soldiers
 
@@ -61,6 +57,8 @@ Getting your military to actually *do* something is somewhat difficult. It is po
 There is a clear difference between *active* orders and *passive* orders-- the latter is programming that a dwarf will follow to the letter and acts more as a defense method, and the former is used for taking the fight to the enemy. The *squads* menu is predominantly used for active commands, and the *alert* and *scheduling* menus are used for passive commands.
 
 ### Active Command
+
+Orders in the squad menu
 
 In the military, soldiers operate much more like part-time militiamen than full-time warriors. When soldiers are not passively doing their civilian duties or following their schedule programming, they can be actively sent to do small tasks to aggressively defend your fortress. After these orders have been carried out or cancelled, your dwarves will happily return to their passive programming as if they were never interrupted. It is possible to select multiple squads or specific dwarves to carry out these orders.
 
@@ -91,6 +89,9 @@ When dwarves are being ordered to train, squad leaders will set up training clas
 ## Bugs
 
 - When selecting new dwarves to place in a squad the cursor always returns to the first available dwarf instead of remaining where it is.
-- There are still various problems with dwarves not equipping what they should; most notably, dwarves will not remove conflicting clothing to don assigned armor. Toggling to "replace clothing" is recommended, at least temporarily. Note, however, that soldiers may unequip clothing before armor for that part is available.
-- Mining, Hunting, and Wood cutting labors have "invisible uniforms" that conflict with military uniforms (and each other).
-- Military dwarves going on duty carry any currently-hauled items with them to training, pickup equipment, and even into battle.
+- There are still various problems with dwarves not equipping what they should; most notably, dwarves will not remove conflicting clothing to don assigned armor. Toggling to "replace clothing" is recommended, at least temporarily.Bug:535 Note, however, that soldiers may unequip clothing before armor for that part is available.
+- Mining, Hunting, and Wood cutting labors have "invisible uniforms" that conflict with military uniforms (and each other).Bug:1451
+- Military dwarves going on duty carry any currently-hauled items with them to training, pickup equipment, and even into battle.Bug:2561
+- If a Marksdwarf claims a stack of bolts in a chest, no other Marksdwarves will take from that chest.
+- Marksdwarves won't pray, which will cause them to get increasingly angry until they go insane.
+- Marksdwarves may not grab bolts if there were no bolts available on squad creation. Bug:0012008

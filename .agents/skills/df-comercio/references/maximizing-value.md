@@ -1,17 +1,22 @@
 # Maximizing value
 
-> Fonte: [Maximizing value](https://dwarffortresswiki.org/index.php/Maximizing_value) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Maximizing value](https://dwarffortresswiki.org/index.php/Maximizing_value) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Value is important for trade with caravans, ensuring your dwarves happiness, attracting migrants, and luring in visitors. One reliable way to increase value is creating items. Not all items are equal, or even close to equal, in value, however. The tables below are ordered by value, to help you select optimum furniture and trade goods to maximize your fortress's value.
 
 It is also vital to consider the material, which acts as a multiplier to the base values listed here; see the table on Item value for details. For example: iron has value 10, so iron cap has value 10 \* 10 = 100, and iron anvil has value 10 \* 10 = 100. Note, that value of material is not the same as value of material item. For example, 'bar' item has multiplier 5, so iron has value 10, but iron bar has value 50.
 
+The quality of an item then affects the value by multiplying this number by a quality modifier, then adding bonus value to the item. For stacks of items, this bonus is added for each item. This means that for skilled dwarves, it is sometimes better to create items with lower value if they come in a stack. For example, while a wooden minecart is worth twice a stack of bolts when neither has a quality modifier (50 vs. 25), a masterful minecart is worth much less than masterful bolts (130 vs. 800).
+
 ## Metal
 
 ### Weapon-grade metals
 
-| Item | Value | Bars | Value/Bar | Notes |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Item | Value | Bars | Value/Bar | Notes |
 | Mechanisms | 30 | 1 | 30 | (lever, trap) |
 | Ammo (stack of 25) | 25 | 1 | 25 |  |
 | Spiked Ball | 10 | 1 | 10 | (weapon trap) |
@@ -39,14 +44,14 @@ It is also vital to consider the material, which acts as a multiplier to the bas
 | Mail shirt | 10 | 2 | 5 |  |
 | Breastplate | 10 | 3 | 3.3 |  |
 | Anvil | 10 | 3 | 3.3 | (forge) |
-|  |  |  |  |  |
 
-For weapon-grade metals, mechanisms and goblets (see below) are more valuable than any other products. They can be traded to caravans, but pay attention that mechanisms are pretty heavy.
+For weapon-grade metals, mechanisms are the optimal trade product. They result in the same value as trade goods, but aren't split over 3 different items and thus 3 hauling jobs per bar.
 
 ### All metals
 
-| Item | Value | Bars | Value/Bar | Notes |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Item | Value | Bars | Value/Bar | Notes |
 | Flask, Goblet (3) | 30 | 1 | 30 | trade goods |
 | Traction bench | ~150 | 5 | ~30 | now made from table, mechanism and chain. Not very good choice for craft for trade. |
 | Minecart | 50 | 2 | 25 |  |
@@ -80,14 +85,17 @@ For weapon-grade metals, mechanisms and goblets (see below) are more valuable th
 | Table | 10 | 3 | 3.3 |  |
 | Weapon rack | 10 | 3 | 3.3 |  |
 | Blocks | 5 | 1 | 5 | no quality |
-|  |  |  |  |  |
+| Glaze | 50 | 1 | 50 | Tin only, requires glazeable item |
 
 For all non-weapon-grade metals, flasks and goblets are the optimum trade goods. The best choice for furniture is probably a chain--they can be decorated as "finished goods" and installed in restraints and wells, both of which can be admired by passing dwarves. Lower-quality chains can be melted without loss of material.
 
+Tin can be used to glaze certain stone and ceramic items. While the glaze is quite valuable, more value is generated if you combine the tin with copper to make bronze goblets, mechanisms, or trade goods. The sole exception is if your primary copper source is tetrahedrite and you have easy access to gold, in which case smelting electrum alloy to make goblets and using the tin as glaze is *slightly* more valuable (5-8% on net, assuming all products are equal quality).
+
 ## Stone
 
-| Item              | Value | Notes                            |
+|                   |       |                                  |
 |-------------------|-------|----------------------------------|
+| Item              | Value | Notes                            |
 | Mechanisms        | 30    | (lever, trap)                    |
 | Short sword       | 30    | (weapon trap) need rare obsidian |
 | Mug (3)           | 30    | trade goods                      |
@@ -118,8 +126,9 @@ The base value of common stone is quite low (a mere 1), but most fortresses end 
 
 ## Glass
 
-| Item                      | Value  | Notes         |
+|                           |        |               |
 |---------------------------|--------|---------------|
+| Item                      | Value  | Notes         |
 | Goblet/Vial (3)           | 30     | trade goods   |
 | Statue                    | 25     |               |
 | Window                    | 25     |               |
@@ -155,53 +164,59 @@ Glass has the added advantage that (provided you have a Magma glass furnace and 
 
 ## Wood
 
-| Item               | Value | Notes         |
-|--------------------|-------|---------------|
-| Minecart           | 50    |               |
-| Wheelbarrow        | 50    |               |
-| Stepladder         | 50    |               |
-| Cup (3)            | 30    |               |
-| Ammo (stack of 25) | 25    |               |
-| Crafts (1-3)       | ~20   | variable      |
-| Spiked Ball        | 10    | (weapon trap) |
-| Menacing Spike     | 10    | (weapon trap) |
-| Enormous Corkscrew | 10    | (weapon trap) |
-| Training axe       | 10    | (weapon trap) |
-| Shield             | 10    |               |
-| Buckler            | 10    |               |
-| Armor stand        | 10    |               |
-| Bed                | 10    |               |
-| Cabinet            | 10    |               |
-| Chair              | 10    |               |
-| Chest              | 10    |               |
-| Casket             | 10    |               |
-| Door               | 10    |               |
-| Floodgate          | 10    |               |
-| Grate              | 10    |               |
-| Hatch cover        | 10    |               |
-| Table              | 10    |               |
-| Cage               | 10    |               |
-| Weapon rack        | 10    |               |
-| Pipe section       | 10    | (screw pump)  |
-| Nest box           | 10    |               |
-| Hive               | 10    |               |
-| Crossbow           | 10    | (weapon trap) |
-| Bucket             | 10    | (well)        |
-| Barrel             | 10    | (dyer's shop) |
-| Jug                | 10    |               |
-| Pot                | 10    |               |
-| Training spear     | 10    | (weapon trap) |
-| Training sword     | 10    | (weapon trap) |
-| Blocks (4)         | 20    | no quality    |
+|                    |       |                         |
+|--------------------|-------|-------------------------|
+| Item               | Value | Notes                   |
+| Minecart           | 50    |                         |
+| Wheelbarrow        | 50    |                         |
+| Stepladder         | 50    |                         |
+| Cup (3)            | 30    |                         |
+| Ammo (stack of 25) | 25    |                         |
+| Crafts (1-3)       | ~20   | variable                |
+| Spiked Ball        | 10    | (weapon trap)           |
+| Menacing Spike     | 10    | (weapon trap)           |
+| Enormous Corkscrew | 10    | (weapon trap)           |
+| Training axe       | 10    | (weapon trap)           |
+| Shield             | 10    |                         |
+| Buckler            | 10    |                         |
+| Armor stand        | 10    |                         |
+| Bed                | 10    |                         |
+| Cabinet            | 10    |                         |
+| Chair              | 10    |                         |
+| Chest              | 10    |                         |
+| Casket             | 10    |                         |
+| Door               | 10    |                         |
+| Floodgate          | 10    |                         |
+| Grate              | 10    |                         |
+| Hatch cover        | 10    |                         |
+| Table              | 10    |                         |
+| Cage               | 10    |                         |
+| Weapon rack        | 10    |                         |
+| Pipe section       | 10    | (screw pump)            |
+| Nest box           | 10    |                         |
+| Hive               | 10    |                         |
+| Crossbow           | 10    | (weapon trap)           |
+| Bucket             | 10    | (well)                  |
+| Barrel             | 10    | (dyer's shop)           |
+| Jug                | 10    |                         |
+| Pot                | 10    |                         |
+| Training spear     | 10    | (weapon trap)           |
+| Training sword     | 10    | (weapon trap)           |
+| Blocks (4)         | 20    | no quality              |
+| Ash                | 5     | no quality              |
+| Potash             | 15    | no quality              |
+| Pearlash           | 20    | no quality              |
+| Ash glaze          | 50    | Requires glazeable item |
 
-Mine cart, stepladder and wheelbarrow are the most valuable things, crafted from wood. Cups are a little behind. All the furniture has similar value.
+Mine carts, stepladders and wheelbarrows have the highest base value of any item made from wood, while bolts have the highest stack size. All the furniture has similar value. If your fortress has plenty of fuel, glazed stone or ceramic items can be quite valuable.
 
 Wood is available in unlimited supply, but the *rate* at which you can produce it is often limited; given its many other uses, many players avoid using it for trading. Another drawback is that as a material, all wood has the same low base value of 1.
 
 ## Pottery
 
-| Item         | Value | Notes      |
+|              |       |            |
 |--------------|-------|------------|
+| Item         | Value | Notes      |
 | Statue       | 25    |            |
 | Crafts (1-3) | ~20   | variable   |
 | Hive         | 10    |            |
@@ -215,10 +230,10 @@ For pottery, the options are quite limited. Statues are the most valuable furnit
 
 The value of cloth items is complicated. For most purposes, the dye, cloth and thread components add a constant amount to the value of cloth products, but goods that are produced in pairs get this value added to each item, making them worthwhile when using high-quality dyed cloth.
 
-| Item         | Value | Notes       |
-|--------------|-------|-------------|
-| Crafts (1-3) | ~20   | variable    |
 |              |       |             |
+|--------------|-------|-------------|
+| Item         | Value | Notes       |
+| Crafts (1-3) | ~20   | variable    |
 | Shoe (2)     | 16.6  |             |
 | Mitten (2)   | 16.6  |             |
 | Glove (2)    | 16.6  |             |

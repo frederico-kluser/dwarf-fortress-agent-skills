@@ -1,14 +1,18 @@
 # Criminal
 
-> Fonte: [Criminal](https://dwarffortresswiki.org/index.php/Criminal) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Criminal](https://dwarffortresswiki.org/index.php/Criminal) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Criminal** is a profession for some inhabitants of generated sites, like towns. These petty criminals are distinct from criminal organization bosses, and much less dangerous. Some petty criminals show up as visitors in fortress mode, and agents sometimes try to pose as petty criminals. Petty criminals are shown in dark grey.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Criminals** are a profession for some inhabitants of generated sites, like towns. These petty criminals are distinct from criminal organization bosses, and much less dangerous. Some petty criminals show up as visitors in fortress mode, and agents sometimes try to pose as petty criminals. Petty criminals are shown in dark grey. Adventure mode allows the player character (and/or any companions of theirs) to become a criminal themselves if they so choose.
 
 ## Types of criminal groups
 
 There are two types of criminal groups within the worlds of *Dwarf Fortress*: criminal organizations and bandits.
 
 ### Criminal organization
+
+A bandit camp with loot lying around.
 
 Most towns have **criminal organizations**, formed by a collection of outcasts. They are led by a boss, may have lieutenants, and may have a representative who is responsible for trade. Criminal organizations can reside in one of the subterranean structures or taverns. Their presence underground can be identified by abnormally-large hoards of items piled on the floor. Since the introduction of intrigue, criminal organizations will be part of a number of plots, often corrupting the town officials to embezzle for them, but also participating in theft and plotting assassinations.
 
@@ -18,6 +22,8 @@ Criminal organizations are the targets of certain quests, and should not be conf
 
 ### Bandits
 
+A bandit leader, with an appropriate amount of lovers and children ratio.
+
 Bandits are run by a boss and consist of various brigands and outlaws on the fringes of civilization. Their inhabitants are drawn from a parent civilization with the BANDITRY token. If the parent civilization also has the LOCAL_BANDITRY token, a bandit group's members can be found ambushing adventurers and raiding nearby towns, instead of just loitering around the home camp. They can also lay sieges of sorts to one's fortress.
 
 Bandits have two subtypes: **nomadic bandits**, and **fort bandits**.
@@ -26,6 +32,15 @@ Bandits have two subtypes: **nomadic bandits**, and **fort bandits**.
 
 **Fort bandits** are a little more organized, as evidenced by the fact they build forts. Because the game sees these folk as being the site government of their fort, these bandits will also create positions such as 'head chef' or 'master of beasts'.
 
+Necromancers can also form bandit groups, headquartered in a tower "Tower (necromancy)").
+
 Bandits very often have their values or ethics clash with members of civilized society. This means that if your adventurer is part of civilized society, they will be automatically attacked by bandits. You can avoid this by either creating an outsider adventurer, who has no ties to the existing entities, or by assuming a compatible identity. If the bandits don't automatically try to murder your character, and your reputation is formidable enough, you can even ask to join them, and ask for quests.
 
-Killing bandits in adventure mode will give you a reputation as "protector of the weak". Unlike criminal organizations, bandits are considered murderous scum, and thus most folk appreciate you getting rid of them.
+Killing bandits in adventure mode will give you a reputation as "protector of the weak".v0.42.01 Unlike criminal organizations, bandits are considered murderous scum, and thus most folk appreciate you getting rid of them.
+
+## Trivia
+
+- If your reputation becomes exceptionally high ("Famous Hero", so above 75), bandits trying to ambush you will say "Ha-ha-halt!" instead of the normal announcement message, presumably stammering in front of such a fearsome figure. An exception is if they have [`[NOFEAR]`](/index.php/Creature_token#NOFEAR "Creature token").
+
+Bad to the Beard.\
+*Art by Terry Colligan*

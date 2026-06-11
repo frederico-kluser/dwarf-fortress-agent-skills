@@ -1,6 +1,10 @@
 # Smelting
 
-> Fonte: [Smelting](https://dwarffortresswiki.org/index.php/Smelting) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Smelting](https://dwarffortresswiki.org/index.php/Smelting) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+A smelter smelting smeltable metal.
 
 **Smelting** is the act of refining raw stone ore(s) into useful bars of pure metal(s) or alloys. Smelting is similar but distinct from melting, which reclaims existing metal objects back into (fractional) bars. Metal bars produced at a smelter are usable in a wide variety of goods, from weapons, to goblets, to furniture, to buildings.
 

@@ -1,6 +1,6 @@
 # History of Adventure Mode
 
-> Fonte: [History of Adventure Mode](https://dwarffortresswiki.org/index.php/History_of_Adventure_Mode) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [History of Adventure Mode](https://dwarffortresswiki.org/index.php/History_of_Adventure_Mode) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 Adventure mode has undergone many changes in its lifetime.
 
@@ -12,11 +12,11 @@ The introduction of the interaction system spiced up the adventuring world, with
 
 When generating an adventurer you now have points to assign to attributes as well as to skills. You can reduce unwanted attributes down to 1 to get more points for other attributes.
 
-The travel-mode map is now more zoomed-in than before. To see a fully zoomed-out map during travel mode, press , and one will appear at the right.
+The travel-mode map is now more zoomed-in than before. To see a fully zoomed-out map during travel mode, press m, and one will appear at the right.
 
 The bar at the top of the travel-mode screen shows the position of the sun, giving you an easy indication of how much daylight is left.
 
-You become sleepy during travel mode. You can choose to sleep or wait for a specific time using (by default) +. If you sleep outside during the night you can be ambushed by bogeymen or a myriad of other night monsters. Sleeping inside a building (including the temples and lairs of vanquished monsters) will protect you from this. Ambushes will also not be initiated when you are staying on a beach or mountain, but ones that have already started will continue even if you enter such an area.
+You become sleepy during travel mode. You can choose to sleep or wait for a specific time using (by default) shift+Z. If you sleep outside during the night you can be ambushed by bogeymen or a myriad of other night monsters. Sleeping inside a building (including the temples and lairs of vanquished monsters) will protect you from this. Ambushes will also not be initiated when you are staying on a beach or mountain, but ones that have already started will continue even if you enter such an area.
 
 There are now hamlets (Æ and æ) and castles (○) in addition to towns (+) (NOTE: those symbols are how they appear in the world map (fully zoomed-out)). When in a town or hamlet clusters of buildings will be marked as ■ in the mini-map in the lower-left hand corner. Only towns have shops, which appear as yellow ■ in both the travel map and the mini-map.
 
@@ -28,9 +28,9 @@ Worlds generated before version 0.31.09 cannot perform knapping in Adventure Mod
 
 ## Changes in 0.31.01
 
-Fast-travel, + to enter, and + (Pretend you are making the '\>' downstairs symbol) to exit, no longer heals all of your wounds instantly, nor can fast-travel be used when bleeding out. Some wounds do heal over time.
+Fast-travel, shift+t to enter, and shift+. (Pretend you are making the '\>' downstairs symbol) to exit, no longer heals all of your wounds instantly, nor can fast-travel be used when bleeding out. Some wounds do heal over time.
 
-Cave systems are accessible to adventurers but you are virtually guaranteed to get lost exploring them - even if you find your way back to the general vicinity of the entrance, you cannot fast-ravel away until you are outside. If you can make your way underneath a Human village, however, you may be able to Travel directly to the surface.
+Cave systems are accessible to adventurers but you are virtually guaranteed to get lost exploring them - even if you find your way back to the general vicinity of the entrance, you cannot fast-Travel away until you are outside. If you can make your way underneath a Human village, however, you may be able to Travel directly to the surface.
 
 Material changes are extremely noticeable in adventure mode. Elves with wood are noticeably weaker, and throwing/ranged weapons somewhat reduced in effectiveness.
 
@@ -80,5 +80,3 @@ The release of 0.34.01 on February 14, 2012 brought better town maps and markets
 - **0.22.107.21a** (2006-10-02): Guards and families, plus "." as a wait key.
 - **0.21.101.19a**–0.21.105.21a (2006-08-19): Adventurers could now have custom first names.
 - **0.21.93.19a**–0.21.100.19a (2006-08-08): Initial public release of Dwarf Fortress, including Adventure Mode.
-
-\]\] \]\]

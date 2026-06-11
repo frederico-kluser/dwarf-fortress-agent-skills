@@ -1,32 +1,29 @@
 # Tile attributes
 
-> Fonte: [Tile attributes](https://dwarffortresswiki.org/index.php/Tile_attributes) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Tile attributes](https://dwarffortresswiki.org/index.php/Tile_attributes) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-Every tile in *Dwarf Fortress* is described as or , or , and or . Unlike in versions prior to v50, these attributes can no longer be observed from the menu, when the cursor is located over any single tile.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Underground and above ground. Simple as that.
+
+Every tile in *Dwarf Fortress* is described as Outside or Inside, Light or Dark, and Above Ground or Subterranean. In this version, these attributes *cannot* be viewed directly, but they can still be inferred via other means.
 
 These attributes do *not* change what tiles look like. DFHack's Rendermax plugin implements a lighting system into the game, but this is only an aesthetic change, and does not affect tile attributes.
 
 There are eight different combinations, and only four of them occur naturally:
 
-- \- Outdoors, or within outdoor-like conditions (such as being indoors, but with no roof above the tile, providing direct access to sunlight.)
+- Outside Light Above Ground - Outdoors, or within outdoor-like conditions (such as being indoors but with no roof above the tile, providing direct access to sunlight.)
+- Outside Light Subterranean - Impossible
+- Outside Dark Above Ground - Impossible
+- Outside Dark Subterranean - Impossible
+- Inside Light Above Ground - Constructed buildings on the surface, below-ground-level chambers with constructed floors or buildings only (possibly walls also\[Verify\]) above them. Also tiles beneath branches of some trees.
+- Inside Light Subterranean - Impossible
+- Inside Dark Above Ground - Possible in arena, does not occur in Adventure mode, but can occur in Fortress mode, e.g: after unretiring on stockpile tiles (biome becoming embark tile level biome).
+- Inside Dark Subterranean - Underground tunnels, including most of your fortress
 
-- \- Impossible
+Being in the Dark increases cave adaptation, and being Outside causes it to be triggered.
 
-- \- Impossible
-
-- \- Impossible
-
-- \- Constructed buildings on the surface, below-ground-level chambers with constructed floors or buildings only (possibly walls also) above them. Also tiles beneath branches of some trees.
-
-- \- Impossible
-
-- \- Possible in arena, does not occur in Adventure mode. It can occur in Fortress mode, e.g: after unretiring on stockpile tiles (biome becoming embark tile level biome).
-
-- \- Underground tunnels, including most of your fortress
-
-Being in the dark increases cave adaptation, and being outside causes it to decrease (along with stunning/nausea if the sun is out).
-
-The entire fortress site starts out as . After that, a ray for and a ray for falls straight down from the highest z-level for every (x,y) position on the local map, changing each tile's modifiers until something that blocks that particular "ray" is encountered. Due to this behavior, any of the previous three tile combinations will never be encountered in the same (x,y) position on a lower z-level than a higher-numbered combination.
+The entire fortress site starts out as Inside Dark Subterranean. After that, a ray for Outside and a ray for Light Above Ground falls straight down from the highest z-level for every (X,Y) position on the local map, changing each tile's modifiers until something that blocks that particular "ray" is encountered. Due to this behavior, any of the previous three tile combinations will never be encountered in the same (X,Y) position on a lower z-level than a higher-numbered combination.
 
 ## Outside vs. Inside
 

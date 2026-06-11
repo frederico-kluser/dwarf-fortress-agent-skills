@@ -1,6 +1,6 @@
 # Caravan arc
 
-> Fonte: [Caravan arc](https://dwarffortresswiki.org/index.php/Caravan_arc) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Caravan arc](https://dwarffortresswiki.org/index.php/Caravan_arc) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 The **Caravan arc** is one of the arcs of development of Dwarf Fortress. This arc is primarily focused on fleshing out trade and the economy in both dwarf and the world as a whole.
 
@@ -16,5 +16,3 @@ While outdated, Toady has explained what to expect from this arc:
 
 - Caravan
 - Dwarf Fortress Consolidated Development
-
-\]\]

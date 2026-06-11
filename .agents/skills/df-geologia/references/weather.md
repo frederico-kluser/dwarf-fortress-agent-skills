@@ -1,34 +1,36 @@
 # Weather
 
-> Fonte: [Weather](https://dwarffortresswiki.org/index.php/Weather) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Weather](https://dwarffortresswiki.org/index.php/Weather) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Weather** refers to any type of weather effect in *Dwarf Fortress*. It includes snow, rain, and special features in evil surroundings. Additionally, one can observe clouds, fog/mist and the stars in adventure mode, however, they have no gameplay impact in fortress mode.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Weather** refers to any type of weather effect in *Dwarf Fortress*, which currently includes snow, rain, and special features in evil surroundings. Additionally, one can observe clouds, fog/mist and the stars in adventure mode, however, they have no gameplay impact in fortress mode.
 
 Weather conditions and event text seem to depend on the embark location in the world, biome and climate. For example, some winters can see extremely low temperatures with large amounts of snowfall, whilst summers may be scorchers.
 
-Normal (non-evil) weather can be disabled by changing \[WEATHER:YES\] to \[WEATHER:NO\] in d_init.txt. Disabling weather is a quick and largely harmless fix to improve framerate on older machines if required.
+Normal (non-evil) weather can be disabled in settings, this may slightly improve framerate on older machines.
 
 ## Normal weather
 
 ### Clouds (adventure mode only)
 
-*Dwarf Fortress* has three layers of clouds: cumulus, cirrus, and stratus. When using the key in adventure mode, any number of messages about the weather may appear, and corresponding symbols are shown when is enabled on the fast travel mode. The types of clouds that are possible are:
+Two types of cloud coverage.
+
+*Dwarf Fortress* has three layers of clouds: cumulus, cirrus, and stratus. When pointing the mouse at the weather icon, any number of messages about the weather may appear, and corresponding symbols are shown when c is enabled on the fast travel mode. The types of clouds that are possible are:
+
+***Note: Some icons have a black or grey background to make them easier to see against the wiki's white background.***
 
 - **Clear sky (no clouds)** — The sky is clear above you.
 
-- **Scattered cumulus** — There are scattered puffy clouds above you.
+-  / `α` **Scattered cumulus** — There are scattered puffy clouds above you.
+-  / `β` **Many cumulus (causes rain)** — There are mounds of clouds above you, smooth on the bottom with prominent upward bulges.
+-  / `¶` **Cumulonimbus (causes rain)** — A dark, menacing cloud towers above you, crowned by an anvil.
 
-- **Many cumulus (causes rain)** — There are mounds of clouds above you, smooth on the bottom with prominent upward bulges.
+-  / `≡` **Cirrus** — The sky is striped with high, thin clouds.
 
-- **Cumulonimbus (causes rain)** — A dark, menacing cloud towers above you, crowned by an anvil.
-
-- **Cirrus** — The sky is striped with high, thin clouds.
-
-- **Altostratus** — The sky above you is hazy and white.
-
-- **Stratus (causes rain)** — The sky above you is gray.
-
-- **Nimbostratus (causes rain)** — The sky above you is a uniform and dark gray.
+-  / `█` **Altostratus** — The sky above you is hazy and white.
+-  / `█` **Stratus (causes rain)** — The sky above you is gray.
+-  / `█` **Nimbostratus (causes rain)** — The sky above you is a uniform and dark gray.
 
 Additionally, some unique messages occur when there are clouds in multiple layers:
 
@@ -43,42 +45,49 @@ Otherwise, stratus clouds prevent you from seeing if there are any cirrus or cum
 
 ### Fog / Mist (adventure mode only)
 
-Fog is another aspect of the weather, described separately from the state of clouds when using . (However, thick fog prevents you from being able to tell what the clouds are like via .) There are three kinds of fog that may appear:
+Fog is another aspect of the weather, described separately from the state of clouds when using W. (However, thick fog prevents you from being able to tell what the clouds are like via W.) There are three kinds of fog that may appear:
 
-- **Thin Mist** — There is a thin mist here.
+-  / `░` **Thin Mist** — There is a thin mist here.
+-  / `▒` **Fog** — Fog enshrouds the area.
+-  / `▓` **Thick Fog** — There is a heavy blanket of fog enveloping everything.
 
-- **Fog** — Fog enshrouds the area.
-
-- **Thick Fog** — There is a heavy blanket of fog enveloping everything.
-
-The symbols shown on the fast travel map are shown regardless of whether you have enabled or not. If you have cloud viewing enabled, clouds in the same position as the fog will obscure that fog. When in the midst of fog on the fast travel map, a small circle around your adventurer will blink to show the surrounding area.
+The symbols shown on the fast travel map are shown regardless of whether you have c enabled or not. If you have cloud viewing enabled, clouds in the same position as the fog will obscure that fog. When in the midst of fog on the fast travel map, a small circle around your adventurer will blink to show the surrounding area.
 
 ### Precipitation
 
 #### Rain
 
-Rainfall occurs occasionally. Normal rain cleans any tile it lands on, removing blood, vomit and other bodily fluids on contact. Any dwarf caught outside when it rains will receive a minor unhappy thought.
+The wet season has arrived!\
+It is raining.
+
+Rainfall occurs occasionally. Normal rain cleans any tile it lands on, removing blood, vomit and other bodily fluids on contact. Any dwarf caught outside when it rains will receive a minor unhappy thought. Interestingly, submerged fish will also get annoyed from the rain.
 
 When rain hits a tile labeled as a murky pool, it will begin to fill it up with 1/7 water, and if that does not evaporate, the water will grow deeper, until the pool is full. Murky pools do not overflow from rain, but this extra water can be drained off and stored or used. (See the Well Guide.) While not much, it can really help maps without 'unlimited' water supplies such as rivers and brooks.
 
 #### Snow and Cold
 
-If the temperature is cold enough, snowfall rather than rainfall will occur, and outside water will freeze, including murky pools and rivers. This can happen in winter months in a moderate biome, or at any time in freezing biomes like a tundra or glacier.
+Winter is here.\
+A snow storm has come.
+
+Snow gradually covering grass during a snowstorm.
+
+If the temperature is cold enough, snowfall rather than rainfall will occur, and outside water will freeze, including murky pools and rivers. This can happen in the winter months in a moderate biome, or at any time in freezing biomes like a tundra or glacier.
 
 Amid snowfall, the ground, trees and other surfaces will gradually become covered in snow. Dwarves caught outside during a snowstorm can have bad thoughts as well as freeze to death, so a very high priority when embarking on a glacier is to dig out some place warm for your idlers to rest.
 
-In the freezing cold, outside water will freeze into a wall of ice if at least 4/7 deep, or a floor otherwise. Freezing ice acts much like obsidian, and will instantly kill anything caught inside of it -- including creatures otherwise extremely hard to kill. In moderate biomes after winter has passed, ice will melt back into ponds. Ice walls will always thaw back into a full 7 units of liquid, regardless of the original water level, but ice floors will produce the original water depth when thawed.
+In the freezing cold, outside water will freeze into a wall of ice if at least 4/7 deep, or a floor otherwise. Freezing ice acts much like obsidian, and will instantly kill anything caught inside of it -- including creatures otherwise extremely hard to kill. In moderate biomes after winter has passed, ice will melt back into ponds. Ice walls will always thaw back into a full 7 units of liquid, regardless of the original water level, but ice floors will produce the original water depth when thawed. [1]
 
 Magma running under snow-covered ground will melt it, but unlike ice, molten snow doesn't turn into water.
 
 ### Wind
 
-In a given embark tile biome, there are three wind-related variables tracked: East-West Wind, North-South Wind, and Wind Strength. East-West and North-South can be positive or negative, and Wind Strength is equal to the sum of their absolute values; so if East-West is -10, and North-South wind speed is 4, then Wind Strength is 14. Moreover, wind is uniform across the entire embark at any given time; Wind Strength does NOT increase the higher up you go.
+In a given embark tile biome, there are three wind-related variables tracked: East-West Wind, North-South Wind, and Wind Strength. East-West and North-South can be positive or negative, and Wind Strength is equal to the sum of their absolute values; so if East-West is -10, and North-South wind speed is 4, then Wind Strength is 14. Moreover, wind is uniform across the entire embark at any given time; Wind Strength does **NOT** increase the higher up you go.
 
-East-West Wind is primarily driven by the latitude of the embark tile biome, and is modeled loosely after atmospheric circulation. For a given world, one end (either top or bottom) is the "pole" and the other is the "equator". According to Toady One in a Future of the Fortress thread, "the directions alternate over the latitudes and depend on the pole settings, and yeah, a no-pole world is treated like a N+S pole world". The following table gives the base East-West Wind value for a given latitude, by counting tiles from the pole-most tile.1
+East-West Wind is primarily driven by the latitude of the embark tile biome, and is modeled loosely after atmospheric circulation. For a given world, one end (either top or bottom) is the "pole" and the other is the "equator". According to Toady One in a Future of the Fortress thread, "the directions alternate over the latitudes and depend on the pole settings, and yeah, a no-pole world is treated like a N+S pole world". The following table gives the base East-West Wind value for a given latitude, by counting tiles from the pole-most tile.[1]
 
-| Cell   | Pocket     | Smaller    | Small      | Medium       | Large        | Wind |
+|        |            |            |            |              |              |      |
 |--------|------------|------------|------------|--------------|--------------|------|
+| Cell   | Pocket     | Smaller    | Small      | Medium       | Large        | Wind |
 | Polar  | 0          | 0 thru 1   | 0 thru 3   | 0 thru 7     | 0 thru 15    | -15  |
 | Polar  | 1          | 2 thru 3   | 4 thru 7   | 8 thru 13    | 16 thru 27   | -14  |
 | Polar  | 2          | 4          | 7 thru 9   | 14 thru 19   | 28 thru 38   | -13  |
@@ -132,33 +141,39 @@ East-West Wind is primarily driven by the latitude of the embark tile biome, and
 
 Note: negative values indicate east-to-west winds, while positive values indicate west-to-east winds.
 
-In addition to east-west wind from latitude, certain parts of the world experience "mountain/valley winds and sea breezes"2. Such locations will receive additional wind each morning (corresponding to between 3:00 AM and 7:00 AM, and between 6:00 AM and 9:00 AM) and each afternoon (both corresponding to between 3:00 PM and 6:00 PM). A gust of wind affects both the east-west and north-south wind speeds, adding or subtracting 10 from each. The afternoon gust is always the opposite of the morning gust, so if the morning gust was +10 east-west and -10 north-south, the afternoon gust will be -10 east-west and +10 north-south.
+In addition to east-west wind from latitude, certain parts of the world experience "mountain/valley winds and sea breezes"[2]. Such locations will receive additional wind each morning (corresponding to between 3:00 AM and 7:00 AM, and between 6:00 AM and 9:00 AM) and each afternoon (both corresponding to between 3:00 PM and 6:00 PM). A gust of wind affects both the east-west and north-south wind speeds, adding or subtracting 10 from each. The afternoon gust is always the opposite of the morning gust, so if the morning gust was +10 east-west and -10 north-south, the afternoon gust will be -10 east-west and +10 north-south.
 
-Currently, wind primarily interacts with windmills to generate power. A total wind strength of between 1 and 14 generates 20 power, and between 15 and 29 generates 40 power. A total wind strength of 30+ generates 60 power, but this is currently only briefly achievable during gusts. In addition, wind affects the message you get when checking for the weather as an  adventurer.
+Currently, wind primarily interacts with windmills to generate power. A total wind strength of between 1 and 14 generates 20 power, and between 15 and 29 generates 40 power. A total wind strength of 30+ generates 60 power, but this is currently only briefly achievable during gusts. In addition, wind affects the message you get when checking for the weather as an adventurer.
 
 ## Evil weather
 
-Certain evil surroundings feature freakish weather, such as fogs, clouds, and rains. They may afflict those caught in them with various kinds of syndromes or curses, such as poisonings or transformation into zombies. Names for evil weather are randomly generated, typically something along the lines of "abominable mist", "unholy gloom" (clouds) or "creeping murk", "horrid goo" (rain). Materials tainted by evil weather goo will appear as 'slimy'.
+Certain evil surroundings feature freakish weather, such as fogs, clouds, and rains, which may afflict those caught in them with various kinds of syndromes or curses, such as poisonings or transformation into zombies. Names for evil weather are randomly generated, typically something along the lines of "abominable mist", "unholy gloom" (clouds) or "creeping murk", "horrid goo" (rain). Materials tainted by evil weather goo will appear as 'slimy'.
 
-Evil weather does not count as true "weather" for all purposes: most notably, disabling weather in d_init.txt will not disable evil weather.
+Evil weather does not count as true "weather" for all purposes: most notably, disabling weather in settings will not disable evil weather.
 
 Two kinds of evil weather exist: evil rain and evil clouds. The types of weather effect and their associated syndromes (if any) are different and randomly chosen for every evil biome in a generated world. There will be at most one weather effect for a given evil biome, sometimes in conjunction with the effect of corpse animation.
 
 ### Evil clouds
 
-Evil clouds are made of a generated inorganic gas or dust. They start in one tile and spread out in a similar manner to miasma vapor; when the game announces the cloud's presence, it will zoom in to this tile. Evil clouds cause more serious syndromes than evil rains, similar to those of forgotten beasts, titans and demons. Certain evil clouds transform living beings caught in them into dangerous zombie-like thralls, turning them against all life while significantly increasing their strength and toughness attributes.
+A drifting evil cloud. ASCII view.
+
+A cloud of haunting fog has drifted nearby!
+
+Evil clouds are made of a generated inorganic gas or dust. They start in one tile and spread out in a similar manner to miasma vapor; when the game announces the cloud's presence, it will zoom in to this tile. Evil clouds cause more serious syndromes than evil rains, similar to those of forgotten beasts, titans and demons. Certain evil clouds *instantly* and **irreversibly** transform living beings caught in them into dangerous zombie-like thralls, turning them against all life while significantly increasing their strength and toughness attributes.
 
 Evil clouds inflict worse syndromes than evil rains; thralling clouds are especially dangerous in the extreme, as the zombies produced are much stronger than those produced via ambient effects. These undead are very hard to kill and are **much** stronger than their original forms. Evil clouds have a tendency to roll over your outdoor trade depot and convert traveling merchants into a band of dwarf-hungry savages, which can be quite fun to a fortress reliant on trade.
 
-If you wish to embark to an evil biome that has thralling/husking clouds, a few options are available:
+If you wish to embark in an evil biome that has thralling/husking clouds, a few options are available:
 
-1.  You can inspect the world manually after it is created. In order to do this, you will need to turn off compressed saves in init.txt. Then enter advanced world generation, set the number of evil rain types to "none" and the number of evil cloud types to 1. Generate a world, quit, then open \`\`world.dat\`\` in the region folder. Locate \`\`\[INORGANIC:EVIL_CLOUD_1\]\`\`, then check the syndrome right after it. If this syndrome doesn't have Thralls, Husks, or Zombies, gen a new world and try again. This is much faster than embarking 20 times in a row, and you can make sure you will get dust if you prefer it over fog.
-2.  DFHack's \`\`embark-assistant\`\` plugin can help find these types of biomes when run from the embark screen.
-3.  You can change what evil weather a biome has with the DFHack script biomemanipulator, and/or use \`\`gui/gm-editor\`\` to change what evil weathers there are.
+1.  You can inspect the world manually after it is created. In order to do this, you will need to turn off compressed saves in init.txt. Then enter advanced world generation, set the number of evil rain types to "none" and the number of evil cloud types to 1. Generate a world, quit, then open `world.dat` in the region folder. Locate `[INORGANIC:EVIL_CLOUD_1]`, then check the syndrome right after it. If this syndrome doesn't have Thralls, Husks, or Zombies, gen a new world and try again. This is much faster than embarking 20 times in a row, and you can make sure you will get dust if you prefer it over fog.
+2.  DFHack's `embark-assistant` plugin can help find these types of biomes when run from the embark screen.
+3.  You can change what evil weather a biome has with the DFHack script biomemanipulator, and/or use `gui/gm-editor` to change what evil weathers there are.
 
 Thralling clouds are also dangerous in adventure mode: this particular form of undead status means inherent hostility from civilized beings, reduced speed and no regeneration. However, other undead will, as usual, ignore you.
 
 ### Evil rain
+
+It is raining rotten sludge!
 
 Evil rain can be made of either the blood of a civilized race (most famously elf blood, but it can rain dwarf blood and others) or a randomly generated inorganic substance. Blood rain typically causes no syndromes, only giving whoever is caught in it an unhappy thought. Generated substances are more dangerous, causing minor symptoms such as vomiting and fevers, as well as inspiring the aforementioned unhappy thought. Evil rain can also cause wounds and injure dwarves and other creatures caught in them, although the extent of injury depends on the substance. Some forms of evil rain, such as those that cause blisters, will lead to instant fun as a blistered brain means death. Cats, birds, and other livestock dying after being exposed to evil rain indicates that dwarves may be next. Dwarves spattered with evil rain will seek a bath after any outdoor work, wasting time and soap. There are rumors of rain composed of other substances, such as alcohol and vomit; however, these seem to be rare.
 
@@ -186,7 +201,9 @@ The only part that the cloud will not reach when it interacts with constructed w
 
 For unknown reasons, clouds will not teleport up multi-tile trees, but will pass uninterrupted below their boughs. This will not be true for anything you build, implying that any "outside" tile is dangerous, as trees provide support and elevation without changing which tiles are exposed to the outside.
 
-Undead created by evil weather gain immediate strength bonuses and acquire a status of . They will tirelessly seek out living things to kill until they are struck down, which can take considerable effort.
+Undead created by evil weather gain immediate strength bonuses and acquire a status of Opposed to Life. They will tirelessly seek out living things to kill until they are struck down, which can take considerable effort.
+
+Today's Forecast: 30% chance of eventual water appearing somewhere.
 
 ## Good Weather
 
@@ -194,8 +211,130 @@ It has been observed that in biomes where the alignment is "good", there exists 
 
 Theoretically, this may be made by modding interactions, but wasn't verified by testing.
 
+## Iconography
+
+In adventure mode, factors such as the weather, moon phase, wind speed, wind direction, and status of the sun's position and fog levels are displayed in icons at the top right of the screen.
+
+Weather
+
+Icon
+Description
+
+It is currently snowing.
+
+It is currently raining.
+
+It is currently raining blood. Naturally occurs in evil biomes.
+
+It is currently raining a strange substance.
+
+Light
+
+Icon
+Description
+
+There is dawn light inside a structure.
+
+There is daylight inside a structure.
+
+There is dusk light inside a structure.
+
+There is no outside light inside a structure, as it's night time.
+
+There is an eerie ambience about.
+
+Clouds
+
+Icon
+Description
+
+There are bright cumulus clouds overhead.
+
+There are dark cumulus clouds overhead.
+
+There are bright stratocumulus clouds overhead.
+
+There are dark stratocumulus clouds overhead.
+
+There are cirrus clouds overhead.
+
+There are puffs of cumulus clouds overhead.
+
+Fog
+
+Icon
+Description
+
+There is a light mist.
+
+There is a standard amount of fog.
+
+There is heavy fog.
+
+There is fog from an eerie glowing pit.
+
+Wind
+
+Icon
+Description
+
+The different levels of how powerful the wind is.
+
+The direction of the wind, the arrows appear on top of the above wind icons.
+
+Sun
+
+Icon
+Description
+
+The status of the sun in the sky, between dawn and dusk.
+
+Moonlight
+
+Icon
+Description
+
+The moon appears dark in the night sky.
+
+The moon appears somewhat bright in the night sky.
+
+The moon appears bright in the night sky.
+
+Moon phases
+
+Icon
+Description
+
+Waxing crescent
+
+Half crescent
+
+Waxing gibbous
+
+Full moon. When a cursed creature changes to a werebeast.
+
+Waning gibbous
+
+Half gibbous
+
+Half gibbous
+
+Clear, starry night sky
+
 ## Bugs
 
-- Different biomes can exist in layers above the surface. This can lead to odd behavior like evil rain above a "good" biome.
+- Different biomes can exist in layers above the surface. This can lead to odd behavior like evil rain above a "good" biome.Bug:8781
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 
 Humans have attempted to predict the weather from time to time, to unusually bad results. Dwarven scholars absentmindedly noted that they could do it better, which caused a war from the completely unrelated cause of sock-making procedures. Dwarves *would* probably still do it better though, that is, if it rains tonight.
+
+\
+
+|  |
+|----|
+| "Weather" in other / Languages / Dwarven / : / nugreth / Elven / : / dafo / Goblin / : / strobnod / Human / : / señam |

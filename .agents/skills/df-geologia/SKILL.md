@@ -1,49 +1,60 @@
 ---
 name: df-geologia
-description: Biomas, camadas de pedra e solo, oceanos, florestas, geração de mundo (worldgen), lugares e lore do mundo. Use para perguntas sobre terreno, onde encontrar recursos, tipos de bioma ou história do mundo gerado. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Geologia e mundo do Dwarf Fortress: biomas, camadas de pedra e solo, oceanos, florestas, plantas, árvores, geração de mundo (worldgen), lugares e lore. Use quando o usuário perguntar (inclusive em português) sobre terreno, onde achar recursos, bioma, caverna, planta, árvore, worldgen ou história do mundo. Termos EN: biome, world, geology, layer, cavern, tree, plant, worldgen, ocean, forest, river. Adventure e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Geologia (Dwarf Fortress)
+# DF Geologia (Dwarf Fortress)
 
-Biomas, camadas de pedra e solo, oceanos, florestas, geração de mundo (worldgen), lugares e lore do mundo. Use para perguntas sobre terreno, onde encontrar recursos, tipos de bioma ou história do mundo gerado. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-geologia" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-geologia "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 173)
-- Worldgen examples → `references/worldgen-examples.md`
-- Advanced world generation → `references/advanced-world-generation.md`
-- Planepacked → `references/planepacked.md`
-- Seed archive → `references/seed-archive.md`
-- Weather → `references/weather.md`
-- Faction → `references/faction.md`
-- Cavern → `references/cavern.md`
-- Tile → `references/tile.md`
-- Tree → `references/tree.md`
-- World generation → `references/world-generation.md`
-- Name → `references/name.md`
-- Glacier → `references/glacier.md`
-- Tavern → `references/tavern.md`
-- Semi-molten rock → `references/semi-molten-rock.md`
-- Library → `references/library.md`
-- Civilization → `references/civilization.md`
-- Ocean → `references/ocean.md`
-- Temple → `references/temple.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 412 artigos — use o search.py para o resto)
+- Temperate → `references/temperate.md`
+- Tropical → `references/tropical.md`
 - Biome → `references/biome.md`
-- Armok → `references/armok.md`
-- Topic → `references/topic.md`
-- World History file → `references/world-history-file.md`
+- Forest → `references/forest.md`
+- Civilization → `references/civilization.md`
+- Tree → `references/tree.md`
+- Ocean → `references/ocean.md`
+- Grassland → `references/grassland.md`
+- Shrubland → `references/shrubland.md`
+- Savanna → `references/savanna.md`
 - River → `references/river.md`
-- Stone layers → `references/stone-layers.md`
-- Guildhall → `references/guildhall.md`
-- Volcano → `references/volcano.md`
-- Murky pool → `references/murky-pool.md`
-- Desert → `references/desert.md`
-- World rejection → `references/world-rejection.md`
-- Magma mist → `references/magma-mist.md`
+- Grass → `references/grass.md`
+- Mountain → `references/mountain.md`
+- Lake → `references/lake.md`
+- Tundra → `references/tundra.md`
+- Advanced world generation → `references/advanced-world-generation.md`
+- Staring eyeball → `references/staring-eyeball.md`
+- Wormy tendril → `references/wormy-tendril.md`
+- Bubble bulb → `references/bubble-bulb.md`
+- Valley herb → `references/valley-herb.md`
+- Cave moss → `references/cave-moss.md`
+- Kobold bulb → `references/kobold-bulb.md`
+- Downy grass → `references/downy-grass.md`
+- Abaca → `references/abaca.md`
+- Arrow bamboo → `references/arrow-bamboo.md`
+- Golden bamboo → `references/golden-bamboo.md`
+- Hedge bamboo → `references/hedge-bamboo.md`
+- Floor fungus → `references/floor-fungus.md`
+- Bentgrass → `references/bentgrass.md`
+- Cloudberry → `references/cloudberry.md`
 
-*...e mais 143 artigos (use o search.sh para encontrá-los)*
+*…e mais 382 artigos (use o search.py).*

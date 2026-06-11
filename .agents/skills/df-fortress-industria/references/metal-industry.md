@@ -1,8 +1,14 @@
 # Metal industry
 
-> Fonte: [Metal industry](https://dwarffortresswiki.org/index.php/Metal_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Metal industry](https://dwarffortresswiki.org/index.php/Metal_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **metal industry** is a catch-all phrase for both the smelting of raw ore into metal bars (including alloys), and turning those bars into crafts, furniture, weapons, and armor. Some sort of metal industry is essential in most fortresses, as without one, your military will have to fight off invaders with traps, traded (mediocre) or even wooden weapons, and mostly leather armor. Because of metal's high base value, it can be a very profitable industry, allowing the creation of valuable statues and furniture for your fort or as trade goods. Specific information on the metals and ores themselves are covered on their respective pages, and will not be included on this page.
+
+Metal Industry summarized Flowchart.
+
+More complete flowchart of all metals and minerals, done by alansai.
 
 ## Ores
 
@@ -12,9 +18,9 @@ The site finder lists two different types of ore occurrence in a region: shallow
 
 Different ores tend to occur in different stone layers and among different rocks; for instance, two of the ores of iron only occur in the sedimentary layer, while the third occurs both there and in the igneous extrusive layer. The type of surrounding rock is a clue as to the types of ores it contains. Within these rock layers, ores occur in veins -- sinuous, single z-level groupings of the rock that weave through the stone layer in no discernible pattern (multi-layer veins are planned for future releases) -- or in clusters, smaller and more circular groupings of typically rare ores (like platinum). With luck, you might happen upon valuable ores while digging out your initial fortress, but generally finding your resources requires significant exploratory mining first, digging up a z-level to discover all of the goodies it contains.
 
-Whenever you strike a new ore on a z-level, the game will announce its presence with the message "You have struck \!", similar to what it does for more mundane stones and for gems. Where there is one ore, there is an entire vein or cluster - which is your cue to mine out the area to explore your new-found resource.
+Whenever you strike a new ore on a z-level, the game will announce its presence with the message "You have struck !", similar to what it does for more mundane stones and for gems. Where there is one ore, there is an entire vein or cluster - which is your cue to mine out the area to explore your new-found resource.
 
-By default, ores are reserved for smelting; that is, they are unavailable for use by masons, stone crafters and so on. If you want to (temporarily) allow your dwarves to make ore stone furniture, for example if you have found considerable deposits of an ore, you can change permissions in the status menu. This can be advantageous for several reasons:
+By default, ores are reserved for smelting; that is, they are unavailable for use by masons, stone crafters and so on. If you want to (temporarily) allow your dwarves to make ore stone furniture, for example if you have found considerable deposits of an ore, you can change permissions in the Stone use tab in the Labor menu y. This can be advantageous for several reasons:
 
 - Your Mason may have higher skill than your rarely-used Blacksmith
 - You may save the cost of fuel, and the time spent hauling/smelting the ore
@@ -43,6 +49,8 @@ Smelting itself is pretty simple: make sure to have some dwarves with furnace op
 
 ## Alloys
 
+Flowchart of ore refining and common alloy formulas.
+
 Pure metal bars and, in some cases, ores can be combined at a smelter to produce metal alloys. These are special blends of materials that generally have an advantage over their components, be it in value, a unique color, decreased fuel consumption (when made directly from ores), or military application. For instance, brass can be smelted for a net gain in value, whereas rose gold is used for its unique color. In the case of bismuth, its only use (besides as a trade good) is as a component in bismuth bronze. For a complete list of alloys and their uses, see Metal#Alloys.
 
 ## Flux stone
@@ -53,9 +61,11 @@ Easily the most useful alloy of them all is steel, which requires a complex seri
 
 Goblinite is the humorous name coined by players to the metal of enemy sieges (usually goblins, hence the moniker). Reclaiming the remains from killed enemy combatants can be highly profitable; their metal arms and armor can be used as is or melted down into bars (except in the case of elves, which do not use metal equipment). Once an object has been marked, it will be sent to a smelter with an active "Melt Object" job. When an object is melted the amount of metal recovered from an item is consistent and varies from 10%-150% based on the item type. Any amount less than a full bar is invisibly stored in the Smelter and will be automatically combined with future melted objects to form a complete bar.
 
-The equipment of caged enemies can also be taken by mass dumping a caged creature (manually reclaim the caged creature via the inspect menu to prevent it from being dumped too) and then reclaiming and marking for melting as explained above.
+The equipment of caged enemies can also be taken by mass dumping a caged creature (manually reclaim the caged creature via the k inspect menu to prevent it from being dumped too) and then reclaiming and marking for melting as explained above.
 
 ## Smithing
+
+A tool smith
 
 Once you have the metal bars or alloys created at a smelter, you are ready to turn them into your finished products at a metalsmith's forge.
 
@@ -94,7 +104,7 @@ Of all the industries in *Dwarf Fortress*, the metal industry is easily the most
 
 There are two methods to keep a vibrant metal industry running. The first is through judicious use of the workshop repeat button by smelting a large amount of fuel on repeat, followed by smelting ores on repeat; the bars generated can then be made into the finished products at the metalsmith's forge. A bookkeeper and resource management through checking the bars and fuel counts in the stocks menu are necessary with this method, as you have to know when you are running low on certain resources and need to adjust your processes. In particular, you want to avoid running out of fuel, as your dwarves will have to burn more wood to get the smelters jump-started again.
 
-The second method is through judicious use of the manager. This has the advantage of being easier to control, easier to follow, and easier to maintain then repeating tasks, but it involves a time delay and necessitates prior planning, as in a fortress with any sizable amount of dwarves, the manager must first validate all orders before acting upon them. To use the manager to manage your metal industry, queue up the jobs needed for your finished product in order. For instance, if you want to make 10 steel breastplates, and you have magma forges and magma smelters, you would have to enqueue the following jobs in the following order:
+The second method is through judicious use of the manager. This has the advantage of being easier to control, easier to follow, and easier to maintain than repeating tasks, but it involves a time delay and necessitates prior planning, as in a fortress with any sizable amount of dwarves, the manager must first validate all orders before acting upon them. To use the manager to manage your metal industry, queue up the jobs needed for your finished product in order. For instance, if you want to make 10 steel breastplates, and you have magma forges and magma smelters, you would have to enqueue the following jobs in the following order:
 
 1.  Smelt coke from bituminous coal (4 times, producing 36 coke) **-or-** Smelt coke from lignite (6 times, producing 30 coke) **-or-** Make charcoal from wood (30 times, producing 30 charcoal)
 2.  Smelt hematite/magnetite/limonite (8 times, producing 32 iron bars)
@@ -103,3 +113,5 @@ The second method is through judicious use of the manager. This has the advantag
 5.  (Once all the other jobs are done) Forge steel breastplates (quantity 10)
 
 This requires 160% (or more) additional coke/charcoal if you don't have magma forges and magma smelters (you'd need a total of 78 coke/charcoal when you begin producing the iron bars, instead of 30).
+
+Olden days of humans working in the metal industry.

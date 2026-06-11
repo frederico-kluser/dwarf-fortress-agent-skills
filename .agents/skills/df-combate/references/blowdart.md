@@ -1,6 +1,8 @@
 # Blowdart
 
-> Fonte: [Blowdart](https://dwarffortresswiki.org/index.php/Blowdart) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Blowdart](https://dwarffortresswiki.org/index.php/Blowdart) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 A **blowdart** is a pointed projectile designed to be fired from a blowgun, a weapon normally only used by subterranean animal people. They consist of a wooden, bone, or metal spine, generally with some sort of plug to build pressure (unlike real life, blowdarts are made from only one material).
 
@@ -14,4 +16,11 @@ While blowdarts are nearly impossible to obtain in a standard game, the DFHack c
 
 ## Bugs
 
-- If squad is assigned multiple ammo types, dwarves with "individual choice ranged" carry wrong ammo.
+- If a squad is assigned multiple ammo types, dwarves with "individual choice ranged" carry the wrong ammoBug:1374.
+
+    [ITEM_AMMO:ITEM_AMMO_BLOWDARTS]
+    [NAME:blowdart:blowdarts]
+    [CLASS:BLOWDART]
+    [SIZE:20]
+    [ATTACK:EDGE:1:50:stick:sticks:NO_SUB:1000]
+        [ATTACK_PREPARE_AND_RECOVER:3:3]

@@ -1,6 +1,10 @@
 # Bone meal
 
-> Fonte: [Bone meal](https://dwarffortresswiki.org/index.php/Bone_meal) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Bone meal](https://dwarffortresswiki.org/index.php/Bone_meal) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+It's like cocaine for plants.
 
 **Bone meal** is the resulting powder one winds up with after grinding up bones.
 
@@ -12,8 +16,12 @@ However, Toady has suggested that it may eventually be used as a fertilization c
 
 ## Adventure Mode
 
-Bone meal frequently appears in night troll lairs and minotaur labirynths in adventurer mode. It currently has no use and appears to be nothing more than a prop. Although obviously made of bone, creatures have never yet been observed consuming it.
+Bone meal frequently appears in night troll lairs and minotaur labyrinths in adventurer mode. It currently has no use and appears to be nothing more than a prop. Although obviously made of bone, [`[BONECARN]`](/index.php/Creature_token#BONECARN "Creature token") creatures have never yet been observed consuming it.
 
 ## Real Life
 
-In reality, **bone meal** is made by grinding animal bones into a powder and is used as a fertilizer for plants and as a nutritional supplement for animals.
+In reality, bone meal is made by grinding animal bones into a powder and is used as a fertilizer for plants and as a nutritional supplement for animals.
+
+|  |
+|----|
+| "Bone meal" in other / Languages / Dwarven / : / osod inob / Elven / : / one thethéfa / Goblin / : / mudo xanë / Human / : / sut pode |

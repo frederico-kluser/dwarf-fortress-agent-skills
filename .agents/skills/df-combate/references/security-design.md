@@ -1,27 +1,38 @@
 # Security design
 
-> Fonte: [Security design](https://dwarffortresswiki.org/index.php/Security_design) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Security design](https://dwarffortresswiki.org/index.php/Security_design) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-''This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. **Security design** focuses on how to turn the physical layout and architecture of a fort into a defensible whole. For a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense, see the **defense guide**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**. For specific advice on how to get your soldiers prepared for any threat, see **military design**.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+\
+
+*This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. **Security design** focuses on how to turn the physical layout and architecture of a fort into a defensible whole. For a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense, see the **defense guide**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**. For specific advice on how to get your soldiers prepared for any threat, see **military design**.*
+
+**Warning!**
+
+Invaders can now jump and climb, build bridges and stairs, dig through natural walls, and use battering rams to destroy buildings. They will also learn where traps are located eventually and use that knowledge to avoid your traps. Familiarize yourself with these mechanics before implementing these strategies. When in doubt, replacing pits with fortifications is probably a good first step.
+
+\
 
 ## Standard key
 
-`  `**`Key:`**\
-**`symbol tile`**\
-`     -  Open space`\
-` +   -  Constructed floor, or top of wall section from lower level`\
-` `**`0`**`   -  Isolated wall section`\
-`╔╦═╗`\
-`╠╬═╣ -  Connected wall `\
-`║║ ║`\
-`╚╩═╝`\
-` ╬   -  Fortifications`\
-` X   -  Up/down ``stairs`\
-`    -  Down stair`\
-` ▲   -  Up ramp/slope`\
-` ▼   -  Down ramp/slope`\
-` .   -  natural ground`\
-` ☺   -  dwarf`
+      Key:
+    symbol  tile
+         -  Open space
+     +   -  Constructed floor, or top of wall section from lower level
+     0   -  Isolated wall section
+    ╔╦═╗
+    ╠╬═╣ -  Connected wall
+    ║║ ║
+    ╚╩═╝
+     ╬   -  Fortifications
+     X   -  Up/down stairs
+     <   -  Up stair
+     >   -  Down stair
+     ▲   -  Up ramp/slope
+     ▼   -  Down ramp/slope
+     .   -  natural ground
+     ☺   -  dwarf
 
 ## General suggestions
 
@@ -41,27 +52,25 @@ Both thieves and ambushes are invisible until something detects them - a dwarf, 
 
 There are some considerations to good placement of such animals. If you have a 1- or 2-tile-wide hall, one animal is enough. If you have a 3-tile-wide hallway, a single pastured animal placed in the middle is still sufficient, or you can restrain two animals, one at each side of the hall.
 
-`══════════     R = restraint`\
-`+++1R1++++     1 = area of animal 1`\
-`+++bbb++++     2 = area of animal 2`\
-`+++2R2++++     b = area of both`\
-`══════════`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   | R |   | = |   | r | e | s | t | r | a | i | n | t |   |   |   |   |   |   |   |
+|   | + | + | + | 1 | R | 1 | + | + | + | + |   |   |   |   |   | 1 |   | = |   | a | r | e | a |   | o | f |   | a | n | i | m | a | l |   | 1 |
+|   | + | + | + | b | b | b | + | + | + | + |   |   |   |   |   | 2 |   | = |   | a | r | e | a |   | o | f |   | a | n | i | m | a | l |   | 2 |
+|   | + | + | + | 2 | R | 2 | + | + | + | + |   |   |   |   |   | b |   | = |   | a | r | e | a |   | o | f |   | b | o | t | h |   |   |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 Either arrangement creates a thief-proof barrier against unannounced intrusion, as there is no combination of locations where an invisible enemy can sneak by without bumping into an animal. Caravans can pass over restraints and pastures and their contained creatures without a problem (however, do note that wagons will not appear on the map edge if a creature is blocking their intended location). Guard animals can also see hidden enemies one z-level below them, so long as there is no intervening floor, so if space is tight you can also place them above your entranceway.
 
 Unless you're happy losing these animals on a regular basis, you should try to keep them alive.
 
-:\* Put them around a corner or behind a U-bend, so archers cannot fire at them from a distance.
+- Put them around a corner or behind a U-bend, so archers cannot fire at them from a distance.
+- Don't have them as your "first line of defense"; put them deeper in the entry, behind some traps.
+- Put them inside, so flying creatures have to come down to their level to attack them.
+- Use windows to protect your guard animal (note, however, that some intruders may not be detected if they are not forced to move directly adjacent to your animal).
+- Consider using a pressure plate at the extreme entrance to seal off the hall further down and keep your guard animal(s) safe. Thieves won't trigger them, but the animals can deal with those - ambushes *will* trigger them, and you don't want them getting to your guard animals.
 
-:\* Don't have them as your "first line of defense"; put them deeper in the entry, behind some traps.
-
-:\* Put them inside, so flying creatures have to come down to their level to attack them.
-
-:\* Use windows to protect your guard animal (note, however, that some intruders may not be detected if they are not forced to move directly adjacent to your animal).
-
-:\* Consider using a pressure plate at the extreme entrance to seal off the hall further down and keep your guard animal(s) safe. Thieves won't trigger them, but the animals can deal with those - ambushes *will* trigger them, and you don't want them getting to your guard animals.
-
-Remember that anything short of a megabeast is not a good match for an armoured opponent. While watching your tame grizzly bear or alligator tear a thief apart has an amusement value, watching the goblin maceman send them flying across the map, mangled and dying, has less.
+Remember that anything short of a megabeast is not a good match for an armoured opponent.\[Verify\] While watching your tame grizzly bear or alligator tear a thief apart has an amusement value, watching the goblin maceman send them flying across the map, mangled and dying, has less.
 
 Hunting animals have better observation (sight range) than their regular or war counterparts.
 
@@ -69,11 +78,13 @@ Hunting animals have better observation (sight range) than their regular or war 
 
 One of the more basic designs is a fortified wall surrounded by a moat. The moat should be a channel at least three tiles wide to keep anything from jumping across into your fort. Dig one additional tile on each side to prevent creatures from climbing out of the moat. You can flood the moat if you like, however doing so actually reduces its effectiveness. The next step is to build a wall around the inside of the moat (at least one tile from the edge). Add a layer of fortifications on top of the wall to deter climbers and allow your marksdwarves to fire on enemies outside.
 
-`sideview `\
-`        `\
-`      #`
-
-\_\_\_\_ \_▒\_ ░░░\_\_\_\_\_░░ \
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   | s | i | d | e | v | i | e | w |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   | \# |   |   |
+| \_ | \_ | \_ | \_ |   |   |   | \_ | ▒ | \_ |
+| ░ | ░ | ░ | \_ | \_ | \_ | \_ | \_ | ░ | ░ |
 
 ### Defending the edge
 
@@ -83,6 +94,7 @@ You're not allowed to wall within five squares of the edge of the map... but thi
 - If there is only one wagon-accessible path to your Trade Depot, caravans will be forced to appear on that path. Limiting the caravan's options allows for better-prepared defenses along the caravan route.
 - You can also build drawbridges all the way up to the edge. A long, skinny, raised bridge is effectively a wall; however, it looks the same whether it's open or closed.
 - You can with some work use Obsidian casting to wall to the map edge
+- You can force a building order using the DFHack command `gui/design`.
 
 Train up diggers in soft soil and you can surround most of the map with a moat by the time the first migrants arrive. Be very, very wary of cave-ins, especially on highly sloped diagonal terrain - note that a downward ramp does not support adjacent floor tiles, and no tiles are supported diagonally.
 
@@ -90,7 +102,7 @@ Occasionally creatures have a strange habit of appearing well inside the map due
 
 #### Design considerations
 
-- The moat should be designed to prevent entry except by falling from both sides. (Otherwise inside and outside forces might be tempted to shake hands from adjacent squares.) Despite an abundance of giant corkscrews, grates, ballista bolts, etc., no one has ever invented the ladder, so this keeps anyone from entering or leaving the rest of the map.
+- The moat should be designed to prevent entry except by falling from both sides. Such as a wall or digging the moat 2 z levels down
 - The moat should be dry, because sooner or later you will be tempted to let someone visit the edge to loot goblins or hunt varmints, and next thing you know your Legendary Weaponsmith who outpaces all your smelters will be whiling away his time carrying a leather thong to a stockpile when he runs into a groundhog and decides to react by jumping into the moat and holding his breath beneath the shallow waters until he drowns. (As always, the notice that he has drowned is the first you'll hear of it)
 - The moat doesn't actually *need* to be adjacent to the edge of the map except when conserving valuable surface terrain (such as trees on a map that is mostly rock). It is easier to free trapped miners when they can dig further outward, and placing the moat on the sixth or further square in from the edge allows further modification with floodgates, walls, and doors. Any channeling permanently changes the dug-out tile to "Light Above Ground", which restricts these features from tiles near the edge even if floors are later constructed to close the space.
 - Because migrants might turn up near wild animals or be followed closely by goblins, it is nice to wall off the last square in shorter segments. Each one or two segments are served by a separate lever bridge. This can be done by:
@@ -107,11 +119,9 @@ When placing multiple towers, know that crossbows have a range of 20 tiles, so, 
 
 #### Siege engine turrets
 
-If it's big enough, build a siege engine inside a pillbox. Since siege engines cannot fire at targets higher or lower than them, the device needs to be on the same z-level as any targets, but this could be across a large gap to a nearby plateau. Only a single tile of fortifications is needed to fire through the wall. Position the tower to fire where invaders tend to congregate.
+If it's big enough, build a siege engine inside a pillbox. Only a single tile of fortifications is needed to fire through the wall. Position the tower to fire where invaders tend to congregate.
 
-You will want to guarantee that enemies do not approach the position and scare the civilian operators - this distance has been reported to be up to 20 tiles or so. Dig a moat, have some intervening valley or build some secondary fortifications to keep enemies at a distance. Unlike walls, fortifications on the same z-level do not block siege engine missiles, at any range. Unfortunately, if an enemy can walk up to them, fortifications will protect enemies from your archery fire (but not siege engine fire.)
-
-*\[Note: Due to a number of outstanding bugs, siege engines are generally quite ineffective...\]*
+You will want to guarantee that enemies do not approach the position closely and scare the civilian operators. Dig a moat, have some intervening valley or build some secondary fortifications to keep enemies at a distance. Unlike walls, fortifications on the same z-level do not block siege engine missiles, at any range. Unfortunately, if an enemy can walk up to them, fortifications will protect enemies from your archery fire (but not siege engine fire.)
 
 ### Control Room
 
@@ -159,17 +169,21 @@ For building destroyers, spare furniture can serve the same purpose as bait anim
 
 Enemies can be herded by constructed features. If you have a particular zone covered by catapults and would like enemies to pass through it, strategically placed walls can make enemy pathfinding more favorable. A trap occupying a single tile in the middle of a barren plain is likely to never get triggered. However, if walls are placed in a cross-hair pattern around the trap, animals and invaders are much more likely to pass over it as they wander across the map. This can be a very useful trick when capturing wildlife with cage traps.
 
-\ +++++║+++++ +++++║+++++ +++^^║^^+++ +++^^║^^+++ ═════^═════ +++^^║^^+++ +++^^║^^+++ +++++║+++++ +++++║+++++ \
+|  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|
+| + | + | + | + | + | ║ | + | + | + | + | + |
+| + | + | + | + | + | ║ | + | + | + | + | + |
+| + | + | + | ^ | ^ | ║ | ^ | ^ | + | + | + |
+| + | + | + | ^ | ^ | ║ | ^ | ^ | + | + | + |
+| ═ | ═ | ═ | ═ | ═ | ^ | ═ | ═ | ═ | ═ | ═ |
+| + | + | + | ^ | ^ | ║ | ^ | ^ | + | + | + |
+| + | + | + | ^ | ^ | ║ | ^ | ^ | + | + | + |
+| + | + | + | + | + | ║ | + | + | + | + | + |
+| + | + | + | + | + | ║ | + | + | + | + | + |
 
 ##### Pathing slowdowns
 
 If you're playing on a low-powered machine and you close up all entrances to your fortress during a siege, your game may grind to a halt and/or crash as the siegers continuously fail at pathfinding into your fortress. Bait animals may alleviate this.
-
-##### Goblin loyalty is a beautiful thing.
-
-Don't use cage traps as the front line of defense, as currently, a goblin squad will follow its leader indefinitely, and if its leader is caught in a cage the rest of the goblins will just stand there until they find something to do rather than exploring the lovely, pointy playground you've created.
-
-On the other hand, this can be a fantastic way to train your siege operators, as the entire squad will valiantly stand guard at their leader's cage even in the face of overwhelming barrages of stone and metal, and unlike a bait animal neither the goblins nor your own attacks will kill their caged leader. Leave them alone long enough, and they'll eventually start killing their own deserters!
 
 ## Entrance designs
 
@@ -181,17 +195,19 @@ The airlock pattern can be useful even without putting the depot there. Let a fe
 
 ### Siege Engines
 
-*\[Note: Due to a number of outstanding bugs, siege engines are generally quite ineffective...\]*
+Siege engines are extremely effective. Although bolt throwers aren't listed here (yet), their high rate of fire and flexibility makes them deadly weapons of war.
 
 One way to have siege engines (help) defend your fortress is:
 
 **One ballista vs 3-wide hallway**
 
-`══════════════════════════╦═════`\
-`Entrance++++++++++++▼     ║▐▀\`\
-`Entrance++++++++++++▼     ╬◄═«`\
-`Entrance++++++++++++▼     ║▐▄/`\
-`══════════════════════════╩═════`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╦ | ═ | ═ | ═ | ═ | ═ |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ║ | ▐ | ▀ | \\ |   |   |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ╬ | ◄ | ═ | « |   |   |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ║ | ▐ | ▄ | / |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╩ | ═ | ═ | ═ | ═ | ═ |
 
 Using this design you can (theoretically) cripple an army using a well timed volley. The hallway can be much longer than shown if you wish, as ballistae have extended ranges well over 100 tiles. The channeled area is necessary, as civilians (siege operators are "civilians") will run when enemies get within about 20-24 tiles of them, regardless of the actual path to that threat.
 
@@ -199,15 +215,17 @@ Using this design you can (theoretically) cripple an army using a well timed vol
 
 Three (or more!) ballistae can be put into a "battery" if overlapped - one per tile-width of the hallway, with each ballista aiming down their row of tiles.
 
-`                                ╔═══`\
-`══════════════════════════╦══╦══╝▐▀\`\
-`Entrance++++++++++++▼     ╬  ╬▐▀\◄═«  (~ammo~)`\
-`Entrance++++++++++++▼     ╬▐▀\◄═«▐▄/`\
-`Entrance++++++++++++▼     ╬◄═«▐▄/ (~ammo~)`\
-`══════════════════════════╣▐▄/ (~ammo~)`\
-`                          ╚═════════`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ╔ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╦ | ═ | ═ | ╦ | ═ | ═ | ╝ | ▐ | ▀ | \\ |   |   |   |   |   |   |   |   |   |   |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ╬ |   |   | ╬ | ▐ | ▀ | \\ | ◄ | ═ | « |   |   | ( | ~ | a | m | m | o | ~ | ) |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ╬ | ▐ | ▀ | \\ | ◄ | ═ | « | ▐ | ▄ | / |   |   |   |   |   |   |   |   |   |   |
+|   | E | n | t | r | a | n | c | e | + | + | + | + | + | + | + | + | + | + | + | + | ▼ |   |   |   |   |   | ╬ | ◄ | ═ | « | ▐ | ▄ | / |   | ( | ~ | a | m | m | o | ~ | ) |   |   |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╣ | ▐ | ▄ | / |   | ( | ~ | a | m | m | o | ~ | ) |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |
 
-Be sure to use fortifications to prevent dwarves from wandering in front of the ballista to their deaths. If desired (and you have the mandwarfpower to spare), catapults may be put behind those, as they shoot safely *over* workers in front of them. Although less effective than ballistae, it's a little more firepower - and that can't be a bad thing.
+Be sure to use fortifications to prevent dwarves from wandering in front of the ballista to their deaths. If desired (and you have the ~~man~~dwarfpower to spare), catapults may be put behind those, as they shoot safely *over* workers in front of them. Although less effective than ballistae, it's a little more firepower - and that can't be a bad thing.
 
 For added flavour, channel out one or more tiles down the length of the 3-wide hallway and install retractable bridges. When invaders attack, retract the bridges, forcing them into paths that are only 1-tile wide.
 
@@ -225,21 +243,33 @@ An alternative that uses gravity rather than screw pumps (but works only if you 
 
 ### The "Reverse Battlement" design
 
-Level Z+0 (ground): \
+Level Z+0 (ground):
 
-`  ...............`\
-`F ═══════════════`\
-`O .≥.g≥...g......`\
-`R ..≤......g.....`\
-`T ...g≤..g....... 
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   | . | . | . | . | . | . | . | . | . | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | F |   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | O |   | . | ≥ | . | g | ≥ | . | . | . | g | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | R |   | . | . | ≤ | . | . | . | . | . | . | g | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | T |   | . | . | . | g | ≤ | . | . | g | . | . | . | . | . | . | . |   | \ | - | - |   | e | n | e | m | i | e | s |   | e | n | t | e | r |   | h | e | r | e |
+|   | R |   | . | . | ≥ | . | . | . | . | . | . | g | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | E |   | . | g | . | ≤ | . | . | . | . | . | . | . | . | . | g | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | S |   | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | S |   | . | . | . | . | . | . | . | . | . | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 Level Z+1 (bridge):
 
-`E      ║+++║     `\
-`N +++++║+++║+++++`\
-`T      ╬☺++║     `\
-`R      ╬☺++║     `\
-`A      ╬☺++║      
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | E |   |   |   |   |   |   | ║ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | N |   | + | + | + | + | + | ║ | + | + | + | ║ | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | T |   |   |   |   |   |   | ╬ | ☺ | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | R |   |   |   |   |   |   | ╬ | ☺ | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | A |   |   |   |   |   |   | ╬ | ☺ | + | + | ║ |   |   |   |   |   |   | \ | - | - |   | a | r | c | h | e | r | s |   | s | h | o | o | t |   | t | h | e | m |   | f | r | o | m |   | u | p |   | a | b | o | v | e |
+|   | N |   |   |   |   |   |   | ╬ | ☺ | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | C |   |   |   |   |   |   | ╬ | ☺ | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | E |   | + | + | + | + | + | ║ | + | + | + | ║ | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   | ║ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 Note that in this diagram, the fortress interior is to the West, and the enemy forces come from the East. The marksdwarves on the bridge with the fortifications are one level above the goblins (or other attackers), who will pass under the bridge and charge on toward the west. As they move past the bridge they are targeted from behind (which is one level above) by the marksdwarves waiting in ambush. This allows the marksdwarves to face far fewer enemies at any one time, at least to begin with, and any dangerous enemy archers will remain close to the bridge, hopefully under the concentrated fire of your marksdwarves.
 
@@ -257,9 +287,36 @@ Variations on the twisty maze include:
 
 - Making the side of the maze into fortifications, with a channel separating the fortifications from the actual floor of the maze, and having your archery targets on the other side of the fortifications so your marksdwarves can practice. When the goblins round the corner, they charge through a hail of crossbow bolts, and drop dead.
 
+\
+
 ### Forced Detour
 
-This particular design works well with plenty of archers, siege engines, and other ranged weaponry. A walled maze gives melee an advantage, but an open maze gives advantage to ranged attackers. \ ++++++++++++++++++Entrance ╔═╦════════════════0╞═╡0 \║+++║ ║+╬ + ╬+╬╬╬╬╬╬╬╬╬╬╬║+++║ ║+╬ + ╬☺++☺++☺++☺+\ The 3 tile wide lane is for traders, so if your trade depot is located before this set-up, cut it down to a 1 tile lane to slow down invaders more.
+This particular design works well with plenty of archers, siege engines, and other ranged weaponry. A walled maze gives melee an advantage, but an open maze gives advantage to ranged attackers.
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | E | n | t | r | a | n | c | e |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ╔ | ═ | ╦ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | 0 | ╞ | ═ | ╡ | 0 |   |   |   | \ | - | - |   | B | r | i | d | g | e |   | 1 |   |
+| ║ | \ | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | ☺ | ╬ |   | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 0 | ╞ | ═ | ╡ | ║ |   |   |   | \ | - | - |   | B | r | i | d | g | e |   | 2 |   |
+| ║ | + | ╬ |   | + |   | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╣ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | ☺ | ╬ |   | + |   | ╬ | ☺ | + | + | ☺ | + | + | ☺ | + | + | ☺ | + | \> | ║ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ |   | + |   | ╬ | + | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ║ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ |   | + |   | ╬ | ☺ | + | + | ☺ | + | + | ☺ | + | + | ☺ | + | \ | ║ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | ☺ | ╬ |   | + |   | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╝ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ |   | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | ☺ | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╗ |   | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ║ | + | ☺ | + | + | ☺ | + | + | ☺ | + | + | ☺ | + | + | ☺ | + | + | ☺ | ║ |   | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╩ | ╗ | + | + | + | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | ╞ | ═ | ╡ | ║ |   |   |   | \ | - | - |   | B | r | i | d | g | e |   | 3 |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | F | o | r | t | r | e | s | s |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+
+The 3 tile wide lane is for traders, so if your trade depot is located before this set-up, cut it down to a 1 tile lane to slow down invaders more.
+
+\
 
 ### Bridge Use
 
@@ -282,28 +339,31 @@ Using ballistae, marksdwarves, bridges, traps, and guard animals in tandem bring
 - War animals are convenient for catching thieves. They also serve as bait. Don't place them where enemy archers can reach them easily, and keep them well out of range of the inevitable hailstorm of bolts.
 - Bridges, and for non-building-destroyers, doors, can be used to control the movement of enemies.
 
-`                                      Fortress`\
-`                                       ║╞═╡║`\
-`                                       ║D+D║ ╞═╡= Bridge`\
-`                                       ║D+D║  D = War Dog (chained)`\
-`                  ☺  ☺  ☺  ☺  ☺  ☺  ☺  ║+++║  ^ = Trap  c= cage trap`\
-`                ╔╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╝+++╚╦══╗ `\
-`/▀▌╔═══════════╦╝                       +++ ╬  ║ P= Gathering Pit`\
-`»=►╬+++++++++++╬  ccc+^+^+^+^+^+^+^++++++++ ╬  ║    connected to`\
-`\▄▌║+++++++++++╬  +                     +++ ╬ P║    Base next `\
-`   ║+++++++++++╬  +                     +++ ╬  ║    z-level down`\
-`/▀▌║+++++++++++╬  +                     +++ ╬  ║`\
-`»=►╬+++++++++++╬  ccc+^+^+^+^+^+^+^++   +++ ╬  ║`\
-`\▄▌║+++++++++++╬                    +   +++ ╬  ║`\
-`   ║+++++++++++╬                    +   +++ ╬  ║`\
-`/▀▌║+++++++++++╬                    +   +++ ╬  ║`\
-`»=►╬+++++++++++╬  ccc+^+^+^+^+^+^+^++   +++ ╬  ║`\
-`\▄▌║+++++++++++╬  +                     +++ ╬  ║`\
-`   ║+++++++++++╬  +                     +++ ╬  ║`\
-`/▀▌║+++++++++++╬  +                     ╞═╡ ╬  ║`\
-`»=►╬+++++++++++╬  ccc+^+^+^+^+^+^+^++++++++ ╬  ║`\
-`\▄▌╚═══════════╩╗                     +++++ ╬  ║`\
-`                ║                    >+++++ ╬  ║`\
-`                ╚════════════════════╗+++++╔╩══╝`\
-`                                     ║╞═══╡║`\
-`                                     Entrance`
+\
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | F | o | r | t | r | e | s | s |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | ╞ | ═ | ╡ | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | D | + | D | ║ |   | ╞ | ═ | ╡ | = |   | B | r | i | d | g | e |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | D | + | D | ║ |   |   | D |   | = |   | W | a | r |   | D | o | g |   | ( | c | h | a | i | n | e | d | ) |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ☺ |   |   | ☺ |   |   | ☺ |   |   | ☺ |   |   | ☺ |   |   | ☺ |   |   | ☺ |   |   | ║ | + | + | + | ║ |   |   | ^ |   | = |   | T | r | a | p |   |   | c | = |   | c | a | g | e |   | t | r | a | p |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ╔ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╬ | ╝ | + | + | + | ╚ | ╦ | ═ | ═ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | / | ▀ | ▌ | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╦ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   |   | ║ |   | P | = |   | G | a | t | h | e | r | i | n | g |   | P | i | t |   |   |   |
+|   | » | = | ► | ╬ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | c | c | c | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | + | + | + | + | + | + | + |   | ╬ |   |   | ║ |   |   |   |   | c | o | n | n | e | c | t | e | d |   | t | o |   |   |   |   |
+|   | \\ | ▄ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   | P | ║ |   |   |   |   | B | a | s | e |   | n | e | x | t |   |   |   |   |   |   |   |
+|   |   |   |   | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   | z | - | l | e | v | e | l |   | d | o | w | n |   |   |   |   |
+|   | / | ▀ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | » | = | ► | ╬ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | c | c | c | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | + |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \\ | ▄ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | / | ▀ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | » | = | ► | ╬ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | c | c | c | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | + |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \\ | ▄ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | / | ▀ | ▌ | ║ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ╞ | ═ | ╡ |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | » | = | ► | ╬ | + | + | + | + | + | + | + | + | + | + | + | ╬ |   |   | c | c | c | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | ^ | + | + | + | + | + | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \\ | ▄ | ▌ | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╩ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | + | + | + | + | + |   | ╬ |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+
+---
+*Parte 1 de 2 de «Security design». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Security_design*

@@ -1,20 +1,42 @@
 # Flood
 
-> Fonte: [Flood](https://dwarffortresswiki.org/index.php/Flood) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Flood](https://dwarffortresswiki.org/index.php/Flood) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Flooding** refers to filling a chamber with a liquid, traditionally water, for a variety of reasons. This is achieved through numerous methods, with varying degrees of fun. For more information as to why on \ any dwarf would want to do this, see irrigation, trap design, and unfortunate accident.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+It happens.\
+*Art by kennydalman*
+
+**Flooding** refers to filling a chamber with a liquid, traditionally water, for a variety of reasons. This is achieved through numerous methods, with varying degrees of fun. For more information as to why on \[WORLD_NAME\] any dwarf would want to do this, see irrigation, trap design, and unfortunate accident.
 
 ## Flooding with Water
 
 ### Floodgate and River/Brook
 
-[TABLE]
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| `═` | `═` | `═` | `═` | `═` |
+| `>` | `≈` | `≈` | `≈` | `>` |
+| `>` | `≈` | `≈` | `≈` | `>` |
+| `>` | `≈` | `≈` | `≈` | `>` |
+| `═` | `╗` | `≈` | `╔` | `═` |
+| `█` | `║` | `≈` | `║` | `█` |
+| `█` | `╠` | `X` | `╣` | `█` |
+| `█` | `║` | `+` | `║` | `█` |
+| `█` | `║` | `+` | `║` | `█` |
+| `█` | `║` | `+` | `║` | `█` |
 
 The simplest way to achieve controlled flooding is tunneling right up to a riverbed and placing a floodgate to stop the flow when the water is initially released. Then, pull the lever to let the water enter the chamber under your careful eye. In order to do this safely, it is recommended that you channel into the riverbed from above instead of puncturing it from the tunnel, and then pull the lever that activates the floodgate. Having a pressure plate somewhere in the room assures a controlled shutoff.
 
 ### Screw Pump and Reservoir/Aquifer
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `╔` | `═` | `╗` |
+| `║` | `≈` | `O` |
+| `║` | `%` | `+` |
+| `║` | `%` | `O` |
+| `║` | `+` | `║` |
 
 When the water in question is one Z-level below the desired level (for more than one level, see pump stack), particularly in the case of an aquifer, it can be very easy just to set up a dwarf-powered screw pump near a channel to flood rooms when necessary.
 
@@ -37,3 +59,7 @@ If this solution is undesirable, consider draining the liquid into a hastily-con
 As long as there is at least one tile below 2/7, both water and magma will slowly "evaporate" into thin air (yes, water *and magma*), so once your passages or rooms have been sufficiently drained, the problem should sort itself out eventually. To speed up this process, get the liquid into a larger area so that it can spread out more. If necessary, a screw pump or a bucket brigade can help get the water level low enough.
 
 If your flood consisted of water, then any surface that it touched will now be covered in mud. This could be a benefit if you were attempting Irrigation, an inconvenience if you don't want random plants growing in your muddy hallways, or possibly even a dire risk if the mud has covered your only masterwork engravings (growing plants will destroy the engravings, causing severe negative thoughts in your engravers).
+
+|  |
+|----|
+| "Flood" in other / Languages / Dwarven / : / låluth / Elven / : / wikira / Goblin / : / oda / Human / : / nonu |

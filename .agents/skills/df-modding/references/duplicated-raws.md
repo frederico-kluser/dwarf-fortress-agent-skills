@@ -1,10 +1,14 @@
 # Duplicated raws
 
-> Fonte: [Duplicated raws](https://dwarffortresswiki.org/index.php/Duplicated_raws) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Duplicated raws](https://dwarffortresswiki.org/index.php/Duplicated_raws) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Duplication of raw file entries** is a type of game bug, widely known in the community, due to the bizarre effects this particular bug has on world generation. It is usually caused by a modding accident, though some players duplicate raws on purpose to create a crazy glitched world.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Duplication of raw file entries** is a type of game bug, widely known in the community, due to the bizarre effects this particular bug has on world generation, and is usually caused by a modding accident, though in the past some players manufactured duplicated raws on purpose to create crazy glitched worlds.
 
 The exact effects of the bug happen at the end of worldgen, and vary depending on type and amount of duplicated raw entries.
+
+As of 52.01, attempting to generate a world with duplicated raws prompts an error message and returns the user to the setup screen. Any offending mods must be removed from the load order before continuing.
 
 ## Overview
 
@@ -14,7 +18,7 @@ If the game finds any duplicated raws when loading a save, it writes an appropri
 
 ## Duplicated creatures
 
-Duplication of creature raws results in the wrong creatures appearing in the wrong places and assuming the wrong roles during gameplay, with many messy and/or hilarious results. It has been known to cause cave crocodiles to live in houses, civilizations of elephants to form, camels to wear clothes, fluffy wamblers to pull wagons, and so on. It also causes creature materials to glitch, which likely results in civilians wearing clothing made out of liver tissue, chicken teeth, soap, or "unknown frozen creature substance", to name a few, and other weirdnesses, such as llama eggs being available on embark.
+Duplication of creature raws results in wrong creatures appearing in the wrong places and assuming the wrong roles during gameplay, with many messy and/or hilarious results. It has been known to cause cave crocodiles to live in houses, civilizations of elephants to form, camels to wear clothes, fluffy wamblers to pull wagons, and so on. It also causes creature materials to glitch, which likely results in civilians wearing clothing made out of liver tissue, chicken teeth, soap, or "unknown frozen creature substance", to name a few, and other weirdnesses, such as llama eggs being available on embark.
 
 This type of raw file duplication is very prone to spontaneous crashing, and duplicating all creatures will almost certainly result in a crash during worldgen, so it's not advised to do this during regular play.
 
@@ -22,7 +26,7 @@ This type of raw file duplication is very prone to spontaneous crashing, and dup
 
 One of the most visible results of duplicated plant raws is a complete lack of trees. Other vegetation will likely be replaced by uniform dark green grass composed of non-grass plants, or generic grass like that from before the v0.31.19 release.
 
-Plant materials, notably wood, will be screwed up the same way creature materials are in creature raws duplication - that is, your would-be wooden items will be composed of plump helmets, frozen booze, dye, or "unknown frozen plant substance". Other plant-derived items will be affected as well.
+Plant materials, notably wood, will be screwed up the same way creature materials are in creature raws duplication - that is, your would-be wooden items will be composed instead of plump helmets, frozen booze, dye, or "unknown frozen plant substance". Other plant-derived items will be affected as well.
 
 ## Duplicated materials
 
@@ -56,4 +60,22 @@ If a given region's list of geological layers ends up not containing any Stone o
 
 ## Gallery
 
- ground.gif\|Flickering tiles are one of the effects of material duplication.  embark screen can be used to inspect material weirdnesses.  vegetation in a world with duplicated plants.  stone layer composition, characteristic to worlds with duplicated minerals.  artifact created in a world with duplicated raws.
+-
+
+  Flickering tiles are one of the effects of material duplication.
+
+-
+
+  The embark screen can be used to inspect material weirdnesses.
+
+-
+
+  Glitched vegetation in a world with duplicated plants.
+
+-
+
+  Unusual stone layer composition, characteristic to worlds with duplicated minerals.
+
+-
+
+  An artifact created in a world with duplicated raws.

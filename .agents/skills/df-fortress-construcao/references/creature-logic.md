@@ -1,12 +1,14 @@
 # Creature logic
 
-> Fonte: [Creature logic](https://dwarffortresswiki.org/index.php/Creature_logic) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Creature logic](https://dwarffortresswiki.org/index.php/Creature_logic) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Creature logic** is a form of dwarven computing that functions by taking advantage of a creature's natural path-finding goals to trigger pressure plates. Creature logic is complete-- you can build memory, repeaters, or any sort of logical circuit.
 
 ## Creature logic vs other disciplines
 
-Pro:
+Pros:
 
 - Creature logic requires no fluid or wind. In dry, windless environments, circuits are limited to creature logic or minecart logic.
 - Similarly, creature logic requires no infrastructure-- you can build your circuits anywhere, without worrying about bringing water or power from one end of your map to the other.
@@ -15,11 +17,11 @@ Pro:
 - Creature logic can be very intuitive. Watching creatures physically travel through your logic pathways simplifies debugging.
 - It's fun to watch the creatures run around!
 
-Con:
+Cons:
 
 - Reliable creature logic requires a ridiculous number of hatches, doors, and mechanisms-- not to mention connections between pressure plates.
-- Creature logic requires creatures-- sometimes, a great number of creatures. Sometimes, those creatures die or have babies. Sometimes, they interrupt your dwarves. Sometimes, your dwarves fill them full of crossbow bolts.
-- Creature logic is vulnerable (surprise) to the presence of unexpected creatures in the logic circuits. Because creature logic circuits require a path either to the map edge or to the meeting hall (in most cases), this is a real possibility.
+- Creature logic requires creatures-- sometimes, a great number of them. Sometimes, those creatures die or have babies. Sometimes, they interrupt your dwarves. Sometimes, your dwarves fill them full of crossbow bolts (*which would be a particular kind of death, per se*).
+- Creature logic is vulnerable (surprise) to the presence of unexpected creatures in the logic circuits. Because creature logic circuits require a path either to the map edge, or to the meeting hall (in most cases), this is a real possibility.
 - Creature logic requires large amounts of space.
 
 ## Free range or one path
@@ -42,9 +44,17 @@ All of these gates can be easily altered to take more than two operands.
 
 #### Key
 
-In all of the following diagrams, the creature is assumed to start at (if given). means that the square contains a path to the creature's pathing goal. Doors and hatches are displayed in the same color as the pressure plate that links to them. If no pressure plate exists for a color, furniture of that color is opened or closed from outside of the circuit pictured; if a hatch and a door are the same color, that means they receive signals from the same source. Output pressure plates are displayed in magenta , as is any furniture in the circuit that is linked with the output plate. In the rare case that part of a circuit is linked with multiple elements, it will be displayed with foreground and background colors and explained in text-- for instance, is linked both to cyan furniture and output.
+In all of the following diagrams, the creature is assumed to start at s (if given). p means that the square contains a path to the creature's pathing goal. Doors ┼ and hatches ¢ are displayed in the same color as the pressure plate ^ that links to them. If no pressure plate exists for a color, furniture of that color is opened or closed from outside of the circuit pictured; if a hatch and a door are the same color, that means they receive signals from the same source. Output pressure plates are displayed in magenta ^, as is any furniture in the circuit that is linked with the output plate. In the rare case that part of a circuit is linked with multiple elements, it will be displayed with foreground and background colors and explained in text-- for instance, ^ is linked both to cyan furniture and output.
 
 ### Identity with NOT gate
+
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+|     | ╔   | ═   | ═   | ╗   |     |
+| ═   | ╝   | ┼   | ^   | ╚   | ═   |
+| s   | \+  | O   | O   | \+  | p   |
+| ═   | ╗   | ¢   | \+  | ╔   | ═   |
+|     | ╚   | ═   | ═   | ╝   |     |
 
 This function takes a single operand. If the operand is true, the creature travels through the upper path (identity); otherwise, the creature takes the lower path (NOT). The pressure plate signals when the operand is true. This gate is the basis of all to follow.
 
@@ -52,19 +62,57 @@ Identity is also a simple delay. When the path receives a signal, it propagates 
 
 ### AND gate with NAND gate
 
+|     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|
+|     | ╔   | ═   | ═   | ═   | ╗   |     |
+| ═   | ╝   | ┼   | ┼   | ^   | ╚   | ═   |
+| s   | \+  | O   | ═   | O   | \+  | p   |
+| ═   | ╗   | \+  | ¢   | \+  | ╔   | ═   |
+|     | ╚   | ╗   | ¢   | ╔   | ╝   |     |
+|     |     | ╚   | ═   | ╝   |     |     |
+
 The doors at the top are both open if both operands are true (AND); the hatches at the bottom permit path if either operand is false (NAND). The pressure plate will signal when both operands are true.
 
 ### NOR gate with OR gate
+
+|     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|
+|     | ╔   | ═   | ═   | ═   | ╗   |     |
+| ═   | ╝   | ¢   | ¢   | ^   | ╚   | ═   |
+| s   | \+  | O   | ═   | O   | \+  | p   |
+| ═   | ╗   | \+  | ┼   | \+  | ╔   | ═   |
+|     | ╚   | ╗   | ┼   | ╔   | ╝   |     |
+|     |     | ╚   | ═   | ╝   |     |     |
 
 The hatches at the top permit path only if neither operand is true (NOR); the doors at the bottom permit path if either operand is true (OR). The pressure plate will signal when neither operand is true.
 
 ### XOR gate with expanded XNOR gate
 
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |     | ╔   | ═   | ╦   | ═   | ╗   |     |     |
+|     | ╔   | ╝   | ┼   | O   | ¢   | ╚   | ╗   |     |
+| ═   | ╝   | \+  | ┼   | \+  | ¢   | ^   | ╚   | ═   |
+| s   | \+  | O   | ═   | ═   | ═   | O   | \+  | p   |
+| ═   | ╗   | \+  | ┼   | ┼   | \+  | \+  | ╔   | ═   |
+|     | ║   | \+  | O   | O   | \+  | ╔   | ╝   |     |
+|     | ╚   | ╗   | ¢   | ¢   | ╔   | ╝   |     |     |
+|     |     | ╚   | ═   | ═   | ╝   |     |     |     |
+
+\
 As XOR is the intersection of OR and NAND, it is simply an OR followed by a NAND. The XNOR, as the union of AND and NOR, requires two arms. Each operand is linked to one door and one hatch in the XOR path, and to one door and one hatch in the XNOR path. The pressure plate will signal when either operand is true but not both are true. When modifying the XOR to take more than two operands, be careful to leave space between the doors and hatches as shown; this space is unnecessary for evaluation of two operands. Similarly, the expanded XNOR is appropriate when dealing with more than two operands, but a condensed version for taking only two operands exists.
 
 ### Multiple use
 
 The gates above are single use gates; the creatures will escape after pathing through each gate. Circuits which return the creature to the beginning of the path are possible via altering the path in-route.
+
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+|     |     | ║   | p   | ║   |
+| ═   | ═   | ╝   | ¢   | ║   |
+| s   | ¢   | ^   | O   | ╣   |
+| ═   | ═   | ╗   | ┼   | ║   |
+|     |     | ║   | p   | ║   |
 
 This is one such device for re-routing creatures mid-path. Upon stepping on the pressure plate, the creature opens two hatches, thus blocking retrograde motion as well as access to its pathing goal, and opens a door, giving access to a new pathing goal. This new pathing goal can lead back to the original position of the creature. This principle is demonstrated in the designs to follow. Because the creature is constrained on the pressure plate, the door can be opened by outside mechanisms rather than being linked to the pressure plate, permitting controlled movement of a creature through one or more arms of a circuit.
 
@@ -72,11 +120,30 @@ This is one such device for re-routing creatures mid-path. Upon stepping on the 
 
 The reader may have noticed the near symmetry of the preceding gates. However, the output works as well when placed before the path-limiting furniture as after! While it's easier to visualize the effects of these circuits when displayed as above, it is often more effective to use a reversed design. When a single creature is used to traverse a large, compound circuit, reverse design can lead to reduced latency. A clever logician might wonder, "But if they can evaluate the signal before traversing the path, why traverse the path at all?" Consider the following XOR/XNOR gate, redesigned both for reuse and reversed operation:
 
+|     |     |     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |     |     |     |     | ╔   | ═   | ╦   | ═   | ╗   |     |     |
+|     |     |     |     | ╔   | ╝   | ¢   | O   | ┼   | ╚   | ╗   |     |
+| ═   | ═   | ═   | ═   | ╝   | ^   | ¢   | \+  | ┼   | \+  | ╚   | ═   |
+| p   | ┼   | ¢   | ^   | ¢   | O   | ═   | ═   | ═   | O   | \+  | p   |
+| ═   | ═   | ═   | ═   | ╗   | ^   | ¢   | ¢   | \+  | \+  | ╔   | ═   |
+|     |     |     |     | ║   | ¢   | O   | O   | \+  | ╔   | ╝   |     |
+|     |     |     |     | ╚   | ╗   | ┼   | ┼   | ╔   | ╝   |     |     |
+|     |     |     |     |     | ╚   | ═   | ═   | ╝   |     |     |     |
+
 A creature waits at the start point, atop the cyan hatch, until evaluation is triggered by an **off** signal to the cyan hatches (typically following a redundant **on** signal). The creature, suddenly granted path to its goal, races toward either XOR or XNOR, but evaluation occurs earlier than in previous designs. Its original path is blocked upon evaluation and the creature is rerouted back to its start point. (Note that while the creature is reset in this design, furniture is not necessarily reset. Some circuits may require additional furniture to control path without altering operands.)
 
 Whereas the creature needed to travel 8 tiles for evaluation in the previous design, this allows evaluation in 2 tiles, and the refractory period-- the time during which the circuit cannot be used to evaluate another operand-- is improved to an even larger extent.
 
 ## Creature memory
+
+|     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |     |     | ╔   | ═   | ╗   |     |     |
+| ═   | ═   | ═   | ╝   | ┼   | ╚   | ═   | ═   |
+| p   | ¢   | ^   | ¢   | ¢   | ^   | ¢   | p   |
+| ═   | ═   | ╗   | ┼   | ╔   | ═   | ═   | ═   |
+|     |     | ╚   | ═   | ╝   |     |     |     |
 
 This is a low latency version (not the simplest version, not the most full-featured) of creature-based memory. Each pressure plate is linked to each adjacent hatch. Memory is set by sending an open (followed closely by a close) to either door.
 
@@ -88,11 +155,28 @@ A high resolution borg-logic clock or delay can be designed around the rate with
 
 The memory design above, slightly modified, can make a decent (not perfectly regular) repeater.
 
+|     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |     |     | ╔   | ═   | ╗   |     |     |
+| ═   | ═   | ═   | ╝   | ¢   | ╚   | ═   | ═   |
+| p   | ¢   | ^   | ¢   | ¢   | ^   | ¢   | p   |
+| ═   | ═   | ╗   | ¢   | ╔   | ═   | ═   | ═   |
+|     |     | ╚   | ═   | ╝   |     |     |     |
+
 Here, each pressure plate is linked to the two orthogonally adjacent hatches. The southern hatch is linked to the eastern pressure plate, while the northern hatch is linked to western pressure plate. This repeater tends to fire about every 250 ticks, with open and close signals offset by about 125 ticks, when built as shown. It's very effective at rapidly triggering any device with a refractory period of 100. Similar, non-repeating systems can be used to institute delay.
 
 Linking both pressure plates to output doubles its rate, turning it into very effective spike repeater. The period can be increased by introducing floor space into the center of the design.
 
 ## Edge Detection
+
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| ║   | p   | ║   |     |     |     | ║   | p   | ║   |
+| ║   | ¢   | ╚   | ═   | ═   | ═   | ╝   | ¢   | ║   |
+| ╠   | O   | ^   | ┼   | ^   | ¢   | ^   | O   | ╣   |
+| ║   | ¢   | O   | ═   | ═   | ═   | O   | ¢   | ║   |
+| ╚   | ╗   | \+  | \+  | ^   | \+  | \+  | ╔   | ╝   |
+|     | ╚   | ═   | ═   | ═   | ═   | ═   | ╝   |     |
 
 North of the circuit is the pathing goal. The eastern and western pressure plates are linked to adjacent hatches. Input is linked to the hatch southeast of the eastern pressure plate and to the door. The central and southern pressure plates are linked to output. This circuit generates both an open and a close every time it is sent an open or a close signal from input -- that is, it generates two properly-ordered signals for every properly-ordered signal it is sent, allowing for *edge triggered* logic. Either output pressure plate can be removed to send an open and a close only upon receiving one kind of signal or the other kind of signal. Output can linked to the same device or to two different devices.
 

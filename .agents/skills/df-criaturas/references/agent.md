@@ -1,6 +1,8 @@
 # Agent
 
-> Fonte: [Agent](https://dwarffortresswiki.org/index.php/Agent) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Agent](https://dwarffortresswiki.org/index.php/Agent) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Agents are covert operatives that are sent off to other civilizations' sites to perform tasks, like gathering information.
 
@@ -18,22 +20,24 @@ You may draw the ire of a civilization and its agents by stealing artifacts from
 
 Agents use false identities and cannot be forced to reveal their cover, but they can be manually detected by the player by looking at discrepancies between their self-styled profession and actual equipment or skills (e.g. a poet with a crossbow\*), or their name style and race (e.g. a dwarf with an elven name).
 
-(\* This may not be a reliable indicator. Traveling entertainers seem to all come with one Level 3 weapon skill, plus supplemental Level 1 combat skills - apparently, the roads are dangerous.)
+(\* This may not be a reliable indicator. Traveling entertainers seem to all\[Verify\] come with one Level 3 (*Competent*) weapon skill, plus supplemental Level 1 (*Novice*) combat skills - apparently, the roads are dangerous.)
 
 Another suspect indicator is a migrant with the schemer skill, although more research needs to be done.
 
 Also; visitors with "names" appearing in quotation marks seem to be a reliable indicator that the individual is an agent of someone-or-other, using a false name.
 
-Additionally, if you have any open or cold cases in the justice screen, you can interrogate them to attempt to determine whether they are, in fact, agents seeking to steal your artifacts or perform other nefarious deeds at your fort. If your interogations fail (because your Sheriff or Captain of the Guard has lower social skills than the interrogation subject), but you know the visitor is an agent, you can still convict them (falsely) of crimes and your Sheriff/Captain of the Guard (or other members of your Captain of Guard's militia squad) will attempt to arrest them.
+Additionally, if you have any open or cold cases in the justice screen, you can interrogate them to attempt to determine whether they are, in fact, agents seeking to steal your artifacts or perform other nefarious deeds at your fort. If your interrogations fail (because your Sheriff or Captain of the Guard has lower social skills than the interrogation subject), but you know the visitor is an agent, you can still convict them (falsely) of crimes and your Sheriff/Captain of the Guard (or other members of your Captain of Guard's militia squad) will attempt to arrest them.
 
 Note that if the suspect is able to evade capture and is about to escape (but is still on your map) you can give them a nickname on their character page (for example, you might nickname them "KILL THIS THIEF"). This nickname will persist after they leave your map and will appear in their name the next time they visit your fortress.
 
 ## Traitor
 
-**Traitor** dwarves were added with the first villainy update. At the time of this edit, next to nothing is known about them except that the concept exists. Clearly, research is needed, although the nature of the subject makes that difficult to replicate or observe.
+**Traitor** dwarves were added with the first villains update. Dwarves can become (mostly) willing accomplices to a villain's artifact heist after being flipped by a visitor. This is distinct from passively spreading rumors, as they must be convinced to join the plot. As with other schemes, interrogation can reveal a traitor's involvement in any plots.
 
 ## See also
 
 - Intrigue
 - Villain
 - Schemer
+
+\

@@ -1,8 +1,16 @@
 # Camel
 
-> Fonte: [Camel](https://dwarffortresswiki.org/index.php/Camel) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Camel](https://dwarffortresswiki.org/index.php/Camel) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 There are two types of **Camel** in Dwarf Fortress - one-humped and two-humped varieties. See these articles for more information on these beasts.
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 
 One of the more ludicrous debates in Dwarf Fortress is as to which type of camel is more dangerous: the one-humped or two-humped variety? The technical answer is simple: A weapon will hit a random body part; a one humped camel has fewer body parts (lacking the second hump) and hence it will be marginally easier to score a lethal hit on a one humped camel rather than the two-humped variety.
 

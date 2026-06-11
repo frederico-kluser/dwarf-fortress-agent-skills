@@ -1,45 +1,39 @@
 # Importing and exporting worlds
 
-> Fonte: [Importing and exporting worlds](https://dwarffortresswiki.org/index.php/Importing_and_exporting_worlds) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Importing and exporting worlds](https://dwarffortresswiki.org/index.php/Importing_and_exporting_worlds) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-Although *Dwarf Fortress* is a single-player game, it is still common to incorporate a social aspect into the game. For example, you may have found a great site that you want to share with others, you want to play a save or embark that someone else posted, you're reporting a crash during world generation, or maybe you simply want to back up your world or game. There are two primary methods for importing and exporting worlds in *Dwarf Fortress*: exchanging the seed, and exchanging the save.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-## Seed
+Although *Dwarf Fortress* is a single-player game, it is still common to incorporate a social aspect into the game. For example, you may have found a great site that you want to share with others, you want to play a save or embark that someone else posted, you're reporting a crash during world generation, or maybe you simply want to back up your world or game. There are two primary methods for **importing and exporting** worlds in *Dwarf Fortress*: exchanging the seed, and exchanging the save.
 
-"Seed" refers to the 4 specific random strings used to seed the pseudo-random number generator. These values are not sufficient to duplicate a world without the rest of the world gen parameters, but "seed" is shorter to say, so is often used to mean the entire set of parameters. Provided the versions of *Dwarf Fortress* are similar enough and no modding has taken place on either end, using a person's worldgen parameters suffices to generate the same world/s as they did. Unfortunately, this method is incapable of also moving around any events that happened after world generation ended, including the fortresses or adventures that may have taken place.
+## Seeds
 
-If modding has taken place, the world (but still not any events past worldgen) can still be exchanged if both receiver and transmitter have exactly the same modification. Moving the world through this method may be slow for the receiver, especially for worlds with a long history.
+"Seeds" refers to the 4 specific random strings used to seed the pseudo-random number generator. These values are not sufficient to duplicate a world without the rest of the world generation parameters. Unfortunately, the historical events during world generation don't currently always happen the same way, and this method is incapable of replicating any events that happened after world generation ended, including any fortresses or adventures. Mods and even parameters can greatly change how a world generates, causing the game to use more or fewer pseudo-random numbers for each step, meaning later steps get a different series of numbers.
 
 ### Export
 
-The easiest way to export your worldgen parameters is to press at the "p: Export image/info" prompt right after worldgen has completed. If you didn't do that, then start the game in Legends mode, and press . Either way, your *Dwarf Fortress* root folder should now contain several new files including a text file with the phrase "world_gen_param" in its name. That's the one people want. Copy or email the file or the text inside it to the receiver, or simply store the file in a safe place to be able to regenerate the world later.
-
-This process is more difficult during fortress or adventure play, because the world cannot be loaded in Legends mode. During fortress mode, load up your fortress and press . Go to "export local image". Export local images of however much of your fortress you want (select only one level of it to save time exporting); the exported image is not important. Your *Dwarf Fortress* root folder should now contain several new files including a text file with phrase "world_gen_param" in its name. That is the one people want. As before, copy or email the file or its contents to whatever purpose was intended.
-
-During adventure play, the "export local image" function is not available. If this is the case, it is necessary to make a copy of the save. From the *Dwarf Fortress* root directory, navigate to "data/save". From there, locate the folder with the region name to export parameters of, and copy the entire folder. Then, paste the folder into the same "data/save" directory. Now, navigate to Dwarf Fortress and load the region with the name "Copy of ..." or "... copy" or the like, and retire or starve the adventurer. Then, load the same copy in Legends mode and press to export the same "world_gen_param" file.
-
-After these processes, the extra files in the *Dwarf Fortress* root directory can be safely deleted. Additionally, after the adventure strategy, the copy of the region can also be deleted.
+When the game generates a world, it writes the seeds it used for that world in the `gamelog.txt` file in the main *Dwarf Fortress* folder. Unfortunately, the game doesn't currently provide a full output of the world generation parameters.
 
 ### Import
 
-Open your *Dwarf Fortress* root directory, go to Data, then Init. Open the text file called "world_gen.txt". Copy/Paste the parameters given to the bottom of that file. Make sure to save and close the file.
-
-Next, open *Dwarf Fortress*. Go to "Design New World with Advanced Parameters". Worlds that you have parameters for are listed by title on the right. Choose your newly acquired world from the list and hit enter. Note that this process may take a while.
+If the world was generated using advanced world generation and the parameters were saved, or can otherwise be remembered, then the seeds can be copied into `prefs/world_gen.txt`, using the proper tokens. They cannot currently be pasted into the game directly, but can be entered manually.
 
 ## Save
 
-The save folder contains all the information on your world, and all the things you have done to it since you started playing. Use this if you want to share your actual fortress or adventure rather than just the pristine unplayed world, or if the world has already been played in and the previous fortresses or adventures are important for the purpose. Moving save folders around is also a useful way to back up your games while keeping clutter to a minimum in the Continue Game menu.
+A save folder contains all the information on a world, including everything done in it since it was generated. Use this to share an active fortress or adventure, or if previous activity is important, rather than just the pristine unplayed world. In addition to being the more complete way of sharing a world than using seeds, moving a save folder around is also a way to back up your saves while reducing clutter in the Continue active game menu.
 
-Additionally, moving the world by save preserves all mods and graphics. Therefore, this may be the preferred method when the world is based on a modded game. Moving the world in this way is also significantly easier than by seed, but it may take up more disk space and will be harder to transfer.
+Additionally, mods are not included in saves, thus, when sharing a save of a modded game the installed_mods folder should also be included.
 
 ### Location
 
-Your saved game is located in your *Dwarf Fortress* folder inside the "data/save" folder. The save folder will contain one or more sub-folders, each one holding one of your worlds, and a "current" folder. The "current" folder is used to track the changes to the active world while *Dwarf Fortress* is running; it is not important unless *Dwarf Fortress* is open, and can safely be deleted otherwise.
+The easiest way to get to the save folder is to go into the "files" menu for the relevant save; this is opened with the Files button to the left of saves. If there's a "Delete" button instead, click on that world and the Files button is next to the saves within. A saved game is all the files in each folder in the `save` folder, the location of which depends on the portable mode setting. Saves that existed before the addition of the portable mode setting, or when changing the setting, may still be in the old location.
+
+The `save` folder contains one or more sub-folders, each one a world, by default named `region`*`#`*, and a `current` folder. The `current` folder is used to track the changes to the active world while *Dwarf Fortress* is running; it is not important unless *Dwarf Fortress* is open, and can safely be deleted otherwise.
 
 ### Export
 
-Upload the entire save folder (preferably compressed) to your favorite file host, or, better yet, to the Dwarf Fortress File Depot.
+Upload the entire save folder (preferably compressed and maybe renamed to be less generic than `region`*`#`*), and the `installed_mods` folder if applicable, to the Dwarf Fortress File Depot, or some other file host.
 
 ### Import
 
-Simply drop the other person's save folder in the "data/save", and the game can be played.
+Extract the archive to a temporary location, ensure the contained save folder has a unique name, renaming it if needed, and move it to the `save` folder, and the contents of the `installed_mods` folder, if included, to `data\installed_mods`, then start *Dwarf Fortress* and the save should be available.

@@ -1,6 +1,6 @@
 # Seed archive
 
-> Fonte: [Seed archive](https://dwarffortresswiki.org/index.php/Seed_archive) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Seed archive](https://dwarffortresswiki.org/index.php/Seed_archive) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 *This is an archive page. Seeds for the current version can be found at 40d:Pregenerated worlds.*
 
@@ -8,7 +8,7 @@
 
 Seeded worlds are special "codes" which tell the game's pseudo-random number generator (a sophisticated mathematical function which produces numbers that seem random) where to begin generating a world. Because the random number generator is actually just a mathematical function and thus always produces the same result when given a certain input, you can "seed" the generator to produce an entire series of random numbers on another computer that are exactly the same as they were originally produced on the first computer.
 
-To use a seeded world, select *Create a New World* during the main menu, then hit to specify a seed. Type in the seed and hit , then hit one more time to begin generation. It will still take the normal amount of time to generate the world, and you will still have rejects before the world is produced.
+To use a seeded world, select *Create a New World* during the main menu, then hit s to specify a seed. Type in the seed and hit Enter, then hit Enter one more time to begin generation. It will still take the normal amount of time to generate the world, and you will still have rejects before the world is produced.
 
 The random seed used also determines the world's name if a random name is selected. This disrupts the sequence of psudeorandom numbers. As a consequence, a seed with a player-given name will result in a completely different world than the same seed with a random name. Seed publishers should specify whether a random or a given name was selected when generating the world.
 
@@ -26,7 +26,7 @@ A further warning: there may be other things that affect world generation, such 
 
 This world uses a random name and was generated in v0.27.169.33a.
 
-[You may see this for yourself here. Notables are a fairly large ocean in the lower-left corner, and over 7 volcanoes scattered around the map. There also seems to be a nice variety of environments for your leisure.
+You may see this for yourself here. Notables are a fairly large ocean in the lower-left corner, and over 7 volcanoes scattered around the map. There also seems to be a nice variety of environments for your leisure.
 
 Here's a starting location with almost literally everything: trees, flux, a magma pocket (not visible from the surface, but only a few levels from the surface below the elevated area between the trees and the sand), all the basic metals, sand and adamantine. There are many other really good sites in the squares around the same volcano, and several similarly ideal sites around volcanoes about six region tiles to the east and southeast.
 
@@ -58,6 +58,8 @@ The aquifer is only in the top left corner of this map, and can easily be avoide
 
 - A couple more nice starting spots right next door have similar features, though with mountains, being slightly further apart and with a higher challenge (being in the "Terrifying" area). Both have sand (in the tree-lined areas) and flux.
 
+\
+
 #### Seed 34: One Reject Seed
 
 Nice and easy for those of you with slow PCs.
@@ -67,7 +69,9 @@ Nice and easy for those of you with slow PCs.
 *Title: STANDARD*\
 Only 5 rejects, so this one is a quick generation!
 
-==== Seed 120 (=lol!) ==== *It is a well known fact that when you write "lol" with 1337-language, it is written "101". In binary, this is the same as the decimal number 5. This means that "lol!" = 5! From math we all(?) know that 5! = 120. Therefore: 120 = lol!*\
+#### Seed 120 (=lol!)
+
+*It is a well known fact that when you write "lol" with 1337-language, it is written "101". In binary, this is the same as the decimal number 5. This means that "lol!" = 5! From math we all(?) know that 5! = 120. Therefore: 120 = lol!*\
 **But enough gibberish.** This world has **1 reject** when using the **seed 120**\
 There is volcano in a forest with a river nearby, and an aquifier for challenge! To find it, its the 5th tile from the left, 4th tile from the bottom on the world map when choosing a site. Also check out two tiles to the right of this (still on the world map), and you will find a volcanic island! :D Searching around you will also find major rivers. In other words, a quick cool seed. Enjoy
 
@@ -75,7 +79,7 @@ There is volcano in a forest with a river nearby, and an aquifier for challenge!
 
 > (N)ot only is it ZERO REJECTED, but its got several island volcanoes. (O)ne of them has a caldera by the coast with a cliff overhanging it, and an aquifer which (I) THINK has fresh water in it(...) (S)everal spots have magma and steep cliffs and trees and rivers. Lots of the goblin forts are in neat locations.
 
-1
+[1]
 
 #### Seed 71551: Another quickie
 
@@ -89,14 +93,17 @@ There is volcano in a forest with a river nearby, and an aquifier for challenge!
 
 Converting Toady One to numbers gives you 2015142505, assuming the space is a 0. The seed results in 3 rejects and "the Momentous Universes of Vision" A good world with lots of great rivers.
 
+\
+
 #### Seed 752741768: 1 Reject, DF v0.27.169.33d
 
 Created in DF v0.27.169.33d.
 
-\[WORLD_GEN\]
+\[WORLD_GEN\] \[TITLE:STANDARD\] \[SEED:752741768\]
 
-`   [TITLE:STANDARD]`\
-`   [SEED:752741768]`
+\
+
+\
 
 ### Seeds and maps with many features (May run slower on older computers)
 
@@ -142,9 +149,7 @@ Seed:3416680544 Rejections: 43 Name: The World of Griffons F1 Biome, Mountain: F
 
 #### Seed 1149670256
 
-> Pretty funny oddity while I was making new world map, there's two 'volcano mountains' next to each other And in the tile just south of the left most volacno there's both chams and volcano quite close to each other, just dig nice hole in between and you have one chasmfull of dead people, hehe Both of them seem pretty hostile though... To get to the location, just pick regular size zone so that you can reach the red ~ (volcano) icon and two or three rows below it and same amount to left. Then you have both
->
-> Didn't check the other volcano sites though, but the one I checked was ~21 levels deep of volcano and same for chasm...
+> Pretty funny oddity while I was making new world map, there's two 'volcano mountains' next to each other And in the tile just south of the left most volacno there's both chams and volcano quite close to each other, just dig nice hole in between and you have one chasmfull of dead people, hehe Both of them seem pretty hostile though... To get to the location, just pick regular size zone so that you can reach the red ~ (volcano) icon and two or three rows below it and same amount to left. Then you have both Didn't check the other volcano sites though, but the one I checked was ~21 levels deep of volcano and same for chasm...
 
 #### Seed 1621458352
 
@@ -156,7 +161,7 @@ Seed:3416680544 Rejections: 43 Name: The World of Griffons F1 Biome, Mountain: F
 >
 > It also has an absolutely huge named peak sticking out of a good-aligned forest, as well as a nice volcano sticking out of a good-aligned forest...
 
-2
+[2]
 
 #### Seed 4265985437: A little bit of everything
 
@@ -188,7 +193,7 @@ Note that this seed does have 51 rejects, but these are all quickly rejected so 
 
 > What's special? Well at least 11 volcanos are dotting the lower half, 2 of which are islands. Should be something for everybody maybe, haven't checked it all out. (Except all you glacier folk.)
 
-3
+[3]
 
 Edit: Ok, checked this world out a bit more and so far: 2 volcanic islands in the lower left, at least 2 volcanic mountains to be played directly on, at least 2, possibly 4 aquifer volcanoes on right, 2 sets of volcanic twins along lower right mountain range, top set is rich with obsidian starting areas.
 
@@ -196,7 +201,7 @@ On a sad note, still nothing special spotted in the north (cold), and I believe 
 
 Well, enjoy.
 
-`-Funkadelic Jive Turkey`
+    -Funkadelic Jive Turkey
 
 #### Seed 891230954: Resource heaven
 
@@ -205,6 +210,8 @@ Fairly quick seed (12 rejects). Quite by accident I stumbled across a sweet litt
 #### Seed 1010101010: 4 Volcano Cluster
 
 This map contains a cluster of 4 volcanos, unfortunately, you can only access two of them in Dwarf Fortress mode and may be in dangerous territories. There's also a few other volcanoes and possibly a few lava vents as well.
+
+\
 
 #### Seed 593046736: Grand Canyon + Giant Caldera + all of Paul's & More!
 
@@ -248,6 +255,8 @@ This map has snow and ice, and lots of it. The world map looks almost completely
 
 Haven't looked at the map in detail, might not be worth playing, but it was amusing.
 
+\
+
 #### Seed 3614285250: Steel, Glass, Obsidian, Platinum, and a cave river for good measure
 
 Steel in the form of plentiful magnetite marble and coal, obsidian for rock crafts and swords, glass in the form of black sand, and a couple largish veins of platinum near the cliff face to the west. The biggest downside is that it has 113 rejections, and no pit either. Otherwise it would be just about the perfect fortress in 4x5. It's even got some nice cliff faces for the traditionalist. The cave river starts at the bottom of the map and it goes straight down (off the map), but it's a source of infinite water and cave plants nonetheless.
@@ -267,6 +276,8 @@ If this were extended a little to the right it would reach the chasm, and a litt
 On the 8th tile down from the top and 2nd right from left on the world view there is a volcano surrounded by mountains. The tile northeast of the main volcano contains the magma vent, river and a chasm between them. There also is a second magma pool on the same side with the river. Small traces of adamantite can be found relatively near the surface, but if you go deeper you will find demon pits. The site, however, is rich only in copper apart from the adamantite.
 
 -Elmokki
+
+\
 
 #### Volcano + Vent surveys
 
@@ -297,7 +308,7 @@ The parameter title, not name, was "SEED" and it was on Windows XP A world with 
 
 #### Seed 1205746126, Waterfall, Magma, Trees, Chalk, Sand, Minerals
 
-Need to select random name, which turns out to be "Sil Num", created with version 33a or 33b. Unfortunately it takes a \*long\* time because of 266 rejects !
+Need to select random name, which turns out to be "Sil Num", created with version 33a or 33b. Unfortunately it takes a \*long\* time because of 266 rejects !
 
 Nice starting site with nearly everything. Of particular note is the 9 level high waterfall in the SE corner of the selected region.
 
@@ -317,7 +328,7 @@ Major Geographic features:
 
 2\) The canyon walls are sheer faces... there is no way to walk out of the river bed into the upper hills!
 
-3\) The east bank has the magma, and white sand on the upper tiers to the north, and forests to the south. Be warned, magma channelers: There's a cave river directly below the eastern canyon cliff face. I lost a game by hitting that and overflowing. :/
+3\) The east bank has the magma, and white sand on the upper tiers to the north, and forests to the south. Be warned, magma channelers: There's a cave river directly below the eastern canyon cliff face. I lost a game by hitting that and overflowing. :/
 
 4\) The west bank has a bottomless chasm, and tons of kobolds, trogs, antmen, giant spiders and probably more. And is scattered with loot! It appears the kobolds have been ambushing caravans for a while.... can you stop them?
 
@@ -383,6 +394,8 @@ Found by Lord Dullard on the Bay 12 Games forum.
 
 The cave lake is actually exposed to the surface (an entryway about 15 tiles wide leading directly to the surface, but roofed in by stone to keep the "cave lake" designation, and goes quite deep.
 
+\
+
 ## v0.27.169.33f
 
 ### Seed: 20717035
@@ -424,6 +437,8 @@ full info at SEED 196405198
 
 10 locations pointed out with magma, flux, sand, water, magnetite(in sedementary layers), and trees(well, 1 location lacks sand)
 
+\
+
 ## v0.27.169.33g
 
 ### Quick generating seeds
@@ -454,6 +469,7 @@ Only one reject. The location shown above has some magma right next to a brook..
 - access to all civs
 - rock crystals are on the map but scarce, so consider trading for fey mood use.
 
+\
 Thanks to 0x517A5D for his Regional Prospector utility.\
 —Troas 10:55, 28 January 2008 (EST)
 
@@ -487,7 +503,8 @@ Lots of farmable soil, but no indigenous plants to speak of. Build a shack and f
 
 Flux? Nope. Sorry. Import what you can, bring steel if you can. Wood? Ain't got that either. Get your magma smelter and glass furnace up fast so you can start producing trade goods. Without them you won't be able to import the wood you need for coal and flux for steel. Iron supplies as I said are mostly guarded by the Cyclops and crew as well. This could be a challenge for you, but there is plenty of copper and cassiterite to go around, import some tin, and combine it with some bismuth and you can have a cheap bronze as well.
 
-All in all, I like the second one better of the 2. Both have nice features, but are missing key items. This was generated in .33g, and it seems that seeds were broken again. Hopefully more people come out with their seeds soon :) --Chthon 19:46, 23 December 2007 (EST)
+\
+All in all, I like the second one better of the 2. Both have nice features, but are missing key items. This was generated in .33g, and it seems that seeds were broken again. Hopefully more people come out with their seeds soon :) --Chthon 19:46, 23 December 2007 (EST)
 
 #### Seed \#223885 - Pretty much what I have been waiting for
 
@@ -501,7 +518,7 @@ Ok, I cheated and used Sekret Projekt but hey! Look what I found!
 
 River: Check
 
-Magma: Well damn, someone just pointed out to me that the ~ was blue not red. I hadn't noticed. No magma here unfortunately :(
+Magma: Well damn, someone just pointed out to me that the ~ was blue not red. I hadn't noticed. No magma here unfortunately :(
 
 Iron: Lots of magnetite, check
 
@@ -569,7 +586,7 @@ About features:
 - most dangerous animals - wolves
 - access to all civs
 
-Starting in the biome will give you almost ideal starting position near the cliff wall, surrounded by trees, with a couple of nearby pools for your fish lovers (turtles, yay!).
+Starting in the F2 biome will give you almost ideal starting position near the cliff wall, surrounded by trees, with a couple of nearby pools for your fish lovers (turtles, yay!).
 
 #### A tiny but interesting location. Seed 1
 
@@ -612,6 +629,7 @@ Very nice location with damn near everything in an average-size region.
 - **Rock:** All four types.
 - **Neighboring Civs:** All four.
 
+\
 Only thing it doesn't have is a cave lake. If it's too big, you can remove the right column for no adamantine, the bottom row for no magma, the left column for less trees, or the top row for less/very little flux... I'd reccommend zilching the left column, there's a few trees up in the Flux biome.--Untelligent 15:17, 6 January 2008 (EST)
 
 #### Near-Perfect Seed?
@@ -631,6 +649,8 @@ This location can be extended another row to the North to greatly increase the n
 - **Magma:** Yes, exposed
 - **Neighboring Civs:** Unknown, believed to be all
 
+\
+
 #### Everything Seed 3x8 or 2x8 (1437770750)
 
 This location has everything located in a 3x8 or a 2x8 if you remove the brook. It has lava, demons, an underground river, lots of flux & magnetite, bauxite, lots of sand, trees, plants & ogres. It also has a medium-sized 3-ZLevel aquifer in the middle of the map. The river seems to be frozen during winter time and it does not have very steep cliffs (only 5 ZLevels from the highest point). (found with 0x517A5D's wonderful Regional Prospector w/ lava in the region map) --Polpoint 00:31, 20 January 2008 (EST)
@@ -640,10 +660,8 @@ This location has everything located in a 3x8 or a 2x8 if you remove the brook. 
 #### Secluded Mesa
 
 **Seed: 3141592653**\
-
+\
 Although having no other resources to speak of, this map has a unique, natural barrier formed by deep canyons with flowing water. An extremely defensive fort, with a large area useful for above-ground farming and woodcutting without disturbance from outsiders. Good for those who hate sieges.
 
 In addition, this location features a large amount of naturally-occurring fuels as well as at least one enormous deposit of magnetite, which lies on the mainland, southwest of the atoll on level -3.\
-16:48, 3 February 2008 (EST)
-
-\]\]
+16:48, 3 February 2008 (EST) InquisitorSaturn (talk \| contribs)

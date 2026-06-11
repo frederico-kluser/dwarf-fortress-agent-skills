@@ -1,6 +1,8 @@
 # Food guide
 
-> Fonte: [Food guide](https://dwarffortresswiki.org/index.php/Food_guide) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Food guide](https://dwarffortresswiki.org/index.php/Food_guide) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 This guide is aimed at completeness, overview, evaluation, and comparison. It is aimed at new players. Most of the information available on this page is already stated on more specific pages.
 
@@ -85,7 +87,7 @@ Lots
 
 ### Tips
 
-- Some people just use soldiers to hunt which has admittedly advantages. Set soldiers to 'harass wild animals' via --.
+- Some people just use soldiers to hunt which has admittedly advantages. Set soldiers to 'harass wild animals' via m-v-a.
 - Hunters sleep outside. They can sometimes be slaughtered by wandering wolf packs while snoozing away.
 - Hunters that have no bolts will chase their prey and club them with their crossbow, which is about as effective as it sounds.
 - Make sure you have a tanner, and butcher before you get a hunting job. If not, it's a total waste and you're better off fishing.
@@ -101,7 +103,7 @@ Farming will usually be a fort's primary source of food, and will also be the on
 
 Few; Cheap
 
-The basis of a farm is seeds. Seeds come in both subterranean and surface (indoors/outdoors) varieties - you can buy either type of seeds from traders, but the embark screen will only have subterranean seeds available and Plant Gathering (esignations-\>Gather lants)) will only yield outside plants (exception: underground river). Any plant that is eaten or brewed produces seeds. To control dwarven behavior a bit more, you may want to control who can harvest plants or collect stray seeds from the rders menu.
+The basis of a farm is seeds. Seeds come in both subterranean and surface (indoors/outdoors) varieties - you can buy either type of seeds from traders, but the embark screen will only have subterranean seeds available and Plant Gathering (designations-\>Gather plants)) will only yield outside plants (exception: underground river). Any plant that is eaten or brewed produces seeds. To control dwarven behavior a bit more, you may want to control who can harvest plants or collect stray seeds from the orders menu.
 
 A subterranean farm will require a digging implement of some sort, unless you are lucky enough to start on a map with a cave, in which case you will possibly need a bucket.
 
@@ -118,9 +120,9 @@ The only specific farming-related skill is grower (labor:Farming). Plant Gatheri
 
 Contained
 
-An outdoors farm plot just needs to be laid (uild-\>Farm lot) on any soil.
+An outdoors farm plot just needs to be laid (build-\>Farm plot) on any soil.
 
-Indoors plots can be uilt on any soil floor (including sand) or any sufficiently muddy floor. Muddy stone floors can be produced by using a bucket and the pit/pond activity zone on a channeled tile one z-level above the area where you want the plot to be. The water will spread out on the level below.
+Indoors plots can be built on any soil floor (including sand) or any sufficiently muddy floor. Muddy stone floors can be produced by using a bucket and the pit/pond activity zone on a channeled tile one z-level above the area where you want the plot to be. The water will spread out on the level below.
 
 To make an underground outdoors plot, the area where the plot will be placed must be or have been exposed to the outdoors (e.g., the ceilings have all been channeled down to that room) and the floor, if stone, must be muddied.
 
@@ -172,7 +174,7 @@ You need a butcher and tanner, but any unskilled dwarf can do that fine and it's
 
 ## Eggs
 
-Given that most of the creatures with the token do not need to Graze for food, eggs are a fairly viable food source for a fortress. For the purpose of this guide, we'll focus on the egg layers available from the embark menu -- for example: Turkeys.
+Given that most of the creatures with the [`[LAYS_EGGS]`](/index.php/Creature_token#LAYS_EGGS "Creature token") token do not need to Graze for food, eggs are a fairly viable food source for a fortress. For the purpose of this guide, we'll focus on the egg layers available from the embark menu -- for example: Turkeys.
 
 While they can be a stable source of food, eggs *must* be cooked into prepared meals at a kitchen before they can be eaten by dwarves. So unlike other items on this list, eggs as a food source must have an additional meal source (example: alcohol) in order to be made into food.
 
@@ -252,10 +254,11 @@ Trading for food can easily fill your piles with edible delights each time your 
 
 ### Misc.
 
-- A stack of really well prepared food can be incredibly expensive to merchants and can be produced from food bought at cheap prices from merchants.
 - Trading for food is open to all the normal problems and bugs that are associated with trading, including slow unpacking, the random really slow wagon problem, selling wood to the elves, and so forth.
 - Although fortresses may only rarely find themselves low on food stocks, an extra-cautious eye should always be kept on the supply and how fast it is being consumed, such as in quickly growing fortresses and those with large populations. Especially as far as alcohol stock is concerned, since dwarves burn through alcohol faster than they do through food.
 - Solid food - plant or meat - is not purchased in barrels; exposure to rot and wither, make sure it is hauled to a stockpile in time.
+
+\
 
 ## Related: Cooking
 
@@ -267,6 +270,3 @@ Remember that cooking, other than brewing or eating raw plants, destroys the see
 
 - To train chefs, have them only make easy meals in the beginning because it's the fastest to prepare.
 - Make sure there's enough storage space because if masterpiece meals rot... you're in trouble.
-- Prepared food sells for obscenely high prices. Makes for a brilliant trade good in a pinch, even to the elves (as long as they aren't in wooden barrels).
-
-\]\]

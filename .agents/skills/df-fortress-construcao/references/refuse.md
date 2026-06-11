@@ -1,16 +1,18 @@
 # Refuse
 
-> Fonte: [Refuse](https://dwarffortresswiki.org/index.php/Refuse) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Refuse](https://dwarffortresswiki.org/index.php/Refuse) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Refuse**, though generally garbage, is anything which can be stored in a refuse stockpile (-). Such stockpiles will accept:
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-- Corpses, bodyparts and bodily remains of any non-sentient creatures, including things like heads, teeth, and feathers (note that the corpses of undead creatures seem to count as non-sapient even if the living versions clearly would be, and they seem to end up in the refuse section of a corpse stockpile instead of a dedicated corpse stockpile. This is presumably a bug).
+Dwarf children love to play "graveyard keeper" here.
+
+**Refuse**, though generally garbage, is anything which can be stored in a refuse stockpile. Such stockpiles will accept:
+
+- Corpses, bodyparts and bodily remains of any non-sapient and non-tame creatures, including things like heads, teeth, and feathers (note that the corpses of undead creatures count as non-sapient even if the living versions are sapient, and go in the corpse section of a refuse stockpile instead of a dedicated corpse stockpile)
 - By-products of the meat and fishing industries (bones, raw hide, shells)
 - Things which are rotten (rotten meat, rotten meals, rotten raw hide)
 - Things the dwarves have no further use for (withered plants, damaged furniture, tattered clothes)
 - Vermin remains
-
-Note: Storing clothes or armor in a stockpile with the refuse category enabled will cause them to wear out very quickly.\
 
 ## Uses for refuse
 
@@ -42,24 +44,22 @@ Shells can be used to produce a few types of armor, crafts, and decorations. She
 
 ### Skulls
 
-The skulls of kittens, poultry and other creatures don't need to lie uselessly in your refuse stockpile. Your bone carver can use them to make totems, a trade good.
+The skulls of kittens, poultry and other creatures don't need to lie uselessly in your refuse stockpile - your bone carver can use them to make totems, a trade good.
 
 ### Sapient corpses
 
-While sapient corpses are still listed as a subcategory of refuse stockpiles, your dwarves may refuse to place them there - instead preferring to use a corpse stockpile. This does not seem to apply to the formerly-undead, however, which, for some reason, get placed in the corpse section of a refuse stockpile instead of the dedicated corpse stockpile. This distinction is presumably a bug.
+Sapient creatures are still listed in the subcategories of refuse stockpiles, even though those go in a corpse stockpile; this is due to the undead not being considered sapient. So, it may be best to keep refuse corpse stockpiles out of obvious view, as dwarves may be horrified by the sight of such corpses, cancelling their job and giving the dwarf bad thoughts, unless the dwarf has a high level of discipline. Horrified merchants may also scuttle their wagons, drop their merchandise, and fleeBug:7185, which will cause diplomatic penalties associated with losing their goods.\[Verify\] Being horrified will also give a small amount of experience towards the discipline skill, so it's possible to exploit such stockpiles to increase the discipline of your dwarves, though this is generally ill-advised due to the high likelihood of fun.
 
-Dwarves that come across the corpse of a sapient creature tend to be horrified unless the dwarf has a high level of discipline, cancelling their job and giving the dwarf bad thoughts, so it's generally best to keep corpse stockpiles out of obvious view. Horrified merchants will also scuttle their wagons, drop their merchandise, and flee , which may be undesirable, as there can be diplomatic penalties associated with a merchant losing goods.
-
-Being horrified will also give a small amount of experience towards the discipline skill, so it's possible to exploit corpse stockpiles to increase the discipline of your dwarves, though this is generally ill-advised due to the high likelihood of fun.
+Since the corpses of undead former sapient creatures are not considered sapient, they can be used for the same things as any wild animal corpse. The corpses of undead former fortress citizens can not be buriedBug:10396, and this might cause issues if they are not properly memorialized.
 
 ## Refuse Stockpiles
 
-A refuse stockpile works just like any other stockpile and is different from a garbage dump zone (which accepts items explicitly marked to be dumped). The standard predefined refuse stockpile (designated by -) includes all types of refuse. Customized stockpiles can allow you to sort out the usable "refuse", the rotting refuse, the unusable but not rotting refuse, or even the reanimatable refuse. Disabling certain types of refuse in all refuse stockpiles will cause those items to accumulate wherever they are produced (eg. bones in the butcher shop) instead of tying up stockpile space.
+A refuse stockpile works just like any other stockpile and is different from a garbage dump zone (which accepts items explicitly marked to be dumped). The standard predefined refuse stockpile (designated by p-r) includes all types of refuse. Customized stockpiles can allow you to sort out the usable "refuse", the rotting refuse, the unusable but not rotting refuse, or even the reanimatable refuse. Disabling certain types of refuse in all refuse stockpiles will cause those items to accumulate wherever they are produced (eg. bones in the butcher shop) instead of tying up stockpile space.
 
 ## Avoiding Miasma
 
-Some types of refuse rot, and rotting refuse produces miasma when in a subterranean tile. To avoid the miasma, you can destroy refuse before it rots, or store rotting refuse in a and tile (see tile attributes). A refuse pile on the surface works, as does exposing any part of your fortress' tiles to sunlight and then covering them with constructed floors or walls. Such tiles will remain and thus the refuse stored there will not generate any miasma.
+Some types of refuse rot, and rotting refuse produces miasma when in a subterranean tile. To avoid the miasma, you can destroy refuse before it rots, or store rotting refuse in a Light and Above Ground tile (see tile attributes). A refuse pile on the surface works, as does exposing any part of your fortress' Inside Dark Subterranean tiles to sunlight and then covering them with constructed floors or walls. Such tiles will remain Light Above Ground and thus the refuse stored there will not generate any miasma.
 
 ## Refuse collection options
 
-Refuse items lying outside your fortress will be ignored by default. You can toggle collection of "outside" refuse in the standing orders menu (--). Note that this setting also controls the collection of "dumped" items outside your fortress.
+Refuse items lying outside your fortress will be ignored by default. You can toggle collection of refuse in the standing orders menu, y. Note that this setting also controls the collection of "dumped" items outside your fortress.

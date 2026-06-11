@@ -1,42 +1,57 @@
 ---
 name: df-fortress-industria
-description: Indústria da fortaleza — forja, fundição, agricultura, cerveja, artesanato, têxtil e cadeias de produção. Use para perguntas sobre produzir bens, oficinas de produção, smelting, farming, brewing ou economia de produção. Exclusivo do Fortress Mode.
+description: >-
+  Indústria da fortaleza no Dwarf Fortress: forja, fundição, oficinas de produção, artesanato, têxtil e cadeias de produção. Use quando o usuário perguntar (inclusive em português) sobre produzir bens, fundir metal, forjar, ou economia de produção. Termos EN: smelt, forge, craft, industry, production, smith, workshop, magma forge. Exclusivo do Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: fortress
 ---
 
-# Df Fortress Industria (Dwarf Fortress)
+# DF Fortress Industria (Dwarf Fortress)
 
-Indústria da fortaleza — forja, fundição, agricultura, cerveja, artesanato, têxtil e cadeias de produção. Use para perguntas sobre produzir bens, oficinas de produção, smelting, farming, brewing ou economia de produção. Exclusivo do Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-fortress-industria" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-fortress-industria "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 25 de 25)
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 29 de 29 artigos — use o search.py para o resto)
 - Meat industry → `references/meat-industry.md`
-- Ceramic industry → `references/ceramic-industry.md`
+- Nest box → `references/nest-box.md`
+- Millstone → `references/millstone.md`
+- Hive → `references/hive.md`
+- Fishery → `references/fishery.md`
+- Quern → `references/quern.md`
+- Furniture industry → `references/furniture-industry.md`
+- Still → `references/still.md`
+- Glass industry → `references/glass-industry.md`
+- Hauling → `references/hauling.md`
 - Metal industry → `references/metal-industry.md`
-- Stone industry → `references/stone-industry.md`
 - Beekeeping industry → `references/beekeeping-industry.md`
 - Industry → `references/industry.md`
-- Hauling → `references/hauling.md`
 - Melt item → `references/melt-item.md`
-- Glass industry → `references/glass-industry.md`
-- Training → `references/training.md`
-- Guild → `references/guild.md`
-- Magma forge → `references/magma-forge.md`
-- Arms industry → `references/arms-industry.md`
-- Paper industry → `references/paper-industry.md`
-- Smelting → `references/smelting.md`
-- Clean self → `references/clean-self.md`
-- Rest → `references/rest.md`
-- Magma smelter → `references/magma-smelter.md`
-- Smelter → `references/smelter.md`
-- Wood crafter → `references/wood-crafter.md`
-- Wordsmith → `references/wordsmith.md`
-- Furniture industry → `references/furniture-industry.md`
+- Ceramic industry → `references/ceramic-industry.md`
 - Fishing industry → `references/fishing-industry.md`
+- Paper industry → `references/paper-industry.md`
+- Guild → `references/guild.md`
+- Stone industry → `references/stone-industry.md`
+- Arms industry → `references/arms-industry.md`
 - Fuel industry → `references/fuel-industry.md`
 - Gem industry → `references/gem-industry.md`
+- Smelting → `references/smelting.md`
+- Rest → `references/rest.md`
+- Clean self → `references/clean-self.md`
+- Butcher's shop → `references/butcher-s-shop.md`
+- Farmer's workshop → `references/farmer-s-workshop.md`
+- Tanner's shop → `references/tanner-s-shop.md`
+- Vermin catcher's shop → `references/vermin-catcher-s-shop.md`

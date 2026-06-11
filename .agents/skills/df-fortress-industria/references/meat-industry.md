@@ -1,6 +1,19 @@
 # Meat industry
 
-> Fonte: [Meat industry](https://dwarffortresswiki.org/index.php/Meat_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Meat industry](https://dwarffortresswiki.org/index.php/Meat_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Workshops FAQ**
+- **How do I make steel?**
+- **How do I make glass?**
+- **How do I make cloth?**
+- **How do I make soap?**
+- **My items are 'stuck' in a workshop; how do I stop this from happening?**
+- **Add a question to this FAQ**
+- **Back to the Main FAQ**
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 This article is a quick guide to running a **meat and related goods industry**. If you're basing your economy on the meat industry, you should keep in mind that the amount of product available depends on the breeding rate (how long the offspring takes to be born and mature) of your tame animals, the spawning rates of wild animals, and/or the amount of meat and leather that traders bring.
 
@@ -20,13 +33,13 @@ You can buy animals on embark, and doing so even allows you to choose from male 
 
 As with most industry goods, you can purchase both animals and processed meat and leather from caravans, allowing you to vary your dwarves' diets without having to establish a meat industry proper. Note, however, that traders will never bring preprocessed hair, horns, skulls, or bones. If you want to keep your leatherworkers constantly occupied, buying up caravans' (often vast) collections of leather is a cheap way to get your fort clothed quickly.
 
-It might be necessary that you request every type of leather in order to ensure the merchant comes back with a large quantity next year (they usually bring excessive amounts even if you don't). You can only buy leather from human and dwarven caravans. Elven caravans are interesting in that they often bring a small number of tame caged animals with them, which may be useful as pets (such as silvery gibbons) or for defense purposes (such as grizzly bears).
+It might be necessary that you request every type of leather, in order to ensure the merchant comes back with a large quantity next year (they usually bring excessive amounts, even if you don't). You can only buy leather from human and dwarven caravans. Elven caravans are interesting in that they often bring a small number of tame, caged animals with them, which may be useful as pets (such as silvery gibbons) or for defense purposes (such as grizzly bears).
 
 ### Hunting
 
-In all but the most inhospitable of places, there will be some running food wildlife frolicking in the biome. An ambusher armed with a crossbow and a quiver full of bolts can and will attack these animals, cautiously approaching them ("ambushing", their speed and chances of not being noticed being dependent on their skill) before opening fire at their quarry with crossbow bolts. Hunting is a very outdoorsy activity, and will take your hunters well past where you can establish reasonable defenses; in addition, hunters will occasionally do stupid things that will get them maimed, such as hunting lions, or worse still, killed in grisly ways, such as attacking herds of giant elephants.
+In all but the most inhospitable of places, there will be some ~~running food~~ wildlife frolicking in the biome. An ambusher armed with a crossbow and a quiver full of bolts can and will attack these animals, cautiously approaching them ("ambushing", their speed and chances of not being noticed being dependent on their skill) before opening fire at their quarry with crossbow bolts. Hunting is a very outdoorsy activity, and will take your hunters well past where you can establish reasonable defenses; in addition, hunters will occasionally do stupid things that will get them maimed, such as hunting lions, or worse still, killed in grisly ways, such as attacking herds of giant elephants.
 
-Upon a successful hunt, the dwarf will return the kill, carrying the corpse to the nearest butcher's shop for processing, or the nearest refuse stockpile if available. Failing that, they may leave the corpses wherever they happen to be--meeting areas, bedrooms, etc. Hunters are rather single-minded; when hunting, they will ignore other animals besides their chosen quarry, even if the others are more easily attacked or less dangerous. Although multiple kills happen, hunters generally only return their quarry, or quit when they run out of bolts. To avoid wasting perfectly edible corpses, you need to change your standing orders () to Gather refuse from outside, although this will enable much more than ambusher-kill returning. Hunting makes an erratic but, with a skilled ambusher, bountiful meat source. It avoids the bother of pasturing animals, but comes at the trade-off of defensibility. Many players on mature fortresses are simply too concerned with enemy sieges and the like to send dwarves out too far, and will thus disable hunting jobs on their dwarves.
+Upon a successful hunt, the dwarf will return the kill, carrying the corpse to the nearest butcher's shop for processing, or the nearest refuse stockpile if available. Failing that, they may leave the corpses wherever they happen to be--meeting areas, bedrooms, etc. Hunters are rather single-minded; when hunting, they will ignore other animals besides their chosen quarry, even if the others are more easily attacked or less dangerous. Although multiple kills happen, hunters generally only return their quarry, or quit when they run out of bolts. To avoid wasting perfectly edible corpses, you need to change your standing orders (o) to Gather refuse from outside, although this will enable much more than ambusher-kill returning. Hunting makes an erratic but, with a skilled ambusher, bountiful meat source. It avoids the bother of pasturing animals, but comes at the trade-off of defensibility. Many players on mature fortresses are simply too concerned with enemy sieges and the like to send dwarves out too far, and will thus disable hunting jobs on their dwarves.
 
 ### Military
 
@@ -58,7 +71,7 @@ Using cage traps judiciously (or taking advantage of the animals elves trade) ca
 
 There is currently a per-species population cap, observed to be around 50, past which animals will not get pregnant; existing pregnancies will mature to term, and once some adults are slaughtered, the population can begin moving up again. There is also a population cap on the percentage of juvenile animals, which can have a significant impact on slow-maturing species.
 
-When two animals breed, their genetic traits combine, just like in real life. This means that you can selectively butcher less-desirable specimens to leave only more-desirable breeding stock. This can include your dwarves, although social engineering with intelligent species (i.e. that breed via marriage) is an extra challenge. Extra points for splitting your alpaca herds into one bred for meat and one bred for hair!
+When two animals breed, their genetics combine, just like in real life. This means that you can selectively butcher less-desirable specimens to leave only more-desirable breeding stock. This can include your dwarves, although social engineering with intelligent species (i.e. that breed via marriage) is an extra challenge. Extra points for splitting your alpaca herds into one bred for meat and one bred for hair!
 
 ### Breeding wild animals
 
@@ -74,9 +87,9 @@ TRAPAVOID creatures are harder to breed since they cannot easily be caged, chain
 
 ### Pastures
 
-Tame animals with the \[GRAZER:\\] token (most herbivores) need to constantly munch on grass to survive, and as such require a pasture containing grass, cave moss, or floor fungus to graze upon, or they will starve to death. Be ware that animal fodder isn't usually available when embarking in barren and inhospitable biomes, like glaciers, at least not until you breach the caverns deep underground.
+Tame animals with the \[GRAZER:\] token (most herbivores) need to constantly munch on grass to survive, and as such require a pasture containing grass, cave moss, or floor fungus to graze upon, or they will starve to death. Be ware that animal fodder isn't usually available when embarking in barren and inhospitable biomes, like glaciers, at least not until you breach the caverns deep underground.
 
-Pastures are simple enough to build (unless you've embarked someplace where it rains fun). Designate a grassy area as a pasture activity zone (-), set () the animals to be released onto the pasture, and your dwarves will haul the designated animals to it if they have the animal hauling labor enabled. Once in the pasture, the animals will munch on all the grass they need, as long as there is enough of it.
+Pastures are simple enough to build (unless you've embarked someplace where it rains fun). Designate a grassy area as a pasture activity zone (i-n), set (N) the animals to be released onto the pasture, and your dwarves will haul the designated animals to it if they have the animal hauling labor enabled. Once in the pasture, the animals will munch on all the grass they need, as long as there is enough of it.
 
 Pastures can be easily depleted if the herd of animals on it is large enough; in addition, having too many animals on a pasture at once will lead to fights, which can seriously maim and injure your livestock. Since an above-ground pasture requires a significant plot of land, it is a major security concern - having enough grazing land for your animals while also keeping them protected from invading goblins is an important concern. A solution is to use the fact that livestock can graze on floor fungus and the like as easily as on regular old grass, and wall off a pasture inside of a cavern layer or set them loose in your underground tree farm.
 
@@ -112,7 +125,7 @@ You can also create pastures in stone layers, but the area will need to be clear
 
 ### Slaughtering and butchering
 
-Animals can be marked for slaughter in the Creatures menu under the Pets/Livestock tab. Animals marked for slaughter will queue a task at a butcher's shop, be dragged there by a dwarf with the butcher labor and put down.
+Animals can be marked for slaughter in the Creatures u menu under the Pets/Livestock tab. Animals marked for slaughter will queue a Slaughter {name of the animal} (Tame) task at a butcher's shop, be dragged there by a dwarf with the butcher labor and put down.
 
 Once an animal has been killed it must then be butchered before the corpse rots. This happens instantly in the case of slaughtering. The corpses provided by hunters take some time to pry apart and in a fort with very few available workers, corpses can rot before anybody finds the time to process them. An animal corpse or body part is available if it is inside the butcher's shop or within a certain distance of the shop. Butcher's shops will only scan a limited amount of area (about 20 tiles in every direction) for butcherable corpses. If the corpse is too far away, the workshop will not task it. Putting a refuse pile accepting corpses and body parts close to the butcher's shop is therefore required to make sure "collateral" kills of hunters and the military are processed. The skill of the butcher only affects the time taken for the butcher animal task, not the amount produced, nor the quality.
 
@@ -124,7 +137,7 @@ Meat and fat goes to your food stockpile. Bones, horns, hoofs, hair, cartilage a
 
 If it takes too long for the butchered parts to be hauled into the stockpile, the food will rot and miasma will spread. To prevent this, it is advisable to build the butcher's workshop outside of the fortress, near refuse piles (you may want it inside the walls though). The fresh air prevents miasma spreading. Miasma doesn't spread through diagonal openings, so a clever architect might isolate the smell in a 3x3 room with the shop.
 
-If the animal is butchered just before it rots, the products of the animal MAY not rot. It is unknown whether the time of rotting for butchering products is based on the time of death of the animal or the time of production of the butchering returns.
+If the animal is butchered just before it rots, the products of the animal MAY not rot. It is unknown whether the time of rotting for butchering products is based on the time of death of the animal or the time of production of the butchering returns.\[Verify\]
 
 #### Overdrive
 
@@ -142,7 +155,7 @@ The primary output of the meat industry is the titular meat. Meat comes in two f
 
 Butchering an animal also produces some number of units of fat, which must be processed into tallow at the kitchen. Tallow is very useful for a fort as ingredient in the making of soap. Soap plays an important role in staving off infections when performing operations and cleaning wounds in your hospital, as well as increasing happiness from dwarves being able to clean themselves; it's recommended to stock your hospitals and baths with at least some bars of it. See soap on the exact details of processing.
 
-Tallow can also be cooked. However, tallow is a minimum-value food item and thus will not result in particularly valuable meals. It is much more useful as a soap input. If your meat industry is small, you may be better off disabling the cooking of tallow in the kitchen status screen. With a large meat industry, you'll produce large amounts of tallow, and cooking it makes sense in this case, since your need for soap (which also consumes otherwise valuable wood) is limited.
+Tallow can also be cooked. However, tallow is a minimum-value food item and thus will not result in particularly valuable meals. It is much more useful as a soap input. If your meat industry is small, you may be better off disabling the cooking of tallow in the Kitchen tab in the Labor menu y. With a large meat industry, you'll produce large amounts of tallow, and cooking it makes sense in this case, since your need for soap (which also consumes otherwise valuable wood) is limited.
 
 ### Bones
 
@@ -150,7 +163,7 @@ Butchering an animal produces a number of bones. Craftsdwarves with bone carving
 
 ### Skull
 
-Skulls can only be used to make totems at a craftdwarf's workshop, for trading. Virtually all animals produce a single skull when they die; the only exception is the hydra, which produces seven. Totems do not fall under any category in the "Move trade goods to depot" screen, so you need to earch for them. Usually, however, they will be in a finished goods bin, so just transport the bins to the depot.
+Skulls can only be used to make totems at a craftdwarf's workshop, for trading. Virtually all animals produce a single skull when they die; the only exception is the hydra, which produces seven. Totems do not fall under any category in the "Move trade goods to depot" screen, so you need to search for them. Usually, however, they will be in a finished goods bin, so just transport the bins to the depot.
 
 ### Hooves and horns
 
@@ -204,13 +217,15 @@ Manually managing your meat industry can become quite tedious, especially since 
 
 The DFHack utility can greatly assist, in several ways:
 
+The DFHack autobutcher interface
+
 - **Autobutcher - automatic, configurable butchering:** DFHack provides an `autobutcher` command and UI screen, which can automatically (and semi-intelligently) maintain a breeding population and provide a steady stream of butchering returns.
   - Autobutcher monitors the animals in a fort on a per-species basis. The user can configure the maximum number of male and female children and adults to keep of each species - the default is to keep 5 each of female children and adults, and 1 male child and adult (a total of 12 per species.)
   - Whenever there are more animals than the rules specify, the excess will be automatically marked Ready for Slaughter.
   - The user can edit the configuration for any individual species, for example to keep more than 5 female chickens for egg-laying purposes, or fewer cats to avoid a Catsplosion. Monitoring can also be disabled on a per-species basis.
   - Pets and work animals (Hunting/War) will never be slaughtered.
   - Other options include: editing the default limits that apply to new species; choose to cancel an automatically given butchering order; choosing to butcher an entire species in one go.
-  - With DFHack installed and its default config enabled, you can access the Autobutcher UI by opening the animal status screen and then pressing hotkey .
+  - With DFHack installed and its default config enabled, you can access the Autobutcher UI by opening the animal status screen and then pressing hotkey Shift-B.
   - For more information, see: autobutcher in the DFHack documentation
 - **Autonestbox - automatically assigned nest boxes:** DFHack provides a utility called `autonestbox`, which once started runs automatically and periodically in the background. Each time it runs, it looks for unpastured, non-grazing egg-laying females and unoccupied nestboxes. It will then assign the former to the latter.
   - Once started, Autonestbox runs by default once per 6000 ticks, which is 60 seconds when playing at 100 FPS.
@@ -219,6 +234,9 @@ The DFHack utility can greatly assist, in several ways:
   - Users of the PyLNP-based Windows Starter Pack can enable Autonestbox by toggling `Other Automation Plugins` on the DFHack tab in PyLNP.
   - For more information, see: autonestbox in the DFHack documentation
 - **Better pasture management:** DFHack enhances the Activity Zone-\>Set Pen/Pasture Information UI.
+
+  DFHack Pasture filtering example
+
   - When adding animals to a pasture, you can filter the animals:
     - By text search
     - Male/Female
@@ -285,3 +303,5 @@ The DFHack utility can greatly assist, in several ways:
 
 - Leather
 - Industry
+
+\

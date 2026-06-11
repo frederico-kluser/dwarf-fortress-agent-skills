@@ -1,14 +1,16 @@
 # Steals food
 
-> Fonte: [Steals food](https://dwarffortresswiki.org/index.php/Steals_food) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Steals food](https://dwarffortresswiki.org/index.php/Steals_food) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-\ Creatures with the token will happily pillage your food stockpile if given the chance. This will generally prove only a minor annoyance; unlike drink stealers, creatures stealing food will grab a single stack (or container) and carry it towards the edge of the map.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-This property can also be used to capture certain creatures (such as grizzly bears) by surrounding a small food stockpile with cage traps. You can also create a large fat stockpile on the surface in hopes that some of it will be carried off in place of much more valuable items by flying thieves (such as kea). \
+Creatures with the [`[CURIOUSBEAST_EATER]`](/index.php/Creature_token#CURIOUSBEAST_EATER "Creature token") token will happily pillage your food stockpile if given the chance. This will generally prove only a minor annoyance; unlike drink stealers, creatures stealing food will grab a single stack (or container) and carry it towards the edge of the map.
+
+This property can also be used to capture certain creatures (such as grizzly bears) by surrounding a small food stockpile with cage traps. You can also create a large fat stockpile on the surface in hopes that some of it will be carried off in place of much more valuable items by flying thieves (such as kea).
 
 ## Creatures who can steal food
 
-The following creatures possess the token.
+The following creatures possess the [`[CURIOUSBEAST_EATER]`](/index.php/Creature_token#CURIOUSBEAST_EATER "Creature token") token.
 
 - Black bears
   - Black bear men

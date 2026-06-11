@@ -1,6 +1,8 @@
 # Moat
 
-> Fonte: [Moat](https://dwarffortresswiki.org/index.php/Moat) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Moat](https://dwarffortresswiki.org/index.php/Moat) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 A **moat** is a simple and universally applicable piece of defense design, and often the first defense-oriented piece of engineering that players will embark upon. A basic moat is nothing more than a dug-out trench encircling your entrance with a single three-tile wide (for caravans) bridge over it attached to a lever. In the event of an attack, the lever can be pulled and the bridge raised, forcing enemies to get creative.
 
@@ -22,7 +24,7 @@ This design allows you to plan and schedule the construction of your moat and do
 - Place wood stockpile from eleven (11) to fifteen (15) from the border.
 - Schedule clearing a distance of ten (10) from the border by cutting all trees, smoothing all boulders, and perhaps gathering all plants.
 - Construct a paved road five (5) wide on the border except where bridges will be located you should build stone floors.
-- Schedule digging a channel three wide next to the paved roadway with a priority of five (5). Digging the channel at bridge crossings now will allow you to build your bridges early and have them read to link to levers.
+- Schedule digging a channel three wide next to the paved roadway with a priority of five (5). Digging the channel at bridge crossings now will allow you to build your bridges early and have them ready to link to levers.
 - Build a wall on the inside edge of the moat.
 
 #### Level One Down
@@ -48,12 +50,12 @@ After clearing but before digging, new trees can sprout, care must be observed t
 
 #### Drawing
 
-`   L2         ┐_`\
-`   L1         ▓_`\
-`   L0 _____ĎĎĎ▓______`\
-`   L-1▐███     ██████`\
-`   L-2▐███     ██████`\
-`   L-2▐██████████████`
+       L2         ┐_
+       L1         ▓_
+       L0 _____ĎĎĎ▓______
+       L-1▐███     ██████
+       L-2▐███     ██████
+       L-2▐██████████████
 
 ## Defense considerations
 
@@ -92,11 +94,11 @@ It's not that a moat is bad for morale, exactly; it's just that terrified dwarve
 
 ### Amphibious/Fireimmune Enemies
 
-It should be noted that water-filled moats can be easily crossed by natural swimmers such as amphibians and/or non-breathing creatures; this is ground for a hilarious bug causing giant toads to drown the elite goblins riding them as they path through your defences during a siege. Likewise, magma-filled moats will be ineffective against fire-immune creatures who don't need to breathe, although only dragons and the various inhabitants of magma are actually immune to magma's heat, and dragons may just drown inside a magma moat.
+It should be noted that water-filled moats can be easily crossed by natural swimmers such as amphibians and/or non-breathing creatures; this is ground for a hilarious bugBug:926 causing giant toads to drown the elite goblins riding them as they path through your defences during a siege. Likewise, magma-filled moats will be ineffective against fire-immune creatures who don't need to breathe, although only dragons and the various inhabitants of magma are actually immune to magma's heat, and dragons may just drown inside a magma moat.
 
 ### Winter
 
-Also note that if you fill the moat with water in a climate that freezes during winter, the moat will become ineffective while the water in it has turned into ice. A deep moat filled only partway up with water will remain reasonably effective even during a freeze.
+Also note that, if you fill the moat with water in a climate that freezes during winter, the moat will become ineffective while the water in it has turned into ice. A deep moat filled only partway up with water will remain reasonably effective even during a freeze. Not to mention that, if your dwarves are standing on the ice as winter ends, it may result in them falling in and potentially drowning.
 
 ### Ranged Enemies
 

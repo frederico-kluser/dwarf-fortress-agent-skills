@@ -1,6 +1,8 @@
 # Ceramic industry
 
-> Fonte: [Ceramic industry](https://dwarffortresswiki.org/index.php/Ceramic_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Ceramic industry](https://dwarffortresswiki.org/index.php/Ceramic_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **ceramic industry** produces a variety of goods used for trade, storage, constructions, and decoration in support of a fortress. Although the industry produces a fairly limited variety of goods when compared to others, ceramic goods are naturally worth three to ten times the value of similar goods made from common stone or wood, making them a lucrative option for wealth creation. Ceramic goods are divided into three distinct categories (called wares) based on the raw materials used. Earthenware items are produced from generic clay, stoneware from fire clay and porcelain from the stone kaolinite. In order to ensure watertight earthenware containers (jugs and large pots), as well as to increase overall item value, earthenware items require an additional production step called glazing. The ceramics industry also produces gypsum plaster which is critical for dwarven healthcare. Pearlash, a critical production material for the glass industry, is also created as a crossover material from the ceramic industry.
 
@@ -17,15 +19,15 @@ All **ceramic goods** are produced by a **potter** at a **kiln** which requires 
 
 ### Earthenware
 
-Earthenware ceramics are made using generic clay which can be collected from any generic clay soil tile using the clay collection activity zone, which are typically the most abundant and readily available ware type. Earthenware items have a base value of (equivalent to the highest value stone - obsidian). Earthenware items are **not** waterproof, and as such require a finishing step of glazing should the intended final use require liquid storage. Glazing can also be used to increase the value of the item. Glazed earthenware products can take a considerable toll on your wood resources, in particular if you are using wood for fuel as well as the glazing material (ash).
+Earthenware ceramics are made using generic clay which can be collected from any generic clay soil tile using the clay collection activity zone, which are typically the most abundant and readily available ware type. Earthenware items have a base value of 3☼ (equivalent to the highest value stone - obsidian). Earthenware items are **not** waterproof, and as such require a finishing step of glazing should the intended final use require liquid storage. Glazing can also be used to increase the value of the item. Glazed earthenware products can take a considerable toll on your wood resources, in particular if you are using wood for fuel as well as the glazing material (ash).
 
 ### Stoneware
 
-Stoneware ceramics can only be made from fire clay, which is a fairly rare type of soil. As with generic clay, fire clay is collected using the clay collection activity zone. Stoneware items have a base value of . They do not require glazing in order to be waterproof.
+Stoneware ceramics can only be made from fire clay, which is a fairly rare type of soil. As with generic clay, fire clay is collected using the clay collection activity zone. Stoneware items have a base value of 4☼. They do not require glazing in order to be waterproof.
 
 ### Porcelain
 
-Porcelain ceramics can only be made from kaolinite, a dark red magma-safe stone which may be found in large clusters in sedimentary layers. It must be mined rather than collected, making it a finite resource, (similar to crystal glass as used in the glass industry). Porcelain items have a value multiplier of 10x (equivalent to silver.) Porcelain items are naturally waterproof (do not require glazing). While the stone itself is magma safe, porcelain blocks are not.
+Porcelain ceramics can only be made from kaolinite, a pinkish magma-safe stone which may be found in large clusters in sedimentary layers. It must be mined rather than collected, making it a finite resource, (similar to crystal glass as used in the glass industry). Porcelain items have a value multiplier of 10x (equivalent to silver.) Porcelain items are naturally waterproof (do not require glazing). While the stone itself is magma safe, porcelain blocks are not.
 
 ### Gypsum plaster
 
@@ -37,7 +39,7 @@ Gypsum plaster, while technically not a direct product of the ceramic industry, 
 
 Earthenware ceramics require generic clay as the basic raw material. There are several types of soil that provide clay, including clay, clay loam, sandy clay, and silty clay. To collect clay, you will need to do the following:
 
-1.  Use the Activity zone () function and select an area of soil (preferably in a secure, underground area) that contains clay, then select to ensure that the zone is designated for clay collection.
+1.  Use the z Zones function and choose the Clay option, then select an area of soil (preferably in a secure, underground area) that contains clay in order to set up a clay collection zone.
 2.  Ensure that at least one dwarf has the item hauling labor enabled, which is the labor required to collect clay from a zone.
 3.  Select a Kiln and issue a clay collection order. If you plan on producing a lot of items, it is a good idea to set this order on repeat.
 
@@ -49,7 +51,7 @@ Earthenware items are produced at a kiln by a dwarf with the potter labor enable
 
 ### Glazing
 
-Glazing is a process that covers a selected ware with a substance that, when re-fired, results in a glassy, non porous coating which serves to protect the ware, make it impermeable to liquids, and to enhance its visual appeal. Earthenware must be re-fired with a glaze material (or medium), of which there are two types, ash and cassiterite to produce a completed glazed product. Earthenware ceramic containers must be glazed in order to hold water or more importantly booze and oil. Glazing also increases the value of the items, the amount determined by the type of glaze medium used. Glaze mediums are applied at a kiln to jugs, statues, large pots, and crafts made from either stone or ceramics, by a glazer. Earthenware items re-fired in a kiln with 1/150th of a bar of ash produce ash glazed items which adds to the items value, though a full bar is required to start the job. Earthenware items re-fired with boulders of cassiterite produce tin glazed items which adds to the items value. Cassiterite is an ore which, when smelted, produces tin, and is typically rare, and usually cannot be purchased from caravans. Bars of tin cannot be used to make tin glazes. Note that glazes are not products in themselves, you do not make a glaze and then apply it to the ware. It is effectively a unique (to ceramics and some stone items) form of item decoration.
+Glazing is a process that covers a selected ware with a substance that, when re-fired, results in a glassy, non porous coating which serves to protect the ware, make it impermeable to liquids, and to enhance its visual appeal. Earthenware must be re-fired with a glaze material (or medium), of which there are two types, ash and cassiterite to produce a completed glazed product. Earthenware ceramic containers must be glazed in order to hold water or more importantly booze and oil. Glazing also increases the value of the items, the amount determined by the type of glaze medium used. Glaze mediums are applied at a kiln to jugs, statues, large pots, and crafts made from either stone or ceramics, by a glazer. Earthenware items re-fired in a kiln with 1/150th of a bar of ash produce ash glazed items which adds 50☼ to the items value, though a full bar is required to start the job. Earthenware items re-fired with boulders of cassiterite produce tin glazed items which adds 100☼ to the items value. Cassiterite is an ore which, when smelted, produces tin, and is typically rare, and usually cannot be purchased from caravans. Bars of tin cannot be used to make tin glazes. Note that glazes are not products in themselves, you do not make a glaze and then apply it to the ware. It is effectively a unique (to ceramics and some stone items) form of item decoration.
 
 #### Production of glaze medium
 
@@ -78,9 +80,10 @@ Porcelain items are produced at a kiln by a Dwarf with the potter labor enabled.
 
 ## Ceramic industry output
 
-- **Jugs and Large Pots:** Given that there is considerable work required to use earthenware jugs and large pots for liquid storage (i.e. glazing), it is reasonable to question their utility. One consideration for their use would be the consideration of item weight. Earthenware is the lightest of the three -ware types with a density of 1360, which is much less than almost every type of stone, and all three types of glass (2600). Jet (stone) is the exception, as its density is just below that of earthenware (1320). The lightest normal (not adamantine) metal is aluminum at 2700. Large pots used for booze storage are typically hauled all over your fortress, so the lighter and thereby faster they are, the more efficient they become. So the extra effort of producing glazed earthenware large pots will result in the largest, and effectively lightest liquid containers, (unless, of course, you have gobs of adamantine to spare.)
-- **Crafts:** The ceramic industry is one of the few industries that does not benefit from a nearby craftsdwarf's workshop. As with the metal and glass industries, a unique facility is required to create crafts, and for ceramics this is the kiln. That said, the kiln cannot be used to make ceramic goblets, instruments, or toys.
-- **Ceramic Bricks (aka blocks):** While all ceramic bricks are fire-safe, they are not magma safe (even though porcelain is made from the magma-safe stone kaolinite). Ceramic bricks are 3-10x as valuable as common stone blocks and may be produced in infinite quantities if you have a local source of clay, making them marginally useful for improving the value of roads, bridges, and rooms in soil layers. If kaolinite is set to "non-economic" via the Stone menu, a mason can convert one kaolinite boulder into four low-value, magma-safe kaolinite blocks instead.
+- **Jugs and Large Pots:** Given that there is considerable work required to use earthenware jugs and large pots for liquid storage (i.e. glazing), it is reasonable to question their utility. One consideration for their use would be the consideration of item weight. Earthenware is the lightest of the three -ware types with a density of 1360, which is much less than almost every type of stone, and all three types of glass (2600). Jet (stone) is the exception, as its density is just below that of earthenware (1320). The lightest normal (not adamantine) metal is aluminum at 2700. Large pots used for booze storage are typically hauled all over your fortress, so the lighter and thereby faster they are, the more efficient they become. So the extra effort of producing glazed earthenware large pots will result in fairly lightweight liquid containers.
+  - That said, both of these can also be made out of wood, which is even lighter, and if you use ash glaze or charcoal for fuel, you'll consume some logs either way.
+- **Crafts:** The ceramic industry is one of the few industries that does not benefit from a nearby craftsdwarf's workshop. As with the metal and glass industries, a unique facility is required to create crafts, and for ceramics this is the kiln. That said, the kiln cannot be used to make ceramic goblets or toys. Instruments and instrument pieces can be made there, if your world includes an instrument or piece that can be made from ceramics.
+- **Ceramic Bricks (aka blocks):** While all ceramic bricks are fire-safe, they are not magma safe (even though porcelain is made from the magma-safe stone kaolinite). Ceramic bricks are 3-10x as valuable as common stone blocks and may be produced in infinite quantities if you have a local source of clay, making them marginally useful for improving the value of roads, bridges, and rooms in soil layers. If kaolinite is set to "non-economic" via the z Stone menu, a mason can convert one kaolinite boulder into four low-value, magma-safe kaolinite blocks instead.
 - **Statues:** If high-value decorative metals (gold, silver, platinum and their alloys) are in short supply, and you are lucky enough to have some kaolinite, porcelain statues can be used to create high-value rooms. The endless nature of earthenware and stoneware statues also makes them suitable for producing in high quantities to achieve the same purpose, or simply to create impressive-looking architecture.
 
 ## Benefits of skilled labor and strange moods
@@ -96,12 +99,16 @@ A skilled potter or glazer will generate items or decorations of a higher value.
 
 ### Ceramics industry integrated flowchart
 
+|  |
+|----|
+| Production Flowchart (click to enlarge) |
+| Ceramic Industry Production Flowcharts |
+
 ## Ceramic industry crossover
 
 1.  **Glass Industry:** As there is some natural overlap with the glass industry with regard to materials required, it may be useful to set up your ceramics industry near your glass industry. Potash makers use ash at asheries to produce potash, which in turn feeds kilns that make pearlash, which is used to make clear glass and crystal glass. As ceramics already requires ash production, and uses kilns as the primary production facility, there is some efficiency advantage to be had by keeping the distance between the two industries short.
-2.  **Jewelry Industry:** Clay can be used by a gem cutter to advance their cutting skill. As clay is effectively unlimited, and as it requires no processing step (unlike glass) in order to be used, it is a very efficient material for training your gem cutters, and it can be transported more quickly than stone. The main drawback is the time it takes for an item hauler to gather the clay.
-3.  **Fuel Industry:** The ceramic industry relies on fuel to function properly. Until magma becomes available, a steady supply of coke or charcoal will be necessary.
-4.  **Wood Industry:** The glazing of earthenware products relies on ash. If you plan on developing a large ceramic industry, integration of ash production directly into the ceramics facility layout is recommended.
+2.  **Fuel Industry:** The ceramic industry relies on fuel to function properly. Until magma becomes available, a steady supply of coke or charcoal will be necessary.
+3.  **Wood Industry:** The glazing of earthenware products relies on ash. If you plan on developing a large ceramic industry, integration of ash production directly into the ceramics facility layout is recommended.
 
 ## Notes, tips, and tricks:
 
@@ -111,4 +118,11 @@ A skilled potter or glazer will generate items or decorations of a higher value.
 - Ceramics are considered to be fire-safe but typically are not magma safe. Raw clay is not fire-safe.
 - **Stupid Dwarf Ceramics:** Create an oriental themed fortress using porcelain statues, and ceramic blocks for internal construction. Use fire clay to create 1000 Terracotta statues for an elaborate tomb in which to enshrine a dead noble.
 
+\
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 Being somewhat sensitive as to their height (or lack thereof) in comparison to other sentient races, the ingenious yet vertically insecure Dwarves are prone to compensate for their diminutive stature by making "really big things". Take, for example, the ceramic statue. Given that the average statue is large enough to take up the entire space of a tile upon which it is placed (thereby prohibiting passage), it therefore must be considerably larger than a chest or cabinet (large furniture items which do allow units to pass through), and it can only be surmised that the statues are quite large. It follows that a "really big kiln", (say, 10-12 feet tall) would be required to fire one of these "really big statues" using incredibly accurate temperature control. For a Dwarf, these feats of engineering are taken in (short legged) stride. Given the size, weight, and relative fragility of an un-fired statue, it must be assumed that your basic kiln also includes a crane (or two) and the necessary scaffolding surrounding the kiln that will allow careful placement of the statues within the massive firing chamber.

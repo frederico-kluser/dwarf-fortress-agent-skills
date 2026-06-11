@@ -1,12 +1,14 @@
 # No Pain
 
-> Fonte: [No Pain](https://dwarffortresswiki.org/index.php/No_Pain) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [No Pain](https://dwarffortresswiki.org/index.php/No_Pain) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-\ Creatures with the **** creature token feel no pain in (or out of) combat. These creatures will suffer grievous wounds and continue fighting without pause, making them significantly harder to kill - many foes are dispatched by a blow to the head after they fall unconscious from pain. Luckily, creatures with this token are rare. \
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Creatures with the **[`[NOPAIN]`](/index.php/Creature_token#NOPAIN "Creature token")** creature token feel no pain in (or out of) combat. These creatures will suffer grievous wounds and continue fighting without pause, making them significantly harder to kill - many foes are dispatched by a blow to the head after they fall unconscious from pain. Luckily, creatures with this token are rare.
 
 ## Creatures who feel no pain
 
-The following creatures possess the token.
+The following creatures possess the [`[NOPAIN]`](/index.php/Creature_token#NOPAIN "Creature token") token.
 
 - Amethyst men
 - Angels
@@ -26,7 +28,6 @@ The following creatures possess the token.
 - Fire men
 - Forgotten beasts
 - Gabbro men
-- Giant desert scorpions
 - Grimelings
 - Hydras
 - Infected ghouls

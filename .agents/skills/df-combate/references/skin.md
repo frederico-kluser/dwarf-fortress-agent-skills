@@ -1,8 +1,10 @@
 # Skin
 
-> Fonte: [Skin](https://dwarffortresswiki.org/index.php/Skin) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Skin](https://dwarffortresswiki.org/index.php/Skin) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*This article refers to "hide" in terms of the skin of a creature, for the article on hiding items and buildings, see .*
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*This article refers to "hide" in terms of the skin of a creature, for the article on hiding items and buildings, see Hide Items or Buildings.*
 
 **Skin** is a tissue layer common to most creatures. Different types of creatures have different types of skin.
 
@@ -18,17 +20,31 @@ Raw skin can be processed at a tanner's shop by a dwarf with the tanning labor e
 
 ## Leather
 
-Leather is used to make low-grade armor and clothing. Leather is also used to make bags, quivers, backpacks, waterskins, clothing, shields, armor, crafts and decorations. The process of making and using leather is part of the meat industry, rather than the clothing industry.
+Leather can be used to make clothing and low-grade armor. Leather is also used to make bags, waterskins, clothing, shields, armor, crafts and decorations, among other items. It is, practically speaking, the *only* material to produce quivers and backpacks, at least early in a fortress. The process of making and using leather is part of the meat industry, rather than the clothing industry.
 
 ## Modding scales to be usable in leatherworking
 
 If you want to make items out of scale or chitin, add these tokens to SCALE_TEMPLATE or CHITIN_TEMPLATE in material_template_default.txt in the game raws:
 
-        [LEATHER]
+     [LEATHER]
         [ITEMS_LEATHER]
         [BUTCHER_SPECIAL:SKIN_TANNED:NONE]
 
 This will make butchering yield several sheets of the creature's scale that are usable in leatherworking, instead of regular unusable scales.
+
+## Gallery
+
+-
+
+  Skin texture.
+
+-
+
+  Fish scales, another type of skin.
+
+-
+
+  Insect chitin, yet another type of skin.
 
 ## See also
 
@@ -36,3 +52,7 @@ This will make butchering yield several sheets of the creature's scale that are 
 - Meat industry
 - Armor
 - Paper industry
+
+|  |
+|----|
+| "Skin" in other / Languages / Dwarven / : / salul / Elven / : / tipi / Goblin / : / duspbu / Human / : / lubbe |

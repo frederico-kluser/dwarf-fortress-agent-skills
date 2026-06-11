@@ -3,18 +3,18 @@
 __pycache__/
 *.pyc
 
-# Raw wiki dump + intermediates (regenerable via .work/parse_dump.py)
+# Conteúdo bruto re-coletável da API (regenerável via .work/crawl_api.py).
+# Grande demais para versionar; o crawl reconstrói a partir da wiki viva.
+.work/*.jsonl
 .work/*.xml
 .work/*.xml.zst
-.work/*.jsonl
+.work/crawl.log
 
-# Analysis intermediates (regenerable)
-.work/page_cats.json
-.work/cat_to_pages.json
-.work/categories.json
-.work/cat_counts.json
+# Índice de busca FTS5 (artefato derivado; search.py reconstrói no 1º uso).
+.agents/skills/scripts/index.db
 
-# Kept versioned:
-#   .agents/skills/**          (product: flat skill tree + articles)
-#   .work/*.py                 (generation pipeline)
-#   .work/build_summary.json
+# Versionado:
+#   .agents/skills/**                      (produto: skills + artigos markdown)
+#   .agents/skills/scripts/*.py *.tsv      (busca + glossário)
+#   .work/crawl_api.py build_skills.py htmlmd.py taxonomy.py   (pipeline)
+#   requirements.txt

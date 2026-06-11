@@ -1,49 +1,60 @@
 ---
 name: df-saude
-description: Comida, bebida, hospital, doenças, cura e necessidades fisiológicas. Use para perguntas sobre comer, beber, tratar ferimentos em hospital, infecção, fome, sede ou cansaço. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Saúde, comida e agricultura no Dwarf Fortress: comer, beber, hospital, doenças, cura, plantio, cervejaria e necessidades fisiológicas. Use quando o usuário perguntar (inclusive em português) sobre comida, bebida, lavoura, tratar ferimentos, infecção, fome, sede ou cansaço. Termos EN: food, drink, hospital, disease, heal, farming, crops, brewing, agriculture, hunger, thirst. Funciona para Adventure Mode e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Saude (Dwarf Fortress)
+# DF Saude (Dwarf Fortress)
 
-Comida, bebida, hospital, doenças, cura e necessidades fisiológicas. Use para perguntas sobre comer, beber, tratar ferimentos em hospital, infecção, fome, sede ou cansaço. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-saude" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-saude "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 53)
-- Cheating → `references/cheating.md`
-- Farming → `references/farming.md`
-- Health care → `references/health-care.md`
-- Wound → `references/wound.md`
-- Egg production → `references/egg-production.md`
-- Alcohol → `references/alcohol.md`
-- Kitchen → `references/kitchen.md`
-- Irrigation → `references/irrigation.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 131 artigos — use o search.py para o resto)
 - Food → `references/food.md`
-- Milk → `references/milk.md`
-- Tree farming → `references/tree-farming.md`
-- Symptom → `references/symptom.md`
-- Obsidian farming → `references/obsidian-farming.md`
-- Farm size calculations → `references/farm-size-calculations.md`
-- Flour → `references/flour.md`
-- Create new FAQ category → `references/create-new-faq-category.md`
-- Egg → `references/egg.md`
-- Gypsum plaster → `references/gypsum-plaster.md`
-- Shrub → `references/shrub.md`
-- Missing features → `references/missing-features.md`
-- Health screen → `references/health-screen.md`
-- Cheese → `references/cheese.md`
-- Crutch → `references/crutch.md`
-- Dwarven syrup → `references/dwarven-syrup.md`
-- Meat → `references/meat.md`
-- Dwarven sugar → `references/dwarven-sugar.md`
-- Tallow → `references/tallow.md`
-- Farmer's workshop → `references/farmer-s-workshop.md`
-- Oil → `references/oil.md`
+- Crop → `references/crop.md`
+- Kitchen → `references/kitchen.md`
 - Surgeon → `references/surgeon.md`
+- Diagnostician → `references/diagnostician.md`
+- Plump helmet → `references/plump-helmet.md`
+- Quarry bush → `references/quarry-bush.md`
+- Pig tail → `references/pig-tail.md`
+- Sweet pod → `references/sweet-pod.md`
+- Rope reed → `references/rope-reed.md`
+- Cave wheat → `references/cave-wheat.md`
+- Whip vine → `references/whip-vine.md`
+- Sliver barb → `references/sliver-barb.md`
+- Dimple cup → `references/dimple-cup.md`
+- Hide root → `references/hide-root.md`
+- Hemp → `references/hemp.md`
+- Longland grass → `references/longland-grass.md`
+- Blade weed → `references/blade-weed.md`
+- Sun berry → `references/sun-berry.md`
+- Flax → `references/flax.md`
+- Shrub → `references/shrub.md`
+- Cotton → `references/cotton.md`
+- Kenaf → `references/kenaf.md`
+- Strawberry → `references/strawberry.md`
+- Prickle berry → `references/prickle-berry.md`
+- Jute → `references/jute.md`
+- Rat weed → `references/rat-weed.md`
+- Fisher berry → `references/fisher-berry.md`
+- Ramie → `references/ramie.md`
+- Banana → `references/banana.md`
 
-*...e mais 23 artigos (use o search.sh para encontrá-los)*
+*…e mais 101 artigos (use o search.py).*

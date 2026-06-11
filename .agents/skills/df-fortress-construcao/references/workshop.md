@@ -1,10 +1,16 @@
 # Workshop
 
-> Fonte: [Workshop](https://dwarffortresswiki.org/index.php/Workshop) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Workshop](https://dwarffortresswiki.org/index.php/Workshop) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Workshops** are buildings where materials are processed by dwarves into more valuable or useful items. There are a total of 31 workshops: 14 first tier, 11 second tier and 6 third tier across the game's various industries.
 
 ## Description
+
+**Production flowchart for most workshops**.\
+Not all items are represented!\
+*(Click to enlarge)*
 
 Anything that is created, refined, cooked, altered, decorated, or generally "produced" is processed at a workshop. There are many different types of workshops, for different purposes and different finished products. Just as they have specific products associated with them, they have specific labors that are required by dwarves to build them or to work there, and dwarves with more of the appropriate skill tend to produce higher quality objects\*, and/or produce them faster.
 
@@ -18,12 +24,22 @@ Almost all workshops measure 3 tiles square, 3×3, but a few are 5×5, or even a
 
 When there are items ordered at a workshop, the workshop will generate item creation jobs until it finds a suitable dwarf with appropriate labors (and skill level and so on if those are set in the workshop orders). When the dwarf is found, an A will appear next to the job in the workshop queue, and the following will happen:
 
-1.  The dwarf comes to the workshop.
-2.  The dwarf finds a suitable nearby (or the farthest) raw material. (if any stockpiles are set to give to the workshop, only linked stockpiles will be looked in!)
-3.  The dwarf fetches all the necessary ingredients and brings them to the workshop.
-4.  The dwarf labors in the workshop for a while and creates the item.
-5.  The dwarf brings the finished item to the nearest suitable stockpile. (see \#2 for linked stockpiles)
-6.  At this point, the workshop goes to the next queued item, and starts looking for a suitable dwarf again - it's most probable that the dwarf who just finished the item is nearby and will be recruited again for another job.
+1.  The dwarf finds the nearest, most suitable base raw material.
+
+This is nearest to their current location, not the workshop.
+
+If any stockpiles are set to give to the workshop, only linked stockpiles will be looked in.
+
+In case of decoration jobs: the material to decorate with is fetched first (and the item to decorate with afterwards).
+
+In case of jobs needing fuel: the fuel is fetched last.
+
+1.  The dwarf gets that material and hauls it to the workshop.
+2.  The dwarf repeats that until all the necessary ingredients are in the workshop.
+3.  The dwarf labors in the workshop for a while and creates the item.
+4.  The dwarf leaves the finished item in the workshop.
+5.  At this point, the workshop goes to the next queued task, and starts looking for a suitable dwarf again, often the dwarf who just finished the previous.
+6.  A new hauling job is (eventually) queued to take the finished item to the nearest suitable stockpile. (See \#2 for linked stockpiles)
 
 If you have no stockpiles to put finished objects in, workshops will become cluttered. You can see the clutter by checking the contents of the workshop by clicking on it. The more items there are, the longer tasks will take.
 
@@ -46,7 +62,7 @@ Each task will have a series of buttons beside it, allowing you to control certa
 - The repeat task button (two circling arrows) tells the workshop to continually repeat the task until it is either manually cancelled by the player or the workshop runs out of materials required for the task.
 - The highest priority button (yellow exclamation point) which instructs the workshop to carry out the task with the highest possible priority. This is useful for emergency lever-pulling and other time-critical tasks.
 - The increase priority button (orange up arrow), which moves the task higher in the task queue, to be carried out sooner.
-- The details button (magnifying glass), which allows you to specify certain details of the task, such as choosing the material(s) to be used, the size of the resulting item (eg. clothing for difference species), or the imagery to be used in creating an artistic work.
+- The details button (), which allows you to specify certain details of the task, such as choosing the material(s) to be used, the size of the resulting item (eg. clothing for difference species), or the imagery to be used in creating an artistic work.
 - The pause button, which pauses the task until pressed again. A paused task does not prevent the workshop from continuing through the rest of its queue, it is simply skipped over.
 - The cancel task button (red X), which deletes the task from the queue.
 
@@ -60,6 +76,8 @@ To assign a workshop Master:
 
 Once a Master is chosen, they will be listed on the Workers tab, along with the specialization toggle button. If you wish to remove them as workshop Master, click the red X button next to their name to return the workshop to general use.
 
+If you have not assigned a workshop Master and have DFHack installed, you will be able to set a slider for the minimum and maximum skill level that a dwarf must have in order to perform tasks at the workshop. DFHack also provides a selection interface for which labors to enable for the workshop, filtering which general manager jobs the workshop will accept. These are vanilla features that the vanilla UI no longer provides an interface for.
+
 Dwarves with strange moods seem to be able to claim a workshop, even if they do not meet the profile criteria.
 
 The **Work orders tab** allows you to set up new work orders for the workshop, and lists all work orders specific to the workshop. These require the Manager noble position to be filled and operate identically to work orders created by a Manager (and will appear in the Manager's work order list), except that they apply only to the workshop in which they are created.
@@ -72,7 +90,7 @@ As your fortress continues to grow and diversify, it becomes increasingly diffic
 
 ### Standing orders
 
-Standing orders provide a rudimentary form of automation for some specific workshops in *Dwarf Fortress*. Certain goods or materials are only useful for one thing, having no other use and requiring refinement before they can be made into something useful. Thus, standing orders automate certain tasks, queuing them up whenever input materials are available; this behavior may be configured in the "Labor" menu by pressing or clicking the hammer icon in the bottom left toolbar, and selecting the Standing orders tab. Note that this rudimentary automation performs poorly with multiple workshops, often queuing dwarves to carry the materials to the farthest available workshop.
+Standing orders provide a rudimentary form of automation for some specific workshops in *Dwarf Fortress*. Certain goods or materials are only useful for one thing, having no other use and requiring refinement before they can be made into something useful. Thus, standing orders automate certain tasks, queuing them up whenever input materials are available; this behavior may be configured in the "Labor" menu by pressing y or clicking the hammer icon in the bottom left toolbar, and selecting the Standing orders tab. Note that this rudimentary automation performs poorly with multiple workshops, often queuing dwarves to carry the materials to the farthest available workshop.
 
 - **Automatically weave all thread**: This option instructs the loom to weave any thread into cloth whenever it becomes available. There are two other options: Automatically weave dyed thread, which behaves the same except it will only use dyed thread; and No automatic weaving, which disables all automatic weaving.
 - **Use any cloth**: This option doesn't control any automation, instead restricting whether your clothier's shops will use any available cloth, or **Use only dyed cloth**.
@@ -107,11 +125,11 @@ Tier 3 workshops use Tier 2 materials (processed Tier 1 materials) and possibly 
 
 ### Tier 1 workshops
 
-- Bowyer's workshop
+- Bowyer's workshop b-o-b
   - Uses Tier 0 material: Wood
   - Can also use higher-tier material: Bone
   - Produces Tier 1 Weapon: Crossbow
-- Carpenter's workshop
+- Carpenter's workshop b-o-p
   - Uses Tier 0 materials: Wood
   - Produces Tier 1 materials:
     - Armor: Buckler, Shield
@@ -123,96 +141,96 @@ Tier 3 workshops use Tier 2 materials (processed Tier 1 materials) and possibly 
     - Trap Components: Cage, Enormous corkscrew, Menacing spike, Spiked ball
     - Finished Goods: Crutch, Splint
     - Tools: Animal trap, stepladder, wheelbarrow, minecart
-- Jeweler's workshop
+- Jeweler's workshop b-o-j
   - Uses Tier 0 Item: Rough gem
   - Can also use higher-tier items: Cut gems, Encrustable objects
   - Produces: Cut gem, Encrusted objects
-- Stoneworker's workshop
+- Stoneworker's workshop b-o-t
   - Uses Tier 0 Item: Stone
   - Produces Tier 1 Items: Armor stand, Block, Throne, Coffin, Door, Floodgate, Hatch cover, Grate, Cabinet, Coffer, Statue, Table, Weapon rack, Quern, Millstone, Slab
-- Butcher's shop
+- Butcher's shop b-o-f-b
   - Uses Tier 0 Items: Tame animals, Corpses of untamed non-sentient animals
   - Produces Tier 1 Items: Skin, Fat, Meat, Bone, Prepared organs, Skull, Scale, Hoof, Ivory, Tooth
-- Mechanic's workshop
+- Mechanic's workshop b-o-h
   - Uses Tier 0-1 Items: Stone, Table, Rope
   - Produces Tier 1 Item: Mechanism
   - Produces Tier 3 Item: Traction bench
-- Farmer's workshop
+- Farmer's workshop b-o-f-f
   - Uses Tier 0 Items: crop, Animal
-  - Can use Tier 1 Reusable Items: Bags, barrels, vials, Buckets
+  - Can use Tier 1 Reusable Items: Bags, Barrels, Vials, Buckets
   - Produces Tier 1 Items: Pig tail thread, Rope reed thread, Quarry bush leaves, Dwarven syrup, Plant extracts, Milk, Cheese
-- Fishery
+- Fishery b-o-f-y
   - Uses Tier 0 Items: Raw fish
   - Produces Tier 1 Items: Fish meat, Shells, Captured live fish
-- Craftsdwarf's workshop
+- Craftsdwarf's workshop b-o-r
   - Uses Tier 0 Items: Stone, Wood
   - Can also use higher-tier items: Bone, Shell, Ivory, Tooth, Horn, Pearl, Cloth, Leather, Slabs
   - Produces: Finished goods, Pots, Jugs, Tools, Memorials
-- Siege workshop
+- Siege workshop b-o-g
   - Uses Tier 0 Item: Wood
   - Can also use higher-tier item: Ballista arrowhead
   - Produces: Catapult parts, Ballista parts, Ballista arrows
-- Wood furnace
+- Wood furnace b-o-u-f
   - Uses Tier 0 Item: Wood
   - Produces: Fuel (Charcoal), Ash
-- Magma smelter (requires magma access):
+- Magma smelter b-o-u-L (requires magma access):
   - Uses Tier 0 Items: Coal, Ore, Flux
   - Can also use higher-tier items: Fuel (Charcoal, Coke), Metal bars, scrap weapons, armor, etc.
   - Produces: Metal bars, Coke
-- Magma kiln (requires magma access):
+- Magma kiln b-o-u-K (requires magma access):
   - Uses Tier 0 Items: Gypsum, Alabaster, Selenite, Satinspar, Kaolinite, Clay, Silty clay, Sandy clay, Clay loam, Fire clay, Cassiterite
   - Can also use higher-tier items: Ash, Potash
   - Produces: Pearlash, Gypsum plaster, Ceramics (Jug, Bricks, Statue, Large pot, Crafts, Hive), Glazed items
-- Magma glass furnace (requires magma access):
+- Magma glass furnace b-o-u-G (requires magma access):
   - Uses Tier 0 Items: Sand bag, Raw rock crystal
   - Can also use higher-tier item: Pearlash
   - Produces: Raw crystal/clear/green glass, Blocks, Vials, Toys, Instruments, Goblets, Trap weapons, Windows, Furniture
 
 ### Tier 2 workshops
 
-- Tanner's shop
+- Tanner's shop b-o-f-t
   - Uses Tier 1 Item: Hide
   - Produces Tier 2 Item: Leather
-- Loom
+- Loom b-o-l-o
   - Uses Tier 1 Items: Adamantine strands, Cave spider silk thread, Giant cave spider silk thread, Phantom spider silk thread, Pig tail thread, Rope reed thread
   - Produces: Cloth
-- Still
+- Still b-o-f-l
   - Uses Tier 0 Item: Brewable Plant
   - Uses Tier 1 Reusable Item: Barrel
   - Produces: Drink
-- Ashery
+- Ashery b-o-y
   - Uses Tier 1 Item: Ash
   - Can use Tier 1 Reusable Item: Bucket
   - Produces Tier 2 Items: Lye, Potash
-- Kitchen
+- Kitchen b-o-f-k
   - Uses Tier 1 Items: Fish, Meat, Cheese, Dwarven syrup, Milk, Prepared organs, Fat
   - Can also use lower-tier items: Plants, Seeds, Eggs
   - Can also use higher-tier items: Alcohol, Dwarven sugar, Flour, Tallow
   - Produces: Prepared meals, Tallow
-- Screw press
+- Screw press b-o-R
   - Uses Tier 1 Items: Honeycomb
   - Uses Tier 1 Reusable item: Jug
   - Can also use higher-tier item: Rock nut paste
   - Produces: Honey, Wax, Rock nut press cake, Rock nut oil
-- Quern
+- Quern b-o-f-q
   - Uses Tier 0 Items: Blade weed, Cave wheat, Dimple cup, Hide root, Longland grass, Sliver barb, Sweet pod, Whip vine, Rock nuts
   - Uses Tier 1 Reusable Item: bag
   - Produces: Dwarven wheat flour, Dwarven sugar, Longland flour, Whip vine flour, Dimple dye, Emerald dye, Redroot dye, Sliver dye, Rock nut paste
-- Millstone (under Mechanisms instead of Workshops)
+- Millstone b-m-n (under Mechanisms instead of Workshops)
   - Requires: Mechanical Power Source (Water wheel or Windmill), and a Millstone (Constructed at Mason's workshop)
   - Uses Tier 0 Items: Blade weed, Cave wheat, Dimple cup, Hide root, Longland grass, Sliver barb, Sweet pod, Whip vine, Rock nuts
   - Uses Tier 1 Reusable Item: bag
   - Produces: Emerald dye, Dwarven wheat flour, Dimple dye, Redroot dye, Longland flour, Sliver dye, Dwarven sugar, Whip vine flour, Rock nut paste
-- Smelter
+- Smelter b-o-u-l
   - Uses Tier 1 Items: Fuel (Charcoal, Coke)
   - Uses Tier 0 Items: Coal, Ore, Flux
   - Can also use higher-tier items: Metal bars, can melt metal weapons, armor, etc.
   - Produces: Coke, Metal bars
-- Kiln
+- Kiln b-o-u-k
   - Uses Tier 0 Items: Gypsum, Alabaster, Selenite, Satinspar, Kaolinite, Clay, Silty clay, Sandy clay, Clay loam, Fire clay, Cassiterite
   - Uses Tier 1 Items: Fuel (Charcoal, Coke), Ash, Potash
   - Produces: Pearlash, Gypsum plaster, Ceramics (Jug, Bricks, Statue, Large pot, Crafts, Hive), Glazed items
-- Glass furnace
+- Glass furnace b-o-u-g
   - Uses Tier 0 Items: Sand bag, Raw rock crystal
   - Uses Tier 1 Items: Fuel (Charcoal, Coke)
   - Uses Tier 2 Item: Pearlash
@@ -220,25 +238,25 @@ Tier 3 workshops use Tier 2 materials (processed Tier 1 materials) and possibly 
 
 ### Tier 3 workshops
 
-- Leather works
+- Leather works b-o-l-l
   - Uses Tier 2 Item: Leather
   - Produces: Leather Clothing, Leather Armor, Leather Shield, Leather Quiver, Leather Bag, Leather Backpack, Leather Waterskin, Leather Images (decoration)
-- Dyer's shop
+- Dyer's shop b-o-l-y
   - Uses Tier 2 Item: Dye, Cloth
   - Can also use lower-tier item: Thread
   - Produces: Dyed Thread, Dyed Cloth
-- Clothier's shop
+- Clothier's shop b-o-l-k
   - Uses Tier 2 Item: Cloth
   - Can also use higher-tier item: Dyed Cloth
   - Produces: Backpack, Bag, Clothing, Quiver, Rope
-- Metalsmith's forge
+- Metalsmith's forge b-o-i
   - Uses Tier 1 Item: Fuel (Charcoal, Coke)
   - Uses Tier 2 Item: Metal bars
   - Produces: weapons, trap components, bolts, ballista arrowheads, armor, chains, crafts, coins, goblets, studding, anvils, blocks, furniture, animal traps and mechanisms.
-- Magma forge (requires magma access):
+- Magma forge b-o-I (requires magma access):
   - Uses Tier 2 Item: Metal bars
   - Produces: Armor, Weapon, Chain, Crafts, Furniture
-- Soap maker's workshop
+- Soap maker's workshop b-o-P
   - Uses Tier 2 Items: Tallow, Lye
   - Can also use higher-tier item: Rock nut oil
   - Produces: Soap

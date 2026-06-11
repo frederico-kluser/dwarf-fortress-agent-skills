@@ -1,8 +1,14 @@
 # Wood industry
 
-> Fonte: [Wood industry](https://dwarffortresswiki.org/index.php/Wood_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Wood industry](https://dwarffortresswiki.org/index.php/Wood_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Wood Industry Flowchart.
 
 The **wood industry** deals with the harvesting and use of wood and wood-derived products: ash, potash, pearlash, and charcoal. Dwarves prefer to use stone or metal when possible, due to their durability and variety. Wood is weak by comparison (and usually flammable), but it is lightweight and sometimes preferred for bins, wheelbarrows and minecarts while being a renewable resource and sometimes the only option available for making certain items before the metal industry starts up.
+
+"Do NOT let the elves see this."
 
 ## Log Production
 
@@ -16,7 +22,7 @@ Tree farming is a matter of patience and luck, more than resources or skill, sin
 
 ### Woodcutting
 
-Once you have located a source of trees, all you need to get started are two dwarves and a battle axe - esignate the rees to be chopped down, and enable the wood cutting labor on the first dwarf. Provided the dwarf can reach the tree and the axe, the dwarf will go get the axe, go to the tree, and start chopping. A second dwarf with the wood hauling labor will then haul the resulting log back to a wood stockpile. The quality and material of the axe is not relevant to wood cutting - even a wooden training axe can fell a tree.(Note as of 0.43.03 this is not the case, you need a real battleaxe to chop down trees.)
+Once you have located a source of trees, all you need to get started are two dwarves and a battle axe - designate the trees to be chopped down, and enable the wood cutting labor on the first dwarf. Provided the dwarf can reach the tree and the axe, the dwarf will go get the axe, go to the tree, and start chopping. A second dwarf with the wood hauling labor will then haul the resulting log back to a wood stockpile.
 
 ### Trading
 
@@ -24,7 +30,7 @@ Most caravans will bring logs, particularly if your wood supply is low. Trading 
 
 ## A Log Is A Log
 
-For the most part, all wood is effectively interchangeable - an oak log can be used to make all the same things as an alder log. However, certain woods have distinct properties (such as color and density) that may make them more aesthetically pleasing or useful in certain specific applications. Nonetheless, it's possible to specify the type of wood being used for a task, by pressing and selecting the material.
+For the most part, all wood is effectively interchangeable - an oak log can be used to make all the same things as an alder log. However, certain woods have distinct properties (such as color and density) that may make them more aesthetically pleasing or useful in certain specific applications. Nonetheless, it's possible to specify the type of wood being used for a task, by pressing d and selecting the material.
 
 ### Color
 
@@ -42,7 +48,9 @@ The weight of a wood log or wooden object is based on the density of the wood. T
 
 Wood logs may be used directly as a building material, where it is as good as stone or metal for most purposes, though generally less valuable. Logs may also be turned into various useful objects at the following workshops:
 
-[TABLE]
+|  |  |  |
+|----|----|----|
+| Bowyer's workshop / Used for creating wooden / crossbows / Carpenter's workshop / Used for creating: / Wooden / Furniture / (including / barrels / and / bins / ) / Wooden / bucklers and shields / Wooden / training weapons / Wooden / trap components / Wooden / crutches / and / splints | Craftsdwarf's workshop / Used for creating: / Wooden / crafts / Wooden / bolts / Obsidian / short swords / Siege workshop / Used for creating / siege engine parts | Wood furnace / Used for creating: / Ash / Charcoal / Machinery / Used for constructing: / Screw pump / Axle / Windmill / Water wheel |
 
 ## Wood Products and Related Industries
 

@@ -1,6 +1,6 @@
 # Creature flags in DF memory
 
-> Fonte: [Creature flags in DF memory](https://dwarffortresswiki.org/index.php/Creature_flags_in_DF_memory) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Creature flags in DF memory](https://dwarffortresswiki.org/index.php/Creature_flags_in_DF_memory) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 ## Creature or Unit flags
 
@@ -10,8 +10,9 @@ Checkbox labels
 
 ### Flags Word 0 (32 bits)
 
-| Bit | Integer Value (hex) | DwarfCompanion | Meaning |
+|  |  |  |  |
 |----|----|----|----|
+| Bit | Integer Value (hex) | DwarfCompanion | Meaning |
 | 0 | 0x00000001 | 0x1 | Can the dwarf move or are they waiting for their movement timer |
 | 1 | 0x00000002 | dead? | Dead (might also be set for incoming/leaving critters that are alive) |
 | 2 | 0x00000004 | 0x4 | Currently in mood |
@@ -47,8 +48,9 @@ Checkbox labels
 
 ### Flags Word 1 (32 bits)
 
-| Bit | Integer Value (hex) | DwarfCompanion | Meaning |
+|  |  |  |  |
 |----|----|----|----|
+| Bit | Integer Value (hex) | DwarfCompanion | Meaning |
 | 0 | 0x00000001 | 0x1b | Swimming |
 | 1 | 0x00000002 | 0x2b | Play combat for sparring |
 | 2 | 0x00000004 | 0x4b | Do not notify about level gains (for embark etc) |
@@ -81,5 +83,3 @@ Checkbox labels
 | 29 | 0x20000000 | winded? | Breathing -- having a problem |
 | 30 | 0x40000000 | 0x4.7b | Roaming wilderness population source |
 | 31 | 0x80000000 | tame2 | Roaming wilderness population source -- not a map feature |
-
-\]\]

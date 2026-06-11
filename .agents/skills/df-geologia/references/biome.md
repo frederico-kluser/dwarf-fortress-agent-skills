@@ -1,12 +1,18 @@
 # Biome
 
-> Fonte: [Biome](https://dwarffortresswiki.org/index.php/Biome) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Biome](https://dwarffortresswiki.org/index.php/Biome) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 A **biome** is a biotic area with homogeneous features, characterized by distinctive plants, animal species and climate. A biome will also contain only one set of stone layers, though these usually expand beyond a single biome. Your dwarves will find different resources depending on which biomes you select when starting a fort.
 
 ## Selecting a biome
 
-Biomes are important when choosing a fortress location in order to understand your surroundings. Individual biomes, which form at least one map-tile of your embark location, can be cycled with the function keys; for example, an area with 3 biomes present can be cycled using , and . The selected biome will be highlighted with flashing Xs on the Local Map, and the biome's information will be displayed on the right side of the screen.
+An upper grassy biome, and a lower desert one. ASCII mode.
+
+A very cold biome in the north.
+
+Biomes are important when choosing a fortress location in order to understand your surroundings. Currently, to check which biomes are in a potential embark, the player needs to move the mouse pointer over each tile.
 
 ## Characteristics of biomes
 
@@ -20,7 +26,7 @@ By making use of several biomes, you can provide more resources for your fort. M
 
 All biomes also have some kind of "alignment" -- good, neutral, or evil -- and a degree of "savagery", which essentially measures how relatively peaceful the biome is. The combination of alignment and savagery is referred to as the biome's surroundings. However, a named region (which is a contiguous area of one category of biomes, such as forests or wetlands) will be either good, neutral, or evil. It is not uncommon to see a large mountain range with one alignment, and a few mountains, disconnected from the main mountain range by a single region tile, with a different alignment. Therefore, the more biomes you have, the more likely it is to have combinations of different alignments and savageries, if so desired.
 
-If your plot contains only ocean, lake, or mountain biomes, you will not be able to embark (the dwarves would have difficulty parking their wagon "wagon") on water, while mountains are too barren and remote to reach).
+If your plot contains only ocean, lake, or mountain biomes, you will not be able to embark (the dwarves would have difficulty parking their wagon "Wagon (embark)") on water, while mountains are too barren and remote to reach).
 
 ## Available Biomes
 
@@ -63,9 +69,9 @@ Like pools and lakes, these may be Freshwater, Saltwater or Brackish rivers, and
 
 ### Underground
 
-- Subterranean Water
-- Subterranean Chasm
-- Subterranean Magma
+- Subterranean Water (a cavern whose water level is 10% or higher)
+- Subterranean Chasm (a cavern whose water level is 90% or lower)
+- Subterranean Lava (the magma sea)
 
 ### Other
 
@@ -77,7 +83,7 @@ Like pools and lakes, these may be Freshwater, Saltwater or Brackish rivers, and
 
 Certain creatures and plants use special biome tokens to encompass several similar environments.
 
-- "" includes all land biomes except Mountains, Glaciers, and Tundras. All plants require a "Not Freezing" biome (or a more specific biome group); you will be unable to grow any aboveground crops at all in a Mountain biome.
+- "[`[NOT_FREEZING]`](/index.php/Biome_token#NOT_FREEZING "Biome token")" includes all land biomes except Mountains, Glaciers, and Tundras. All plants require a "Not Freezing" biome (or a more specific biome group); you will be unable to grow any aboveground crops at all in a Mountain biome.
 - "Any Temperate Broadleaf" includes temperate broadleaf forests as well as grasslands, savannas, shrublands, swamps, and marshes.
 - "Any Tropical Broadleaf" includes tropical dry/moist broadleaf forests as well as grasslands, savannas, shrublands, swamps (including Mangrove), and marshes.
 
@@ -93,4 +99,4 @@ All other biomes are variations on the corresponding base biome shown above. For
 
 ## Bugs
 
-- Different biomes can exist in layers above the surface. This can lead to odd behavior like evil rain above a "good" biome.
+- Different biomes can exist in layers above the surface. This can lead to odd behavior like evil rain above a "good" biome.Bug:8781

@@ -1,14 +1,18 @@
 # Site finder
 
-> Fonte: [Site finder](https://dwarffortresswiki.org/index.php/Site_finder) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Site finder](https://dwarffortresswiki.org/index.php/Site_finder) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-The **site finder** is a menu on the embark screen that helps the player search for embark positions based on preferences. It can be invoked from the embark screen by pressing .
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-The highlighted feature can be switched by using and , the setting can be selected using and or the analogous keys on the keypad ( and ).
+The **site finder** is a menu on the embark screen that helps the player search for embark sites, i.e. candidates, based on preferences. It can be invoked from the embark screen by pressing \[Find embark location\] button.
 
-A selection set to N/A will not influence the search, while a setting other than that does not guarantee a hit - if we use the example of a 2x2 location with a river, no aquifer, and multiple deep and shallow metals, it is quite possible that there is no such site on your world map. The finder will then display a **candidate** that fits as many as possible of the selected settings in the desired size.
+\[Verify\]
+
+The highlighted feature can be switched by using ↑ and ↓, the setting can be selected using ← and → or the analogous keys on the keypad (8 2 and 4 6).\[Verify\]
 
 The search will check the entire world. If there are multiple sites that match your settings, the site finder will mark all acceptable sites on the Region and World maps and allow you to examine them for yourself.
+
+NOTE: These settings are not strict **filters**. While a selection set to 'N/A' will not influence the search, the other setting values do not guarantee an exact match -- because it may not exist in your world. For example, using search settings for a 2x2 location with a river, no aquifer, and several specific metals, it is quite possible that there is no such site on your world map. The finder will then display the **candidate** that best fit as many as possible of the selected settings of the desired size.
 
 More information on some of the settings can be found on the World generation page.
 
@@ -20,15 +24,13 @@ This setting controls the initial size of the embark rectangle. The finder searc
 
 ## Savagery
 
-Range: N/A, Low, Medium, High
+Range: N/A, Calm, Wilderness, Untamed Wilds
 
-These settings mean the same as the **Benign, Neutral, Savage** settings on the Regions page.
+## Spirit
 
-## Evil
+Range: N/A, Good, Normal, Evil
 
-Range: N/A, Low, Medium, High
-
-These settings relate to the **Good, Neutral, Evil** designations on the Regions page.
+See Also, Regions page.
 
 It also seems to be an average for the selected area: an area evenly divided between Good and Evil will show up on a search for "Medium", while "Good" will usually turn up a predominantly good area.
 
@@ -50,17 +52,19 @@ Medium will show most of the biomes including cold, temperate, warm, hot and the
 
 The high setting shows only a fraction of the scorching biomes.
 
+\
+
 ## Rain
 
 Range: N/A, Low, Medium, High
 
-Selects the amount of rain/snow to expect (see Weather).
+Selects the amount of rain/snow\[Verify\] to expect (see Weather).
 
 ## Drainage
 
 Range: N/A, Low, Medium, High
 
-This, along with other factors, determines the terrain type to look for. High drainage areas include glaciers and deserts. Low drainage areas include swamps and marshes.
+This, along with other factors, determines the terrain type to look for. **High** drainage areas include glaciers and deserts. **Low** drainage areas include swamps and marshes.
 
 ## Flux Stone
 
@@ -68,11 +72,11 @@ Range: N/A, No, Yes
 
 Controls whether a candidate must have flux stone. It may be a good idea to check the layers list to confirm you have flux close to the surface, since the site finder will happily count a marble layer 1 z-level above the magma sea as an embark site that does contain flux.
 
-## Aquifer
+## Light Aquifer & Heavy Aquifer
 
 Range: N/A, No, Yes
 
-Controls whether a candidate must have an aquifer.
+Controls whether a candidate must have a light and/or heavy aquifer.
 
 ## River
 
@@ -80,28 +84,16 @@ Range: N/A, No, Yes
 
 Controls whether a candidate must have a river.
 
-## Shallow Metal
-
-Range: N/A, None, Yes, Multiple
-
-Controls whether a site must have shallow metal(s).
-
-Metals appear to be classified as "shallow" if they occur within the first 2 stone layers, except for Sand Deserts and Shallow Oceans which count the first *5* stone layers.
-
-## Deep Metal
-
-Range: N/A, None, Yes, Multiple
-
-Controls whether a site must have deep metal(s).
-
 ## Soil
 
 Range: N/A, None, ≤ Little, ≤ Some, ≤ Deep
 
 Controls how much soil a site is allowed.
 
-## Clay
+Note that ≤ Deep will include the sites returned by None, ≤ Little, and ≤ Some. This logic cascades for the lesser selections.
+
+## Clay, Sand, Iron, Gold, Silver, Copper, Nickel, Zinc, Platinum
 
 Range: N/A, No, Yes
 
-Controls whether a candidate must have clay.
+Controls whether a candidate embark site must have Clay, Sand, Iron, Gold, Silver, Copper, Nickel, Zinc, Platinum or not.

@@ -1,17 +1,21 @@
 # Smoothing
 
-> Fonte: [Smoothing](https://dwarffortresswiki.org/index.php/Smoothing) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Smoothing](https://dwarffortresswiki.org/index.php/Smoothing) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Smoothing** rough stone is a simple way to increase the value of a room. Walls and floors become Smooth *Material* Wall/Floor when smoothed. It is impossible to climb a smooth wall.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+The left room's walls and floor are smoothed. The right room's walls and floor are not.
+
+**Smoothing** rough stone is a simple way to increase the value of a zone. Walls and floors become Smooth *Material* Wall/Floor when smoothed. It is impossible to climb a smooth wall.
 
 ## How to Smooth
 
-A dwarf must have the Stone Detailing labour active. Designate the area to be smoothed (-). Note that this can only be done with natural stone — soil cannot be smoothed, and constructions are already considered to be smooth for most purposes.
+A dwarf must have the Stonecutting labor active. Designate the area to be smoothed (vm). Note that this can only be done with natural stone – soil cannot be smoothed, and constructions are already considered to be smooth for most purposes.
 
-Smoothed "natural" ice has different names than regular smoothed items. The walls are "straight" and floors are "level".
+Smoothed "natural" ice has different names from regular smoothed items. Smoothed ice walls are "straight" and smoothed ice floors are "level".
 
-## Follow Up
+## Follow up
 
-After a natural stone surface is smoothed, it may be further improved by engraving. This increases the room's value, but, unlike smoothing, engraving has quality levels. A wall can only be engraved once (for floors, there is a workaround). Using only skilled engravers will result in higher room and fortress values. One way to achieve this is to have a limited number of dwarves with the Stone Detailing labour active smooth large areas of the fortress until the dwarves are experienced, then, have those same dwarves engrave. The result will be high-quality engravings.
+After a natural stone surface is smoothed, it may be further improved by engraving. A wall can only be engraved once (for floors, there is a workaround). This increases the room's value, but, unlike smoothing, engraving has quality levels. Engraving is a separate skill from stone cutter. Using only skilled engravers will result in higher room and fortress values.
 
 Smoothed walls are also a prerequisite for carving fortifications. Engraved walls can also be carved into fortifications, but the engravings will be destroyed in the process.

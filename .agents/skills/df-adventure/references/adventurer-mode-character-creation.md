@@ -1,34 +1,34 @@
 # Adventurer mode character creation
 
-> Fonte: [Adventurer mode character creation](https://dwarffortresswiki.org/index.php/Adventurer_mode_character_creation) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Adventurer mode character creation](https://dwarffortresswiki.org/index.php/Adventurer_mode_character_creation) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
+\
 **Main menu:** Adventure mode; Gameplay; FAQ
 
-With the addition of adventuring parties, you can now have multiple adventurers. To add another adventurer, press on the last page () of creating the current one.
+With the addition of adventuring parties, you can now have multiple adventurers - to add another adventurer, press N on the (Mounts and pets) page, when creating the current one.
 
 ## Race and civilization
 
-Any race from an civilization is playable in adventure mode. In most standard games, this includes dwarves, elves, and humans - all three races can complete the same quests. If an civilization never existed in the world, however, adventure mode cannot be played.
+Race selection menu
+
+Civilization selection menu
+
+Any race from an [`[ALL_MAIN_POPS_CONTROLLABLE]`](/index.php/Entity_token#ALL_MAIN_POPS_CONTROLLABLE "Entity token") civilization is playable in adventure mode. In most standard games, this includes dwarves, elves, and humans - all three races can complete the same quests. If an `[ALL_MAIN_POPS_CONTROLLABLE]` civilization never existed in the world, however, adventure mode cannot be played.
 
 - **Dwarves** have the advantage of being able to go into a martial trance when fighting multiple foes at once, giving them many combat bonuses, which aids their survival greatly. They are the only race that can start with steel weapons, but they wear "small"-sized clothing which means that they're unable to wear human clothes and armor. Goblin armor fits them, making dark fortresses (if your computer can handle them) and dark pits a viable source of armor; if you're up for it, you could also just rob some dwarves or a dwarven fortress. They can start with almost the same weapon skills as civilized humans. Many larger weapons must be wielded two-handed by dwarves, due to their size.
-
-- **Elves** start with very weak wooden weapons, and have a more limited list of weapon skills during character creation. They have the advantage that they have higher natural speed. Elves are , which makes all wildlife passive towards them. They also have a notably better sense of smell compared to the other races with a of 10 instead of 90, which means they can sense smells over much larger distances. Like dwarves, they wear small-sized clothing.
-
+- **Elves** start with very weak wooden weapons, and have a more limited list of weapon skills during character creation. They have the advantage that they have higher natural speed. Elves are [`[AT_PEACE_WITH_WILDLIFE]`](/index.php/Entity_token#AT_PEACE_WITH_WILDLIFE "Entity token"), which makes all wildlife passive towards them. They also have a notably better sense of smell compared to the other races with a [`[SMELL_TRIGGER]`](/index.php/Creature_token#SMELL_TRIGGER "Creature token") of 10 instead of 90, which means they can sense smells over much larger distances. Like dwarves, they wear small-sized clothing.
 - **Humans** begin with bronze, copper, or iron weapons, and the widest variety of weapon skills. Humans are larger than the other main races, meaning armor from other civilizations is too small to be worn. Human-sized clothes and armor are commonly found in hamlets and towns.
-
-- **Goblins** are only playable when a goblin population is present in an civilization. They possess the same body size as dwarves and elves, and can wear whatever weapons and armor the civilization which adopted/conquered them allows. They require no food or water to live.
-
-- **Kobolds** are playable (by modding) in newer versions but not in older versions. They are very weak in combat, and a huge challenge compared to other races - even smaller than the other main races, and it is next-to-impossible to find properly-fitting armor for them, unless you are absurdly lucky and run into armored kobolds.
-
-- **Intelligent Wilderness Creatures** are playable wild animals - any creature with fits into this category. A wilderness creature can be played as long as a particular population of them exists in an civilization. Most wilderness creatures are animal people - they come in various sizes, shapes and abilities, and as such, a short description cannot be given. Before 47.01 they started without any armor; in 47.01 you can choose the items you start with, including armor, but animal people still have the problem of finding appropriate armor during gameplay, making Dodger and Shield User more important as defensive skills. Some useful features will be copied from the species to your character, such as the ability to fly, a poisonous bite, extravision, large size, various immunities (e.g. pain, stunning, exertion, traps, fear, dizziness, fevers, fire, poison, or drowning), special abilities (e.g. shooting webs, hurling fireballs), intrinsic starting skills, or the absence of vulnerable internal organs. Some features can also be uselessly amusing (e.g. snakemen talk with a ) or more crippling: plump helmet men can't talk, and characters from a species stroll very slowly in lieu of normal movement. Here you can read more.
+- **Goblins** are only playable when a goblin population is present in an `[ALL_MAIN_POPS_CONTROLLABLE]` civilization. They possess the same body size as dwarves and elves, and can wear whatever weapons and armor the civilization which adopted/conquered them allows. They require no food or water to live.
+- **Kobolds** are playable by modding. They are very weak in combat, and a huge challenge compared to other races - even smaller than the other main races, and it is next-to-impossible to find properly-fitting armor for them, unless you are absurdly lucky and run into armored kobolds.\[Verify\]
+- **Intelligent Wilderness Creatures** are playable wild animals - any creature with [`[LOCAL_POPS_CONTROLLABLE]`](/index.php/Creature_token#LOCAL_POPS_CONTROLLABLE "Creature token") fits into this category. A wilderness creature can be played as long as a particular population of them exists in an `[ALL_MAIN_POPS_CONTROLLABLE]` civilization. Most wilderness creatures are animal people - they come in various sizes, shapes and abilities, and as such, a short description cannot be given. You can choose the items you start with, including armor, but animal people still have the problem of finding appropriate armor during gameplay, making Dodger and Shield User more important as defensive skills. Some useful features will be copied from the species to your character, such as the ability to fly, a poisonous bite, extravision, large size, various immunities (e.g. pain, stunning, exertion, traps, fear, dizziness, fevers, fire, poison, or drowning), special abilities (e.g. shooting webs, hurling fireballs), intrinsic starting skills, or the absence of vulnerable internal organs. Some features can also be uselessly amusing (e.g. snakemen talk with a [`[LISP]`](/index.php/Creature_token#LISP "Creature token")) or more crippling: plump helmet men can't talk, and characters from a [`[MEANDERER]`](/index.php/Creature_token#MEANDERER "Creature token") species stroll very slowly in lieu of normal movement. Here you can read more.
 
 ### Outsider
 
-Outsiders are adventurers that aren't from a civilization - they can begin at any site and are strangers to all. Only humans can currently be outsiders in vanilla by default - other races can be played as outsiders if is added to the creature's raws. At least one civilization must have existed in the world in order to play as an outsider, though the civilization does not need to be alive. A human (or in this case, dwarven) civilization is not strictly required.
+Outsiders are adventurers that aren't from a civilization - they can begin at any site and are strangers to all. Only humans can currently be outsiders in vanilla by default - other races can be played as outsiders if [`[OUTSIDER_CONTROLLABLE]`](/index.php/Creature_token#OUTSIDER_CONTROLLABLE "Creature token") is added to the creature's raws. At least one `[ALL_MAIN_POPS_CONTROLLABLE]` civilization must have existed in the world in order to play as an outsider, though the civilization does not need to be alive. A human (or in this case, dwarven) civilization is not strictly required.
 
 The game will always try to start Outsiders in a populated site - caves, and even lairs with megabeasts, will be chosen when there are no occupied civ sites. When starting from a lair, be sure to escape from the site **immediately**, as soon as the game starts, to avoid an instant death.
 
-Playing as an outsider has many initial limitations - they possess no pre-existing relationships or knowledge of various events and wildlife. Also, because they lack a cultural identity or (supposedly) knowledge of laws, outsiders cannot worship deities or claim sites, and are unable to perform dance, music, or poetry due to having no held art forms. When selecting skills for outsiders during creation, many more skills may be available than would otherwise be, if they were part of a civilization.
+Playing as an outsider has many initial limitations - they possess no pre-existing relationships or knowledge of various events and wildlife. Also, because they lack a cultural identity or (supposedly) knowledge of laws, outsiders cannot worship deities, name items, or claim sites, and are unable to perform dance, music, or poetry due to having no held art forms. When selecting skills for outsiders during creation, many more skills may be available than would otherwise be, if they were part of a civilization.
 
 An outsider may become a member of a civilization: retire your outsider in a civilized area, causing them to be "reformed" the next time you unretire the character. You can also join a civ if you can get a site leader to accept you as a hearthperson (or maybe, entertainer). You can make people like you by giving them gifts, especially named gifts. E.g.: carve some bones into trinkets, name them, give them to some lord or lady, then ask them to make you a hearthperson.
 
@@ -43,6 +43,8 @@ Determines the number of starting skill, attribute points, and equipment points 
 The number of skill points is less significant than the number of attribute points, because the time it takes to go from Peasant to Demigod in skill terms is much less than what it would take to go from Peasant to Demigod in attribute terms.
 
 ## Background
+
+Home, occupation and beliefs choosing menu
 
 You can choose the town you start at, your occupation (affects skills) and religious beliefs, if any.
 
@@ -66,8 +68,9 @@ Notable occupations are **hearthperson**, **fortress guard**, and **soldier**, w
 
 The level of skill granted is dependent on your adventurer status (peasant, hero, or demigod), with the greater statuses getting more skill levels. For this reason, the list below doesn't include any set skill levels, instead using the terms "Low-level", "Mid-level" and "High-level". To see what those correspond to, see the table below.
 
-| Status  | Low-level | Mid-level  | High-level   |
+|         |           |            |              |
 |---------|-----------|------------|--------------|
+| Status  | Low-level | Mid-level  | High-level   |
 | Peasant | Novice    | Competent  | Talented     |
 | Hero    | Adequate  | Proficient | Professional |
 | Demigod | Competent | Adept      | Master       |
@@ -154,9 +157,11 @@ Occupations and skills:
 
 ### Belief
 
-This decides what deity or religion you put your faith in. You may also be atheist/have no faith, and sometimes this is the only option given to you. With and you control how ardent your faith is. The stronger your faith, the more likely you will get the need to to your deity.
+This decides what deity or religion you put your faith in. You may also be atheist/have no faith, and sometimes this is the only option given to you. With w and q you control how ardent your faith is. The stronger your faith, the more likely you will get the need to Pray to your deity.
 
 ## Starting attributes
+
+Attributes and skills choosing menu
 
 Attributes are divided into Body and Soul attributes. This section provides some guidance for allocating attributes as it relates to adventurer mode.
 
@@ -174,29 +179,17 @@ Attributes are divided into Body and Soul attributes. This section provides some
 Some of these are demonstrably useful for adventure-mode-applicable skills, but the effects of the attributes aren't clearly understood. For ideas on how they may be applied, see a list of skills organized by attributes..
 
 - **Analytical Ability**: Useful for Tracker, Knapping and Student. Analytical Ability seems to have an influence on the quality of written creations, such as poems, as well as ability to speak about ideals.
-
 - **Focus**: Affects Archer, Ambusher, Observer.
-
 - **Willpower**: Affects Fighter, Crutch Walker and Swimmer. Willpower helps resist the negative effects of status ailments such as Pain, Stunned, Unconscious, and all states of exhaustion and food/drink/sleep deprivation.
-
 - **Creativity**: This influences quality of poems, songs, dances and crafts. It may also influence "make believe", now able to be performed by children.
-
 - **Intuition**: Helps with Observer, which aids in spotting concealed enemies, ambushes, and identifying attacks from opponents.
-
-- **Patience**: May have some effect on dealings with others as a result of the new conversation system.
-
+- **Patience**: May have some effect on dealings with others as a result of the new conversation system.\[Verify\]
 - **Memory**: Memory is applied to the Student and Reading skills. Higher Student skill improves the ability to learn from demonstrations in fortress mode, but it isn't certain whether it has any application in adventurer mode. It's also unknown what benefits come from higher Reading capability.
-
 - **Linguistic Ability**: Affects any speaking and writing ability, improves the ability to communicate thoughts and feelings to listeners/readers. Verbal ability can form a positive impression depending on how the listener values eloquence, and responses to stories and poetry relies on delivery.
-
 - **Spatial Sense**: Important. Affects combat skills, Ambusher, Crutch Walker, Swimmer, Observer, Knapping. Also, prevents/reduces the chance of stumbling during a dance.
-
 - **Musicality**: Influences the adventurer's ability to perform music and song well. This, so far, works for all instruments; one can play a flute, guitar, or any other instrument equally well, given that the adventurer has equal skills in all instrument fields.
-
 - **Kinesthetic Sense**: Affects most combat skills, walking with crutches, swimming and dancing.
-
 - **Empathy**: Affects social skills such as Persuader, Flatterer, Judge of Intent, and other Social skills that may not be applied in adventurer mode.
-
 - **Social Awareness**: Increases the number of followers you can have at a given fame level. Normally, you start with a limit of two. Increasing this stat by one level raises that to three, etc. Your fame still plays a big part in whether you can recruit followers or not. This attribute also helps with Persuader and Judge of Intent.
 
 ### Attribute advancement cap
@@ -211,9 +204,9 @@ This section will specifically address starting skills as they relate to adventu
 
 ### Weapon
 
-Since version 0.47, weapons may be chosen on the embark screen before starting an adventure. The weapons available to a given adventurer are decided in their civilization's entity raws: humans will be able to start with a whip, while the same will not be available to a dwarf, and so on. Outsiders will have a wide array of weapons to choose from, some of which may be made of non-weapon grade material.
+Weapons may be chosen on the embark screen before starting an adventure. The weapons available to a given adventurer are decided in their civilization's entity raws: humans will be able to start with a whip, while the same will not be available to a dwarf, and so on. Outsiders will have a wide array of weapons to choose from, some of which may be made of non-weapon grade material.
 
-Not all races/civilizations can start with all of these skills - dwarves can't start with Bowman, Pikeman, or Lasher, while elves can only use Swordsman, Bowman, and Spearman. Of the other playable races, only humans have access to Pikeman and Lasher. Strangely, only outsiders can start with Knife User.
+Not all races/civilizations can start with all of the skills - dwarves can't start with Bowman, Pikeman, or Lasher, while elves can only use Swordsman, Bowman, and Spearman. Of the other playable races, only humans have access to Pikeman and Lasher. Strangely, only outsiders can start with Knife User.
 
 Note that different races have different names for their weapon skills. Axegoblin, Axedwarf etc. These names are defined in the creature raws, as can be seen in the dwarf raws, but Crossbowman is an exception - dwarves call this skill Marksdwarf, although bow skill is referred to as Bowdwarf, as you'd expect. Elite Axe and Hammerdwarves are referred to as Lords.
 
@@ -258,7 +251,7 @@ While some of them come in handy at times, they can generally be raised fairly e
 
 - **Observer**: Helps one to notice things like ambushes, enemies who are "sneaking" (stealth movement), and traps. Detection range increases with skill, up to a maximum of 3 tiles away. Higher levels give more information regarding opponents. Hard to train - adding some points here is advisable.
 - **Swimmer**: Allows movement through water without drowning. A Novice swimmer can swim, but will revert to being unable to swim if stunned, which happens when falling even 1 z-level into the water, or possibly after an unfriendly encounter with a creature *in* the water. An Adequate swimmer can swim normally (not drown) while stunned. For this reason, *starting out as an Adequate swimmer is advisable.* If you don't, at least start as Novice and go get some swimming practice right away.
-- **Ambusher**: The skill of neaking around unobserved. This can be raised fairly easily by sneaking around while travelling from place to place when speed is not important. Enemies will have "sight ranges" from where they can detect a sneaking adventurer. The red zone of sight is where they will see you immediately and begin chasing you; the yellow is where they might see you. Staying out of sight will allow you to silently assassinate your foes, as they rarely seem to notice a knife in the back in time.
+- **Ambusher**: The skill of Sneaking around unobserved. This can be raised fairly easily by sneaking around while travelling from place to place when speed is not important. Enemies will have "sight ranges" from where they can detect a sneaking adventurer. The red zone of sight is where they will see you immediately and begin chasing you; the yellow is where they might see you. Staying out of sight will allow you to silently assassinate your foes, as they rarely seem to notice a knife in the back in time.
 - **Climber**: The skill of climbing up walls, into trees, and around the edges of gorges. Higher levels reduce the chance of falling and increase the speed of a climbing character.
 - **Tracker**: The skill of tracking your quarry, whether it be animals or goblins. Higher levels will let you spot more tracks and help you distinguish different tracks.
 - **Crutch-walker**: The skill of standing and walking with a crutch for support. This skill only becomes available when attempting to move with a crutch in inventory, and can be developed with or without legs. At Legendary levels, a crutch walker walks with no speed reduction, and simply keeping it in hand will continue to increase attributes.
@@ -268,11 +261,8 @@ While some of them come in handy at times, they can generally be raised fairly e
 These allow your character to create things:
 
 - **Knapper**: The fine art of sharpening rocks by banging them together in a clever manner. The resulting rocks become sharp rocks which do more damage when thrown and can be used for things requiring a sharp edge like butchering. Easy to make in-game, and doing so helps with Kinesthetic/Spatial Sense.
-
 - **Bone carver**: The art of making knick-knacks and other items by carving bones. A skilled bone carver adventurer can make items of the same quality as fortress mode dwarves, including "☼Masterpiece☼". Bone carving adventurers can also make bone figurines, and customize their appearance.
-
-- **Writer**: Your adventurer's ability to craft/write upon books and scrolls, you can choose the topic as well. It is hard to acquire the materials, however. Checking in libraries and old dwarven fortresses may prove profitable.
-
+- **Writer**: Your adventurer's ability to craft/write upon books and scrolls, you can choose the topic as well. It is hard to acquire the writing materials, however - checking in libraries and old dwarven fortresses may prove profitable.
 - **Carpenter**: Your adventurer's ability to craft wooden objects and create wooden buildings and displays.
 
 ### Social
@@ -288,7 +278,7 @@ Almost all of these are only used in arguments.
 These are your general performance skills, similar to fighter skill, in that they enhance rolls for many different skills and can be leveled easily.
 
 - **Musician**: Increases quality of all instrument-based performances, this is your all-around instrument skill, very similar to speaker and fighter, except with instruments.
-- **Speaker**: Your all-around speaking skill increases quality of all performances that involve speaking out loud, includes reading poetry, singing etc. Very similar to "Fighter" skill, except it's with performance rolls, not fighting rolls. May also effect arguments .
+- **Speaker**: Your all-around speaking skill increases quality of all performances that involve speaking out loud, includes reading poetry, singing etc. Very similar to "Fighter" skill, except it's with performance rolls, not fighting rolls. May also effect arguments\[Verify\].
 
 ### Performance skills
 
@@ -314,17 +304,23 @@ There are also procedural skills for every different kind of instrument, dance a
 
 ## Character appearance and preferences
 
-You are able to customize your adventurer's appearance, needs and preferences. Appearance does not seem to affect anything. Just like with any citizen in fortress mode, their needs will have to be fulfilled, or else the character suffers from distraction. However, a few unmet needs do not matter as long as a character has more satisfied needs and/or their more intense needs are fulfilled.
+Appearance choosing menu
 
-As needs are fulfilled, your character's total level of focus goes up, gaining you bonuses to accuracy and other skill rolls. When your focus level is high or low, the following will be displayed on the status bar: , , or . The focus level can also be seen in the last paragraph of the current adventurer's description, which can be viewed with .
+Personality overview menu
 
-In the current version, some needs are unable to be fulfilled in adventurer mode. is an example, as adventurers start without any, and cannot start a family. Others include: Eat good meal, Admire art, Make romance, Be with friends, Uphold tradition, and Take it easy.Some easy-to-fulfill needs (with the way many people play) include: Cause trouble, Be extravagant, Wander, Excitement, and Fight. With it is possible to adjust their personality to eliminate unsatisfiable needs, or even all needs entirely.
+You are able to customize your adventurer's appearance, needs and preferences. Appearance does not seem to affect anything.\[Verify\] Just like with any citizen in fortress mode, their needs will have to be fulfilled, or else the character suffers from distraction. However, a few unmet needs do not matter as long as a character has more satisfied needs and/or their more intense needs are fulfilled.
 
-For example, the need can be eliminated by setting the to or lower. To eliminate all needs, set all to , the personality to , and all the following to : Greedy, Intemperate, Avoid fights, Harmony, Austere, Incurious, Altruistic, Loner, Leisurely, Excitement-seeking, Inclined to abstract, and Inclined to create art. Their personality also determines what dream they might have - some of these are also not currently attainable, like . They can currently only have one dream, but if their personality enables more than one, you can swap between them with . Achieving their dream seems to only give them a good thought, which generally has no effect until they are retired.
+As needs are fulfilled, your character's total level of focus goes up, gaining you bonuses to accuracy and other skill rolls. When your focus level is high or low, the following will be displayed on the status bar: Focused, Focused!, or Distracted. The focus level can also be seen in the last paragraph of the current adventurer's description, which can be viewed with z-d.
 
-Adventurers can have the need to to their deity. This is the one possible need that is not determined by their personality - depending on their beliefs, it will be added automatically - also one of the easiest needs to fulfill, assuming they can tal.
+In the current version, some needs are unable to be fulfilled in adventurer mode. Be with family is an example, as adventurers start without any, and cannot start a family. Others include: Eat good meal, Admire art, Make romance, Be with friends, Uphold tradition, and Take it easy.\[Verify\]Some easy-to-fulfill needs (with the way many people play) include: Cause trouble, Be extravagant, Wander, Excitement, and Fight. With f it is possible to adjust their personality to eliminate unsatisfiable needs, or even all needs entirely.
+
+For example, the Be with family need can be eliminated by setting the Family to N/A or lower. To eliminate all needs, set all values to N/A, the Flatterer personality to \>, and all the following personalities to \: Greedy, Intemperate, Avoid fights, Harmony, Austere, Incurious, Altruistic, Loner, Leisurely, Excitement-seeking, Inclined to abstract, and Inclined to create art. Their personality also determines what dream they might have - some of these are also not currently attainable, like raising a family. They can currently only have one dream, but if their personality enables more than one, you can swap between them with g. Achieving their dream seems to only give them a good thought, which generally has no effect until they are retired.
+
+Adventurers can have the need to Pray to their deity. This is the one possible need that is not determined by their personality - depending on their beliefs, it will be added automatically - also one of the easiest needs to fulfill, assuming they can talk.
 
 ## Equipment, mounts, and pets
+
+Equipment menu
 
 All equipment, mounts, and pets you start with have a cost, which is paid from a single pool of points. Any points left unspent will be converted to coins, if your civilization has produced any. (It might be more useful to spend remaining points on gems, since coins currently have less value in other civilizations.) The amount of starting points depends on your status.
 
@@ -332,7 +328,7 @@ All equipment, mounts, and pets you start with have a cost, which is paid from a
 
 The items available are those which are available to your civilization. Outsiders only have access to weapons, armor, and shields made of any metal available in that world. There is no weight, volume, or count limit on what equipment you can take; however, if you take more than you can easily carry, you will be slowed down. (You could get a pack animal pet to help with that.) The item selection screen only shows items which you can currently afford. You can further filter the list by just typing what you are looking for.
 
-Once an item has been added to your inventory, you can change the quantity with and ; to remove an item reduce the quantity to zero. You can also change the quality of an item with and , for the cost shown on those options. Note that handwear and footwear do not come in pairs, so you will want to add as many as you need. For example, a spider man will want six lines of and two of .
+Once an item has been added to your inventory, you can change the quantity with - and +; to remove an item reduce the quantity to zero. You can also change the quality of an item with q and w, for the cost shown on those options. Note that handwear and footwear do not come in pairs, so you will want to add as many as you need. For example, a spider man will want six lines of gauntlet and two of boot.
 
 Unless you are similar in size to one of the main races, this may be the only way to get armor and clothing that you can wear - another way is to make equipment for your race in fortress mode first, then go get it in adventurer mode.
 
@@ -342,14 +338,16 @@ Items that can have a shape (gems, figurines, dice, etc.) will get a random shap
 
 ### Mounts and pets
 
-Mounts are pets you can ride. Some pets can be used as pack animals to carry stuff. The smallest pets can ride you (you carry them as an item). Unfortunately, there is no indication on this screen as to which is which. You can check the wiki page for an animal to see if it has the , , , or VERMIN tokens. Pets may also fight for you - and some can be rather formidable - or they may get scared and run away.
+Mounts are pets you can ride. Some pets can be used as pack animals to carry stuff. The smallest pets can ride you (you carry them as an item). Unfortunately, there is no indication on this screen as to which is which. You can check the wiki page for an animal to see if it has the [`[MOUNT]`](/index.php/Creature_token#MOUNT "Creature token"), [`[MOUNT_EXOTIC]`](/index.php/Creature_token#MOUNT_EXOTIC "Creature token"), [`[PACK_ANIMAL]`](/index.php/Creature_token#PACK_ANIMAL "Creature token"), or VERMIN tokens. Pets may also fight for you - and some can be rather formidable - or they may get scared and run away.
 
-When an animal is added as a pet, it will be given a random name. You can then select it, and rename it with , or remove it with . There is no known limit - other than cost and sanity - to how many you can take.
+When an animal is added as a pet, it will be given a random name. You can then select it, and rename it with n, or remove it with r. There is no known limit - other than cost and sanity - to how many you can take.
 
-Getting to this page enables a new option at the top of the screen: .
+Getting to this page enables a new option at the top of the screen: N: Add a new character to the party.
 
 ## Party summary
 
-The final screen of character creation is a list of the party members. You can choose which character's home the party will start at with , with the general location shown on the map and the name of the site below. Pressing will take you back to modifying the party, where you can cycle through existing party members with or add another with .
+Party summary
 
-Once the party is ready to go, press to start the adventure.
+The final screen of character creation is a list of the party members. You can choose which character's home the party will start at with 82, with the general location shown on the map and the name of the site below. Pressing ESC will take you back to modifying the party, where you can cycle through existing party members with TAB or add another with N.
+
+Once the party is ready to go, press y to start the adventure.

@@ -1,6 +1,8 @@
 # Important advice
 
-> Fonte: [Important advice](https://dwarffortresswiki.org/index.php/Important_advice) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Important advice](https://dwarffortresswiki.org/index.php/Important_advice) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Here are a few things to keep in mind when playing *Dwarf Fortress*.
 
@@ -19,7 +21,7 @@ If you cannot find your answer on this wiki, check out the forums at Bay12games.
 - If your game is running slowly, learn how to maximize your framerate. Perhaps try a 3×2 size embark.
 
 - Save often! Although it can be a hassle to have to quit out and get back in, it's a lot better than, after a crash, having to build that long hallway of stone-fall traps, plant the whole bag of plump helmet seeds, and make that shipment of steel battleaxes for the caravan next year, *all over again*.
-  - Consider enabling the seasonal auto-save feature by editing your /data/init/d_init.txt file.
+  - Consider enabling the seasonal autosave feature settings, although be aware that the number of autosaves is limited.
   - NOTE: you need several hundred MBs per save; if you run out of harddrive space, *Dwarf Fortress* will "pretend" to save correctly, but your save will be unloadable. Opening other saves to verify that they still work, then exiting, will corrupt your previously-working saves as well. Make sure you have sufficient free space before launching *Dwarf Fortress*!
 
 - Plan ahead a little during construction. When building your first couple dozen rooms, consider that in the future you might want to make certain busy hallways wider so dwarves aren't always climbing over each other. This will be a lot easier if you put rooms back an extra tile so you don't have to rebuild everything.
@@ -30,7 +32,7 @@ If you cannot find your answer on this wiki, check out the forums at Bay12games.
 
 - Dwarves thrive on alcohol. If a dwarf drinks only water, the rate at which he gets tasks done decreases. If the fortress has no alcohol for years, things will slow down quite a bit.
 - Dwarves also need food, obviously - and a good cook (and a nice dining hall) go a long way towards keeping your fortress happy.
-  - Don't cook all your alcohol or all your seeds (or all the things that leave seeds). ( \>\> Kitchen).
+  - Don't cook all your alcohol or all your seeds (or all the things that leave seeds). (z \>\> Kitchen).
 - Dwarves tend to get trapped easily. They like building and digging things from certain directions, so try to make sure there is a way out (and keep an eye on them just in case they try something crazy). Also keep in mind that workshops block certain squares, so if you ever notice that your jeweler dies after constructing a workshop with a door on the east side, that's why.
 - Digging, wood cutting, and engraving are noisy. Keep your sleeping areas away from noise and your dwarves will get a good night's rest.
 - Traps can help take care of invaders at no risk to your dwarves. Any fortress can build a bunch of stone-fall traps. Cage traps are also easy (you can make cages out of wood).
@@ -48,21 +50,21 @@ If you cannot find your answer on this wiki, check out the forums at Bay12games.
 
 ## Tricks
 
-- To find a dead dwarf, go under status (), then select stock\>\>corpses. Hit tab, and use to zoom to the particular dwarf to find a hint on where and how he died.
+- To find a dead dwarf, go under status (z), then select stock\>\>corpses. Hit tab, and use z to zoom to the particular dwarf to find a hint on where and how he died.
 
-- Don't like all the stone laying around? Instead of using a stone stockpile create a 1-square garbage zone and dump (esignate, ulk, ump) the stone. Reclaim (, , laim) the stone after it's been dumped. This way, you can store an unlimited amount of stone in just 1 tile! (This is especially useful when the tile in question is next to your mason shop). You can also use the mouse to paint which stones to dump. See stone management for more information.
+- Don't like all the stone laying around? Instead of using a stone stockpile create a 1-square garbage zone and dump (designate, bulk, dump) the stone. Reclaim (d, b, claim) the stone after it's been dumped. This way, you can store an unlimited amount of stone in just 1 tile! (This is especially useful when the tile in question is next to your mason shop). You can also use the mouse to paint which stones to dump. See stone management for more information.
 
 - Miasma from a garbage zone won't spread diagonally. Making your garbage dump a 1-tile room dug diagonally into a corner means you won't even need a door.
 
 - Usually the closest available material (to the dwarf!) is used for tasks such as (for example) building a floodgate, but not always. To prevent frustration, you can create a custom stockpile (e.g. for bauxite) next to your workshop and link it to the desired workshop. This also prevents your mason from hauling stone across the map from wherever he happened to be when you ordered a new door.
   - Create a high-quality custom furniture stockpile and link it to your jeweler's workshop so your gem setter doesn't waste time (and valuable gems) encrusting stupid things like bins, barrels, and ballista bolts.
 
-- The Standing Orders () screen can be used for a variety of useful settings, like having your dwarves temporarily ignore wood and refuse or making your weavers stop heading into the caverns to collect spiderwebs and get slaughtered by wild animals.
+- The Standing Orders (o) screen can be used for a variety of useful settings, like having your dwarves temporarily ignore wood and refuse or making your weavers stop heading into the caverns to collect spiderwebs and get slaughtered by wild animals.
 
-- Hitting when building a building (especially a cage) expands the list of items, so you can pick a specific one by quality or content (a nice bed for a noble's bedroom, or a rare beast for your zoo).
+- Hitting x when building a building (especially a cage) expands the list of items, so you can pick a specific one by quality or content (a nice bed for a noble's bedroom, or a rare beast for your zoo).
 
 - If you're scanning the outdoors for your next swath of trees, move your view up one level. They will appear as little rectangles on a field of dots and will be easier to spot.
-  - Speaking of timber, try designating some high-traffic lanes ( ) outside radiating away from your front door to the trees. Your dwarves will stick to the paths somewhat, and probably trample fewer saplings. (They also won't mess up the ground and leave a bunch of ugly sand spots scattered around on a sandy map.)
+  - Speaking of timber, try designating some high-traffic lanes (d o h) outside radiating away from your front door to the trees. Your dwarves will stick to the paths somewhat, and probably trample fewer saplings. (They also won't mess up the ground and leave a bunch of ugly sand spots scattered around on a sandy map.)
 
 - Take preventative measures to avoid cave adaptation. Only one of these is necessary.
   - Build a walled statue garden outside your fortress.

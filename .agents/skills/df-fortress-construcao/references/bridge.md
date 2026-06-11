@@ -1,14 +1,16 @@
 # Bridge
 
-> Fonte: [Bridge](https://dwarffortresswiki.org/index.php/Bridge) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Bridge](https://dwarffortresswiki.org/index.php/Bridge) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Bridges** are buildings which provide a temporarily walkable floor that can either be removed ("retracting" bridges) or turned into a wall ("raising" bridges) via linked mechanisms. Bridges are useful for crossing empty space and dangerous terrain, serve a vital role in fortress defense, and have a host of ancillary uses. For example, using a single large bridge to control fluids can save a ton of mechanisms and time when replacing the likes of floodgates, especially when the fluid in question requires a wide opening.
 
 ## Building bridges
 
-When first built, any bridge is just a static walkway, often (but not necessarily) over open space. They can be used as is, and use less materials than a constructed floor of the same size serving the same purpose. if you want them to raise or lower, they must be linked to a trigger (see below).
+When first built, any bridge is just a static walkway, often (but not necessarily) over open space. They can be used as is, and use less materials than a constructed floor of the same size serving the same purpose. If you want them to raise or lower, they must be linked to a trigger (see below).
 
-Bridges can be built ( -\> -\> ) of metal, stone or wood. They are designed and built by a specialist worker in the material used\* (e.g. a mason for a stone bridge, etc.). The size of the bridge can be altered using the mouse to expand from the initially selected point while placing it, up to a maximum size of 31 squares in each direction (31x31)\*\*.
+Bridges can be built (bnb) of metal, stone or wood. They are designed and built by a specialist worker in the material used\* (e.g. a mason for a stone bridge, etc.). The size of the bridge can be altered using the mouse to expand from the initially selected point while placing it, up to a maximum size of 31 squares in each direction (31×31)\*\*.
 
 (\* See note re "core material" under Materials, below)\
 
@@ -26,23 +28,31 @@ The error message 'Needs walkable perimeter' suggests that access is required al
 
 Bridges require stone, logs, and/or blocks - they can be mixed - with blocks being placed significantly faster during the actual construction. The formula for the number of building materials needed is: number of tiles in the bridge divided by four, rounded down, plus one, or {size/4, rounded down}+1.
 
-So, for example, a 3-tile bridge takes {3 tiles/4=3/4 -\> 0} +1 = 1 building material. A 4-tile bridge takes {4/4=1} +1 = 2. A 5x10 bridge would require {50/4=12 1/2 -\> 12} +1 = 13, and so on.
+Examples:
 
-The "core" material of the bridge is the *oldest* individual building material used (i.e. the first item that was created in the fortress or that entered the map). The core material determines the color, style, and description of the bridge, as well as the labor required for construction.
+- A 3-tile bridge (or smaller) takes {3 tiles/4 = 3/4 -\> 0} +1 = 1 building material.
+- A 4-tile bridge takes {4 tiles/4 = 1} +1 = 2.
+- A 7-tile bridge takes (7 tiles/4 = 1 3/4 -\> 1} +1 = 2.
+- A 2x5 bridge, 10 tiles, would take {10 tiles/4 = 2 1/2 -\> 2} +1 = 3.
+- A 5×10 bridge, 50 tiles, would require {50 tiles/4 = 12 1/2 -\> 12} +1 = 13 (and so on).
 
-Care should be taken when choosing materials for bridges that will be exposed to fire or magma: Bridges built with non-magma-safe materials will heat up and eventually melt if the center tile (with bias towards the northwest if the center doesn't fall on a single tile) gets covered in magma or exposed to fire, whether the bridge is raised, lowered, or even retracted. The ability of a bridge to withstand heat is limited by the *least* fire-resistant item involved - a single non-magmaproof building block or mechanism will cause the whole bridge to deconstruct when exposed to sufficient heat. Dragonfire almost immediately melts nearly all bridges (slade being the prime exception).
+The "core" material of the bridge is the one (1) single *oldest* individual building material used out of any/all required (i.e. the first item that was created in the fortress or that entered the map).[1] This single core material determines the color, style, description, and value of the bridge, as well as the labor required for construction (in the case that different metal/stone/wood/glass/clay materials are mixed).
+
+Care should be taken when choosing materials for bridges that will be exposed to fire or magma: Bridges built with *any* non-magma-safe materials will heat up and eventually melt if the center tile (with bias towards the northwest if the center doesn't fall on a single tile) gets covered in magma or exposed to fire, whether the bridge is raised, lowered, or even retracted. The ability of a bridge to withstand heat is limited by the *least* fire-resistant item involved - a single non-magmaproof building block or mechanism will cause the whole bridge to deconstruct when exposed to sufficient heat. Dragonfire almost immediately melts nearly all bridges (slade being the prime exception).
 
 ## Raising and retracting bridges
 
-When designating a bridge to be built, you can choose to make it "retracting" (the default) or "raising". A retracting bridge disappears when it is "up" and become invisible, and a raising bridge is a "drawbridge", forming a visible wall when it's up. The "wall" is always just 1 z-level high x 1 tile thick (and as wide as the bridge is wide), no matter how long the "drawbridge" is when it's down. For raising bridges, you select which direction you want it to raise when you designate it to be built. This cannot be changed later, which would require deconstructing and rebuilding a new bridge.
+A bridge, and a lever connected to it
 
-All bridges can be either raised or retracted by linking it to a trigger with mechanisms - this requires a dwarf with the mechanics labor activated. Once the trigger (either a lever or pressure plate) is in place, use uery on that trigger and select "link to ridge". You will then get a pop-up map where you can cycle through all bridges that you have currently built in your fortress. Select one, and then select the 2 specific mechanisms you want to use to link the bridge. Quality of mechanism has no effect on the raising/lowering of the bridge, nor the time to install the mechanisms.
+When designating a bridge to be built, you can choose to make it "retracting" or "raising" (the default). A retracting bridge disappears when it is "up" and become invisible, and a raising bridge is a "drawbridge", forming a visible wall when it's up. The "wall" is always just 1 z-level high x 1 tile thick (and as wide as the bridge is wide), no matter how long the "drawbridge" is when it's down. For raising bridges, you select which direction you want it to raise when you designate it to be built. This cannot be changed later, which would require deconstructing and rebuilding a new bridge.
+
+All bridges can be either raised or retracted by linking it to a trigger with mechanisms - this requires a dwarf with the mechanics labor activated. Once the trigger (either a lever or pressure plate) is in place, click on that trigger and select "Link lever"/"Link plate". Find a built bridge you want to link on your map and click on it, and then select the specific mechanism you want to use to link the bridge. Quality of mechanism has no effect on the raising/lowering of the bridge, nor the time to install the mechanisms.
 
 Any bridge, retracting or raising, of any size, will respond to the trigger signal 100 ticks after the signal is sent. You can link more than one bridge to the same trigger and they will all respond simultaneously.
 
-If a bridge is set to retract when trigger is activated, the bridge essentially disappears, *tossing* anything (friend, foe, or object) on the bridge onto whatever is underneath. Clearly this can be used to drop your enemies to rocky/watery/fiery deaths (or anything more imaginative you can think up!). Note that the creatures and objects are "tossed" with a semi-random initial velocity; this can reduce the lethality of pit traps (creatures bouncing off the walls lose the precious momentum that would otherwise result in an unsurvivable splat at the bottom), interfere with the reproducibility of dwarven !!SCIENCE!!, and be exploited as the key mechanic in coinstar training.
+If a bridge is set to retract when trigger is activated (click on ), the bridge essentially disappears, *tossing* anything (friend, foe, or object) on the bridge onto whatever is underneath. Clearly this can be used to drop your enemies to rocky/watery/fiery deaths (or anything more imaginative you can think up!). Note that the creatures and objects are "tossed" with a semi-random initial velocity; this can reduce the lethality of pit traps (creatures bouncing off the walls lose the precious momentum that would otherwise result in an unsurvivable splat at the bottom), interfere with the reproducibility of dwarven !!SCIENCE!!, and be exploited as the key mechanic in coinstar training.
 
-If a bridge is set to raise when a lever is pulled, the bridge will become a wall along the edge selected with the keys when placing the bridge. When activated, the bridge "raises" very quickly, flinging anything on the bridge into the air, with unpleasant if not always deadly side effects. The resulting wall is always one z-level tall, watertight, and invulnerable to building destroyers. Raising "drawbridges" can be used to block fortress entrances and corridors. When lowered, bridges will destroy most anything on the underlying tiles. By "destroying", we mean dwarves, foes, and items will entirely disappear from the game, a rare event which led to the creation of the term dwarven atom smasher.
+If a bridge is set to raise when a lever is pulled, the bridge will become a wall along the edge selected with the  buttons when placing the bridge. When activated, the bridge "raises" very quickly, flinging anything on the bridge into the air, with unpleasant if not always deadly side effects. The resulting wall is always one z-level tall, watertight, and invulnerable to building destroyers. Raising "drawbridges" can be used to block fortress entrances and corridors. When lowered, bridges will destroy most anything on the underlying tiles. By "destroying", we mean dwarves, foes, and items will entirely disappear from the game, a rare event which led to the creation of the term dwarven atom smasher.
 
 Any water displaced by a raising bridge is destroyed regardless of how much open space is on each side or above. Water resting atop a retracting bridge falls straight down after the bridge retracts.
 
@@ -60,23 +70,26 @@ It is impossible to channel out stone that is directly under a bridge, raised or
 
 Big bridges can take weeks or even months to complete. You can shorten construction time by moving the materials to the site before starting construction, and by using blocks instead of stones. The material-gathering time is somewhat shorter for blocks due to their lesser weight, and the actual construction is three times faster for blocks.
 
-**Warning:** while bridges do not provide structural support, the game will still allow you to place constructions adjacent to them. Any construction that is completed when attached only to a bridge will cause an immediate cave-in, often tossing the unlucky mason off the edge, to a horrible death any bystanders' great entertainment. However, a construction that connects to an existing supported construction when completed will not cause a cave-in, even if it is also adjacent to a bridge. To build constructions next to a bridge safely, ensure that *all* unbuilt constructions adjacent to a bridge are also adjacent to a construction that has already been completed. When building large constructions, it may be useful to suspend all tiles adjacent to a bridge until the neighboring constructions have been completed.\
+**Warning:** While bridges do not provide structural support, the game will still allow you to place construction orders adjacent to them. Any construction that is completed when attached only to a bridge will cause an immediate cave-in, often tossing the unlucky mason off the edge, to ~~a horrible death~~ any bystanders' great entertainment. However, a construction that connects to an existing supported construction when completed will not cause a cave-in, even if it is also adjacent to a bridge. To build constructions next to a bridge safely, ensure that *all* unbuilt constructions adjacent to a bridge are also adjacent to a construction that has already been completed. When building large constructions, it may be useful to suspend all tiles adjacent to a bridge until the neighboring constructions have been completed.\
+
 **Example:**
 
 |  |  |
 |----|----|
 | Will cause a cave-in | Will **not** cause a cave-in |
-| \ ╔═╗\[#3:0\]▓\[#\] ║+║\[#0:0\]\[@6:0\]O\[#@\] ╚═╝\[#3:0\]▓\[#\] \[#2:1\].,'\[#3:0\]▓\[#\] \ | \ ╔═╗\[#3:0\]▓\[#\] ║+║\[#0:0\]\[@6:0\]O\[#@\] ╚═╝║ \[#2:1\]\`,.\[#\]O \ |
+| ╔ / ═ / ╗ / ▓ / ║ / + / ║ / O / ╚ / ═ / ╝ / ▓ / . / , / ' / ▓ | ╔ / ═ / ╗ / ▓ / ║ / + / ║ / O / ╚ / ═ / ╝ / ║ / \` / , / . / O |
 
 Deconstructing bridges can be hazardous, as dwarves are not as compunctuous as with constructions and diggings to make sure no one is standing on them before destroying them.
 
 A raised bridge cannot be linked to a lever from the inside - the mechanic must be able to access the center tile of the bridge when lowered.
 
-If you aren't sure whether or not a 1 tile thick bridge is raised or lowered, try to build a piece of furniture, like a statue, on it. If it says blocked, the bridge is raised, if it says building present, it is lowered. You can also link another (longer) drawbridge to the same lever, to use as a visual indicator of the other bridge's status. Since this takes additional time and mechanisms, this is best reserved for when it's especially important that you know at a glance whether that bridge is blocking things.
+In ASCII mode, bridges which are only 1 tile thick look exactly the same whether they are raised or lowered. If you aren't sure which state such a bridge is in, try to build a piece of furniture, like a statue, on it - if it says "blocked" then the bridge is raised, and if it says "building present" then it is lowered. You can also link another (longer) drawbridge to the same lever, to use as a visual indicator of the other bridge's status. Since this takes additional time and mechanisms, this is best reserved for when it's especially important that you know at a glance whether that bridge is blocking things.
+
+Alternatively, DFHack provides the `tweak drawbridge-tiles` tool to give raised bridges a distinct appearance.
 
 ## Uses
 
-Perhaps the most straightforward use of a bridge is spanning empty space or dangerous terrain. Bridges only need roughly 25% of the material that building floors would require, and can be completed relatively quickly as well. Bridges are limited to a span of 20 tiles across open space; greater distances will require columns or other means of support. ("Floating" retracting bridges can be built into spans longer than 20 tiles, but they will deconstruct when support is checked.)
+Perhaps the most straightforward use of a bridge is spanning empty space or dangerous terrain. Bridges only need roughly 25% of the material that building floors would require, and can be completed relatively quickly as well. Bridges are limited to a span of 20 tiles across open space; greater distances will require columns or other means of support. ("Floating" retracting bridges can be built into spans longer than 20 tiles, but they will deconstruct when support is checked.Bug:9946)
 
 ### Remote controlled gateways
 
@@ -90,7 +103,7 @@ Raising bridges make a good replacement for most floodgate uses (e.g. flow and a
 
 ### Waste disposal
 
-Lowering raised bridges can be used as waste disposal for unwanted stones, refuse, goblins (dead or alive), legendary cheese makers and nobles, to name a few. Even fluids get destroyed. Note, however, that lowering a drawbridge onto a sufficiently large creature (such as a forgotten beast) simply causes the bridge to deconstruct.
+The bridge's tendency to destroy whatever is below it upon being lowered can be exploited, creating a simple but effective trash compactor. Thus, lowering raised bridges can be used as waste disposal for unwanted stones, refuse, goblins (dead or alive), legendary cheese makers and nobles, to name a few. Even fluids get destroyed. Note, however, that lowering a drawbridge onto a sufficiently large creature (such as a forgotten beast) simply causes the bridge to deconstruct. Dwarves are also susceptible to being atom smashed, so caution must be excercised when using it.
 
 ### Traps
 
@@ -120,15 +133,15 @@ Designate ramps on the 2nd level below an ocean. Build a retracting bridge direc
 
 Shown below is a 2x1 bridge (any size bridge can be used) before and after designating the ramps adjacent to the bridge. The stairs and passage on Z2 satisfy the 'Needs walkable perimeter' requirement and provide access to the top of the bridge for linking to a trigger. The passage is then blocked with a wall to make it water tight.
 
-`        Before breaking through      After`\
-`        side X       side Y          side X       side Y  `\
-`  Z3    ≥≥≥≥≥≥≥      ≥≥≥≥≥≥≥≥≥≥      ≥≥>≥>≥≥      ≥≥≥≥≥≥≥≥≥≥`\
-`  Z2    ###B###      ##Z_X_BB##      ##^B^##      ##Z_X_BB##`\
-`  Z1    ###^###        Z   ^^##      ###^###        Z   ^^##`\
-`  Z0    #######      ##########      #######      ##########`\
-`  `\
-`  ≥ = Water with floor     > = Water without floor  Z = Stairs`\
-`  ^ = Ramp      # = Solid Rock    X = Constructed Wall  _ = Floor (not constructed)`
+            Before breaking through      After
+            side X       side Y          side X       side Y
+      Z3    ≥≥≥≥≥≥≥      ≥≥≥≥≥≥≥≥≥≥      ≥≥>≥>≥≥      ≥≥≥≥≥≥≥≥≥≥
+      Z2    ###B###      ##Z_X_BB##      ##^B^##      ##Z_X_BB##
+      Z1    ###^###        Z   ^^##      ###^###        Z   ^^##
+      Z0    #######      ##########      #######      ##########
+
+      ≥ = Water with floor     > = Water without floor  Z = Stairs
+      ^ = Ramp      # = Solid Rock    X = Constructed Wall  _ = Floor (not constructed)
 
 ### Caravan exits
 
@@ -142,9 +155,9 @@ Designate a dumpsite or set up a floodgate at the top of a shaft; use multiple r
 
 Raising bridges and retracting bridges controlled by a single lever will be in opposite states of being open or closed. When one is closed (raised) the other is open (retracted) and vice versa. This fact can be used to construct airlocks that are not vulnerable to building destroyers or mistimed lever pulls e.g.
 
-`  Side View:`\
-`  Z1    XXXXXXR____      D = Raising drawbridge   / = Ramp   _ = Floor`\
-`  Z0    D_____/XXXX      R = Retracting bridge    X = Solid Rock or Constructed Wall`
+      Side View:
+      Z1    XXXXXXR____      D = Raising drawbridge   / = Ramp   _ = Floor
+      Z0    D_____/XXXX      R = Retracting bridge    X = Solid Rock or Constructed Wall
 
 With a suitably long distance between the two bridges, the controlling lever can be placed within the airlock, and by setting the profile of the lever specific dwarves can be moved between isolated areas.
 
@@ -158,6 +171,10 @@ The mechanical "tossing" action of retracting bridges can be used for training a
 
 ## Bugs
 
-- Metal bridges can be constructed by dwarves with any of the "metalsmith" skills enabled, however the builder's blacksmith skill is used to determine quality
-- Trees grow through bridges, may make the bridges unusable
-- Retracting bridges can be built without support, but will deconstruct when support is checked
+- Metal bridges can be constructed by dwarves with any of the "metalsmith" skills enabled, however the builder's blacksmith skill is used to determine qualityBug:4899
+- Trees grow through bridges, may make the bridges unusableBug:7872
+- Retracting bridges can be built without support, but will deconstruct when support is checkedBug:9946
+
+|  |
+|----|
+| "Bridge" in other / Languages / Dwarven / : / sazir / Elven / : / valóna / Goblin / : / romnu / Human / : / ori |

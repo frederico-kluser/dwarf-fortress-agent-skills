@@ -1,12 +1,14 @@
 # Mannerism
 
-> Fonte: [Mannerism](https://dwarffortresswiki.org/index.php/Mannerism) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Mannerism](https://dwarffortresswiki.org/index.php/Mannerism) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Mannerisms show up in the dwarves' status screens. For example: "When greeting others, she always smiles nervously." It is not apparent whether these mannerisms have any concrete effect.
 
 ## Mannerism Tokens
 
-From the String dump.
+From the string dump.
 
 - MANNERISM_LAUGH
 - MANNERISM_SMILE

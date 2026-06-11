@@ -1,6 +1,8 @@
 # Syndrome examples
 
-> Fonte: [Syndrome examples](https://dwarffortresswiki.org/index.php/Syndrome_examples) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Syndrome examples](https://dwarffortresswiki.org/index.php/Syndrome_examples) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 This page was created to aid those looking to create new syndromes. Those familiar with syndrome design (and certain complexities in particular) should feel free to add helpful/obscure information to the lists below to help less-experienced members of the community with their syndromes.
 
@@ -34,7 +36,19 @@ Syndromes that affect the creature's stats, particularly in combat.
 
 `CE_BODY_APPEARANCE_MODIFIER` not only changes the way a creature is described on the unit viewing screen - it also changes the combat effectiveness of the creature. The square-cube law is respected, meaning that doubling a creature's length, height, and broadness will make them 8 times as massive - an extreme boost in combat effectiveness. This does not affect the clothing they can wear.
 
+    Giant Growth
+
+    [SYNDROME]
+        [SYN_NAME:giant growth]
+        [CE_BODY_APPEARANCE_MODIFIER:APPEARANCE_MODIFIER:HEIGHT:200:APPEARANCE_MODIFIER:LENGTH:200:APPEARANCE_MODIFIER:BROADNESS:200:START:0]
+
 Also, you can change the size of particular body parts, with appropriate effects. The following syndrome, for example, will make the creature's punches more powerful (but it will not make their scratches any stronger, because their fingers are still the same size).
+
+    Hulk Hands
+
+    [SYNDROME]
+        [SYN_NAME:freakishly big hands]
+        [CE_BP_APPEARANCE_MODIFIER:BP:BY_CATEGORY:HAND:APPEARANCE_MODIFIER:HEIGHT:300:APPEARANCE_MODIFIER:LENGTH:300:APPEARANCE_MODIFIER:BROADNESS:300:START:0]
 
 ## Counter Trigger examples
 
@@ -44,8 +58,28 @@ Also, you can change the size of particular body parts, with appropriate effects
 
 There's no real reason *not* to become a vampire in vanilla DF, you don't even really need to drink blood to survive. Let's change that by making a syndrome that weakens you if you don't drink blood, but makes you even stronger than vanilla vampires if you do.
 
+    Double-edged vampire curse
+
+    [SYNDROME]
+        [SYN_NAME:vampire curse]
+        [CE_PHYS_ATT_CHANGE:STRENGTH:50:0:TOUGHNESS:50:0:AGILITY:50:0:ENDURANCE:50:0:DISEASE_RESISTANCE:50:0:START:0] <-- Weakens the target always
+        [CE_PHYS_ATT_CHANGE:STRENGTH:800:0:TOUGHNESS:800:0:AGILITY:800:0:ENDURANCE:800:0:DISEASE_RESISTANCE:800:0:START:0] <-- Strengthens the target
+            [CE:COUNTER_TRIGGER:TIME_SINCE_SUCKED_BOOD:NONE:172799:REQUIRED] <-- Prevents the above strengthening effect from working unless the target has recently sucked blood (vampires become Thirsty at 172800)
+
 ### Creatures that behave differently underground
 
-This is nice if you want to make an above-ground fort mode race, but don't want to actually restrict them to the surface - instead, you can give them a mood penalty for staying underground for too long. Note that the creature must have the tag in order for the CAVE_ADAPT counter-trigger to work, and you will also need a constant secretion in order to ensure the syndrome is applied (see above).
+This is nice if you want to make an above-ground fort mode race, but don't want to actually restrict them to the surface - instead, you can give them a mood penalty for staying underground for too long. Note that the creature must have the [`[CAVE_ADAPT]`](/index.php/Creature_token#CAVE_ADAPT "Creature token") tag in order for the CAVE_ADAPT counter-trigger to work, and you will also need a constant secretion in order to ensure the syndrome is applied (see above).
+
+    Bad thoughts from spending more than a month underground example (Place this in creature raw)
+
+    [CAVE_ADAPT]
+    [USE_MATERIAL_TEMPLATE:THOUGHTS:CREATURE_EXTRACT_TEMPLATE]
+        [SYNDROME]
+            [SYN_CONTACT]
+            [SYN_NAME:a lack of sunlight]
+            [SYN_AFFECTED_CREATURE:MY_CREATURE:ALL]
+            [CE_FEEL_EMOTION:EMOTION:GLUMNESS:SEV:50:START:0]
+                [CE:COUNTER_TRIGGER:CAVE_ADAPT:33600:NONE:REQUIRED]
+    [SECRETION:LOCAL_CREATURE_MAT:THOUGHTS:LIQUID:BY_CATEGORY:BRAIN:ALL:CONTINUOUS]
 
 You can do other things with this, like make a creature that gets extra abilities underground, or is stronger aboveground (by making the syndrome increase their strength normally, but reduce it using the counter-trigger, similar to the vampire example).

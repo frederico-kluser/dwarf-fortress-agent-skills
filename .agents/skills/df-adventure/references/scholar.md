@@ -1,10 +1,12 @@
 # Scholar
 
-> Fonte: [Scholar](https://dwarffortresswiki.org/index.php/Scholar) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Scholar](https://dwarffortresswiki.org/index.php/Scholar) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Scholars** are an assigned occupation at libraries. They can be assigned in the Locations and Occupations menu (). Scholars from other civilizations may visit your fort to discuss topics with fellow scholars, or write books.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-Scholars research topics through pondering and discussing them. Each scholar will spend their time on a single topic until it is researched or they obtain the knowledge through apprenticeship or reading a book. Each time a scholar ponders or discusses a topic, an invisible counter is increased. This counter will randomly (time wise, roughly twice a year) finish and then the scholar will obtain an invisible amount of research points. The latter seems to be semi-random, but the higher the scholar's related scholarly skills, the higher the amount of research points they obtain. Once they've received a certain amount of research points (Values of 100K have been reported), scholars will either make a discovery and get a happy thought, or if the topic was already known, be dejected that they could not further the field of research. Exact mechanics can be found on Topic#Discovering Topics.
+**Scholars** are an assigned occupation at libraries. They can be assigned in a library, which can be accessed though Locations submenu in P Places menu. Scholars from other civilizations may visit your fort to discuss topics with fellow scholars, or write books.
+
+Scholars research topics through pondering and discussing them. Each scholar will spend their time on a single topic until it is researched, or they obtain the knowledge through apprenticeship or reading a book. Each time a scholar ponders or discusses a topic, an invisible counter is increased. This counter will randomly (time wise, roughly twice a year) finish and then the scholar will obtain an invisible amount of research points. The latter seems to be semi-random, but the higher the scholar's related scholarly skills, the higher the amount of research points they obtain. Once they've received a certain amount of research points (Values of 100K have been reported), scholars will either make a discovery and get a happy thought, or if the topic was already known, be dejected that they could not further the field of research. Exact mechanics can be found on Topic#Discovering Topics.
 
 Research can take in-game decades, but scholars will continue their research if the fort is retired and will bring their research when migrating between forts. The topics and discoveries involved currently have little in-game effect, but will be expanded upon at a later date.
 
@@ -16,11 +18,18 @@ Scholars can also form master/apprentice relationships, and the master will teac
 
 Being a scholar is pretty much a full-time job - dwarves will eventually do other things as well, but it can take a season or so to get around to it. If you make, say, your mechanic a scholar, then it is best to take them off the job when you need them to work; the same goes for doctors.
 
-It appears that pondering is one of the things that fulfills the "think abstractly" need .
+It appears that pondering is one of the things that fulfills the "think abstractly" need.
 
 ## Involved skills
 
-Discussing and pondering topics trains skills. Some of them are useful in practice, but some of them are only useful in the library.
+Smart, but still depends on alcohol.
+
+Discussing and pondering topics trains skills. Some of them are useful in practice, but others are only useful in the library.
+
+|  |  |
+|:--:|:--:|
+|  | Scholar |
+|   | Critical thinker / Logician / Mathematician / Astronomer / Chemist / Geographer / Optics engineer / Fluid engineer / Tracker |
 
 Skills trained that are also useful in practice:
 
@@ -37,29 +46,35 @@ Skills trained that are also useful in practice:
 
 ## Traits involved
 
-A belief in knowledge is needed to be a scholar. A dwarf that thinks knowledge is a waste of time will not engage in scholarly activities.
+A belief in knowledge is needed to be a scholar. A creature that thinks knowledge is a waste of time will not engage in scholarly activities.
 
-Being curious and/or inclined to abstract thought is ideal for a scholar. A dwarf that is incurious or uninclined to abstract thought is less likely to study in the library.
+Being curious and/or inclined to abstract thought is ideal for a scholar. A creature that is incurious or uninclined to abstract thought is less likely to study in the library.
 
 ## Professions
 
+|  |
+|----|
+| "Scholar" in other / Languages / Dwarven / : / mishthem / Elven / : / naquina / Goblin / : / mol / Human / : / rushán |
+
 While "Scholar" is the default profession, dwarves who gain sufficient scholarship skills can receive one of several titles (in order of preference):
 
-- **Sage** - High Levels of Critical Thinking + a 2nd skill (Logician, a Medical Skill, or possibly others)
-- **Mathematician** - High Levels of Mathematics
-- **Philosopher** - High Levels of Logician
-- **Historian** - High Levels of Critical Thinking
-- **Astronomer** - High Levels of Astronomy
-- **Naturalist** - High Levels of Tracker
-- **Chemist** - High Levels of Chemistry
-- **Geographer** - High Levels of Geography
-- **Engineer** - High Levels of Optics or Fluid Engineering, can be coupled with Mechanic or Pump Operator.
+- **Sage** - High levels of Critical Thinking + a 2nd skill (Logician, a Medical Skill, or possibly others)
+- **Mathematician** - High levels of Mathematics
+- **Philosopher** - High levels of Logician
+- **Historian** - High levels of Critical Thinking
+- **Astronomer** - High levels of Astronomy
+- **Naturalist** - High levels of Tracker
+- **Chemist** - High levels of Chemistry
+- **Geographer** - High levels of Geography
+- **Engineer** - High levels of Optics or Fluid Engineering, can be coupled with Mechanic or Pump Operator.
 - **Scholar** - Low level academic skills
 
-Medical professions work as expected (Surgeon for Surgery, etc.) except when coupled with critical thinking since that will produce a sage, and with multiple medical skills will become a **Doctor**. It appears that Diagnostician is most important for medical scholars, but relevant topics will increase other medical skills as well - discussing the Suturing topic increases Suturer.
+The medical professions work as expected (Surgeon for Surgery, etc.) except when coupled with critical thinking, since that will produce a sage, and with multiple medical skills will become a **Doctor**. It appears that Diagnostician is most important for medical scholars, but relevant topics will increase other medical skills as well - discussing the Suturing topic increases Suturer.
 
-An engineer without experience in optic or fluid topics is simply called Mechanic.
+An engineer without experience in optic or fluid topics is simply called a Mechanic.
 
-During world generation, historical figures who decide to become scholars will relocate to their nearest library (located either in a dwarven fortress or human town) where they will typically remain for the rest of their lives, unless they are promoted to nobility. It seems that any creature that can learn can become a scholar, which includes not only civilized races, but also animal people and even plump helmet men (which cannot speak). Only members of dwarf, elf, or human civilizations can become scholars, with research areas determined by civilization: dwarf civilizations can have scholars in any field, elf civilizations are limited to nature-related areas (naturalist, astronomer, geographer, and philosopher), and human civilization research areas are determined by their randomly generated cultural values during world generation. Goblin and kobold civilizations will never produce scholars because they lack the necessary entity tokens, but goblin members of scholarly civilizations may become scholars. Elf and goblin scholars will effectively live forever within the safety of their libraries, many having seen the entire history of their world come and go, after long since mastering their chosen field.
+During world generation, historical figures who decide to become scholars will relocate to their nearest library (located either in a dwarven fortress or human town) where they will typically remain for the rest of their lives, unless they are promoted to nobility. It seems that any creature that can learn can become a scholar, which includes not only civilized races, but also animal people and even plump helmet men (who cannot speak). Only members of dwarf, elf, or human civilizations can become scholars, with research areas determined by civilization: dwarf civilizations can have scholars in any field, elf civilizations are limited to nature-related areas (naturalist, astronomer, geographer, and philosopher), and human civilization's research areas are determined by their randomly generated cultural values during world generation. Goblin and kobold civilizations will never produce scholars because they lack the necessary entity tokens, but goblin (or sufficiently modded kobold) members of scholarly civilizations may become scholars.[1] Elf and goblin scholars will effectively live forever within the safety of their libraries, many having seen the entire history of their world come and go, after long since mastering their chosen field.
 
- Ru:Scholar Fr:Savant (scholar) "Fr:Savant (scholar)")
+Scholars can be the very first to make a discovery, or they can simply independently make a discovery already made by others.
+
+\

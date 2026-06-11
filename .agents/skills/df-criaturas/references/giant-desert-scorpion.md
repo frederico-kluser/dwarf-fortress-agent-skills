@@ -1,6 +1,8 @@
 # Giant desert scorpion
 
-> Fonte: [Giant desert scorpion](https://dwarffortresswiki.org/index.php/Giant_desert_scorpion) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Giant desert scorpion](https://dwarffortresswiki.org/index.php/Giant_desert_scorpion) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **giant desert scorpion** was a rare, large, aggressive and dangerous creature found in most savage desert biomes - the above-ground equivalent of the giant cave spider. As opponents, they were equivalent to blind cave ogres in lethality, and could appear in groups of anything from 1-3 mayhem-minded individuals. Giant desert scorpions were predatory, meandering killing machines. They would roam over long distances seeking prey, meaning they *would* eventually find your fortress and start stinging dwarves. Unlike other giant creatures, they never possessed normal and humanoid equivalents. All giant desert scorpions were born with Legendary skill in climbing.
 
@@ -10,8 +12,17 @@ They were also famous for their ability to wrest the weapons (or backpacks, or s
 
 Giant desert scorpions could be captured in cage traps and trained into pets, being the most valuable animals (tied with giant cave spiders) in the game that weren't cave dragons or megabeasts. Products made from their parts were 4 times more valuable than those made from normal animals, and they gave a decent amount of meat and fat when butchered, but most players would lean to the thought of breeding these beasts for the purpose of fortress defense. Stuffing a cage with thirty scorpions and releasing them all at once right next to unsuspecting goblins during an invasion was a joyous sight.
 
-Giant desert scorpions were removed from the game in version 0.42.04, with plans for a replacement in a future update. Players who can't wait that long can add the old version back in by installing this mod.
+Giant desert scorpions were removed from the game in version 0.42.04, with plans for a replacement in a future update.
+
+(Players who can't wait that long can add the old version back in, by installing this mod.)
 
 Some dwarves liked giant desert scorpions for their *tails*.
 
+Admired for their *tails*.
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 It is said that to this day, you can still hear dragons complaining about them being removed.

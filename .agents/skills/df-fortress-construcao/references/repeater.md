@@ -1,6 +1,8 @@
 # Repeater
 
-> Fonte: [Repeater](https://dwarffortresswiki.org/index.php/Repeater) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Repeater](https://dwarffortresswiki.org/index.php/Repeater) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 In *Dwarf Fortress*\*, a **repeater** is a device which creates a cyclic pattern of on and off signals. The simplest repeater design is a dwarf pulling a lever on repeat. However, numerous fully-automated designs are possible which can be made to operate at varying rates and linked to other systems for precise timing. Most repeaters use minecarts, fluids, or creatures to trigger pressure plates cyclically.
 
@@ -18,7 +20,13 @@ For low-priority tasks, a civilian-triggered pressure plate built in a hallway o
 
 ### Wave repeater
 
-A wave repeater is simply a wave traveling through a channel containing a pressure plate, as described in this forum post. \ ╔══════╗ ╔══════╗ ║\[#F0F\]^\[#\].....║--\>║\[#0FF\]777776\[#\]║ ╚══════╝ ╚══════╝ \
+A wave repeater is simply a wave traveling through a channel containing a pressure plate, as described in this forum post.
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |
+| ║ | ^ | . | . | . | . | . | ║ | - | - | \> | ║ | 7 | 7 | 7 | 7 | 7 | 6 | ║ |
+| ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |
 
 A single 6/7 water tile flows through the channel, occasionally triggering a pressure plate set to trigger on 0-6/7 water. To get the right amount of water in it, it's simplest to fill it all the way, then designate it as a water source (and perhaps another location as a pond) until a dwarf takes away a single bucket full of water.
 
@@ -32,14 +40,15 @@ It's possible to make a design that can be easily started and stopped, even one 
 
 The traditional repeater design is probably this fluid-based one (described on the forum by AncientEnemy):
 
-\ \[#1:1\]≈≈≈≈≈\[#\] - infinite source of water
-
-`═╗[#1:1]≈[#]╔═  - wall to channel out after construction`\
-` ╠[#7:0][@7:1]X[@#]╣   - shutoff floodgate (linked to exterior lever)`\
-` ║#║   - 1-tile drawbridge (linked to pressure plate)`\
-` ║[#5:1]^[#]┼   - pressure plate (set to 7-7 water), and access door `\
-` ╠[#7:0][@7:1]X[@#]╣   - floodgate (linked to pressure plate)`\
-` ╚═╝`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ≈ | ≈ | ≈ | ≈ | ≈ |   |   | - |   | i | n | f | i | n | i | t | e |   | s | o | u | r | c | e |   | o | f |   | w | a | t | e | r |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ═ | ╗ | ≈ | ╔ | ═ |   |   | - |   | w | a | l | l |   | t | o |   | c | h | a | n | n | e | l |   | o | u | t |   | a | f | t | e | r |   | c | o | n | s | t | r | u | c | t | i | o | n |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | ╠ | X | ╣ |   |   |   | - |   | s | h | u | t | o | f | f |   | f | l | o | o | d | g | a | t | e |   | ( | l | i | n | k | e | d |   | t | o |   | e | x | t | e | r | i | o | r |   | l | e | v | e | r | ) |   |   |   |   |   |   |   |
+|   |   | ║ | \# | ║ |   |   |   | - |   | 1 | - | t | i | l | e |   | d | r | a | w | b | r | i | d | g | e |   | ( | l | i | n | k | e | d |   | t | o |   | p | r | e | s | s | u | r | e |   | p | l | a | t | e | ) |   |   |   |   |   |   |   |
+|   |   | ║ | ^ | ┼ |   |   |   | - |   | p | r | e | s | s | u | r | e |   | p | l | a | t | e |   | ( | s | e | t |   | t | o |   | 7 | - | 7 |   | w | a | t | e | r | ) | , |   | a | n | d |   | a | c | c | e | s | s |   | d | o | o | r |   |
+|   |   | ╠ | X | ╣ |   |   |   | - |   | f | l | o | o | d | g | a | t | e |   | ( | l | i | n | k | e | d |   | t | o |   | p | r | e | s | s | u | r | e |   | p | l | a | t | e | ) |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | ╚ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 So long as the shutoff floodgate isn't closed, water from an infinite source flows on to the pressure plate, causing the raising bridge to block access to the water source and destroy water in the circuit, while the opening of the southern floodgate compensates for the space taken up by this bridge. This water destruction mechanic means that, unlike many fluid logic circuits, this repeater needs no drainage. The single pressure plate works both to regulate the repeater, and as output.
 
@@ -51,13 +60,15 @@ For an alternate water-based repeater, consider the design at User:SL/Logic_Gate
 
 Designs based on creature logic are also possible. The following example is compact, reliable, and fairly predictable.
 
-`  ╔═╗  `
+|  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|
+|   |   |   | ╔ | ═ | ╗ |   |   |
+| ═ | ═ | ═ | ╝ | ¢ | ╚ | ═ | ═ |
+| p | ¢ | ^ | ¢ | ¢ | ^ | ¢ | p |
+| ═ | ═ | ╗ | ¢ | ╔ | ═ | ═ | ═ |
+|   |   | ╚ | ═ | ╝ |   |   |   |
 
-═══╝\[#FF0\]¢\[#\]╚══ \[#F00\]p\[#FF0\]¢^¢\[#00F\]¢\[#F0F\]\[@00F\]^\[#00F\]\[@\]¢\[#F00\]p\[#\] ══╗\[#00F\]¢\[#\]╔═══
-
-` ╚═╝`
-
-A captured goblin placed between the two pressure plates drives this system in his attempts to reach map edge through paths . is linked to all , and is linked to all , as well as to output. This gives the goblin a path away from his constrained tile every 100 ticks. Delays in picking up path tend to make it run a cycle every 250 ticks. with on and off signals separated by about 120 ticks. Its rate of repetition can be doubled by hooking both to output, although this leads to close placement of on and off signals.
+A captured goblin placed between the two pressure plates drives this system in his attempts to reach map edge through paths ¢p. ^ is linked to all ¢, and ^ is linked to all ¢, as well as to output. This gives the goblin a path away from his constrained tile every 100 ticks. Delays in picking up path tend to make it run a cycle every 250 ticks. with on and off signals separated by about 120 ticks. Its rate of repetition can be doubled by hooking both ^ to output, although this leads to close placement of on and off signals.
 
 ### Minecart repeater
 
@@ -69,17 +80,17 @@ The impulse ramp exploit allows for the design of completely autonomous minecart
 
 This design uses a 7 by 8 by 3 Z-level footprint, and was used for upright spike traps. It was originally posted in this forum thread.
 
-`z              z-1            z-2`\
-`1234567890     1234567890     1234567890     `\
-`wwwwwwwwww  1  wwwwwwwwww  1  wwwwwwwwww     where`\
-`wwwwwwwwww  2  wwwwwwwwww  2  wDDDDDDDDw     w = unchanged wall`\
-`wwwwwwwwww  3  wwwwwwwwww  3  wDwwwwwwDw     D = dig prio 4`\
-`wwwwwwwwww  4  wwwwwwwwww  4  wDwwwwwwDw     h = channel prio 4`\
-`wwwwwwwwww  5  wwwwwwwwww  5  wDwwwwwwDw     H = channel prio 5`\
-`wwwwwwwwww  6  wwwwwwwwww  6  wDwwwwwwDw     `\
-`wwwwwwwwww  7  wwwwwwwwww  7  wDwwwwwwDw     `\
-`wwwwwwhDhw  8  wwwwwhwwHw  8  wDDDDwwwww     `\
-`wwwwwwwwww  9  wwwwwwwwDw  9  wwwwwwwwww     `\
+    z              z-1            z-2
+    1234567890     1234567890     1234567890
+    wwwwwwwwww  1  wwwwwwwwww  1  wwwwwwwwww     where
+    wwwwwwwwww  2  wwwwwwwwww  2  wDDDDDDDDw     w = unchanged wall
+    wwwwwwwwww  3  wwwwwwwwww  3  wDwwwwwwDw     D = dig prio 4
+    wwwwwwwwww  4  wwwwwwwwww  4  wDwwwwwwDw     h = channel prio 4
+    wwwwwwwwww  5  wwwwwwwwww  5  wDwwwwwwDw     H = channel prio 5
+    wwwwwwwwww  6  wwwwwwwwww  6  wDwwwwwwDw
+    wwwwwwwwww  7  wwwwwwwwww  7  wDwwwwwwDw
+    wwwwwwhDhw  8  wwwwwhwwHw  8  wDDDDwwwww
+    wwwwwwwwww  9  wwwwwwwwDw  9  wwwwwwwwww
 
 1.  Carve a track at all the 'D' tiles in the obvious direction.
 2.  Carve N/E impulse ramps at the three ramps (2 on Z - 2, one on Z - 1)
@@ -91,6 +102,7 @@ This design uses a 7 by 8 by 3 Z-level footprint, and was used for upright spike
 6.  Clear out or forbid all the debris in the tunnel, or you run the risk of creating road kill as someone goes to pick it up.
 7.  Use the lever to start and stop the process.
 
+\
 See this forum thread for other designs tuned for bridge and upright spike traps.
 
 See this forum thread for a super-compact design.
@@ -105,16 +117,21 @@ Although the law of big numbers means that, over large enough intervals, the abo
 
 This mechanical-fluid hybrid repeater was the first proposed device to produce completely regular signals, at a frequency determined by the speed of pressure plate recovery. The basic design consists of 4 screw pumps and 4 pressure plates but other versions are possible, depending on the number of separate steps you need.
 
-\ \[#0:0\]Level │Level │Level 0 │-1 │-2 ──────┼──────┼──────
+\
 
-`     │      │ `\
-` [#6:1][@0:0]☼[@]   [#0:0]│ [@0:0] [#2:1]÷[#2:0]÷ [@] [#0:0]│ [@0:0][#4:1]^[@]  [@0:0][#2:1]^[@#] `\
-`[@0:0][#1:1]☼[#]☼☼[#6:0]══[@][#0:0]│ [@0:0][#2:0]÷[@]  [@0:0][#2:1]÷[@] [#0:0]│`\
-`  [@0:0][#]☼[#4:1]☼[@] [#0:0]│ [@0:0][#2:1]÷[@]  [@0:0][#2:0]÷[@] [#0:0]│`\
-`  [@0:0][#2:1]☼[@]  [#0:0]│ [@0:0] [#2:0]÷[#2:1]÷ [@] [#0:0]│ [@0:0][#6:1]^[@]  [@0:0][#1:1]^[@#] `\
-`     [#0:0]│      [#0:0]│ `
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| L | e | v | e | l |   | │ | L | e | v | e | l |   | │ | L | e | v | e | l |   |
+| 0 |   |   |   |   |   | │ | - | 1 |   |   |   |   | │ | - | 2 |   |   |   |   |
+| ─ | ─ | ─ | ─ | ─ | ─ | ┼ | ─ | ─ | ─ | ─ | ─ | ─ | ┼ | ─ | ─ | ─ | ─ | ─ | ─ |
+|   |   |   |   |   |   | │ |   |   |   |   |   |   | │ |   |   |   |   |   |   |
+|   |   | ☼ |   |   |   | │ |   |   | ÷ | ÷ |   |   | │ |   | ^ |   |   | ^ |   |
+|   | ☼ | ☼ | ☼ | ═ | ═ | │ |   | ÷ |   |   | ÷ |   | │ |   |   |   |   |   |   |
+|   |   |   | ☼ | ☼ |   | │ |   | ÷ |   |   | ÷ |   | │ |   |   |   |   |   |   |
+|   |   |   | ☼ |   |   | │ |   |   | ÷ | ÷ |   |   | │ |   | ^ |   |   | ^ |   |
+|   |   |   |   |   |   | │ |   |   |   |   |   |   | │ |   |   |   |   |   |   |
 
-\ is a screw pump which pumps from the light side to the dark side. is a pressure plate which disengages gear when water of depth 1-7 lands on it. The red, green, blue, and yellow pressure plates and gears are color coded only to show which is linked to which. In the game they'll all look like and . Building a pump after the gear which powers it or a gear after the pressure plate which disengages it will introduce a 1-step delay; so, depending on build order, the repeater might have a period between 400 and 408 steps. If the pumps, gears, and pressure plates are built in that order, then this system will repeat every 400 steps, exactly. Start the repeater by using a pond zone to dump 2 buckets of water onto any one of the plates.
+÷÷ is a screw pump which pumps from the light side to the dark side. ^ is a pressure plate which disengages gear ☼ when water of depth 1-7 lands on it. The red, green, blue, and yellow pressure plates and gears are color coded only to show which is linked to which. In the game they'll all look like ^ and ☼. Building a pump after the gear which powers it or a gear after the pressure plate which disengages it will introduce a 1-step delay; so, depending on build order, the repeater might have a period between 400 and 408 steps. If the pumps, gears, and pressure plates are built in that order, then this system will repeat every 400 steps, exactly. Start the repeater by using a pond zone to dump 2 buckets of water onto any one of the plates.
 
 The device as depicted uses 47-62 power during operation, and requires 62 power for startup. Drive train to power may, of course, lead to higher requirements. Once the two units of water are introduced to the system, water is conserved perfectly.
 

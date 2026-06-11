@@ -1,22 +1,50 @@
 # Miner
 
-> Fonte: [Miner](https://dwarffortresswiki.org/index.php/Miner) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Miner](https://dwarffortresswiki.org/index.php/Miner) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Miner** is the skill associated with both the **mining** labor and its associated profession. Miners are necessary to build any kind of fortress that is underground or involves stone. They are required to dig tunnels, channels, stairs and ramps, as well as remove said stairs and ramps. Miners require a pick to do any work. The quality and material of the pick doesn't affect how quickly they mine.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Skill: Miner
+
+Sprite(s)
+
+Association
+ 
+
+Profession
+Miner
+
+Job Title
+Miner
+
+Labor
+Mining
+
+Tasks
+
+Dig
+
+Workshop
+
+None
+
+Attributes
+
+Strength / Toughness / Endurance / Willpower / Spatial Sense / Kinesthetic Sense
+
+**Miner** is the skill associated with both the **mining** labor and its associated profession. Miners are necessary to build any kind of fortress that is underground or involves stone. They are required to dig tunnels, channels, stairs and ramps, as well as remove said stairs and ramps. Miners require a pick to do any work. As of 53.07, digging speed is affected by the material and quality of the pick. There is a 20% boost per quality level up to double (100% boost)[1] at masterwork/artifact quality.
 
 Miners gain experience for every tile mined, which means they gain experience faster in easier-to-dig soil and slower in stone. Due to the constant demand, straightforward work and fast experience curve, miners level-up to legendary skill faster than any other profession. Most players will have one or two legendary miners within thirty minutes of gameplay.
 
-Mining skill affects only the speed at which stone is mined, not the chance of acquiring resources from mining. Normal rocks and ore deposits drop an average of 1 boulder for every 4 squares mined; in compensation, one ore gives 4 bars of metal (although some types of ore sometimes give 1-4 extra bars of another metal) and one stone boulder yields 4 blocks. Gem clusters drop rough gems 100% of the time. Graphically, miners will often wear white tunics to resemble their occupation.
+Mining skill affects only the speed at which stone is mined, not the chance of acquiring resources from mining. Normal rocks and ore deposits drop an average of 1 boulder for every 4 squares mined; in compensation, one ore gives 4 bars of metal (although some types of ore sometimes give 1-4 extra bars of another metal) and one stone boulder yields 4 blocks. Gem clusters drop rough gems 100% of the time. Graphically, miners will often wear light grey tunics to resemble their occupation.
 
-In order for any mining to be done, the esignations menu must be used.
+In order for any mining to be done, the mining designation must be used.
 
 ## Mining behavior
 
-If a large area is designated for mining, miners tend to clear out the left side first, working from the top down as much as possible. This is not absolute but is a strong tendency.
+If a large area is designated for mining (with the same mining priority), miners will start clearing out the area starting from the accessible designated mining area which is nearest to them (when they decide to mine, eg. take the first mining spot, but, if the dwarf does not have a pickaxe in inventory, the decision where to mine is done after picking up a pickaxe), here nearest means whichever location is nearest to them in the maximum norm (actual pathing distance to get to the spot is irrelevant).
 
-Once mining, a dwarf will automatically continue on to mine any connected tiles (on the same level) designated for mining, even diagonally, rather than shift to mine a discontinuous tile.
-
-Dwarves tend not to see tiles on different levels as "connected" (e.g. an up-stair below a down-stair), and will tend to clear one level before moving on to another - even to the point of moving far across a map to do so. They seem to mine top levels over lower ones. If no mining-designated tile is connected, they will seek to mine a top-left-designated tile on a top-most level.
+Once mining, a dwarf will automatically continue on to mine any connected tiles (on the same level) designated for mining, even diagonally, rather than shift to mine a discontinuous tile. But once all such tiles (which were designated for mining) have been mined the dwarf will pick any tile designated for mining (which is not already tagged by another miner as the next mining spot) with the minimum distance (in the maximum norm) from the position the miner is currently at, which might just be a tile one z-level above or below the current dwarf's position (even if the actual pathing distance is much longer than the actual pathing distance to the next tile, designated for mining, on the current z-level). If more than one tile has the same minimum distance than it is more or less random, which tile is picked next.
 
 ## Mining speed
 
@@ -27,3 +55,5 @@ If you're doing a lot of digging, starting with a semi-skilled Miner can save yo
 ## Combat
 
 The miner skill is also used when fighting with a pickaxe. Pickaxes are brutally effective weapons, combining a piercing and a slashing attack, and make really good weapons for adventurers. Immigrants can come to the fort with low-quality copper or bronze pickaxes, so consider replacing them with better-quality materials, like iron made by skilled weaponsmiths. Despite their effectiveness, however, a miner who is attacked when they're busy mining will not generally use their pick in combat, unless they are forced to.
+
+He's got his sights on some native platinum.

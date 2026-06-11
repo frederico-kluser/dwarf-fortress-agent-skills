@@ -1,0 +1,240 @@
+# Glossário PT→EN de jargão do Dwarf Fortress.
+# Formato:  termo_pt <TAB> termo(s)_en  (separados por espaço = sinônimos)
+# Usado por search.py para casar perguntas em português com o conteúdo em inglês.
+# Também serve de "cola" de tradução para o agente.
+#
+# --- materiais / metalurgia ---
+aco	steel
+aço	steel
+ferro	iron
+bronze	bronze
+cobre	copper
+ouro	gold
+prata	silver
+chumbo	lead
+estanho	tin
+zinco	zinc
+niquel	nickel
+níquel	nickel
+aluminio	aluminum
+alumínio	aluminum
+metal	metal
+metais	metals
+liga	alloy
+ligas	alloys
+pedra	stone
+pedras	stone
+minerio	ore
+minério	ore
+minerios	ores
+gema	gem
+gemas	gems
+diamante	diamond
+madeira	wood
+couro	leather
+osso	bone
+ossos	bone
+concha	shell
+ferreiro	blacksmith forge
+fundir	smelt smelting
+fundicao	smelting smelter
+fundição	smelting smelter
+forja	forge
+forjar	forge forging
+bigorna	anvil
+carvao	coal charcoal
+carvão	coal charcoal
+fluxo	flux
+adamantina	adamantine
+magma-safe	magma safe
+seguro-magma	magma safe
+# --- combate / militar ---
+arma	weapon
+armas	weapons
+armadura	armor armour
+escudo	shield
+machado	axe battle-axe
+espada	sword
+lanca	spear
+lança	spear
+martelo	hammer
+besta	crossbow beast
+flecha	bolt arrow
+ferimento	wound injury
+ferida	wound
+sangramento	bleeding
+dor	pain
+veneno	poison
+sindrome	syndrome
+síndrome	syndrome
+militar	military
+soldado	soldier
+exercito	military army
+exército	military army
+esquadrao	squad
+esquadrão	squad
+treino	training
+treinar	training train
+defesa	defense fortress-defense
+cerco	siege
+emboscada	ambush
+ladrao	thief
+ladrão	thief
+armadilha	trap
+jaula	cage
+# --- criaturas ---
+criatura	creature
+criaturas	creatures
+bicho	creature animal
+animal	animal
+animais	animals
+monstro	monster creature
+besta-mitica	megabeast
+megabesta	megabeast
+dragao	dragon
+dragão	dragon
+goblin	goblin
+elfo	elf
+anao	dwarf
+anão	dwarf
+anoes	dwarves
+anões	dwarves
+humano	human
+kobold	kobold
+trasgo	goblin
+troll	troll
+gato	cat
+cao	dog
+cão	dog
+cachorro	dog
+vaca	cow
+gado	livestock cattle
+montaria	mount
+mascote	pet
+verme	vermin
+morto-vivo	undead zombie
+vampiro	vampire
+lobisomem	werebeast were
+titan	titan
+titã	titan
+besta-esquecida	forgotten beast
+# --- fortaleza / mecânicas ---
+fortaleza	fortress
+forte	fortress
+embarque	embark
+agua	water
+água	water
+pressao	pressure
+pressão	pressure
+desabamento	cave-in collapse
+inundacao	flood flooding
+inundação	flood flooding
+poco	well
+poço	well
+mineracao	mining
+mineração	mining
+mineiro	miner mining
+cavar	dig mining
+tunel	tunnel
+túnel	tunnel
+caverna	cavern
+aquifero	aquifer
+aquífero	aquifer
+evento	event
+guia	guide
+iniciante	getting-started beginner
+# --- construção / indústria ---
+construcao	construction building
+construção	construction building
+construir	build construction
+oficina	workshop
+movel	furniture
+móvel	furniture
+mecanismo	mechanism
+ponte	bridge
+alavanca	lever
+estoque	stockpile
+deposito	stockpile depot
+depósito	stockpile depot
+sala	room
+zona	zone
+bomba	pump
+moinho	mill millstone
+producao	production
+produção	production
+artesanato	craft crafting
+tear	loom textile
+roupa	clothing cloth
+# --- dwarves / gestão ---
+trabalho	labor job
+labor	labor
+habilidade	skill
+atributo	attribute
+humor	mood thought
+estranho	strange
+humor-estranho	strange mood
+nobre	noble
+nobres	nobles
+profissao	profession
+profissão	profession
+mandato	mandate
+felicidade	happiness
+pensamento	thought
+necessidade	need
+justica	justice
+justiça	justice
+religiao	religion
+religião	religion
+# --- saúde / comida / agricultura ---
+saude	health healthcare
+saúde	health healthcare
+comida	food meal
+comer	eat food
+bebida	drink alcohol
+beber	drink
+hospital	hospital
+doenca	disease
+doença	disease
+cura	heal healing
+fome	hunger
+sede	thirst
+cansaco	exhaustion tired
+cansaço	exhaustion tired
+plantio	farming planting
+plantar	plant farming
+lavoura	farming crops
+fazenda	farm farming
+colheita	harvest crop
+cerveja	beer brewing alcohol
+cervejaria	brewery brewing
+semente	seed
+# --- comércio ---
+comercio	trade
+comércio	trade
+negociar	trade trading
+caravana	caravan
+mercador	merchant
+mercadoria	goods item
+riqueza	wealth
+economia	economy
+moeda	coin currency
+# --- interface / modding ---
+tecla	key keybinding
+atalho	hotkey shortcut
+menu	menu
+designacao	designation
+designação	designation
+modificar	mod modding
+mod	mod modding
+token	token
+graficos	graphics tileset
+gráficos	graphics tileset
+# --- adventure ---
+aventura	adventure adventurer
+aventureiro	adventurer
+viagem	travel fast-travel
+acampar	camp camping
+masmorra	dungeon
+sitio	site
+sítio	site
+conversa	conversation talk

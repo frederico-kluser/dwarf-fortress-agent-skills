@@ -1,6 +1,8 @@
 # Magma mist
 
-> Fonte: [Magma mist](https://dwarffortresswiki.org/index.php/Magma_mist) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Magma mist](https://dwarffortresswiki.org/index.php/Magma_mist) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Magma mist** is the !!Fun!! yellow mist created in three cases:
 
@@ -18,15 +20,32 @@ Magma mist is **not** to be confused with being "caught in a cloud of boiling ma
 
 ## Preventative Measures
 
-If you are a leaf-loving knife-ear being careful around magma, it isn't very likely that you'll run into magma mist at all, let alone have to worry about your dwarves breathing it in. The simplest thing you can do to prevent it is to watch out when dealing with mining above magma, or channeling above magma in particular.
+If you are ~~a leaf-loving knife-ear~~ being careful around magma, it isn't very likely that you'll run into magma mist at all, let alone have to worry about your dwarves breathing it in. The simplest thing you can do to prevent it is to watch out when dealing with mining above magma, or channeling above magma in particular.
 
+\
 If you plan on using a magma-based garbage disposal system, have sufficient z-levels between the dumping point and the magma/lava. Mass-dumping a whole siege's worth of corpses, body parts and assorted trash may generate magma mist clouds 3 z-levels high and wide, or higher. A single large corpse (e.g. a troll) is enough to cause a small magma mist cloud, potentially fatal if the magma's surface is just 1 z-level below the dumping point.
 
-[TABLE]
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| `█` | `█` | `░` | `█` | `█` |
+| `█` | `░` | `▒` | `░` | `█` |
+| `≈` | `≈` | `≈` | `█` | `█` |
+| `≈` | `≈` | `≈` | `█` | `█` |
+| `≈` | `≈` | `≈` | `█` | `█` |
+| `≈` | `≈` | `≈` | `█` | `█` |
 
-[TABLE]
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| `█` | `█` | `█` | `█` | `█` |
+| `█` | `█` | `█` | `█` | `█` |
+| `█` | `█` | `█` | `█` | `█` |
+| `█` | `█` | `░` | `█` | `█` |
+| `█` | `░` | `▒` | `█` | `█` |
+| `≈` | `≈` | `≈` | `█` | `█` |
 
 **Side View.** *Fun (left) and completely safe (right) magma garbage disposal points showing typical magma mist clouds after dumping a few corpses.*
+
+\
 
 ## Weaponization
 
@@ -42,20 +61,20 @@ Here is an example of a powerless minecart skipping magma mist generator.
 
 This design has a tick cycle of 30 steps with 5/7 magma and 33 steps with 6/7 magma and a max delay of 6. Carts must not collide, or it'll fail. However, it's compact, and lot of mist is produced on the z-level above with multiple carts. This design requires metal minecarts because wooden minecarts are not heavy enough to make magma mist. The initial minecart input is at the bottom. The ramp accelerating to the left is needed due to the checkpoint effect, and the floor and empty space combination cause a small minecart jump.
 
-|     |     |
-|-----|-----|
-| ╔   | ╗   |
-| \+  | ▲   |
-| .   | ║   |
-| \+  | ▲   |
-| ~   | ▲   |
-| ▲   | ╝   |
-|     | ║   |
+|     |     |     |
+|-----|-----|-----|
+| ╔   | ╗   |     |
+| \+  | ▲   | ↑   |
+| .   | ║   |     |
+| \+  | ▲   | ←   |
+| ~   | ▲   | ↑   |
+| ▲   | ╝   | →   |
+|     | ║   |     |
 
-**`Key:`**\
-`  `**`╔ ╗ ║ ╝`**` = `**`Track`**\
-`  `**`▲`**`       = `**`Track Ramp`**\
-`  `**`↑ ← →`**`   = `**`Ramp acceleration direction`**\
-`  `**`+`**`       = `**`Floor`**\
-`  `**`.`**`       = `**`Empty Space`**\
-`  `**`~`**`       = `**`Empty space with 5/7 or 6/7 magma below`**
+    Key:
+      ╔ ╗ ║ ╝ = Track
+      ▲       = Track Ramp
+      ↑ ← →   = Ramp acceleration direction
+      +       = Floor
+      .       = Empty Space
+      ~       = Empty space with 5/7 or 6/7 magma below

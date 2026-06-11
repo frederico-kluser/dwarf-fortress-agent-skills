@@ -1,6 +1,8 @@
 # Adder (Computing)
 
-> Fonte: [Adder (Computing)](https://dwarffortresswiki.org/index.php/Adder_(Computing)) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Adder (Computing)](https://dwarffortresswiki.org/index.php/Adder_(Computing)) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *For the species of snake, see Adder.*
 
@@ -8,7 +10,7 @@ Understanding of principles of addition are important to many dwarven logic devi
 
 Addition is simplest when dealing with binary values. Addition in other number bases is possible, but this article focuses on binary addition. Addition requires the choice of an arbitrary number of bits, or digits, to add, although numbers larger than the adder is designed for can be added via sequential additions with carry. For purposes of this discussion, the least significant digit will be considered the first or right-most digit.
 
-Before beginning an adder, one should become familiar with the logic gates NOT, OR, XOR, and AND. Descriptions of these gates are available for mechanical, fluid, creature, and animal logic. Addition also requires values to add, which need to be stored in some kind of memory "memory").
+Before beginning an adder, one should become familiar with the logic gates NOT, OR, XOR, and AND. Descriptions of these gates are available for mechanical, fluid, creature, and animal logic. Addition also requires values to add, which need to be stored in some kind of memory "Memory (computing)").
 
 # Incrementation
 
@@ -30,10 +32,59 @@ With 2 bits, decrementation becomes slightly different from addition, but not by
 
 When we reach 3 or more bits, we need to add an additional layer of complexity. Consider what would happen if we incremented 1101: if we just \[4\]XOR\[3\] (XOR of our 4th bit with our 3rd bit), we would mistakenly find the value as 0110, rather than 1110. We need to make our carries propagate through the system properly. A dedicated incrementer can build this functionality into its bits, by incrementing the next higher bit every time it changes from 1 to 0, but not when it changes from 0 to 1. This process can be described logically by implementing a new carry bit, and working from the right, using the following algorithm (this isn't any particular language, it's just pseudocode:)
 
-`set [carry] equal to [1]  -- if our first bit is 1, begin a carry`\
-`[1] becomes equal to NOT[1] -- our first bit inverts its value`\
-`set n equal to 2  -- move to the next bit position`\
-`while n. An 8-bit hybrid system is demonstrated at .
+    set [carry] equal to [1]  -- if our first bit is 1, begin a carry
+    [1] becomes equal to NOT[1] -- our first bit inverts its value
+    set n equal to 2  -- move to the next bit position
+    while n<=bitcount -- while we have yet not dealt with all bits
+      [n] becomes equal to [n]XOR[carry]  -- increment the next bit if we have a carry
+      [carry] becomes equal to NOT[n] AND [carry] -- if our value for the nth bit has rolled over, propagate the carry; otherwise, end the carry
+      n becomes equal to n+1 -- move to the next bit position
+    end
+
+Decrementation, again, works similarly-- the only difference is that we propagate the carry if and only if the value in a certain bit position changed from 0 to 1.
+
+    set [carry] equal to NOT[1]  -- if our first bit is 0, begin a carry
+    [1] becomes equal to NOT[1] -- our first bit inverts its value
+    set n equal to 2  -- move to the next bit position
+    while n<=bitcount -- while we have yet not dealt with all bits
+      [n] becomes equal to [n]XOR[carry]  -- decrement the next bit if we have a carry
+      [carry] becomes equal to [n] AND [carry] -- if our value for the nth bit has rolled over, propagate the carry; otherwise, end the carry
+      n becomes equal to n+1 -- move to the next bit position
+    end
+
+For an example of a creature logic based incrementation system, with incrementation built into the memory, see here.
+
+### Counting
+
+Typically, incrementation systems are designed not just with input, but output as well. Such a system increments every time it receives a certain input, and outputs when it reaches a certain internal count of that input. Output circuits are simple matters of counting in binary. For instance, a counting system that outputs after 11 triggers outputs when the first bit is 1 AND the second bit is 1 AND the third bit is 0 AND the fourth bit is 1. Typically, output is designed to also reset the count, by writing 0 to all bits of the count.
+
+For an example of an incrementation system using animal logic, see User:Bidok#Counter. A fully fluid implementation is available at User:Hussell/ClockToggle.
+
+### Addition via increment/decrement
+
+A simple but slow adder can be designed by repeatedly incrementing one value while decrementing a second value, until the second value reaches zero. Such a system requires some sort of repeater to drive the process-- every time the repeater fires, and the second value is not equal to zero (NOT the first bit AND NOT the second bit AND NOT the nth bit), the first value is incremented and the second value is decremented. When the second value reaches zero, the first value represents the sum of the initial two values.
+
+# Addition
+
+In describing incrementation, we have almost described full addition. The basis of addition, however, is the XOR operation, rather than the NOT operation.
+
+### 1 bit add
+
+In the simplest adder, we consider two values. Because of this, we now have four possibilities: 0+0=0, 1+0=1, 0+1=0, and 1+1=10=0. This is the same table of values we get with an XOR operation. Therefore, the addition of two 1 bit values is an XOR on those two values.
+
+### 2 or more bit add
+
+With addition, we need to implement a carry value with the addition of our second bit. Our first bit is \[1\]XOR\[1'\]-- that is, the XOR of the value of our first bit and our 1'th bit (the first bit in our second value). However, we also need to generate a carry value from this addition, which is equal to \[1\]AND\[1'\]. To get the value of our second bit, we first add the two second bits, then XOR the result to our carry from the first bit-- so 2, our second bit, becomes equal to (\[2\]XOR\[b\])XOR\[carry\], or the XOR of our carry with the XOR of the second bit of our first value and the second bit of our second value.
+
+This algorithm is generalizable to values of any bit length. We work from right to left. After determining the value of our 2nd bit, we need to update our carry value, which becomes equal to 1 if any two (or more) values XORed, including the carry, were equal to 1. That is, after completing the value for our second bit, we set our carry equal to ((\[2\]OR\[2'\])AND(\[carry\]))OR(\[2\]AND\[2'\]).
+
+Consider the following beautiful image of an animal logic based 9 bit adder, with notes representing the value of each digit:
+
+-
+
+  More information is available at User:LordOOTFD#Adders
+
+A 6-bit mechanical adder is demonstrated at http://mkv25.net/dfma/movie-1561-addingmachine. An 8-bit hybrid system is demonstrated at http://mkv25.net/dfma/movie-1084-numberabbeydemonstration.
 
 ### n bit subtract
 

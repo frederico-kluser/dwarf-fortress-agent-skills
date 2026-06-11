@@ -1,14 +1,19 @@
 # Drowning chamber
 
-> Fonte: [Drowning chamber](https://dwarffortresswiki.org/index.php/Drowning_chamber) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Drowning chamber](https://dwarffortresswiki.org/index.php/Drowning_chamber) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Drowning chambers** are multipurpose rooms (basically advanced pit traps) that can rapidly fill up with and be drained of water. An effectively built drowning chamber linked up to a dammed river or open to the ocean can be used to drown and dispose of invaders, hippies, loudmouths, rich tourists and other above-ground nuisances, as long as they have a need to breathe and cannot breathe underwater. It is thus an effective defensive strategy, acting like a megaproject trap that can dispose of almost anything that threatens you from the surface. A more powerful and noticeably more dwarven variation of a drowning chamber (using magma of course) is a melting chamber, which is truly 100% effective against surface-based threats.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+\
+**Drowning chambers** are multipurpose rooms (basically advanced pit traps) that can rapidly fill up with and be drained of water. An effectively built drowning chamber linked up to a dammed river or open to the ocean can be used to drown and dispose of invaders, trespassers, hippies, loudmouths, rich tourists and other above-ground nuisances, as long as they have a need to breathe and cannot breathe underwater. It is thus an effective defensive strategy, acting like a megaproject trap that can dispose of almost anything that threatens you from the surface. A more powerful and noticeably more dwarven variation of a drowning chamber (using magma of course) is a melting chamber, which is truly 100% effective against surface-based threats.
 
 Smaller-scale drowning chambers can be turned into large fishing traps as part of your fishing industry, to capture large fish for butchering that cannot be otherwise easily caught. This is done by filtering a water source through a room lined with cage traps; fish will inevitably go in to explore and be caught in them, allowing you to drain the room and then mark the trapped animal for butchering. If you manage to capture a sperm whale or two, this will be enormously, enormously profitable.
 
 Note that military drowning chambers can be relatively easily converted into fish-catching chambers when needed, but the reverse is not necessarily true.
 
 ## Construction
+
+A simple drowning chamber at work. The door in the northern corridor opens, water from the river fills the chamber, goblins are released from the cages and drown, and then the water is drained to a cavern.
 
 ### Water flow
 
@@ -64,6 +69,13 @@ When used for fishing, the object is to filter water through, not fill and drain
 
 Each screw pump assembly requires one screw pump, one floor hatch, one set of floor bar, and one windmill; in terms of raw materials this is one block, one enormous corkscrew, one grate, one hatch, one pipe section, and four logs per unit of drainage.
 
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 Or you were looking for trade depot or swimming pool instead?
 
-   Ru:Drowning chamber
+|  |
+|----|
+| "Drowning chamber" in other / Languages / Dwarven / : / addor mafol / Elven / : / iÿitho zole / Goblin / : / xek ngorug / Human / : / burde perom |

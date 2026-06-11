@@ -1,6 +1,14 @@
 # Fixed Creature RAWs
 
-> Fonte: [Fixed Creature RAWs](https://dwarffortresswiki.org/index.php/Fixed_Creature_RAWs) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Fixed Creature RAWs](https://dwarffortresswiki.org/index.php/Fixed_Creature_RAWs) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Modified Black Mamba raw**
+
+## Dados (infobox)
+
+- **Modified Adder RAW**
 
 This is the project page for making corrections to the vanilla Dwarf Fortress creatures.
 
@@ -21,6 +29,8 @@ The goal of this project is to go through the raws, and build a 'fixed' list of 
 
 Below are the creatures with fixed raws.
 
+\
+
 ### Black Mamba
 
 ------------------------------------------------------------------------
@@ -29,6 +39,7 @@ Raw Location: creature_tropical_new.txt
 
 Original: Black mamba/raw
 
+\
 **Changes Made:**
 
 - Added `CHILD:1` to allow eggs to hatch
@@ -42,6 +53,7 @@ Raw Location: creature_temperate_new.txt
 
 Original: Adder/raw
 
+\
 **Changes Made:**
 
 - Added `CHILD:1` and `LITTERSIZE:3:20` and removed egg related tags to allow adders to have 3 to 20 live offspring. Adders (Vipera berus) don't actually lay eggs, they're ovoviviparous, meaning that they keep the eggs internally and then give live birth.

@@ -1,6 +1,10 @@
 # Paper industry
 
-> Fonte: [Paper industry](https://dwarffortresswiki.org/index.php/Paper_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Paper industry](https://dwarffortresswiki.org/index.php/Paper_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Wood Carver working on a codex
 
 The **paper industry** deals with the creation and processing of paper sheets, and further processing into quires and scrolls.
 
@@ -34,9 +38,11 @@ The method, workshops, and labors required to process a material into sheets dep
 
 Papyrus can be directly made into sheets at a farmer's workshop, using the Papermaking labor.
 
+Paper industry overview
+
 #### Parchment
 
-Processing animal hides is more complex; you need to produce quicklime from calcium carbonate stones at a kiln, then process the quicklime to milk of lime at an ashery. Finally, the hide and milk of lime are used in a tanner's shop using the tanning labor to create a parchment sheet. For each sheet of parchment, 1 hide is needed, disregarding the size of the original animal.
+Processing animal hides is more complex; you need to produce quicklime from calcium carbonate stones at a kiln, then process the quicklime to milk of lime at an ashery. Finally, the hide and milk of lime are used in a tanner's shop, using the tanning labor, to create a parchment sheet. For each sheet of parchment, 1 hide is needed, disregarding the size of the original animal.
 
 If the hide is from a cow, it's called "vellum sheet", otherwise it will take on the name of the animal (i.e. pig parchment sheet, sheep parchment sheet).
 
@@ -58,6 +64,4 @@ After a quire has been filled with text, it can be crafted into a codex at a cra
 
 ### Scrolls
 
-1 sheet of paper can be combined with 1 scroll roller at a craftsdwarf's workshop to create a scroll using the Bookbinding labor.
-
-Fr:Industrie du papier (paper industry) "Fr:Industrie du papier (paper industry)")
+1 sheet of paper can be combined with 1 scroll roller at a craftsdwarf's workshop to create a scroll using the Bookbinding labor. Paper quality does not have any effect on scroll quality.

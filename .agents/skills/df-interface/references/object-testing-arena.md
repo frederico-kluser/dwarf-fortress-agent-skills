@@ -1,64 +1,64 @@
 # Object testing arena
 
-> Fonte: [Object testing arena](https://dwarffortresswiki.org/index.php/Object_testing_arena) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Object testing arena](https://dwarffortresswiki.org/index.php/Object_testing_arena) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Layout of the classic arena, similar to arena in previous verisons.
 
 The **object testing arena** is a special game mode accessible through the main menu where the player can alternate between spawning creatures, manipulating objects and features such as the weather and temperature. It is a tremendously useful place, usable for testing modded raws, or determining which skills to train against which enemies... or you can just have some fun carnage by spawning 50 steel-clad dwarves and setting them on some unarmed elves for that combat log goodness. It's possible to save games in it, in order to continue testing from a previous session.
 
-In this version of the game, there are three choices of arenas: small arena, forest and classic arena, with the last choice being the same arena from older versions of *Dwarf Fortress*. Unlike the older versions of the game, the player can no longer butcher corpses, nor control them as if playing adventure mode, though this is most likely due to the game not yet having adventure mode.
+In this version of the game, there are three choices of arenas: small arena, forest and classic arena, with the last choice being the same arena from older versions of *Dwarf Fortress*.
 
 ## Spawning creatures
 
-The list of creatures can be seen with the key - press to create a creature, select the creature type, skills and equipment, and then press . Press (or whatever you bound "leave screen" to) to cancel without creating the creature. You cannot delete creatures, but you can, however, press then (in the menu) to create a stone wall, instantly killing anything on that tile. Creatures with the or tokens can't be spawned in the object testing arena, unless the aforementioned tags are removed from their raw files. Note that some creatures with no combat capabilities (such as vermin) cannot be spawned, regardless of having the aforementioned tokens or not. Additionally, many procedurally-generated creatures such as megabeasts, titans, angels and demons are unavailable to be spawned.
+Many creatures packed into one area.
+
+The list of creatures can be seen with the k key - press c to create a creature, select the creature type, skills and equipment, and then press enter. Press Esc (or whatever you bound "leave screen" to) to cancel without creating the creature. You cannot delete creatures, but you can, however, press w then l (in the k menu) to create a stone wall, instantly killing anything on that tile. Creatures with the [`[ARENA_RESTRICTED]`](/index.php/Creature_token#ARENA_RESTRICTED "Creature token") or [`[DOES_NOT_EXIST]`](/index.php/Creature_token#DOES_NOT_EXIST "Creature token") tokens can't be spawned in the object testing arena, unless the aforementioned tags are removed from their raw files. Note that some creatures with no combat capabilities (such as vermin) cannot be spawned, regardless of having the aforementioned tokens or not. Additionally, many procedurally-generated creatures such as forgotten beasts or titans are unavailable to be spawned.
 
 ### Inventory and skills
 
-While in the creature placement menu, it is possible to add skills to your creatures, such as the fighter skill, or weapons, ammo, and armor. Creatures unable to use the weapons given to them will drop them upon unpausing, but creatures such as dwarves will happily do so, as long as they at least have dabbling-rank in its associated skill. You can also set exactly how much of a certain item you want when you select it, by using the or keys, which is the only way to get a creature to hold more than one piece of ammo, as the arena lacks an option for spawning quivers or backpacks.
+While in the creature placement menu, it is possible to add skills to your creatures, such as the fighter skill, or weapons, ammo, and armor. Creatures unable to use the weapons given to them will drop them upon unpausing, but creatures such as dwarves will happily do so, as long as they at least have dabbling-rank in its associated skill. You can also set exactly how much of a certain item you want when you select it, by using the + or - keys, which is the only way to get a creature to hold more than one piece of ammo, as the arena lacks an option for spawning quivers or backpacks.
 
 ### Conditions
 
-A creature can be created with a unique condition from an interaction by pressing in the creation menu. In vanilla games, the available effects are the interactions of necromancers, animated corpses, disturbed dead, accursed, werebeasts and vampires, including any modded interaction with a defined arena name.
+A creature can be created with a unique condition from an interaction by pressing u in the creation menu. In vanilla games, the available effects are the interactions of necromancers, animated corpses, different ranks of dungeon guardians, disturbed dead, accursed, werebeasts and vampires, including any modded interaction with a defined arena name.
 
 ### Teams
 
-It is possible to 'Team' creatures up by pressing and in the creation menu which is shown on the top left-hand side. There are 9999 teams (instead of 99 as in the previous versions), as well as "Independent", which is the default and acts as every creature for itself.
+It is possible to 'Team' creatures up by pressing s and d in the creation menu which is shown on the top left-hand side. There are 9999 teams (instead of 99 as in the previous versions), as well as "Independent", which is the default and acts as every creature for itself.
 
 In this way, you can create simulated battles against beasts or enemies - for example, twenty sword-users versus twenty macemen - and analyze the battle from gamelog.txt. (Necromancers and disturbed dead that are marked as Independent will **not** be at peace with the zombies that they raise. This is not a bug, because arena independence overrides anything else.)
 
 ### Nature of conflict
 
-The level of conflict between creatures or alliances can be controlled in the main screen with the keys and . The available settings are, from most lethal to least:
+The level of conflict between creatures or alliances can be controlled in the main screen with the keys shift+C and c. The available settings are, from most lethal to least:
 
--
-
--
-
--
-
--
-
--
-
--
-
--
+- No Quarter
+- Lethal
+- Non-lethal
+- Brawl
+- Training
+- Horseplay
+- Encounter
 
 Morale may also be switched on or off, by clicking the option at the right side of the screen.
 
 ## Spawning liquids and trees
 
-From the loo/create menu, press to spawn a 7/7 unit of lava, or to spawn 7/7 water on the currently selected tile. If you place water and then lava in the same tile, they will immediately form a 'Rough-hewn Rock Wall' (i.e. before you unpause), resulting in no spillage. However, placing lava and then water fills the tile with lava-hot water, which then instantly turns to steam upon unpausing. It is also possible to spawn rock walls in mid-air, usually causing a cave-in. You can place fluids in a tile that also has a wall in it; the result is a tile with both a wall *and* 7/7 units of the fluid you placed (water or lava). This combination behaves exactly the same as normal water without the wall would, except the area is still considered inaccessible for water to move through.
+From the look/create menu, press l to spawn a 7/7 unit of lava, or w to spawn 7/7 water on the currently selected tile. If you place water and then lava in the same tile, they will immediately form a 'Rough-hewn Rock Wall' (i.e. before you unpause), resulting in no spillage. However, placing lava and then water fills the tile with lava-hot water, which then instantly turns to steam upon unpausing. It is also possible to spawn rock walls in mid-air, usually causing a cave-in. You can place fluids in a tile that also has a wall in it; the result is a tile with both a wall *and* 7/7 units of the fluid you placed (water or lava). This combination behaves exactly the same as normal water without the wall would, except the area is still considered inaccessible for water to move through.
 
-Multi-tile trees are also available from the loo/create menu, under ree. Using the submenu on the right, you can select the species of tree and set its ge. Pressing will spawn a tree at the cursor using the current settings. Trees can be placed anywhere, even a rock block floor or in *mid-air* (the latter will also cause a cave-in, amusingly replacing intermediate rock block floors with sand). Arena-created trees do not spawn with roots, nor is it possible to chop down a tree, though they can be burned by spawning lava, killing the tree.
+Multi-tile trees are also available from the look/create menu, under tree. Using the submenu on the right, you can select the species of tree and set its age. Pressing enter will spawn a tree at the cursor using the current settings. Trees can be placed anywhere, even a rock block floor or in *mid-air* (the latter will also cause a cave-in, amusingly replacing intermediate rock block floors with sand). Arena-created trees do not spawn with roots, nor is it possible to chop down a tree, though they can be burned by spawning lava, killing the tree.
 
 ## Fighting in the Arena yourself
 
-Loo at any creature, and press to play as them, or to exit back to the main mode.
+Look at any creature, and press a to play as them, or ctrl+a to exit back to the main mode.
 
-- The controls here are exactly the same as in adventurer mode, except that attempting to a corpse results in the corpse being butchered.
+- The controls here are exactly the same as in adventurer mode, except that attempting to a a corpse results in the corpse being butchered.
 
 ## Controlling the environment
 
-The arena's environment can be modified in-game by pressing . From this screen, you can adjust Weather, Temperature, and Time. You can also press to cover every map tile in snow, to make everything muddy, and to remove all mud and snow.
+The arena's environment can be modified in-game by pressing w. From this screen, you can adjust Weather, Temperature, and Time. You can also press s to cover every map tile in snow, m to make everything muddy, and x to remove all mud and snow.
 
 ### Weather
 
@@ -87,19 +87,19 @@ As expected, the options marked with "(rain)" will cause it to start raining.
 
 The arena's temperature and time can be set to one of 13 settings, each:
 
-- Dragonfire -
-- Magma -
-- Fire -
-- Scorching -
-- Hot -
-- Warm -
-- Cool -
-- Cold -
-- Subterranean -
-- Freezing -
-- Below freezing -
-- Deathly cold -
-- Absolute zero -
+- Dragonfire - 50000 °U
+- Magma - 12000 °U
+- Fire - 11000 °U
+- Scorching - 10080 °U
+- Hot - 10070 °U
+- Warm - 10050 °U
+- Cool - 10035 °U
+- Cold - 10020 °U
+- Subterranean - 10015 °U
+- Freezing - 9999 °U
+- Below freezing - 9968 °U
+- Deathly cold - 9850 °U
+- Absolute zero - 9508 °U **!**
 
 ------------------------------------------------------------------------
 
@@ -119,11 +119,63 @@ The arena's temperature and time can be set to one of 13 settings, each:
 
 ## Modifying the Arena layout
 
-The layout of the arena zone is stored in the (DF)/data/init folder. Modifications to this file will not change the dimensions of the arena; they can only change the initial tiles and fluids present.
+|                                                    |
+|----------------------------------------------------|
+| File |
+| prefs                                              |
+| arena.txt                                          |
+
+The layouts of the default arena zones are stored in `data/init/arena.txt`, and can also be changed by manually placing your own file at `prefs/arena.txt`v52.02; the location of the `prefs` folder depends on the portable mode setting (there is also a `data` folder there, but `data/init/arena.txt` will always be in the game installation folder). Modifications to these files will not change the dimensions of the arena; they can only change the initial tiles and fluids present. Files in both `data/init/` and `prefs/` are read when Dwarf Fortress starts, in that order, with the last value read for an option being used.
 
 The arena is composed of 9 z-levels (including Z=0, from Z=-4 to Z=4) of 144 x 144 tiles; the contents of each tile are specified by a single character:
 
-[TABLE]
+Character
+Description
+
+#
+Empty tile [1]
+
+C
+Chasm
+
+.
+Block floor
+
+P
+Block pillar/wall
+
+R
+Block ramp
+
+F
+Block fortification
+
++
+Water source [1] [2]
+
+W
+7/7 water [1]
+
+w
+7/7 water + upward ramp
+
+L
+7/7 magma/lava [1]
+
+l
+7/7 magma/lava + upward ramp
+
+g
+Grass [3]
+
+T
+Tree [3]
+
+~
+Sand [3]
+
+,
+Soil [3]
 
 1.  Tile will have no floor unless a pillar/wall is constructed on the z-level below.
 2.  Only seems to work when placed on map edge; behaves identically to capital `W` otherwise.

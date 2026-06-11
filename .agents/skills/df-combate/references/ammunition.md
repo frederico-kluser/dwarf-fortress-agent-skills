@@ -1,8 +1,10 @@
 # Ammunition
 
-> Fonte: [Ammunition](https://dwarffortresswiki.org/index.php/Ammunition) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Ammunition](https://dwarffortresswiki.org/index.php/Ammunition) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-''
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*For ammunition used with siege engines, see Siege engine.*
 
 **Ammunition** is the collective term for projectiles that can be fired from ranged weapons such as crossbows and blowguns. Ammunition is stored in ammunition stockpiles and carried in quivers. Ammunition may also refer to the stones and Ballista arrow fired from siege engines; for more information about these weapons, see the siege engine article.
 
@@ -16,8 +18,9 @@ When dwarves with bolts or arrows stuck in their bodies are treated in a hospita
 
 There are three types of ammunition in *Dwarf Fortress*: bolts, arrows, and blowdarts, each fired from a different weapon.
 
-| Type | Size | Contact Area | Penetration | Weapon Used | Skill Used | Craftable | Used by |
+|  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|
+| Type | Size | Contact Area | Penetration | Weapon Used | Skill Used | Craftable | Used by |
 | Bolt | 150 | 5 | 1000 | Crossbow | Crossbowman | Yes (metal, wood, bone) | Dwarf, Goblin, Human |
 | Arrow | 150 | 5 | 1000 | Bow | Bowman | No | Elf, Goblin, Human, Kobold |
 | Blowdart | 20 | 1 | 50 | Blowgun | Blowgunner | No | Animal people |
@@ -26,17 +29,17 @@ There are three types of ammunition in *Dwarf Fortress*: bolts, arrows, and blow
 
 Projectiles made of different materials have different levels of effectiveness, depending on the situation. Likely factors in this are the weight of the ammunition and the physical properties of the material in combat. The type of ammunition and the weapon used to fire the ammunition may also have an effect on the potential damage possible.
 
-In practice, almost all metal bolts perform well, though there is some advantage in using a bolt of a "better" weapon material than the opponent's armor (quicker lethality), and some advantage in using a bolt with a higher density (faster incapacitation). The forum thread Dwarven Research: A Comparison Study on the Effectiveness of Bolts vs Armors has a comprehensive comparison and discussion.
+In practice, the material type heavily affects the effectiveness of bolts, just like melee weapons. Recent dwarven !!science!! has observed that ammo made of equal or lesser metal might take over 4x more ammo to kill the opponent.
 
-Projectiles are more likely to be blocked than parried.
+Projectiles are more likely to be blocked than parried.[1]
 
-Blowgun darts are noticeably less effective than bolts or arrows. This is due to them having a light weight and a small size compared to other ammo types. They almost never manage to pierce armor and are stopped even by clothing, unless the darts are made of metal.
+Blowgun darts are noticeably less effective than bolts or arrows, due to them having a light weight and small size compared to other ammo types, almost never managing to pierce armor and being stopped even by clothing, unless the darts are made of metal.
 
 Subterranean animal tribes, the main users of blowguns, do not have access to metal, so you will never see non-wooden blowdarts normally.
 
 ## Bugs
 
-- Ammunition stored in bins may not appear available to marksdwarves, eventually causing them to head to battle without bolts. Disabling bins in ammo stockpiles is recommended.
+- Marksdwarves may not equip ammunition if the squad they are in was not assigned the default "Archer" uniform when it was created.Bug:0012008
 
 ## See also
 

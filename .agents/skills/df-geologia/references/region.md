@@ -1,6 +1,10 @@
 # Region
 
-> Fonte: [Region](https://dwarffortresswiki.org/index.php/Region) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Region](https://dwarffortresswiki.org/index.php/Region) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+'The late Murk' Region
 
 A **region** or **subregion** is a named world area, a continuous set of tiles on the world map with the same or similar biomes, and the same alignment. The entire region will be either evil, neutral, or good.
 
@@ -10,9 +14,28 @@ In advanced world generation, regions are classified by size: 24 or fewer tiles 
 
 Regions must be the same or similar types of biomes with any degree of surroundings savagery. Some different biomes can occur in the same region as follows:
 
-| Region name | Wetland | Forest | Grassland | Hills | Desert | Lake | Tundra | Glacier | Ocean | Mountains |
-|----|----|----|----|----|----|----|----|----|----|----|
-| Biome(s) | Swamp, marsh | Broadleaf forest, coniferous forest, taiga | Grassland, savanna, shrubland |  | Badlands, rocky wasteland, sand desert | Lake | Tundra | Glacier | Ocean | Mountain |
+Region name
+Wetland
+Forest
+Grassland
+Hills
+Desert
+Lake
+Tundra
+Glacier
+Ocean
+Mountains
+
+Biome(s)
+Swamp, marsh
+Broadleaf forest, coniferous forest, taiga
+Grassland, savanna, shrubland
+Badlands, rocky wasteland, sand desert
+Lake
+Tundra
+Glacier
+Ocean
+Mountain
 
 ## Temperature, elevation and volcanism
 

@@ -1,14 +1,16 @@
 # Tavern keeper
 
-> Fonte: [Tavern keeper](https://dwarffortresswiki.org/index.php/Tavern_keeper) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Tavern keeper](https://dwarffortresswiki.org/index.php/Tavern_keeper) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Tavern keepers** are an assigned occupation at taverns. They can be assigned in the Locations and Occupations menu (), and will serve drinks to visitors in tavern locations. At the moment, there is no charge for drinks, but this may be changed in the future with the reintroduction of the dwarven economy.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-Assigning a tavern keeper enables visitors to share rumors *when served a drink*.
+**Tavern keepers** are an assigned occupation at taverns. They can be assigned in a tavern, which can be accessed though Locations submenu in P Places menu, and will serve drinks to visitors in tavern locations. At the moment, there is no charge for drinks, but this may be changed in the future with the reintroduction of the dwarven economy.
+
+Graphically, they will appear in all black clothing when displaying worn clothing dyes is turned off. Assigning a tavern keeper enables visitors to share rumors *when served a drink*.
 
 ## Serving Drinks
 
-Placing a container within a tavern zone will store goblets, reserved for the use of the tavern keeper. Booze stockpiled within a tavern zone will be served with stored goblets to dwarves and visitors by tavern keepers given the "Fulfill Service Order" job. (when serving visitors, rumors may be shared)
+Placing a chest within a tavern zone will store goblets, reserved for the use of the tavern keeper. Booze stockpiled within a tavern zone will be served with stored goblets to dwarves and visitors by tavern keepers given the "Fulfill Service Order" job. (when serving visitors, rumors may be shared)
 
 Tavern keepers can be useful to keep your dwarves' need for alcohol satisfied, even if they become a night creature.
 

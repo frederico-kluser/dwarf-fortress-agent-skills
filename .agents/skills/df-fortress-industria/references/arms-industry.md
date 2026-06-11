@@ -1,8 +1,12 @@
 # Arms industry
 
-> Fonte: [Arms industry](https://dwarffortresswiki.org/index.php/Arms_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Arms industry](https://dwarffortresswiki.org/index.php/Arms_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **arms industry** deals with the production and processing of weapons and ammunition. As with other industries, it deals with the use of raw materials to create usable items.
+
+\
 
 ## Getting started
 
@@ -30,4 +34,4 @@ The material of a ranged weapon is of use only when in melee combat, since cross
 
 - Low-value metals like copper and bronze are great for training your weaponsmith, and the resulting goods can be traded to a caravan for supplies, including raw materials for more arms production.
 - Blunt weapons are effective with almost any type of metal; making war hammers out of copper, bronze, iron or silver is a good use for these low-grade materials. Dwarven science advances have, however, determined that silver is, due to its high density, the best material against non-metal opponents.
-- Weaponsmiths produce higher-quality results when working with a metal they prefer. Choosing a weaponsmith with a preference for adamantine (and axes or swords, if possible) will result in very high quality adamantine weapons.
+- Weaponsmiths produce higher-quality results when working with a metal they prefer. Choosing a weaponsmith with a preference for adamantine\[Verify\] (and axes or swords, if possible) will result in very high quality adamantine weapons.

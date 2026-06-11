@@ -1,14 +1,16 @@
 # Soldier
 
-> Fonte: [Soldier](https://dwarffortresswiki.org/index.php/Soldier) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Soldier](https://dwarffortresswiki.org/index.php/Soldier) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-''This article is about individual soldiers and their training; for information on maneuvering, scheduling, or equipping your dwarves, see the respective pages. For a general overview, see Military.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-Your **soldiers** are the dwarves who make up each **squad** of your **military**. Turning your useless civilians into hardened harbingers of death is one of the most important jobs in the fort. With all the horrors awaiting you, you'll need the toughest dwarves you can get.
+*This article is about individual soldiers and their training; for information on maneuvering, scheduling, or equipping your dwarves, see the respective pages. For a general overview, see Military. **Soldier** is also the elven term for a hearthperson.*
+
+Your **soldiers** are the dwarves who make up each **squad** of your **military**. Turning your peasants into hardened harbingers of death is important, what with all the horrors awaiting you.
 
 ## Soldiers and civilians
 
-At any given moment, a dwarf is either a *soldier* or a *civilian*. When on duty, a dwarf plays the role of a soldier. The dwarf's icon will be solid: . When off duty, the dwarf is a civilian, with a hollow icon: . Off duty is the default state; all your dwarves will start out this way.
+At any given moment, a dwarf is either a *soldier* or a *civilian*. When on duty, a dwarf plays the role of a soldier. The dwarf's icon will be solid: ☻ . When off duty, the dwarf is a civilian, with a hollow icon: ☺ . Off duty is the default state; all your dwarves will start out this way.
 
 A dwarf goes on duty when given an active order, or when their schedule requires them to follow a passive order. When going on duty, a dwarf will pick up any equipment needed to fill out their assigned uniform.
 
@@ -110,21 +112,19 @@ Any dwarf without at least one of the above skills at Novice level or higher wil
 
 ## Heroes
 
+Melee goblins are no match for a hero Axedwarf.
+
 Once soldiers reach *Great* skill level *(the 11th level)* in any weapon, they will become **heroes**, will be called Lord/Master/Elite and have a different color shade. Heroes can be removed from duty regardless of skill level, and can be kept on active duty indefinitely, since they love training and combat and will no longer complain about long patrol duty.
 
 Note that non-weapon skills, like shield user, fighter, or armor user, *do not* make a dwarf a hero.
 
 **Exception:** If a dwarf gains Great skill (or above) in a weapons skill while a civilian (usually as a Hunter), they will not become a Hero, not even when activated *as* military. To become a Hero, some experience over the limit must be gained *while* activated as a soldier. Weapon skills can only be improved as a civilian while Hunting, very slowly through off duty drills, or on the chance occasion that a civilian dwarf is forced or decides to attack an enemy rather than flee. If the dwarf is then activated as military and gains any experience in a weapon that is at rank 11 or better, the dwarf becomes a Hero as usual.
 
-## Champion
-
-The **champion** is a noble position appointed by the Baron (that is, you can appoint it, but you can't do so without a baron or greater noble being present). A champion has no special room requirements, but may make a single demand eventually. As the title of champion is bestowed by appointment rather than merit, you may want to have your best teacher be the champion and conduct weapon demonstrations to boost the morale of training soldiers while your toughest killers go out and fight goblins.
-
 ## Training
 
 Once you've drafted some dwarves, you should start training them. Dwarves will perform 'Individual Training' when they have no active order or scheduling to follow. They will spar, or observe/teach combat demonstrations when they are following the 'Train' schedule order. Dwarves will train with whatever weapon they carry. Marksdwarves require an archery target to train, as well as bolts (assigned in the military/ammunition window). If this is not available, they will simply do combat demonstrations in the barracks; if you do not assign them a barracks, they will simply stand in your meeting areas with the job "Soldier (cannot follow orders)".
 
-Squads train in their assigned barracks. To assign a squad, build a bed or storage building (i.e. weapon rack) and turn it into a room, then use the secondary up/down selector to pick your squad and press to tell the squad to train there. You may wish to build your barracks outside to avoid cave adaptation.
+Squads train in their assigned barracks. To assign a squad, build a bed or storage building (i.e. weapon rack) and turn it into a room, then use the secondary up/down selector to pick your squad and press t to tell the squad to train there. You may wish to build your barracks outside to avoid cave adaptation.
 
 ### Duty roster
 
@@ -132,9 +132,13 @@ Dwarves will get a bad thought if left on patrol duty too long. When scheduling 
 
 ### Rations
 
-You can assign what squad carries how much or little food and alcohol through the military screen's **supplies tab**. Make sure your dwarves have access to flasks, waterskins and backpacks. Carrying rations will not prevent your dwarves from going off duty to eat or drink, but it will reduce the amount of time they are off duty. The downside of assigning food to soldiers is that they will likely drop it in their barracks if they rotate out to inactive, where it will rot and produce miasma. DFHack's *cleanowned* command can solve this problem.
+You can assign what squad carries how much or little food and alcohol through the military screen's **supplies tab**. Make sure your dwarves have access to flasks, waterskins and backpacks. Carrying rations will not prevent your dwarves from going off duty to eat or drink, but it will reduce the amount of time they are off duty. The downside of assigning food to soldiers is that they will likely drop it in their barracks if they rotate out to inactive, where it will rot and produce miasmaBug:3471. DFHack's *cleanowned* command can solve this problem.
 
 ## See also
 
 - Weapons
 - Armor
+
+|  |
+|----|
+| "Soldier" in other / Languages / Dwarven / : / ezar / Elven / : / ethare / Goblin / : / oxo / Human / : / tath |

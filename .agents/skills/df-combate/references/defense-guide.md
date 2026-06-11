@@ -1,9 +1,14 @@
 # Defense guide
 
-> Fonte: [Defense guide](https://dwarffortresswiki.org/index.php/Defense_guide) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Defense guide](https://dwarffortresswiki.org/index.php/Defense_guide) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-''This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. The **defense guide** is a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense. For tips on laying out your architecture to protect your military, see **security design**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**. For specific advice on how to get your soldiers prepared for any threat, see **military design**.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
+\
+
+*This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. The **defense guide** is a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense. For tips on laying out your architecture to protect your military, see **security design**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**. For specific advice on how to get your soldiers prepared for any threat, see **military design**.*
+
+\
 In *Dwarf Fortress*, you will often find yourself beset by hostile creatures looking to murder your dwarves or take their treasures. Protecting your fortress from intruders is a challenging task and a broad, complex topic. A wide variety of creatures can threaten your dwarves, and there is no one approach or philosophy that perfectly addresses every possibility. Fortress layout, military organization and training, traps and more, all contribute to the overall "defense" and survivability of your fortress and the dwarves that live and work both within there and in the world around it, and likewise no one article can include every last detail. This guide will pull from many other articles, but will prefer to refer to those rather than re-post information that is already found (and better placed) there.
 
 There are three important things to consider when planning the defenses for your fortress. First, you must protect the fortress itself - the buildings, the hallways, the dwarves within it. But second, protecting the dwarves outside and topside as they go about their work is also important. These two goals can often be rather divergent, as your dwarves may need to wander the open countryside to collect herbs, cut trees, hunt, fish, and while outside the bounds of your fortress they can find themselves quite vulnerable.\
@@ -25,57 +30,57 @@ While admitting that "Rules are made to be broken", there are some general recom
 
 Danger comes in a variety of forms in *Dwarf Fortress*. Understanding the diverse threats is the first step to keeping your dwarves alive.
 
-:\***Wild animals**
+- **Wild animals**
 
 Creatures vary in threat and habits. Some animals are quite dangerous, but most are easily excluded by the humble door or hatch, even if it's not forbidden. Some few are able to destroy doors and hatches, statues and other buildings, and some are thieves (see below), or will eat your food (such as bears). A lone animal, even a clear predator, will usually flee from a stronger force, but some undead and evil creatures can be blindly aggressive. Combat is random, and any animal can kill any dwarf - and vice versa.
 
 Wild animals can appear from the topside, but also from the caverns that you may accidentally open up while mining (in fact, the worst ones are often from below). In evil or savage surroundings, the creatures can be both much tougher and more aggressive.
 
-:\***Thieves & child snatchers**
+- **Thieves & child snatchers**
 
-Many creatures are "thieves" in the general sense, and offer their own potential headaches - a raccoon or small tribe of rhesus macaque or mandrill monkeys can enter an unsecured area unannounced, grabbing items of value and running, and it doesn't matter how many you kill if one or three make off with some prized possessions. But a creature with a listed ( ) profession of Thief has a few additional nasty surprises, namely being invisible until spotted by your dwarves or domestic animals, being able to bypass locked or forbidden doors, being armed with a real weapon, and some imperfect ability to avoid triggering traps (though some seem better at it than others). Kobolds and goblins are individually more dangerous than animals, but when spotted there's a special message, either "**Protect the hoard!**" or "**Protect the children!**", as appropriate.
+Many creatures are "thieves" in the general sense, and offer their own potential headaches - a raccoon or small tribe of rhesus macaque or mandrill monkeys can enter an unsecured area unannounced, grabbing items of value and running, and it doesn't matter how many you kill if one or three make off with some prized possessions. But a creature with a listed ( u ) profession of Thief has a few additional nasty surprises, namely being invisible until spotted by your dwarves or domestic animals, being able to bypass locked or forbidden doors, being armed with a real weapon, and some imperfect ability to avoid triggering traps (though some seem better at it than others). Kobolds and goblins are individually more dangerous than animals, but when spotted there's a special message, either "**Protect the hoard!**" or "**Protect the children!**", as appropriate.
 
-:\***Ambushes**
+- **Ambushes**
 
 An ambush is a small number of enemies (less than ten) that are invisible until spotted, but are easier to spot than thieves. The alert message is "**An ambush! Curse them!**" They skulk around the outside of your fortress, unseen until they strike, looking for wandering dwarves or caravans entering or leaving. They will often flee off the map if challenged.
 
-:\***Siege**
+- **Siege**
 
 A siege is a large number of armed and organized attackers that are announced as soon as they appear on the map. The alert message varies by race - the most common being a goblin siege announcement: "A vile force of darkness has arrived!". While siegers are on the map, the word "SIEGE" appears in the top corners of the screen. Siegers are organized into a number of squads, each squad having a different weapon choice. Some sieges bring dangerous creatures to aid the armed attackers. If you are at war with a civilization, expect annual sieges at least.
 
-:\***Enemy archers**
+- **Enemy archers**
 
 Attackers with bows or crossbows are worth separate mention as they are much, *much* more threatening than those with melee weapons. Out-shooting them with your marksdwarves is risky, as is charging them with inexperienced melee fighters. Well-trained, well-armored melee dwarves or special techniques are recommended to shield your dwarves from the deadly rain of arrows.
 
-:\***Building destroyers**
+- **Building destroyers**
 
-Some creatures have the BUILDINGDESTROYER tag in their Raw file. This gives them the fearful capacity of tearing apart your doors and workshops. Constructions built with the  + keys are safe, and so are bridges.
+Some creatures have the BUILDINGDESTROYER tag in their Raw file. This gives them the fearful capacity of tearing apart your doors and workshops. Constructions built with the bn keys are safe, and so are bridges.
 
-:\***Flying animals**
+- **Flying animals**
 
-Currently, tame flying animals cannot fly. Thus, the only flying creatures will be either wild animals (e.g. mundane birds, rocs, some titans) or affiliated with a different (usually hostile) civilization (e.g. some animal people, certain exotic mounts).
+Currently, tame flying animals cannot flyBug:4776. Thus, the only flying creatures will be either wild animals (e.g. mundane birds, rocs, some titans) or affiliated with a different (usually hostile) civilization (e.g. some animal people, certain exotic mounts).
 
 Melee units sit there and do nothing against flying enemies, slowly losing their teeth from attacks from usually weak fliers like buzzards. Therefore you need to make sure you have flak. Often the case is that the ranged weapons disable the enemy such that they can't fly and the melee units finish them off. This is especially the case with flying Forgotten Beasts.
 
-:\***Werebeasts**
+- **Werebeasts**
 
 A werebeast is a humanoid cursed by a deity to transform into a savage animal form every full moon. When in animal form, they are stealthy (invisible until spotted) and extremely strong, and they avoid traps and can destroy buildings. If a dwarf is bitten by a werebeast in animal form, he may be infected.
 
-:\***Vampires**
+- **Vampires**
 
 A vampire is a humanoid cursed by a deity to become a bloodthirsty undead horror. They will disguise themselves as an ordinary dwarf (or other person), with a false name, history, list of relationships, etc. Their immortality gives them plenty of opportunity to practice skills (particularly social ones), so they will often be elected to a position like mayor. Once inside your fortress, they will drink the blood of sleeping dwarves, which is usually fatal. They have enhanced speed, strength, stamina, and pain resistance in combat, and do not need food, water, booze or air (thus cannot be drowned).
 
-:\***Megabeasts**
+- **Megabeasts**
 
 A megabeast is a particularly powerful and dangerous creature, such as a dragon or hydra. Megabeasts appear alone, with an alert message that mentions the beast by name. They often have unique characteristics which present unusual challenges, but are universally dangerous.
 
-:\***Titans and Forgotten Beasts**
+- **Titans and Forgotten Beasts**
 
 Titans and forgotten beasts are similar to megabeasts in terms of size and strength, but are procedurally generated from random creature parts and may have procedurally generated special attacks (such as fire breath or web shooting) as well. Titans and forgotten beasts appear alone, with an alert message that mentions the creature by name. The two are very similar; titans attack from outdoors and forgotten beasts attack through underground caverns, but otherwise they present the same challenge. A titan from a benign biome will not attack your fort.
 
-:\***War**
+- **War**
 
-Before hitting that and embarking, to civilizations on the pre-embark screen, and see if you are at war with anyone. If so, things can get hot fast, with more and larger ambushes and sieges, and sooner. This is unusual, but a nasty surprise if you didn't check.
+Before hitting that e and embarking, tab to civilizations on the pre-embark screen, and see if you are at war with anyone. If so, things can get hot fast, with more and larger ambushes and sieges, and sooner. This is unusual, but a nasty surprise if you didn't check.
 
 ## Elements of a defense
 
@@ -95,15 +100,15 @@ For reference, arrow fire is usually about 20 tiles, though stray shots can trav
 
 The lay of the land can be your friend, but the way of the dwarf is to shape the land as needed. Removing slopes can create safe, private terraces and valley walls that prevent all access. Chasms and rivers (not brooks!) create hard barriers, but an open chasm or magma vent can be a source of dangerous creatures. Small hills can serve as vantage points for archers (yours or theirs!), but if carved with stairs leading up from within, they can be quick strategic strongpoints. Narrow valleys can become chokepoints for entrances, where your marksdwarfs can overlook any who come and go. Augmented by constructions below, the terrain becomes your first option for defense.
 
-Do note that as of version 0.40.24 invaders can now climb walls and, in some cases, swim rivers or moats. This limits somewhat the usefulness of natural defences, but with care they can be augmented by constructions and still provide important first-line defences.
+Do note that invaders can climb walls and, in some cases, swim rivers or moats. This limits somewhat the usefulness of natural defences, but with care they can be augmented by constructions and still provide important first-line defences.
 
 Some players take quite a while before their first unpause, using that time to look around and think about the terrain, planning their fortress entrance and envisioning basic defenses.
 
 ##### Walls
 
-Constructing walls around your entrance is the simplest start, and an essential part of fortress defense, but a wall alone is not a complete defense. Currently, no creature can knock down a wall but they can climb on 1 z high walls. Not only does it keep enemies out, your archers can stand on top of the wall and fire down. Keep in mind that this makes them vulnerable to enemy fire. To help protect against that, build fortifications.
+Constructing walls around your entrance is the simplest start, and an essential part of fortress defense, but a wall alone is not a complete defense. Creatures can climb on 1 z high walls. Flying enemies (such as swarms of birds) can fly over a wall, so you might want to build a ceiling to seal off particularly important areas. A siege can include enemies who can knock down walls.
 
-Also, keep in mind that flying enemies (such as swarms of birds) can fly over a wall, so you might want to build a ceiling to seal off particularly important areas.
+Not only does a wall keep most enemies out, your archers can stand on top of the wall and fire down. Keep in mind that this makes them vulnerable to enemy fire. To help protect against that, build fortifications.
 
 ##### Fortifications
 
@@ -118,8 +123,6 @@ Now that dwarves can climb 1z walls, it is possible for dwarves hiding behind fo
 ##### Doors (& Hatches)
 
 Doors are the simplest way to keep an enemy out. (A floor hatch in this sense is just a Z-axis door, and in most ways works the same.) Most creatures will be stopped by any door or hatch, though some others can smash them. With a little tinkering, doors can be made 3 tiles wide or more, but this remains mostly for aesthetics without much practical use, as wagons will still not be able to pass them. You can forbid doors to keep (most) hostile humanoids and creatures out, and your dwarves in.
-
-Additionally doors can specifically be closed only against animals, to keep beloved pets from wandering into enemy fire (they may pile up at the door and use the chance to slip out with a dwarf).
 
 Forbidding all doors and entrances breaks the pathfinding of enemies, making them lurk at the map border where they entered, which can be quite inconvenient in the case of an invisible ambush that then rushes at your fort in just the moment your civilian dwarves move out to, say, cut trees.
 
@@ -157,19 +160,19 @@ Also, some rare creatures can cross fluids, even magma. Nothing but flying creat
 
 #### Remote control
 
-:\***Barriers**
+- **Barriers**
 
 If you link a lever to a door, hatch cover or floodgate, it becomes impossible for your dwarves to open and close it normally. Pulling the lever is the only way to open it. This keeps your dwarves locked in as well as keeping enemies out. (It's unknown if thieves can bypass a closed door once it's linked to a lever or pressure plate.) There is often a frustrating delay between ordering a lever pulled and when a dwarf pulls it, and another shorter one between pulling the lever and the barrier responding.
 
 Any item or creature in an open barrier at the moment it tries to close will not only prevent that barrier from closing, but that "close" signal will be lost. Any lever will have to be pulled twice more - to reset to "open", and then to (try to) close again. This is not the case with drawbridges, which crush anything and everything below them when they close.
 
-:\***Automated barriers & traps**
+- **Automated barriers & traps**
 
 You can automate a barrier or trap by using a pressure plate instead of a lever, but there are complications there. Unless the 'Citizen' setting is set, only "enemies" or wild creatures will trigger a pressure plate; your dwarves and tame animals can walk on it all day long. If the 'Citizen' setting is set, dwarves, diplomats, traders, and tame animals can also activate the pressure plate. No device, trap or barrier, can be constructed in a tile where a pressure plate is - that is the only constructed object that can be there. But with creativity, this can still be a powerful addition to your fortress defense.
 
 ### Traps
 
-''Full article: Trap design
+*Full article: Trap design*
 
 Walls, bridges and fortifications provide barriers that stop intruders. However, the easiest way to *kill* intruders is to use traps. A line of traps can wipe out an entire ambush, and inflict significant damage on a siege. However, be aware that a design using vast numbers of traps has the potential to take some of the fun and challenge out of the game - use accordingly. Also, some creatures avoid traps (kobolds, forgotten beasts) and will simply walk right over them with impunity, unless they fall unconscious or get webbed while on one.
 
@@ -193,7 +196,7 @@ Don't let your dwarves engage the enemy in melee on the walkway. Your dwarves wi
 
 ### Military
 
-''Full article: Military
+*Full article: Military*
 
 A trained, armed, and armored military is the only way to bring the fight to the enemy. Building defenses to keep them safe is easy - keeping your military ready and in position is the tricky part.
 
@@ -211,7 +214,7 @@ Some animals (see below) make excellent, albeit expendable, sentries. In the cas
 
 Any animal (or dwarf) can act as a sentry - if a hidden enemy comes close to them, that enemy may be revealed (depending on the sentry's Observer skill). If that happens, an announcement is generated and the game is paused. Most animals aren't strong enough to take more than one armored goblin warrior, and enemies with bows are even worse. The real purpose of guard animals is to spot thieves. Anything will do here, even a kitten will do the job, and some players prefer not to risk a useful animal. You can also use this as opportunity to pasture some unwanted pets in strategic locations.
 
-Guard animals are a good second line of defense in open entrances after your traps. A wardog can usually tear a thief apart, and will (briefly) delay goblin warriors while you respond. Also, the death of any animal will be announced (but the game will not pause), alerting you to the threat if you were not already aware of it. (Note - Some tamed animals will not fight goblins!)''
+Guard animals are a good second line of defense in open entrances after your traps. A wardog can usually tear a thief apart, and will (briefly) delay goblin warriors while you respond. Also, the death of any animal will be announced (but the game will not pause), alerting you to the threat if you were not already aware of it. (Note - Some tamed animals will not fight goblins!)
 
 Most enemies will go after your animals just as blindly as they attack your dwarves. An expendable chained animal can bait enemies into dangerous passages, even into places unconnected to your fortress. Such an animal chained out on the far side of the map can alert you to ambushes that start there before they threaten your local dwarves.
 
@@ -223,7 +226,7 @@ Note that animals, like dwarves, will obey burrow restrictions and alerts. If no
 
 ### Siege engines
 
-''Full article: Siege engine
+*Full article: Siege engine*
 
 Siege engines take some planning to use effectively, and have a range of about 100 tiles compared to a crossbow's 20 or so. Both catapults and ballistae can be very deadly, but both have their drawbacks -- they take time to reload and can only hit targets at the same z-level, and they are woefully inaccurate in the hands of unskilled operators or when loaded with low-quality bolts. Furthermore, they're manned by civilians, who will abandon their posts should the enemy get too close.
 
@@ -243,7 +246,7 @@ Making smaller enclosures in key areas with underground tunnels leading to them 
 
 - **Lock the front doors.** It takes a truly airtight fortress to keep the entrance open while there are still enemies outside. If there's even one exit, your dwarves will use it. Try testing this while it's safe: Raise the bridges, just like you would in a siege, and designate some trees for cutting. If there's a way out, your woodcutters will find it.
 
-- **Forbid dropped equipment and corpses.** Mark every item on the battlefield as forbidden. This includes any items dropped by dead merchants or scuttled wagons. You can have this done automatically for dwarf and enemy corpses and inventories in the **orders** menu at the **forbid options** .
+- **Forbid dropped equipment and corpses.** Mark every item on the battlefield as forbidden. This includes any items dropped by dead merchants or scuttled wagons. You can have this done automatically for dwarf and enemy corpses and inventories in the **Labor** y -\> *Standing orders* -\> *Sieges and forbidding*.
 
 - **Delete stockpiles and turn off tombs.** As a preemptive measure, you can easily delete your Graveyard stockpiles. Dwarves don't haul things if there's no stockpile to place them in. Turning off or removing coffins stops burials as well.
 
@@ -267,7 +270,7 @@ You will possibly want to build the depot inside your walls/defenses with retrac
 
 A common trade depot design involves *two* separately sealable paths: one from the outside to the depot, and the other from the depot to the inside of the fortress. This "airlock" design helps keep your inner fortress safe even if the trade depot becomes compromised.
 
-The Depot Access command () shows three-tile-wide paths a caravan's wagons can take. Caravans *still appear where those paths meet the edge of the map*, even if they have no wagons (elves don't use them). By choosing a brook bed recessed into the ground, or building floors to block travel around the edge of the map, it is possible to keep a caravan path only a few squares wide at the edge of the board, which is completely separate from all other visitors to the map. In this way you can leave the path to your Depot open all the time with virtually no risk from sieges and random creatures unless they enter one of those few squares.
+The Depot Access command (D) shows three-tile-wide paths a caravan's wagons can take (*this function is missing in the current versions*). Caravans *still appear where those paths meet the edge of the map*, even if they have no wagons (elves don't use them). By choosing a brook bed recessed into the ground, or building floors to block travel around the edge of the map, it is possible to keep a caravan path only a few squares wide at the edge of the board, which is completely separate from all other visitors to the map. In this way you can leave the path to your Depot open all the time with virtually no risk from sieges and random creatures unless they enter one of those few squares.
 
 ### Branching corridors
 
@@ -283,7 +286,7 @@ Another solution to the problem of rapid response time is to make your lever roo
 
 For the truly ambitious, the lever room could be spread over multiple levels, and the pumps could work together to power one or more artificial waterfalls. (Waterfalls work well in this case because their operation is not fortress-critical, and your dwarves like the mist they produce.)
 
-Use Notes to label each lever and attached device and trap clearly - if you come back to a game after a week and can't remember your levers, they are useless (or, worse, dangerous Fun!) Color code your levers with different color mechanisms if that works for you.
+Name each lever, and the attached device if necessary, to indicate what it does. If you come back to a game after a week and can't remember your levers, they are useless (or, worse, ~~dangerous~~ Fun!) Color code your levers with different color mechanisms if that works for you.
 
 ## General Suggestions
 
@@ -297,7 +300,7 @@ For most starts, unless your embark location is very close to the mouth of an op
 
 #### Striking the earth
 
-First, look around. At the terrain, at the animals present. Scan the menu before un-pausing the game at the start, and regularly. More animals will enter the map, constantly and without warning, so keep an eye on visitors.
+First, look around. At the terrain, at the animals present. Scan the u menu before un-pausing the game at the start, and regularly. More animals will enter the map, constantly and without warning, so keep an eye on visitors.
 
 One of your first priorities is to get things underground or otherwise secure, to prevent rot but also to prevent theft. Carving out a channel/moat, or removing the slopes to a hill, or building a wall, or a combination of those will work fine, but better if you don't have an unwanted entrance to wall up later. Soil is very fast to dig out, and just as strong against enemies, but may not be desirable for a later, mature fortress. Balance convenience against your long-range plans and visible threats.
 
@@ -305,24 +308,24 @@ Consider and plan the entrance to your fortress - perhaps a ramp leading down, o
 
 An L-bend, or several, or drops in z-level may provide better security, or a firing platform for siege engines and/or archers. Many complex traps involve several levels beneath the entrance (for drainage of liquids or other diabolical purposes.) Using some of the principles above, it might look something like this...
 
-`####################`\
-`(a)?  (-trap    ...#`\
-`   ?   area-)   . .# (A's/SE)`\
-`################...#`\
-`               #   #`\
-`               #D D#`\
-`               #   # `\
-`          `_(`(Not to Scale)`)\
-`   `\
-` (a)  = bait animal, on ``restraint`\
-`  #   = tunnel walls, above-ground walls, valley walls with slopes removed, and/or channels`\
-`  ?   = ramp up, drawbridge, moat, defensive structures, or combination of all`\
-`traps = mechanic's traps and/or complex death traps, as you wish.`\
-` ...`\
-` . .  = area open to sky, to prevent "dwarves staying inside" from archers outside entrance`\
-` ...`\
-`  D   = wardog on ``restraint`\
-`(A's/SE) = future site for archers and/or ``siege engines`` (planning ahead)`
+    ####################
+    (a)?  (-trap    ...#
+       ?   area-)   . .# (A's/SE)
+    ################...#
+                   #   #
+                   #D D#
+                   #   #
+              (Not to Scale)
+
+     (a)  = bait animal, on restraint
+      #   = tunnel walls, above-ground walls, valley walls with slopes removed, and/or channels
+      ?   = ramp up, drawbridge, moat, defensive structures, or combination of all
+    traps = mechanic's traps and/or complex death traps, as you wish.
+     ...
+     . .  = area open to sky, to prevent "dwarves staying inside" from archers outside entrance
+     ...
+      D   = wardog on restraint
+    (A's/SE) = future site for archers and/or siege engines (planning ahead)
 
 The above might be longer or shorter, partially or entirely above or below ground, or have more turns. The "inner fortress" might only be a Trade Depot, with another similar entryway behind that. Instead of the turn, it might drop a level and dive below the sight of the Siege Engines. Since the first caravan won't arrive for at least 6 months, you can dig a 1-tile wide tunnel for now, or a staircase, and then dig out to another location for a more formal entrance. This is only a very rough, very simple example of combining possibilities.
 
@@ -360,5 +363,10 @@ There are many, *many* ways to play DF. Some players play hard and tight, and so
 
 ### Losing is fun
 
+There is no final "win" in *Dwarf Fortress*, no end point or Easter egg that says "Congratulations!" - it just keeps going, until, inevitably and unavoidably, you will lose. That's part of the game. So it's all about how you play until then, and finding your type of fun in that process.
+
+### "Fun" vs. security
+
+
 ---
-⚠️ Conteúdo truncado (49873 bytes = ~12468 tokens). Para o artigo completo, visite [Defense guide](https://dwarffortresswiki.org/index.php/Defense_guide).
+*Parte 1 de 2 de «Defense guide». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Defense_guide*

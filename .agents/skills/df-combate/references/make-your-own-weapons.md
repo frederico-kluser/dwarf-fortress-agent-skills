@@ -1,10 +1,17 @@
 # Make your own weapons
 
-> Fonte: [Make your own weapons](https://dwarffortresswiki.org/index.php/Make_your_own_weapons) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Make your own weapons](https://dwarffortresswiki.org/index.php/Make_your_own_weapons) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Step-by-step**
+- **Deconstruct the initial wagon for the 3 wood it provides. Build a wood furnace with the copper nugget. Make 1 ash and 2 charcoal from the wood. Deconstruct the wood furnace. Build a smelter with the ash (a fire-safe "bar") . Smelt the copper ore into 4 copper bars. Deconstruct the smelter. Build a metalsmith's forge with the anvil and (fire safe) ash bar. Forge a copper battle axe. Chop down a tree (you should get more than a couple logs) Build a wood furnace with a copper bar. Make 1 charcoal. Forge a copper pick. You currently have: 1 axe 1 pick a forge (made with the anvil and ash bar) a wood furnace (made with a copper bar) 1 spare copper bar (plus another tied up in the wood furnace) & a pile of logs ... proceed as normal. (A copper crossbow and bolts might be a good idea, but ymmv.)**
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Making your own weapons** on embark can save embark points and kick-start your metal industry. It can also serve as a minimalist embark and add an early-game challenge for advanced players. Just keep in mind, that you'll need time to forge your axes and picks, potentially leaving your wood cutter and miner standing around waiting. Also, you'll probably have other concerns during your first year; choose wisely.
 
-Nevertheless, making your own weapons is quite easy and the embark savings can be quite considerable, allowing you to concentrate points on other skills or supplies, or even an early steel-equipped military. Occasionally, a civilization may not have access to an iron anvil but, curiously, has access to a steel one which costs 300 points; any savings are much harder to obtain with such a large expenditure up-front. Copper is the cheapest material for creating mining pick axes and wood-cutting battle axes. However, Bronze is a better material for creating military grade weapons and armor if your civilization has access to it. \_\_ToC\_\_
+Nevertheless, making your own weapons is quite easy and the embark savings can be quite considerable, allowing you to concentrate points on other skills or supplies, or even an early steel-equipped military. Occasionally, a civilization may not have access to an iron anvil but, curiously, has access to a steel one which costs 300 points; any savings are much harder to obtain with such a large expenditure up-front. Copper is the cheapest material for creating mining pick axes and wood-cutting battle axes. However, Bronze is a better material for creating military grade weapons and armor if your civilization has access to it.
 
 **Note** - All the below instructions include *"disassemble the furnace".* This is a hold-over from the minimalist challenge, and only necessary if you need to recover that one building material to then build your smelter or forge. If your embark layout can afford a couple of fire-safe stones (or a starting pick to mine the same), keep the furnace intact for later and go about your business without worrying about deconstructing anything too soon.
 
@@ -65,8 +72,7 @@ For the hardcore survivalist dwarves only.
 
 Start out with *only*
 
-:\* 1 iron anvil
-
-:\* 1 copper ore.
+- 1 iron anvil
+- 1 copper ore.
 
 And figure it out from there. Real dwarves won't even need to peek.

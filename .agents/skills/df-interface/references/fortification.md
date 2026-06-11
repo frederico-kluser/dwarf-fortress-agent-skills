@@ -1,6 +1,8 @@
 # Fortification
 
-> Fonte: [Fortification](https://dwarffortresswiki.org/index.php/Fortification) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Fortification](https://dwarffortresswiki.org/index.php/Fortification) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Fortification** is a construction that allows the passage of projectiles \[in and out\] and liquids, mist, steam, webs, fire, miasma and smoke, but in theory not creatures, making them an important part in a fortress's defense. Unfortunately, birds CAN in fact make it inside of and then through fortifications, so if you're playing in an agitated wilds biome, take special care. An archer must have a skill level of accomplished or higher to shoot through fortifications from a distance; otherwise they must stand directly next to the fortification to shoot through it. An accomplished level archer or higher can shoot through multiple fortifications, even if the fortifications have space between them.
 
@@ -8,7 +10,9 @@ Fortifications allow liquids to pass through in any direction except vertically 
 
 ## Building Fortifications
 
-Fortifications can be built one of two ways. Firstly, they can be carved from constructed walls or smoothed natural walls by pressing esignation and then Carve ortifications. The second way is through the construction menu: First press , then followed by ortifications. As with most buildings, this will require one unit of wood, stone, metal, or glass. Note that constructed fortifications do *not* create walkable floors above them, while carved fortifications do.
+Probably stopped a goblin siege once. Possibly.
+
+Fortifications can be built one of two ways. Firstly, they can be carved from constructed walls or smoothed natural walls by pressing v (engrave) and then f (fortification). The second way is through the construction menu: First press b, then n followed by F (fortifications). As with most buildings, this will require one unit of wood, stone, metal, or glass. Note that constructed fortifications do *not* create walkable floors above them, while carved fortifications do.
 
 Carved fortifications must be carved by a dwarf with the Stonecutter labor enabled. Constructed fortifications must be built by a dwarf with a corresponding labor to the material used.
 
@@ -16,6 +20,8 @@ Carved fortifications must be carved by a dwarf with the Stonecutter labor enabl
 - Fortifications *carved* out of a wall (whether natural or constructed) are *covered* - they retain most properties of the original wall, including a floor one level above. Just like with the original wall, this floor is *not* a "construction", even if it's "Gabbro block floor", thus other constructions can be readily placed on top of a carved fortification.
 
 ## Uses
+
+A fortification
 
 Flying creatures can of course fly over fortifications (but not through). If there is open space above your defense positions, you can either *carve* them out of walls in the first place or build floor tiles on the Z-level above as a roof against fliers. This is generally sound advice as dwarves don't like rain anyway and strange accidents can cause the weirdest things to fall from above. Note that fliers can diagonally bypass a fortification if the tile above the fortification doesn't have a floor.
 
@@ -31,13 +37,17 @@ In adventurer mode you can throw any item (such as bows, arrows, axes, hammers, 
 
 ## Bugs
 
-- Fully submerged (i.e. 7/7 depth) fortifications will **not** block the passage of creatures that swim in water (or magma) - wall grates and vertical bars work, but they are vulnerable to building destroyers.
-- A partially-submerged fortification (even with 6/7 depth) completely blocks the passage of creatures, despite the fortification being invisible, however if the water is flowing, it can push creatures through fortifications, even if they are not fully submerged (that is at least true at 2-3/7 depth).
-- Items also can be pushed or dropped into a fortification, and remain inaccessible until it's removed.
-- **Creatures can now jump through fortifications**
+- Fully submerged (i.e. 7/7 depth) fortifications will **not** block the passage of creatures that swim in water (or magma) - wall grates and vertical bars work, but they are vulnerable to building destroyers.Bug:3327
+- A partially-submerged fortification (even with 6/7 depth) completely blocks the passage of creatures, despite the fortification being invisible, however if the water is flowing, it can push creatures through fortifications, even if they are not fully submerged (that is at least true at 2-3/7 depth). Bug:5458
+- Items also can be pushed or dropped into a fortification, and remain inaccessible until it's removed. Bug:2163
+- **Creatures can now jump through fortifications** Bug:8160
 
 - Additionally, there are other conditions that may allow a creature to pass through a fortification, such as being thrown by a wrestler, tossed by a bridge, or dropped from above. Should a creature end up in a fortification tile, it can path and move out of the fortification to any adjacent passable tile. If a creature is killed by an attack which knocks it into a fortification, its corpse and equipment will become lodged inside, requiring mining or deconstructing the fortification to remove the items.
-  - When this happens to a dwarf with baby, the baby gets dropped and then cannot leave the fortification on its own (unless one happens to grow into child while there). Removing the fortification is not possible when a baby is sitting there.
-- Marksdwarves often fail to register that there are enemies on the other side of a fortification unless they (the dwarves) are directly next to the fortification. Having a single-tile hall behind can help. Statues can be used as "soft" impassable tiles for this purpose: dwarves can dodge into one, but won't try to walk into such a tile normally.
+  - When this happens to a dwarf with baby, the baby gets dropped and then cannot leave the fortification on its own (unless one happens to grow into child while there). Removing the fortification is not possible when a baby is sitting there. Bug:2160
+- Marksdwarves often fail to register that there are enemies on the other side of a fortification unless they (the dwarves) are directly next to the fortification. Bug:2697 Having a single-tile hall behind can help. Statues can be used as "soft" impassable tiles for this purpose: dwarves can dodge into one, but won't try to walk into such a tile normally.
 
 - \[to be checked\] if a wall is deconstructed while designated to be Fortified, the Fortifying job can still be done, (building a fortification instead of turning a wall to one)
+
+|  |
+|----|
+| "Fortification" in other / Languages / Dwarven / : / dumed / Elven / : / acene / Goblin / : / osma / Human / : / uvno |

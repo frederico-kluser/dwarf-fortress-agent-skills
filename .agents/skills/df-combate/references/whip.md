@@ -1,6 +1,8 @@
 # Whip
 
-> Fonte: [Whip](https://dwarffortresswiki.org/index.php/Whip) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Whip](https://dwarffortresswiki.org/index.php/Whip) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *For a comparison of different weapons, see Weapon.*
 
@@ -12,4 +14,19 @@ Unlike every other weapon in the game, whips take 8 ticks to attack, 4 to prepar
 
 ## Bugs
 
-- Whips currently cut through steel armor like butter. This is more a natural consequence of the combat system and how armor piercing is defined than a bug, but it is dutifully tracked on the tracker anyway.
+- Whips currently cut through steel armor like butter. This is more a natural consequence of the combat system and how armor piercing is defined than a bug, but it is dutifully tracked on the tracker anyway.Bug:2712
+
+|  |
+|----|
+| "Whip" in other / Languages / Dwarven / : / bomrek / Elven / : / baci / Goblin / : / sox / Human / : / uthret |
+
+    [ITEM_WEAPON:ITEM_WEAPON_WHIP]
+    [NAME:whip:whips]
+    [SIZE:100]
+    [SKILL:WHIP]
+    [TWO_HANDED:27500]
+    [MINIMUM_SIZE:22500]
+    [MATERIAL_SIZE:1]
+    [ATTACK:BLUNT:1:10:lash:lashes:NO_SUB:5000]
+        [ATTACK_PREPARE_AND_RECOVER:4:4]
+        [ATTACK_FLAG_BAD_MULTIATTACK]

@@ -1,6 +1,8 @@
 # Arrow
 
-> Fonte: [Arrow](https://dwarffortresswiki.org/index.php/Arrow) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Arrow](https://dwarffortresswiki.org/index.php/Arrow) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Arrows** are a type of ammunition used with bows. They consist of a wooden, bone, or metal shaft topped with a pointed head (unlike in real life, arrows are made from only one material). Arrows are only suitable for use with bows; they cannot be fired from crossbows. Bows aren't used much (if at all) in fortress mode since higher-quality native crossbows and bolts perform comparably or better. Therefore, arrows are of limited use, though they can serve as ammunition for bow-filled weapon traps. Arrows can also be thrown or used in melee, although there are better weapons. Dwarves cannot craft arrows, leaving potential bowdwarves no choice but to scrounge low-quality arrows from invaders and caravans.
 
@@ -10,4 +12,15 @@ In adventure mode, elf and human players can wield bows (and therefore use arrow
 
 ## Bugs
 
-- If a squad is assigned multiple ammo types, dwarves with "individual choice ranged" carry the wrong type of ammo.
+- If a squad is assigned multiple ammo types, dwarves with "individual choice ranged" carry the wrong type of ammoBug:1374.
+
+|  |
+|----|
+| "Arrow" in other / Languages / Dwarven / : / feb / Elven / : / lari / Goblin / : / ost / Human / : / nek |
+
+    [ITEM_AMMO:ITEM_AMMO_ARROWS]
+    [NAME:arrow:arrows]
+    [CLASS:ARROW]
+    [SIZE:150]
+    [ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
+        [ATTACK_PREPARE_AND_RECOVER:3:3]

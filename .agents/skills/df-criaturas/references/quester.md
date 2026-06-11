@@ -1,6 +1,10 @@
 # Quester
 
-> Fonte: [Quester](https://dwarffortresswiki.org/index.php/Quester) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Quester](https://dwarffortresswiki.org/index.php/Quester) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+ 
 
 **Questers** are foreign representatives of civilizations, families and other such entities, that have been sent off to various missions. They are essentially non-player adventurers acting on behalf of their parent entity, slaying some beast or retrieving artifacts the entity has laid a claim to.
 
@@ -10,6 +14,8 @@ Questers behave much like agents, only in less-covert ways, usually acting as a 
 
 - They may openly demand that you hand it to them. Failure to comply may result in one of the dire consequences below.
 - They may leave, sneak back in and attempt to steal it. If discovered, they may run away or fight back, depending on their temperament
+
+The Human Axeman Ethro Lideejed was spotted sneaking around! "I'll live to fight another day!"
 
 - They may leave... and come back with an army to persuade you.
 

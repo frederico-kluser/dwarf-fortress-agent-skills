@@ -1,18 +1,18 @@
 # Starting build
 
-> Fonte: [Starting build](https://dwarffortresswiki.org/index.php/Starting_build) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Starting build](https://dwarffortresswiki.org/index.php/Starting_build) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*This is not a tutorial, a FAQ, or a new player's guide. This is a mildly advanced theoretical treatment for someone ready to take the plunge and make all the decisions about their own fortress. The following are intended for beginners:*
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-:\*Quickstart guide
+*This is not a tutorial, an FAQ, or a new player's guide. This is a mildly advanced theoretical treatment for someone ready to take the plunge and make all the decisions about their own fortress. The following are intended for beginners:*
 
-:\*Beginner Flowchart
-
-:\*Beginner Checklist
+- Quickstart guide
+- Beginner Flowchart
+- Beginner Checklist
 
 *For an explanation of the interface for starting out, see Embark.*
 
-A **starting build** is a personal strategy for choosing the initial supplies, equipment, and skills of your initial seven dwarves when starting a new game in fortress mode (see Sample Starting Builds). The skills and items which you assign to your dwarves will have a large impact on life in your new fortress, especially in its first year.
+A **starting build** is a personal strategy for choosing the initial supplies, equipment, and skills of your initial seven dwarves, when starting a new game in fortress mode (see Sample Starting Builds). The skills and items which you assign to your dwarves will have a large impact on life in your new fortress, especially in its first year.
 
 This page attempts to provide a discussion about how and why you make the choices on what you bring with you. This page is not an explanation of the mechanics of doing so, see the embark page for an explanation of the interface itself. This page assumes you have already made certain decisions, such as where you plan on settling, and that you are looking at the Prepare Carefully screen.
 
@@ -24,7 +24,7 @@ There are two components of a starting build: skills and items (which includes a
 
 Skills for your initial dwarves determine how quickly they will work early on, what industries you are able to start with skilled workers, how well you can defend your dwarves early on, and what the quality of various goods they produce will be, and possibly many other considerations. This page considers in detail how you might go about choosing skills for your starting dwarves, and examines the multiple competing perspectives from which you can make that decision.
 
-The items that your dwarves bring with you can be tailored a number of ways. There are trade-offs to cheaper and more expensive alternatives, and reasons why you might choose either. This section explores the nature of these trade-offs and the reasons for making a decision. It also looks at optimizing goods brought in more general contexts.
+The items that your dwarves bring with them can be tailored a number of ways. There are trade-offs to cheaper and more expensive alternatives, and reasons why you might choose either. This section explores the nature of these trade-offs and the reasons for making a decision. It also looks at optimizing goods brought in more general contexts.
 
 Starting builds can and should vary based upon a number of other variables. Where you choose to settle will dictate what raw materials are available, and thus require different skill sets to utilize, not to mention different threats from native wildlife based on biome, savagery, and alignment. Which dwarven civilization you chose will restrict the materials with which you can start. Making choices about these variables is not part of a starting build. What you choose for skills and items because of these choices is part of your starting build, and so some general guidelines about different environments is given last.
 
@@ -38,23 +38,15 @@ With only 7 dwarves, you can't take every skill, so you must balance what you do
 
 A brief list of considerations governing skill choice:
 
-:\* Maximizing starting skill ranks vs. generalizing and having more skills covered at lower levels
-
-:\* Balancing multiple skills for a single dwarf, so they aren't constantly needed for two different tasks at critical periods
-
-:\* Military vs economic needs
-
-:\* Your goals vs "basic survival needs" to keep your fortress healthy and happy
-
-:\* Speed that a skill can be trained in game
-
-:\* Demand for a skill during a game
-
-:\* Whether quality or speed are significant considerations for tasks/final product
-
-:\* Balancing the desire to create wealth *(with high-value products)* with the need to maintain morale *(with low-value but commonly-used products, like beds, which normally are made from wood)*
-
-:\* most importantly - *your playstyle* - what **you** think is "fun"!
+- Maximizing starting skill ranks vs. generalizing and having more skills covered at lower levels
+- Balancing multiple skills for a single dwarf, so they aren't constantly needed for two different tasks at critical periods
+- Military vs economic needs
+- Your goals vs "basic survival needs" to keep your fortress healthy and happy
+- Speed that a skill can be trained in game
+- Demand for a skill during a game
+- Whether quality or speed are significant considerations for tasks/final product
+- Balancing the desire to create wealth *(with high-value products)* with the need to maintain morale *(with low-value but commonly-used products, like beds, which normally are made from wood)*
+- most importantly - *your playstyle* - what **you** think is "fun"!
 
 #### Breadth vs. Depth
 
@@ -88,7 +80,7 @@ That said, there are some skills which will be **used**, to one extent or anothe
   - Inexperienced miners work very slowly. Mining can be leveled up quite quickly by mining soil, but taking at least one dwarf with some starting skill in mining is recommended in most cases.
 - Carpentry, Wood cutting - beds can only be produced from wood (rare moods aside). This skill is also quite useful for producing bins and barrels.
   - It's best not to assign carpentery and wood cutting to the same dwarf. Doing so creates a bottleneck early on, when carpentry is your only reliable industry.
-- Masonry - to fashion dwarven furniture from stone, and build buildings and constructions from stone.
+- Stone carving - to fashion dwarven furniture from stone, and build buildings and constructions from stone.
   - Due to the vast supply of loose stones, masons can be easily trained by repeating jobs at a mason's workshop.
 - Growing - your farmers' work echoes throughout so many other tasks, it's stunning.
   - Skilled planters produce larger stacks of crops, which means more food, more booze, more cloth, more dye, ....
@@ -96,7 +88,7 @@ That said, there are some skills which will be **used**, to one extent or anothe
   - Planters with low skill levels can decrease your seed stockpiles - each seed planted by an untrained grower will usually result in a single replacement seed, but may produce no seed at all if the crop fails. When you start out with only a handful of seeds, a few losses can easily impact the sustainability of your fortress.
 - Brewing, Cooking - A skilled brewer produces alcohol more quickly. Likewise, a skilled cook prepares meals more quickly (and more appealingly). However, most food can be eaten raw, and your dwarves can exist for a time on water.
 - Mechanic - If you want traps, and most people will. Also needed for most machinery. Mechanisms sell for a high price as a bonus.
-- Building Designer - Mandatory for some buildings and constructions, but skill only improves speed a tad and increases structure value.
+- Mason - Mandatory for some buildings and constructions, but skill only improves speed a tad and increases structure value.
 - Appraiser - you will use this whenever you trade with a caravan. Without it, the game won't tell you how much anything is worth, making trading difficult. It's almost always recommended to start with a dwarf with Novice (1 pt) Appraiser skill.
 - Clothier, Leatherworker - At least one of these skills will be necessary to supply your dwarves with new clothing. Articles of clothing count as finished goods with quality modifiers, and clothes can be traded easily (either before or after your dwarves wear them).
 
@@ -205,7 +197,7 @@ It is possible to make all your alcohol by harvesting aboveground plants, if hig
 
 Barring a convenient cave, you're going to have to do something for shelter. Shelter is your first defense against roving creatures, keeping them away from where your dwarves are working so they don't spam job cancellations and strew items all over the place. (As you might guess, most 'convenient caves' aren't actually that convenient, as they tend to have residents). Basic walls that allow you egress won't stop a dedicated invader, but you *probably* won't see those until year 2 or 3, so you have a little time to develop more elaborate defenses.
 
-Food outside will also spoil a lot faster than food inside, so making a cellar of some sort to store your food in will increase the longevity of your food supplies. The rate at which food spoils depends on ambient temperature, so the urgency of making a cellar will depend on where you settled. Food doesn't rot on stockpiles or in minecarts, though vermin may consume it. Fat or alcohol doesn't rot, however. The only way you can avoid thinking about food storage in the first year is if you collect food and make alcohol as needed - i.e., by using an herbalist to collect local plants - which can avoid needing to mine at all.
+Food outside will also spoil a lot faster than food inside, so making a cellar of some sort to store your food in will increase the longevity of your food supplies. The rate at which food spoils depends on ambient temperature, so the urgency of making a cellar will depend on where you settled.\[Verify\] Food doesn't rot on stockpiles or in minecarts, though vermin may consume it. Fat or alcohol doesn't rot, however. The only way you can avoid thinking about food storage in the first year is if you collect food and make alcohol as needed - i.e., by using an herbalist to collect local plants - which can avoid needing to mine at all.
 
 Delving a shelter requires mining, which means having picks to dig with. One can always bring one or more picks at embark, but it's also possible to bring the supplies necessary to make them. See finished product or do it yourself.
 
@@ -309,5 +301,6 @@ Hunters should be replaced with fisherdwarves and a fish cleaner (although the l
 
 ### Desert, Glaciers, and Barren
 
+
 ---
-⚠️ Conteúdo truncado (48552 bytes = ~12138 tokens). Para o artigo completo, visite [Starting build](https://dwarffortresswiki.org/index.php/Starting_build).
+*Parte 1 de 2 de «Starting build». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Starting_build*

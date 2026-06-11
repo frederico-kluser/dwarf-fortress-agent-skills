@@ -1,49 +1,60 @@
 ---
 name: df-interface
-description: Teclas, menus, designações e ícones da interface v50/Premium. Use quando o jogador perguntar como fazer algo na tela, qual tecla apertar ou como navegar os menus do jogo. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Interface do Dwarf Fortress v50/Premium: teclas, menus, designações, ícones e atalhos. Use quando o usuário perguntar (inclusive em português) como fazer algo na tela, qual tecla apertar, ou como navegar os menus. Termos EN: interface, control, keybinding, menu, designation, hotkey, UI shortcut. Funciona para Adventure Mode e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Interface (Dwarf Fortress)
+# DF Interface (Dwarf Fortress)
 
-Teclas, menus, designações e ícones da interface v50/Premium. Use quando o jogador perguntar como fazer algo na tela, qual tecla apertar ou como navegar os menus do jogo. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-interface" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-interface "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 45)
-- Graphic set → `references/graphic-set.md`
-- Adventurer mode → `references/adventurer-mode.md`
-- Menu → `references/menu.md`
-- Macros and keymaps → `references/macros-and-keymaps.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 56 artigos — use o search.py para o resto)
 - Labor → `references/labor.md`
-- Manager → `references/manager.md`
-- Color scheme → `references/color-scheme.md`
-- Status → `references/status.md`
-- Controls guide → `references/controls-guide.md`
-- Status icon → `references/status-icon.md`
-- Note → `references/note.md`
-- Thoughts and preferences → `references/thoughts-and-preferences.md`
-- Object testing arena → `references/object-testing-arena.md`
-- Ramp → `references/ramp.md`
+- Adventurer mode → `references/adventurer-mode.md`
+- Noble → `references/noble.md`
+- Justice → `references/justice.md`
+- Building → `references/building.md`
 - Fortification → `references/fortification.md`
-- Designations menu → `references/designations-menu.md`
-- Traffic → `references/traffic.md`
-- Designation flags in DF memory → `references/designation-flags-in-df-memory.md`
+- Embark → `references/embark.md`
+- Minecart → `references/minecart.md`
+- Ramp → `references/ramp.md`
 - Unit list → `references/unit-list.md`
-- Z-axis → `references/z-axis.md`
+- Manager → `references/manager.md`
+- Object testing arena → `references/object-testing-arena.md`
+- Stocks → `references/stocks.md`
+- Standing orders → `references/standing-orders.md`
 - Channel → `references/channel.md`
-- Civilization and World Info → `references/civilization-and-world-info.md`
-- Site finder → `references/site-finder.md`
-- Reports → `references/reports.md`
-- World painter → `references/world-painter.md`
-- Profile → `references/profile.md`
+- Location → `references/location.md`
+- Work orders → `references/work-orders.md`
+- Dwarf fortress mode → `references/dwarf-fortress-mode.md`
+- Forbid → `references/forbid.md`
+- Status icon → `references/status-icon.md`
 - Announcement → `references/announcement.md`
-- Frames per second → `references/frames-per-second.md`
+- Status → `references/status.md`
+- Smoothing → `references/smoothing.md`
+- Civilization and World Info → `references/civilization-and-world-info.md`
 - Digging designation canceled → `references/digging-designation-canceled.md`
-- Nobles screen → `references/nobles-screen.md`
+- Menu → `references/menu.md`
+- Traffic → `references/traffic.md`
+- Designations menu → `references/designations-menu.md`
+- Named objects → `references/named-objects.md`
+- Objects → `references/objects.md`
 
-*...e mais 15 artigos (use o search.sh para encontrá-los)*
+*…e mais 26 artigos (use o search.py).*

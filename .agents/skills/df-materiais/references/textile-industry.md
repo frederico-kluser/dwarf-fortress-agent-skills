@@ -1,6 +1,12 @@
 # Textile industry
 
-> Fonte: [Textile industry](https://dwarffortresswiki.org/index.php/Textile_industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Textile industry](https://dwarffortresswiki.org/index.php/Textile_industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+\
+
+*Textile industry flowchart.*
 
 The **textile industry** involves making thread, cloth, clothing, bags, ropes and crafts out of plant fiber, silk, wool, and, to a limited extent, hair. A textile industry is one way to keep your dwarves clothed and happy (their starting clothing will slowly wear away, and high-value replacements boost happiness), and can be a very lucrative option as a wealth industry, especially if the goods are high-quality. The best choice for textile trade goods are dresses and robes because they have the highest base value. A textile industry is also important for healthcare: cloth and thread are needed for bandages and suturing respectively, although the necessary materials can normally be acquired via caravans too.
 
@@ -20,29 +26,181 @@ For easy reference, the plants are listed below:
 
 Thread Plants
 
-| Plant | Type | Grows |  | Biome | Season |  |  |  | Other uses |
-|----|----|----|----|----|----|----|----|----|----|
-| Wet | Dry | Spring | Summer | Autumn | Winter |  |  |  |  |
-| Pig tail | Underground | X | X | Subterranean water |  | X | X |  | alcohol |
-| Rope reed | Above ground | X |  | Not Freezing | X | X | X | X | alcohol |
-| Flax | Above ground |  | X | Grassland, Savanna | X | X | X | X | flour, oil |
-| Jute | Above ground |  | X | Tropical | X | X | X | X | none |
-| Hemp | Above ground |  | X | Temperate | X | X | X | X | flour, oil |
-| Cotton | Above ground |  | X | Tropical | X | X | X | X | oil |
-| Ramie | Above ground |  | X | Tropical | X | X | X | X | none |
-| Kenaf | Above ground |  | X | Tropical | X | X | X | X | oil |
-|  |  |  |  |  |  |  |  |  |  |
+Plant
+Type
+Grows
+Biome
+Season
+Other uses
+
+Wet
+Dry
+Spring
+Summer
+Autumn
+Winter
+
+Pig tail
+Underground
+X
+X
+Subterranean water
+
+X
+X
+
+alcohol
+
+Rope reed
+Above ground
+X
+
+Not Freezing
+X
+X
+X
+X
+alcohol
+
+Flax
+Above ground
+
+X
+Grassland, Savanna
+X
+X
+X
+X
+flour, oil
+
+Jute
+Above ground
+
+X
+Tropical
+X
+X
+X
+X
+none
+
+Hemp
+Above ground
+
+X
+Temperate
+X
+X
+X
+X
+flour, oil
+
+Cotton
+Above ground
+
+X
+Tropical
+X
+X
+X
+X
+oil
+
+Ramie
+Above ground
+
+X
+Tropical
+X
+X
+X
+X
+none
+
+Kenaf
+Above ground
+
+X
+Tropical
+X
+X
+X
+X
+oil
 
 Dye Plants
 
-| Plant | Dye | Colour |  | Type | Grows |  | Biome | Season |  |  |  |
-|----|----|----|----|----|----|----|----|----|----|----|----|
-| Wet | Dry | Spring | Summer | Autumn | Winter |  |  |  |  |  |  |
-| Dimple cup | Dimple Dye | Midnight Blue |     | Underground | X | X | Subterranean water | X | X | X | X |
-| Blade weed | Emerald Dye | Emerald |     | Above ground |  | X | Not Freezing | X | X | X | X |
-| Hide root | Redroot Dye | Red |     | Above ground |  | X | Not Freezing | X | X | X | X |
-| Sliver barb | Sliver Dye | Black |     | Above ground |  | X | Evil, Not Freezing | X | X | X | X |
-|  |  |  |  |  |  |  |  |  |  |  |  |
+Plant
+Dye
+Colour
+Type
+Grows
+Biome
+Season
+Special
+
+Wet
+Dry
+Spring
+Summer
+Autumn
+Winter
+
+Dimple cup
+Dimple Dye
+Midnight Blue
+   
+Underground
+X
+X
+Subterranean water
+X
+X
+X
+X
+grows slowly
+
+Blade weed
+Emerald Dye
+Emerald
+   
+Above ground
+
+X
+Not Freezing
+X
+X
+X
+X
+(baseline)
+
+Hide root
+Redroot Dye
+Red
+   
+Above ground
+
+X
+Not Freezing
+X
+X
+X
+X
+low value
+
+Sliver barb
+Sliver Dye
+Black
+   
+Above ground
+
+X
+Evil, Not Freezing
+X
+X
+X
+X
+brewable
 
 (\*) "Wet" and "Dry" determine where plants are found in proximity to watercourses when gathering wild plants, and do not affect farm plots.
 
@@ -68,13 +226,13 @@ The raw materials for a textile industry can be acquired via trading, as caravan
 
 ## Thread
 
-Once you have the basic materials, you are ready to process them into thread. Crops, wool, and hair use one of two jobs under plant processing at a farmer's workshop: you either rocess the plants, or pin the wool or hair. Making thread out of silk is done in one step: if there are spider webs on the map, dwarves with the weaving labor enabled will gather the webs and automatically spin them into silk thread. Note, however, that this applies to giant cave spider silk as well, and that collecting it benefits from military protection.
+Once you have the basic materials, you are ready to process them into thread. Crops, wool, and hair use one of two jobs under plant processing at a farmer's workshop: you either process the plants, or Spin the wool or hair. Making thread out of silk is done in one step: if there are spider webs on the map, dwarves with the weaving labor enabled will gather the webs and automatically spin them into silk thread. Note, however, that this applies to giant cave spider silk as well, and that collecting it benefits from military protection.
 
-Thread can be dyed, which increases its value as well as the value of anything woven from it (cloth can also be dyed directly, see below). Thread's primary use is for suturing at a hospital, and for decorating finished clothing - otherwise it is an intermediate good that needs to be woven into cloth and, finally, the finished product. For animal hair, though, thread itself is the finished product.
+Thread can be dyed, which increases its value, as well as the value of anything woven from it (cloth can also be dyed directly, see below). Thread's primary use is for suturing at a hospital, and for decorating finished clothing - otherwise it is an intermediate good that needs to be woven into cloth and, finally, the finished product. For animal hair, though, thread itself is the finished product.
 
 ## Cloth
 
-By default, any non-hair thread produced is automatically queued up for weaving at a loom, but this can be changed with standing orders under , and may be necessary in the case of giant cave spider webs. Plant fibers will be queued for weaving into cloth as soon as they are processed at the farmer's workshop. Every item of thread woven produces one item of cloth. If you prefer to create dyed cloth by dyeing the thread beforehand, you may want to set workshop Orders so that dwarves only weave dyed thread. Cloth can still be dyed after weaving.
+By default, any non-hair thread produced is automatically queued up for weaving at a loom, but this can be changed with standing orders under o, and may be necessary in the case of giant cave spider webs. Plant fibers will be queued for weaving into cloth as soon as they are processed at the farmer's workshop. Every item of thread woven produces one item of cloth. If you prefer to create dyed cloth by dyeing the thread beforehand, you may want to set workshop Orders so that dwarves only weave dyed thread. Cloth can still be dyed after weaving.
 
 ## Clothes and cloth goods
 
@@ -90,7 +248,7 @@ Cloth can also be used to make cloth crafts at a craftsdwarf's workshop, which i
 
 ## Size
 
-To create differently sized clothes, request the clothes to be made from their respective workshops as usual. Afterwards, go back to the main workshop menu and look at the etails of the issued job. ilter for the race you want to make clothing for and press twice.
+To create differently sized clothes, request the clothes to be made from their respective workshops as usual. Afterwards, go back to the main workshop menu and look at the details of the issued job. filter for the race you want to make clothing for and press enter twice.
 
 ## Dyeing
 
@@ -106,18 +264,23 @@ Dye can then be applied at a dyer's shop by a dyer.
 
 Clothes and cloth goods can have many modifiers, so it can be difficult to determine exactly how to produce the most valuable goods. Despite their complexity, cloth goods follow many of the same rules for item value calculations as other goods. Notably, the cloth, thread, and embroidery are calculated like decorations, while dyes are just added directly. The specific formula for a cloth item's value is as follows:
 
-[TABLE]
+|  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|
+|  | item | cloth | thread | cloth/thread dye | embroidery | embroidery dye |
+| Summed Elements | (type \* material \* quality) | (decoration \* material \* quality) | (decoration \* material) | (powder \* material \* quality) | (decoration \* material \* quality) | (powder \* material \* quality) |
+| Values | Type: Inherent value of item;Material: Material value of cloth used to make the item; Quality: 1-5,12,or 120 (for artifacts), influenced by the clothier skill of the item maker | Decoration: 10; Material: Material value of cloth used to make the item; Quality: 1-5 or 12, influenced by the weaver skill of the cloth maker | Decoration: 10; Material: Material value of thread used to make the cloth | Powder: 1; Material: Milled value of plant used to make dye; Quality: 1-5 or 12, influenced by the dyer skill of the dye maker | Decoration: 10, Material: Material value of cloth used for embroidery, ignoring cloth quality; Quality: 1-5,12,or 120 (for artifacts), influenced by the clothier skill of the embroiderer | Powder: 1; Material: Milled value of plant used to make dye; Quality: 1-5 or 12, influenced by the dyer skill of the dye maker |
 
-**Cloth Item Value**
+**Cloth Item Value** {border="1" style="border: 1px solid black; border-spacing: 0; margin: 1em auto; text-align:center; border-collapse: collapse;"}
 
 Note that thread does not have a quality modifier, and the quality of cloth used in an embroidered design is ignored. The formula can be simplified (to use fewer terms) as:
 
-\* ( +  + ) +  +  +
+item_material \* (item_type \* item_quality + 10 \* item_cloth_quality + 10) + item_dye_material \* item_dye_quality + 10 \* embroidery_material \* embroidery_quality + embroidery_dye_material \* embroidery_dye_quality
 
 The formula is quite complicated, so use this example.
 
 *This is an **exceptional** pig tail fiber cloak. It is made from **pig tail** fiber cloth. The thread is midnight blue, **superbly** colored with **dimple dye**. On the item is an **exceptionally** designed image of waves in rope reed fiber by Urist McClothier. It is made from well-crafted **rope reed** fiber cloth. The thread is emerald **exceptionally** colored with **emerald dye**.*
 
+\
 First, the item value:
 
 (item type \* material \* item quality)
@@ -128,31 +291,54 @@ First, the item value:
 
 = **260**
 
+\
 Next, add the cloth quality of the item (ignore cloth quality on embroidery):
 
-=
+(decoration \* material \* cloth_quality)
 
+(**decoration** \* **pig tail** \* **normal**)
+
+(**10** \* **2** \* **1**)
+
+= **20**
+
+\
 Next, add the thread value of the item (ignore any embroidered thread):
 
-=
+(decoration \* material)
 
+(**decoration** \* **pig tail**)
+
+(**10** \* **2**)
+
+= **20**
+
+\
 Then the item's dye value is added (ignore dye on embroidery *for now* - it's checked below):
 
-=
+(powder \* dye_material \* dye_quality)
 
+(**powder** \* **dimple dye** \* **superb**)
+
+(**1** \* **20** \* **4**)
+
+= **80**
+
+\
 Lastly, the embroidery:
 
-\+
+(decoration \* embroider_material \* embroider_quality) + (powder \* dye_material \* dye_quality)
 
-\+
+(**decoration** \* **rope reed** \* **exceptional**) + (**powder** \* **emerald dye** \* **exceptional**)
 
-\+
+(**10** \* **2** \* **5**) + (**1** \* **20** \* **5**)
 
-=
+= **200**
 
+\
 So the total value of this item would be:
 
-260 +  +  +  +
+260 + 20 + 20 + 80 + 200
 
 = **580**
 
@@ -166,8 +352,12 @@ Overall, the textile industry consists of eight different jobs: (growing, plant 
 
 If your intent is to produce equal volumes of thread and dye (so that all of your thread can be dyed), then you need to establish a year-round growing cycle with two equally-sized plots above and below ground as follows:
 
-{\| class="wikitable"
+|  |  |  |  |  |
+|----|----|----|----|----|
+|  | Spring | Summer | Autumn | Winter |
+| **Underground** | Dimple cup | Pig tail | Pig tail | Dimple cup |
+| **Above ground** | Rope reed | Sliver barb | Blade weed | Rope reed |
 
-\|- ! ! Spring ! Summer ! Autumn ! Winter \|- \| **Underground** \| Dimple cup \| Pig tail \| Pig tail \| Dimple cup \|- \| **Above ground** \| Rope reed \| Sliver barb \| Blade weed \| Rope reed \|} This will give you one cloth crop and one dye crop each harvest. This is not the only way to do it, but it is an example of a growing plan that will keep a miller, a thresher, a dyer, a weaver, and some growers employed evenly year-round and provide high-value materials for any tailors in your fort. If you have access to silk on your map, you may prefer to substitute a food crop for one of the fiber crops, or brew the excess pig tail into dwarven ale.
+This will give you one cloth crop and one dye crop each harvest. This is not the only way to do it, but it is an example of a growing plan that will keep a miller, a thresher, a dyer, a weaver, and some growers employed evenly year-round and provide high-value materials for any tailors in your fort. If you have access to silk on your map, you may prefer to substitute a food crop for one of the fiber crops, or brew the excess pig tail into dwarven ale.
 
 Large fields, fertilizer, and skilled growers will produce more raw materials; skilled craftsdwarves will use up the materials faster. Choose the largest plot size you can sustainably increase harvests, because eventually your craftsdwarves will be able to go through materials faster than you can grow them and you'll find yourself queueing up new orders each season. To boost profits, set your workshop orders to use only dyed thread, leaving out hide root from your growing plan because of its lower item value, and keep the supply channels full of plant products so that you always have materials to support standing (repeat) work orders.

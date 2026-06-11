@@ -1,14 +1,33 @@
 # Raw adamantine
 
-> Fonte: [Raw adamantine](https://dwarffortresswiki.org/index.php/Raw_adamantine) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Raw adamantine](https://dwarffortresswiki.org/index.php/Raw_adamantine) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Uses**
+- **Extract adamantine strands (100%) Masonry Stone crafting Construction**
+- **Location**
+- **The depths**
+- **Properties**
+- **Material value 250☼ Fire-safe Magma-safe Melting point 25000 °U ( m ) Boiling point 50000 °U ( m ) Ignition point none ( m ) Solid density 200 kg/m³ Specific heat 7500 J/kg·K Color aqua**
+- **Fire-safe:** Magma-safe
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |
+|:--:|
+|   This article or section contains **minor spoilers**. You may want to avoid reading it. |
 
 **Raw adamantine** is the ore of adamantine. It is absurdly valuable, and can be processed into one of the most valuable materials in the game, both in monetary value and utility. Its discovery is both a blessing and a curse; it has a massive value even unrefined, and weapons and armor made from it are among the best possible. Its high melting point means you can easily use it to build magma-safe mechanisms and floodgates, but this is not recommended due to its scarcity and value in other items.
+
+Unlike all other ores, raw adamantine takes a **very** long time to mine, owning to its unique material properties. In order to maximize the rate at which you can mine it, ensure that all of your picks are made of steel and are as of high quality as possible. Once you have acquired at least 4 pieces of ore, it may be worth processing it and forging an adamantine pick (using your most skilled weaponsmith) so that your best miner can excavate the rest of it much more quickly.
 
 Raw adamantine has a material multiplier of ×250. For a comparison to other mined materials, generic stone has a MM of ×1, obsidian ×3, native silver × 10, native gold ×30, and native platinum ×40. Processed adamantine "metal" has a multiplier of ×300, the highest in the game of any material.
 
 Raw adamantine, along with the objects forged from it, cannot be spawned in the object testing arena nor during embarking, presumably for balance reasons.
 
 Adamantine is so valuable, both in price and usefulness, that a special message pops up when your miners discover a vein of it:\
+Raw adamantine! Praise the miners!
 
 ## Location
 
@@ -26,7 +45,9 @@ Raw adamantine is stored in stone stockpiles with "Raw Adamantine" enabled in th
 
 ## Veins and Mining
 
-It's worth noting that a tile of raw adamantine, when mined out, will always produce a stone. Raw adamantine veins, in contrast to usual ore veins, span z-levels nearly exactly straight upwards, and are thicker than many gem clusters. Adamantine veins can span from 5 to 30-40 z-levels, sometimes even significantly more. Despite being impossibly strong in its refined form, a simple copper pick works fine for mining it out, and the vein is full of raw adamantine ripe for the diggin'. Do not delve too greedily, however, "for there are older and fouler things than Orcs in the deep places of the world..."
+A profile view of an adamantine vein travelling through an underground cavern, solid rock, and a magma sea. For more detail and resolution click the thumbnail.
+
+Raw adamantine, when mined out, will always produce a stone regardless of the miner's skill. Raw adamantine veins, in contrast to usual ore veins, span z-levels nearly exactly straight upwards, and are thicker than many gem clusters. Adamantine veins can span from 5 to 30-40 z-levels, sometimes even significantly more. Despite being impossibly strong in its refined form, a simple copper pick is capable of mining it out (though it will take a **very** long time to do so), and the vein is full of raw adamantine ripe for the diggin'. Do not delve too greedily, however, "for there are older and fouler things than Orcs in the deep places of the world..."
 
 One serious downside to mining veins of raw adamantine is that they are hollow, and digging into the hollow section will lead to a certain spoiler, triggering dangerously large amounts of fun. On the bright side, the location of all adamantine veins will be revealed at this time.
 
@@ -37,3 +58,44 @@ Adamantine pillars vary in height greatly. That is to say, some of them may bare
 Some adamantine is found in vertical pillars in the magma sea. This makes mining difficult, as one must either drain the area around the pillar to mine the pillar fully, or in cases of thicker pillars, mine out only the interior without breaching the exterior layer (and thus flooding the interior with magma). However, with access to vast amounts of water almost guaranteed on any map thanks to underground lakes, it might be possible to use selective flooding to cool the magma around the adamantine, creating walls of obsidian around them.
 
 It is sometimes possible to find a few layers at the top within stone, allowing you to mine some without the need of water. It is recommended to mine around the edges first if you don't want to have a fun time, however there is the possibility that magma pockets can be located around the veins around the magma sea levels. A further recommendation is that you mine one layer of blocks at a time to avoid having your dwarves become overwhelmed with greed when they find a vein, mining into the center of it.
+
+It glows with rare value!
+
+    [INORGANIC:RAW_ADAMANTINE]
+    [ITEM_SYMBOL:'*']
+    [THREAD_METAL:ADAMANTINE:100]
+    [STATE_NAME_ADJ:ALL_SOLID:raw adamantine]
+    [STATE_NAME_ADJ:LIQUID:molten raw adamantine]
+    [STATE_NAME_ADJ:GAS:boiling raw adamantine]
+    [DISPLAY_COLOR:3:7:1]
+    [TILE:156]
+    [MATERIAL_VALUE:250]
+    [SPEC_HEAT:7500]
+    [MELTING_POINT:25000]
+    [BOILING_POINT:50000]
+    [SOLID_DENSITY:200]
+    [LIQUID_DENSITY:2600]
+    [MOLAR_MASS:55845]
+    [IMPACT_YIELD:2500000]
+    [IMPACT_FRACTURE:3000000]
+    [IMPACT_STRAIN_AT_YIELD:0]
+    [COMPRESSIVE_YIELD:2500000]
+    [COMPRESSIVE_FRACTURE:3000000]
+    [COMPRESSIVE_STRAIN_AT_YIELD:0]
+    [TENSILE_YIELD:2500000]
+    [TENSILE_FRACTURE:3000000]
+    [TENSILE_STRAIN_AT_YIELD:0]
+    [TORSION_YIELD:2500000]
+    [TORSION_FRACTURE:3000000]
+    [TORSION_STRAIN_AT_YIELD:0]
+    [SHEAR_YIELD:2500000]
+    [SHEAR_FRACTURE:3000000]
+    [SHEAR_STRAIN_AT_YIELD:0]
+    [BENDING_YIELD:2500000]
+    [BENDING_FRACTURE:3000000]
+    [BENDING_STRAIN_AT_YIELD:0]
+    [DEEP_SPECIAL]
+    [MAX_EDGE:1000] no swords until you can pick mats
+    [ITEMS_HARD]
+    [IS_STONE]
+    [STATE_COLOR:ALL_SOLID:AQUA]

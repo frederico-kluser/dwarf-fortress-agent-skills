@@ -1,12 +1,20 @@
 # Stupid dwarf trick
 
-> Fonte: [Stupid dwarf trick](https://dwarffortresswiki.org/index.php/Stupid_dwarf_trick) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Stupid dwarf trick](https://dwarffortresswiki.org/index.php/Stupid_dwarf_trick) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-A **stupid dwarf trick** is any project that requires a large amount of time and/or effort. They may provide a practical benefit, but are frequently done for the sake of doing them; they exist primarily as a challenge for experienced players.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
+A **stupid dwarf trick** (*or, in certain cases, **dwarven trick**, to dodge accusations of genuine Urist-level stupidity*) is any project that requires a large amount of time and/or effort. They may provide a practical benefit, but are frequently done for the sake of doing them; they exist primarily as a challenge for experienced players.
 
 ## Adventure mode fortress
 
-Build a fortress specifically for exploring in adventure mode. You can either make a nasty monster-filled challenge, or a smörgåsbord of masterpiece adamantine weapons and armor. Possibly both. Breaching the caverns or hidden fun stuff should ensure the fortress is occupied. Building a fortress is now possible *inside* of adventure mode as of DF v0.43.
+Build a fortress specifically for exploring in adventure mode. You can either make a nasty monster-filled challenge, or a smörgåsbord of masterpiece adamantine weapons and armor; possibly both. Breaching the caverns or hidden fun stuff should ensure the fortress is occupied.
 
 **Difficulty:** The sky's the limit.
 
@@ -18,7 +26,7 @@ Are your soldiers all sound asleep while blood soaks the walls? No need to decon
 
 **Difficulty:** Low.
 
-**Usefulness:** Limited. They'll sleep through **anything** the noise. Although they have been known to awaken when drenched in water, possibly due to thinking it's alcohol. This means an alarm clock is not impossible if carefully prepared.
+**Usefulness:** Limited. They'll sleep through ~~**anything**~~ the noise. Although they have been known to awaken when drenched in water, possibly due to thinking it's alcohol. This means an alarm clock is not impossible if carefully prepared.
 
 ## Alphabet cages
 
@@ -50,9 +58,19 @@ Build a large altar made out of adamantine, clear glass, magma, and obsidian. Th
     - MegaArmokBonus: Sacrifice all three species to the altar every day!
 - MonarchBonus: Build the altar in the monarch's throne room! Yes, this stacks with the ArmokBonus up above.
 
+## Anthill
+
+Build your fortresses hallways and rooms on the same Z-axis. Building rooms with depth is fine, as long as their west/east walls are on the same Z-coordinate. All the walls on the Z-coordinate should be glass. Hollow out the opposite section so that the area beside the glass is empty. Build viewing platforms in the hollowed-out space. **Difficulty** High. The limited space is a huge restraint, and caverns are a huge issue.
+
+**Usefulness** Very low, although intruders can be forced to climb the viewing area to enter, letting marksdwarves pick them off easily through fortifications.
+
+- MirrorBonus: Instead of a viewing area, build a perfect replica of the fort.
+- SuperDwarfGalaxyBonus: Make it horizontal instead of vertical.
+  - MegaBonus: Build it into the magma sea.
+
 ## Aqueduct power
 
-If your river's a long way away from your fortress, building a trans-map axle may be less efficient than building an aqueduct and pump stack driven by waterwheels in the river. The pump stack raises it to the height of your fort, where it flows through the long, long aqueduct and drives waterwheels on the other end. Getting the water pressure just right so it powers your waterwheel without flooding the fort can be Fun. Diagonal channels make good pressure reducers.
+If your river's a long way away from your fortress, building a trans-map axle may be less efficient than building an aqueduct and pump stack driven by waterwheels in the river. The pump stack raises it to the height of your fort, where it flows through the long, long aqueduct and drives waterwheels on the other end. Getting the water pressure *just right* so it powers your waterwheel without flooding the fort can be Fun. Diagonal channels make good pressure reducers.
 
 **Difficulty:** High. Lots of stone, lots of engineering, lots of dangerous outdoor work, lots of trial-and-error for the receiving waterwheels.\
 Aquifers will absorb any amount of water at any rate. Using an aquifer as drain for the reservoir will nullify the risk of flooding the fortress due to the drain not keeping up with the supply.
@@ -69,7 +87,7 @@ Aquifers can be a resource of immense power. If you have two levels of aquifer, 
 
 ## Archaeological excavation
 
-A Fortress in the Caverns, built by the first dwarf tribes. Build the Fortress however you see fit for those prehistoric Dwarves (e.g. only primitive metals, elaborate tombs for the chieftains with burial objects, cave art, etc.) and abandon it. Then, embark with modern Dwarves, and excavate the ancient Fortress. Sort of like the Adventure Fortress above, only for Reclaim Mode
+A Fortress in the caverns, built by the first dwarf tribes. Build the Fortress however you see fit for those prehistoric Dwarves (e.g. only primitive metals, elaborate tombs for the chieftains with burial objects, cave art, etc.) and abandon it. Then, embark with modern Dwarves, and excavate the ancient Fortress. Sort of like the Adventure Fortress above, only for Reclaim Mode
 
 **Difficulty:** As High as you want.
 
@@ -127,7 +145,7 @@ Stop dwarves from hauling in tons of exotic, poisonous sludge into your fortress
 - DwarfBonus: Make it drain and refill itself with clean water automatically once in a year.
 - MegaDwarfBonus: Clean it with magma.
 - \*MegaDwarfBonus\*: Have an alternative bathtub-buffered entrance next to the main one, which opens automatically when sanitizing the main one and closes and sanitizes itself when it is no longer needed, so that no jobs are canceled during cleansing cycle.
-- ≡MegaDwarfBonus≡ : Make it clean itself with magma automatically once in a year, but make it wait for the moment when it's unused, so that no dwarves or pets are incinerated.
+- ≡MegaDwarfBonus≡ : Make it clean itself with magma automatically once in a year, but make it wait for the moment when it's unused, so that no dwarves or pets are incinerated.
 - ☼MegaDwarfBonus☼: All of the above, plus make it detect when there should be no dwarves or pets around, but invaders are in it, so that the cleansing cycle can be started prematurely.
 
 ## Boat
@@ -143,63 +161,88 @@ Note: You'll probably want to limit your saves to the colder months.
 - DwarfBonus: Have the dwarves live on the boat.
 - MegaDwarfBonus: Make miscreants/nobles walk the plank.
 - \*MegaDwarfBonus\*: Bury your treasure on shore.
-- ≡MegaDwarfBonus≡ : Have a pet kea for each of your dwarves.
+- ≡MegaDwarfBonus≡ : Have a pet kea for each of your dwarves.
 - ☼MegaDwarfBonus☼: Build it on top of an ice tower.
 
 ## Bolt splitting operation
 
-`## Note: no longer works due to climbing mechanics ##`
+    ## Note: no longer works due to climbing mechanics ##
 
+\
 One curious property of Dwarven physics is that a bar of metal makes 25 bolts, but if each of those 25 bolts is melted separately, they will become 2.5 bars, generating metal from nothing. Prior to the update that allowed splitting stacks at the trade depot, the difficult part was separating the stacks of bolts into individual bolts without destroying them. EliDupree originally discovered this trick:
 
-The yellow @ at the right is a stack of marksdwarves (all in different squads so that they'll stand on the same tile) equipped with adamantine bolts, standing on top of a stairway surrounded by fortifications. The blue ☻ at the left is a single Perfectly Agile soldier with orders to patrol up and down the line of green doors, with little delays at the top and bottom. (The doors are free-standing; they were built attached to a wall, then the wall was removed.) The "g" at the left is a goblin standing on a pillar (pitted from the z-level above).
+|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |     | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   |     |     |     |     |     |     |
+|     |     | ∙   | \+  | \+  | \+  | \+  | ☻   | ∙   | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  |     |     |     |     |     |     |
+|     |     | ∙   | \+  | ∙   | ∙   | ∙   | ┼   | ∙   | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | ╬   | ╬   |
+|     |     | ∙   | \+  | ∙   | g   | ∙   | ┼   | ∙   | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | ╬   | @   |
+|     |     | ∙   | \+  | ∙   | ∙   | ∙   | ┼   | ∙   | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | ╬   | ╬   |
+|     |     | ∙   | \+  | \+  | \+  | \+  | \+  | ∙   | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  | \+  |     |     |     |     |     |     |
+|     |     | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   | ∙   |     |     |     |     |     |     |
+
+\
+The yellow @ at the right is a stack of marksdwarves (all in different squads so that they'll stand on the same tile) equipped with adamantine (or Divine metal if you don't have it; or Steel if you have neither) bolts, standing on top of a stairway surrounded by fortifications. The blue ☻ at the left is a single Perfectly Agile soldier with orders to patrol up and down the line of green doors, with little delays at the top and bottom. (The doors are free-standing; they were built attached to a wall, then the wall was removed.) The "g" at the left is a goblin standing on a pillar (pitted from the z-level above).
 
 When the dwarf at the left runs up or down the line of doors, it opens all of them, and some of the marksdwarves loose their bolts. By the time the bolts get there, the doors have closed, so they hit the doors and fall into the channel, where they can be collected and melted separately. (That distance is exact, by the way. Any less and they sometimes get shots through the doors, which kills your goblin. Also, with less-skilled marksdwarves, some of the bolts will stray and land on the floors, but that isn't enough to worry about even with mere dabblers.) Naturally, this is also an excellent way to train marksdwarves.
 
-Another design resembles a tower where marksdwarves shoot from the top, with the following setup: (click then press '\' to go through different z-levels) \ \ \[#7:0\]
+Another design resembles a tower where marksdwarves shoot from the top, with the following setup: (click then press '\' to go through different z-levels)
 
-` [%201][%205][%203][%203][%205][%187]  `\
-` [%186] \ \[#7:0\]
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ╦ | ╦ | ═ | ╗ |   |   |
+|   |   | ║ | \ | ╠ | ╣ | g | ║ |   |   |
+|   |   | ╚ | ═ | ╩ | ╩ | ═ | ╝ |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | \ |   | 0 | 1 |   |   |   |   |
 
-` [%201][%205][%203][%203][%205][%187]  `\
-` [%186]X[%204][%185][#7:1]O[#7:0][%186]  `\
-` [%200][%205][%202][%202][%205][%188]  `\
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ╦ | ╦ | ═ | ╗ |   |   |
+|   |   | ║ | X | ╠ | ╣ | O | ║ |   |   |
+|   |   | ╚ | ═ | ╩ | ╩ | ═ | ╝ |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | \ |   | 0 | 2 |   | \> |   |   |
 
-` `
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ═ | ═ | ═ | ╗ |   |   |
+|   |   | ║ | X | + | / | . | ║ |   |   |
+|   |   | ╚ | ═ | ═ | ═ | ═ | ╝ |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | \ |   | 0 | 3 |   | \> |   |   |
 
-\ \ \[#7:0\]
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ╦ | ═ | ╗ | + |   |   |
+|   |   | ║ | X | ║ | . | ║ | + |   |   |
+|   |   | ╚ | ═ | ╩ | ═ | ╝ | + |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | \ |   | 0 | 4 |   | \> |   |   |
 
-` [%201][%205][%205][%205][%205][%187]  `\
-` [%186]X+[#3:1]/[#7:0].[%186]  `\
-` [%200][%205][%205][%205][%205][%188]  `\
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ╦ | ═ | ╗ | . |   |   |
+|   |   | ║ | X | ║ | . | ║ | . |   |   |
+|   |   | ╚ | ═ | ╩ | ═ | ╝ | . |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | \ |   | 0 | 5 |   | \> |   |   |
 
-` `
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |
+|   |   | ╔ | ═ | ═ | ═ | ╗ |   |   |   |
+|   |   | ║ | \> | + | @ | ║ |   |   |   |
+|   |   | ╚ | ═ | ═ | ═ | ╝ |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   | 0 | 6 |   | \> |   |   |
 
-\ \ \[#7:0\]
-
-` [%201][%205][%203][%205][%187]+  `\
-` [%186]X[%186].[%186]+  `\
-` [%200][%205][%202][%205][%188]+  `\
-
-` `
-
-\ \ \[#7:0\]
-
-` [%201][%205][%203][%205][%187].  `\
-` [%186]X[%186].[%186].  `\
-` [%200][%205][%202][%205][%188].  `\
-
-` `
-
-\ \ \[#7:0\]
-
-` [%201][%205][%205][%205][%187]   `\
-` [%186]>+[#6:1]@[#7:0][%186]   `\
-` [%200][%205][%205][%205][%188]   `\
-
-`   06 >`
-
-\ \ The '@' is any number of marksdwarves standing on a down stair. You may want to use a defend burrow order to restrict them to that tile. The 'g' is a goblin or any other creature your marksdwarves will normally fire at upon encounter (pitted from 2 z-levels above). The 'O' is a well, which is suspected to be preventing dwarves from plunging in and starting brawling with the creature. Marksdwarves will be able to see the goblin or whatever creature below and will loose all bolts in their quivers on them. Curiously, nearly all the bolts will fail to cross the bend in the middle and will fall onto the tile '/' where they can be collected. This disregards crossbow and archery skills and the only difference they make is the speed at which the bolts are split. This design has the advantage of taking less space and being easier to set up, however it is reported that sometimes the dwarves will not miss some of the bolts. If you are only stationing one marksdwarf in the tower, stationing another one may help the first one miss all of his bolts, even after the newly added one is then removed. Sometimes dwarves will spam job cancellation on the bolt collection level, and it is also reported that sometimes some dwarves will start firing when they are on the bolt collection level. In such cases you may want to seal the collection level off and open it once in a while to retrieve the bolts.
+The '@' is any number of marksdwarves standing on a down stair. You may want to use a defend burrow order to restrict them to that tile. The 'g' is a goblin or any other creature your marksdwarves will normally fire at upon encounter (pitted from 2 z-levels above). The 'O' is a well, which is suspected to be preventing dwarves from plunging in and starting brawling with the creature. Marksdwarves will be able to see the goblin or whatever creature below and will loose all bolts in their quivers on them. Curiously, nearly all the bolts will fail to cross the bend in the middle and will fall onto the tile '/' where they can be collected. This disregards crossbow and archery skills and the only difference they make is the speed at which the bolts are split. This design has the advantage of taking less space and being easier to set up, however it is reported that sometimes the dwarves will not miss some of the bolts. If you are only stationing one marksdwarf in the tower, stationing another one may help the first one miss all of his bolts, even after the newly added one is then removed. Sometimes dwarves will spam job cancellation on the bolt collection level, and it is also reported that sometimes some dwarves will start firing when they are on the bolt collection level. In such cases you may want to seal the collection level off and open it once in a while to retrieve the bolts.
 
 **Difficulty:** Moderate. The hardest part is keeping the system running reliably.
 
@@ -261,13 +304,14 @@ NOTE: necromancer siege's corpses now drop clothes and gear.
 
 They're a thing in real life, and you can make them a thing in-game too! Use cage traps to capture multiple breeding pairs of alligators, cave crocodiles or saltwater crocodiles, train them, then create an area to store them with nest boxes. Breed them so you have more crocodilians to keep laying eggs, rinse and repeat.
 
-**Difficulty:** Medium, somewhat dependent on RNG - you need to find someplace with available crocs, you want said crocs to actually spawn and you want said crocs to actually get caught in the traps. May Will also lead to an explosive and FPS-shattering crocsplosion sooner or later.
+**Difficulty:** Medium, somewhat dependent on RNG - you need to find someplace with available crocs, you want said crocs to actually spawn and you want said crocs to actually get caught in the traps. ~~May~~ Will also lead to an explosive and FPS-shattering crocsplosion sooner or later.
 
 **Usefulness:** Very high, you'll never have to worry about food again simply from cooking the eggs, and that's not counting butchering the crocs when they're adults.
 
 - Bonus: Have alligators, cave crocs and saltwater crocs **all** present in the farm.
 - SwampBonus: Have your croc farm submerged in anywhere between 1/7 to 3/7 water. You gotta keep your crocs healthy and wet! But make sure not to submerge the nest boxes!
 - SavageBonus: Have giant alligators or/and giant saltwater crocodiles as part of your farm.
+  - Archcrystal bonus: Replace the crocs with Hydras. Keep them in a usually unseen location, as any Urist McFoolhardy walking by will try to attack them on sight.
 - TrainerBonus: Have your dwarves become Expert alligator/cave croc/saltwater croc trainers.
   - SteveIrwinBonus: Have your dwarves become Expert trainers of all croc species.
 - HungryHungryCrocBonus: Build your farm in such a way that sieges have to go through it to reach your fortress.
@@ -293,7 +337,7 @@ A room full of upright spear traps linked to a lever or pressure plate. Teach yo
 
 **Difficulty**: Low to Medium, depending on how you activate the traps.
 
-**Usefulness**: Low. While this used to be a very effecting training method in past versions, the combat changes in 0.43.04 has made them much more deadly, even for militia dwarves. They also wear down your dwarves' armor and shields quickly, making them harmful for your long term survival even if your militia dwarves manage to survive the room itself.
+**Usefulness**: Low. While this used to be a very effective training method, it's quite deadly now, even for militiadwarves. They also wear down your dwarves' armor and shields quickly, making them harmful for your long-term survival, even if your militiadwarves manage to survive the room itself.
 
 **Downside**: Civilians and pets that wander into the danger room will inevitably get killed, even if you use low quality training spears.
 
@@ -302,7 +346,7 @@ A room full of upright spear traps linked to a lever or pressure plate. Teach yo
 
 ## Day care
 
-A room where you put all your dwarf children so they cannot be kidnapped by snatchers, or get into accidents. Make a room with beds and tables and stuff, then turn it into a burrow, then add all your children to it. Remember to include a food chute to quantum stockpile a huge amount of food and alcohol on a 1x1 stockpile (so it doesn't rot) in the room. High quality food, furniture, toys, clothing, and socializing should keep them happy. Note that the children will no longer be able to perform certain useful tasks like hauling, crop harvesting and deconstruction, and will not level up their skill in miscellaneous professions like an otherwise vulnerable child, but this is a small trade-off if they usually get kidnapped before maturing anyway. This is probably obvious, but make sure this room is guarded, otherwise it will turn into a Dwarf Orphanage (Dorfanage) (with Goblins and Minotaurs welcome!)
+A room where you put all your dwarf children so they cannot be kidnapped by snatchers, or get into accidents. Make a room with beds and tables and stuff, turn it into a burrow, then add all your children to it. Remember to include a food chute to quantum stockpile a huge amount of food and alcohol on a 1x1 stockpile (so it doesn't rot) in the room. High quality food, furniture, toys, clothing, and socializing should keep them happy. Note that the children will no longer be able to perform certain useful tasks like hauling, crop harvesting and deconstruction, and will not level up their skill in miscellaneous professions like an otherwise vulnerable child, but this is a small trade-off if they usually get kidnapped before maturing anyway. This is probably obvious, but make sure this room is guarded, otherwise it will turn into a Dwarf Orphanage (Dorfanage) (with Goblins and Minotaurs welcome!)
 
 **Difficulty:** Low. With the invention of burrows, you can designate the Day Care to contain all children, so it is unnecessary to use suicide-booth-micromanagement to contain the children.
 
@@ -311,6 +355,7 @@ A room where you put all your dwarf children so they cannot be kidnapped by snat
 - SchoolBonus: Make the daycare a guild hall, and add a highly skilled dwarf and another adult to the burrow. The two will give demonstrations that the kids will occasionally watch, gaining experience in a profession of your choice
 - OlympicBonus: Build a swimming pool of 4/7 between critical parts of the daycare, so the kids have to go through the water for their everyday tasks, gaining swimming skill and associated stats.
 - ChildSoldierBonus: Make the daycare a barracks, and have your crack squad of dwarves spar and demonstrate there to train up the military skills of your dwarven children
+- HighSchoolBonus: All of the above, and make nobles and unskilled migrants stay there to learn.
 
 ## Doberman bomb
 
@@ -423,7 +468,7 @@ Step 8. Freedom!
 
 Dig down to the 3rd cavern layer and harvest as many nether-caps as you can. Make them all into barrels! Nether caps have the unique property of being 10000° Urist, which is 32°F or 0°C. Now your dwarves can enjoy their favorite alcohol, cheese, and plump helmets chilled to perfection! If you've set your population cap very low in the INIT files, caverns aren't extremely dangerous, but you should still be on the lookout for nasties down there. Remember to wall off your entrance to the cavern once you're finished.
 
-**Difficulty:** Low to Medium
+**Difficulty:** Low to Medium. Only possible if your 3rd cavern layer actually *has* nether-caps growing in it.
 
 **Usefulness:** Low. Booze stored inside will not perish due to heat if say, magma is dumped on it.
 
@@ -442,6 +487,14 @@ Build a high fire rate, minecart firing machine gun. Must be fully automatic, ca
 - Bonus: Automatically reload minecarts with magma.
 - MegaDwarfBonus: Integrate the trap with a dwarfputer so that it can automatically send minecarts to where they are needed most.
 
+## Elephant man armor factory
+
+Elephant man are incredibly strong in combat — both in Fortress and Adventurer modes. However, they can't put on normal-sized Armor — and therefore, walk around in crappy starting armor at best, naked at worst. We'll put Elephant man to make Armor — and another Elephant man for Clothes.
+
+**Difficulty:** Easy. Depends on amount of Elephant man spawning in the world.
+
+**Usefulness:** Your Elephant man super-soldiers are now properly armored. Considering their size, strength, and possibly training, they are now borderline-invulnerable. Also, you have enough armor complects for your Elephant man Adventurers.
+
 ## Emergency destruct stairs
 
 A tall column of stairs plunging all the way down into the underdark, with a one-tile wide area of thin destructible floor all around it. In case of subterranean invasion, a thrown switch drops a stone O straight down, ringing the staircase and neatly severing all inter-level connections at a blow. Does with one lever and one support what would take dozens of bridges or hundreds of retracting grates.
@@ -458,7 +511,7 @@ Just a tall tower to chuck your captives to their deaths.
 
 **Usefulness:** Lets you dispose of prisoners, and claim expensive silk, meltable iron, and (eventually) useful bones. Also highly amusing.
 
-- MegaDwarfBonus: Send prisoners straight to hell. May make retrieving items difficult, however.
+- MegaDwarfBonus: Send prisoners straight to the HFS. If some mod makes them survive, the Clowns will have their way with them. May make retrieving items difficult, however.
 
 ## Flak
 
@@ -481,7 +534,7 @@ If your fortress happens to be visited by a dragon, capture it in a cage trap, t
 
 **Difficulty:** Low, but requires a fair bit of luck - a dragon (or fire-breathing forgotten beast) needs to survive worldgen, then it needs to attack your fortress (instead of a giant/minotaur/ettin/cyclops or other megabeast), and finally it needs to make it to your cage trap without being killed by something else.
 
-**Usefulness:** Medium. Dragonfire can kill almost anything, but will be blocked by a shield greater than 99% of the time. Adding a combustible floor (such as a paved lignite road) will significantly increase lethality for shield-toting targets. Also, any protective bridges in front of the fortifications may melt under sustained fire, leaving you with a bunker that *nobody* can safely approach; ensuring the bridge center tile isn't near the fire, or building the bridges (and mechanisms) from ash, dragon soap, divine metal (or slade) will make them immune to the fire. Additionally, a skilled enemy archer can easily kill your dragon with a lucky shot, if line-of-sight access is available.
+**Usefulness:** Medium. Dragonfire can kill almost anything, but will be blocked by a shield greater than 99% of the time. Adding a combustible floor (such as a paved lignite road) will significantly increase lethality for shield-toting targets. Also, any protective bridges in front of the fortifications may melt under sustained fire, leaving you with a bunker that *nobody* can safely approach; ensuring the bridge center tile isn't near the fire, or building the bridges (and mechanisms) from divine metal (or slade) will make them immune to the fire. Additionally, a skilled enemy archer can easily kill your dragon with a lucky shot, if line-of-sight access is available.
 
 - Bonus: Capture a fire-breathing titan or forgotten beast and use it.
 - MegaDwarfBonus: Release the denizens of the hidden fun stuff and use them.
@@ -500,7 +553,7 @@ If your fortress happens to be visited by a dragon, capture it in a cage trap, t
 
 Station some soldiers at the bottom of a shallow pit and dump your captives in. You can also use dangerous animals instead of soldiers. For extra points, put the prisoners in cages connected to ramps underneath the arena floor. One lever will open both the cage and a hatch above the ramp. Variant: build prisoner cages inside the arena, link to a lever outside the arena, lock the soldiers in, and then open the cages. Keep in mind that you can't actually make your dwarves "watch" the battles like an actual gladiator arena, as civilians will flee in fear at the sight of non-restrained hostile creatures, even if they're in a pit and not actively attacking them.
 
-**Difficulty:** Low, but time consuming. Some danger depending on the relative skill of your soldiers and the danger of the captive. (If the prisoners have weapons, you can remove them by using -- to dump the cage and its contents, then looking at and undumping the cages themselves with -).
+**Difficulty:** Low, but time consuming. Some danger depending on the relative skill of your soldiers and the danger of the captive. (If the prisoners have weapons, you can remove them by using d-b-d to dump the cage and its contents, then looking at and undumping the cages themselves with k-d).
 
 **Usefulness:** Low to High, depending on how long your soldiers can draw out the execution. Equipping your soldiers with wooden training weapons can greatly increase the fun (and/or Fun if their armor isn't as good as you thought).
 
@@ -510,79 +563,18 @@ Station some soldiers at the bottom of a shallow pit and dump your captives in. 
 
 ## Grazer reanimation facility
 
-Just as stables, but without grass, and on a reanimating biome. Pasture every grazer in a separate box, and build cage traps to recapture the animal after it joins the Dark Side. Make sure to forbid the area after you finish setting things up, because you don't want your dwarves getting killed caught instead.
+Just as stables, but without grass, and on a reanimating biome. Pasture every grazer in a separate box, and build cage traps to recapture the animal after it joins the Dark Side. Make sure to forbid the area after you finish setting things up, because you don't want your dwarves getting ~~killed~~ caught instead.
 
 **Difficulty:** Low. You always get some grazing animals to start with.
 
 **Usefulness:** You get a decent supply of zombies to use in your cunning traps. Depending on your style of play, this may prove to be worth the effort.
 
-- DwarfBonus: Use war elephants, or any other giant grazing animal you bought seized from elves.
+- DwarfBonus: Use war elephants, or any other giant grazing animal you ~~bought~~ seized from elves.
   - MegaDwarfBonus: Use giant elephants.
     - BoatMurderedBonus: Release them all simultaneously to challenge your militia/play out a !fun! scenario for your fort.
 - MenagerieBonus: Create a zoo using only undead grazers.
   - DwarvenMenagerieBonus: Combine this with the Zombie Thunderdome and have a rotation of undead cows fighting in the arena only to be re-caged when they try to leave.
     - ChampionBonus: Give each grazer rooming in the zoo according to their kills, with the champion having the most luxurious room.
-      - AltarBonus: Turn the champion's room into an Altar of Armok.
-      - FreedomBonus: Let the champion and higher-ranking zombies roam freely in their rooms, having to be re-captured for each battle.
-        - !FreedomBonus!: Release the champion into your fort.
-- HolyGrailBonus: Use white bunnies.
-
-## Greenhouse
-
-A greenhouse is just a farm with the ceiling channeled out from above. This lets you grow outdoor plants without venturing above ground. For maximum style, build the greenhouse above ground and cover it with a glass roof to keep your farmers safe.
-
-**Difficulty:** Low.
-
-**Usefulness:** Medium. Surface plants can be grown at any time of the year, and some are more useful than those available underground - for example, sun berries can be brewed into valuable Sunshine, and whip vines can be milled into superior quality flour. Having greater food and booze diversity can also keep your dwarves happier.
-
-- Bonus: Give it a glass floor to allow surface plants even lower down.
-  - DwarfBonus: Utilize volcanic glass.
-
-## Hammer of Armok
-
-A gigantic hammer made out of pure steel and/or valuables looming over your fortress entrance ready to smite those foolish enough to lay a siege on you. Also gives you a psychological advantage over the traders who unload their goods under it. Attach to a lever-linked support for quick-smiting.
-
-**Difficulty:** Low. Depends on size and materials, though. Make it a gold hammer menacing with adamantine spikes, if you're going for high quality.
-
-**Usefulness:** Low-medium. 10x10 size is minimum for practical effectiveness. 30x30 attached to a handle extending from your entrance actually works against sieges.
-
-- Bonus: Cover it with blood.
-- MegaDwarfBonus: Make it hollow and fill it with Magma
-- ArmoksMachineHammerBonus: Set up an automated system that allows you to reset it quickly. Obsidianizers and the magma sea will be your friends here.
-
-## Human Fortress
-
-Instead of digging a fortress, build above-ground houses. Create walls to keep the nasties out. The only thing you may have underground are mines and stockpiles. Create a huge stone fort for your nobles.
-
-**Difficulty:** High. Building stuff will cost you resources instead of gaining them and flyers can be a real pain. Keep several Marksdwarfs handy!
-
-**Usefulness:** N/A. (No cave adaptation)
-
-- Bonus: Pave the roads between houses.
-- HumanBonus: Dig a moat around your castle.
-- MegaHumanBonus: Fill the moat with lava.
-- MegaHumanBonusPlus: Designate multiple dumping spots into the lava moat.
-- SurfaceDwellerBonus: Get the stone for your constructions entirely from open-pit quarries, i.e. by c\[h\]annelling instead of \[d\]igging.
-- MegaSurfaceDwellerBonus: Never use picks at all, all stone and metal must come from caravans or embark.
-- WhereTheBeardedLadiesAtBonus: Enforce as many pointless quaint human quirks as feasible, for instance: nominating officials per wealth/popularity/relationships instead of merit and suitedness, coddling Nobles, burrowing farmers, miners, brewers, craftsdwarves and other backbones of society into the most tattered ridings, enforcing a specific religion upon the populace, and so forth.
-
-## Ice tower
-
-Building a huge tower is easy. To make things more fun, make one out of some exotic material, like glass, ice, gold, or soap.
-
-**Difficulty:** Low. You need to be on a freezing map to pull off an ice tower.
-
-**Usefulness:** Depends entirely on you.
-
-- BabelBonus: Use DFHack's `infiniteSky` and build to the heavens themselves.
-
-## Journey to the Center of the Earth
-
-Construct a sturdy vessel hanging over the top of a magma pipe or volcano, outfitted with everything your intrepid crew might need for their journey of exploration - food, booze, sleeping quarters and a bridge are a must, but depending on the amount of effort it can include other items such as a recreation deck, water reservoir and trade depot for dealing with the natives. When all is ready, lock the explorers inside and send them on their way. Bonus points if you can detach it from inside so you can use it in Adventure mode later.
-
-**Difficulty:** Moderate to High, depending on the size of the ship. For bonus points, carve the entire thing out of existing rock overhanging a magma pipe and engrave it with messages. Burrows help to get the whole crew inside at the same time.
-
-**Usefulness:** Negative. For some reason, no explorers have returned. Of course, if you select only the Best and Brightest for the ship's crew...
 
 ---
-⚠️ Conteúdo truncado (96707 bytes = ~24176 tokens). Para o artigo completo, visite [Stupid dwarf trick](https://dwarffortresswiki.org/index.php/Stupid_dwarf_trick).
+*Parte 1 de 3 de «Stupid dwarf trick». Demais partes em arquivos `...-part-{1..3}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Stupid_dwarf_trick*

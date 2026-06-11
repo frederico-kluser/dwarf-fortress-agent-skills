@@ -1,10 +1,14 @@
 # Tower (project)
 
-> Fonte: [Tower (project)](https://dwarffortresswiki.org/index.php/Tower_(project)) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Tower (project)](https://dwarffortresswiki.org/index.php/Tower_(project)) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*Not to be confused with necromancer's towers "necromancer's towers").*
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*Not to be confused with necromancer's towers "Tower (necromancy)").*
 
 A **tower** is any vertical structure consisting of multiple levels of a similar shape stacked on top of each other, often connected by stairs.
+
+Crossroads Inc.'s Roadtruss tower megaproject
 
 As a player construction, a large tower can serve the same role as a below-ground fortress, but without the drawbacks of cave adaptation: all of its tiles being Light Above Ground, so the dwarves will always be exposed to sunlight. However, it takes a large amount of resources (usually stone or wood) to construct a tower; while a source of clay or green glass can alleviate this, it is still much less efficient than carving out a fortress entirely beneath the earth.
 
@@ -20,14 +24,23 @@ The problem can come when creating those walls. Because dwarves require an ortho
 
 Alternatively, staggering the tower walls can simplify construction:
 
-`    z              z + 1           z + 2`
-
-........... .╔═══════╗. +++++++++ ╔═════╗ .║.......║. +╔═════╗+ ╔\[#f00\]╝\[#\]+++++\[#f00\]╚\[#\]╗ .║.......║. +║ ║+ ║+ +║ .║.......║. +║ ║+ ║+ +║ .║...X...║. +║ X ║+ ║+ X +║ .║...O...║. +╚══\[#f00\]═\[#\]══╝+ ╚\[#f00\]╗\[#\]++\[#f00\]O\[#\]++\[#f00\]╔\[#\]╝ .╚══O.O══╝. +++++++++ ╚══╩══╝ ...........
-
-` .  ground`\
-` ═  wall`\
-` X  stairs`\
-` +  floor provided by wall below `\
-` [#f00]═[#]  wall built last  `
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   | z |   |   |   |   |   |   |   |   |   |   |   |   |   |   | z |   | + |   | 1 |   |   |   |   |   |   |   |   |   |   |   | z |   | + |   | 2 |   |   |   |   |
+| . | . | . | . | . | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| . | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ | . |   |   |   |   |   |   |   | + | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   |
+| . | ║ | . | . | . | . | . | . | . | ║ | . |   |   |   |   |   |   |   | + | ╔ | ═ | ═ | ═ | ═ | ═ | ╗ | + |   |   |   |   |   |   |   | ╔ | ╝ | + | + | + | + | + | ╚ | ╗ |   |   |
+| . | ║ | . | . | . | . | . | . | . | ║ | . |   |   |   |   |   |   |   | + | ║ |   |   |   |   |   | ║ | + |   |   |   |   |   |   |   | ║ | + |   |   |   |   |   | + | ║ |   |   |
+| . | ║ | . | . | . | . | . | . | . | ║ | . |   |   |   |   |   |   |   | + | ║ |   |   |   |   |   | ║ | + |   |   |   |   |   |   |   | ║ | + |   |   |   |   |   | + | ║ |   |   |
+| . | ║ | . | . | . | X | . | . | . | ║ | . |   |   |   |   |   |   |   | + | ║ |   |   | X |   |   | ║ | + |   |   |   |   |   |   |   | ║ | + |   |   | X |   |   | + | ║ |   |   |
+| . | ║ | . | . | . | O | . | . | . | ║ | . |   |   |   |   |   |   |   | + | ╚ | ═ | ═ | ═ | ═ | ═ | ╝ | + |   |   |   |   |   |   |   | ╚ | ╗ | + | + | O | + | + | ╔ | ╝ |   |   |
+| . | ╚ | ═ | ═ | O | . | O | ═ | ═ | ╝ | . |   |   |   |   |   |   |   | + | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   | ╚ | ═ | ═ | ╩ | ═ | ═ | ╝ |   |   |   |
+| . | . | . | . | . | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | . |   |   | g | r | o | u | n | d |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | ═ |   |   | w | a | l | l |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | X |   |   | s | t | a | i | r | s |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | + |   |   | f | l | o | o | r |   | p | r | o | v | i | d | e | d |   | b | y |   | w | a | l | l |   | b | e | l | o | w |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   | ═ |   |   | w | a | l | l |   | b | u | i | l | t |   | l | a | s | t |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 This design lets you designate (almost) an entire level at a time using large swaths, allows multiple builders to work simultaneously without problems, uses fewer blocks and jobs, and requires no slow remove-construction jobs. It can be continued higher by alternating the top two levels.

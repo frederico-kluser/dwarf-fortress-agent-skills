@@ -1,10 +1,18 @@
 # Semi-molten rock
 
-> Fonte: [Semi-molten rock](https://dwarffortresswiki.org/index.php/Semi-molten_rock) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Semi-molten rock](https://dwarffortresswiki.org/index.php/Semi-molten_rock) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Semi-molten rock** (SMR), represented by the tile , is a unique type of obstacle generally found at the bottommost edges of great magma seas. Anywhere that magma is found rests on layer after layer of semi-molten rock, with no normal material to be found beneath it. There is also a layer near the bottom of the map composed almost entirely of semi-molten rock even where magma does not overlie it. Freestanding formations are possible, though less common. Though its name suggests the rock is hot, it is not dangerous to nearby dwarves. SMR acts as a barrier, and cannot be mined through by conventional means, nor smoothed. Unlike magma, SMR does not react with water, producing no steam or obsidian.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-The top of semi-molten rock, or its *floor* when observed from the layer above, is described as a magma flow, appearing in blue text when examined with the Loo cursor and resembling a river of magma slowly flowing to the south (just like it did in older versions).
+|  |
+|:--:|
+|   This article or section contains **minor spoilers**. You may want to avoid reading it. |
+
+Not as ~~cool~~ hot as full-blown lava...
+
+**Semi-molten rock** (SMR), represented by the tile `░`, is a unique type of obstacle generally found at the bottommost edges of great magma seas. Anywhere that magma is found rests on layer after layer of semi-molten rock, with no normal material to be found beneath it. There is also a layer near the bottom of the map composed almost entirely of semi-molten rock even where magma does not overlie it. Freestanding formations are possible, though less common. Though its name suggests the rock is hot, it is not dangerous to nearby dwarves. SMR acts as a barrier, and cannot be mined through by conventional means, nor smoothed. Unlike magma, SMR does not react with water, producing no steam or obsidian.
+
+The top of semi-molten rock, or its *floor* when observed from the layer above, is described as a magma flow, appearing in blue text when examined with the Look cursor and resembling a river of magma slowly flowing to the south (just like it did in older versions).
 
 The floor of the stone layer above the SMR at the bottom of the map is *not* a magma flow when stone is dug into, but appears as the same type of rock as the tile dug into. However, if a channel is dug down into the SMR from this tile, a magma flow floor is revealed; *under* this intact floor the unusable ramp will appear, if and only if the tile of SMR was previously unrevealed. Otherwise it will be unchanged (as a result, no two of these ramps can adjoin). A magma flow also cannot be dug into, nor smoothed. However, constructions can be built on top of it, and these convert the magma flow into some other kind of stone or soil, which is sometimes useful sand or clay, appearing when the construction is removed.
 
@@ -17,6 +25,10 @@ If the stone floor which replaces a magma ramp under a built and removed constru
 Semi-molten rock is *not* synonymous with warm stone, although any given tile of SMR may in fact be warm if it adjoins magma. If you're looking for magma and you find SMR rather than warm stone, your best bet is to do some exploratory mining several Z-levels up.
 
 You can also dig *up* into semi-molten rock just fine (by designating an up/down staircase accessible from below). This also works *only* if the tile is still unrevealed. Often (but not always) you can't get down there without encountering spoilers first.
+
+|  |  |
+|:--:|----|
+|  | This article contains **massive spoilers**. If you do not wish to have your game experience spoiled, **do not scroll down**! |
 
 Channelling down into unrevealed SMR may open it into an Eerie Glowing Pit.
 
@@ -45,7 +57,7 @@ This process consumes dwarves. Each layer of Semi-molten rock you dig though aft
 
 4\. Fill the bottom of the shaft with magma. The magma is used to melt and destroy all items present, including the dwarf corpse. If there is too much magma in the shaft, use a pond zone to pour water in one bucket at a time to cast obsidian and then carve up/down stairs. Remove the obsidian stones this creates because they will not melt in magma.
 
-**Don't proceed with step 5 until all items at the bottom have melted and dispersed. The only thing on the tile when you loo should be Magma flow and Magma 7/7. Any molten magma globs (differs from Magma Liquid) will suspend constructions for the next step.**
+**Don't proceed with step 5 until all items at the bottom have melted and dispersed. The only thing on the tile when you look should be Magma flow and Magma 7/7. Any molten magma globs (differs from Magma Liquid) will suspend constructions for the next step.**
 
 5\. Use a pond designation and wait for a dwarf to pour a single bucket of water to remove the 7/7 magma at the bottom. Remove the pond zone.
 
@@ -53,6 +65,7 @@ This process consumes dwarves. Each layer of Semi-molten rock you dig though aft
 
 7\. The magma flow tile has been transformed into normal stone or soil floor. Go to step 2 to start on the next layer down.
 
+\
 There may be many layers of semi-molten rock to dig through before reaching hell. Also, if you get really unlucky, your final floor collapse can break through into hell and land in an Eerie Glowing Pit. If it does, your FPS will be ruined. Make sure you have a backup save before starting this procedure. What happens is that the magma flow tile gets stuck in the middle of the Eerie Glowing Pit, but it is unsupported by any walls or floors and will perpetually collapse every single frame. Your FPS drop to the low single digits even on a modern gaming PC.
 
 Upon breaching hell, the standard welcoming party will be spawned (if your map includes at least one adamantine spire). They will not, however, attack your fortress with the usual haste. This may be another facet of the "flying creature pathing bug"--presumably there is special code to handle the adamantine veins that does not apply to backdoor tunnels. They will eventually wander through the tunnel, and, once they can successfully path to your fortress, attack. The staggered offensive provides your dwarves with a much better chance to defend the fortress, though victory is still far from assured.

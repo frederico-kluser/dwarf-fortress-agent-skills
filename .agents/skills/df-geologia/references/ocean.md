@@ -1,10 +1,14 @@
 # Ocean
 
-> Fonte: [Ocean](https://dwarffortresswiki.org/index.php/Ocean) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Ocean](https://dwarffortresswiki.org/index.php/Ocean) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Voted "#3 worst place to embark" in 78 AD.
 
 An **ocean** is an immense volume of salt water. Oceans are often bordered by sandy beaches, where driftwood can be found. Marshes and swamps also tend to form around oceanic coastlines, especially near rivers. The land surrounding oceans also tends to have a high water table, resulting in aquifers close to the surface.
 
-Oceans are an excellent source of food for a new fortress, usually having tons of fish, and contain shell-bearing creatures like oysters and mussels. However, sometimes when you embark on a coast, you might receive announcements like "There is nothing to catch in \". If this happens, you won't be able to fish in the ocean in this embark; you may wish to abandon the fort and start again elsewhere.
+Oceans are an excellent source of food for a new fortress, usually having tons of fish, and contain shell-bearing creatures like oysters and mussels. However, sometimes when you embark on a coast, you might receive announcements like "There is nothing to catch in ". If this happens, you won't be able to fish in the ocean in this embark; you may wish to abandon the fort and start again elsewhere.
 
 There are three varieties of oceans, based on temperature, which affects the sea life found there: Arctic, Temperate and Tropical. Oceans in a freezing climate (usually arctic oceans) will freeze, just like rivers and pools, acting like a glacier.
 
@@ -12,13 +16,33 @@ While by default it's impossible to embark in an ocean biome exclusively, DFHack
 
 ## Ocean waves
 
+Best place to keep alcohol cold.
+
 Waves will periodically wash over the coast - the tiles will not get wet. However, if a wave washes over a *staircase*, the floors below it will be slowly flooded. Cave moss will not grow in the mud left by salt water. The waves move over all natural tiles, and seem to move independently of constructed tiles like walls and floors. Be mindful not to carve away natural walls and allow tide to enter your fort, and cause excess slowdown. Sea walls can be built to block waves and protect beach areas, but need to be completely closed off to be effective. Waves also have a tendency to move items left on the beach, so it is inadvisable to place stockpiles too close to the shore—also beware that this effect means that dwarves can be knocked unconscious if hit by driftwood washed in from waves.
 
 Since ocean waves do not actually move the water in the tiles below them, they do not create flow. Thus, waves *cannot* power a water wheel, making tidal energy generation much more difficult.
 
 In adventure mode, being pushed by ocean waves occasionally increases swimming skill without the risk of drowning.
 
- Ocean Wave Forms.png\|The formation of an ocean wave. (All of these images are in ASCII mode.)  Ocean Wave Rises.png\|The wave rises higher out of the water.  Ocean Wave Crashes.png\|The wave crashes onto the beach.  Ocean Wave Disolves.png\|The mist from the wave disperses.  Ocean Wave Disappears.png\|The wave leaves behind just a puddle.
+-
+
+  The formation of an ocean wave. (All of these images are in ASCII mode.)
+
+-
+
+  The wave rises higher out of the water.
+
+-
+
+  The wave crashes onto the beach.
+
+-
+
+  The mist from the wave disperses.
+
+-
+
+  The wave leaves behind just a puddle.
 
 ## Ocean floor geology
 
@@ -32,7 +56,7 @@ Most of these layers also support aquifers, which are saltwater like the surroun
 
 ## Resources
 
-Almost all tiles next to oceans have aquifers, which require fairly complicated schemes to sidestep. In addition, oceans are salt water resources, requiring desalination with a screw pump into a cistern to use for drinking. On the other hand, you have an inexhaustible source of water for fishing, drowning chambers, and so forth, as well as a spawning point for some very big and very meat-profitable creatures: sperm whales, orcas, and the like.
+Almost all tiles next to oceans have aquifers, and heavy aquifers require fairly complicated schemes to sidestep. In addition, oceans are salt water resources, requiring desalination with a screw pump into a cistern to use for drinking. On the other hand, you have an inexhaustible source of water for fishing, drowning chambers, and so forth, as well as a spawning point for some very big and very meat-profitable creatures: sperm whales, orcas, and the like.
 
 ## Wildlife
 
@@ -40,27 +64,159 @@ In arctic oceans, with a by-definition freezing climate, none of the aquatic ver
 
 ### Creatures
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `a` Albatross |  | ✔ | ✔ | ✔ |
+| `s` Angelshark |  |  | ✔ | ✔ |
+| `S` Basking shark |  |  | ✔ |  |
+| `s` Blacktip reef shark |  |  |  | ✔ |
+| `S` Blue shark |  | ✔ | ✔ | ✔ |
+| `α` Bluefin tuna |  | ✔ | ✔ | ✔ |
+| `α` Bluefish |  |  | ✔ | ✔ |
+| `S` Bull shark |  |  |  | ✔ |
+| `α` Cod |  | ✔ | ✔ |  |
+| `C` Coelacanth |  |  |  | ✔ |
+| `ò` Common skate |  |  | ✔ | ✔ |
+| `~` Conger eel |  | ✔ | ✔ |  |
+| `c` Crab |  | ✔ | ✔ | ✔ |
+| `S` Elephant seal |  | ✔ |  |  |
+| `p` Emperor penguin |  | ✔ |  |  |
+| `s` Frill shark |  | ✔ | ✔ | ✔ |
+| `G` Giant grouper |  |  |  | ✔ |
+| `b` Great barracuda |  |  |  | ✔ |
+| `S` Great white shark |  |  | ✔ | ✔ |
+| `α` Halibut |  | ✔ | ✔ |  |
+| `S` Hammerhead shark |  |  | ✔ | ✔ |
+| `H` Harp seal |  | ✔ |  |  |
+| `c` Horseshoe crab |  | ✔ | ✔ | ✔ |
+| `L` Leopard seal |  | ✔ |  |  |
+| `p` Little penguin |  | ✔ |  |  |
+| `S` Longfin mako shark |  |  | ✔ | ✔ |
+| `►` Manta ray |  |  |  | ✔ |
+| `α` Marlin |  |  | ✔ | ✔ |
+| `α` Milkfish |  |  |  | ✔ |
+| `N` Narwhal |  | ✔ |  |  |
+| `S` Nurse shark |  |  | ✔ |  |
+| `α` Ocean sunfish |  |  | ✔ | ✔ |
+| `o` Octopus |  | ✔ | ✔ | ✔ |
+| `α` Opah |  |  | ✔ | ✔ |
+| `O` Orca |  | ✔ | ✔ | ✔ |
+| `o` Osprey |  | ✔ | ✔ | ✔ |
+| `p` Penguin |  | ✔ |  |  |
+| `p` Puffin |  | ✔ |  |  |
+| `~` Sea lamprey |  | ✔ | ✔ |  |
+| `o` Sea otter |  |  | ✔ |  |
+| `S` Shortfin mako shark |  |  | ✔ | ✔ |
+| `W` Sperm whale |  | ✔ | ✔ | ✔ |
+| `s` Spiny dogfish |  |  | ✔ | ✔ |
+| `s` Sponge |  | ✔ | ✔ | ✔ |
+| `S` Spotted wobbegong |  |  | ✔ | ✔ |
+| `ò` Stingray |  |  |  | ✔ |
+| `α` Sturgeon |  | ✔ | ✔ |  |
+| `S` Tiger shark |  |  |  | ✔ |
+| `α` Swordfish |  |  | ✔ | ✔ |
+| `W` Walrus |  | ✔ |  |  |
+| `S` Whale shark |  |  |  | ✔ |
+| `s` Whitetip reef shark |  |  |  | ✔ |
 
 **In savage oceans:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `a` Albatross man |  | ✔ | ✔ | ✔ |
+| `c` Crab man |  | ✔ | ✔ | ✔ |
+| `c` Cuttlefish man |  | ✔ | ✔ | ✔ |
+| `S` Elephant seal man |  | ✔ |  |  |
+| `A` Giant albatross |  | ✔ | ✔ | ✔ |
+| `C` Giant crab |  | ✔ | ✔ | ✔ |
+| `C` Giant cuttlefish |  | ✔ | ✔ | ✔ |
+| `S` Giant elephant seal |  | ✔ |  |  |
+| `H` Giant harp seal |  | ✔ |  |  |
+| `C` Giant horseshoe crab |  | ✔ | ✔ | ✔ |
+| `L` Giant leopard seal |  | ✔ |  |  |
+| `S` Giant moon snail |  |  | ✔ |  |
+| `N` Giant narwhal |  | ✔ |  |  |
+| `N` Giant nautilus |  | ✔ | ✔ | ✔ |
+| `O` Giant octopus |  | ✔ | ✔ | ✔ |
+| `O` Giant orca |  | ✔ | ✔ | ✔ |
+| `O` Giant osprey |  | ✔ | ✔ | ✔ |
+| `P` Giant penguin |  | ✔ |  |  |
+| `P` Giant puffin |  | ✔ |  |  |
+| `W` Giant sperm whale |  | ✔ | ✔ | ✔ |
+| `S` Giant sponge |  | ✔ | ✔ | ✔ |
+| `W` Giant walrus |  | ✔ |  |  |
+| `S` Gigantic squid |  | ✔ | ✔ | ✔ |
+| `h` Harp seal man |  | ✔ |  |  |
+| `c` Horseshoe crab man |  | ✔ | ✔ | ✔ |
+| `L` Leopard seal man |  | ✔ |  |  |
+| `s` Moon snail man |  |  | ✔ |  |
+| `N` Narwhal man |  | ✔ |  |  |
+| `n` Nautilus man |  | ✔ | ✔ | ✔ |
+| `o` Octopus man |  | ✔ | ✔ | ✔ |
+| `O` Orca man |  | ✔ | ✔ | ✔ |
+| `o` Osprey man |  | ✔ | ✔ | ✔ |
+| `p` Penguin man |  | ✔ |  |  |
+| `p` Puffin man |  | ✔ |  |  |
+| `S` Sea serpent |  | ✔ | ✔ | ✔ |
+| `W` Sperm whale man |  | ✔ | ✔ | ✔ |
+| `s` Sponge man |  | ✔ | ✔ | ✔ |
+| `s` Squid man |  | ✔ | ✔ | ✔ |
+| `W` Walrus man |  | ✔ |  |  |
 
 **In good oceans:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `M` Merperson |  | ✔ | ✔ | ✔ |
 
 **In evil oceans:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `M` Sea monster |  | ✔ | ✔ | ✔ |
 
 ### Vermin
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `α` Anchovy |  |  | ✔ |  |
+| `ò` Bat ray |  |  | ✔ | ✔ |
+| `~` Brook lamprey |  |  | ✔ |  |
+| `α` Clownfish |  |  |  | ✔ |
+| `♂` Cuttlefish |  | ✔ | ✔ | ✔ |
+| `α` Flounder |  |  | ✔ |  |
+| `α` Glasseye |  |  |  | ✔ |
+| `~` Hagfish |  | ✔ | ✔ |  |
+| `α` Hake |  | ✔ | ✔ |  |
+| `α` Herring |  | ✔ | ✔ |  |
+| `α` Mackerel |  | ✔ | ✔ |  |
+| `∙` Moon snail |  |  | ✔ |  |
+| `m` Mussel |  | ✔ | ✔ | ✔ |
+| `♂` Nautilus |  | ✔ | ✔ | ✔ |
+| `o` Oyster |  | ✔ | ✔ | ✔ |
+| `α` Salmon |  |  | ✔ |  |
+| `Ω` Sea nettle jellyfish |  |  | ✔ |  |
+| `α` Seahorse |  |  | ✔ | ✔ |
+| `α` Shad |  | ✔ | ✔ |  |
+| `α` Sole |  | ✔ | ✔ |  |
+| `α` Spotted ratfish |  |  | ✔ |  |
+| `♂` Squid |  | ✔ | ✔ | ✔ |
+| `α` Steelhead trout |  | ✔ | ✔ |  |
+| `ò` Thornback ray |  |  | ✔ | ✔ |
+| `α` White-spotted puffer |  |  |  | ✔ |
 
 **In good oceans:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Graphic | Arctic ocean | Temperate ocean | Tropical ocean |
+| `∙` Fairy |  | ✔ | ✔ | ✔ |
+| `·` Pixie |  | ✔ | ✔ | ✔ |
 
 ## Starting on an arctic ocean
 
@@ -68,7 +224,7 @@ While by default it's impossible to embark in an ocean biome exclusively, DFHack
 
 ### Pre-embark
 
-You have to disable cave-ins in d_init.txt and keep them this way all the time. As the map edges do not provide support for the ice sheet, it would otherwise collapse into the water below, killing everyone in the resulting mayhem.
+You have to disable cave-ins in settings and keep it that way any time this save is loaded. As the map edges do not provide support for the ice sheet, it would otherwise collapse into the water below, killing everyone in the resulting mayhem.
 
 Alternatively, send in a sacrificial group for the first embark and allow the surface ice to cave in and kill everyone, then reclaim the site. This has the added quirk of creating solid ice all the way down to the ocean floor, which lowers the difficulty immensely.
 
@@ -77,7 +233,7 @@ Alternatively, send in a sacrificial group for the first embark and allow the su
 The frozen surface of the ocean offers nothing but ice and salt water, therefore requiring you to bring all the necessary supplies with yourself. Here is a comprehensive list of what you will need:
 
 - Sand - If your civilization has access to bituminous coal or lignite, green glass is the most cost-efficient material to make items out of. If not, bring a lot of wood instead, as stone can be mined out of the ocean floor, assuming there is an area that is solid ice down to the bottom. Ice can also be used for construction.
-- Brewable fruits - While booze can be chosen on embark, fruits give five times as much for the same price. In addition, choosing brewable items instead of booze will allow you the freedom to retire your fort if you so desire, as they won't get wasted instantly even if the game dumps them all out of their containers. They come up in bags but can't be brewed as such, requiring you to dump them out beforehand. They can, however, be eaten by dwarves, requiring you to make a large supply of pots early to brew all of them as soon as possible, or to forbid them so they won't be touched until you want them brewed. If you like to switch between fortresses via retire/unretire, brew sparingly so you don't waste the items, and forbid what you don't immediately need to use. Buy at least one of each type of booze at embark anyway, as they come in barrels, which you'll want for brewing.
+- Brewable fruits - While booze can be chosen on embark, fruits give five times as much for the same price. In addition, choosing brewable items instead of booze will allow you the freedom to retire your fort if you so desire, as they won't get wasted instantly even if the game dumps them all out of their containers. They come up in bags but can't be brewed as suchBug:7423, requiring you to dump them out beforehand. They can, however, be eaten by dwarves, requiring you to make a large supply of pots early to brew all of them as soon as possible, or to forbid them so they won't be touched until you want them brewed. If you like to switch between fortresses via retire/unretire, brew sparingly so you don't waste the items, and forbid what you don't immediately need to use. Buy at least one of each type of booze at embark anyway, as they come in barrels, which you'll want for brewing.
 - Stone - Mainly for mechanisms and blocks. Should be enough for a line of cage traps in your fortress entrance. Cages themselves can be made out of glass.
 - Wood - For beds, because your dwarves have to sleep somewhere. Not recommended for anything else, because it may get damaged by low temperatures. If you do not have access to bituminous coal or lignite, this is your main source of fuel until you find magma.
 - Ore - For weapons, necessary for hunting down wildlife, and to establish a basic defense, preferably made of bronze or bismuth bronze, but use copper if you lack the necessary ingredients. Iron ores are four times as expensive, and you can always request them from the caravan later on.
@@ -96,3 +252,9 @@ If you are using a sacrificial embark, you could stock it with a lot of food to 
 This is arguably the most difficult part, as the salt water is unsuitable for drinking and will freeze if you try to pump it out to desalinate it. In general, the only available drink is booze, and the only source of it is the dwarven caravan, as no other civilizations will travel through the ocean. Manage your supplies carefully.
 
 You could also build a well. If you dig deep enough, retiring and unretiring will cause your tunnels to fill with water. Furthermore, you do not need to choose a site that is wholly an arctic ocean biome. Pick a location with warmer waters as well as permanent ice, and you can have water for at least part of the year.
+
+Though beautiful, still tastes like salt.
+
+|  |
+|----|
+| "Ocean" in other / Languages / Dwarven / : / migrur / Elven / : / romi / Goblin / : / strabo / Human / : / sota |

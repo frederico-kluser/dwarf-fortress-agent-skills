@@ -1,6 +1,10 @@
 # Bestiary
 
-> Fonte: [Bestiary](https://dwarffortresswiki.org/index.php/Bestiary) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Bestiary](https://dwarffortresswiki.org/index.php/Bestiary) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+An example bestiary in the Premium version.
 
 A **bestiary** is the set of creatures known and documented by an adventurer or NPC. Whenever you encounter an animal in the wild that's different from everything you've seen so far, its entry gets added to the bestiary. You may browse the bestiary to get (usually summary) information about all the creatures you've seen.
 

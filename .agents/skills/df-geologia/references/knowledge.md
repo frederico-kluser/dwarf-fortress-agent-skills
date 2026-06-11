@@ -1,7 +1,10 @@
 # Knowledge
 
-> Fonte: [Knowledge](https://dwarffortresswiki.org/index.php/Knowledge) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Knowledge](https://dwarffortresswiki.org/index.php/Knowledge) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+\
 **Knowledge** is a feature in *Dwarf Fortress* which is at the heart of decision-making by historical figures. Historical figures can know about sites, events, regions, other historical figures, creatures, and art forms, but also a number of academic topics, as well as secrets.
 
 ## Overview
@@ -14,7 +17,7 @@ In fortress mode, the knowledge that dwarves and other intelligent creatures pos
 
 ## Historical knowledge
 
-Knowledge of other historical features of your world, such as sites, people, regions and artifacts can be obtained by a historical figure through seeing those things, and hearing rumors about them. In fortress mode, the knowledge is of limited use. In adventure mode, knowledge is reflected in the questlog, and necessary for historical figures for them to be able to tell you the location of a place, or to form reputation-awarding opinions on you.
+Knowledge of other historical features of your world, such as sites, people, regions and artifacts can be obtained by a historical figure through seeing those things, and hearing rumors about them. In fortress mode, your dwarves' knowledge will be updated with each passing caravan as traders tell the latest tales about the world. Visitors and your dwarves also tell each other stories in taverns. In adventure mode, knowledge is reflected in the questlog, and necessary for historical figures for them to be able to tell you the location of a place, or to form reputation-awarding opinions on you.
 
 ## Topics
 
@@ -29,3 +32,7 @@ Knowledge of art forms can be obtained by historical figures through observation
 ## Secrets
 
 Knowledge of secrets can be obtained though reading books and slabs, or under the apprenticeship of a necromancer. Only the secrets of life and death are implemented; which give their purple practitioners a selection of different necromantic powers, and always the ability to raise undead.
+
+|  |
+|----|
+| "Knowledge" in other / Languages / Dwarven / : / misttar / Elven / : / ipeÿa / Goblin / : / amos / Human / : / fedem |

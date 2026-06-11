@@ -1,18 +1,20 @@
 # Breeding
 
-> Fonte: [Breeding](https://dwarffortresswiki.org/index.php/Breeding) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Breeding](https://dwarffortresswiki.org/index.php/Breeding) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-\ **** creatures are those which can produce offspring in fortress mode. Conversely, **** creatures cannot reproduce in fortress mode, even though they presumably do so during worldgen. Breeding creatures are significantly more useful as stock for a meat industry than their non-breeding counterparts. \
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Breeding** creatures are those which can produce offspring in fortress mode. Conversely, **non-breeding** creatures cannot reproduce in fortress mode, even though they presumably do so during worldgen. Breeding creatures are significantly more useful as stock for a meat industry than their non-breeding counterparts.
 
 ## Breeding Mechanics
 
-To be able to breed, a creature must have separate and castes. Genderless and one-gendered creatures are incapable of breeding. In addition, intelligent creatures must be married or otherwise "marriage-compatible", even if they do not actually marry ingame.
+To be able to breed, a creature must have separate [`[MALE]`](/index.php/Creature_token#MALE "Creature token") and [`[FEMALE]`](/index.php/Creature_token#FEMALE "Creature token") castes. Genderless and one-gendered creatures are incapable of breeding. In addition, intelligent creatures must be married or otherwise "marriage-compatible", even if they do not actually marry ingame.
 
 When a compatible male and an uncaged female of the same species are on adjacent tiles, they'll breed when idle.
 
 ### Prevention
 
-Breeding can be prevented by gelding males, separating males and females, caging females, or while (non-aquatic?) creatures are swimming. Caged males are still capable of breeding, assuming the female can approach the cage. Pregnant non-egglaying females can give birth in cages, but not get pregnant again
+Breeding can be prevented by gelding males, separating males and females, caging females, or while (non-aquatic?) creatures are swimming. Caged males are still capable of breeding, assuming the female can approach the cage. Pregnant non-egglaying females can give birth in cages, but not get pregnant again unless released.
 
 ### Limits on breeding
 
@@ -28,10 +30,10 @@ All non-sentient animals have a gestation period of 6 months (your citizens are 
 
 ## Off-map breeding
 
-Invaders normally are incapable of breeding, but they have been observed to arrive on the map pregnant. Additionally, invaders (whether soldiers or mounts) can become pregnant and breed while on the map if they possess the or tokens (and a ), but their parents will immediately attack their offspring unless they are separated from each other (such as via cage traps).
+Invaders normally are incapable of breeding, but they have been observed to arrive on the map pregnant. Additionally, invaders (whether soldiers or mounts) can become pregnant and breed while on the map if they possess the [`[PET]`](/index.php/Creature_token#PET "Creature token") or [`[PET_EXOTIC]`](/index.php/Creature_token#PET_EXOTIC "Creature token") tokens (and a [`[PET_VALUE]`](/index.php/Creature_token#PET_VALUE "Creature token")), but their parents will immediately attack their offspring unless they are separated from each other (such as via cage traps).
 
 As non-historical non-pet fully-sentient figures cannot breed, visitors are more often able to breed than invaders, though this is countered by their relatively common separation from loved ones by distance or death.
 
 ## Bugs
 
-- It is intended for attributes to be inheritable ^(DF Talk \#8 (2010)), but latest testing suggests there is minimal impact on either strength or body size.
+- It is intended for attributes to be inheritable DF Talk #8 (2010), but latest testing suggests there is minimal impact on either strength or body size.

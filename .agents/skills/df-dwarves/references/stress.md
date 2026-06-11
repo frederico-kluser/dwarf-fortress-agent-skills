@@ -1,12 +1,33 @@
 # Stress
 
-> Fonte: [Stress](https://dwarffortresswiki.org/index.php/Stress) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Stress](https://dwarffortresswiki.org/index.php/Stress) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**`Stress`**` is a condition that is similar to unhappiness in earlier versions. It will cause the dwarf to flash with a downward red arrow, and `` will show on their ``thoughts and preferences`` tab.`
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-Dwarves under stress for long periods of time will develop worse symptoms of stress, e.g: . In the short term, excessive levels of stress will lead to temporary **emotional breakdowns** – throwing tantrums, slipping into depression, or stumbling around obliviously. In the long term, excessive levels of stress may lead to **insanity**. Under even greater stress for prolonged periods of time, dwarves will become Harrowed, their thoughts and preferences tab reading:
+At least it wasn't blood rain...\
+*Art by theRealOdieman*
 
-Animals can also be stressed, which seems to happen when an animal has been constrained for a long time. Internally, stress level is tracked with one number, where a negative number is good and a positive number is bad – it is not possible to view this number without third-party utilities. Stress ranges from -1000000 to +1000000, and the negative effects start appearing at +10000, +25000, and +50000. Stress itself gradually increases or decreases based on thoughts incurred.
+**Stress** is a condition that is similar to unhappiness in earlier versions. It will cause the dwarf to flash with a downward red arrow, and Over the long term, Urist McStressed has been under a great deal of stress. will show on their thoughts and preferences tab.
+
+Dwarves under stress for long periods of time will develop worse symptoms of stress, e.g: Urist McStressed has become haggard and drawn due to the tremendous stresses placed on him.. In the short term, excessive levels of stress will lead to temporary **emotional breakdowns** – throwing tantrums, slipping into depression, or stumbling around obliviously. If they're under stress for prolonged periods of time, dwarves will become Harrowed, their thoughts and preferences tab reading: Urist McStressed has been utterly harrowed by the nightmare that is his tragic life. If a harrowed dwarf experiences a stressful event like observing death, it will lead to **insanity**.
+
+Animals can also be stressed, which seems to happen when an animal has been constrained for a long time.
+
+\
+
+## Technical details
+
+Internally, stress level is tracked by two numbers, where a negative number is good and a positive number is bad – it is not possible to view these numbers without third-party utilities.
+
+**Short-term stress** ranges from -100000 to 100000, it is affected by emotions and directly correlates with a creature's mood: the happy or angry emojis which are labelled "stress level" in game and range from escatic to miserable.
+
+**Long-term stress** ranges from -50000 to 120000, it is a gradual accumulation of short-term stress, the only indication of a dwarf's long term stress are statuses: stressed at +25000, haggard at +50,000 and harrowed at +100,000.
+
+Only if both short-term and long-term stress are high does a creature become prone to **emotional breakdowns**.
+
+Under "ideal" circumstances, long term stress can increase by at most 20,160 per year, and decrease by at most 43,564 per year [1], this means it takes several years for a dwarf to become haggard, even if the dwarf is in a very bad mood, but a full recovery also takes several years, even if the dwarf is in an excellent mood - but in the meantime the good mood does protect against breakdowns.
+
+Despite the nomenclature "short-term stress" it can take several years to improve a dwarf's short-term stress level from miserable to ecstatic.
 
 ## Detailed mechanics
 
@@ -80,9 +101,9 @@ Of the 4 dwarves that became unhappy enough to be seemingly unrecoverable (3 fro
 
 ### Combat hardness and immunity to corpses/stress
 
-There is a very old piece of code which measures the "combat hardness value" of a dwarf. This value is listed as "detachment" in Dwarf Therapist, although it doesn't appear in the default grid views. Toady said that when a dwarf sees guts and stuff, including seeing people die, it increases their combat hardness, which will eventually lead them to become immune to seeing corpses. This code predates the current stress system and is still active. Anecdotal reports of dwarves becoming immune to seeing corpses due to constant combat exist, which is why it was brought to question. It was attempted to bring some dwarves to the maximum state of "doesn't really care about anything anymore", but after 10 years of running a fortress with one squad dedicated to fighting goblins released from cages, only the intermediate level of "is a hardened individual" was reached. There was fighting indoors, so it required frequent breaks to remove corpses to prevent miasma. There was an attempt at discovering which aspects of the stress system would be overridden by combat hardness – which things would a dwarf become immune to? Would it be everything? Do they not feel happiness or unhappiness about anything anymore? Can a dwarf still go berserk? Trying to test that concurrently with the rest of the experiment didn't sit well alongside the molly-coddle approach, so it was not pursued further, but knowing the effect on all aspects of stress would be interesting.
+There is a very old piece of code which measures the "combat hardness value" of a dwarf. This value is listed as "detachment" in Dwarf Therapist, although it doesn't appear in the default grid views. Toady said that when a dwarf sees guts and stuff, including seeing people die, it increases their combat hardness, which will eventually lead them to become immune to seeing corpses. This code predates the current stress system and is still active. Anecdotal reports of dwarves becoming immune to seeing corpses due to constant combat exist, which is why it was brought to question. It was attempted to bring some dwarves to the maximum state of "doesn't really care about anything anymore", but after 10 years of running a fortress with one squad dedicated to fighting goblins released from cages, only the intermediate level of "is a hardened individual" was reached. There was fighting indoors, so it required frequent breaks to remove corpses to prevent miasma. There was an attempt at discovering which aspects of the stress system would be overridden by combat hardness – which things would a dwarf become immune to? Would it be everything? Do they not feel happiness or unhappiness about anything anymore? Can a dwarf still go berserk? Trying to test that concurrently with the rest of the experiment didn't sit well alongside the molly-coddle approach, so it was not pursued further, but knowing the effect on all aspects of stress would be interesting.\[Verify\]
 
-Anecdotal evidence 1 from version 0.47.05 seems to indicate that dwarves gain combat hardness much more quickly than they did in previous versions. Even without taking any special measures, it seems common for most of the adult population to have some level of combat hardness, and it's not unusual for civilians who have never been in combat to reach the highest level of "doesn't really care about anything anymore".
+Anecdotal evidence [2] from version 0.47.05 seems to indicate that dwarves gain combat hardness much more quickly than they did in previous versions. Even without taking any special measures, it seems common for most of the adult population to have some level of combat hardness, and it's not unusual for civilians who have never been in combat to reach the highest level of "doesn't really care about anything anymore".
 
 ### Conclusion
 
@@ -98,4 +119,107 @@ Emotions and the level of stress or stress relief they cause are detailed in the
 
 Here is a partial table of emotions and what they can be caused by:
 
-[TABLE]
+|  |  |
+|----|----|
+| Emotion | Cause |
+| adoration | Giving birth to a baby, becoming a parent |
+| admiration | Being next to completely sublime furniture, watching a performance |
+| affection | Interacting with a pet, adopting a new pet, forming a bond with the trained animal, talking with a friend, making a new friend |
+| aroused | Talking with the spouse, watching a performance |
+| caring | Giving somebody food |
+| empathy | Being yelled at/cried on by an unhappy citizen |
+| enraptured | Communing with deity |
+| fondness | Making a new friend, talking with a friend or a sibling, interacting with a pet |
+| gratitude | Being rescued, receiving water or food, being granted residency, being elected as mayor, sparring |
+| lustful | Talking with the spouse |
+| love | Talking with a parent, spouse, or child, gaining a sibling |
+| passionate | Talking with the spouse |
+| pleasure | Being next to fine/very fine/splendid/completely sublime furniture, acquiring well-crafted items, putting on a well-crafted/exceptional item, performing, viewing something on display |
+| proud | Owning a high quality furniture, being elected as a mayor, bringing somebody to rest in bed |
+| repentant | Being confined |
+| sympathy | Giving somebody water or food, bringing somebody to rest in bed |
+| tenderness | Talking with the spouse, bringing somebody to rest in bed |
+| amused | Watching a performance |
+| blissful | Dining in a legendary dining room, sleeping in a good bedroom/great bedroom/bedroom like a personal palace, having a bath, becoming a parent, performing |
+| content | Being able to rest and recuperate, eating a fine/pretty decent meal, having a fine/pretty decent drink, putting on a well-crafted/finely-crafted/superior item, sleeping in a bedroom like a personal palace, having a bath, being near to a waterfall, discussing or pondering a topic |
+| delighted | Eating a truly decent/legendary meal, putting on an exceptional item, being near to a waterfall, watching a performance |
+| elated | Having punishment delayed, being elected |
+| enjoyment | Being near to favourite animal in a cage, performing, watching a performance, playing with toys, playing make believe |
+| euphoric | Drinking |
+| expectant | Discussing or pondering {topic} |
+| free | Being released from confinement |
+| gaiety | Performing |
+| happy | Adopting a new pet, being granted residency |
+| hope | Being released from confinement |
+| jovial | Having a mandate deadline met |
+| joy | Performing |
+| relieved | Being rescued, bringing somebody to rest in bed, eating vermin to survive, having punishment delayed, being near to a waterfall, being released from confinement, yelling at/crying on somebody in charge |
+| satisfied | Receiving water or food, being successful at work, mastering a skill, teaching a skill, producing a masterwork, creating an artifact, improving a skill, reading a book, learning a book, felling a tree, slaughtering an animal, getting into an argument, caging a creature, being granted residency, realizing the value of leisure time, realizing the value of nature, realizing nuances of independence, realizing nuances of fairness, realizing nuances of loyalty, realizing nuances of law, realizing nuances of leisure time, realizing nuances of friendship, realizing the value of knowledge, realizing the worthlessness of eloquence, realizing the worthlessness of power |
+| triumph | Killing somebody, being elected/re-elected |
+| optimistic | Being able to rest and recuperate, having a mandate deadline met |
+| astonished | Having punishment reduced, having punishment delayed, being elected |
+| awe | Being next to completely sublime furniture |
+| excited | Performing |
+| eager | Being elected/re-elected |
+| exhilarated | Being attacked, getting into an argument, a sparring session, performing |
+| interested | Being next to fine/very fine/splendid/completely sublime furniture, learning the secrets of life and death, watching a performance, being taught a skill, reading a book, learning a book, realizing the value of nature, realizing nuances of perseverance, realizing nuances of craftsmanship, realizing the worthlessness of fairness, viewing something on display |
+| wonder | Being taught a skill, learning a book, communing with {deity}, realizing the worthlessness of perseverance, realizing the value of family, realizing the value of competition, realizing the value of cooperation, realizing the value of loyalty |
+| accepting | Seeing somebody's dead body, having a mandate ignored, being caught in the rain, being forced to drink vomit, being forced to endure the decay of a pet, retching on a miasma, having to conduct an official meeting in a bedroom (many negative memories may change to acceptance as a result of the personality-change system) |
+| ambivalent | Delayed punishment of a criminal, putting on a well-crafted/finely-crafted item |
+| grim satisfaction | Seeing somebody's death |
+| suspicious | Having a mandate ignored |
+| aggravated | Being pestered by flies |
+| agitated | Being utterly sleep-deprived |
+| annoyed | Being caught in the rain, being caught in a snow storm, being out in the sun, eating without a table or chair, eating without a proper dining room, sleeping on dirt/rocks/cave floor/in the grass, drinking water without a well, suffering a minor injury, choking on cave-in dust, choking on smoke, being accosted by hated vermin, being pestered by flies, drinking without a goblet, cup or mug |
+| anxious | Discussing/pondering (topic) |
+| bitter | Wearing tattered clothes, getting into an argument |
+| bored | Watching a performance, being unoccupied, being unable to practice a craft, being unable to practice a martial art, not learning anything, being unable to use abstract thinking, being unable to wander, being unable to fight, being unable to hear eloquent speech, lack of trouble-making, doing nothing creative, generally leading an unexciting life |
+| confused | Being knocked out during a cave-in |
+| contemptuous | Getting into an argument |
+| dejected | Being caught in the rain, being caught in a snow storm, wearing tattered clothes, lack of decent meals, being unable to pray to {deity}, being kept from alcohol, being unable to admire art, being unable to acquire something, being unable to be extravagant, lack of introspection, generally being unable to take it easy |
+| disappointed | Having a mandate deadline missed |
+| disillusioned | An animal was convicted of a crime |
+| dislike | Talking to somebody annoying |
+| embarrassed | Sleeping without a proper zone, sleeping on a dirt/rocks/cave floor/in the grass, wearing tattered clothes, having no shirt, having no shoes, being uncovered, watching a performance, having to conduct an official meeting in a dining room |
+| exasperated | Being caught in the rain, being caught in a snow storm, getting into an argument |
+| frustrated | Considering the scarcity of cages and chains, having a mandate ignored, nobody could be punished for a mandate failure, getting into an argument, lack of decent meals, being unable to practice a skill, being unable to practice a craft, being unable to practice a martial art, being unable to pray to {deity}, being kept from alcohol, being unable to acquire something, being unable to wander, being unable to fight, being unable to admire art, lack of abstract thinking, lack of trouble-making, generally leading an unexciting life |
+| gloomy | Being out in the sun |
+| glum | Getting into an argument |
+| grouchy | Being caught in the rain, being caught in a snow storm, being out in the sun, eating the same old food, drinking the same old booze |
+| guilty | Being confined, being able to rest and recuperate, being rescued |
+| indignant | Being forced to endure the decay of a (dead) friend, delayed punishment of a criminal |
+| insulted | Being forced to endure the decay of a (dead) friend, getting into an argument |
+| irritated | Being out in the sun, being hungry/thirsty/drowsy, eating at crowded table, wearing old/tattered clothes, sleeping uneasily due to noise |
+| isolated | Being unable to find somebody in charge to yell at |
+| lonely | Being away from family, being away from friends, being away from people, being unable to make merry, being unable to make romance |
+| regretful | Toppling something over, starting a fist fight, throwing something, becoming a parent |
+| resentful | Giving somebody water, experiencing trauma, getting into an argument |
+| restless | Being able to rest and recuperate, being unable to practice a craft, being unable to practice a martial art, being unable to learn, being unable to use abstract thinking, being unable to argue, lack of trouble-making, doing nothing creative, generally leading an unexciting life |
+| self-pity | Being away from family, being away from friends, being unable to argue, being unable to fight, being unable to make merry, being unable to practice a craft, being unable to practice a martial art, being unable to wander, lack of abstract thinking, being unoccupied, doing nothing creative, not learning anything, generally leading an unexciting life |
+| uneasy | Being near to hated vermin in a cage, being caught in freakish weather, seeing somebody's dead body, being uncovered, retching on a miasma, being attacked, being attacked by the dead, giving birth to a baby, being unable to pray to {deity}, lack of decent meals, being kept from alcohol, being unable to be extravagant, being unable to help anybody, being unable to admire art, being unable to acquire something, generally being unable to take it easy |
+| worried | Lack of decent meals, being kept from alcohol, being unable to pray to {deity}, being unable to be extravagant |
+| anguish | Experiencing a miscarriage |
+| ashamed | Eating without a chair |
+| despair | Being caught in freakish weather |
+| disgusted | Retching on a miasma, being nauseated by the sun, drinking water from murky pool, being caught in freakish weather, being forced to eat vermin, being forced to drink vomit, being forced to endure the decay of a (dead) pet, being accosted by hated vermin |
+| distressed | Being pestered by flies |
+| empty | Having a masterwork destroyed |
+| existential crisis | Being unable to advance the study of topic |
+| frightened | Being haunted by the dead |
+| grieved | Unexpected death of somebody |
+| hopeless | Suffering a major injury, being nauseated by the sun |
+| humiliated | Eating without a table or chair, wearing tattered clothes, being uncovered, not having any rooms, having a mandate ignored |
+| mortified | Being forced to eat vermin |
+| panicked | Being attacked, being starving/dehydrated |
+| sad | Being separated from a loved one/loved ones, retching on a miasma |
+| shaken | Suffering a major injury, being knocked out during cave-in, being forced to endure the decay of a (dead) friend |
+| shocked | Being attacked, unexpected death of somebody, having a masterwork destroyed or stolen |
+| alarmed | Seeing somebody's dead body |
+| afraid | Experiencing trauma |
+| angry | Getting into an argument, being forced to endure the decay of a (dead) friend |
+| ferocity | Being attacked |
+| horrified | Seeing somebody die, seeing somebody's dead body, being caught in a freakish weather, being haunted by the dead, being attacked by the dead |
+| loathing | Being out in the sun, being beaten up in the course of dwarven justice or otherwise |
+| outraged | Being forced to endure the decay of a (dead) child/spouse |
+| terrified | Being in conflict |
+| vengeful | Joining an existing conflict |

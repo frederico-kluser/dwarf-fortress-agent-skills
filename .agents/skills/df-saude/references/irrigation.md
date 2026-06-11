@@ -1,22 +1,26 @@
 # Irrigation
 
-> Fonte: [Irrigation](https://dwarffortresswiki.org/index.php/Irrigation) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Irrigation](https://dwarffortresswiki.org/index.php/Irrigation) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-Farming is only possible on mud and soil. Any terrain can be made muddy, and therefore suitable for farming, by dumping water on it. In *Dwarf Fortress*, 'irrigation' is used as a fancy word for dumping water onto terrain that isn't useful for farming, in order to make it so. Once your floor is successfully muddied, no further irrigation will be required, unless you somehow accidentally remove the mud (by building a constructed floor or chopping down a tree, for instance).
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-Any amount of water dropped, pumped, or otherwise transported onto a tile will leave behind at least 'a dusting of mud', and this is sufficient for farming. Farm plots cannot be built on terrain with a water level of more than 1/7, and more mud has no apparent effect on farm output, so it's best to use a minimum of water to irrigate.
+It's like Gatorade for plants.
+
+**Irrigation** is the process of applying water to terrain - making it muddy, in order to make it suitable for farming, where it otherwise wouldn't be. Farming is only possible on mud and soil. In *Dwarf Fortress*, 'irrigation' is used as a fancy word for dumping water onto terrain for farming purposes. Once your floor is successfully muddied, no further irrigation will be required, unless you somehow accidentally remove the mud (by building a constructed floor or chopping down a tree, for instance). Please note that irrigating Soil will not improve the quality (ie. irrigated Sand will still be poor quality, while irrigated Rock is standard quality).
+
+Any amount of water dropped, pumped, or otherwise transported onto a tile will leave behind at least 'a dusting of mud', which is sufficient for farming. Farm plots cannot be built on terrain with a water level of more than 1/7, and more mud has no apparent effect on farm output, so it's best to use a minimum of water to irrigate.
 
 Irrigation is especially useful in biomes with little soil, and deep underground. However, no amount of irrigation will make it possible to grow surface plants in a hostile biome, such as mountains-this is a matter of climate, not soil conditions.
 
 Farm plots which overlap unsuitable ground will be irregularly-shaped, but still usable. (However, note that when placing an outdoor farm plot, the game will always erroneously report that there is no usable mud/soil. This is a bug - if the plot is green it will function correctly.)
 
-Sadly, magma cannot be used to irrigate, as it clearly does not leave behind mud. It's usually best not to confuse molten rock and liquid water, although the use of both in tandem may help with schemes to irrigate glaciers.
+Sadly, magma cannot be used to irrigate, as it clearly does not leave behind mud. It's usually best ~~not~~ to confuse molten rock and liquid water, although the use of both in tandem may help with schemes to irrigate glaciers.
 
 All types of soil can be farmed with no need for irrigation, even sand. Irrigation is ***not*** required for farming. Any underground soil can be used to farm; irrigation is only required on stone. Be careful, however: if the stone beneath mud is designated for smoothing, the dwarves will not smooth it, but proceed to clean the mud instead, which will make the farm plot unusable.
 
 In certain conditions, irrigation can convert rock floors into soil floors. This can be useful for transporting valuable soil like fire clay or sand closer to magma.
 
-## Easy Irrigation
+## Easy irrigation
 
 At its simplest, all that's required for irrigation is a water source, a drop-off point, and a dwarf with a bucket.
 
@@ -42,39 +46,81 @@ The final water level must be less than 2/7 in order for the water to evaporate 
 
 There are two approaches to reducing the final water level, without using pumps. One is to leave plenty of room. If the area to be irrigated is 5-6 times the size of the pool, the water inside will evaporate on its own, even in temperate climates. The other way is to leave a route for the water to flow out. If the pool and the dug out area are separate, channeling can be used to connect them with no danger of drowning.
 
-## Complex Irrigation
+## Complex irrigation
 
 The following methods of irrigation take longer to build, but they can be more powerful, better-looking, and, of course, much more fun.
 
 ### via Screw Pump
 
-A screw pump can be used to lift water and dump it into a chamber directly next to the water source. There are many ways to go about this, but one particularly simple, easy, and safe method requires a chamber dug out or constructed next to a body of water, with an outlet to allow it to drain back to its source. If the water the pump is free to collect water to spread inside, the water is contained by barriers, and water in the area is free to drain out, nearly any size area can be irrigated quickly and without danger.
+A screw pump can be used to lift water and dump it into a chamber directly next to the water source. There are many ways to go about this, but one particularly simple, easy, and safe method requires a chamber dug out or constructed next to a body of water, with an outlet to allow it to drain back to its source. If the water pump is free to collect water to spread inside, the water is contained by barriers, and water in the area is free to drain out, nearly any size area can be irrigated quickly and without danger.
 
 This method is most useful around rivers that pass by or through hills, or through canyons, as irrigation isn't much use on most outdoor tiles. If terrain at a higher elevation than the river isn't available nearby, water can drain through a tunnel down to the caverns or toward the edge of the map, instead. Although the edge of the map cannot be dug out, it can be smoothed and carved into fortifications. Fortifications allow water to pass through, providing easy drainage at any depth.
 
 Here's one example of this method:
 
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|  | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ≈ | ~ |  |  |  |  |  |  |  |  |  | l | e | g | e | n | d |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | ▓ | ≈ | ~ | ≈ |  |  |  |  |  |  | ▓ |  |  | s | t | o | n | e |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | . | . | % | % | ~ | ≈ | ~ |  |  |  |  |  |  | . |  |  | f | l | o | o | r |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | . | \+ | \+ | \+ |  |  |  |  |  |  | % | % |  | p | u | m | p |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | ▓ | ~ | ≈ | ~ |  |  |  |  |  |  | ≈ | ~ |  | w | a | t | e | r |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | . | . | . | . | \+ | \+ | \+ |  |  |  |  |  |  | \+ |  |  | " | b | r | i | d | g | e | " |  | ( | c | o | n | s | t | r | u | c | t | e | d |  | f | l | o | o | r |  | t | i | l | e | s | ) |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | ≈ | ~ | ≈ | ~ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ▓ | ▓ | ▓ | ▓ | ▓ | ~ | ≈ | ~ | ≈ | ~ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
 ### via Reservoir
+
+A reservoir system which provides enough water for 8 fields. Upper level
+
+The irrigated bottom level.
 
 Water reservoirs can be used as an intermediate step in any irrigation plan. This requires a large source of water to be of much use. Using reservoirs effectively involves some calculations, a worked example is shown below.
 
 For this example, each 7x7 farm plot needs:
 
-:\* a floodgate
-
-:\* a hatch cover
-
-:\* 4 mechanisms (for linking)
-
-:\* a door
+- a floodgate
+- a hatch cover
+- 4 mechanisms (for linking)
+- a door
 
 Also needed is:
 
-:\* 2 Mechanisms for the levers
-
-:\* at least one additional door (if you have enough time to set up a wall or floodgate as well)
+- 2 Mechanisms for the levers
+- at least one additional door (if you have enough time to set up a wall or floodgate as well)
 
 Here is the pattern:
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|  | ▓ | ▓ | ▓ | ▓ | ▓ |  |  |  |  |  |  |  |  |  | ▓ | ▓ | ▓ | ▓ | ▓ |  |  |  |  |  |  | l | e | g | e | n | d |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | . | . | . | ▓ |  |  |  | ▓ |  |  | s | t | o | n | e |  |  |  |  |  |  |  |  |
+|  | ▓ | . | ¢ | . | . | X | . | . | . | . | . | . | . | X | . | . | ¢ | . | ▓ |  |  |  | . |  |  | f | l | o | o | r |  |  |  |  |  |  |  |  |
+|  | ▓ | . | . | . | ▓ | ▓ | ▓ | ▓ | ▓ | . | ▓ | ▓ | ▓ | ▓ | ▓ | . | . | . | ▓ |  |  |  | ¢ |  |  | f | l | o | o | r |  | h | a | t | c | h |  |  |
+|  | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | 1 | ▓ | ▓ | . | ▓ |  |  |  | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ |  |  | X |  |  | f | l | o | o | d | g | a | t | e |  |  |  |  |
+|  |  |  |  |  |  | ▓ | \< | . | ┼ | . | ▓ |  |  |  | ▓ | ▓ | ▓ | ≈ | ~ | ≈ |  |  | ≈ |  |  | w | a | t | e | r |  | s | o | u | r | c | e |  |
+|  |  |  |  |  |  | ▓ | 2 | ▓ | ▓ | . | ▓ |  | ▓ | ▓ | ▓ | ≈ | ~ | ≈ | ≈ | ~ |  |  | ┼ |  |  | d | o | o | r |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  | ▓ | ▓ | ▓ | ▓ | . | ▓ | ▓ | ▓ | ~ | ≈ | ~ | ≈ | ~ | ≈ | ~ |  |  | \< |  |  | u | p |  | s | t | a | i | r | s |  |  |  |  |
+|  |  |  |  |  |  |  |  | ▓ | ▓ | ▓ | ▓ | ≈ | ≈ | ~ | ≈ | ≈ | ~ | ≈ | ▓ | ▓ |  |  | 1 |  | \- | \> |  | l | e | v | e | r |  | 1 |  |  |  |  |
+|  |  |  |  |  |  |  | ▓ | ▓ | ≈ | ~ | ≈ | ~ | ≈ | ~ | ≈ | ~ | ▓ | ▓ | ▓ |  |  |  | 2 |  | \- | \> |  | l | e | v | e | r |  | 2 |  |  |  |  |
+|  |  |  |  |  |  |  | ▓ | ~ | ≈ | ≈ | ~ | ≈ | ≈ | ~ | ▓ | ▓ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| u | p | p | e | r |  | l | e | v | e | l | , |  | p | l | u | m | b | i | n | g |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+\
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|  |  |  |  |  | ▓ | . | t | o | . | f | o | r | t | . | ▓ |  |  |  |  |  |  |  |  |  | l | e | g | e | n | d |  |  |  |  |  |  |  |  |
+| ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | . | . | . | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ |  |  | ≈ |  | f | a | r | m |  | p | l | o | t |  |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ | . | . | . | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  | ═ |  | s | t | o | c | k | p | i | l | e |  |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ | . | . | . | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  | ( | c | u | s | t | o | m | i | z | e | d |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ | ═ | ═ | ═ | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  | f | o | r |  | s | e | e | d | s | ) |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ┼ | ═ | ═ | ═ | ┼ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ | ═ | ═ | ═ | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ | ▓ | ▓ | ▓ | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  | ▓ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ≈ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ |  |  |  | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| l | o | w | e | r |  | l | e | v | e | l | , |  | f | a | r | m | s |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 After the pattern has been dug out, the tiles for each hatch are channeled out. Then, the hatch covers are placed and linked to the first lever.
 

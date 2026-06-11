@@ -1,8 +1,21 @@
 # Losing
 
-> Fonte: [Losing](https://dwarffortresswiki.org/index.php/Losing) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Losing](https://dwarffortresswiki.org/index.php/Losing) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 
 Losing is fun! Either way, it keeps you busy.
+
+Dwarf Fortress in a nutshell.
+
+There are three constants in life: death, taxes and losing in *Dwarf Fortress*.\
+*Art by kruggsmash*
 
 There is no internal end point, single goal, final Easter egg or "You Win!" announcement in *Dwarf Fortress*, therefore, eventually, almost every fortress will fall. The only ones that don't, tend to be very conservative and very boring—and what fun is that? Thus, DF = losing ∧ DF = fun ⇒ losing = fun, and that's okay! It's a game philosophy, so embrace it, own it, and have *fun* with it!
 
@@ -10,7 +23,9 @@ Most new players will lose their first few forts sooner rather than later; when 
 
 When you lose, you can always reclaim fortress, or go visit it in adventurer mode.
 
-If you're looking for more ways to lose horribly test yourself, try either the mega construction or the Challenges articles.
+If you're looking for more ways to ~~lose horribly~~ test yourself, try either the mega construction or the Challenges articles.
+
+An engraving depicting the contrast between *Dwarf Fortress* and other games, in terms of difficulty.
 
 ## Autopsy, or why your fortress died
 
@@ -18,15 +33,15 @@ Various common things can cause the death of a fortress. Let's examine some toge
 
 ### Dwarf vs. Wild
 
-Sometimes the wilds take you out.
+Sometimes the wilds take you out somewhere, somewhen.
 
 #### Local Wildlife
 
-Goblins aren't the only creatures that want you dead. The obvious threats aside, some creatures with benign natures, names, or descriptions can be surprisingly deadly. A sudden wildlife attack can quickly cripple or destroy an unprepared fortress. Before you unpause a new game for the first time, hit nits, and switch to the "Others" tab to see what's sharing your map. Learn to do this regularly—new creatures will frequently migrate onto your map and then off again to be replaced by others.
+Goblins aren't the only creatures that want you dead. The obvious threats aside, some creatures with benign natures, names, or descriptions can be surprisingly deadly. A sudden wildlife attack can quickly cripple or destroy an unprepared fortress. Before you unpause a new game for the first time, hit units, and switch to the "Others" tab to see what's sharing your map. Learn to do this regularly—new creatures will frequently migrate onto your map and then off again to be replaced by others.
 
-Consider arming up and thinning out any predictable threats.
+Consider arming up, and thinning out any predictable threats.
 
-Outdoor titans and other megabeasts are a later-stage hazard. And that's not to mention Werebeasts, which turn any dwarves they bite into werebeasts once a month. While this will not *directly* cause you to lose the game (even if every dwarf in your fortress becomes infected), it could cause major production slowdowns every month, and if a Goblin siege coincides with a full moon, things could get very fun...
+Outdoor titans and other megabeasts are a later-stage hazard, not to mention Werebeasts, which turn any dwarves they bite into more of them once a month. While this will not *directly* cause you to lose the game (even if every dwarf in your fortress becomes infected), it could cause major production slowdowns every month, and if a goblin siege coincides with a full moon, things could get very fun...
 
 #### Underground life
 
@@ -74,7 +89,7 @@ Healthy dwarves will not die of thirst as long as they have alcohol, which in th
 
 Rain will refill stagnant pools of water slowly. In a hot climate, this may evaporate almost immediately. What's more, if the map is in a dry climate, such as a desert (hot or cold), then there can be long periods of time with no water anywhere - in extreme cases, none ever. Snow will not refill pools, so you can also have a lack of water in very cold climates. Also, if weather has been turned off in the init.txt file then there will be no rain and no water will accumulate, though it may be there at the beginning of the game.
 
-If all else fails, the caverns may contain water somewhere, so you can put down a well. Watch out for other of fun, though.
+If all else fails, the caverns may contain water somewhere, so you can put down a well. Watch out for other sources of fun, though.
 
 ##### Too Much Water (aka "Flooding accidents")
 
@@ -94,11 +109,11 @@ i.e., no picks.
 
 Diggor Mortis: *when a Dwarf with a pickaxe decides that digging where they shouldn't is a bloody good idea.*
 
-Simply put, you need picks to mine ore, which is then smelted to make metal for items like more picks. If you are careless (or ignorant) of how to dig safely, and your miners create a collapse or flood and their equipment gets lost/destroyed/unrecoverable, *and* you have no materials to make more picks, you will be at a severe handicap until the problem is solved. Any dwarf can be given the mining labor, but without a pick they can do nothing. There is no way to get new metals or stone (clay excluded) for any purpose (except from foreign traders and smelting other items) nor any way to dig new rooms/tunnels unless you have picks.
+Simply put, you need picks to mine ore, which is then smelted to make metal for items; like more picks. If you are careless (or ignorant) of how to dig safely, and your miners create a collapse or flood and their equipment gets lost/destroyed/unrecoverable, *and* you have no materials to make more picks, you will be at a severe handicap until the problem is solved. Any dwarf can be given the mining labor, but without a pick they can do nothing. There is no way to get new metals or stone (clay excluded) for any purpose (except from foreign traders and smelting other items) nor any way to dig new rooms/tunnels unless you have picks.
 
 If you have ore or bars to create a weapons-grade metal (other than silver), and a forge (and smelter if you need one), you can create new picks and continue. In a pinch, you can even melt other metal objects for metal. You might get lucky with a caravan - elves never carry picks, but humans sometimes have bronze ones, and dwarves generally bring some along. If the first dwarven caravan doesn't bring any, you can try to keep your fortress running long enough to request additional picks from your outpost liaison, who will arrive with the next dwarven trade caravan in a year. Or you can abandon and try again.
 
-If you have battle axes and trees available, then you can build structures, buildings and furniture of wood, but that's for those filthy nature loving hippies elves.
+If you have battle axes and trees available, then you can build structures, buildings and furniture of wood, but that's for those ~~filthy nature loving hippies~~ elves.
 
 Averting this fate is simple: stockpile at least one additional pick at the first possible opportunity, or some of the raw material to make more, and away from current digging operations.
 
@@ -124,11 +139,11 @@ Then, there's also points at which, when trying to fulfill a mandate, you run in
 
 #### Failure of a strange mood
 
-Any dwarf that was unable to complete a strange mood will go insane. While the insanity inevitably leads to the death of a dwarf, an insane dwarf sometimes goes berserk and poses a threat to the rest of the fortress. Quite dangerous Fun if the fellow is a soldier; they may wreak havoc chopping everyone with their ☼steel battle axe☼. Or just trigger a loyalty cascade.
+Any dwarf that was unable to complete a strange mood will go insane. While the insanity inevitably leads to the death of a dwarf, an insane dwarf sometimes goes berserk and poses a threat to the rest of the fortress. Quite ~~dangerous~~ Fun if the fellow is a soldier; they may wreak havoc chopping everyone with their ☼steel battle axe☼. Or just trigger a loyalty cascade.
 
 #### Supernatural Rogues
 
-There are monsters known collectively as night creatures that can potentially undo a fortress from within. A werebeast raid can not only bring trouble if you're lacking a military, but their cursed bites can make more of their kind from your population. If you see a civilian survive a werebeast attack, you might be in for a surprise when he suddenly turns into a ravenous monster at the full moon and starts killing everything around him.
+There are monsters known collectively as night creatures that can potentially undo a fortress from within. A werebeast raid can not only bring trouble if you're lacking a military, but their cursed bites can make more of their kind from your population. If you see a civilian survive a werebeast attack, you might be in for a surprise when they suddenly turn into a ravenous monster at the full moon, and start killing everything around them.
 
 Vampires are a much more insidious threat, as they hide themselves among the peasantry and may kill dozens of dwarves without being caught—and if they do, they might succeed at framing an essential member of your fortress into getting the hammer. As can be seen, this can easily lead into a tantrum spiral.
 
@@ -142,17 +157,14 @@ Goblin and elven ambushers alike will infiltrate your map and charge into your f
 
 See Also:
 
-:\* Defense guide
-
-:\* Defense design
-
-:\* Trap design
-
-:\* Military design
+- Defense guide
+- Defense design
+- Trap design
+- Military design
 
 #### Siege
 
-Sieges can be quite devastating to a fortress, but unlike most of the other ways of losing, they are unlikely to occur early on, even if you do something stupid funny to piss off another civilization.
+Sieges can be quite devastating to a fortress, but unlike most of the other ways of losing, they are unlikely to occur early on, even if you do something ~~stupid~~ funny to piss off another civilization.
 
 Should hosts of goblins besiege your gates and drive your peasantry inside, trolls beat down your doors and force you to seal off from the outside world, you may have already lost the game. Even if you have built an utterly impenetrable fortress with drawbridges and moats, a sieging army may stick around for a long time. Although a dwarven fortress can be made self-contained, with crops, metal and fuel readily available, underground wood source and your own livestock, a fortress may not be able to sustain such a state indefinitely.
 
@@ -178,7 +190,7 @@ Next time, don't forget to link your master drawbridge to that lever in your mee
 
 ### Dwarf vs. Computer
 
-Fall victim to the Catsplosion and even the mightiest computer may lose FPS to the point where the game becomes virtually un-playable. Or get too many Dwarves and pets in your fortress and the computer may crash. Problem can be solved, at least for the short term, by changing the priority of *Dwarf Fortress* in init.txt.
+Fall victim to the Catsplosion and even the mightiest computer may lose FPS to the point where the game becomes virtually un-playable. Or get too many dwarves and pets in your fortress and the computer may crash. Problem can be solved, at least for the short term, by changing the priority of *Dwarf Fortress* in init.txt.
 
 #### Have I Won Yet?
 
@@ -198,30 +210,26 @@ After decades have passed, and you truly feel your fortress is unassailable and 
 
 ## Winning
 
-Despite the common knowledge that no one can win *Dwarf Fortress*, this is actually false. There are numerous ways to win the game, and all are equally Fun rewarding. The "You won the game" screen is in fact Your fortress has crumbled to its end a well hidden easter egg.
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
+Despite the common knowledge that no one can win *Dwarf Fortress*, this is actually false. There are numerous ways to win the game, and all are equally ~~Fun~~ rewarding. The "You won the game" screen is in fact ~~Your fortress has crumbled to its end~~ a well hidden easter egg.
 
 Here's a few ways to win at *Dwarf Fortress*:
 
-- Having every single elf and goblin on the map on fire. You must set them on fire at the same time, of course.
-
+- Have every single elf and goblin on the map on fire. You must set them on fire at the same time, of course.
 - Have every single dug tile filled with 7/7 magma
-
-- All your dwarves throwing a tantrum at the same time (note: the game doesn't register the deed if you have fewer than 20 dwarves)
-
+- Cause all your dwarves to throw a tantrum at the same time (note: the game doesn't register the deed if you have fewer than 20 dwarves)
 - Have a mandate of a slade-made item successfully completed. Alternatively, have 20 mandates of adamantine-made items completed.
-
 - Kill at least 100 dwarves in the space of a single tick. (Hint: This is best done by Self Destruct Lever)
-
-- Kill all the denizens of the Hidden Fun Stuff. Don't listen to the people who claim their numbers are limitless. They are ignorant.
-
-- Succeed in fully domesticating any of the following: carp, giant sponge, unicorn, or any megabeast (cave dragons don't count)
-
+- Kill all the denizens of the Hidden Fun Stuff. ~~Don't listen to the people who claim their numbers are limitless. They are ignorant.~~
+- Succeed in fully domesticating any of the following: carp, giant sponge, unicorn (prior to V0.31), or any megabeast (cave dragons don't count)
 - Have at least 1/7 magma on every single outside tile. This creates a new victory screen with a Boatmurdered reference.
-
 - Have all of your dwarves on the topmost layer of the map.
-
 - Kill all those f'ing elephants.
-
 - Get put in the Hall of Legends.
-
 - Have a quarter of your dwarves (you must have at least 60) simultaneously be berserk, vampires, and armed with war hammers.
+- Be at war with every elven civilization on the world map. Bonus points if you stole all their war animals beforehand.

@@ -1,8 +1,8 @@
 # Tower (structure)
 
-> Fonte: [Tower (structure)](https://dwarffortresswiki.org/index.php/Tower_(structure)) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Tower (structure)](https://dwarffortresswiki.org/index.php/Tower_(structure)) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-A **tower** is a structure inside human towns. They are built by rich historical figures like town officials, merchants, or those who had a windfall at gambling in the local tavern. Towers can be inherited, sold, or bought, and are an excellent place to conduct schemes, as well as hide artifacts. However, they should not be confused with Necromancer's towers "Necromancer's towers").
+A **tower** is a structure inside human towns. They are built by rich historical figures like town officials, merchants, or those who had a windfall at gambling in the local tavern. Towers can be inherited, sold, or bought, and are an excellent place to conduct schemes, as well as hide artifacts. However, they should not be confused with necromancer's towers "Tower (necromancy)").
 
 ## World generation
 
@@ -20,6 +20,8 @@ A feasthall with tables and chairs is added.
 Fortifications
 Fortifications will be added at the top level.
 
+A five-level tower inside a human city in adventurer mode. According to legends mode, it has been improved with a courtyard, a dungeon and fortifications. Only the courtyard and fortifications are visible.
+
 ## Adventurer Mode
 
-You can visit towers in adventurer mode. Sometimes their owners will be present in them.
+You can visit towers in adventurer mode. Sometimes, their owners will be present in them.

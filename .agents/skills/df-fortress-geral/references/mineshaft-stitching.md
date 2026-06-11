@@ -1,15 +1,45 @@
 # Mineshaft stitching
 
-> Fonte: [Mineshaft stitching](https://dwarffortresswiki.org/index.php/Mineshaft_stitching) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Mineshaft stitching](https://dwarffortresswiki.org/index.php/Mineshaft_stitching) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 When using mine shafts, dwarves will prefer to dig all of one level before moving on to the next. This can result in a lot of time spent moving, as miners go up and down mine shafts. If you have a large number of relatively-unskilled miners, this is unlikely to be a problem: digging time will dominate in any case. If you have one or two legendary miners, this is quite annoying. As a solution, you can create a single path that forces the dwarves to finish one shaft before moving on to the next. To do so, connect shafts alternately at the top and bottom layers, so the shaft snakes through the area. For example, the top, middle, and bottom layers could look like:
 
-▒▒▒▒▒▒▒▒▒ .X▒▒X..X▒ ▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒ ▒X..X▒▒X▒ ▒▒▒▒▒▒▒▒▒
+```
+▒▒▒▒▒▒▒▒▒
+.X▒▒X..X▒
+▒▒▒▒▒▒▒▒▒
+▒▒▒▒▒▒▒▒▒
+▒X..X▒▒X▒
+▒▒▒▒▒▒▒▒▒
+```
 
-▒▒▒▒▒▒▒▒▒ ▒X▒▒X▒▒X▒ ▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒ ▒X▒▒X▒▒X▒ ▒▒▒▒▒▒▒▒▒
+\
 
-▒▒▒▒▒▒▒▒▒ ▒X▒▒X▒▒X▒ ▒.▒▒.▒▒.▒ ▒.▒▒.▒▒.▒ ▒X▒▒X▒▒X▒ ▒▒▒▒▒▒▒▒▒
+```
+▒▒▒▒▒▒▒▒▒
+▒X▒▒X▒▒X▒
+▒▒▒▒▒▒▒▒▒
+▒▒▒▒▒▒▒▒▒
+▒X▒▒X▒▒X▒
+▒▒▒▒▒▒▒▒▒
+```
 
+\
+
+```
+▒▒▒▒▒▒▒▒▒
+▒X▒▒X▒▒X▒
+▒.▒▒.▒▒.▒
+▒.▒▒.▒▒.▒
+▒X▒▒X▒▒X▒
+▒▒▒▒▒▒▒▒▒
+```
+
+\
+
+\
 Clearly you can repeat the middle layer as often as you want: I recommend at least 5-10 levels to really make this worthwhile. Note that this pattern creates a very long walkway back to the start of the mineshafts. If you do not excavate routinely, consider connecting the top-level paths of areas you have already explored.
 
 ### AHK script
@@ -20,7 +50,7 @@ In the previous version of DF, there was an alternate version here. It has not b
 
      ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
      ; stitching.ahk                       ;
-     ; this is an ahk script to place exploratory mine shafts. ;
+     ; this is an ahk script to place exploratory mine shafts. ;
      ; press d and place the cursor                ;
      ; in the top left corner of the area to be explored       ;
      ;                                     ;
@@ -51,7 +81,7 @@ In the previous version of DF, there was an alternate version here. It has not b
             Send u
         }
         Send {Enter 2}i
-        tmp := depth -1
+        tmp := depth -1
         Loop %tmp%
         {
             Send %vertdir%{Enter 2}
@@ -81,9 +111,9 @@ In the previous version of DF, there was an alternate version here. It has not b
       return
 
     $+!s::
-    shafts := (x * y) -1
+    shafts := (x * y) -1
     vdir = >
-    i := x-1
+    i := x-1
     hdir = {Down}
     next = {Up}
 
@@ -92,9 +122,13 @@ In the previous version of DF, there was an alternate version here. It has not b
         DropShaft(vdir, depth, wait)
             if (vdir = ">")
         {
-            vdir =
+            vdir = <
         }
-        k := spacing-1
+        else
+        {
+            vdir = >
+        }
+        k := spacing-1
         Send d%hdir%{Enter}
         Loop %k%
         {
@@ -115,7 +149,7 @@ In the previous version of DF, there was an alternate version here. It has not b
             else if (hdir = "{Right}")
             {
                 hdir = %next%
-                i := x-1
+                i := x-1
             }
             else if (hdir = "{Up}")
             {
@@ -134,5 +168,3 @@ In the previous version of DF, there was an alternate version here. It has not b
         }
     }
     return
-
-\]\] \]\]

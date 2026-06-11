@@ -1,49 +1,60 @@
 ---
 name: df-dwarves
-description: Gestão de dwarves — labores, habilidades, atributos, humores, necessidades, pensamentos, nobres, profissões, justiça, relações e psicologia dos dwarves. Use para perguntas sobre gerenciar dwarves, trabalho, strange moods, nobres, mandatos ou felicidade do forte. Exclusivo do Fortress Mode.
+description: >-
+  Gestão de dwarves no Dwarf Fortress: labores, habilidades, atributos, humores (strange mood), necessidades, pensamentos, nobres, profissões, justiça e psicologia. Use quando o usuário perguntar (inclusive em português) sobre gerenciar anões, trabalho, labor, humor estranho, nobres, mandatos ou felicidade. Termos EN: labor, skill, attribute, strange mood, noble, profession, happiness, thought, need, justice. Exclusivo do Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: fortress
 ---
 
-# Df Dwarves (Dwarf Fortress)
+# DF Dwarves (Dwarf Fortress)
 
-Gestão de dwarves — labores, habilidades, atributos, humores, necessidades, pensamentos, nobres, profissões, justiça, relações e psicologia dos dwarves. Use para perguntas sobre gerenciar dwarves, trabalho, strange moods, nobres, mandatos ou felicidade do forte. Exclusivo do Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-dwarves" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-dwarves "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 87)
-- Strange mood → `references/strange-mood.md`
-- Immigration → `references/immigration.md`
-- Thought → `references/thought.md`
-- Stress → `references/stress.md`
-- Need → `references/need.md`
-- Skill → `references/skill.md`
-- Relationship → `references/relationship.md`
-- Insanity → `references/insanity.md`
-- Keeping your dwarves unstressed → `references/keeping-your-dwarves-unstressed.md`
-- Attribute table old → `references/attribute-table-old.md`
-- Wrestling → `references/wrestling.md`
-- Children → `references/children.md`
-- Unfortunate accident → `references/unfortunate-accident.md`
-- Memory (thought) → `references/memory-thought.md`
-- Mandate → `references/mandate.md`
-- Cave adaptation → `references/cave-adaptation.md`
-- Dungeon (zone) → `references/dungeon-zone.md`
-- Marriage → `references/marriage.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 177 artigos — use o search.py para o resto)
 - Preferences → `references/preferences.md`
-- Mist → `references/mist.md`
-- Religion → `references/religion.md`
-- Archery → `references/archery.md`
-- Deity → `references/deity.md`
-- Sleep → `references/sleep.md`
-- Orientation → `references/orientation.md`
-- Monarch → `references/monarch.md`
+- Animal trainer → `references/animal-trainer.md`
+- Skill → `references/skill.md`
+- Mechanic → `references/mechanic.md`
+- Critical thinker → `references/critical-thinker.md`
+- Mathematician → `references/mathematician.md`
+- Record keeper → `references/record-keeper.md`
+- Cook → `references/cook.md`
+- Fisherdwarf → `references/fisherdwarf.md`
+- Miner → `references/miner.md`
+- Ambusher → `references/ambusher.md`
+- Trapper → `references/trapper.md`
+- Chemist → `references/chemist.md`
+- Carpenter → `references/carpenter.md`
+- Geographer → `references/geographer.md`
+- Bone carver → `references/bone-carver.md`
+- Logician → `references/logician.md`
+- Observer → `references/observer.md`
+- Astronomer → `references/astronomer.md`
+- Peasant → `references/peasant.md`
+- Thought → `references/thought.md`
+- Optics engineer → `references/optics-engineer.md`
+- Weaponsmith → `references/weaponsmith.md`
+- Mason → `references/mason.md`
+- Swimmer → `references/swimmer.md`
+- Thresher → `references/thresher.md`
 - Social skill → `references/social-skill.md`
-- Tantrum → `references/tantrum.md`
-- Restraint → `references/restraint.md`
-- Mercenary → `references/mercenary.md`
+- Furnace operator → `references/furnace-operator.md`
+- Druid → `references/druid.md`
+- Herbalist → `references/herbalist.md`
 
-*...e mais 57 artigos (use o search.sh para encontrá-los)*
+*…e mais 147 artigos (use o search.py).*

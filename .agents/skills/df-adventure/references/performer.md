@@ -1,22 +1,33 @@
 # Performer
 
-> Fonte: [Performer](https://dwarffortresswiki.org/index.php/Performer) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Performer](https://dwarffortresswiki.org/index.php/Performer) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*"Music" redirects here. For in-game music, see Soundtrack.*
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *"Performance" redirects here. For tips on optimizing the game's performance, see Maximizing framerate.*
 
 **Performer** is an occupation. Performers will perform for idle visitors at your fort's taverns and temples, through such media as stories, dance, poetry, and music. You may assign any number of your fortress's dwarves to serve as performers at the tavern and temple locations, and performers from other civilizations will regularly visit your fort's taverns to entertain taverngoers or petition for long-term residency.
 
-Performers serve little practical purpose, as they mostly just duplicate the behavior of other taverngoers, and tavern keeper if assigned to a tavern. However, a skilled performer can significantly boost the mood of any dwarves who observe their work. Performers can take apprentices and pass on their skills to them.
+Performers serve little practical purpose, as they mostly just duplicate the behavior of other taverngoers, and the tavern keeper if assigned to a tavern. However, a skilled performer can significantly boost the mood of any dwarves who observe their work. Performers can take apprentices and pass on their skills to them.\[Verify\]
+
+Graphically, humans, elves and goblins that are performers will almost always be seen wearing all-black clothes. Performer dwarves, however, will have their clothing colors usually match what they actually are, rather than going by the color of an occupation.
 
 The performance skills are:
+
+|  |  |
+|:--:|:--:|
+|  | Performer |
+|   | Keyboardist / Musician / Percussionist / Singer / Stringed instrumentalist / Wind instrumentalist / Poet / Dancer / Speaker |
 
 ## Types of Performances
 
 ### Music
 
-There are four instrument skills: Keyboardist, Percussionist, Stringed instrumentalist, Wind instrumentalist, and also one general skill, Musician.
+There are four instrument skills: Keyboardist, Percussionist, Stringed instrumentalist, Wind instrumentalist and also one general skill, Musician (and eventhough not displayed in game, for each instrument (of every instrument type) there is a seperate skill (with level)). Furthermore there is with Singer one skill for chanting/singing.
+
+Most musical forms are generated during world-gen, but can also be composed during adventure mode. The musical forms generated/created during world-gen can furthermore be divided in musical forms created at the beginning of the world-generation (creation), eg. in year -1, and musical forms, which are created in the further generation of the worlds history (in year 1 and later). The first type (year -1 creation) musical forms will always originate from a civilization (and have no further composer/author) mentioned and these musical forms will use only instruments from the origination civilization (everything else should be considered a bug and belongs on the bugtracker). The later type should usually have an author/composer and it is not necessarily guaranteed that these musical forms will only use instruments of one civilization. Musical forms can further be divided in improvisional and non-improvisional forms.
+
+Musical forms typically have a minimum number of instruments (per type, including singer) and maximum number of instruments (per type, including singer) and thus a minimum number of (participating) performers needed to perform that piece of music. Furthermore each musical form has a "purpose", ie. Devotion, Military, Entertainment or Commemoration, which possibly has an influence on whether the musical form is performed in taverns or temples (further research needed).
 
 Early examples of musical forms.
 
@@ -30,11 +41,11 @@ Early examples of poetic forms.
 
 ### Dance
 
-There is a dancer skill. Dancing is initiated by musicians playing music. While one would assume a larger dance floor would increase the chances of dancing, it does the opposite. This is presumably a bug.
+There is a dancer skill. Dancing is initiated by musicians playing music. While one would assume a larger dance floor would increase the chances of dancing, it does the opposite.\[Verify\] This is presumably a bug.
 
 Toady commenting on dancing:
 
-> Every dance is associated to a musical form, and the dances respect the rhythm, tempo and some other elements of the music. I didn't reproduce the rhythm patterns below, but it tries to make elements like the number of steps in a basic movement align with the rhythm and so forth. All of the forms below were generated for humanoid forms, but I'm working toward some support for varied creature bodies -- so you'll see stuff below like "left leg" even though that text doesn't appear in the dwarf raws, and you also won't see useful words like "hips" -- it's a work in progress, but it won't necessarily need to progress on that score before the release. There also aren't certain fundamentals like costumes, and I don't expect to get them in for this time. There will be some further restrictions based on entity character that aren't in yet.
+> Every dance is associated to a musical form, and the dances respect the rhythm, tempo and some other elements of the music. I didn't reproduce the rhythm patterns below, but it tries to make elements like the number of steps in a basic movement align with the rhythm and so forth. All the forms below were generated for humanoid forms, but I'm working toward some support for varied creature bodies -- so you'll see stuff below like "left leg" even though that text doesn't appear in the dwarf raws, and you also won't see useful words like "hips" -- it's a work in progress, but it won't necessarily need to progress on that score before the release. There also aren't certain fundamentals like costumes, and I don't expect to get them in for this time. There will be some further restrictions based on entity character that aren't in yet.
 
 Early examples of dance forms.
 
@@ -48,4 +59,6 @@ Note that some performers may/will be agents of some sort. Before accepting a pe
 
 ## Bugs
 
-- Performance troupes are often completely nude.
+- Performance troupes are often completely nude.Bug:9234
+
+\

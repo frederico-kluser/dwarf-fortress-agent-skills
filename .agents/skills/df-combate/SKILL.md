@@ -1,49 +1,60 @@
 ---
 name: df-combate
-description: Armas, armaduras, escudos, ferimentos, partes do corpo, síndromes, venenos e mecânica de luta. Use quando o jogador perguntar sobre lutar, equipar armas ou armaduras, sangramento, dor, comparar materiais de combate, treinar soldados ou montar squads. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Combate no Dwarf Fortress: armas, armaduras, escudos, ferimentos, partes do corpo, síndromes, venenos, mecânica de luta e militar (squads, treino, defesa). Use quando o usuário perguntar (inclusive em português) sobre lutar, equipar arma ou armadura, sangramento, dor, treinar soldados, montar esquadrão, ou defender a fortaleza. Termos EN: weapon, armor, shield, wound, syndrome, poison, military, squad, training, siege defense. Funciona para Adventure Mode e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Combate (Dwarf Fortress)
+# DF Combate (Dwarf Fortress)
 
-Armas, armaduras, escudos, ferimentos, partes do corpo, síndromes, venenos e mecânica de luta. Use quando o jogador perguntar sobre lutar, equipar armas ou armaduras, sangramento, dor, comparar materiais de combate, treinar soldados ou montar squads. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-combate" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-combate "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 90)
-- Military testing → `references/military-testing.md`
-- Defense guide → `references/defense-guide.md`
-- Weapon → `references/weapon.md`
-- Trap design → `references/trap-design.md`
-- Armor → `references/armor.md`
-- Security design → `references/security-design.md`
-- Squad → `references/squad.md`
-- Cross-training → `references/cross-training.md`
-- Siege engine → `references/siege-engine.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 128 artigos — use o search.py para o resto)
+- Skin → `references/skin.md`
 - Trap → `references/trap.md`
-- Soldier → `references/soldier.md`
-- Military F.A.Q. → `references/military-f-a-q.md`
-- Advanced marksdwarf training guide → `references/advanced-marksdwarf-training-guide.md`
-- Scheduling → `references/scheduling.md`
-- Military design → `references/military-design.md`
+- Skull → `references/skull.md`
 - Military → `references/military.md`
-- Drowning chamber → `references/drowning-chamber.md`
-- Live training → `references/live-training.md`
-- Moat → `references/moat.md`
-- Combat skill → `references/combat-skill.md`
-- Trap component → `references/trap-component.md`
-- Attack → `references/attack.md`
-- Crossbow → `references/crossbow.md`
-- Attack types → `references/attack-types.md`
 - Climber → `references/climber.md`
-- Make your own weapons → `references/make-your-own-weapons.md`
-- Beard → `references/beard.md`
-- Corpse → `references/corpse.md`
-- Equipment → `references/equipment.md`
-- Pit trap → `references/pit-trap.md`
+- Weapon → `references/weapon.md`
+- Armor → `references/armor.md`
+- Bone → `references/bone.md`
+- Siege → `references/siege.md`
+- Archery → `references/archery.md`
+- Crossbowman → `references/crossbowman.md`
+- Military tactics → `references/military-tactics.md`
+- Feather → `references/feather.md`
+- Squad → `references/squad.md`
+- Crossbow → `references/crossbow.md`
+- Horn → `references/horn.md`
+- Hair → `references/hair.md`
+- Wool → `references/wool.md`
+- Thief → `references/thief.md`
+- Cartilage → `references/cartilage.md`
+- Bolt → `references/bolt.md`
+- Prepared organs → `references/prepared-organs.md`
+- Siege engine → `references/siege-engine.md`
+- Nail → `references/nail.md`
+- Nervous tissue → `references/nervous-tissue.md`
+- Ambush → `references/ambush.md`
+- Drowning chamber → `references/drowning-chamber.md`
+- Pick → `references/pick.md`
+- Trap design → `references/trap-design.md`
+- Short sword → `references/short-sword.md`
 
-*...e mais 60 artigos (use o search.sh para encontrá-los)*
+*…e mais 98 artigos (use o search.py).*

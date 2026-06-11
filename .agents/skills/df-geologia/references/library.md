@@ -1,14 +1,18 @@
 # Library
 
-> Fonte: [Library](https://dwarffortresswiki.org/index.php/Library) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Library](https://dwarffortresswiki.org/index.php/Library) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Libraries** are locations. At a library, scholars can write books (quires, which are bound into codices, and scrolls) and scribes can create copies. Any dwarves in your fortress will go to libraries to read books or idle around, giving them happy thoughts. You will need bookshelves to store books and chests to store writing materials. To attract visitors to your library, you can buy books from caravans or steal them using missions on the world map. Your dwarves will read books as a form of entertainment.
 
 ## Obtaining writing materials
 
+illustration of a medieval library
+
 There are several types of writing materials: scrolls, codex, quire, etc. Here is one setup.
 
-To make paper, you need 'slurry' which is pressed into paper sheets, then rolled into scrolls or assembled into 'quires' (which are like books without covers.) You can also create a cover for a quire and then bind it, but it's not necessary for producing writing. Scrolls can also be produced for shorter works. There is mention of a bug that will lower the quality of your quires after binding.
+To make paper, you need slurry which is pressed into paper sheets, then rolled into scrolls or assembled into 'quires' (which are like books without covers.) You can also create a cover for a quire and then bind it, but it's not necessary for producing writing. Scrolls can also be produced for shorter works. There is mention of a bug that will lower the quality of your quires after binding.
 
 ### Making slurry
 
@@ -45,12 +49,12 @@ To make paper, you need 'slurry' which is pressed into paper sheets, then rolled
 - Click 'Zones' again and then click on your meeting area
 - Click the + symbol and then 'New Library'
 - Enjoy your randomly generated library name
-- Click magnifying glass to change your library settings:
+- Click  to change your library settings:
 - Increase the desired number of writing materials to 20 (optional)
 - Leave your library public so you can get visiting scholars (optional)
-- Build bookcases to store written books, and containers to store writing material (blank quires and scrolls). (not paper sheets, they *must* be made into blank scrolls/books *before* writing).
+- Build bookcases to store written books, and chests to store writing material (blank quires and scrolls). (not paper sheets, they *must* be made into blank scrolls/books *before* writing).
 - Build tables and chairs.
-- Designate scholars and scribes as desired (via the Locations menu).
+- Designate scholars and scribes as desired (via the l Locations menu).
 
 Libraries function best as a single activity zone - scholars in separate activity zones cannot discuss topics with each other, even if both zones belong to the same library. Scholars in the same activity zone can discuss topics together, regardless of distance, line of sight, or ability to path to each other. So, with the correct design, a scholar who must be separated from the general population for whatever reason can still contribute to the research effort.
 
@@ -59,7 +63,7 @@ Libraries function best as a single activity zone - scholars in separate activit
 ### Scholars
 
 - Click 'Zones' and then click on your library
-- Click the magnifying glass
+- Click  button
 - On the library menu, click the + sign next to scholar
 - Assign a dwarf as a scholar (bonus if they have good writing skills)
 - If your library has desks + chairs + writing materials, your dwarves will eventually write... when they feel like it. Mostly they will chat, learn new topics, and read books until they have decided there's something they want to write about.
@@ -70,16 +74,16 @@ Libraries function best as a single activity zone - scholars in separate activit
 ### Scribes
 
 - Click 'Zones' and then click on your library
-- Click the magnifying glass
+- Click  button
 - On the library menu, click the + sign next to scribe
 - You probably won't need more than one or two scribes as they seem to copy a lot
-- Set 'total number of each to scribe' to decide how many copies you would like of each original work
+- Set 'total number of each to scribe' to decide how many copies you would like of each original work (note: if set to 0 or 1, scribes makes no copies of anything, setting 2 makes 1 copy of every work)
 - You can sell copies to visiting traders and your scribes will produce more. (note: Finished scrolls are under 'tools' when you move goods to your trading depot.)
 - Sell lots of copies of that book with a funny title to spread your culture across the world
 
 ## Obtaining scholars and books
 
-If your library permits visitors, scholars from civilizations around the world will come to your fort to study, often bringing books of their own. These scholars will engage in various topics with your scholars and each other, and will sometimes write their own books while visiting (using your supplies of writing materials in the process). These books effectively become property of your fortress, as the author usually doesn't take their books away upon leaving, although they may take some of your own in return. Visiting scholars may petition to become a permanent part of your fortress for the purpose of studying. The rate at which they visit your library and apply for residency might be related to the number of books in your library.
+If your library permits visitors, scholars from civilizations around the world will come to your fort to study, often bringing books of their own. These scholars will engage in various topics with your scholars and each other, and will sometimes write their own books while visiting (using your supplies of writing materials in the process). These books effectively become property of your fortress, as the author usually doesn't take their books away upon leaving, although they may take some of your own in returnBug:9221. Visiting scholars may petition to become a permanent part of your fortress for the purpose of studying. The rate at which they visit your library and apply for residency might be related to the number of books in your library.
 
 If you retire your fort, scholars will continue to visit your library during retirement even if the library does not permit visitors. On unretirement, those scholars will be bugged and unable to behave normally in your fort, so it's best to delete your library activity zone before retirement.
 
@@ -97,11 +101,15 @@ It was discovered that by putting an unlinked lever in the back of a library, as
 
 In vanilla DF, it's rather difficult to get information about the books you own: who wrote them, how many copies you own, what topics they cover, etc. Fortunately, there's a DFHack script that makes all that very clear.
 
-Visiting scholars will sometimes steal the books they're carrying when they leave, even books they did not write. If you unassign the tables (but not the chairs) from your library, the visitors can produce books but cannot touch them, but your own dwarves can still interact with them normally. The tables should still physically be in the library, just not within the painted library zone. (To unassign a section of library, click 'Zone' and then 'library' and use the eraser icon.) You can also have separate libraries for your citizens and for visitors and using stockpiles to keep the books out of the public one.
+Visiting scholars will sometimes steal the books they're carrying when they leave, even books they did not write. If you unassign the tables (but not the chairs) from your library, the visitors can produce books but cannot touch them, but your own dwarves can still interact with them normally. The tables should still physically be in the library, just not within the painted library zone. (To unassign a section of library, click 'Zone' and then 'library' and use the eraser icon.) You can also have separate libraries, one with bookcases for your citizens, and one with writing materials for visitors. Your own scholars can then be assigned to the public library to allow discussions with visitors. With separate libraries, if a visitor brings a book, you can obtain it by interrogating them. This will make them drop hauled items.
 
 Once your library is well-known enough, you'll start getting foreign scholars petitioning to join your fortress. A visiting necromancer may write a book that contains the 'secrets of life and death.' Any dwarf who reads this type of book will become a necromancer, which has... pretty serious consequences. You will need to find and forbid these books if you want to prevent this, or just sit back and wait for the Fun to happen.
 
 ## Adventure mode
+
+The study area of a human library
+
+An upper floor of a human library, dedicated to storing books
 
 In the rest of the world, libraries are generated structures that can be found in human towns and dwarven fortresses. Like the libraries in fortress mode, they will be frequented by scholars who spend their days discussing scholarly topics. The number of books and scholars in a given generated library depends on the history of the site. A library found in a town with a poor history may be almost empty of books and scholars alike.
 
@@ -109,6 +117,8 @@ The ground floor in a generated library is typically used as a study area, and f
 
 Libraries have an effect in world gen, based on the original and copied books that are there. Every year, each library gets five turns to pick a book. If the book has a poetic/music/dance form, it has a chance to make that form well-known in the entire parent civ, as a form of cultural diffusion. If the book promotes a value at a certain level, it makes a roll against the author's skill roll when they wrote the book. The local site civ can have their values shifted by 1-2 points (it takes 10 or more to change the visible text for the value), and the parent civ can also be shifted a point, and all sites under the parent civ have a chance to be shifted a point as well.
 
-See also:
+See also: https://www.reddit.com/r/dwarffortress/comments/zoj727/how_to_create_a_library_fortress/
 
-Fr:Bibliothèque (library) "Fr:Bibliothèque (library)")
+|  |
+|----|
+| "Library" in other / Languages / Dwarven / : / koshosh / Elven / : / dethara / Goblin / : / ruspdo / Human / : / adith |

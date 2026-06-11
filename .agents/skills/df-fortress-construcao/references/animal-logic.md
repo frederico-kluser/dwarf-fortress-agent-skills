@@ -1,8 +1,10 @@
 # Animal logic
 
-> Fonte: [Animal logic](https://dwarffortresswiki.org/index.php/Animal_logic) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Animal logic](https://dwarffortresswiki.org/index.php/Animal_logic) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Animal logic** functions by taking advantage of the pathfinding algorithm in *Dwarf Fortress*; all domestic animals seek to find the shortest (lowest cost) path to their desired targets (activity zone, parents, dwarves, valuable objects, etc.) Furthermore, animals tend to continue to path through tightly closed doors, despite them not being able to pass. This defines the difference between animal and creature logic: animal logic does not need to regulate paths actually travelled by a creature, only potential paths. Using these features of animal pathfinding, it is possible to create very complex logic gates.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Animal logic** functions by taking advantage of the pathfinding algorithm in *Dwarf Fortress*; all domestic animals seek to find the shortest (lowest-cost) path to their desired targets (activity zone, parents, dwarves, valuable objects, etc.)This defines the difference between animal and creature logic: animal logic does not need to regulate paths actually travelled by a creature, only potential paths. Using these features of animal pathfinding, it is possible to create very complex logic gates.
 
 Animal logic has three principal advantages: speed, compactness, and simplified functions. However, animal logic is slower than mechanical logic, and less reliable than either fluid or mechanical logic.
 
@@ -36,7 +38,7 @@ For clarity, definitions of the terms used in animal logic are listed here:
 
 **XNOR Gate**: XNOR takes 2 or more inputs and returns TRUE if ALL are TRUE, or ALL are FALSE.
 
-For a better explanation of gates see:
+For a better explanation of gates see:http://en.wikipedia.org/wiki/Logic_gate
 
 Notation:
 
@@ -70,60 +72,60 @@ There are two primary ways to make a gate, single path and dual path, the single
 
 This simple gate is made by confining the animal into a straight corridor; the ground path will have two or more doors which are connected to the input, while the second longer path remains clear. The gate can be configured as an NAND gate by simply moving the pressure plate. If the plate is by the ground path it functions as an AND gate returning TRUE if the ground path is open, and if the plate is by the purge path it will return FALSE when the inputs are TRUE.
 
-`#########`\
-` ABCD^ D`\
-`#########`
+    #########
+     ABCD^ D
+    #########
 
 ### Multi AND
 
-`############`\
-` ANYNUMD^ D`\
-`############`
+    ############
+     ANYNUMD^ D
+    ############
 
 ### NAND
 
 Reconfigured AND gate, see AND.
 
-`#########`\
-` ABCD ^D`\
-`#########`
+    #########
+     ABCD ^D
+    #########
 
 ### OR
 
 Basic gate, returns TRUE if either input is TRUE.
 
-`#####`\
-`AD^ D`\
-`B####`\
-`#####`
+    #####
+    AD^ D
+    B####
+    #####
 
 ### Multi OR
 
-`#######`\
-`A #####`\
-`N #####`\
-`Y D^ D`\
-`N #####`\
-`U #####`\
-`M #####`\
-`#######`
+    #######
+    A #####
+    N #####
+    Y D^ D
+    N #####
+    U #####
+    M #####
+    #######
 
 ### NOR
 
 Basically a reconfigured OR gate.
 
-`#####`\
-`AD ^D`\
-`B####`\
-`#####`
+    #####
+    AD ^D
+    B####
+    #####
 
 ### NOT
 
 The simplest gate, it takes a single input and inverts it. FALSE -\> TRUE, TRUE -\> FALSE.
 
-`#######`\
-` AD ^D`\
-`#######`
+    #######
+     AD ^D
+    #######
 
 ## Compound Gates
 
@@ -133,13 +135,13 @@ Basically two or more gates arranged with different path costs to ground. These 
 
 Compound of AND and OR, when ONLY ONE is TRUE returns TRUE If A and B are FALSE the animal moves to the FALSE position by Purge, if A or B is TRUE, the animal moves to the TRUE position at the OR gate, if both A and B are true the animal moves to the FALSE position by the AND gate.
 
-`#g########`\
-`# ABD  D #`\
-`# ####^# #`\
-`# ####D# #`\
-`# ###BA# #`\
-`#        #`\
-`##########`
+    #g########
+    # ABD  D #
+    # ####^# #
+    # ####D# #
+    # ###BA# #
+    #        #
+    ##########
 
 AND path cost: 4\
 OR path cost: 10\
@@ -149,14 +151,14 @@ Purge path cost: 14
 
 Inverse of XOR: Return TRUE if BOTH are TRUE or FALSE If A and B are FALSE the animal moves to the TRUE position by Purge, if A or B is TRUE, the animal moves to the FALSE position at the OR gate, if both A and B are true the animal moves to the TRUE position by the AND gate.
 
-`#g#########`\
-`#         #`\
-`##B###### #`\
-`###A## DA # `\
-`####D^##B #`\
-`#####D### #`\
-`######    #`\
-`###########`
+    #g#########
+    #         #
+    ##B###### #
+    ###A## DA #
+    ####D^##B #
+    #####D### #
+    ######    #
+    ###########
 
 AND path cost: 4\
 OR path cost: 10\
@@ -166,32 +168,32 @@ Purge path cost: 15
 
 Inputs are 1, 2, 4 these correspond to the binary values of the inputs, outputs are A, B, C, D, E, F, G, H being 0, 1, 2, 3, 4, 5, 6, 7 respectively in the output display. I used octal for sanity, but this could be easily scaled to work for decimal (up to 10, beyond that you need a converter not an if switch) or hexadecimal(hex will be easy to handle, and probably easier to convert down to decimal)
 
-`#################`\
-`                #`\
-`# # # # # # #1# #`\
-`# # #1# #1#2#2# #`\
-`#1#2#2#4#4#4#4# #`\
-`#D#D#D#D#D#D#D#D#`\
-`#               #`\
-`#################`
+    #################
+                    #
+    # # # # # # #1# #
+    # # #1# #1#2#2# #
+    #1#2#2#4#4#4#4# #
+    #D#D#D#D#D#D#D#D#
+    #               #
+    #################
 
-`# ######`\
-`# 1  D #`\
-`# #### #`\
-`# 2  D #`\
-`# #### #`\
-`# 12 D #`\
-`# #### #`\
-`# 4  D #`\
-`# #### #`\
-`# 14 D #`\
-`# #### #`\
-`# 24 D #`\
-`# #### #`\
-`# 124D #`\
-`# #### #`\
-`#    D #`\
-`########`
+    # ######
+    # 1  D #
+    # #### #
+    # 2  D #
+    # #### #
+    # 12 D #
+    # #### #
+    # 4  D #
+    # #### #
+    # 14 D #
+    # #### #
+    # 24 D #
+    # #### #
+    # 124D #
+    # #### #
+    #    D #
+    ########
 
 ## Fusion gates
 
@@ -201,39 +203,39 @@ These are gates which are constructed by physically combining the two gates to g
 
 This gate will evaluate if either of x AND statements are TRUE. This gate is built as a straight line similar to the AND gate.
 
-`######`\
-`#C####`\
-`ABD^ D`\
-`C#####`\
-`######`
+    ######
+    #C####
+    ABD^ D
+    C#####
+    ######
 
 ### NANDOR
 
 Reconfigured ANDOR gate, see ANDOR.
 
-`######`\
-`#C####`\
-`ABD ^D`\
-`C#####`\
-`######`
+    ######
+    #C####
+    ABD ^D
+    C#####
+    ######
 
 ### ORANDOR
 
 This gate returns true if either A or B and either C or E is true.
 
-`######`\
-`AC####`\
-`BED^ D`\
-`######`
+    ######
+    AC####
+    BED^ D
+    ######
 
 ### ORANDAND
 
 This gate returns true if either A or B is true, and E and C are true.
 
-`#######`\
-`A######`\
-`BCED^ D`\
-`#######`
+    #######
+    A######
+    BCED^ D
+    #######
 
 ## Complex Gates
 
@@ -257,7 +259,37 @@ Hatches can be used in many logic designs for alternate designs. A hatch over a 
 
 Reference pictures
 
-Image:Xnor,Xor,Nand,Or prototype adder STATE 1.PNG\|Prototype digital adder Image:And,Or,AndOr, Prototype adder STATE 3.PNG\|sum 11 Image:And,Or,AndOr, Prototype adder STATE 2.PNG\|sum 10 Image:And,Or,AndOr, Prototype adder STATE 1.PNG\|sum 01 Image:And,Or,AndOr, Prototype adder STATE 0.PNG\|sum 00 Image:9bit adder prototype interface pannel.PNG\|9bit adder interface Image:9bit adder prototype.PNG\|9bit adder Image:9bit adder prototype 10100010notes.PNG\|9bit adder, notes show the decimal value of each adder's bit
+-
+
+  Prototype digital adder
+
+-
+
+  sum 11
+
+-
+
+  sum 10
+
+-
+
+  sum 01
+
+-
+
+  sum 00
+
+-
+
+  9bit adder interface
+
+-
+
+  9bit adder
+
+-
+
+  9bit adder, notes show the decimal value of each adder's bit
 
 ### Decimal Adder
 

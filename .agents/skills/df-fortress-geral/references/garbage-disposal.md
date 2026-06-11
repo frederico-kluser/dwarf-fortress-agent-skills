@@ -1,9 +1,12 @@
 # Garbage disposal
 
-> Fonte: [Garbage disposal](https://dwarffortresswiki.org/index.php/Garbage_disposal) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Garbage disposal](https://dwarffortresswiki.org/index.php/Garbage_disposal) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *Were you looking for ways to get rid of nobles, elves, or animal dissectors? Check the trap design article.*
 
+\
 A **garbage disposal** is any convenient mechanism to quickly (and, preferably, automatically) dispose of the ever-growing mounds of trash produced by a successful fortress. Trash includes vermin remains, spoiled food, excessively worn clothing and goods, stray animal corpses and unusable byproducts, and the remains of invaders who foolishly attack your fortress. Note that, if you choose to dispose of your citizens' corpses in the same manner, you will need to prepare memorials to avoid ghosts and unhappy thoughts.
 
 Properly disposing of trash is necessary to keep your fortress neat, your dwarves happy, and your framerate high. When disposing of clothing and goods, masterwork items will cause an unhappy thought in the minds of their creators. This can be avoided by trading those items to a passing caravan.

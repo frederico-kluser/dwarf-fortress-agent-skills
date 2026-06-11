@@ -1,6 +1,6 @@
 # Worldgen tricks
 
-> Fonte: [Worldgen tricks](https://dwarffortresswiki.org/index.php/Worldgen_tricks) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Worldgen tricks](https://dwarffortresswiki.org/index.php/Worldgen_tricks) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 # Tricks with Worldgen
 

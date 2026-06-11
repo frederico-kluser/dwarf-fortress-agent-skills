@@ -1,6 +1,8 @@
 # Equipment
 
-> Fonte: [Equipment](https://dwarffortresswiki.org/index.php/Equipment) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Equipment](https://dwarffortresswiki.org/index.php/Equipment) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 You can currently read about this topic on the **Squads Page**.
 
@@ -14,7 +16,7 @@ Outside of standard armor, clothing and weapons, there are only five other equip
 
 ## Picks
 
-A pick is a native weapon that can be forged from most (not silver, for example) weapon-grade metals like copper and iron. Picks are required by miners to strike the earth, carve staircases and everything else related to the removal of rock and soil tiles, with the exception of rock smoothing and engraving. You will need to supply picks on embark as miners won't bring their own. The material used when making a pick doesn't have any effect on its speed at digging through rock, which depends on the user's Mining skill level.
+A pick is a native weapon that can be forged from most (not silver, for example) weapon-grade metals like copper and iron. Picks are required by miners to strike the earth, carve staircases and everything else related to the removal of rock and soil tiles, with the exception of rock smoothing and engraving. You will need to supply picks on embark as miners won't bring their own. Speed at digging through rock depends on the user's Mining skill level, and as of 53.08, the material of the pick (for both dwarves and invaders).
 
 ## Battle axes
 
@@ -28,13 +30,13 @@ Note that inactive squads will still carry food in their backpacks, and will eat
 
 Backpacks can be sewn from leather at the leather works or adamantine cloth at a forge.
 
-In adventurer mode, a backpack is required if you want to carry more than you can hold in your hands. Any items taken from the ground will be automatically placed in the first backpack worn (unless a quiver is worn, which receives any arrow or bolt) with no limit to amount or weight. A backpack can be filled with the command up to limits too bizarre to be deciphered — just fill it by taking from the ground, okay?
+In adventurer mode, a backpack is required if you want to carry more than you can hold in your hands or strap to your back. Any items taken from the ground with g will be automatically placed in the first empty grasp (usually a hand), or if those are all full, then the first backpack worn (unless a quiver is worn, which receives any ammo) even if it is full.Bug:2562 However, putting items into a backpack with p will respect the capacity of backpacks or any other container. A backpack can also be filled with a nearby liquid with i, holding up to 50 units\[Verify\]; dropping a liquid from any container with d will also drop every thing else in that container.
 
 ## Flasks
 
-In fortress mode, soldiers who are ordered to carry a drink (from the military menu) will equip a flask (or waterskin or vial) to carry the drink in. Due to a bug, dwarves will occasionally choose vials which contain extracts to use as a flask; somehow combining dwarven wine with giant desert scorpion venom is completely safe.
+In fortress mode, soldiers who are ordered to carry a drink (from the military menu) will equip a flask (or waterskin or vial) to carry the drink in. Due to a bug, dwarves will occasionally choose vials which contain extracts to use as a flask; somehow combining dwarven wine with giant desert scorpion venom is completely safe.Bug:3116
 
-In adventurer mode, a flask can be used to carry liquids.
+In adventurer mode, a flask can be used to carry up to 3 units of liquid, using i to fill them from nearby liquids; other small items can put into them with p; dropping a liquid from any container with d will also drop every thing else in that container. They can also be worn under clothing or armor with w, but this does not keep them from freezing.
 
 ## Quivers
 
@@ -44,4 +46,4 @@ Dwarves require a quiver to hold their ammo whenever engaging in any kind of sho
 
 Quivers are made of leather at a leather works or adamantine cloth at a forge. Invaders, merchants, and migrants often have silk and cloth quivers. They are stored in finished goods stockpiles.
 
-In adventurer mode, arrows and bolts picked up from the ground will automatically be placed in the first quiver worn, which can hold any amount of these ammo types. If filled with the command, it can hold up to an indeterminate limit of combined items. For examples: a quiver can hold 20 raw or sharpened rocks, or 20 bolts and arrows, but only two weapons or three articles of clothing of any combined weight.
+In adventurer mode, arrows and bolts picked up from the ground will automatically be placed in a free grasp, or if no grasp is empty, in the first quiver worn, even if the quiver is full. If filled with the put p command, it can hold up to a volume of 12,000 cm³. For example: a quiver can hold 80 various bolts and arrows, but fewer larger items. A quiver can also be filled with a nearby liquid with i, holding up to 20 units; dropping a liquid from any container with d will also drop every thing else in that container.

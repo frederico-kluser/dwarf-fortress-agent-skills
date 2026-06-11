@@ -1,6 +1,10 @@
 # Extracts
 
-> Fonte: [Extracts](https://dwarffortresswiki.org/index.php/Extracts) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Extracts](https://dwarffortresswiki.org/index.php/Extracts) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Sadly, not as important as alcohol.
 
 **"Extracts"** is a general term used to classify various types of substances derived from animals or plants. Non-food extracts do not have a purpose in the current build except as export goods.
 
@@ -10,7 +14,7 @@ A variety of buildings allow you to produce extracts:
 
 ### Butcher's shop
 
-Certain vermin will yield extracts at the butcher's shop by using the xtract from a dead animal task, requiring a living caged animal, a glass vial (metal flasks will not work), and a dwarf with the small animal dissection labor enabled.
+Certain vermin will yield extracts at the butcher's shop by using the extract from a dead animal task, requiring a living caged animal, a glass vial (metal flasks will not work), and a dwarf with the small animal dissection labor enabled.
 
 - Fire snakes create liquid fire
 - Phantom spiders create venom
@@ -49,18 +53,24 @@ With a living caged fish and a fish dissector, you can get extracts from our aqu
 
 ### Import only
 
-Currently, there are some extracts that cannot be produced on site and need to be imported.
+Currently, there are some extracts that cannot be produced on-site and need to be imported.
 
 Various types of venom can also be purchased, but currently have no use:
 
 - Snakeman Venom
-- Giant desert scorpion Venom
 - Giant cave spider Venom
 
 Occasionally caravans will bring a barrel filled with some creature's blood.
 
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
 The blood should be purchased in large quantities to offer to Armok in case you are unable to produce it in times of hardship.
 
+\
 Birdmen Scholars have theorized a way of extracting from elves, possibly using gems and a source of power. Though this would be a great service to the world, (plus all that tasty elf juice to sell for aforementioned Armok-pleasing blood barrels) unfortunately no such machine has been devised.
 
 ## See also

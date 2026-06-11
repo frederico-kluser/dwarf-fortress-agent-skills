@@ -1,92 +1,69 @@
 # Advanced world generation
 
-> Fonte: [Advanced world generation](https://dwarffortresswiki.org/index.php/Advanced_world_generation) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Advanced world generation](https://dwarffortresswiki.org/index.php/Advanced_world_generation) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-*This article contains information on advanced world generation. For information on basic world generation, see World generation.*
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-*See World token to more easily find information by the names used in the world_gen.txt file, World rejection for information on solving problems related to worlds always being rejected, and Worldgen examples for example worlds.*
+*This article contains information on advanced world generation. For information on basic world generation, see World generation.* *See World token to more easily find information by the names used in the world_gen.txt file, World rejection for information on solving problems related to worlds always being rejected, and Worldgen examples for example worlds.*
 
-When you want more control of what your world looks like, it's time for **advanced world generation**: A detailed reference with advice is provided below.
+The advanced world generation screen.\
+*(Click to enlarge)*
 
-(This article assumes that you are already familiar with **basic world generation**; if you are not, then please read about that first - the very high amount of extra options for a generated world can provide the player with a much more customized experience.)
+**Advanced world generation**, also labeled as **detailed mode**, allows substantially more detail-oriented options of customization than standard, basic world generation. This gives the player much more control over how their world is generated. To better understand this article, it is advised that one should read about **basic world generation** first.
 
-Once you select from the main menu, a screen that looks something like this will appear:
-
-This screen is relatively intuitive, but some parts could use explanation.
+The advanced world generation screen is reached by clicking "Create new world" at the main menu, then clicking "Detailed mode". Once at that screen, clicking "Basic options" will return the user to the standard world generation screen.
 
 ## Parameter sets
 
-The list of already-defined parameter sets is in the upper-right corner. You can select the current set that you want to work with using the up and down directional keys.
+There are multiple default sets of all the advanced world generation parameters hard-coded in *Dwarf Fortress*, which will be overridden by the `prefs/world_gen.txt` file in the main *Dwarf Fortress* directory, if it exists. It does not exist by default, you must create it, either by saving the default sets, or saving a copy from the world_gen.txt wiki page or elsewhere. This file can then be edited with a text editor, and you can copy and paste other players' sets of parameters into it. For sources of such parameter sets see Parameter set examples below.
 
-Hitting will add a new set to the end of the list. You can also opy an existing set to a new one, allowing you to base a new set on an existing one. Using you can change the name of the parameter set, but note that this will not affect the name of the world that is generated.
+To get back the default sets, move the existing `prefs/world_gen.txt` to somewhere else (like Documents), or delete it if you do not want to keep the changes, then load the sets in the game, it will then use the hardcoded defaults.
 
-Parameter sets are stored in the `data/init/world_gen.txt` file in the main DF directory. The and keys will load and save **all** of the parameter sets to this file. You will need to save the world gen parameters to this file, before you hit to generate the world. The `world_gen.txt` file can also be edited with a text editor. This is particularly useful because people will often post their parameter sets on the forum or wiki in text form. (See below for more info.) The key comes in handy when editing this file while the game is still running.
+## User interface
 
-To get the parameters used to generate a world you are already playing, press then choose export images; exporting any image will also create the world generation parameter file, for more information see this post.
+First, there is a line of text inputs and buttons along the top of the screen, from left to right:
 
-The tokens used in `world_gen.txt` are at the bottom of each parameter description. Here's the one for the title.
+- The drop down menu of currently defined parameter sets, click the down arrow to select a set that you want to work with. The currently selected set can be renamed by clicking the current name or the  button. The first set in the file is selected by default, usually "LARGE ISLAND". See Parameter set title.
+- The dimensions of the world for the selected set, see World dimensions.
+- A text entry box to set all of the seed options to the same seed, will show "Random seed", "Various seeds", or, if all four seeds are set to use the same value, that value. See Seed values and Seed notes.
+- The Copy Button to make a copy of the currently selected set and appends it to the bottom of the list.
+- The red Delete button to delete the currently selected set, you will be prompted to confirm the deletion.
+- The New parameter set to create a new parameter set and appends it to the bottom of the list. This seems to just copy the default "LARGE REGION" set.
+- The Save button to save all of the current sets to the `prefs/world_gen.txt` file.
+- The Load button to load from the same file, there is no confirmation, **any unsaved changes will be lost**. If that file does not exist, this resets all of the sets to the defaults.
 
-| Token             | Example                 | Notes    |
-|-------------------|-------------------------|----------|
-| `[TITLE: ]` | `[TITLE:MEDIUM ISLAND]` | Required |
+\
+Most of the middle is the parameters themselves, with a scroll bar to the right. Each row of the list can include:
 
-## World name
+- The name of the option
+- The range of accepted values; not every option has this, and does not always match the displayed value, for example "0 to 1" might show as "No" and "Yes".
 
-As previously mentioned, the title of the parameter set doesn't affect the name of the world. You can force a particular name for your world using or set it back to the default random setting using .
+- Sometimes the range might not initially show on rows that it should, reloading the sets with the Load button sometimes fixes that.Bug:13176
 
-| Token | Example | Notes |
-|----|----|----|
-| `[CUSTOM_NAME: ]` | `[CUSTOM_NAME:Realm of Cheese Engravings]` | For a random name, simply don't use this token. |
+- A plus button to increase the value or cycle through options, when applicable (this button will be missing if the range is missing.)
+- The current value; can be clicked to edit, to actually set a value you must press enter, without doing that, clicking another entry box or right clicking will instead reset to the currently set value.
+- An edit button to show that the previous box is editable, same as clicking on the text box.
+- A minus button to decrease the value or cycle through options, when applicable (this button will be missing if the range is missing).
+- A red button to disable this parameter, when applicable, usually setting the value to 0, or -1.
 
-## World dimensions
+All of the buttons below leave this screen and do not prompt to save the sets, so unsaved changes may be lost.
 
-The size of the map to be generated can be selected with . Larger maps take longer to generate and may limit FPS in-game.
+At the bottom right are 3 or 4 more buttons:
 
-Changing the dimensions of the world will reset the parameters, because many of them have different defaults depending on the surface area available. Creating larger worlds does not necessarily mean longer world generation time - the essential factor for the gen duration is the history. If you restrict the number of historical events, you can significantly speed up the process.
+- The Create world button to do just that using the currently selected set, **unsaved changes are lost**.
+- The Basic options button to go back to the normal world generation screen, unsaved changes are not lost if you come directly back to Detailed mode.
+- The Mods button to go to the mod selection screen, unsaved changes are not lost if you come directly back to Detailed mode. Only shown if mods are available.
+- Back to main menu button to do just that, **unsaved changes are lost**.
 
-| Token | Example | Notes |
-|----|----|----|
-| `[DIM::]` | `[DIM:129:129]` | Valid values are 17, 33, 65, 129, and 257. Others may not work. Non-square maps may result in crashes. |
+### World painter
 
-## Seed values
+*Main article: World painter*
 
-The world generation process uses a PRNG (Pseudo Random Number Generator) algorithm. A PRNG will produce a sequence of numbers that "looks" random, even though the actual sequence of numbers will always be the same if the PRNG is started with the same seed value. Basically this means that if you run world generation with a certain seed value on your computer, and someone else runs world generation with the same seed value on their computer, the same sequence of random numbers will be generated on both computers. The practical impact of this is that someone else can generate exactly the same world that you generated by entering the same seed value that you used.
-
-In older versions, the same seed value(s) produced identical worlds on every computer at any time (if other parameters were identical, too). In the current version, the seed values for the world itself and the names seem to produce the same result, but you will get changes in events which will result in a very different world history. It seems like the history is partly random and not completely connected to the seed. Keep this in mind if you want to regenerate a particular world.
-
-A specific seed value can be entered with . This will change **all** of the seed values to the value you enter. If you need to enter different seed values for each type of seed, use . In order to find out what seed values were used for the last world you generated, you can look at this screen. If you want to be able to tell someone else how to generate exactly the same world that you just generated, they will need all of the seed values listed under Last Param Set.
-
-When generating a world using a seed, the way that the world is generated is also based at least in part on certain world tokens. As such, you cannot for example, change the minimum and maximum rainfall and get 'the same world but drier or wetter', instead, a different world is generated. That said, it would also seem that certain small changes to these world tokens can occasionally generate a very similar world, however, other tokens are more sensitive. For more information see the forum thread here.
-
-The following are tokens which appear to be involved in the implementation of the seed, and are not safe to change:
-
-- \[DIM:X:X\]
-- \[ELEVATION:X:X:X:X\]
-- \[RAINFALL:X:X:X:X\]
-- \[TEMPERATURE:X:X:X:X\]
-- \[DRAINAGE:X:X:X:X\]
-- \[VOLCANISM:X:X:X:X\]
-- \[SAVAGERY:X:X:X:X\]
-- \[ELEVATION_FREQUENCY:X:X:X:X:X:X\]
-- \[RAIN_FREQUENCY:X:X:X:X:X:X\]
-- \[DRAINAGE_FREQUENCY:X:X:X:X:X:X\]
-- \[TEMPERATURE_FREQUENCY:X:X:X:X:X:X\]
-- \[SAVAGERY_FREQUENCY:X:X:X:X:X:X\]
-- \[VOLCANISM_FREQUENCY:X:X:X:X:X:X\]
-- \[PARTIAL_OCEAN_EDGE_MIN:X\]
-- \[COMPLETE_OCEAN_EDGE_MIN:X\]
-- \[HAVE_BOTTOM_LAYER_1:X\]
-- \[MINERAL_SCARCITY:X\]
-
-Many other world parameters, such as end year and embark points, can, however, be changed without it having any effect on the geography of the world generated from the seed values.
-
-Normally, you don't enter these seed values - the world generation process comes up with seed values based on some sort of "true" random information from things like random values in uninitialized memory, the current date/time, etc. If you have entered a seed value you can revert to all seeds being random using .
+The **world painter** tool is not in the current version of *Dwarf Fortress*; it allowed you to paint features onto a map. **However**, those maps can still be used when generating a world by pasting world painter parameter set maps created in old versions into the `prefs/world_gen.txt` file. Perfect World DF is a utility that uses the same parameter functionality as the world painter to paint a map, and it also can work with the current version of *Dwarf Fortress*.
 
 ## Generating a world
 
-Unless you're using an already-defined parameter set, you will probably want to dit the parameters. Select the set you want to edit using the up/down directional keys and press . Information about each parameter is documented below.
-
-Once you are happy with the parameters you have set, hit to get back to this screen, hit to save the values you just edited, and hit to start. The rest of the process is the same as basic world generation.
+You can either use an already-defined parameter set, or you can edit them, though it is highly suggested to edit a copy of one of the defaults. Once you are happy with the parameters you should save the values you just edited before you click the Create world button. Information about each parameter is documented below.
 
 The phases of the world generation process are (this order is not completely correct):
 
@@ -111,90 +88,149 @@ The phases of the world generation process are (this order is not completely cor
 - Finalizing uniforms...
 - Finalizing sites...
 
-## World painter
+## Seed notes
 
-''Main article: World painter
+The world generation process uses a PRNG (Pseudo Random Number Generator) algorithm. A PRNG will produce a sequence of numbers that "looks" random, even though the actual sequence of numbers will always be the same if the PRNG is started with the same seed value. Basically this means that if you run world generation with a certain seed value on your computer, and someone else runs world generation with the same seed value on their computer, the same sequence of random numbers will be generated on both computers. The practical impact of this is that someone else can generate exactly the same world that you generated by entering the same seed value that you used.
 
-The **world painter** tool allows you to paint features onto a map that is then used when generating a world. It is very difficult to use properly, and tends to result in endless rejected worlds, unless you loosen or remove the restrictions placed on biomes and civilizations in the advanced settings. That being said it is also a very powerful tool, and allows you to generate worlds more to your liking.
+In the current version, the seed values for the world itself and the names seem to produce the same result, but you will get changes in events which will result in a very different world history.Bug:6934 Keep this in mind if you want to regenerate a particular world.
 
-To access the world painter, hit to start editing the advanced parameters and finally hit to open world painter. How to use the world painter is not entirely obvious so please check out the World painter documentation to avoid frustration. (Losing may be fun, but frustration is not.)
+The way that a world is generated can also be affected by certain world tokens. Changing them causes that code to use more or fewer PRNG values, causing later uses to get different parts of the sequence. So, you cannot for example, change the minimum and maximum rainfall and get 'the same world but drier or wetter', instead, a different world is generated. That said, it would also seem that certain small changes to these world tokens can occasionally generate a very similar world, however, other tokens are more sensitive. For more information see the forum thread here.
 
-## Editing the parameters init file
+The following are tokens which use the PRNG values in ways that changing them will likely cause broader changes:
 
-Parameter sets are stored in the *data/init/world_gen.txt* file, using world tokens. You can copy and paste other players' sets of parameters into your *world_gen.txt* to use their parameter sets, and some are provided at Pregenerated worlds. Another place to find parameter sets is the Worldgen cookbook thread on the official forums.
+- \[DIM:X:X\]
+- \[ELEVATION:X:X:X:X\]
+- \[RAINFALL:X:X:X:X\]
+- \[TEMPERATURE:X:X:X:X\]
+- \[DRAINAGE:X:X:X:X\]
+- \[VOLCANISM:X:X:X:X\]
+- \[SAVAGERY:X:X:X:X\]
+- \[ELEVATION_FREQUENCY:X:X:X:X:X:X\]
+- \[RAIN_FREQUENCY:X:X:X:X:X:X\]
+- \[DRAINAGE_FREQUENCY:X:X:X:X:X:X\]
+- \[TEMPERATURE_FREQUENCY:X:X:X:X:X:X\]
+- \[SAVAGERY_FREQUENCY:X:X:X:X:X:X\]
+- \[VOLCANISM_FREQUENCY:X:X:X:X:X:X\]
+- \[PARTIAL_OCEAN_EDGE_MIN:X\]
+- \[COMPLETE_OCEAN_EDGE_MIN:X\]
+- \[HAVE_BOTTOM_LAYER_1:X\]
+- \[MINERAL_SCARCITY:X\] [\[1\]](/index.php/Talk:Advanced_world_generation#Mineral_scarcity "Talk:Advanced world generation")
+
+Many other world parameters, such as end year and embark points, can, however, be changed without it having any effect on the geography of the world generated from the seed values.
+
+Normally, you don't enter these seed values, the game comes up with values based on some other sort of pseudo-random information from things like the current date and time.
+
+When generating a world, *Dwarf Fortress* records the seeds it used in gamelog.txt; they can also be found with `gui/gm-editor world.worldgen.worldgen_parms` in DFHack.
 
 ## Advanced parameters
 
-To access advanced parameters, press when at the "Design New Worlds with Advanced Parameters" screen. This will bring you to an editable list of various guidelines that the world-gen process will use when creating your new world. The parameters are described below in the order that they appear in the list in the UI, not necessarily the order they appear in the configuration file.
-
-See world token for an index that will help you look things up by token name.
-
 There are essentially 4 types of controls for the generation of the surface map;
 
-**Terrain Parameters**: as described below, these 5 variables define the basic background world, how hot or cold it is, how much rainfall, how high the mountains are. The world automatically goes through the temperature range along the Y axis, although sometimes it will be hotter in the north, other times in the south. Minimum, maximum and X,Y variance can drastically alter the world.
+**Terrain parameters**: as described below, these 5 variables define the basic background world, how hot or cold it is, how much rainfall, how high the mountains are. The world automatically goes through the temperature range along the Y axis, although sometimes it will be hotter in the north, other times in the south, or cold at both. Minimum, maximum and X,Y variance can drastically alter the world.
 
-**Weighted Meshes**: these are a way to fine-tune the amount of the 5 basic variables on the map. It can be used to set the specific distribution of different elevations or rainfall areas for example.
+**Weighted meshes**: these are a way to fine-tune the amount of the 5 basic variables on the map. They can be used to set the specific distribution of different elevations or rainfall areas for example.
 
-**Rejection Parameters**: *Dwarf Fortress* has a 'belt-and-braces' approach to world generation. The above controls allow you to shape the world, then the rejection parameters throw it out if it isn't right! There are a number of rejection parameters for the number and degree of the 5 basic variables, for biome types etc. If the world does not meet the requirements of any one rejection parameter the world is rejected and re-randomised. Also see World Rejection
+**Feature parameters**: such as rivers, mountain peaks, volcanoes, and oceans, which can cause rejections if the terrain parameters don't allow enough suitable locations for the features to be placed.
 
-There are also the feature-placing options such as rivers, mountain peaks, volcanoes and oceans, which can cause rejections if the terrain parameters don't allow enough suitable locations for the features to be placed.
+**Rejection parameters**: *Dwarf Fortress* uses a 'belt-and-braces' approach to world generation. The above controls allow you to shape the world, then the rejection parameters throw it out if it does not meet certain criteria. There are a number of rejection parameters for the number and degree of the 5 basic variables, for biome types, etc. If the world does not meet the requirements of any one rejection parameter the world is rejected and re-randomised. Also see World rejection.
 
-If you are experimenting with world design, one method would be to disable the rejection parameters and use the first two control types. Otherwise, any significant change will likely result in endless rejections.
+Leaving tokens out of a set in `world_gen.txt` will cause the game to use default values which are not adjusted for smaller world sizes, this may cause smaller worlds to always be rejected.
+
+If you are experimenting with world design, there is also a game setting that will log the rejection reasons to map_rejection_log.txt. With that information you can then either adjust the rejection parameters to allow those worlds, or the other parameters to prevent them from trying to generate. *Dwarf Fortress* will keep adding to the file, so you may want to trim or delete it occasionally.
+
+The parameters are described below in the order that they appear in the list in the game, which is not necessarily the order they appear in `world_gen.txt`. See world token for an index that will help you look things up by token name. The tokens used in `world_gen.txt` are at the bottom of each of the following parameter descriptions.
+
+### Parameter set title
+
+This sets the name of the parameter set itself, as used in the list of sets (this has nothing to do with the name of the generated world).
+
+|            |                         |          |
+|------------|-------------------------|----------|
+| Token      | Example                 | Notes    |
+| `[TITLE:]` | `[TITLE:MEDIUM ISLAND]` | Required |
+
+### World dimensions
+
+The size of the map for the current set can be changed by changing the Width and Height values at the top next to the set title. You will need to confirm this, since changing the dimensions of the world will change other parameters, because many of them have different defaults depending on the surface area available.
+
+Larger maps usually take longer to generate and may reduce FPS in-game, though this is really a matter of larger worlds usually having more civilizations, sites, historical figures, and events; restricting the number of those can speed up the process. Non-square maps may result in crashesBug:2928.
+
+|  |  |  |
+|----|----|----|
+| Token | Example | Notes |
+| `[DIM::]` | `[DIM:257:257]` | Valid values are 17, 33, 65, 129, and 257, other values will use one of those. Changing the size in the file without adjusting other parameters can cause many rejections. |
 
 ### Seed values
 
-Here, you can enter specific seed values for different parts of the world generation process - different sequences of pseudorandom numbers are used for different parts, so you can use this to reproduce only the particular part of world generation from some previously generated world, if you want. Normally, you'll want to leave all of these set to Random, unless you're specifically trying to reproduce the results of another world generation run.
+Enables the use of, and specifies seed values for, different parts of the world generation process. Just entering a specific seed does not enable it, that must be done separately, although using the box at the top to set all the seeds to the same value does enable them all. Enabling a seed puts the token in using what ever is in the text box below. If you enable a seed, but do not enter a seed, the string "Seed text" will be used (`[SEED:Seed text]`). Trying to use a `]` in the string in the file will end the seed there, since it closes the token, any text after that will be ignored. Normally, just leave these set to Random, unless trying to reproduce the results of a previous world generation. See also the seed notes section above.
 
-| Token | Example | Notes |
+Token
+Example
+Notes
+
+[SEED:]
+[SEED:31337]
+For each of these not in the config file, a random seed will be used, and the first seed is not used to generate the others. The seeds used are output to / gamelog.txt / when world generation starts.
+
+[HISTORY_SEED:]
+[HISTORY_SEED:31337]
+
+[NAME_SEED:]
+[NAME_SEED:31337]
+
+[CREATURE_SEED:]
+[CREATURE_SEED:31337]
+
+### World name
+
+As previously mentioned, the title of the parameter set doesn't affect the name of the world. You can specify a particular name for your world, or leave the value blank for a random one. (The DFHack utility adds an option to rename the world using the in-game languages.)
+
+|  |  |  |
 |----|----|----|
-| `[SEED:]` | `[SEED:31337]` | For each of these not in the config file, a random seed will be used. |
-| `[HISTORY_SEED:]` | `[HISTORY_SEED:31337]` |  |
-| `[NAME_SEED:]` | `[NAME_SEED:31337]` |  |
-| `[CREATURE_SEED:]` | `[CREATURE_SEED:31337]` |  |
+| Token | Example | Notes |
+| `[CUSTOM_NAME:]` | `[CUSTOM_NAME:Realm of Cheese Engravings]` | For a random name, simply don't use this token. |
 
 ### Embark Points
 
-This controls the number of points that you have for skills and equipment when you embark in fortress mode. Turning this value up will allow games started in this world to start with more skilled dwarves with better equipment. Normally, you can do just fine by leaving this value set to default, but you might want to turn it up for experimental/testing purposes or to help dwarves survive in a particularly evil world, or turn it down for certain challenges. The highest amount this value can be set to is 10,000.
+The number of points for equipment and animals when embarking in fortress mode (there is no equivalent setting for adventure mode). Normally, the default of 1504 is fine, but can be increased for various purposes like experimentation or to help dwarves survive in a particularly evil world, or reduced for certain challenges.
 
-| Token                      | Example                | Notes    |
-|----------------------------|------------------------|----------|
-| `[EMBARK_POINTS:]` | `[EMBARK_POINTS:1504]` | Required |
+|                    |                        |             |
+|--------------------|------------------------|-------------|
+| Token              | Example                | Notes       |
+| `[EMBARK_POINTS:]` | `[EMBARK_POINTS:1504]` | 0 to 10,000 |
 
 ### End year
 
-This is how many years of history are generated for the world; basically the same as the History parameter in basic world gen, except that you can enter an exact value for the number of years. See History for more info.
-
-History is divided into "ages" which are determined by the *percentage* of megabeasts and semi-megabeasts killed at various points. One can attempt to make a world go through the ages more quickly by pumping up the ratio of semimegabeast to megabeast caves, the former of which are usually more killable than the regular megabeasts. This will net you more "Age of Legends", "Age of Heroes", etc.
+The maximum number of years generated for the world, although generation can be paused and the world used as is any time after the second year; the same as the History parameter in basic world gen, except that you can enter an exact value. A too-short history can limit the materials available to civilizations, and certain adventure mode features are only available after certain site events, while too long a history often leads to civilizations dying.
 
 For more information on the history aspect of the game, see Legends and Ages.
 
-| Token                 | Example           | Notes    |
-|-----------------------|-------------------|----------|
-| `[END_YEAR:]` | `[END_YEAR:1050]` | Required |
+|               |                  |             |
+|---------------|------------------|-------------|
+| Token         | Example          | Notes       |
+| `[END_YEAR:]` | `[END_YEAR:250]` | 2 to 10,000 |
 
 ### Population cap after civ creation
 
-This determines the maximum possible population of civilization member historical figures alive at a given time during worldgen. Not all members of a civilization are historical figures. This tag does not directly influence the total population of civilized beings as it once did when populations were all historical figures, so the description is a bit confusing. You can enter -1 to make the historical population unlimited.
+A soft limit to the total number of historical figures alive at the same time during generation across all civilizations, only preventing the birth of new historical figures.[2] Each civilization is allotted a percentage of the total by the percentage of sites they control.[3] Civilizations also have non-historical populations, and there is no setting to limit those (in early versions, all civilization members were historical figures, this is also why the name of this setting is misleading). Each entity also has limits from their raws, see the population entity tokens, and setting this to unlimited will not remove those.
 
-Each race may have up to 100 civilizations each, and each civilization a maximum population of 10,000. Civilizations, known as *entities* in the raw files, have 3 or 4 basic variables that will greatly affect their final placement on the world map. See Population (Entity Token)") for more information on interpreting/editing the raws if you need more precise control of civilization placement and total population numbers.
+Huge historical figure populations can slow generation and the game in general.
 
-Huge historical figure populations can cause the size of history data to explode, cause history generation to take forever, lower FPS, and generally slow down the game.
-
-| Token                             | Example                        | Notes    |
-|-----------------------------------|--------------------------------|----------|
-| `[TOTAL_CIV_POPULATION:]` | `[TOTAL_CIV_POPULATION:15000]` | Required |
+|  |  |  |
+|----|----|----|
+| Token | Example | Notes |
+| `[TOTAL_CIV_POPULATION:]` | `[TOTAL_CIV_POPULATION:15000]` | -1 to 100,000, -1 is no limit |
 
 ### Site cap after civ creation
 
-This controls the maximum number of towns and similar sites on the entire map. Raising the number will allow for more towns, etc. though the number of sites will ultimately still be limited by things like space, terrain, and population cap. Note that this parameter controls only **"civilization" sites** like towns - other sites, such as lairs, will be added onto this maximum.
+Total number of sites that can be directly created by all civilizations combined like hillocks, hamlets, dark pits, forest retreats, etc. Does not prevent the placement of initial civilization sites, though they will then be counted for the limit. Does not affect creature sites like caves or lairs, group sites like castles, monasteries, towers "Tower (necromancy)"), forts, or camps, or unpopulated sites like tombs. After this limit is reached, no civilization will be able to place new sites. See the placement entity tokens for other ways that civilization site placement can be limited.
 
-After civilizations reach this cap, they will not spread out any more to place new cities. By default, the raws limit each civilization site to a population of 120, regardless of the race of the civilization - therefore, without editing the raws, the total population on the map can't go above site cap x 120.
+Increasing this will slow generation down and reduce the available places for player sites. Since the [`[MAX_SITE_POP_NUMBER]`](/index.php/Entity_token#MAX_SITE_POP_NUMBER "Entity token") entity token limits the historical figure population per site, this site cap can also limit the total historical figure population of all civilizations combined, and some expand faster than others getting more sites before the limit is reached.
 
-Beware; increasing this too high can slow worldgen down by a lot. Another effect can be goblins (or other civs) sometimes overwhelming all other civs and/or flooding the world with their homes, leaving no good places to build your fortress, be it human or dwarven. If you choose a low cap to hasten world generation, the cap will likely be reached within years, stopping expansion of all civs. If you want a good, long history, you will have to adjust site/population cap and the number of civs many times to find one fulfilling your needs.
-
-| Token                 | Example           | Notes    |
-|-----------------------|-------------------|----------|
-| `[SITE_CAP:]` | `[SITE_CAP:1040]` | Required |
+|               |                   |                               |
+|---------------|-------------------|-------------------------------|
+| Token         | Example           | Notes                         |
+| `[SITE_CAP:]` | `[SITE_CAP:1500]` | -1 to 100,000, -1 is no limit |
 
 ### Beast control
 
@@ -217,35 +253,38 @@ The percentage of dead megabeasts and titans for stoppage will not be checked un
 
 If the number of living megabeasts and titans starts at or drops to less than four, then world generation will always stop if the current year is equal to or greater than the Year to Begin Checking Megabeast Percentage *regardless* of how many megabeasts and titans are dead — Percentage of Megabeasts and Titans Dead for Stoppage is ignored. The number of megabeasts and titans at the start of the world is set by the sum of the Max Megabeasts Caves and Titan Number parameters.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[BEAST_END_YEAR::]` | `[BEAST_END_YEAR:200:80]` | Use -1 as percentage to disable. Year must still be at least 2. |
 
 ### Cull Unimportant Historical Figures
 
-Whether or not the game ignores unimportant figures in history generation. The culling is many CPU-intensive steps in history generation but it saves memory and will speed up loading/saving games a bit. This does mean that the "unimportant" figures will not appear in Legends mode or in things like dwarf engravings, but they might not appear in engravings anyway.
+Whether to remove unimportant dead historical figures after history generation; a short CPU-intensive step, but saves space which can speed up loading, saving, and running games with large histories. Legends mode will refer to culled creatures as "an unknown creature", and they will not appear in engravings, but likely would not have anyway.
 
-Unimportant figures are creatures who suffer early deaths, never having offspring or killing anything named during history generation. For example, residents of goblin towers may get murdered by demons at a young age. After culling unimportant figures, Legends mode would say something like the demon has killed "an unknown creature at Eviltower in the year 102."
+Exactly what is considered important is not clear. A member of an abstract group killing a named creature is not. Creating an artifact is not, even if that artifact had important history. Unculled historical figures can have parentage described as "The identity of" that parent "has been lost to time", so just having children is not, though having living direct relations seems to prevent culling.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[CULL_HISTORICAL_FIGURES:]` | `[CULL_HISTORICAL_FIGURES:0]` | 0 = No, 1 = Yes |
 
 ### Reveal All Historical Events
 
-Setting this to Yes will allow access to most information about the history of the world in Legends mode. All events will be revealed, but some Historical figures, Sites, Regions, and Civilizations and other entities may not be, possibly because they are not known to any civilization. If set to No, then you will have to discover historical information in adventure mode or by instructing dwarves to make engravings.
+Setting this to Yes will allow access to most information about the history of the world in Legends mode. All events will be revealed, but some historical figures, sites, regions, and civilizations and other entities may not be, possibly because they are not known to any civilization. If set to No, then you will have to discover historical information in adventure mode or by instructing dwarves to make engravings.\[Verify\]
 
-| Token                           | Example                   | Notes           |
+|                                 |                           |                 |
 |---------------------------------|---------------------------|-----------------|
+| Token                           | Example                   | Notes           |
 | `[REVEAL_ALL_HISTORY:]` | `[REVEAL_ALL_HISTORY::1]` | 0 = No, 1 = Yes |
 
 ### Terrain Parameters
 
-These determine how random values for terrain elevation, rainfall, temperature, drainage, volcanism, and savagery are generated. What biomes exist are then determined by how these factors overlap with each other.
+These set limits and variance for terrain elevation, rainfall, temperature, drainage, volcanism, and savagery which determines how those values are generated. What biomes exist are then determined by how these factors overlap with each other.
 
 #### Minima and Maxima
 
-These are the absolute minimum and maximum values that can ever be generated for a particular map square characteristic. Changing these can cause the occurrence of certain biomes to become impossible, so modify these with care. Because of this problem, you may want to use Weighted Ranges instead. By *subtly* tweaking the min and max values, vastly different maps can be made.
+These are the absolute minimum and maximum values that can ever be generated for a particular map square characteristic. By *subtly* tweaking the min and max values, vastly different maps can be made. Changing these can cause the occurrence of certain biomes to become impossible, so you may want to use Weighted Ranges instead.
 
 #### X and Y Variance
 
@@ -257,34 +296,30 @@ For "patchwork" worlds to avoid being rejected, Maximum Number of Subregions wil
 
 #### Elevation
 
-This controls the range of terrain elevations that can occur in the world.
-
-Usually you just want to leave the min/max values alone. Raising the minimum elevation can, for example, make it impossible for oceans to exist. This does **not** directly control the number of available Z-levels at a particular site, though high maximum values may contribute to peaks which can raise the number of above ground Z-levels. In other words, a maximum elevation of 400 and minimum of 1 does not mean you get 400 Z-levels but it might increase the number of Z-levels somewhat in some regions compared to others.
-
-Raising the variance will result in a more bumpy, uneven landscape.
+This controls the range of terrain elevations that can occur in the world. Usually, you just want to leave the min/max values alone. Raising the minimum elevation can, for example, make it impossible for oceans to exist. This does **not** directly control the number of available Z-levels at a particular site, though high maximum values may contribute to peaks, which can raise the number of above ground Z-levels - in other words, a maximum elevation of 400 and minimum of 1 does not mean you get 400 Z-levels, but it might increase the number of Z-levels somewhat in some regions compared to others. Raising the variance will result in a more bumpy, uneven landscape.
 
 Some biomes/features that are impacted by elevation:
 
-- A high minimum (above 99) means no oceans as they need elevations below 100.
-- A low maximum (below 300) means no mountains as mountains need elevations above 300.
+- A high minimum (above 99) means no oceans, as they need elevations below 100.
+- A low maximum (below 300) means no mountains, as mountains need elevations above 300.
 - Rivers will be placed when the elevation maximum is 104 or higher. Therefore, keeping both values above 100 and below 104 will prevent all water tiles from appearing.
-- Mountain peaks can only form in squares with an elevation of 400.
+- Mountain peaks can only form at elevations of 400.
 
 #### Rainfall
 
-Controls the amount of rainfall in each map square/area. Setting the minimum too high or the maximum too low can make the formation of certain biomes impossible. Rainfall causes it to rain more in a given area, which can have various effects. Also makes more rivers appear on the world map.
+Controls the amount of rainfall in each map square/area. Setting the minimum or maximum too high or low can make the formation of certain biomes impossible. Rainfall causes it to rain more in a given area, which can have various effects. Also makes more rivers appear on the world map.
 
 Note that if orographic precipitation and rain shadows is on, then mountains will cause additional variance in rainfall, so (for example) rainfall below the specified minimum can occur in the shadow of a mountain. If you want the minimum and maximum for this parameter to be absolutely respected, you must turn off the orographic precipitation option.
 
-Additionally, with Orthographic Precipitation turned on, orthographic precipitation and rain shadows will only occur in regions with greater than or equal to 50 drainage. [\Report, reproduced 2022\]
+Additionally, with 'Orthographic Precipitation' turned on, orthographic precipitation and rain shadows will only occur in regions with greater than or equal to 50 drainage. [Report, reproduced 2022\]
 
 #### Temperature
 
-These parameters control how hot or cold various areas will be. If you lower the minimum and maximum values, the world will be colder overall, for example. As with the others, changing these values too much could make it impossible for certain biomes to exist. See Climate for more info.
+These parameters control how hot or cold various areas will be. If you lower the minimum and maximum values, the world will be colder overall, for example. As with the others, changing these values too much could make it impossible for certain biomes to exist. The temperature scale used in this setting is related to regular degrees Urist by the equation "local temp = world temp \* 0.75 + 10000".[4] This scale doesn't seem to be used anywhere else in the game. See Climate for more info.
 
-These parameters form the "base" temperature for an area, and describe peak summer temperature in a scale that isn't used elsewhere in the game. This number also does not correspond 1:1 with the final climate. Temperature is always influenced by a number of variables, including elevation, time of year, thick forestation, and if Poles are enabled, latitude. These other variables are factored in after the temperature mesh is applied, and frequently bring temperatures above and below their set minimum and maximum values. *The inclusion of Poles is particularly strong in this regard, as it allows latitude to raise and/or lower temperatures by more than 75 degrees Celsius! That said, the temperatures aren't raised or lowered by more than about 65 degrees past the set minimum and maximum. Furthermore, for typical ranges the temperature will never be raised more than about 25 degrees past the maximum (but will still drop up to about 65 degrees Celsius below the minimum).* (unsure about exact values, research needed)
+These parameters form the "base" temperature for an area, and describe peak summer temperature in a scale that isn't used elsewhere in the game. This number also does not correspond 1:1 with the final climate. Temperature is always influenced by a number of variables, including elevation, time of year, thick forestation, and if poles are enabled, latitude. These other variables are factored in after the temperature mesh is applied, and frequently bring temperatures above and below their set minimum and maximum values. *The inclusion of Poles is particularly strong in this regard, as it allows latitude to raise and/or lower temperatures by more than 75 degrees Celsius! That said, the temperatures aren't raised or lowered by more than about 65 degrees past the set minimum and maximum. Furthermore, for typical ranges, the temperature will never be raised more than about 25 degrees past the maximum (but will still drop up to about 65 degrees Celsius below the minimum).* (unsure about exact values, research needed)
 
-With a maximum temperature of 9 degrees, elf (elven) civilizations won't spawn. Humans need at least 0 degrees.
+Elves can spawn where the temperature is 10 degrees or warmer, and humans can spawn where the temperature is 0 degrees or warmer.
 
 #### Drainage
 
@@ -294,57 +329,91 @@ Lower drainage values have been reported to contribute to the formation of thick
 
 #### Volcanism
 
-Volcanism controls the occurrence of igneous Layers, and the formation of volcanoes. For a volcano to form, a square must have a volcanism value of 100 so reducing the maximum from 100 will make volcanoes impossible. Raising the minimum will increase the rarity of non-igneous layers.
+Volcanism controls the occurrence of igneous layers, and the formation of volcanoes. For a volcano to form, a square must have a volcanism value of 100, so reducing the maximum from 100 will make volcanoes impossible. Raising the minimum will increase the rarity of non-igneous layers.
 
-Setting the minimum to a high value is not a good way to produce multiple volcanoes, as you are likely to get a "Volcanism not evenly distributed" rejection. Instead use the Minimum Number of Volcanoes parameter and possibly adjust the weighted ranges for volcanism as described below.
+Setting the minimum to a high value is not a good way to produce multiple volcanoes, as you are likely to get a "Volcanism not evenly distributed" rejection. Instead, use the Minimum Number of Volcanoes parameter, and possibly adjust the weighted ranges for volcanism as described below.
 
 #### Savagery
 
-These parameters control the level of savagery on the map. Raising the minimum savagery too high may make it impossible for certain races to exist, and similarly lowering the maximum too far can make it impossible for certain creatures to exist. The largest chance of having unusable maps comes from too high of a savagery value.
+These parameters control the level of savagery on the map. Raising the minimum savagery too high may make it impossible for certain races to exist, and similarly lowering the maximum too far can make it impossible for certain creatures to exist. The largest chance of having unusable maps comes from a too-high savagery value.
 
 #### Configuration Tokens
 
-[TABLE]
+|  |  |  |
+|----|----|----|
+| Token | Example | Notes |
+| `[ELEVATION::::]` | `[ELEVATION:1:400:401:401]` | Range: 0 to 400 / Maximum of 400 required for mountain peaks. / Variance range: 0-3200 |
+| `[RAINFALL::::]` | `[RAINFALL:0:100:200:200]` | Range: 0 to 100 / Variance range: 0-3200 |
+| `[TEMPERATURE::::]` | `[TEMPERATURE:25:75:200:200]` | Range: -1000 to 1000 / Variance range: 0-3200 |
+| `[DRAINAGE::::]` | `[DRAINAGE:0:100:200:200]` | Range: 0 to 100 / Variance range: 0-3200 |
+| `[VOLCANISM::::]` | `[VOLCANISM:1:100:200:200]` | Range: 0 to 100 / Maximum of 100 required for volcanoes. / Variance range: 0-3200 |
+| `[SAVAGERY::::]` | `[SAVAGERY:1:100:200:200]` | Range: 0 to 100 / Variance range: 0-3200 |
 
-### Terrain Mesh Sizes and Weights
+### Terrain Mesh Sizes and Range Weights
 
-These parameters make it possible to influence the number of squares in a particular range, without making conditions outside of that range impossible. For example, you can make it possible for many more low-elevation squares to exist without making it impossible for high elevations to form. Changing these parameters is often preferable to simply changing the min/max values.
+A large world generated with an Elevation Mesh Size of 32×32 and range weights set to 1:0:0:0:1 (i.e., only extreme high and low elevations). Note how the grid intersections are either set very high (mountains) or very low (oceans) and the space between them is smoothed out.
+
+These parameters influence the relative proportions of terrain feature ranges, without making other ranges impossible. For example, to have many more low-elevation squares exist, without making it impossible for high elevations; this makes changing these parameters often preferable to simply changing the above min/max values. See the image on the right for an example.
 
 The basic steps of applying weighted ranges are as follows:
 
-1.  Create a grid with 2^(*MeshSize* - 1) tiles in both X and Y direction.
-2.  Set the intersection points of the grid lines to a random value according to the weighted ranges.
-3.  Smooth out the area between the intersection points.
+1.  Divide the world into a grid of quantity `2`*`MeshSize`*` - 1` areas in both X and Y direction.
+2.  At each grid intersection, set the value according to the weighted ranges.
+3.  Smooth out the areas between the intersection points.
 4.  Add noise according to the variance parameters.
 
-where *MeshSize* is the raw parameter value found in the world_gen.txt. See the image on the right for an example.
+Where *MeshSize* is the raw parameter value found in the `world_gen.txt`.
 
-#### Mesh Size/Weighted Ranges
+#### Interaction between Mesh Size and Weighted Ranges
 
-Mesh size determines how many grid tiles there will be. Setting this to Ignore will cause the weighted range settings to be ignored for that terrain characteristic. As an example, setting it to 2×2 means the grid will be 2 times 2 tiles large and there will be 3×3 for a total of 9 intersection points. On a pocket world, this means one grid tile will be 8×8 world tiles large, whereas on a large world, one grid tile will be 128×128 world tiles. Note that the highest possible value for a given world size will always make the grid tiles 8×8 world tiles large.
+Mesh size determines how many intersection points the world will have. As an example, setting it to 2×2 means the world will be divided into 4 areas, 2 across and 2 tall, and there will be a total of 9 intersection points (3×3), including the outer-most corners. The grid intersection points are in the middle of world tiles, and the minimum size for a grid area is a span of 9 world tiles in either direction, with adjacent areas sharing an overlapping world tile. On a pocket world, this means one grid tile will span 9×9 world tiles, whereas on a large world, one grid tile will span 129×129 world tiles. A pocket world will always use a 2×2 grid of 9×9 world tiles, since it has only 17×17 tiles total (even if the game UI allows setting those worlds to a 4×4 grid, which can happen when changing the world size; changing the world size doesn't adjust mesh size limits, but saving then reloading the parameters does). A world that is 17 tiles wide, but 257 tall, and set to a 32×32 mesh size, will have 3×33 intersection points.
 
-If mesh size is set to something other than Ignore, these weights will be applied at the granularity of the selected mesh size for purposes of generating random values in each range. This allows random number generation to be non-linear for the given terrain characteristic.
+Setting mesh size to something other than Ignore, will apply random values at those intersections, with those random values being more likely to be in the ranges with higher weights. Setting to Ignore will cause the weighted range settings to be ignored for that terrain characteristic; instead setting the 4 corners of the world to completely random values and smoothing between those, or in other words, using a 1×1 grid for square worlds; while for rectangular worlds, using the same ratio as the world dimensions with 1 in the narrow dimension (for example, a 1×16 grid for a 17×257 world).
 
-For example, if the Elevation Weighted Range parameters were set to (starting with the 0%-20% range) 60:10:10:10:10 (these values do not have to add up to any particular number) and elevation min and max are set to 1 and 400 respectively then about 60% of the grid line intersection points (on average) will be set to an elevation in the range of 1-80 (0% to 20%), and the other ranges (20%-40%, 40%-60%, etc.) will be represented by around 10% of the intersection points each. The exact distribution is still left up to chance though *on average* it will be close to this specification.
+For example, if the Elevation Weighted Range parameters are set to `60:10:10:10:10` (starting with the 0-20 range, and these values do not need to add up to any particular number), and elevation min and max are left at the defaults of 1 and 400 respectively, then about 60% (on average) of the grid line intersection points will be set to an elevation in the range of 1-80 (0% to 20%), and the other ranges will be represented by around 10% of the intersection points each. The exact distribution is still left up to chance, though *on average* it will be close to this specification. This allows random number generation to be non-linear for the given terrain characteristic.
 
-Weighted ranges do not make rejection checks, although they can be responsible for many rejections if you neglect to adjust or disable some of the Minimum Number of Mid/Low/High Characteristic Squares for example.
+Setting the weight for a range to None only prevents intersection points from being set to a value in that range; terrain between intersection points can still be smoothed to values in ranges set to None that are between the intersection point values. Setting all the weights to None just puts them all at the same weight, the same as the default of all at 1.
 
-#### Interaction between Mesh Size and Variance
+Weighted ranges do not make rejection checks, although they can be responsible for many rejections if you neglect to adjust or disable some of the Minimum Number of Mid/Low/High Characteristic Squares, for example.
 
-The end result can vary greatly depending on how the corresponding X and Y Variance parameters are set. First of all, if the variance is too large the noise it adds can completely negate the effect of the weighted ranges. For instance, with a 2×2 mesh, the default variance parameters are high enough that usually the mesh grid can hardly be recognized. How strong the variance's effect is, is also dependent on the mesh size. Having a larger mesh size (i.e. smaller grid tiles) means the variance also has to be higher for a visible effect. For instance, with a variance of 400, the effects are clearly visible with a 2×2 mesh and barely visible at all with a 8×8 mesh. Note that this effect is directly dependent on the mesh size and not, as one might expect, on the actual size of the grid tiles. This means, that a large world with a 2×2 mesh will look essentially the same as a pocket world with a 2×2 mesh, only stretched to 256 times the size.
+#### Interaction between these and Variances
+
+The end result can vary greatly depending on how the corresponding X and Y Variance parameters are set. First of all, if the variance is too high, the noise it adds can completely negate the effect of the weighted ranges. For instance, with a 2×2 mesh, the default variance parameters are high enough that usually the mesh grid can hardly be recognized. How strong the variance's effect is, is also dependent on the mesh size. Having a larger mesh size (i.e. smaller grid tiles) means the variance also has to be higher for a visible effect. For instance, with a variance of 400, the effects are clearly visible with a 2×2 mesh and barely visible at all with a 8×8 mesh. Note that this effect is directly dependent on the mesh size and not, as one might expect, on the actual size of the grid tiles. This means, that a large world with a 32×32 mesh will look essentially the same as a pocket world with a 2×2 mesh, only stretched to 256 times the size.
 
 Also see this forum post for more details.
 
 #### Configuration Tokens
 
-[TABLE]
+Token
+Example
+Notes
+
+[ELEVATION_FREQUENCY::::::]
+[ELEVATION_FREQUENCY:2:1:2:3:4:5]
+Valid mesh values: / 1 = Ignore / 2 = 2x2 / 3 = 4x4 / 4 = 8x8 / 5 = 16x16 / 6 = 32x32 / (limited by world size)
+
+[RAIN_FREQUENCY::::::]
+[RAIN_FREQUENCY:3:1:2:3:4:5]
+
+[DRAINAGE_FREQUENCY::::::]
+[DRAINAGE_FREQUENCY:4:1:2:3:4:5]
+
+[TEMPERATURE_FREQUENCY::::::]
+[TEMPERATURE_FREQUENCY:1:1:1:1:1:1]
+
+[SAVAGERY_FREQUENCY::::::]
+[SAVAGERY_FREQUENCY:5:1:2:3:4:5]
+
+[VOLCANISM_FREQUENCY::::::]
+[VOLCANISM_FREQUENCY:1:1:1:1:1:1]
 
 ### Poles
 
 With this, you can influence how polar regions are added. The poles can be on the north or south edge, and the equator will be on the opposite edge, or in the middle if there are two poles. If poles are set to NONE, then there will be no seasonal changes in the weather (e.g. no winter snow in temperate biomes).
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[POLE:]` | `[POLE:NORTH]` | Viable options: NONE, NORTH_OR_SOUTH, NORTH_AND_OR_SOUTH, NORTH, SOUTH, NORTH_AND_SOUTH |
 
 ### Minimum Mountain Peak Number
@@ -353,94 +422,101 @@ This will cause the world to be rejected if fewer than this many peaks (based on
 
 You may need to adjust elevation parameters, such as the highest weighted range, in order to get the desired number of elevation-400 squares needed for larger numbers of peaks. Like volcanoes, mountain peaks can make embark zones more interesting, but other than that, they don't appear to "do" anything special. Reportedly, they do increase the highest Z-level above ground in all embark zones in the same region, even if the selected embark zone does not include the peak.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[PEAK_NUMBER_MIN:]` | `[PEAK_NUMBER_MIN:20]` | Elevations of 400 must occur for peaks to form. |
 
 ### Minimum Partial Edge Oceans
 
 This will cause a world to be rejected unless there are at least this many oceans touching an edge of the map. If set to zero then worlds will not be rejected based on this criterion. Setting both this parameter and Minimum Complete Edge Oceans to values that total more than 4 when added together may cause all worlds to be rejected as you can't have both a partial and complete edge ocean on a given edge.
 
-| Token | Example | Notes |
-|----|----|----|
+|                             |                              |              |
+|-----------------------------|------------------------------|--------------|
+| Token                       | Example                      | Notes        |
 | `[PARTIAL_OCEAN_EDGE_MIN:]` | `[PARTIAL_OCEAN_EDGE_MIN:2]` | Maximum of 4 |
 
 ### Minimum Complete Edge Oceans
 
 This will cause a world to be rejected unless there are at least this many oceans which completely cover an edge of the map. Since a square map only has 4 edges, the maximum value possible is 4. If set to zero then worlds will not be rejected based on this criterion but still might end up with complete edge oceans by chance.
 
-Note that the ability for this many edge oceans to exist will be limited by elevation. Therefore, to actually create large oceans you will probably need to change things like the Elevation Mesh Size and Weighted Ranges to increase the number and distribution of very low elevation squares on the map. In addition, if Complete Edge Oceans is set to any value *other* than 0 or 4, you may need to lower elevation variance for at least one of the axes: if set too high, such as a variation of 1600 for both X and Y axes (the default for Large Island and Medium Island parameter sets), the game may generate worlds very slowly or even hang.
+Note that the ability for this many edge oceans to exist will be limited by elevation. Therefore, to actually create large oceans you will probably need to change things like the Elevation Mesh Size and Weighted Ranges to increase the number and distribution of very low elevation squares on the map. In addition, if Complete Edge Oceans is set to any value *other* than 0 or 4, you may need to lower elevation variance for at least one of the axes: if set too high, such as a variation of 1600 for both X and Y axes (the default for Large Island and Medium Island parameter sets), the game may generate worlds very slowly or even hang.Bug:565
 
-Given appropriate weight, range, and variance values for things like elevation, a setting of:
+Given appropriate weight, range, and variance values for things like elevation, a setting of: 1 results in a world that seems like a chunk of coastline. One edge of the map will be completely underwater and there will be ocean taking up much of the map on that side (think the east or west coast of the United States, the north coast of Canada, or southern Europe). If your edge ocean happens to pick your world's frozen side, most of it will be glacier.
 
-- 1 results in a world that seems like a chunk of coastline. One edge of the map will be completely underwater and there will be ocean taking up much of the map on that side (think the east or west coast of the United States, the north coast of Canada, or southern Europe). If your edge ocean happens to pick your world's frozen side, most of it will be glacier.
-- 2 results in another coastline along with the first one. The map could end up looking something like Panama if the oceans pick opposite sides of the map.
+- 2 results in another coastline along with the first one -- the map could end up looking something like Panama if the oceans pick opposite sides of the map.
 - 3 results in a peninsula, like Florida in the US. There will be oceans surrounding 3 sides of the map, and land touching only one side of the map.
 - 4 results in one or more island(s) depending on things like elevation variance and weights. Regardless of whether you get one island or multiple islands, the entire map will be surrounded by water.
 
-Unfortunately there's no easy way to control which oceans end up on which edges, except perhaps setting X and Y variance to different values.
+Unfortunately, there's no easy way to control which oceans end up on which edges, except perhaps setting X/Y variance to different values.
 
 Edge oceans will take up part of the other edges too. For example, a full edge ocean on the east side will have part of the north and south sides underwater, but that does *not* add to the *partial* edge oceans count.
 
-| Token | Example | Notes |
-|----|----|----|
+|                              |                               |              |
+|------------------------------|-------------------------------|--------------|
+| Token                        | Example                       | Notes        |
 | `[COMPLETE_OCEAN_EDGE_MIN:]` | `[COMPLETE_OCEAN_EDGE_MIN:0]` | Maximum of 4 |
 
 ### Minimum Volcano Number
 
-Worlds with less than this number of volcanoes will be rejected. Note that this will not just create this many volcanoes at random; there must be at least this many squares with a Volcanism of 100. Therefore, adjusting Weighted Range for 80-100 to some higher value is recommended if you want to facilitate a large number of volcanoes. In addition, Maximum Volcanism must be set to 100 or squares with volcanism of 100 will be impossible, making volcanoes impossible.
+The game will attempt to place this many volcanoes, but there must be at least this many squares with a volcanism of 100, if there are not the world will be rejected. Therefore, maximum volcanism above must be set to 100, and adjusting the volcanism weighted range above for 80-100 to a higher value can increase the number of those squares.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[VOLCANO_MIN:]` | `[VOLCANO_MIN:15]` | Volcanoes require a volcanism of 100 to occur. |
 
 ### Mineral Scarcity
 
-Controls the frequency at which minerals occur - setting this value lower will increase the amount and number of different types of ore present on a map, and the number/types of gems. The default value will result in a maximum of 2-4 metal ores per map (assuming you choose a good embark location) which may be limiting until the economy is fully implemented and desired metals can be traded for.
+Controls the frequency at which minerals occur; setting this value higher will decrease both the number of different types and amounts of ore and gems present on a map. The default value will result in many metal ores, while the old default of *sparse* would be only a few ores, which may be limiting until other metals can be requested and traded for.
 
 The options "Very Rare", "Rare", "Sparse", "Frequent", and "Everywhere" in the basic world generation menu use the values 50000, 10000, 2500, 500 and 100 respectively.
 
 According to research by Shandra in v0.31.25, this is the relationship between the value of this setting and the approximate number of gems and ore:
 
-This is for the same 8x8 embark region in a world which is otherwise the same, except for the mineral scarcity parameter (although most of the detailed information comes from experiments with previous versions).
+This is for the same 8x8 embark region in a world which is otherwise the same, except for the mineral scarcity parameter (although most of the detailed information comes from experiments with previous versions). (The chart legend has an error, the first "Pot.(Types)" should read "Pot.(Amount)".)
 
-| Token | Example | Notes |
-|----|----|----|
-| `[MINERAL_SCARCITY:]` | `[MINERAL_SCARCITY:2500]` | Range: 100 to 100,000 |
-
-**Note:** as of v0.34, low mineral scarcity settings do not cause rejections.
+|                       |                          |                       |
+|-----------------------|--------------------------|-----------------------|
+| Token                 | Example                  | Notes                 |
+| `[MINERAL_SCARCITY:]` | `[MINERAL_SCARCITY:100]` | Range: 100 to 100,000 |
 
 ### Max Megabeast Caves
 
-This is the number of megabeasts placed at the beginning of history. Megabeasts are hydras, bronze colossuses, rocs, and dragons, which are all placed in equal proportions ^(data).
+This is the number of megabeasts placed at the beginning of history. Megabeasts are hydras, bronze colossuses, rocs, and dragons, which are all placed in equal proportions data.
 
 Increasing this value can lead to early extinction of civilizations.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[MEGABEAST_CAP:]` | `[MEGABEAST_CAP:75]` | Megabeasts count towards BEAST_END_YEAR calculation. |
 
 ### Max Semi-Megabeast Caves
 
-This is the number of semi-megabeasts placed at the beginning of history. Semimegabeasts are giants, ettins, minotaurs, and cyclops, which are placed in equal proportions ^(data).
+This is the number of semi-megabeasts placed at the beginning of history. Semimegabeasts are giants, ettins, minotaurs, and cyclops, which are placed in equal proportions data.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[SEMIMEGABEAST_CAP:]` | `[SEMIMEGABEAST_CAP:150]` | Semimegabeasts do not count towards the BEAST_END_YEAR calculation. |
 
 ### Titan Parameters
 
 #### Number
 
-This controls the number of titans that exist at the beginning of history^(data). The number of forgotten beasts is unaffected by this parameter ^(data).
+This controls the number of titans that exist at the beginning of historydata. The number of forgotten beasts is unaffected by this parameter data.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[TITAN_NUMBER:]` | `[TITAN_NUMBER:33]` | Titans count towards BEAST_END_YEAR calculation. |
 
 #### Attack Population Requirement
 
-Titans will begin to attack your fort once at least this many dwarves inhabit it, regardless of whether any other attack criteria have been met. This number defaults to 80, which isn't usually too difficult to deal with.
+Titans will begin to attack your fort once at least this many dwarves inhabit it, regardless of whether any other attack criteria have been met.
+
+This number defaults to 80, which isn't usually too difficult to deal with.
 
 #### Exported Wealth Requirement
 
@@ -450,48 +526,54 @@ Titans will begin to attack your fort once you have exported at least this many 
 
 Titans will begin to attack your fort once the fort's total wealth has reached this many dwarfbucks in value. This happens regardless of whether any of the other criteria, such as population, have been met; therefore, even with 1 dwarf, a fort could be attacked if the fort were worth at least this value.
 
-| Token | Example | Notes |
+|  |  |  |
 |----|----|----|
+| Token | Example | Notes |
 | `[TITAN_ATTACK_TRIGGER:::]` | `[TITAN_ATTACK_TRIGGER:80:0:100000]` | 0 = None (disabled). Only one requirement must be met for an attack. |
 
 ### Number of Demon Types
 
-Demons are similar to titans and forgotten beasts, in that they are procedurally generated, but unlike titans, they are not unique. Thus, many different types of demons will exist in the world, but there will be many members of each type. Setting this to zero means no demons will exist, limiting the amount of fun you can have. Thanks to certain fun things, fewer demon types also means fewer goblin civilizations1.You need at least 2 demon types, or goblin civilizations won't exist.
+Demons are similar to titans and forgotten beasts, in that they are procedurally generated, but most are not unique. Thus, many different types of demons can exist in the world, but there will also be many individuals of most types. Thanks to certain fun things, fewer demon types also means fewer goblin civilizations.[5] You need at least 2 demon types, or else goblin civilizations won't exist initially, though if dwarves breach the underworld during world generation, at least one will be generated then.
 
-| Token                     | Example             | Notes     |
-|---------------------------|---------------------|-----------|
+|                   |                     |           |
+|-------------------|---------------------|-----------|
+| Token             | Example             | Notes     |
 | `[DEMON_NUMBER:]` | `[DEMON_NUMBER:52]` | 0 to 1000 |
 
 ### Number of Night Troll Types
 
-The number of different night trolls, also procedurally generated, that will exist in the world. Setting this to zero means that the world will have no night trolls, custom or otherwise
+The number of different night trolls, also procedurally generated, that will exist in the world. Setting this to zero means that the world will have no night trolls, custom or otherwise.
 
-| Token                           | Example                   | Notes     |
-|---------------------------------|---------------------------|-----------|
+|                         |                           |           |
+|-------------------------|---------------------------|-----------|
+| Token                   | Example                   | Notes     |
 | `[NIGHT_TROLL_NUMBER:]` | `[NIGHT_TROLL_NUMBER:77]` | 0 to 1000 |
 
 ### Number of Bogeyman Types
 
 The number of different bogeyman forms that will exist in the world. Bogeymen are procedurally generated, though their forms do not vary by much. Setting this to zero means that the world will have no bogeymen, custom or otherwise.
 
-| Token                        | Example                | Notes     |
-|------------------------------|------------------------|-----------|
+|                      |                        |           |
+|----------------------|------------------------|-----------|
+| Token                | Example                | Notes     |
 | `[BOGEYMAN_NUMBER:]` | `[BOGEYMAN_NUMBER:27]` | 0 to 1000 |
 
 ### Number of Nightmare Types
 
 The number of different nightmare forms that will exist in the world. Nightmares are procedurally generated. Setting this to zero means that the world will have no nightmares, custom or otherwise.
 
-| Token                         | Example                 | Notes     |
-|-------------------------------|-------------------------|-----------|
+|                       |                         |           |
+|-----------------------|-------------------------|-----------|
+| Token                 | Example                 | Notes     |
 | `[NIGHTMARE_NUMBER:]` | `[NIGHTMARE_NUMBER:27]` | 0 to 1000 |
 
 ### Number of Vampire Curse Types
 
 The number of different types of vampires that will exist in the world. Although they are generated at the start of a new world, they aren't different from each other. Setting this to zero means no vampires will exist.
 
-| Token                       | Example               | Notes     |
-|-----------------------------|-----------------------|-----------|
+|                     |                       |           |
+|---------------------|-----------------------|-----------|
+| Token               | Example               | Notes     |
 | `[VAMPIRE_NUMBER:]` | `[VAMPIRE_NUMBER:72]` | 0 to 1000 |
 
 ### Werebeast Parameters
@@ -500,8 +582,11 @@ The number of different types of vampires that will exist in the world. Although
 
 The number of different types of werebeasts that can exist in the world. It is common for werebeasts, unlike vampires, to assume many different forms and variations, the most well-known of these amount to different species of animals, from lizards, to wolves, to even bears. Setting this to zero means no werebeasts will exist, and will also remove a large amount of fun from the game.
 
-| Token                         | Example                 | Notes     |
-|-------------------------------|-------------------------|-----------|
+In vanilla, there are only 82 possible unique werebeast species. Any further species will generate as wereblobs.Bug:13308
+
+|                       |                         |           |
+|-----------------------|-------------------------|-----------|
+| Token                 | Example                 | Notes     |
 | `[WEREBEAST_NUMBER:]` | `[WEREBEAST_NUMBER:58]` | 0 to 1000 |
 
 #### Attack Population Requirement
@@ -514,78 +599,6 @@ Werebeasts will begin to attack your fort once you have exported at least this m
 
 #### Created Wealth Requirement
 
-Werebeasts will begin to attack your fort once the fort's total wealth has reached this many dwarfbucks in value. This happens regardless of whether any of the other criteria, such as population, have been met; therefore, even with 1 dwarf, a fort could be attacked if the fort were worth at least this value.
-
-| Token | Example | Notes |
-|----|----|----|
-| `[WEREBEAST_ATTACK_TRIGGER:::]` | `[WEREBEAST_ATTACK_TRIGGER:50:5000:50000]` | 0 = None (disabled). Only one requirement must be met for an attack. |
-
-### Number of Secret Types
-
-The number of secrets that exist in the world. Currently, all secrets are secrets of life and death, and the ones holding these secrets are necromancers, thus, setting this to zero means that no necromancers will appear. Non-necromancer towers can still appear (extremely rarely) with zero secrets, constructed by independent undead groups. The primary difference between having 1 or 1000 secrets is the chance of your world having any necromancer towers at all. With 1, this chance is low. With the default number, it's seemingly guaranteed. Even with 1 secret, if you have any necromancer towers at all, it is likely a great number will quickly appear in world generation (though this isn't guaranteed).
-
-| Token                      | Example              | Notes     |
-|----------------------------|----------------------|-----------|
-| `[SECRET_NUMBER:]` | `[SECRET_NUMBER:52]` | 0 to 1000 |
-
-### Number of Regional Interaction Types
-
-The number of interactions that can be caused in regions, which may incorporate evil rain and cloud types. Currently, only evil region interactions are generated this way.
-
-| Token | Example | Notes |
-|----|----|----|
-| `[REGIONAL_INTERACTION_NUMBER:]` | `[REGIONAL_INTERACTION_NUMBER:20]` | 0 to 1000 |
-
-### Number of Disturbance Interaction Types
-
-The number of different disturbed dead that can exist in the world. Setting this to zero, while being pointless as is, (since you're never forced to enter a tomb anyway), will most likely prevent any toilet roll spooks from appearing, but it may or may not also prevent the existence of the pyramids which house them too.
-
-| Token | Example | Notes |
-|----|----|----|
-| `[DISTURBANCE_INTERACTION_NUMBER:]` | `[DISTURBANCE_INTERACTION_NUMBER:10]` | 0 to 1000 |
-
-### Number of Evil Cloud / Evil Rain Types
-
-This number specifies the total amount of various face-melting, eye-boiling, and zombifyingly-fun clouds of pure evil may appear in your world. Setting this to zero means you no longer will ever have to deal with encroaching dust walls of doom in that world. I'd keep this value low...
-
-| Token                          | Example                  | Notes     |
-|--------------------------------|--------------------------|-----------|
-| `[EVIL_CLOUD_NUMBER:]` | `[EVIL_CLOUD_NUMBER:45]` | 0 to 1000 |
-
-The latter number states how many different types of green-ooze drenchers, disconcerting blood-showers, and sickly yellow slime-baths can occur in your world. Compared to evil clouds though, this one hardly is worth stressing out about, usually.... Setting this to zero means the only semi-solid to fully-liquid fluids to fall from the sky will be pure H2O.
-
-| Token                         | Example                  | Notes     |
-|-------------------------------|--------------------------|-----------|
-| `[EVIL_RAIN_NUMBER:]` | `[EVIL_RAIN_NUMBER:352]` | 0 to 1000 |
-
-### Generate Divine Materials
-
-This turns the generation of divine metals on or off. It does not influence the creation of vaults. Probably determines whenever or not using divination dice spawns weapons.
-
-| Token | Example | Notes |
-|----|----|----|
-| `[GENERATE_DIVINE_MATERIALS:]` | `[GENERATE_DIVINE_MATERIALS:1]` | 1/0 = Yes/No |
-
-### Allow Divination, Experiments, and Necromancy types
-
-These allow or disallow divination, demon or necromancer experiments, and the more advanced necromancer abilities.
-
-| Token | Example | Notes |
-|----|----|----|
-| `[ALLOW_DIVINATION:]` | `[ALLOW_DIVINATION:1]` | 1/0 = Yes/No |
-| `[ALLOW_DEMONIC_EXPERIMENTS:]` | `[ALLOW_DEMONIC_EXPERIMENTS:1]` | 1/0 = Yes/No |
-| `[ALLOW_NECROMANCER_EXPERIMENTS:]` | `[ALLOW_NECROMANCER_EXPERIMENTS:1]` | 1/0 = Yes/No |
-| `[ALLOW_NECROMANCER_LIEUTENANTS:]` | `[ALLOW_NECROMANCER_LIEUTENANTS:1]` | 1/0 = Yes/No |
-| `[ALLOW_NECROMANCER_GHOULS:]` | `[ALLOW_NECROMANCER_GHOULS:1]` | 1/0 = Yes/No |
-| `[ALLOW_NECROMANCER_SUMMONS:]` | `[ALLOW_NECROMANCER_SUMMONS:1]` | 1/0 = Yes/No |
-
-### Desired Good/Evil Square Counts
-
-These values change the amount of good or evil tiles on the map, depending on the size of the region they are being considered for. The counts are for all tiles in all subregions of a given size considered together, *not* counts for each subregion considered separately (all tiles in the same subregion share the same surroundings values).
-
-As used here, a "subregion" is a named world area. Subregion names and locations for a generated world are viewable in legends mode under "Regions". Subregions are classified by size the same way for all map sizes: 1-24 tiles is Small, 25-99 tiles is Medium, and 100+ tiles is Large.
-
-The counts used here will always be restricted to regions of the given size, no matter how large the count. Also, the count is more of a goal than a minimum or maximum. As a result, you can end up with many more or many fewer than the requested number of squares in some situations. In particular, if you have something like a case where only 3 large regions exist in a world, and you request "1 evil square" in large regions, you will end up with one of the large regions being *entirely evil*. So any non-zero value in one of these settings essentially means "force at least one region of this size to be all good/evil."
 
 ---
-⚠️ Conteúdo truncado (69294 bytes = ~17323 tokens). Para o artigo completo, visite [Advanced world generation](https://dwarffortresswiki.org/index.php/Advanced_world_generation).
+*Parte 1 de 2 de «Advanced world generation». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Advanced_world_generation*

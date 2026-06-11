@@ -1,6 +1,6 @@
 # Bay 12 Forums
 
-> Fonte: [Bay 12 Forums](https://dwarffortresswiki.org/index.php/Bay_12_Forums) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Bay 12 Forums](https://dwarffortresswiki.org/index.php/Bay_12_Forums) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 The **Bay 12 Games Forums** are the main hub of fan-based activity and discussion surrounding the game. Users can ask questions about game play, exchange stories of their exploits, advertise their own contributions (mods, tools, pregenerated worlds), make suggestions for improvements, or discuss the game in a more general fashion. Toady One is known to read the forums and occasionally respond to posts when he sees fit. In the past bugs were also reported here, but they have since been moved into the domain of the Bug Tracker, although workarounds and such are still discussed on the wiki.
 
@@ -17,7 +17,7 @@ The **Bay 12 Games Forums** are the main hub of fan-based activity and discussio
 - **DF Suggestions**: Where suggestions on the game are made, and players can freely discuss ways of how the game could be improved. Any suggestions are welcome, ranging from minor changes to the display up to major additions like magic systems. While Toady One is known to visit this forum, non-trivial suggestions are very rarely implemented into the game. Vote counting will not win him over either.
 - **DF Gameplay Questions**: This is the place where you can go if you encounter something you do not understand, which neither looks like a bug nor is explained sufficiently in the wiki. Questions about specific game mechanisms are common, but people also often ask for advice about how to implement certain ideas or features here. Topics range in complexity from "how do I start a farm?" to "is it possible to use perpetual motion to your advantage outside of power generation?"
 - **DF Wiki Discussion**: A subforum of the above, this is where the wiki (you're looking at it) is discussed. Grounds for discussion is rather more niche than the other forums, so activity is low, but the wiki admins and contributors do watch it.
-- **DF Dwarf Mode Discussion** is especially dedicated to discussions about dwarf fortress mode. This forum usually contains discussions about either ideas for ways to play in fortress mode or experiences with fortress mode. The content therein ranges from anecdotal to inspirational - it is a place of humor, revelry, fun, and occasional !!SCIENCE!! alike.
+- **DF Dwarf Mode Discussion** is especially dedicated to discussions about dwarf fortress mode. This forum usually contains discussions about either ideas for ways to play in fortress mode or experiences with fortress mode. The content therein ranges from anecdotal to inspirational - it is a place of humor, revelry, fun, and occasional !!SCIENCE!! alike.
 - **DF Adventure Mode Discussion** is the counterpart to the previously described forum. It is dedicated to discussions about adventurer mode. Like its fortress mode counterpart, this forum ranges from ideas to anecdotes as people describe both their experiences as well as their ideas for adventurer mode playing.
 - **DF Community Games & Stories**, dedicated to discussions about community games and stories. In this forum, fans can advertise their community games, succession games, and the like and also handle the actually post exchange that is required for organizing such events. And they also exchange the stories of what happens in the game. Please note that, like the other forums, this forum does not offer upload facilities.
 - **DF Modding** is dedicated to discussions about modding. Fans use it to advertise their mods, exchange experiences with the modding process, and also ask and answer questions about how to mod the game successfully. It has multiple subforums as well.
@@ -39,7 +39,7 @@ The **Bay 12 Games Forums** are the main hub of fan-based activity and discussio
 
 ## Rules and suggestions
 
-The forum rules have been more or less in this thread.
+The forum rules have been more or less laid out in this thread.
 
 Some suggestions:
 
@@ -52,5 +52,3 @@ Please note that the search function offers searching a single forum or all foru
 Support Existing Threads
 
 Instead of starting new threads, consider participating in threads already dealing with the issue. This is especially an important issue for suggestions as some of the obvious ones tend to resurface regularly.
-
-\]\] \]\]

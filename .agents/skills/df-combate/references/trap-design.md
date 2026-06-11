@@ -1,14 +1,22 @@
 # Trap design
 
-> Fonte: [Trap design](https://dwarffortresswiki.org/index.php/Trap_design) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Trap design](https://dwarffortresswiki.org/index.php/Trap_design) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+\
 
 *This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. **Trap design** focuses on the theory and design of complex traps, mechanical systems and other automation for defending your fortress, and also on unusual uses of simple mechanic's traps. For a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense, see the **defense guide**. For tips on laying out your architecture to protect your military, see **security design**. For specific advice on how to get your soldiers prepared for any threat, see **military**.*
+
+\
 
 *For suggestions on disposing of nobles and other unwanted residents, see unfortunate accident.*
 
 *For a basic overview of how the different machine parts work and work together, see machine component.*
 
 *For information on catching vermin-sized creatures in animal traps, see trapper.*
+
+\
 
 ## Introduction
 
@@ -28,13 +36,13 @@ This is the easiest trap to build, so you can easily build them in large numbers
 
 ### Weapon trap
 
-The gold standard of lethal traps. This is the only simple trap that works repeatedly without reloading. They do get jammed, however. View the trap with the **items in room** mode, and if there's a corpse inside the trap, it's jammed. None of the weapons on a jammed trap will function. It may be wiser to have several weapon traps with fewer weapons, rather than a smaller number of ten-weapon traps.
+The gold standard of lethal traps. This is the only simple trap that works repeatedly without reloading. They do get jammed, however. View the trap by clicking on it, and if there's a corpse inside the traps item list, it's jammed. None of the weapons on a jammed trap will function. Therefore, you should scale the lethality and amount of traps based on what you're trying to stop. A hallway filled with ten weak weapon traps (like a single iron mace in each one) can cripple a whole goblin siege while it might be useless against bigger threats. An effective strategy is to put the deadliest traps closest to your fortress and the weaker ones far away for the most comprehensive defense.
 
-Using crossbows or other projectile weapons in weapon traps avoids the problem of jamming, but they must be kept loaded with ammo. Mechanics will load them with any ammo that is not forbidden. They will load each until each type of weapon has ten rounds of ammo. Hammers seem to jam less than swords or axes, and spears seem to jam the most. Your dwarves will attempt to unjam traps unless otherwise forbidden.
+Using crossbows or other projectile weapons in weapon traps avoids the problem of jamming altogether, but they must be kept loaded with ammo. Mechanics will load them with any ammo that is not forbidden. They will load each until each type of weapon has ten rounds of ammo. Hammers seem to jam less than swords or axes, and spears seem to jam the most. Your dwarves will attempt to unjam traps unless otherwise forbidden.
 
 ### Cage trap
 
-A very powerful type of trap. Maybe even too powerful – currently, even a wooden or glass cage can hold any creature indefinitely, even trolls and megabeasts. A cage trap never fails, although creatures with the trapavoid tag cannot be captured unless knocked unconscious or webbed first. Use cage traps as your outermost traps to catch the occasional wandering animal, angry wounded elephant or unicorn, or even zombies. Caged animals and enemies will be safely brought to any animal stockpiles you have, but may escape later if you are not careful. For more information, see captured creatures.
+A very powerful type of trap. Maybe even too powerful – currently, even a wooden or glass cage can hold any creature indefinitely, even trolls and megabeasts. A cage trap never fails, although creatures with the trapavoid tag cannot be captured unless knocked unconscious or webbed first. Use cage traps as your outermost traps to catch the occasional wandering animal, angry wounded elephant or unicorn, or even zombies. Caged animals and enemies will be safely brought to any animal stockpiles you have, but may escape later if you are not careful or if you allow their allies to free them. For more information, see captured creatures.
 
 ## Linked traps
 
@@ -42,11 +50,11 @@ These traps require a trigger such as a pressure plate or lever. They will requi
 
 For a system that repeatedly activates automatically and regularly regardless of enemies, see Repeater.
 
-### Menacing spikes
+### Upright Weapon / Spike
 
-Menacing spikes or upright spears appear on the basic mechanic's rap menu, but must be activated remotely to pop out of the ground and impale anyone standing on that tile. Vast forests of these can make any area a killing field.
+Upright weapons / spikes are remotely activated traps that can deal massive damage and do not jam, but only damage enemies if they either fall on it or it's activated under them. Like a standard weapon trap, you can place up to 10 weapons inside this trap with the added restriction of only accepting spears and spikes. As they cannot jam, there is no downside other than cost and build time to fill all 10 weapon slots. While they may seem like a great option to place in the hallways of your fort to kill horrible creatures, these traps do not discriminate. They will inflict piercing damage on whatever is standing on the tile, whether it be friend or foe. You can use traffic designations to help somewhat. Designate the spike trap tiles as *restricted* then make a longer path going around the spikes that's designated as *high traffic*. Pets and merchants/diplomats will probably still get skewered, though.
 
-While upright spike defense systems never jam, they also do not discriminate. When activated, they will inflict piercing damage on whatever is standing on the tile, whether it be friend or foe (so it's good for nobles). You can use traffic designations to help somewhat. Designate the spike trap tiles as *restricted* then make a longer path going around the spikes that's designated as *high traffic*. Pets and merchants/diplomats will probably still get skewered, though.
+Be careful of using "closest materials" when building these traps as your dwarves may select useless wooden training spears instead of your numerous menacing steel spikes.
 
 ## Trap strategies
 
@@ -70,70 +78,74 @@ Bait furniture can be especially effective when used with artifact quality furni
 
 As the converse of building many traps everywhere, consider instead herding your enemies into a few traps. A cross-hair pattern of walls or impassable channels with an array of traps in the middle gap will increase the usage of each individual trap. This is particularly useful when capturing wildlife. You may also want a few traps near the edges, to catch the creatures that attempt to go around it.
 
-`+++++++[#F00]^^^[#FFF]+++++++      legend`\
-`++++++++▓++++++++   ▓  stone/wall`\
-`++++++++▓++++++++   [#F00]^  trap[#FFF]`\
-`++++++++▓++++++++   +  floor`\
-`++++++++▓++++++++`\
-`++++++[#F00]^^[#FFF]▓[#F00]^^[#FFF]++++++`\
-`[#F00]^[#FFF]+++++[#F00]^^[#FFF]▓[#F00]^^[#FFF]+++++[#F00]^`\
-`[#F00]^[#FFF]▓▓▓▓▓▓▓[#F00]^[#FFF]▓▓▓▓▓▓▓[#F00]^`\
-`[#F00]^[#FFF]+++++[#F00]^^[#FFF]▓[#F00]^^[#FFF]+++++[#F00]^[#FFF]`\
-`++++++[#F00]^^[#FFF]▓[#F00]^^[#FFF]++++++`\
-`++++++++▓++++++++`\
-`++++++++▓++++++++`\
-`++++++++▓++++++++`\
-`++++++++▓++++++++`\
-`+++++++[#F00]^[#F00]^[#F00]^[#FFF]+++++++`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | + | + | + | + | + | + | + | ^ | ^ | ^ | + | + | + | + | + | + | + |   |   |   |   |   |   | l | e | g | e | n | d |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   | ▓ |   |   | s | t | o | n | e | / | w | a | l | l |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   | ^ |   |   | t | r | a | p |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   | + |   |   | f | l | o | o | r |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | ^ | ^ | ▓ | ^ | ^ | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ^ | + | + | + | + | + | ^ | ^ | ▓ | ^ | ^ | + | + | + | + | + | ^ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ^ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ^ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ▓ | ^ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ^ | + | + | + | + | + | ^ | ^ | ▓ | ^ | ^ | + | + | + | + | + | ^ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | ^ | ^ | ▓ | ^ | ^ | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | + | ▓ | + | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | + | + | + | + | + | + | + | ^ | ^ | ^ | + | + | + | + | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 #### Inside corner trapping
 
-If the path where you will place your traps has bends, expect the enemy to take the most direct path – it's not guaranteed, but they will tend to hug the inside of a corner, and rarely detour to a dead-end. \
+If the path where you will place your traps has bends, expect the enemy to take the most direct path – it's not guaranteed, but they will tend to hug the inside of a corner, and rarely detour to a dead-end.
 
-`      ╔═════════ `\
-`  ║[@cc0]   [@]║[@c00]  [@]    [@cc0]  [@] `\
-`  ║[@cc0]   [@]║[@c00] [@]    [@cc0]   [@] `\
-`  ║[@cc0]   [@]║   [@090] [@cc0]    [@]    [@c00] [@] Unlikely path`\
-`  ║[@cc0]   [@]║  [@090] [@]╔═════   [@cc0] [@] Unpredictable path`\
-`  ║ [@cc0]  [@]║ [@090] [@] ║        [@090] [@] "Most likely" path`\
-`  ║  [@090] [@]║[#f0f][@090]g[#@]  ║        [#f0f]g[#] Invader`\
-`  ║[@c00] [@]  [@090] [@]  [@c00] [@]║`\
-`  ║[@c00]  [@]   [@c00]  [@]║  `\
-`  ╚═══════╝`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ║ |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ║ |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ║ |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   | U | n | l | i | k | e | l | y |   | p | a | t | h |   |   |   |   |   |
+|   |   |   | ║ |   |   |   | ║ |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ |   |   |   |   |   | U | n | p | r | e | d | i | c | t | a | b | l | e |   | p | a | t | h |
+|   |   |   | ║ |   |   |   | ║ |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   | " | M | o | s | t |   | l | i | k | e | l | y | " |   | p | a | t | h |
+|   |   |   | ║ |   |   |   | ║ | g |   |   | ║ |   |   |   |   |   |   |   |   | g |   | I | n | v | a | d | e | r |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ║ |   |   |   |   |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ║ |   |   |   |   |   |   |   | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
-\ Once in a straight hall, anything is possible, but placing your best (or first) traps on the inside path near "inside" corners (and de-emphasizing outside "dead-end" corners) is the best bet. If two invaders are side-by-side, they will wander, and random actions are always possible, but if you had to guess, this is the way to do it.
+Once in a straight hall, anything is possible, but placing your best (or first) traps on the inside path near "inside" corners (and de-emphasizing outside "dead-end" corners) is the best bet. If two invaders are side-by-side, they will wander, and random actions are always possible, but if you had to guess, this is the way to do it.
 
 #### Pass trapping
 
 If there are a lot of hills outside, remove most of the ramps, then trap those last few routes. The only way for creatures to get around will be to go through your traps.
 
-`░░░░░░░░░░░░░░░░░░`\
-`▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲   Before`\
-`++++++++++++++++++`\
+    ░░░░░░░░░░░░░░░░░░
+    ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲   Before
+    ++++++++++++++++++
 
-`░░░░░░░░░░░░░░░░░░`\
-`+++++++^▲^++++++++   After`\
-`+++++++^^^++++++++`
+    ░░░░░░░░░░░░░░░░░░
+    +++++++^▲^++++++++   After
+    +++++++^^^++++++++
 
 #### Ford trapping
 
 Have a river or any kind of chasm? Construct a floor over it (not a bridge), then build traps over it. Brooks won't work for this, because everything can already walk over the top of a brook. It also won't work as well in winter on a map that freezes.
 
-`           ^^^^`\
-`           ░^^░ `\
-`           ░^^░              Nobody ever said that it had `\
-`           ░^^░                to end at the river banks.`\
-`~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~   Building walls along the side `\
-`~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~     allows you to make it longer`\
-`~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~     and give you room for more traps.`\
-`           ░^^░              Extra traps cover all possible  `\
-`           ░^^░                entry/exit tiles.`\
-`           ░^^░ `\
-`           ^^^^`
+               ^^^^
+               ░^^░
+               ░^^░              Nobody ever said that it had
+               ░^^░                to end at the river banks.
+    ~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~   Building walls along the side
+    ~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~     allows you to make it longer
+    ~~ ~~ ~~ ~~░^^░~~ ~~ ~~ ~~     and give you room for more traps.
+               ░^^░              Extra traps cover all possible
+               ░^^░                entry/exit tiles.
+               ░^^░
+               ^^^^
 
 #### Maze/Labyrinth
 
-Mazes not only look cool, they are very effective traps. Essentially, you want 2 entrances to your fort. One for your dwarves and trade caravans, and another for invaders – the maze. Whenever you are under siege, close the entrance for your dwarves. This leaves a long maze that invaders must go through to path into your fort. This allows the entire invading force to be in the maze when you close off the entrance, sealing them in. With the clever use of bridges, you may divert invaders out of the maze and into your traps/military's arms at a rate you can deal with. If your map doesn't have iron, this will greatly decrease the amount of iron you'd normally lose when the invading force starts losing and flees. NOTE: Unlike real-life mazes, it's best to create yours with a single winding path from the entrance to the exit. Invaders have clairvoyance and will path directly into your fort. A roof is also necessary, as walls mean nothing if they can be climbed over. If you do put traps in the maze itself, put them near the end as invaders will flee if they start getting torn up by traps. ([Example(note: bridges are down for access), [MS Paint Illustration)
+Mazes not only look cool, they are very effective traps. Essentially, you want 2 entrances to your fort. One for your dwarves and trade caravans, and another for invaders – the maze. Whenever you are under siege, close the entrance for your dwarves. This leaves a long maze that invaders must go through to path into your fort. This allows the entire invading force to be in the maze when you close off the entrance, sealing them in. With the clever use of bridges, you may divert invaders out of the maze and into your traps/military's arms at a rate you can deal with. If your map doesn't have iron, this will greatly decrease the amount of iron you'd normally lose when the invading force starts losing and flees. NOTE: Unlike real-life mazes, it's best to create yours with a single winding path from the entrance to the exit. Invaders have clairvoyance and will path directly into your fort. A roof is also necessary, as walls mean nothing if they can be climbed over. If you do put traps in the maze itself, put them near the end as invaders will flee if they start getting torn up by traps. (Example(note: bridges are down for access), MS Paint Illustration)
 
 - I prefer putting my entrance to my maze right below the entrance to my trade depot, then put a bridge over the opening. If the bridge is down then the access to me depot, bridge raises and the entrance is now the maze. Simplifies the multistep process given in the picture. Be sure to have your maze either safe for your own dwarves to walk through or some other method to help out dwarves that are outside at the start of a siege.
 
@@ -174,22 +186,24 @@ More "traditional" landmines also exist, taking advantage of a bug. This involve
 
 The easiest chasm trap is just a platform connected only by a retractable bridge or grate, and supported by a support, very high up or over a very deep hole. The support is connected to a pressure plate on the platform, which is triggered by invaders.
 
-A uselessly complicated collapsing spiral trap can take out ten goblins at a time. When finished, it looks like this: \
+A uselessly complicated collapsing spiral trap can take out ten goblins at a time. When finished, it looks like this:
 
-`          +++`\
-`..........+++`\
-`.++++++++[#0ff]#[#]+++`\
-`.+╔══════.     [#0ff]#[#] = retractable bridge `\
-`.+║++++++.         (or grate)`\
-`.+║+╔══╗+.     + = floor`\
-`.+║+║[#0f0]A[#]+║+.`\
-`.+║+╚═[#f00]^[#]║+.     . = open space`\
-`.+║++++║+.`\
-`.+╚════╝+.     [#f00]^[#] = pressure plate`\
-`.++++++++.`\
-`..........     [#0f0]A[#] = bait animal `
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   |   |   |   |   |   | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | . | . | . | . | . | . | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | + | + | + | + | + | + | + | + | \# | + | + | + |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | + | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | . |   |   |   |   |   | \# |   | = |   | r | e | t | r | a | c | t | a | b | l | e |   | b | r | i | d | g | e |   |
+|   | . | + | ║ | + | + | + | + | + | + | . |   |   |   |   |   |   |   |   |   | ( | o | r |   | g | r | a | t | e | ) |   |   |   |   |   |   |   |   |   |
+|   | . | + | ║ | + | ╔ | ═ | ═ | ╗ | + | . |   |   |   |   |   | + |   | = |   | f | l | o | o | r |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | + | ║ | + | ║ | A | + | ║ | + | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | + | ║ | + | ╚ | ═ | ^ | ║ | + | . |   |   |   |   |   | . |   | = |   | o | p | e | n |   | s | p | a | c | e |   |   |   |   |   |   |   |   |   |
+|   | . | + | ║ | + | + | + | + | ║ | + | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | + | ╚ | ═ | ═ | ═ | ═ | ╝ | + | . |   |   |   |   |   | ^ |   | = |   | p | r | e | s | s | u | r | e |   | p | l | a | t | e |   |   |   |   |   |
+|   | . | + | + | + | + | + | + | + | + | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | . | . | . | . | . | . |   |   |   |   |   | A |   | = |   | b | a | i | t |   | a | n | i | m | a | l |   |   |   |   |   |   |   |   |
 
-\ The goblins are lured in by a restrained bait animal, and can't shoot it due to the surrounding walls. Just before they reach the bait, they trigger a pressure plate that retracts the bridge and collapses the support holding up the whole spiral. Goblins, bait animal, walls and all plummet into the chasm.
+The goblins are lured in by a restrained bait animal, and can't shoot it due to the surrounding walls. Just before they reach the bait, they trigger a pressure plate that retracts the bridge and collapses the support holding up the whole spiral. Goblins, bait animal, walls and all plummet into the chasm.
 
 Note that to prevent climbers from bypassing the pressure plate, the path between the pressure plate and the animal (at a minimum) should be covered by a floor on the z-level above. You should also avoid placing the pressure plate in a corner that can be bypassed by creatures moving diagonally.
 
@@ -199,7 +213,7 @@ When building, you will need to construct a span of floor underneath to place a 
 
 Falling objects tend to cause ridiculous injury to creatures below, and what better use for worn socks than mangling intruders. Mix in some loose stone, poor-quality furniture, and any goblinite lying around, then bury your enemies under a pile of junk.
 
-A retracting bridge makes a good trigger mechanism (connected to either a lever or pressure plate), while garbage dump zones above the bridge provide an easy means to load the trap. To reset the trap, use to reclaim the garbage and to have your dwarves haul the junk back to the garbage dumps above. The trap can also be fully automated via minecart.
+A retracting bridge makes a good trigger mechanism (connected to either a lever or pressure plate), while garbage dump zones above the bridge provide an easy means to load the trap. To reset the trap, use i F to reclaim the garbage and i p to have your dwarves haul the junk back to the garbage dumps above. The trap can also be fully automated via minecart.
 
 #### Canceled construction deadfall
 
@@ -211,7 +225,7 @@ This trap has the distinction of being the only overseer-triggered trap--it does
 
 ### Water traps
 
-These traps drown, freeze, boil, or wash targets away. Errors in execution can be quite harmful to your fortress fun, so use with caution.
+These traps drown, freeze, boil, or wash targets away. Errors in execution can be quite ~~harmful to your fortress~~ fun, so use with caution.
 
 #### Drown and burn
 
@@ -223,29 +237,27 @@ NOTE: Traps involving large quantities of water turning into steam are as effect
 
 **Level 0**
 
-` ░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ``░``  – Wall `\
-` ->++▼··················▼++->   ``->`` – Direction of traffic`\
-` ->++▼··················▼++->   ``▼``  – Down-Ramps (as visible from one level above = see ``ramp``)`\
-` ->++▼··················▼++->   ``+``  – Floor  `\
-` ░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ``·`` – Open space `\
-`           `
+     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ░  – Wall
+     ->++▼··················▼++->   -> – Direction of traffic
+     ->++▼··················▼++->   ▼  – Down-Ramps (as visible from one level above = see ramp)
+     ->++▼··················▼++->   +  – Floor
+     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░   · – Open space
 
 **Level -1**
 
-`   ░░░░░░XX░░░░░░░░XX░░░░░░   ``X`` – Inflow `\
-`   ░░▲++▼··▼++++++▼··▼++▲░░   `\
-`   ░░▲++▼··▼++++++▼··▼++▲░░   ``▲`` – Up-Ramps `\
-`   ░░▲++▼··▼++++++▼··▼++▲░░   `\
-`   ░░░░░░XX░░░░░░░░XX░░░░░░   ``▼`` – Down-Ramps`\
-`           `
+       ░░░░░░XX░░░░░░░░XX░░░░░░   X  – Inflow
+       ░░▲++▼··▼++++++▼··▼++▲░░
+       ░░▲++▼··▼++++++▼··▼++▲░░   ▲ – Up-Ramps
+       ░░▲++▼··▼++++++▼··▼++▲░░
+       ░░░░░░XX░░░░░░░░XX░░░░░░   ▼ – Down-Ramps
 
 **Level -2**
 
-`   ░░░░░░xx░░░░░░░░xx░░░░░░   ``x`` – Outflow`\
-`   ░░░░░▲++▲░░░░░░▲++▲░░░░░`\
-`   ░░░░░▲++▲░░░░░░▲++▲░░░░░`\
-`   ░░░░░▲++▲░░░░░░▲++▲░░░░░`\
-`   ░░░░░░xx░░░░░░░░xx░░░░░░`
+       ░░░░░░xx░░░░░░░░xx░░░░░░   x – Outflow
+       ░░░░░▲++▲░░░░░░▲++▲░░░░░
+       ░░░░░▲++▲░░░░░░▲++▲░░░░░
+       ░░░░░▲++▲░░░░░░▲++▲░░░░░
+       ░░░░░░xx░░░░░░░░xx░░░░░░
 
 If enemies are in the middle of Level -1, open the inflow, then the water will first trap, and then drown them. If the pit is full, close the inflow and open the outflow. You can automate this by using pressure plates, or if you want to have more fun, replace the water with magma (which would require pressure plates and floodgates to be magma-safe).
 
@@ -261,35 +273,35 @@ Schematics shown are for a stand-alone tower, though the upper level can be link
 
 **Level 0**
 
-` ░░X░░X░X░░X░░   ``░`` – Wall `\
-` ░+++++░+++++░   ``+`` – Floor`\
-` X+++++░+++++X   ``X`` – Floodgate`\
-` ░+++++░+++++░   ``H`` – Hatch`\
-` ░+++++░+++++░   ``-`` – Water reservoir`\
-` X+++++░+++++X`\
-` ░░░░░░+░░░░░░`\
-` X+++++░+++++X`\
-` ░+++++░+++++░`\
-` ░+++++░+++++░`\
-` X+++++░+++++X`\
-` ░+++++░+++++░`\
-` ░░X░░X░X░░X░░`
+     ░░X░░X░X░░X░░   ░ – Wall
+     ░+++++░+++++░   + – Floor
+     X+++++░+++++X   X – Floodgate
+     ░+++++░+++++░   H – Hatch
+     ░+++++░+++++░   - – Water reservoir
+     X+++++░+++++X
+     ░░░░░░+░░░░░░
+     X+++++░+++++X
+     ░+++++░+++++░
+     ░+++++░+++++░
+     X+++++░+++++X
+     ░+++++░+++++░
+     ░░X░░X░X░░X░░
 
 **Level 1**
 
-` ░░░░░░░░░░░░░`\
-` ░-----------░`\
-` ░-H--H-H--H-░`\
-` ░-----------░`\
-` ░-----------░`\
-` ░-H-------H-░`\
-` ░-----------░`\
-` ░-H-------H-░`\
-` ░-----------░`\
-` ░-----------░`\
-` ░-H--H-H--H-░`\
-` ░-----------░`\
-` ░░░░░░░░░░░░░`
+     ░░░░░░░░░░░░░
+     ░-----------░
+     ░-H--H-H--H-░
+     ░-----------░
+     ░-----------░
+     ░-H-------H-░
+     ░-----------░
+     ░-H-------H-░
+     ░-----------░
+     ░-----------░
+     ░-H--H-H--H-░
+     ░-----------░
+     ░░░░░░░░░░░░░
 
 #### Ice trap
 
@@ -301,7 +313,7 @@ Observe in action here, or a wider version here. For more information, see these
 
 The hallway is exposed to the elements, and water there freezes instantly. The rest of the trap is underground. When an enemy steps on the pressure plate, the hallway is flooded with water immediately. Some of the water that doesn't freeze also triggers a second pressure plate. The second pressure plate pumps magma into the room directly beneath the main hallway, which melts the ice. The water is pumped out and retracting bridges then return the water and magma to their original positions. This trap was also inspired by the Degrinchinator.
 
-Observe:
+Observe: http://mkv25.net/dfma/movie-2239-automaticresettingicetrap
 
 For more info, see this thread.
 
@@ -313,21 +325,20 @@ A compact version of this can be set up with a reservoir tower and a path circli
 
 **Level 0**
 
-` ·····························   ``░`` – Wall `\
-` ->++++++++++++++++++++++++++·   ``->`` – Direction of traffic`\
-` ->++++++++++++++++++++++++++·   ``▼`` – Down-Ramps (as visible from one level above = see ``ramp``)`\
-` ->++++++++++++++++++++++++++·   ``+`` – Floor  `\
-` ░XXXXXXXXXXXXXXXXXXXXXXX░+++·   ``·`` – Open space `\
-` ░~~~~~~~~~~~~~~~~~~~~~~~X+++·   ``X`` – Floodgate OR retracting bridge`\
-` ░~~~~~~~~~~~~~~~~~~~~~~~X+++·   ``~`` – Water`\
-` ░~~~~~~~~~~~~~~~~~~~~~~~X+++·`\
-` ░~~~~~~~~~~~~~~~~~~~~~~~X+++·`\
-` ░XXXXXXXXXXXXXXXXXXXXXXX░+++·`\
-` <-++++++++++++++++++++++++++·`\
-` <-++++++++++++++++++++++++++·`\
-` <-++++++++++++++++++++++++++·`\
-` ·····························`\
-`   `
+     ·····························   ░ – Wall
+     ->++++++++++++++++++++++++++·   -> – Direction of traffic
+     ->++++++++++++++++++++++++++·   ▼ – Down-Ramps (as visible from one level above = see ramp)
+     ->++++++++++++++++++++++++++·   + – Floor
+     ░XXXXXXXXXXXXXXXXXXXXXXX░+++·   · – Open space
+     ░~~~~~~~~~~~~~~~~~~~~~~~X+++·   X – Floodgate OR retracting bridge
+     ░~~~~~~~~~~~~~~~~~~~~~~~X+++·   ~ – Water
+     ░~~~~~~~~~~~~~~~~~~~~~~~X+++·
+     ░~~~~~~~~~~~~~~~~~~~~~~~X+++·
+     ░XXXXXXXXXXXXXXXXXXXXXXX░+++·
+     <-++++++++++++++++++++++++++·
+     <-++++++++++++++++++++++++++·
+     <-++++++++++++++++++++++++++·
+     ·····························
 
 Be sure that the reservoir can hold enough water to flush everything out (3 levels should be enough), that it can be automatically or easily refilled quickly, and be advised that flushing your own dwarves can be much fun. Adjust the height of the chasm depending on how much damage you want to cause to intruders or to innocent bystanders (7 levels start to do some serious damage).
 
@@ -369,23 +380,24 @@ Variation: Drop goblins into a holding pit with various spike traps linked to yo
 
 #### Caravan-Safe Traps
 
-Since traps block caravans, how can one have a depot but not have a trap-free entrance to the fortress? Simple! Caravans need 3-wide corridors, but that corridor does not need to be straight (as long as a 3x3 wagon will fit in any spot on the path). Invaders will path straight (or as straight as they can). By knowing this, you can make trap layouts that have 3-wide corridors that intersect straight paths.
+Since traps block caravans, how can one have a depot but not have a trap-free entrance to the fortress? Simple! Caravans need 3-wide corridors, but that corridor does not need to be straight. Invaders will path straight (or as straight as they can). By knowing this, you can make trap layouts that have 3-wide corridors that intersect straight paths.
 
-`  Like so:`\
+\
 
-`      Zig-Zag                               Alternating U`\
-`      T++P++T+++      T = Trap                +++++++++++++++++++++++`\
-`      +T++P++T++      + = Ground/floor        ++++P+++++++++++++P++++`\
-`      ++T++P++T+      E = Ramps going down    ++T+P+TTTTTTTTTTT+P+T++`\
-`      +++T++P++T        to tunnel to depot    ++T+P+T+++++++++T+P+T++`\
-`      ++++T++P+T      P  = Caravan path       ++T+P+T+++++++++T+P+T++`\
-`      +++++T+P+T                              ++T+P+T+++++++++T+P+T++`\
-`      ++++T++P+T                              ++T+P+T+++EEE+++T+P+T++`\
-`      +++T++P++T                              ++T+P+++++++++++++P+T++`\
-`      ++T++P++T+                              ++T+PPPPPPPPPPPPPPP+T++`\
-`      +T++P++T++                              ++T+++++++++++++++++T++`\
-`      T++P++T+++                              ++TTTTTTTTTTTTTTTTTTT++`\
-`      ++P++T++++                              +++++++++++++++++++++++`
+      Like so:
+
+          Zig-Zag                               Alternating U
+          T+P+T+++      T = Trap                ++++P+++++++++++++P++++
+          +T+P+T++      + = Ground/floor        ++T+P+TTTTTTTTTTT+P+T++
+          ++T+P+T+      E = Ramps going down    ++T+P+T+++++++++T+P+T++
+          +++T+P+T        to tunnel to depot    ++T+P+T+++++++++T+P+T++
+          ++++T+P+      P  = Caravan path       ++T+P+T+++++++++T+P+T++
+          ++++T+P+                              ++T+P+T+++EEE+++T+P+T++
+          +++T+P+T                              ++T+P+++++++++++++P+T++
+          ++T+P+T+                              ++T+PPPPPPPPPPPPPPP+T++
+          +T+P+T++                              ++T+++++++++++++++++T++
+          T+P+T+++                              ++TTTTTTTTTTTTTTTTTTT++
+          +P+T++++                              +++++++++++++++++++++++
 
 Both designs can be repeated for maximum effect or used together (make the entrance on the U wider and put Zig-Zag traps on the corridor to the depot).
 
@@ -397,30 +409,30 @@ Note: since version 0.42.05, zombies *no longer dodge*.
 
 Simple version:
 
-`+............+  ^ weapon trap  `\
-`+............+  + floor, your fort on one side; the savage wilds on the other`\
-`+^^^^^^^^^^^^+  . Pit`\
-`+............+`\
-`+............+`
+    +............+  ^ weapon trap
+    +............+  + floor, your fort on one side; the savage wilds on the other
+    +^^^^^^^^^^^^+  . Pit
+    +............+
+    +............+
 
 Compact version:
 
-`+#########+     # retractable bridge with pit underneath`\
-`+#^^^^^^^^+`\
-`+#^#######+     + floor`\
-`+#^^^^^^^#+`\
-`+#######^#+     ^ traps`\
-`+#^^^^^^^#+`\
-`══+++═══════`
+    +#########+     # retractable bridge with pit underneath
+    +#^^^^^^^^+
+    +#^#######+     + floor
+    +#^^^^^^^#+
+    +#######^#+     ^ traps
+    +#^^^^^^^#+
+    ══+++═══════
 
 Here's an example/demo Dodge Me Trap save (ver 0.42.03) built atop Magma that demonstrates how effective they can be. The save shows a 280 enemy siege reduced by 140 Trolls, Goblins, and Beak Dogs, via the following design:
 
-`╔═════════╗`\
-`╝·········╚`\
-`+^·^·^·^·^+`\
-`╗·^·^·^·^·╔`\
-`║·········║`\
-`╚═════════╝`
+    ╔═════════╗
+    ╝·········╚
+    +^·^·^·^·^+
+    ╗·^·^·^·^·╔
+    ║·········║
+    ╚═════════╝
 
 This design places 3 wooden training spears into each weapon trap, along with a no-quality mechanism. The traps rarely, if ever, jam or require cleaning. Even after causing 140 enemies to dodge, in the demo for example, the traps never jam nor do any dwarves attempt to clean them.
 
@@ -432,13 +444,25 @@ Note: as of version 0.43.04, weapons wear as a result of combat – wooden train
 
 If you're having trouble dealing with building destroyers that don't set off traps, consider the following design, as seen from the side:
 
-Put the magma behind a floodgate . In front of the floodgate, place a pressure plate set to go off on magma of 0 to 0. Link the pressure plate to a retracting bridge that covers the exit ramp to the area. Although you can't get the creature to set off traps, when it breaks the door, magma will spill over the pressure plate, locking the creature in the hallway that is rapidly filling with magma. You could combine this with a simple levered hatch for drainage, but there's only one way to be certain: obsidianify it from orbit.
+|     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| ═   | ═   | ═   | ═   | ╝   | ╬   | ╬   |     |
+| ~   | X   | ^   |     |     | ▲   | ╔   | ═   |
+| ═   | ═   | ═   | ═   | ═   | ═   | ╝   |     |
+
+Put the magma ~ behind a floodgate X. In front of the floodgate, place a pressure plate ^ set to go off on magma of 0 to 0. Link the pressure plate to a retracting bridge ╬╬ that covers the exit ramp ▲ to the area. Although you can't get the creature to set off traps, when it breaks the door, magma will spill over the pressure plate, locking the creature in the hallway that is rapidly filling with magma. You could combine this with a simple levered hatch for drainage, but there's only one way to be certain: obsidianify it from orbit.
 
 Note that the trap as pictured is too short-- in order to catch a creature, your bridge has to close before the creature can escape from the tunnel.
 
 #### Artifact awe trap
 
-This simple containment trap is designed to trap any number of building destroyers, even trapavoid building destroyers, on a single tile, after which you can do whatever you'd like with them-- bolt 'em, ice 'em, drop 'em, spike 'em, it's all good. Building destroyers are drawn by a piece of artifact-quality furniture, in this case, a hatch cover . A door prevents them from seeing further into your fort and being distracted from the enchanting beauty of your furniture. When you've captured as many creatures as you'd like on that tile, simple raise both bridges -- first, the far one, then, the one near the artifact-- and you may even remove the artifact, to create a new trap elsewhere.
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| ═   | ═   | ═   | ═   | ═   |
+| \+  | ¢   | ╬   |     | ╬   |
+| ═   | ═   | ═   | ═   | ═   |
+
+This simple containment trap is designed to trap any number of building destroyers, even trapavoid building destroyers, on a single tile, after which you can do whatever you'd like with them-- bolt 'em, ice 'em, drop 'em, spike 'em, it's all good. Building destroyers are drawn by a piece of artifact-quality furniture, in this case, a hatch cover ¢. A door + prevents them from seeing further into your fort and being distracted from the enchanting beauty of your furniture. When you've captured as many creatures as you'd like on that tile, simple raise both bridges ╬-- first, the far one, then, the one near the artifact-- and you may even remove the artifact, to create a new trap elsewhere.
 
 ### Other traps
 
@@ -460,7 +484,7 @@ Alternative biotraps are possible. Using a 'deadly dust' creature rather than it
 
 ### Animal/Gladiator Traps
 
-War animals can be a messy way of dispatching your invaders. Since most war animals aren't grazers, you can put a pasture in a room and assign a bunch of war animals without any need for maintenance. Keep in mind size, a war dog is not going to do nearly as well against a troll as a lion would. However, 5 dogs should be able to overcome it. If you don't want your animals to die, simply use cage traps to catch invaders, disarm them, then drop them into the animal arena unarmed with a pit above the room. Although this isn't a guarantee; unarmed goblins are incredibly weak. This trap has a lot more randomness involved than others, so it's more of a novelty than an effective and practical trap. Exotic animals can be much more brutal, so bonus points for catching tigers, bears,(or buying them from elves) or dragons. If you do manage to catch a dragon and tame it, you'll probably want to clear out any other animals, unless they don't mind dragon fire.
+War animals can be a messy way of dispatching your invaders. Since most war animals aren't grazers, you can put a pasture in a room and assign a bunch of war animals without any need for maintenance. Keep in mind size, a war dog is not going to do nearly as well against a troll as a lion would. However, 5 dogs should be able to overcome it. If you don't want your animals to die, simply use cage traps to catch invaders, disarm them, then drop them into the animal arena unarmed with a pit above the room. Although this isn't a guarantee; unarmed goblins are incredibly weak. This trap has a lot more randomness involved than others, so it's more of a novelty than an effective and practical trap. Exotic animals can be much more brutal, so bonus points for catching tigers, bears, (or buying them from elves) or dragons. If you do manage to catch a dragon and tame it, you'll probably want to clear out any other animals, unless they don't mind dragon fire.
 
 If one of your dwarves has been plagued by Vampirism, all the better. Build him/her a nice pit outfitted as barracks, throw in good weapons and armor, and watch as they train themselves nonstop up to Legendary skill in most combat abilities.
 
@@ -474,20 +498,6 @@ A minecart, while you think about it, is just a large hunk of metal traveling at
 
 All you need is a straight, narrow corridor, some tracks, and a way to make a minecart gain momentum (rolling down 3 z-levels worth of ramps should be more than enough).
 
-Using the hauling designation, assign a minecart to the top of the ramp, without giving it any departure conditions. As soon as the enemies are approaching the other side of the corridor, change the departure condition to "push" and "always". Once a dwarf comes by and pushes it, the minecart will jolt down the hallway flattening everything on its path, and may even put a dent in an attacking Megabeast. Alternatively, you may instead invest a little more time and create an automated trigger; by placing a minecart on a hatch linked to a pressure plate or lever, you can avoid the tedium and drop your minecart above your track. By dumping minecarts on either rollers or downward ramps, multiple carts can be used on the same track without any hauling routes, allowing for multishot weapons, increasing the efficiency of the trap. Rollers or impulse ramps can be used to make a cart return system, allowing for fully automatic systems.
 
-#### Shotgun
-
-Minecarts have the interesting properties of spilling their contents when they hit a solid object like another minecart at high speed. This can be used by filling minecarts with either heavy objects like stones, sharp objects like surplus weapons or simply a lot of them, then sending them down some ramps onto a target. On impact, the contents will continue their way at high speed, dealing damage to anything in the way. You know you want to fill a minecart with !!lignite blocks!! now. Here is an example.
-
-#### Water/Magma gun
-
-Minecarts submerged in Water fill themselves with liquid, which then counts as a quite heavy object. Using the shotgun effect, this allows for a weapon without need to manually load minecarts, resulting in higher rate of fire and fewer dwarves running on potentially lethal tracks. First proposed here, with an updated version here.
-
-Numerous refinements have been proposed for loading and accelerating the minecarts. One sophisticated example that is both compact and demonstrates speedups is here.
-
-Using Magma makes the design potentially more fun and certainly more dwarven.
-
-#### Minecart thumper
-
-When falling minecarts land on a floor, they injure creatures in the tile below. Add some rollers and a very short track loop to maximize the damage potential. Since the minecart remains physically separated from its targets, it shouldn't jam or jump off track.
+---
+*Parte 1 de 2 de «Trap design». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Trap_design*

@@ -1,6 +1,8 @@
 # Mouse control
 
-> Fonte: [Mouse control](https://dwarffortresswiki.org/index.php/Mouse_control) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Mouse control](https://dwarffortresswiki.org/index.php/Mouse_control) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 While *Dwarf Fortress* is primarily keyboard-controlled, there are certain areas in the game that have **mouse control**. These are, however, rather rare, and therefore easy to document.
 
@@ -23,9 +25,7 @@ Menus that support mouse control are:
 - Sound menu
 - Local image export menu
 - Designations menu (but not sub-menus)
-
-`       * You can also use the mouse to do designations, for example, clicking a tile to have it mined.`
-
+  - You can also use the mouse to do designations, for example, clicking a tile to have it mined.
 - Burrows
 - Nobles screen
 - Military screen
@@ -38,8 +38,8 @@ Menus that support mouse control are:
 
 The only area which currently requires mouse control is the world painter screen.
 
-Note: All information on this page is true as of vanilla 0.40.19 - all earlier versions may have to be verified independently. Mods such as DFHack may provide you with full mouse-clicky goodness. \]\]
+Note: All information on this page is true as of vanilla 0.40.19 - all earlier versions may have to be verified independently. Mods such as DFHack may provide you with full mouse-clicky goodness.
 
 ## Bugs
 
-- Resizing the window during the intro video can cause mouse control to only work in one corner of the screen.
+- Resizing the window during the intro video can cause mouse control to only work in one corner of the screen.Bug:3861

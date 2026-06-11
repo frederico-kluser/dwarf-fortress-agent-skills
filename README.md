@@ -1,109 +1,143 @@
 # Dwarf Fortress Agent Skills
 
-> A **flat, YAML-safe** Agent Skills knowledge base for [Dwarf Fortress](https://www.bay12games.com/dwarves/) v50/v0.47, extracted from the official [wiki](https://dwarffortresswiki.org) — **no RAG, no embeddings, no vector database**. Just clean Markdown + progressive disclosure + `ripgrep`.
+> A **flat** Agent Skills knowledge base for [Dwarf Fortress](https://www.bay12games.com/dwarves/) **v50 / Premium**, built from the official [wiki](https://dwarffortresswiki.org) via its MediaWiki API — **no RAG, no embeddings, no vector database**. Clean Markdown + progressive disclosure + a tiny SQLite FTS5 search.
 
 [![License: GFDL & MIT](https://img.shields.io/badge/wiki_license-GFDL%20%26%20MIT-blue)](#license)
-[![Articles](https://img.shields.io/badge/articles-2852-green)](https://github.com/frederico-kluser/dwarf-fortress-agent-skills)
 [![Skills](https://img.shields.io/badge/skills-13-orange)](#skill-categories)
+[![Source](https://img.shields.io/badge/source-v50%20wiki%20(2026--06)-green)](https://dwarffortresswiki.org)
 
 ## What is this?
 
-13 flat Agent Skills (progressive disclosure pattern) that any LLM coding agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki-ground-truth accuracy**, instead of inventing mechanics from memory.
+13 flat Agent Skills (progressive-disclosure pattern) that any LLM agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki ground-truth accuracy** instead of inventing mechanics from memory.
 
-The agent discovers skills by their `description` field in the system prompt. When a task matches, it loads the skill's `SKILL.md` (a short index), then reads the specific Markdown article from `references/`. Lexical search via `ripgrep` replaces embeddings — instant, deterministic, zero infrastructure.
+The agent discovers skills by their `description` in the system prompt. When a task matches, it loads the skill's `SKILL.md` (a short index), then either reads the specific article from `references/` or runs the bundled full-text search. The descriptions are **bilingual** (Portuguese framing + English game keywords) so the skills trigger whether the user writes in Portuguese or English.
 
-### Why flat? (The pi revelation)
+### Why flat?
 
-Early designs had a 3-level hierarchy (master → mode → category). **Pi's discovery model is flat** — every directory with a `SKILL.md` becomes a **peer** in the system prompt, discovered only by its `description`. Key lessons from the [pi skills documentation](https://agentskills.io/specification):
+pi/Claude Code skill discovery is **flat and recursive** — every directory with a `SKILL.md` becomes a **peer** in the system prompt, discovered only by its `description`. There is no built-in routing; the `description` *is* the router. Consequences this repo respects:
 
-- **Strict YAML.** `description` can NOT contain unquoted `:` — or the skill silently fails to load (`return { skill: null }`).
-- **Unique names.** Collisions keep the first discovery; duplicates silently vanish.
-- **Flat peers.** There's no built-in routing. The `description` IS the router.
+- **Strict YAML.** Descriptions are emitted as YAML folded scalars (`>-`), so colons/quotes never break the parser (a `description:` with an unquoted `:` silently fails to load).
+- **Unique names.** Name collisions keep only the first discovery, so all 13 names are unique.
+- **No dispatcher.** A greedy catch-all skill would just compete with the 13 specific ones in flat discovery, so there is none.
 
-This V2 addresses all of those. Every SKILL.md passes pi's YAML parser; all 13 names are unique; each description is a self-contained signal.
+## How the content is built (and why it's trustworthy)
+
+Earlier versions parsed a **2023 raw-wikitext XML dump** with `mwparserfromhell` + `pandoc`. That route is fundamentally lossy: offline parsers **cannot expand MediaWiki templates**, so infoboxes, token tables and `/raw` subpages came out empty or as `[TABLE]` placeholders. See [`AUDIT_REPORT.md`](AUDIT_REPORT.md) for the full findings.
+
+This version fetches **server-rendered HTML from the live wiki's MediaWiki API** (`action=parse`), where templates are already expanded. As a result:
+
+- **Creature infoboxes are preserved** as `**Key:** value` blocks (pet value, body size, butchering returns, etc.).
+- **Token reference tables** (creature/weapon/material tokens) survive as proper GFM pipe tables — no `[TABLE]`.
+- **`/raw` pages** contain the full `[CREATURE:DOG]…` token definitions as fenced code blocks.
+- Content is **current v50** (namespace 0), snapshot dated `2026-06`, not a stale 2023 merge.
 
 ## Skill categories
 
 | Skill | Mode | Covers |
 |---|---|---|
-| `df-combate` | both | weapons, armor, wounds, bleeding, syndromes, military |
-| `df-criaturas` | both | animals, megabeasts, races, bestiary, NPCs |
-| `df-materiais` | both | metals, stone, gems, material properties, magma-safe |
-| `df-geologia` | both | biomes, stone layers, worldgen, locations, lore |
-| `df-saude` | both | food, drink, hospital, diseases, hunger, thirst |
-| `df-modding` | both | tokens, raws, tilesets, creature definitions |
-| `df-interface` | both | keys, menus, designations (v50) |
+| `df-criaturas` | both | creatures, animals, megabeasts, races, bestiary, creature raws |
+| `df-combate` | both | weapons, armor, wounds, syndromes, military, squads, defense |
+| `df-materiais` | both | metals, stone, ores, gems, alloys, steel, adamantine, properties |
+| `df-saude` | both | food, drink, hospital, disease, farming, crops, brewing |
+| `df-geologia` | both | biomes, layers, worldgen, plants, trees, locations, lore |
+| `df-modding` | both | tokens, raws, tilesets, graphics, creature definitions |
+| `df-interface` | both | keys, menus, designations, UI shortcuts (v50) |
 | `df-adventure` | adventure | character creation, travel, conversation, sites, quests |
-| `df-fortress-industria` | fortress | smelting, forging, farming, brewing, crafting |
-| `df-fortress-construcao` | fortress | workshops, furniture, traps, bridges, stockpiles |
-| `df-dwarves` | fortress | labors, skills, moods, nobles, justice, psychology |
+| `df-fortress-industria` | fortress | smelting, forging, workshops, production chains |
+| `df-fortress-construcao` | fortress | workshops, furniture, mechanisms, stockpiles, bridges |
+| `df-dwarves` | fortress | labors, skills, strange moods, nobles, justice, psychology |
 | `df-comercio` | fortress | trade, caravans, depot, wealth, economy |
-| `df-fortress-geral` | fortress | defense, quickstart, embarks, megaprojects |
+| `df-fortress-geral` | fortress | defense, embarks, physics (water/magma/pressure), guides, FAQs |
 
-All SKILL.md descriptions are in Portuguese (the project's working language); article content is the original English wiki text.
+Descriptions are bilingual; article content is the original English wiki text.
 
 ## How an agent uses it
 
 ```
-1. System prompt includes 13 descriptions. Agent sees the user's question.
-2. Agent picks the relevant skill by description match.
-3. Agent loads the skill's SKILL.md (short index, < 700 tokens each).
-4. Agent reads the specific references/*.md article — or searches first:
-     bash scripts/search.sh df-combate "steel armor"
-     bash scripts/search.sh all "bleeding"
-5. Agent answers, citing the source wiki page.
+1. System prompt includes the 13 descriptions. Agent sees the user's question.
+2. Agent picks the relevant skill by description match (PT or EN triggers).
+3. Agent loads that skill's SKILL.md (short index + search instructions).
+4. Agent searches, then reads the specific references/*.md article:
+     python3 ../scripts/search.py --skill df-materiais "steel smelting"
+     python3 ../scripts/search.py --json "magma forge"
+5. Agent answers in the user's language, citing the source wiki page.
 ```
+
+Articles are English. When the user asks in Portuguese, the agent translates the
+query to English game terms (helped by `scripts/glossary-pt-en.tsv`), searches in
+English, and answers in Portuguese.
+
+## Search (SQLite FTS5, stdlib-only)
+
+```bash
+python3 .agents/skills/scripts/search.py "how to make steel"        # all skills
+python3 .agents/skills/scripts/search.py --skill df-criaturas "dragon"
+python3 .agents/skills/scripts/search.py --json --limit 8 "como fazer aço"
+```
+
+- **BM25 ranking** with title boosting and context snippets.
+- **Porter stemming** (`smelt`/`smelting`, `miner`/`mining`).
+- **Multi-term AND** (multi-word queries work — unlike the old whole-phrase grep).
+- **PT→EN expansion** via `scripts/glossary-pt-en.tsv` (~200 jargon pairs) so
+  Portuguese queries match English content.
+- **Graceful fallback**: AND → OR → prefix when a query returns nothing.
+
+The index (`scripts/index.db`) is a derived artifact built from the markdown by
+`scripts/build_index.py`. Search uses only the Python standard library (`sqlite3`
+with FTS5) — no network, no external packages — so it is portable to any agent
+runtime. A `grep -ril` fallback is documented in each SKILL.md for index-less use.
 
 ## Installation
 
-**pi / .agents/skills (automatic discovery):** Just clone — no config needed.
+**pi / `.agents/skills` (automatic discovery):** just clone — no config needed.
 
 **Claude Code / Cursor / Codex:**
 ```bash
-cp -r .agents/skills/* ~/.claude/skills/
-# or per-project: mkdir -p .claude/skills && cp -r ...
+cp -r .agents/skills/* ~/.claude/skills/        # or per-project: .claude/skills/
 ```
-
-## Search script
-
-```bash
-bash scripts/search.sh df-criaturas "goblin"   # one skill
-bash scripts/search.sh all "magma forge"        # all skills
-```
-
-Returns the top-20 most relevant reference files by `ripgrep` occurrence count.
 
 ## Build pipeline (reproducible)
 
-See [`.work/`](.work) for scripts:
-
 ```bash
-# 1. Download (31 MB compressed, WikiTeam 2023-11-07)
-curl -L -o .work/df-history.xml.zst \
-  "https://archive.org/download/wiki-dwarffortresswiki.org-20231107/dwarffortresswiki.org-20231107-history.xml.zst"
-zstd -d --long=31 .work/df-history.xml.zst -o .work/df-history.xml
+python -m venv .venv && . .venv/bin/activate
+pip install -r requirements.txt                 # requests, beautifulsoup4, lxml
+# system deps: pandoc, sqlite3 (FTS5), ripgrep
 
-# 2. Pipeline
-.venv/bin/python .work/parse_dump.py          # XML → pages.jsonl
-.venv/bin/python .work/extract_taxonomy.py     # 157 {{category}} tags
-.venv/bin/python .work/build_skills.py         # wikitext → clean gfm → references/*.md
-.venv/bin/python .work/build_dispatchers.py   # search.sh + dispatcher
+python .work/crawl_api.py                        # live wiki API → .work/pages.jsonl (rendered HTML)
+python .work/build_skills.py                     # HTML → clean Markdown → .agents/skills/*/references/
+python .agents/skills/scripts/build_index.py     # build the FTS5 search index
 ```
 
-Dependencies: `pandoc`, `zstd`, `ripgrep`, Python venv with `mwparserfromhell mwxml pyyaml`.
+`.work/pages.jsonl` (the rendered-HTML cache) is large and git-ignored; the crawl
+regenerates it from the live wiki, so a clean clone rebuilds end-to-end.
+
+Pipeline modules in [`.work/`](.work):
+`crawl_api.py` (API crawler) · `htmlmd.py` (HTML→Markdown) · `taxonomy.py`
+(skill taxonomy + bilingual descriptions) · `build_skills.py` (assembler).
 
 ## Design decisions
 
-- **No RAG.** `ripgrep` over ~2.8k Markdown files is sub-second and deterministic. A `vector_store` + embeddings pipeline would add infrastructure and opacity for zero benefit at this scale.
-- **50 KB cap per article.** Files that exceed 48 KB are truncated with a source link — no `read` can overflow a context window.
-- **Giant dumps split.** `string-dump-raw.md` (raw token reference) was 923 KB → split into alphabetical chunks + truncated.
-- **Indexes capped at 30 entries.** SKILL.md indexes list the most substantial articles; the rest are found via `search.sh`.
-- **Wiki cleanup.** `mwparserfromhell` strips navigation templates; `pandoc -f mediawiki -t gfm-raw_html` produces clean Markdown; HTML entities, `{{}}` residue, broken images and interwiki links are all removed.
+- **API-rendered HTML, not a wikitext dump.** The only way to preserve infoboxes,
+  token tables and `/raw` content; also keeps the content current (v50) instead of
+  a 2023 snapshot. Templates are expanded server-side; offline parsers cannot do this.
+- **SQLite FTS5, not RAG.** At a few thousand Markdown files, BM25 + stemming is
+  sub-millisecond, deterministic, zero-infrastructure, and portable (stdlib only).
+  Embeddings would add a model dependency and break portability for no benefit here.
+- **Bilingual descriptions + query glossary.** Triggering and retrieval both work
+  for Portuguese users over English content, without multilingual embeddings.
+- **Split, don't truncate.** Articles over 48 KB are split into navigable
+  `…-part-N.md` files with continuation notes — no content is silently dropped.
+- **Subject-based routing.** Each page is assigned to one skill by its wiki
+  categories (deterministic priority), with `/raw` pages routed to their topic
+  skill (e.g. `Dog/raw` → `df-criaturas`), not dumped into modding.
+- **Relevance-ranked indexes.** SKILL.md lists the top articles by inbound-link
+  count (a popularity proxy); the rest are found via `search.py`.
 
 ## License
 
-- **Wiki text** (under `.agents/skills/*/references/`) — GFDL & MIT by Dwarf Fortress Wiki contributors. Every article links to its source page.
-- **Build scripts** (under `.work/`) — MIT License (see `LICENSE`).
+- **Wiki text** (under `.agents/skills/*/references/`) — GFDL & MIT by Dwarf
+  Fortress Wiki contributors. Every article links to its source page.
+- **Build scripts & search tooling** — MIT License (see `LICENSE`).
 - **Game-derived data** — © 2002–2026 Tarn Adams / Bay 12 Games.
 
-This is an unofficial, community resource and is not affiliated with Bay 12 Games.
+This is an unofficial community resource, not affiliated with Bay 12 Games.

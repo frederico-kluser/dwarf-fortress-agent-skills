@@ -1,14 +1,16 @@
 # Steals items
 
-> Fonte: [Steals items](https://dwarffortresswiki.org/index.php/Steals_items) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Steals items](https://dwarffortresswiki.org/index.php/Steals_items) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-\ Creatures with the token will grab any easily available items and carry them off the map. While each creature will only pilfer one item, a swarm of kea can manage quite a haul, particularly if you have valuable merchandise sitting in a trade depot aboveground. Item stealers seem to be attracted to higher-valued goods, but will still happily steal your spare crossbow bolts if nothing else is available. Stolen masterpieces produce an unhappy thought in their creator, so it's best not to leave any masterworks lying around on the surface when there are thieves afoot.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-You may be able to use this behavior to capture the thieves by surrounding a small junk item stockpile with cage traps. \
+Creatures with the [`[CURIOUSBEAST_ITEM]`](/index.php/Creature_token#CURIOUSBEAST_ITEM "Creature token") token will grab any easily available items and carry them off the map. While each creature will only pilfer one item, a swarm of kea can manage quite a haul, particularly if you have valuable merchandise sitting in a trade depot aboveground. Item stealers seem to be attracted to higher-valued goods, but will still happily steal your spare crossbow bolts if nothing else is available. Stolen masterpieces produce an unhappy thought in their creator, so it's best not to leave any masterworks lying around on the surface when there are thieves afoot.
+
+You may be able to use this behavior to capture the thieves by surrounding a small junk item stockpile with cage traps.
 
 ## Creatures who can steal items
 
-The following creatures possess the token.
+The following creatures possess the [`[CURIOUSBEAST_ITEM]`](/index.php/Creature_token#CURIOUSBEAST_ITEM "Creature token") token.
 
 - Capuchins
   - Capuchin men

@@ -1,49 +1,60 @@
 ---
 name: df-modding
-description: Tokens, arquivos raw, init, tilesets, gráficos e edição de definições do jogo. Use quando o jogador quiser modificar o Dwarf Fortress, entender tokens de criatura, criar raças custom ou editar raws. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Modding do Dwarf Fortress: tokens, arquivos raw, init, tilesets, gráficos e edição de definições do jogo. Use quando o usuário quiser modificar o jogo, entender referência de tokens (creature token, weapon token), criar raças custom ou editar raws. Termos EN: token, raw, modding, tileset, init, graphics, reaction, mod. Funciona para Adventure Mode e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Modding (Dwarf Fortress)
+# DF Modding (Dwarf Fortress)
 
-Tokens, arquivos raw, init, tilesets, gráficos e edição de definições do jogo. Use quando o jogador quiser modificar o Dwarf Fortress, entender tokens de criatura, criar raças custom ou editar raws. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-modding" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-modding "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 1452)
-- Interface.txt/raw → `references/interface-txt-raw.md`
-- Tilesets → `references/tilesets.md`
-- Modding → `references/modding.md`
-- World gen.txt/raw → `references/world-gen-txt-raw.md`
-- String dump/raw → `references/string-dump-raw.md`
-- Reaction → `references/reaction.md`
-- Syndrome → `references/syndrome.md`
-- Utilities → `references/utilities.md`
-- Graphics → `references/graphics.md`
-- D init.txt/raw → `references/d-init-txt-raw.md`
-- Raw file → `references/raw-file.md`
-- Announcements.txt/raw → `references/announcements-txt-raw.md`
-- Saved game folder → `references/saved-game-folder.md`
-- Creature variation token → `references/creature-variation-token.md`
-- Dipscript → `references/dipscript.md`
-- Mod → `references/mod.md`
-- Scamps/raw → `references/scamps-raw.md`
-- Reaction examples → `references/reaction-examples.md`
-- Init.txt/raw → `references/init-txt-raw.md`
-- Color → `references/color.md`
-- Genetics → `references/genetics.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 108 artigos — use o search.py para o resto)
+- Creature token → `references/creature-token.md`
 - Size → `references/size.md`
-- Personality trait → `references/personality-trait.md`
-- Interface.txt → `references/interface-txt.md`
-- Duplicated raws → `references/duplicated-raws.md`
-- Syndrome examples → `references/syndrome-examples.md`
-- Gait → `references/gait.md`
-- Interaction examples → `references/interaction-examples.md`
-- Init.txt/raw/premium → `references/init-txt-raw-premium.md`
+- Butcher → `references/butcher.md`
+- Entity token → `references/entity-token.md`
 - Interaction token → `references/interaction-token.md`
+- Material definition token → `references/material-definition-token.md`
+- Body token → `references/body-token.md`
+- Modding → `references/modding.md`
+- Language token → `references/language-token.md`
+- Personality facet → `references/personality-facet.md`
+- Material token → `references/material-token.md`
+- Building token → `references/building-token.md`
+- Plant token → `references/plant-token.md`
+- Position token → `references/position-token.md`
+- Reaction → `references/reaction.md`
+- Graphics token → `references/graphics-token.md`
+- Trading → `references/trading.md`
+- Personality value → `references/personality-value.md`
+- Unit type token → `references/unit-type-token.md`
+- Graphics → `references/graphics.md`
+- Item token → `references/item-token.md`
+- Tilesets → `references/tilesets.md`
+- Creature variation token → `references/creature-variation-token.md`
+- Ethic → `references/ethic.md`
+- Tissue definition token → `references/tissue-definition-token.md`
+- Armor token → `references/armor-token.md`
+- Inorganic material definition token → `references/inorganic-material-definition-token.md`
+- Speech file → `references/speech-file.md`
+- Token → `references/token.md`
+- Biome token → `references/biome-token.md`
 
-*...e mais 1422 artigos (use o search.sh para encontrá-los)*
+*…e mais 78 artigos (use o search.py).*

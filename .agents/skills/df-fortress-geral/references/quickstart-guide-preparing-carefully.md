@@ -1,8 +1,13 @@
 # Quickstart guide/Preparing carefully
 
-> Fonte: [Quickstart guide/Preparing carefully](https://dwarffortresswiki.org/index.php/Quickstart_guide/Preparing_carefully) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Quickstart guide/Preparing carefully](https://dwarffortresswiki.org/index.php/Quickstart_guide/Preparing_carefully) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**This part is completely optional** and only applies if you selected . More in-depth discussion is available on the Embark and Starting build wiki pages.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+{ "watch": true, "triggers": \[\["tab"\],\["sectionlink"\]\] }
+
+\
+**This part is completely optional** and only applies if you selected Prepare for the journey carefully. More in-depth discussion is available on the Embark and Starting build wiki pages.
 
 ## Preparing Carefully
 

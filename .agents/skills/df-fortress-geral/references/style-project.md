@@ -1,6 +1,8 @@
 # Style project
 
-> Fonte: [Style project](https://dwarffortresswiki.org/index.php/Style_project) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Style project](https://dwarffortresswiki.org/index.php/Style_project) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Style projects** add style, realism, or interest to a fort. They can be any size or complexity, from small and simple to huge and involved. While many megaprojects incorporate elements of style and there is definitely some overlap in the categories, megaprojects are defined primarily by their size while style projects are defined by their content. If you do something solely because "my dwarves would like it like that," chances are it is a style project.
 

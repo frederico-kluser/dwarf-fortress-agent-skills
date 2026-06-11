@@ -1,6 +1,8 @@
 # Building material
 
-> Fonte: [Building material](https://dwarffortresswiki.org/index.php/Building_material) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Building material](https://dwarffortresswiki.org/index.php/Building_material) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Building materials** are objects which can be used to build workshops, constructions, and other types of buildings. Most jobs which expect building materials also expect them to be non-economic.
 

@@ -1,6 +1,6 @@
 # Armok
 
-> Fonte: [Armok](https://dwarffortresswiki.org/index.php/Armok) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Armok](https://dwarffortresswiki.org/index.php/Armok) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 **Armok**, God of Blood, is the name of the creator deity in the lore of the original *Slaves to Armok: God of Blood*, and the in-game explanation for that game's random world generation:
 
@@ -8,7 +8,7 @@
 
 *"The destruction of the world by Armok will arise inevitably in most game worlds. As civilizations spread and the frontier closes, the world will start to look homogeneous. Armok, looking upon this decadence in disgust, will reform the world. Basically, when the universe has become too boring, it will be changed."*
 
-''"But who or what is Armok? ARMOK is the God of Blood…The Supreme God, he gives name to the game, his powers are literally endless…He creates and destroys whole Universes just for pleasure and fun. He enjoys watching death, destruction and, of course, blood run on his Universe…In a Universe, he can have billions of worshippers, while in another his existence might be unknown...but HE EXISTS. This cannot be denied, and allows to play almost any type universe…from a standard fantasy-type world to a “primitive”, stone age world…and, why not a “future world” with star travel? In fact, when Armok creates a Universe, he likes putting more than one planet in it!
+*"But who or what is Armok? ARMOK is the God of Blood…The Supreme God, he gives name to the game, his powers are literally endless…He creates and destroys whole Universes just for pleasure and fun. He enjoys watching death, destruction and, of course, blood run on his Universe…In a Universe, he can have billions of worshippers, while in another his existence might be unknown...but HE EXISTS. This cannot be denied, and allows to play almost any type universe…from a standard fantasy-type world to a “primitive”, stone age world…and, why not a “future world” with star travel? In fact, when Armok creates a Universe, he likes putting more than one planet in it!*
 
 *Remember…Armok can control and destroy all other creatures, including the other, ”lesser” gods, but he usually enjoys watching civilizations grow, because he hopes that one day these civilizations will fight each other, and thus generate conflict and slaughter!"*
 
@@ -134,6 +134,4 @@ then copy this into entity_default.txt to play as the Blood God Incarnate in adv
         [CREATURE:ARMOK]
 
 Updated for v0.42\
-Original creature design taken from GenericOverusedName on the Bay12 Forums. ()
-
-\]\] \]\]
+Original creature design taken from GenericOverusedName on the Bay12 Forums. (link)

@@ -1,6 +1,8 @@
 # Item designations
 
-> Fonte: [Item designations](https://dwarffortresswiki.org/index.php/Item_designations) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Item designations](https://dwarffortresswiki.org/index.php/Item_designations) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Some items have characters surrounding the name, which is a way to determine certain properties at a glance.
 
@@ -36,11 +38,11 @@ These quality modifiers can be hidden in init.txt with \[SHOW_IMP_QUALITY:NO\].
 
 ## Wear
 
-**xSwordx** *Showing some wear* - worth *(surrounded by x's)*
+**xSwordx** *Showing some wear* - worth 3⁄4 *(surrounded by x's)*
 
-**XSwordX** *Heavily worn* or *threadbare* - worth *(surrounded by capital X's)*
+**XSwordX** *Heavily worn* or *threadbare* - worth 1⁄2 *(surrounded by capital X's)*
 
-**XXSwordXX** *In tatters* or *mangled* - worth *(surrounded by double capital XX's)*
+**XXSwordXX** *In tatters* or *mangled* - worth 1⁄4 *(surrounded by double capital XX's)*
 
 ## Provenance / Ownership
 
@@ -48,14 +50,14 @@ These quality modifiers can be hidden in init.txt with \[SHOW_IMP_QUALITY:NO\].
 
 **{Sword}** Unclaimed/Forbidden *(braces)*
 
-**\$Sword\$** Owned by someone else. Only appears in adventure mode. *(dollar signs)*
+**\$Sword\$** Owned by someone else, either from a trader or found in Adventure mode. Stealing this object will mark the player as a thief.*(dollar signs)*
 
 ## Other
 
 **‼Sword‼** On fire *(double exclamation points)*
 
-**◀Sword►** Magical (magic is not yet implemented) *(forward and backward triangles)*
+**◄Sword►** Magical (as of 51.01 beta) *(forward and backward triangles)*
 
 ## Trivia
 
-The longest possible item designation is **‼{(XX≡«+Sword+»≡XX)}‼**, which designates (reading from the front) that it's on fire ( **‼** ), forbidden ( { ), imported ( ( ), in tatters ( **XX** ), exceptionally ( ≡ ) decorated ( « ), and of fine quality (+ ).
+The longest possible item designation is **‼XX({≡«+Sword+»≡})XX‼**, which designates (reading from the front) that it's on fire ( **‼** ), in tatters ( **XX** ), imported ( ( ), forbidden ( { ), exceptionally ( ≡ ) decorated ( « ), and of fine quality ( + ).

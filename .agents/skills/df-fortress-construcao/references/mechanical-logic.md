@@ -1,6 +1,8 @@
 # Mechanical logic
 
-> Fonte: [Mechanical logic](https://dwarffortresswiki.org/index.php/Mechanical_logic) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Mechanical logic](https://dwarffortresswiki.org/index.php/Mechanical_logic) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Mechanical logic** is one discipline of computing using mechanical power to perform logical operations. In this case powered or unpowered machine components represent the binary information.
 
@@ -40,17 +42,23 @@ As you can see, this gate is complicated to construct. You will need four gears 
 
 **load based XOR**
 
-[TABLE]
+|  |
+|----|
+| █ / █ / █ / █ / █ / █ / █ / █ / \* / 1 / \* / O / █ / █ / █ / L / \* / P / \* / 2 / █ / █ |
 
+\
 A toggle based XOR gate looks much simpler:
 
 **toggle based XOR**
 
-[TABLE]
+|                                                                        |
+|------------------------------------------------------------------------|
+| █ / █ / █ / █ / █ / █ / █ / █ / █ / \* / █ / █ / █ / █ / █ / █ / █ / █ |
 
 In stark contrast to the load-based XOR, it consists of a single gear. While it requires a power source and an output, it can accept power from an axle and serve as output gear by itself. This is how it works:\
 Connect it to your source of power, and link it to one of your input triggers. Build a temporary lever anywhere and connect it, too. Pull the lever once. You can deconstruct the temporary lever now. Now the gear is disengaged, and you link the second input trigger to it. Since gears toggle, every time your trigger changes state and sends a signal the gear will change state. Initially both triggers are off, and the gear is disengaged. When one trigger changes state, it will activate the gear. Independent of which trigger changes next, both will have the same state afterwards, and the gear will be disengaged again. So the gear will transport power when both input triggers are at different state: XOR. You can build this on top of a power to signal converter as shown on this page.\
 As you can see, you won't need many mechanisms to build this gate. 1 for the gear, 4 to connect to the input and 1 will be lost after disconnecting the temporary lever (that needs 3 temporarily). And of course you will need all the components for the converter, but no load.\
+
 **toggle based XNOR**
 
 - Use a single gear as for the XOR, but omit the temporary lever step.
@@ -75,21 +83,28 @@ As you can see, you won't need many mechanisms to build this gate. 1 for the gea
 
 ## Power to signal converter
 
-When you are dealing with mechanical logic, you'll finally want or have to trigger something else than machine components like doors or bridges (or, with toggle-based mechanical logic, another gear assembly). Currently, there exists no trigger in dwarf fortress that reacts on the working state of machine components, that is, the presence or absence of power. The traditional solution to this was to use a hydromechanical power-to-signal converter, remarkably similar to hydromechanical memory "memory").
+When you are dealing with mechanical logic, you'll finally want or have to trigger something else than machine components like doors or bridges (or, with toggle-based mechanical logic, another gear assembly). Currently, there exists no trigger in dwarf fortress that reacts on the working state of machine components, that is, the presence or absence of power. The traditional solution to this was to use a hydromechanical power-to-signal converter, remarkably similar to hydromechanical memory "Memory (computing)").
 
 **Z 0**
 
-[TABLE]
+|  |
+|----|
+| █ / █ / █ / █ / █ / █ / █ / · / ÷ / ÷ / ► / ► / · / █ / █ / █ / █ / █ / █ / █ |
 
 **Z-1**
 
-[TABLE]
+|  |
+|----|
+| █ / █ / █ / █ / █ / █ / █ / ^ / 7 / █ / 7 / █ / 7 / █ / 7 / █ / █ / █ / █ / █ / █ / █ |
 
+\
 When the pump is connected to power, it will suck water from the pressure plate and pump it to the right. The water level on the pressure plate will fall to 0. The plate can be constructed to react on 0…3 water. You can invert it to get an off signal instead setting it to 4…7. In both cases the *off signal* will have a delay of about 100 steps. This gate is fluid conserving.
 
 However, the introduction of minecarts have created alternatives that are more compact and don't require water, largely rendering the hydromechanical PTS device obsolete. The following minecart-based PTS converter is fast, easy to build, and extraordinarily compact:
 
 Bloodbeard's Minecart Dwarfputing Ideas thread on the DF forums has other examples of minecart-based PTS.
+
+By extending the track, it's also possible to have a circuit that ignores extra signals until the minecart returns to reset position.
 
 ## Load based Mechanical signal-input power-output gates
 
@@ -104,9 +119,22 @@ Bloodbeard's Minecart Dwarfputing Ideas thread on the DF forums has other exampl
 
 ### Legend
 
-[TABLE]
+|  |  |
+|----|----|
+| Symbol | Meaning |
+| O | A gear which connects to your OUTPUT gear, which outputs power when the gate is producing an ON output. |
+| I | A gear connected to an INPUT. In most gates you will have two Is, with each one connected to a different input. |
+| \- / and / ¦ | Horizontal axles |
+| P | Power goes here |
+| i | Two more gears, each connected to the two different inputs. |
+| L | a chain of gears or pumps which serve to add load to the system, generally shutting it off when connected. |
+| \* | A gear which isn't linked to any inputs or outputs and just serves to connect the power or whatever. |
 
 ### Mechanical identity gate
+
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| O   | I   | \-  | \-  | P   |
 
 - This takes an linked input signal and converts it to power without changing it.
 - Connected to the input gear, such that they will only be connected to the system if the input gear is receiving an ON signal, are gears with windmills on top of them. Build only enough windmills to power the devices that the gate's OUTPUT gear are connected to (and the gears/axles).
@@ -114,33 +142,85 @@ Bloodbeard's Minecart Dwarfputing Ideas thread on the DF forums has other exampl
 
 ### Mechanical NOT gate
 
+|     |     |     |
+|-----|-----|-----|
+| O   | I   | L   |
+| ¦   |     |     |
+| ¦   |     |     |
+| P   |     |     |
+
 - When the INPUT is ON, the INPUT gear will be active, and the network should need more power than is available. The devices connected to OUTPUT should shut down. When INPUT is OFF, the devices should have power since the INPUT gear will be disconnected.
 
 ### Mechanical NAND gate
+
+|     |     |     |     |
+|-----|-----|-----|-----|
+| O   | I   | I   | L   |
+| ¦   |     |     |     |
+| ¦   |     |     |     |
+| P   |     |     |     |
 
 - This works just like the NOT gate, except that there are two inputs and both have to be active to shut down the system instead of one. Make sure you have enough power to run the system when one of the input gears is active.
 
 ### Mechanical AND gate
 
+|     |     |     |     |
+|-----|-----|-----|-----|
+| O   | I   | I   | P   |
+
 - This works like the identity gate, except that there are two inputs and both have to be active for the system to get power.
 
 ### Mechanical OR gate
+
+|     |     |     |
+|-----|-----|-----|
+| O   | I   |     |
+| I   | \*  | P   |
 
 - This works like the identity gate, except that there are two inputs, and if either is active, the system receives power. Note that the entire power network is connected to both inputs, such that if either input is active the entire power network is powering the system.
 
 ### Mechanical NOR gate
 
+|     |     |     |
+|-----|-----|-----|
+| I   | \*  | L   |
+| O   | I   |     |
+| ¦   |     |     |
+| ¦   |     |     |
+| P   |     |     |
+
 - This works like the NOT gate, except that there are two inputs, and if either is active, the gear train or pump stack signified by the 'L' will be connected to the system. You need to have enough load to push power requirements above the amount of power produced by the power supply, shutting the system down.
 
 ### Mechanical XOR gate
+
+|     |     |     |     |
+|-----|-----|-----|-----|
+| O   | I   |     |     |
+| I   | \*  | \-  | P   |
+| .   | i   |     |     |
+| .   | i   |     |     |
+| .   | L   |     |     |
+
+\
 
 - Except for the 'i's and 'L', this gate is identical to the OR gate. The additional components add the 'exclusive' part of the 'XOR' to the gate.
 - The 'i's are additional gears connected to each of your inputs, and the L is additional load (large enough to stop the system, of course).
 
 ### Mechanical XNOR gate
 
-| A   | B   | Drain | Power | Extra Power | Result |
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| .   | .   | I   | \*  | L   |
+| .   | .   | O   | I   |     |
+| .   | .   | ¦   |     |     |
+| P   | \-  | \*  |     |     |
+| .   | .   | i   |     |     |
+| .   | .   | i   |     |     |
+| .   | .   | P   |     |     |
+
+|     |     |       |       |             |        |
 |-----|-----|-------|-------|-------------|--------|
+| A   | B   | Drain | Power | Extra Power | Result |
 | 0   | 0   | No    | Yes   | No          | 1      |
 | 0   | 1   | Yes   | Yes   | No          | 0      |
 | 1   | 0   | Yes   | Yes   | No          | 0      |

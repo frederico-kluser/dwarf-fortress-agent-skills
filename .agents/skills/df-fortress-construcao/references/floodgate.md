@@ -1,10 +1,26 @@
 # Floodgate
 
-> Fonte: [Floodgate](https://dwarffortresswiki.org/index.php/Floodgate) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Floodgate](https://dwarffortresswiki.org/index.php/Floodgate) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-A **floodgate** is a gate which allows control of the flow of liquids, such as water or magma. They are operated by mechanisms, such as levers or pressure plates, which open and close them. When closed, they behave like walls, but when opened, allow liquids, objects, and creatures to pass over them. Closed floodgates are shown in-game as "X" symbols. They can be manufactured from stone (at a mason's workshop), wood (at a carpenter's workshop), metal (at a metalsmith's forge), or glass (at a glass furnace). While stone, wood, and glass floodgates require only a single building material, metal floodgates require 3 bars to produce. Once manufactured, they are built in the desired location using the keys ().
+## Dados (infobox)
+
+- **b - m - f**
+- **Icon**
+- **Construction**
+- **Materials:** Labors
+- **1 Floodgate:** Mechanics
+- **Power**
+- **Uses 0 power.**
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+A **floodgate** is a gate which allows control of the flow of liquids, such as water or magma. They are operated by mechanisms, such as levers or pressure plates, which open and close them. When closed, they behave like walls, but when opened, allow liquids, objects, and creatures to pass over them. Closed floodgates are shown in-game as "X" symbols. They can be manufactured from stone (at a mason's workshop), wood (at a carpenter's workshop), metal (at a metalsmith's forge), or glass (at a glass furnace). While stone, wood, and glass floodgates require only a single building material, metal floodgates require 3 bars to produce. Once manufactured, they are built in the desired location using the keys (b-m-f).
 
 In most situations, simply using a door or raising bridge can be used in place of a floodgate - the latter of which provides a number of significant advantages.
+
+\
+**Colossus in Arena**\
+This image depicts some orthodox and unorthodox uses of floodgates to control the mixing of creatures and liquids in this arena. The gates, shown in-game as X, act as liquid stoppers and jail doors.
 
 ## Uses
 
@@ -20,7 +36,7 @@ A pressure plate on a lower level connected to a floodgate between your main wat
 
 Floodgates are constructed orthogonally on a solid, completely flat, **unflooded** floor in the 'closed' position (Note that this means it is possible for careless dwarves to trap themselves on the wrong side of the gate). Adjacent walls are not necessary for placement, but *are* necessary for controlling liquids. A mechanic must then link up a lever or other triggering mechanism to the floodgate. This requires two mechanisms; the mechanic will haul one mechanism to the floodgate, work for a while, and then haul the other mechanism to the trigger to complete the task.
 
-You can build a floodgate over empty space, e.g. controlling water in a vertical path. First build a floor (, , ), after it is complete mark it for removal (, ) and immediately designate your floodgate (, ). You don't have to suspend either of these tasks to get both to complete. You may want to remove the stone or block left by removing the floor or it may be washed down to lower levels, possibly clogging another floodgate that is built on a floor or door. However, a floodgate built in this way may disappear entirely when the lever is pulled in current versions.
+You can build a floodgate over empty space, e.g. controlling water in a vertical path. First build a floor (b, C, f), after it is complete mark it for removal (d, n) and immediately designate your floodgate (b, x). You don't have to suspend either of these tasks to get both to complete. You may want to remove the stone or block left by removing the floor or it may be washed down to lower levels, possibly clogging another floodgate that is built on a floor or door. However, a floodgate built in this way may disappear entirely when the lever is pulled in current versions.
 
 ## Activation
 
@@ -32,4 +48,10 @@ Floodgates will resist magma when closed, just as a constructed wall would, but 
 
 ## Bugs
 
-- Floodgates built on a constructed wall remain standing (and functional) even after that wall is removed, leading to an exploitable, free-floating building.
+- Floodgates built on a constructed wall remain standing (and functional) even after that wall is removed, leading to an exploitable, free-floating building. Bug:0377
+
+|  |
+|----|
+| "Floodgate" in other / Languages / Dwarven / : / låluth-inod / Elven / : / wikira-iÿema / Goblin / : / oda-dûnguk / Human / : / nonu-kir |
+
+Two sluice gates. A sluice gate is a type of floodgate.

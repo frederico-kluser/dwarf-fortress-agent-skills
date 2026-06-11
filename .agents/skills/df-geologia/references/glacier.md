@@ -1,10 +1,14 @@
 # Glacier
 
-> Fonte: [Glacier](https://dwarffortresswiki.org/index.php/Glacier) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Glacier](https://dwarffortresswiki.org/index.php/Glacier) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Free ice cubes for life.
 
 **Glaciers** are extremely cold biomes, usually found in the northern or southern extremes on larger world maps. The first few layers of any glacier are solid ice, which implies that there are few resources on an ice tile – to be precise, no trees, plants, water, animals, stone, or ores are typically included; in addition, the ice can be several z-layers thick, which can make getting to any of the stone underneath even more challenging.
 
-The lack of soil layers on a glacier, combined with the freezing temperatures, means that above ground farming can not be practiced in such biomes, and also that by embarking on a glacier, you will be totally unable to grow *any* of the aboveground crops. Your selection of growable produce must therefore all be grown underground, and will be limited to sweet pods, pig tails, dimple cups, cave wheat, quarry bushes and, of course, plump helmets. These factors make a glacier a very difficult biome to build a successful fortress in, although many players try it as one of many challenges.
+The lack of soil layers on a glacier, combined with the freezing temperatures, means that above-ground farming cannot be practiced in such biomes, and also that by embarking on a glacier, you will be totally unable to grow *any* of the aboveground crops. Your selection of growable produce must therefore all be grown underground, and will be limited to sweet pods, pig tails, dimple cups, cave wheat, quarry bushes and, of course, plump helmets. These factors make a glacier a very difficult biome to build a successful fortress in, although many players try it as one of many challenges.
 
 Also, because glaciers are often very isolated, it is entirely possible that you won't see a caravan from the Mountainhomes for anywhere up to 3 years – migrants may be even more rare. On the plus side, however, no hostile nations should bother you for a while.
 
@@ -12,13 +16,9 @@ Also, because glaciers are often very isolated, it is entirely possible that you
 
 Take a lot of wood, food and drink. Consider bringing extra domestic animals (dogs are recommended, as are turkeys for their plentiful egg yield) as an emergency food source, and/or to jump-start a long-term breeding program.
 
-Depending on your level of trade dependency, wood cutters can have little use on a glacier. You may want to sacrifice your wood cutter and axe in favour of another miner and pick. However, be aware that most glacial biomes have plenty of wood – if you brave the caverns. Alternatively, if you're a total wuss looking for an easier experience, you can embark on a locale where a glacier overlaps a forested taiga to bolster your log supply.
+Depending on your level of trade dependency, wood cutters can have little use on a glacier. You may want to sacrifice your wood cutter and axe in favour of another miner and pick. However, be aware that most glacial biomes have plenty of wood – if you brave the caverns. Alternatively, if you're ~~a total wuss~~ looking for an easier experience, you can embark on a locale where a glacier overlaps a forested taiga to bolster your log supply.
 
-Ice is everywhere, so read up on it before you make any major plans. One peculiarity that you may want to know before you head out is that due to the guaranteed "freezing" temperatures, workshops built from ice will not melt in glacial biomes when above ground or inside the glacier's ice levels. The disadvantage, however, is that it is more difficult to use the ice as a potential water source. Note that mined-out chunks of ice, when melted by being brought underground, will **not** produce usable water.
-
-### Digging down to the rock layers
-
-Due to a bug, down-stairs and up-down-stairs can't be carved out of ice if the layer immediately below the ice is stone. This makes it impossible to get from the surface down to the stone layers by digging a straight staircase. The easiest way to circumvent this is to construct an up-down staircase from some of the ice you will probably have mined out in the space where you intended to dig one. Since such a staircase is a construction, it will never melt, even if you pour magma on it.
+Ice is everywhere, so read up on it before you make any major plans. One peculiarity that you may want to know before you head out is that due to the guaranteed "freezing" temperatures, workshops built from ice will not melt in glacial biomes when above ground or inside the glacier's ice levels. The disadvantage, however, is that it is more difficult to use the ice as a potential water source. Note that mined-out chunks of ice, when melted by being brought underground, will **not** produce usable water. Bug:360
 
 ### Farming and getting water
 
@@ -31,6 +31,20 @@ All regions of the world have vast underground caverns (unless the world was gen
 The "quick-and-dirty" approach that springs to mind for the use of cavern water is to simply dig one z-level above the water and build a well, but beware that aquatic beasts can and will climb into your fortress through your well, and worse, unless the pool is at least 2 z-levels deep, the water drawn from it will be laced with mud. The approach below allows for a safe, clean, sealed-off reservoir.
 
 To safely (without having to wander around inside the cavern) tap into an underground pool, consider the following diagram:
+
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| W   | W   | W   | W   | W   | W   | W   | W   | W   |
+| ▓   | ▓   | ▓   | ▓   | X   | ▓   | ▓   | ▓   | ▓   |
+| ▓   | ▓   | ▓   | ▓   | B   | ▓   | ▓   | ▓   | ▓   |
+| ▓   | ▓   | ▓   | ▓   | .   | ▓   | ▓   | ▓   | ▓   |
+| ▓   | ▓   | ▓   | ▓   | .   | ▓   | ▓   | ▓   | ▓   |
+| ▓   | S   | .   | .   | .   | .   | .   | .   | ▓   |
+| ▓   | .   | .   | .   | .   | .   | .   | .   | ▓   |
+| ▓   | .   | .   | .   | .   | .   | .   | .   | ▓   |
+| ▓   | .   | .   | .   | .   | .   | .   | .   | ▓   |
+| ▓   | .   | .   | .   | .   | .   | .   | .   | ▓   |
+| ▓   | F   | ▓   | ▓   | ▓   | ▓   | ▓   | ▓   | ▓   |
 
 - W = water
 - ▓ = stone wall
@@ -50,9 +64,9 @@ Then do the following steps:
 
 The dwarf who dug the X should be able to get back to the stairs/ramp in time to not drown. To make extra sure of not drowning, ensure at least one dwarf is idling and have him/her pull the lever to the floodgate/drawbridge as soon as the wall is breached, then lower it again to let the reservoir fill. To make extra, *extra* sure, embark with a dwarf with a single point in the swimming skill, and have him/her carve the fortification.
 
-Use a drawbridge instead of a floodgate at the end of the tunnel to prevent building destroyer aquatic/amphibious monsters from swimming into the reservoir and entering the rest of your fortress. A floodgate wouldn't stop a building destroyer, and monsters can swim through fully submerged fortifications. If you're going to use this reservoir for a well then closing it off with a drawbridge is very important, since some building destroyers can swim *and* fly. If you're only going to use it for irrigation then you can use a floodgate and then simply wall off the reservoir once you're done with it, since building destroyers can't affect walls.
+Use a drawbridge instead of a floodgate at the end of the tunnel to prevent building destroyer aquatic/amphibious monsters from swimming into the reservoir and entering the rest of your fortress. A floodgate wouldn't stop a building destroyer, and monsters can swim through fully submerged fortifications. Bug:3327 If you're going to use this reservoir for a well then closing it off with a drawbridge is very important, since some building destroyers can swim *and* fly. If you're only going to use it for irrigation then you can use a floodgate and then simply wall off the reservoir once you're done with it, since building destroyers can't affect walls.
 
-If you're going to use the reservoir for a well, you should cover its floor with a paved road to prevent trees from growing, because in some circumstances trees can grow underwater. Don't build your well or hospital within the ice layers, as the water within the buckets will freeze, rendering it unusable.
+If you're going to use the reservoir for a well, you should cover its floor with a paved road to prevent trees from growing, because in some circumstances trees can grow underwater. Bug:1139 Don't build your well or hospital within the ice layers, as the water within the buckets will freeze, rendering it unusable.
 
 #### Dwarven ice cutting
 
@@ -67,6 +81,19 @@ Before you run out of starting booze, do the same again, but this time, do it fu
 Continue to cut out chunks of ice, dropping them a few stories, and reaping the benefits as you continue in the fortress. Be careful channeling, as the dwarves are all idiots and like to do such things as strand themselves while channeling, or to drop their buddies down the hole (which pollutes the future water and creates a huge mess).
 
 Diagram of ice cutting:
+
+|     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| O   | O   | O   | O   | O   | O   | O   | O   | O   | O   |
+| O   | C   | C   | C   | C   | C   | C   | C   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | I   | I   | I   | I   | I   | I   | C   | O   |
+| O   | C   | C   | C   | C   | C   | C   | C   | C   | O   |
+| O   | O   | O   | O   | O   | O   | O   | O   | O   | O   |
 
 O = Open area, no channeling, just an area for dwarves to walk
 
@@ -104,31 +131,36 @@ The need for wood in the construction of beds is unavoidable: no other material 
 
 Fuel is a different matter; wood does not have to play a part in its production. If you are very lucky, you may find bituminous coal or lignite, the two stones which can be turned into fuel for metalwork, but the odds are that you will have to do without. For this, your best option is to get down to the magma sea as soon as you can to build magma-based smelters, forges and the like, or at least as soon as you need to start using metal. This has the added advantage of quite possibly leading you to discover additional caverns (and thus sources of wood and water) along the way.
 
-Needless to say, read up on magma before attempting this. Magma's usage can lead to an awful lot of unexpected fun in inexperienced hands. Also take a look at the various other hazards that can confront anyone working with the magma sea, and consider channelling some of the sea into a reservoir or using a pump to isolate your working dwarves from them. Once you have got the hang of it, magma really is a blessing because of its lack of limitations; the magma sea is not about to "run out" of magma, and it also makes for good hippie garbage disposal. Also, if you are very lucky indeed, you may well stumble across something special.
+Needless to say, read up on magma before attempting this. Magma's usage can lead to an awful lot of unexpected fun in inexperienced hands. Also take a look at the various other hazards that can confront anyone working with the magma sea, and consider channelling some of the sea into a reservoir or using a pump to isolate your working dwarves from them. Once you have got the hang of it, magma really is a blessing because of its lack of limitations; the magma sea is not about to "run out" of magma, and it also makes for good ~~hippie~~ garbage disposal. Also, if you are very lucky indeed, you may well stumble across something special.
 
 ## Wildlife
 
 ### Creatures
 
-[TABLE]
+-  / `B` Polar bear
 
 **In savage glaciers:**
 
-[TABLE]
+-  / `B` Giant polar bear
+-  / `B` Polar bear man
+-  / `Y` Yeti
 
 **In evil glaciers:**
 
-[TABLE]
+-  / `M` Blizzard man
+-  / `w` Ice wolf
 
 ### Vermin
 
 **In savage glaciers:**
 
-[TABLE]
+-  / `∙` Two-legged rhino lizard
 
 **In good glaciers:**
 
-[TABLE]
+-  / `∙` Fairy
+-  / `∙` Fluffy wambler
+-  / `·` Pixie
 
 ## Notes
 
@@ -142,6 +174,17 @@ Water in buckets does not immediately freeze above ground so you can designate a
 
 ## Volcanoes and glaciers
 
-If you embark on a glacier biome with a volcano, you might think it would be a good idea to erupt the volcano (dig a hole into its side) onto the glacier ice. This will indeed cause some interesting effects like multiplying the amount of ice, casting obsidian and spamming you with "cavern collapsed" messages. The ice will expand due to the fact that one molten wall of ice will become 7 units of water, potentially flowing apart in all directions and freezing into new walls of ice immediately, which can then melt into 7 *more* units of water. If the water flows to the same square as the magma it will turn to obsidian. Both the ice and the obsidian walls may not be connected to another solid wall, so a lot of cave-ins will occur.
+If you embark on a glacier biome with a volcano, you might think it would be a good idea to erupt the volcano (dig a hole into its side) onto the glacier ice. This will indeed cause some interesting effects...like multiplying the amount of ice, casting obsidian and spamming you with "cavern collapsed" messages. The ice will expand due to the fact that one molten wall of ice will become 7 units of water, potentially flowing apart in all directions and freezing into new walls of ice immediately, which can then melt into 7 *more* units of water. If the water flows to the same square as the magma it will turn to obsidian. Both the ice and the obsidian walls may not be connected to another solid wall, so a lot of cave-ins will occur.
 
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 What do you call cold, barren and inhospitable? A dwarven noble.
+
+Anti-Titanic rocks.
+
+|  |
+|----|
+| "Glacier" in other / Languages / Dwarven / : / usir / Elven / : / vaci / Goblin / : / tûbeb / Human / : / shace |

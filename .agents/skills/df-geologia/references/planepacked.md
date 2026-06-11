@@ -1,6 +1,14 @@
 # Planepacked
 
-> Fonte: [Planepacked](https://dwarffortresswiki.org/index.php/Planepacked) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Planepacked](https://dwarffortresswiki.org/index.php/Planepacked) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
+Artist's rendition of Planepacked
 
 **Planepacked** is a legendary limestone statue, now known as the most epic artifact ever created by dwarvenkind. The statue contains what would appear to be the entire history of the world in which it was created. It also includes *73 images of itself*, leading one to believe that either the designs engraved upon it are minutely fractal, or that where Planepacked stands the universe folds. It also most likely contains several pictures of toads, and squares, but strangely, no cheese.
 
@@ -84,7 +92,6 @@ On the item is an image of Mafol Handletone the dwarf and dwarves in Magnetite. 
 
 On the item is an image of dwarves in Magnetite. The dwarves are laboring. The artwork relates to the foundation of Ravenlabors by The Sabres of Authoring of The Arrow of Tournaments in the early spring of 202. On the item is an image of Planepacked the Limestone statue in Magnetite. On the item is an image of toads in Magnetite. On the item is an image of Mafol Handletone the dwarf in Magnetite. On the item is an image of broad crosses in Limonite. On the item is an image of Mafol Handletone the dwarf and dwarves in Magnetite. Mafol Handletone is surrounded by the dwarves. The artwork relates to the ascension of the dwarf Mafol Handletone to leadership of The Arrow of Tournaments in 155. On the item is an image of Planepacked the Limestone statue in Magnetite. On the item is an image of dwarves in Magnetite. The dwarves are laboring. The artwork relates to the foundation of Ravenlabors by The Sabres of Authoring of The Arrow of Tournaments in the early spring of 202.
 
-On the item is an image of Libash Wirepunch the dwarf and Kumil Steamywheeled the dwarf in Magnetite. Kumil Steamywheeled is striking down Libash Wirepunch. The artwork relates to the killing of the dwarf Libash Wirepunch by the dwarf Kumil Steamywheeled in Ravenlabors in the late autumn of 206. On the item is an image of a thin cross in Limonite. On the item is an image of a circle in Magnetite. On the item is an image of Planepacked the Limestone statue in Magnetite. On the item is an image of Planepacked the Limestone statue in Magnetite. On the item is an image of dwarves in Magnetite. The dwarves are traveling. The artwork relates to the foundation of Ravenlabors by The Sabres of Authoring of The Arrow of Tournaments in the early spring of 202. On the item is an image of a thick crescent in Magnetite. On the item is an image of diamonds in Limonite. On the item is an image of Planepacked the Limestone statue in Magnetite. On the item is an image of a barrel in Magnetite. On the item is an image of Kol Plaitpainted the dwarf and dwarves in Magnetite. Kol Plaitpainted is surrounded by the dwarves. The artwork relates to the ascension of the dwarf Kol Plaitpainted to leadership of The Arrow of Tournaments in 1. On the item is an image of Planepacked the Limestone statue in Limonite. On the item is an image of a toad in Magnetite. On the item is an image of a ballista arrow in Magnetite. On the item is an image of Kol Plaitpainted the dwarf and dwarves in Magnetite. Kol Plaitpainted is surrounded by the dwarves. The artwork relates to the ascension of the dwarf Kol Plaitpainted to leadership of The Arrow of Tournaments in 1. On the item is an image of a wave in Magnetite. On the item is an image of waves in Limonite. On the item is an image of Sigun Frostsalves the dwarf and dwarves in Magnetite. Sigun Frostsalves is surrounded by the dwarves. The artwork relates to the rise of the dwarf Sigun Frostsalves as an enemy of The Arrow of Tournaments in the late autumn of 206.
 
 ---
-⚠️ Conteúdo truncado (52413 bytes = ~13103 tokens). Para o artigo completo, visite [Planepacked](https://dwarffortresswiki.org/index.php/Planepacked).
+*Parte 1 de 2 de «Planepacked». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Planepacked*

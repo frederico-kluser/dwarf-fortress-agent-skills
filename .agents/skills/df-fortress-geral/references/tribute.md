@@ -1,6 +1,8 @@
 # Tribute
 
-> Fonte: [Tribute](https://dwarffortresswiki.org/index.php/Tribute) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Tribute](https://dwarffortresswiki.org/index.php/Tribute) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Tribute** caravans are delegations sent to your fortress to deliver you spoils in the form of random goods. The current way to obtain tribute is to send squads on missions to nearby sites.
 
@@ -10,7 +12,7 @@ If your fortress performs a successful mission to "demand tribute", whether it b
 
 ## Failure
 
-Sending a full squad with proper weapons to a site that's reasonably depopulated (\< 100 denizens) is almost guaranteed to result in your tribute demand succeeding. Moreover, there is little apparent downside to demanding an ongoing tribute every year as opposed to one-time apart from FPS concerns. However, your tribute demand may fail if the contacted site is populated by creatures unable to make agreements, such as kobolds. In that case your dwarves will attack the site instead.
+Sending a full squad with proper weapons to a site that's reasonably depopulated (\FPS concerns. However, your tribute demand may fail if the contacted site is populated by creatures unable to make agreements, such as kobolds. In that case your dwarves will attack the site instead.
 
 ## Other uses
 

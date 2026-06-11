@@ -1,281 +1,210 @@
 #!/usr/bin/env python3
-"""Fase 2-5 V2 — Flat skill structure, YAML-safe, index capped, files truncated.
+"""Fase 2 (V3) — Constrói as skills a partir do HTML renderizado (pages.jsonl).
 
-Architecture changes from V1:
-  - NO duplication between modes (flat unique names)
-  - SKILL.md index: max 30 entries + reference to search.sh
-  - Reference files capped at ~12KB (truncated with source link)
-  - Giant files (e.g. string-dump-raw 923KB) split into alphabetical chunks
-  - All descriptions YAML-safe (no unquoted ":") — taxonomy.py guarantees this
-  - No router hierarchy — each skill is a flat peer discovered by its description
+Mudanças-chave vs V2:
+  - Fonte é HTML JÁ RENDERIZADO da API (htmlmd.to_markdown), não wikitext bruto →
+    infoboxes, tabelas de token e /raw preservados (sem "[TABLE]", sem stubs vazios).
+  - assign_skill: páginas /raw roteadas por ASSUNTO (creature raw → df-criaturas),
+    categorias filtradas (qualidade/manutenção/versão fora), first-match por
+    PRIORIDADE declarada (ordem do dict), sem fallback de substring perigoso.
+  - Artigos longos são DIVIDIDOS em partes navegáveis (part-k), não truncados.
+  - Índice do SKILL.md ordenado por RELEVÂNCIA (nº de links internos recebidos).
+  - SKILL.md bilíngue, com metadata, bloco "Como buscar" (search.py) e mapa de tópicos.
 """
-import os, sys, re, subprocess, collections, unicodedata, json, html as _html
-import mwparserfromhell
+import os, sys, re, json, collections, unicodedata
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from taxonomy import SKILL_CATEGORIES, DROP_CATS
+from taxonomy import SKILL_CATEGORIES, DROP_CATS, TITLE_RESCUE
+import htmlmd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-OUT = os.path.join(ROOT, ".agents", "skills")
+OUT = os.environ.get("SKILLS_OUT", os.path.join(ROOT, ".agents", "skills"))
+PAGES_JSONL = os.environ.get("PAGES_JSONL", os.path.join(HERE, "pages.jsonl"))
 
-# ── config ──
-MAX_INDEX_ENTRIES = 30          # max articles listed in SKILL.md index
-MAX_REF_BYTES = 48_000       # max reference file size before truncation (~12K tokens)
-SPLIT_THRESHOLD = 200_000    # split giant token dumps into letter-chunks
+MAX_INDEX_ENTRIES = 30
+MAX_REF_BYTES = 48_000          # acima disto → dividir em partes navegáveis
 
-cat_tpl_re = re.compile(r"\{\{\s*[Cc]ategory\s*\|\s*([^}|]+)")
-cat_link_re = re.compile(r"\[\[Category:([^\]\|]+)")
+VERSION_CAT = re.compile(r"^(DF2014|V0\.\d+|40d|23a|Masterwork|Modification|2010|3\.x)\b", re.I)
+QUALITY_CAT = re.compile(r"(Quality Articles$|needing review|^New in|script error|broken file|"
+                         r"deprecated source|omitted template|using deprecated)", re.I)
 
-# ── load pages, dedupe ──
-raw = {}
-for line in open(os.path.join(HERE, "pages.jsonl"), encoding="utf-8"):
-    r = json.loads(line)
-    raw[r["title"]] = r
-
-canonical = {}
-for title, rec in raw.items():
-    base = title[7:] if title.startswith("DF2014:") else title
-    prev = canonical.get(base)
-    if prev is None or rec["bytes"] > prev["bytes"]:
-        canonical[base] = rec
-
-print(f"Canonical pages: {len(canonical)}", file=sys.stderr)
-
-# ── assign skills (flat, no duplication) ──
-rawcat_to_skill = {}
+# map categoria(lower) → lista de skills (preserva ordem de prioridade do dict)
+rawcat_to_skill = collections.OrderedDict()
 for skill, cfg in SKILL_CATEGORIES.items():
     for rc in cfg["raw_cats"]:
         rawcat_to_skill.setdefault(rc.lower(), []).append(skill)
 
-def page_raw_cats(text):
-    cats = set()
-    for m in cat_tpl_re.findall(text):
-        cats.add(m.strip())
-    for m in cat_link_re.findall(text):
-        cats.add(re.sub(r"^DF2014:", "", m.strip()))
-    return cats
 
-def assign_skill(title, text):
-    if title.endswith("/raw") or title.endswith(" raw"):
-        return "df-modding"  # raw subpages → modding only
-    cats = page_raw_cats(text)
-    for c in cats:
-        for s in rawcat_to_skill.get(c.lower(), []):
-            return s  # first match wins (flat, one skill per page)
-    # keyword fallback on title
-    tl = title.lower()
+def useful_cats(categories):
+    out = []
+    for c in categories:
+        if c in DROP_CATS or VERSION_CAT.search(c) or QUALITY_CAT.search(c):
+            continue
+        out.append(c)
+    return out
+
+
+def assign_skill(title, categories):
+    cats = set(c.lower() for c in useful_cats(categories))
+    # first-match por PRIORIDADE (ordem do dict de skills)
+    for skill, cfg in SKILL_CATEGORIES.items():
+        for rc in cfg["raw_cats"]:
+            if rc.lower() in cats:
+                return skill
+    # fallback de keyword SEGURO (termos específicos, sem substrings ambíguos)
+    tl = " " + re.sub(r"[^a-z0-9]+", " ", title.lower()) + " "
     for skill, cfg in SKILL_CATEGORIES.items():
         for kw in cfg["kw"]:
-            if kw in tl:
+            if f" {kw.replace('-', ' ')} " in tl or f" {kw} " in tl:
                 return skill
-    return None
+    # resgate por título (páginas v50 sem categoria útil)
+    base = re.split(r"/", title.lower())[0].strip()
+    return TITLE_RESCUE.get(base)
 
-# collect: skill -> list of (title, rec)
-skill_pages = collections.defaultdict(list)
-unassigned = 0
-for base, rec in canonical.items():
-    sk = assign_skill(base, rec["text"])
-    if sk:
-        skill_pages[sk].append((base, rec))
-    else:
-        unassigned += 1
 
-print(f"Unassigned pages: {unassigned}", file=sys.stderr)
-
-# ── slug + clean + convert ──
 def slugify(title):
     s = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
     s = re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
     return s[:80] or "page"
 
-NAV_PREFIXES = ("av", "articleversion", "navbox", "quality", "migrated",
-                "old", "new in v", "stub", "translation", "d for dwarf",
-                "disambig", "tocright", "clear")
 
-def strip_file_links(s):
-    """Remove [[File:X]] and [[Image:X]] with arbitrarily nested brackets."""
-    i = 0; res = []
-    while i < len(s):
-        m = re.match(r"\[\[(?:File|Image):", s[i:], re.I)
-        if m:
-            depth = 0; j = i
-            while j < len(s):
-                if s[j:j+2] == "[[":
-                    depth += 1; j += 2
-                elif s[j:j+2] == "]]":
-                    depth -= 1; j += 2
-                    if depth == 0: break
-                else: j += 1
-            i = j
-        else:
-            res.append(s[i]); i += 1
-    return "".join(res)
+def split_article(md, title, url):
+    """>MAX_REF_BYTES → divide em partes navegáveis com nota de continuação."""
+    if len(md.encode("utf-8")) <= MAX_REF_BYTES:
+        return [(title, md)]
+    lines = md.split("\n")
+    parts, cur, size = [], [], 0
+    for ln in lines:
+        b = len(ln.encode("utf-8")) + 1
+        if size + b > MAX_REF_BYTES and cur:
+            parts.append("\n".join(cur)); cur, size = [], 0
+        cur.append(ln); size += b
+    if cur:
+        parts.append("\n".join(cur))
+    n = len(parts)
+    out = []
+    for i, body in enumerate(parts, 1):
+        note = (f"\n\n---\n*Parte {i} de {n} de «{title}». "
+                f"Demais partes em arquivos `...-part-{{1..{n}}}.md` na mesma pasta. "
+                f"Fonte: {url}*\n")
+        head = "" if i == 1 else f"# {title} (parte {i}/{n})\n\n"
+        out.append((f"{title} (parte {i}/{n})" if i > 1 else title, head + body + note))
+    return out
 
-def clean_wikitext(text):
-    code = mwparserfromhell.parse(text)
-    for tpl in list(code.filter_templates()):
-        name = str(tpl.name).strip().lower()
-        if any(name.startswith(p) for p in NAV_PREFIXES):
-            try: code.remove(tpl)
-            except ValueError: pass
-    out = str(code)
-    out = strip_file_links(out)
-    out = cat_tpl_re.sub("", out)
-    out = re.sub(r"\{\{\s*[Cc]ategory\s*\|[^}]*\}\}", "", out)
-    out = cat_link_re.sub("", out)
-    out = re.sub(r"\[\[Category:[^\]]*\]\]", "", out)
-    out = re.sub(r"\[\[[a-z]{2}:[^\]]*\]\]", "", out)  # interwiki
-    return out.strip()
 
-def to_markdown(wikitext, title, url):
-    try:
-        p = subprocess.run(
-            ["pandoc", "-f", "mediawiki", "-t", "gfm-raw_html", "--wrap=none"],
-            input=wikitext, capture_output=True, text=True, timeout=60)
-        md = p.stdout
-    except Exception:
-        md = wikitext
-    # decode HTML entities
-    md = md.replace("&nbsp;", " ")
-    md = _html.unescape(md)
-    # strip HTML blocks/tags
-    md = re.sub(r"<figure>.*?</figure>", "", md, flags=re.S)
-    md = re.sub(r"<figcaption>.*?</figcaption>", "", md, flags=re.S)
-    md = re.sub(r"<[^>]+>", "", md)
-    # drop images
-    md = re.sub(r"!\[.*?\]\([^)]*\)", "", md, flags=re.S)
-    md = re.sub(r"\]\([^)]*\.(?:jpg|jpeg|png|gif|svg)[^)]*\)", "", md, flags=re.I)
-    # flatten links to plain text
-    for _ in range(3):
-        md = re.sub(r"\[([^\[\]]+)\]\([^)]*\)", r"\1", md)
-    # strip template residue
-    md = re.sub(r"\{\{[^{}]*\}\}", "", md)
-    md = re.sub(r"[{}]{2,}", "", md)
-    md = re.sub(r"^\s*\\?\|.*\}\}\s*$", "", md, flags=re.M)
-    md = re.sub(r"^[ \t]*[\\\|*]+[ \t]*$", "", md, flags=re.M)
-    md = re.sub(r"[ \t]+\n", "\n", md)
-    md = re.sub(r"\n{3,}", "\n\n", md).strip()
-    # build header
-    header = (f"# {title}\n\n"
-              f"> Fonte: [{title}]({url}) — Dwarf Fortress Wiki (GFDL/MIT)\n\n")
-    return header + md + "\n"
+def count_inbound_links(pages):
+    """Conta links internos recebidos por título (proxy de relevância p/ o índice)."""
+    cnt = collections.Counter()
+    href_re = re.compile(r'href="/index\.php/([^"#?]+)')
+    for rec in pages:
+        for m in href_re.findall(rec.get("html", "")):
+            t = m.replace("_", " ")
+            try:
+                t = bytes(t, "utf-8").decode("unicode_escape")
+            except Exception:
+                pass
+            cnt[t] += 1
+    return cnt
 
-def maybe_truncate(text, title, url, max_bytes=MAX_REF_BYTES):
-    """If text exceeds max_bytes, truncate with note."""
-    b = text.encode("utf-8")
-    if len(b) <= max_bytes:
-        return text
-    # truncate to max_bytes at paragraph boundary
-    truncated = b[:max_bytes].decode("utf-8", errors="replace")
-    truncated = truncated.rsplit("\n\n", 1)[0]
-    note = (f"\n\n---\n⚠️ Conteúdo truncado ({len(b)} bytes = ~{len(b)//4} tokens). "
-            f"Para o artigo completo, visite [{title}]({url}).")
-    return truncated + note
 
-def split_large_article(title, text, url, threshold=SPLIT_THRESHOLD):
-    """For huge token-dump articles, split by letter ranges."""
-    b = text.encode("utf-8")
-    if len(b) < threshold:
-        return [(title, text, url)]
-    # Split into letter-chunks by finding `\n[A-Z]` section markers
-    chunks = []
-    lines = text.split("\n")
-    current = [lines[0]]
-    last_marker = ""
-    for line in lines[1:]:
-        marker_m = re.match(r"^[A-Z]$", line.strip())
-        if marker_m and len("\n".join(current).encode()) > 100_000:
-            ctitle = f"{title} ({last_marker or 'intro'})"
-            chunks.append((ctitle, "\n".join(current), url))
-            current = [line]
-            last_marker = line.strip()
-        else:
-            if marker_m:
-                last_marker = line.strip()
-            current.append(line)
-    if current:
-        ctitle = f"{title} ({last_marker or 'end'})"
-        chunks.append((ctitle, "\n".join(current), url))
-    if len(chunks) <= 1:
-        return [(title, text, url)]
-    return chunks
-
-# ── write tree ──
-os.makedirs(OUT, exist_ok=True)
-page_count = collections.Counter()
-
-for skill, pages in sorted(skill_pages.items()):
-    cfg = SKILL_CATEGORIES[skill]
-    skill_dir = os.path.join(OUT, skill)
-    ref_dir = os.path.join(skill_dir, "references")
-    os.makedirs(ref_dir, exist_ok=True)
-
-    # write all reference pages
-    written = 0
-    ref_entries = []  # (title, slug, bytes) for index
-    for title, rec in sorted(pages, key=lambda x: x[0].lower()):
-        url = "https://dwarffortresswiki.org/index.php/" + title.replace(" ", "_")
-        wt = clean_wikitext(rec["text"])
-        if len(wt.strip()) < 30:
-            continue
-        md = to_markdown(wt, title, url)
-
-        # handle giant articles
-        b = md.encode("utf-8")
-        if len(b) > SPLIT_THRESHOLD:
-            # split monster into chunks
-            chunks = split_large_article(title, md, url)
-            for i, (ctitle, ctext, curl) in enumerate(chunks):
-                cslug = slugify(ctitle)
-                ctext = maybe_truncate(ctext, ctitle, curl)
-                with open(os.path.join(ref_dir, cslug + ".md"), "w", encoding="utf-8") as f:
-                    f.write(ctext)
-                if i == 0:
-                    ref_entries.append((ctitle, cslug, len(ctext.encode())))
-                else:
-                    ref_entries.append(("  " + ctitle, cslug, len(ctext.encode())))
-                written += 1
-        else:
-            md = maybe_truncate(md, title, url)
-            slug = slugify(title)
-            with open(os.path.join(ref_dir, slug + ".md"), "w", encoding="utf-8") as f:
-                f.write(md)
-            ref_entries.append((title, slug, len(b)))
-            written += 1
-
-        page_count[skill] = written
-
-    # build SKILL.md index (top N by size → most substantial articles first)
-    ref_entries.sort(key=lambda x: -x[2])
-    top = ref_entries[:MAX_INDEX_ENTRIES]
-    remaining = len(ref_entries) - len(top)
-    idx_lines = [f"- {t} → `references/{s}.md`" for t, s, _ in top]
-    if remaining > 0:
-        idx_lines.append(f"\n*...e mais {remaining} artigos (use o search.sh para encontrá-los)*")
-
-    idx = "\n".join(idx_lines)
-    skill_md = f"""---
-name: {skill}
-description: {cfg['desc']}
+SKILL_MD_TEMPLATE = """---
+name: {name}
+description: >-
+{desc}
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: {modes}
 ---
 
-# {skill.replace('-', ' ').title()} (Dwarf Fortress)
+# {pretty} (Dwarf Fortress)
 
-{cfg['desc']}
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "{skill}" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill {name} "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais {len(top)} de {len(ref_entries)})
-{idx}
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais {topn} de {total} artigos — use o search.py para o resto)
+{index}
 """
-    with open(os.path.join(skill_dir, "SKILL.md"), "w", encoding="utf-8") as f:
-        f.write(skill_md)
 
-    print(f"  {skill}: {written} articles ({len(ref_entries)} total)", file=sys.stderr)
 
-print("\nDONE.", file=sys.stderr)
+def indent_desc(desc, spaces=2):
+    pad = " " * spaces
+    return "\n".join(pad + line for line in re.sub(r"\s+", " ", desc).strip().split("\n"))
+
+
+def main():
+    pages = []
+    with open(PAGES_JSONL, encoding="utf-8") as f:
+        for line in f:
+            pages.append(json.loads(line))
+    print(f"Páginas carregadas: {len(pages)}", file=sys.stderr)
+
+    inbound = count_inbound_links(pages)
+
+    skill_pages = collections.defaultdict(list)
+    unassigned = 0
+    for rec in pages:
+        sk = assign_skill(rec["title"], rec.get("categories", []))
+        if sk:
+            skill_pages[sk].append(rec)
+        else:
+            unassigned += 1
+    print(f"Não atribuídas: {unassigned}", file=sys.stderr)
+
+    os.makedirs(OUT, exist_ok=True)
+    for skill in sorted(skill_pages):
+        cfg = SKILL_CATEGORIES[skill]
+        skill_dir = os.path.join(OUT, skill)
+        ref_dir = os.path.join(skill_dir, "references")
+        os.makedirs(ref_dir, exist_ok=True)
+
+        ref_entries = []   # (title, slug, inbound_score)
+        written = 0
+        for rec in sorted(skill_pages[skill], key=lambda r: r["title"].lower()):
+            title, url = rec["title"], rec["url"]
+            md = htmlmd.to_markdown(rec["html"], title, url, rec.get("categories"))
+            if len(re.sub(r"\s+", "", md)) < 60:          # vazio de verdade
+                continue
+            score = inbound.get(title, 0)
+            for ptitle, pbody in split_article(md, title, url):
+                slug = slugify(ptitle)
+                with open(os.path.join(ref_dir, slug + ".md"), "w", encoding="utf-8") as f:
+                    f.write(pbody)
+                ref_entries.append((ptitle, slug, score if "(parte" not in ptitle else -1))
+                written += 1
+
+        # índice por RELEVÂNCIA (links internos recebidos), partes>1 ao fim
+        ref_entries.sort(key=lambda x: (-x[2], x[0].lower()))
+        top = ref_entries[:MAX_INDEX_ENTRIES]
+        idx_lines = [f"- {t} → `references/{s}.md`" for t, s, _ in top]
+        remaining = len(ref_entries) - len(top)
+        if remaining > 0:
+            idx_lines.append(f"\n*…e mais {remaining} artigos (use o search.py).*")
+
+        skill_md = SKILL_MD_TEMPLATE.format(
+            name=skill, desc=indent_desc(cfg["desc"]), modes=cfg["modes"],
+            pretty="DF " + skill[3:].replace("-", " ").title(),
+            topn=len(top), total=len(ref_entries), index="\n".join(idx_lines))
+        with open(os.path.join(skill_dir, "SKILL.md"), "w", encoding="utf-8") as f:
+            f.write(skill_md)
+        print(f"  {skill}: {written} arquivos ({len(ref_entries)} entradas de índice)",
+              file=sys.stderr)
+
+    print("DONE.", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()

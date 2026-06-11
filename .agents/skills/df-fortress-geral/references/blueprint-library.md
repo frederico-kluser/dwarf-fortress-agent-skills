@@ -1,6 +1,6 @@
 # Blueprint library
 
-> Fonte: [Blueprint library](https://dwarffortresswiki.org/index.php/Blueprint_library) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Blueprint library](https://dwarffortresswiki.org/index.php/Blueprint_library) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 ## Automated Desalination Plant
 
@@ -8,15 +8,29 @@ Removes salt from water, producing fresh water by pumping salt water through a s
 
 Z+1:
 
-[TABLE]
+\
+
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+| `▼` | `+` | `+` | `║` | `˙` | `˙` |
+| `▼` | `+` | `˙` | `O` | `˙` | `˙` |
+| `▼` | `+` | `+` | `║` | `˙` | `˙` |
 
 Z0:
 
-[TABLE]
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+| `▲` | `╔` | `═` | `O` | `.` | `≈` |
+| `▲` | `║` | `+` | `÷` | `÷` | `≈` |
+| `▲` | `╚` | `═` | `O` | `.` | `≈` |
 
 Z-1:
 
-[TABLE]
+|     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|
+| `▓` | `▓` | `▓` | `▓` | `▓` | `≈` |
+| `▓` | `▓` | `▓` | `▓` | `▓` | `≈` |
+| `▓` | `▓` | `▓` | `▓` | `▓` | `≈` |
 
 ## Building Destroyer... Destroyer
 
@@ -24,11 +38,19 @@ Trap designed to affect building destroyer creatures. A support holding up a con
 
 Z+1:
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `+` | `+` | `+` |
+| `+` | `+` | `+` |
+| `+` | `+` | `+` |
 
 Z0:
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `.` | `.` | `.` |
+| `.` | `I` | `.` |
+| `.` | `.` | `.` |
 
 ### Gremlin Trap Variant
 
@@ -36,7 +58,11 @@ Add lever linked to support: now, any gremlin foolish enough to pull this lever 
 
 Alternate Z0:
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `.` | `.` | `.` |
+| `ó` | `I` | `.` |
+| `.` | `.` | `.` |
 
 ### Cage Trap Variant
 
@@ -44,11 +70,19 @@ Add cage trap around support. If the cave-in makes a creature unconscious, it wi
 
 Alternate Z0:
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `^` | `^` | `^` |
+| `^` | `I` | `^` |
+| `^` | `^` | `^` |
 
 Alternate Z1:
 
-[TABLE]
+|     |     |     |
+|-----|-----|-----|
+| `·` | `·` | `·` |
+| `·` | `+` | `·` |
+| `·` | `·` | `·` |
 
 # Other Blueprint articles
 

@@ -1,6 +1,10 @@
 # Murky pool
 
-> Fonte: [Murky pool](https://dwarffortresswiki.org/index.php/Murky_pool) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Murky pool](https://dwarffortresswiki.org/index.php/Murky_pool) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Water that has seen better, clearer days.
 
 **Murky pools** are small bodies of stagnant water on the surface. Murky pools form tiny biomes that are enclosed by much larger biomes, which is to say that the pool itself and tiles adjacent to the pool are counted as a biome. All kinds of vermin populate pools, including many edible and hateable vermin (and other creatures, see Bugs). Murky pools won't be shown on the embark screen, but they are a very common feature in any non-desert non-freezing biome, and will usually appear in high numbers - some pools can be found merged with rivers.
 
@@ -8,8 +12,9 @@ Murky pools contain a finite amount of water that can be drained and replenished
 
 There are six types of pools, divided by climate and salinity of the water, listed in the following table:
 
-|  | **Freshwater** | **Brackish water** | **Saltwater** |
+|  |  |  |  |
 |----|----|----|----|
+|  | **Freshwater** | **Brackish water** | **Saltwater** |
 | **Temperate** | Temperate freshwater pool | Temperate brackish pool | Temperate saltwater pool |
 | **Tropical** | Tropical freshwater pool | Tropical brackish pool | Tropical saltwater pool |
 
@@ -41,23 +46,358 @@ When murky pools thaw or freeze, they do so instantly. Any dwarf standing on the
 
 ### Vermin
 
-[TABLE]
+Name
+Graphic
+Temperate pool
+Tropical pool
+
+Freshwater
+Brackish
+Saltwater
+Freshwater
+Brackish
+Saltwater
+
+∙ Damselfly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+∙ Dragonfly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+· Fly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+∙ Green tree frog
+
+✔
+
+~ Leech
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+α Lungfish
+
+✔
+✔
+✔
+
+· Mosquito
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+☼ Pond turtle
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+∙ Toad
+
+✔
+✔
+✔
+✔
+✔
+✔
 
 **In savage pools:**
 
-[TABLE]
+Name
+Graphic
+Temperate pool
+Tropical pool
+
+Freshwater
+Brackish
+Saltwater
+Freshwater
+Brackish
+Saltwater
+
+· Acorn fly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+∙ Moghopper
+
+✔
+✔
+✔
+✔
+✔
+✔
 
 **In evil pools:**
 
-[TABLE]
+Name
+Graphic
+Temperate pool
+Tropical pool
+
+Freshwater
+Brackish
+Saltwater
+Freshwater
+Brackish
+Saltwater
+
+· Blood gnat
+
+✔
+✔
+✔
+✔
+✔
+✔
 
 ## Bugs
 
-- Pond/pool populations do not replenish, gradually becoming extinct.
+- Pond/pool populations do not replenish, gradually becoming extinct.Bug:2780
 - Only vermin can spawn in murky pools, so creatures will never actually appear. Below are creatures that should be appearing in pools:
 
-[TABLE]
+Name
+Graphic
+Temperate pool
+Tropical pool
+
+Freshwater
+Brackish
+Saltwater
+Freshwater
+Brackish
+Saltwater
+
+T Alligator snapping turtle
+
+✔
+✔
+
+t Common snapping turtle
+
+✔
+✔
+
+o River otter
+
+✔
+✔
+✔
+✔
+✔
+✔
 
 **In savage pools:**
 
-[TABLE]
+Name
+Graphic
+Temperate pool
+Tropical pool
+
+Freshwater
+Brackish
+Saltwater
+Freshwater
+Brackish
+Saltwater
+
+d Damselfly man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+d Dragonfly man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+f Fly man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+D Giant damselfly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+D Giant dragonfly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+F Giant fly
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+F Giant green tree frog
+
+✔
+
+L Giant leech
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+M Giant mosquito
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+O Giant otter
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+T Giant pond turtle
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+T Giant snapping turtle
+
+✔
+✔
+
+T Giant toad
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+f Green tree frog man
+
+✔
+
+l Leech man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+m Mosquito man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+o Otter man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+t Pond turtle man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+t Snapping turtle man
+
+✔
+✔
+
+t Toad man
+
+✔
+✔
+✔
+✔
+✔
+✔
+
+|  |
+|----|
+| "Murky pool" in other / Languages / Dwarven / : / bothon agsal / Elven / : / meli pati / Goblin / : / ebrå tostgud / Human / : / sedme nique |

@@ -1,8 +1,10 @@
 # Hauling
 
-> Fonte: [Hauling](https://dwarffortresswiki.org/index.php/Hauling) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Hauling](https://dwarffortresswiki.org/index.php/Hauling) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Hauling** is the process of carrying an object to a new location. Objects being carried by a creature will show up in the creature's inventory as "Hauled". There are several specific hauling labors, based on the type(s) of items to be moved; these labors may be enabled or disabled on dwarves as needed. Note that hauling tasks can be modified by burrows, standing orders, and item state (in use or forbidden). Most types of hauling can be paused by disabling them on the standing orders('': Labor -\> Standing Orders tab -\> Hauling).
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Hauling** is the process of carrying an object to a new location. Objects being carried by a creature will show up in the creature's inventory as "Hauled". There are several specific hauling labors, based on the type(s) of items to be moved; these labors may be enabled or disabled on dwarves as needed. Note that hauling tasks can be modified by burrows, standing orders, and item state (in use or forbidden). Most types of hauling can be paused by disabling them on the standing orders(*y: Labor -\> Standing Orders tab -\> Hauling).*
 
 In popular usage, the term **hauler** refers to a dwarf in fortress mode who has no labors enabled other than hauling. In large fortresses where there may be great distances for haulers to travel, individual hauling tasks may take a long time to complete. Using dedicated haulers allows specialist dwarves to spend more time in their workshops, instead of dragging raw materials or finished products around. Haulers are good candidates for cross-training to help improve their strength and agility attributes, which are important when moving heavy objects across a fortress quickly. (Ironically, hauling does not train attributes itself.)
 
@@ -10,15 +12,17 @@ To improve the efficiency of hauling items to stockpiles, containers, minecarts,
 
 ## Automatic hauling
 
+Even carved horn dwarves are busy.
+
 Some hauling tasks do not require any hauling labor:
 
 - A dwarf working at a workshop will gather the raw materials needed to produce wanted goods. However, produced goods require the appropriate hauling labor to be moved out of the workshop in order to avoid clutter. Dwarves producing goods at a workshop tend to keep producing them and will not necessarily clear their own workshops of clutter even when they have the appropriate hauling labor enabled.
 - A moody dwarf will gather the raw materials needed for a mysterious construction.
-- A dwarf uilding something will move the needed materials to the construction site.
+- A dwarf building something will move the needed materials to the construction site.
   - Before a dwarf will build something, he will need to have the appropriate labor as specified by the task. If the dwarf is building a chair or similar, the dwarf needs Furniture Hauling; if the dwarf is building a wooden wall, it's Building Construction, and so forth. Workshops are usually constructed by any dwarf that can work in that workshop.
-  - A dwarf will clear the tiles where he/she builds from all scattered objects (**stone !!!**) before starting the build
+  - A dwarf will clear the tiles where he/she builds from all scattered objects (**stone !!!**) before starting the build
 - A herbalist will haul any successfully-gathered plant to a stockpile immediately, if there is space available in one. They also pick up and move stepladders around as necessary.
-- Dwarves in the midst of eating will carry their meal to a table. Military dwarves, however, will eat directly off of the floor.
+- Dwarves in the midst of eating will carry their meal to a table. Military dwarves, however, will eat directly off of the floor.\[Verify\]
 - Dwarves who have just finished drinking booze will return their barrel to the nearest food stockpile.
 - If you have the "All dwarves harvest" option turned on, all dwarves will help bring in the harvest, even if they don't have Food Hauling enabled.
 - Various medical tasks such as bringing injured dwarves food or water, dressing wounds, and so forth have their own labors associated with them and do not require hauling.
@@ -35,43 +39,43 @@ Dwarves with the wood hauling labor enabled will haul wood logs to the correspon
 
 ## Item hauling
 
-Dwarves with the item hauling labor will haul miscellaneous items like blocks and collect sand for a glass furnace or clay for a kiln. Finished goods (such as crafted goods) and gems (both rough and cut) are also considered Items.
+Dwarves with the item hauling labor will haul miscellaneous items like blocks and collect sand for a glass furnace or clay for a kiln. Finished goods (such as crafted goods) and gems (both rough and cut) are also considered Items. If multiple items have the same bin as destination, then dwarves can pick up multiple of these items before storing them in a bin, allthough (even if the items are initially in the same location) the hauling dwarf will often (after each pick-up) walk a few tiles before heading back to pick up another item.
 
 Stone blocks are also moved using the item hauling labor.
 
 ## Food hauling
 
-Dwarves with the food hauling labor will haul food and drinks to the appropriate stockpiles.
+Dwarves with the food hauling labor will haul food and drinks to the appropriate stockpiles. These dwarves will also store food in barrels. Storing food in a stockpile has a higher priority than moving food, which is already in a food stockpile, but not in a barrel, into a barrel. When storing food in a barrel (and the barrel is not yet in the assigned food stockpile), the food will usually be moved first into the barrel and then the barrel will be moved to the assigned food stockpile.
 
 ## Refuse hauling
 
-Dwarves with the refuse hauling labor will haul rotting food, and non-dwarf bodyparts to refuse stockpiles. They will also dump marked items to the appropriate garbage activity zone. This job usually entails dealing with dead bodies and leaving the fortress to get the deceased's body on the outside, possibly exposing dwarves to trauma, fauna, invaders, and sunlight, so you may wish to bar important or depression-prone dwarves from performing this task. Refuse hauling is subject to standing orders ('': Labor -\> Standing Orders tab -\> Refuse and Dumping).
+Dwarves with the refuse hauling labor will haul rotting food, and non-dwarf bodyparts to refuse stockpiles. They will also dump marked items to the appropriate garbage activity zone. This job usually entails dealing with dead bodies and leaving the fortress to get the deceased's body on the outside, possibly exposing dwarves to trauma, fauna, invaders, and sunlight, so you may wish to bar important or depression-prone dwarves from performing this task. Refuse hauling is subject to standing orders (*y: Labor -\> Standing Orders tab -\> Refuse and Dumping).*
 
-It is possible to use standing orders to forbid all the dead's bodies and items on death, to prevent haulers from running into an active confrontation. Remember to claim they back later when it's safe using the 'designate item' tool(), or the bodies will be left to rot.
+It is possible to use standing orders to forbid all the dead's bodies and items on death, to prevent haulers from running into an active confrontation. Remember to claim they back later when it's safe using the 'designate item' tool(i), or the bodies will be left to rot.
 
 ## Burial
 
-Dwarves with the burial labor will haul dwarf and pet corpses and bodyparts to corpse stockpiles or coffins. This job usually entails dealing with dead bodies and leaving the fortress to get the deceased's body on the outside, possibly exposing dwarves to trauma, fauna, invaders, and sunlight, so you may wish to bar important or depression-prone dwarves from performing this task. Burial items are subject to standing orders ('': Labor -\> Standing Orders tab -\> Sieges and forbidding).
+Dwarves with the burial labor will haul dwarf and pet corpses and bodyparts to corpse stockpiles or coffins. This job usually entails dealing with dead bodies and leaving the fortress to get the deceased's body on the outside, possibly exposing dwarves to trauma, fauna, invaders, and sunlight, so you may wish to bar important or depression-prone dwarves from performing this task. Burial items are subject to standing orders (*y: Labor -\> Standing Orders tab -\> Sieges and forbidding).*
 
-It is possible to use standing orders to forbid all the dead's bodies and items on death, to prevent haulers from running into an active confrontation. Remember to claim they back later when it's safe using the 'designate item' tool(), or the bodies will be left to rot.
+It is possible to use standing orders to forbid all the dead's bodies and items on death, to prevent haulers from running into an active confrontation. Remember to claim them back later when it's safe using the 'designate item' tool(i), or the bodies will be left to rot.
 
 ## Furniture hauling
 
-Dwarves with the furniture hauling labor will haul furniture to the appropriate stockpiles. They will also **uild** simple furniture items (beds, chairs, tables, etc.).
+Dwarves with the furniture hauling labor will haul furniture to the appropriate stockpiles, this includes adding empty bins to a stockpile or adding a wheelbarrow to a stockpile (ie. stone stockpile). They will also **build** simple furniture items (beds, chairs, tables, etc.).
 
 ## Animal hauling
 
-Dwarves with the animal hauling labor will haul animal traps and occupied cages to the appropriate stockpiles, and lead uncaged animals to pastures and other destinations. Animal hauling isn't required for jobs such as shearing, butchering or milking animals.
+Dwarves with the animal hauling labor will haul animal traps and occupied cages to the appropriate stockpiles, and lead uncaged animals to pastures and other destinations. Animal hauling isn't required for jobs such as shearing, butchering or milking animals. Note that leading an uncaged animal is slower than moving a wheelbarrow, so it might be advantageous for longer hauling distances to cage the animal first and then move the cage by wheelbarrow (or have the animal walk by itself nearer to the destination, which might just happen with animals domesticated as a child and animals bonded to a trainer as these, unless they are also of the vermin hunting variety, have the tendency to move to the location of the trainer, when they get unassigned from a pasture).
 
-Wild or hostile animals require both animal hauling and animal training labors to move to a cage or chain.
+Wild or hostile animals require both animal hauling and animal training labors to move to a cage or chain.Bug:8080
 
 ## Trade good hauling
 
-Dwarves with the Trade Good hauling labor will bring goods to the depot.
+Dwarves with the Trade Good hauling labor will bring goods to the depot. Trade Good hauling has a high priority, higher than all other job hauling priorities. Also many workshop jobs, where the hauling of items to the workshop is in progress, might get delayed, if the dwarf has Trade Good hauling enabled, as the dwarf might after hauling an item to the workshop then take a Trade Good hauling job before resuming the job in the workshop. But Dwarfs performing a priority 1 job, ie. mining, smoothing, engraving etc. jobs with designation priority 1, who are also assigned to Trade Good Hauling duty, will continue their jobs (at least as long as the current/next job of that type also has designation priority 1).
 
 ## Water hauling
 
-Dwarves with the water hauling labor will fill pits and ponds.
+Dwarves with the water hauling labor will use buckets to fill pits and ponds from a water-source zone.
 
 ## Tips and issues
 
@@ -91,10 +95,8 @@ To ensure that high-priority hauling tasks (like food), to clean up after get do
 
 ## Bugs
 
-- Hauling jobs block access to all the items in the destination containers until the hauling is complete. This often results in cancellation spam and work delays. One workaround is creating a "feeder stockpile" with containers disabled.
+- Hauling jobs block access to all the items in the destination containers until the hauling is complete. This often results in cancellation spam and work delays.Bug:9004 One workaround is creating a "feeder stockpile" with containers disabled.
 
 - Wheelbarrows are only used to haul stone **to** a stockpile and limits the number of active hauling jobs to the number of available wheelbarrows. see Wheelbarrow for details.
 
-- If a dwarf is hauling an item when the destination becomes unreachable the dwarf will spam job cancellation messages repeatedly. Forbidding the item in inventory will clear up the problem.
-
-\]\]
+- If a dwarf is hauling an item when the destination becomes unreachable the dwarf will spam job cancellation messages repeatedly.Bug:597 Forbidding the item in inventory will clear up the problem.

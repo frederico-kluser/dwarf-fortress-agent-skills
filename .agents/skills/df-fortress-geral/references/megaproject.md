@@ -1,6 +1,8 @@
 # Megaproject
 
-> Fonte: [Megaproject](https://dwarffortresswiki.org/index.php/Megaproject) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Megaproject](https://dwarffortresswiki.org/index.php/Megaproject) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The term **megaproject** refers to basically any project that takes a long time to build. See also other challenges.
 
@@ -16,7 +18,7 @@ For some reason, a noble was harmlessly pulling a lever when suddenly, magma flo
 - Bonus: Mod the game so you can start on the dwarven capital and actually bring about the story.
 - Bonus: Once you have completed your aqueduct, embark in a slightly different location and build the next section. repeat until you've built it all the way to the capital!
 
-Variation: On a map containing a river, completely enclose it with glass walls, and floors. Use overhead pipe sections to move the water to places more convenient Fun.
+Variation: On a map containing a river, completely enclose it with glass walls, and floors. Use overhead pipe sections to move the water to places more ~~convenient~~ Fun.
 
 ### Biodome
 
@@ -26,9 +28,10 @@ No pits/underground rivers/magma vents allowed.
 
 ### Casting
 
-Who needs to construct giant statues?! We need ours made from natural walls, however, we want it above ground level as well. For casting your goal is to create some giant structure out of natural obsidian walls through the use of an extremely elaborate scaffold of lava and water pools and screw pumps. When you are finished, just deconstruct the scaffolding and smooth/engrave the statue as you go. Just imagine the bridge over that chasm, now complete with two giant dwarf statues on either side to strike fear into all who enter and to show them the power of your fortress.
+Who needs to construct giant statues?! We need ours made from natural walls, however, we want it above ground level as well. For casting your goal is to create some giant structure out of natural obsidian walls through the use of an extremely elaborate scaffold of lava and water pools and screw pumps. When you are finished, just deconstruct the scaffolding and smooth/engrave the statue as you go. Just imagine the bridge over that chasm, now complete with two giant dwarf statues on either side to strike fear into all who enter and show them the power of your fortress.
 
 - Bonus: Make the statues spit lava.
+  - Bonus+: Make the statues spit blood.
 
 ### Castle
 
@@ -54,6 +57,7 @@ BONUS: Create a statue garden to memorialize your victims, with one statue per v
 Can your dwarves build the Antikythera mechanism? Can you program the fortress to play tic-tac-toe? More details at computing.
 
 - !!IMPOSSIBLEDWARFYBONUS!!: Program your fortress to run *Dwarf Fortress*.
+- !!IMPOSSIBLEIMPOSSIBLEDWARFYDWARFYBONUSBONUS!!: Program your fortress to run *Dwarf Fortress* and use that new program to build a new computer to program a new game of *Dwarf Fortress* and use that game inside of a game inside of a game to program another game of *Dwarf Fortress*.
 
 ### Colosseum
 
@@ -66,7 +70,7 @@ Build a pit, around it on steps lots of Thrones, make the whole thing a meeting 
 
 ### Crematory Fortress
 
-- Requires a  magma pipe and bauxite.
+- Requires a magma pipe and bauxite.
 
 Build a temple structure above a magma pipe and engrave every available surface. The temple should be as opulent as possible. In the temple, build a retracting bridge over a hole in the floor, and designate a coffin stockpile on it. Whenever a dwarf dies, build a bauxite or other magma-proof coffin for him, place it on the bridge, and retract it, committing his body to the fiery blood of the mountain.
 
@@ -116,6 +120,8 @@ Beneath your fortress, carve out an immense dungeon starting from the surface. E
 - Epic Bonus: Feed the minotaur stated beforehand migrants every year.
 - Cosmic Bonus: Lead the dungeon into an upright candy cane and build a Labyrinth inside HFS.
 - Nerd Bonus: Build the last few levels above your fortress, and fill one with lava, one with water, one entirely empty, etc., to mimic the "Endgame" of NetHack. The uppermost one should have three temples, and if possible megabeasts that cannot escape but which an adventurer could reach...
+- Eternal Misery Bonus: Edit the raws to make your prisoners immortal.
+- Mysterious Bonus: Place a primordial remnant or magic item made thereof at the end of your dungeon.
 
 ### Dwarf like an Egyptian
 
@@ -136,7 +142,7 @@ Build a legendary dwarven pyramid, with a corridor running to a central tomb for
 
 - BONUS: Dwarf like a Sumerian and make the Pyramid a Ziggurat.
 
-- JoJoBonus: Get a king in your fortress, then make him a vampire, nickname him Dio Brando DIO.
+- JoJoBonus: Get a king in your fortress, then make him a vampire, nickname him ~~Dio Brando~~ DIO.
 
 ### Graveyard Master
 
@@ -168,7 +174,7 @@ Construction, construction, construction! Just how big a tower can you build? Ou
 
 ### Land battleship
 
-Turn your mountain into a huge battle-station, complete with crew quarters, decks, command centre, cantina, and a large collection of deadly weapons : Batteries of marksdwarves, ballista cannons, catapults, boarding bridges and teams, but also lava projector or remote explosive devices (i.e. cave-ins in a part of the map triggered by a lever). Make sure it ends up looking like a real battleship, with nothing but plains surrounding it (you could build it on an actual plain, or destroy a mountain, choice is yours). The battleship has to be autonomous, and dwarves shouldn't wander outside it.
+Turn your mountain into a huge battle-station, complete with crew quarters, decks, command centre, cantina, and a large collection of deadly weapons : Batteries of marksdwarves, ballista cannons, catapults, boarding bridges and teams, but also lava projector or remote explosive devices (i.e. cave-ins in a part of the map triggered by a lever). Make sure it ends up looking like a real battleship, with nothing but plains surrounding it (you could build it on an actual plain, or destroy a mountain, choice is yours). The battleship has to be autonomous, and dwarves shouldn't wander outside it.
 
 - Bonus: The weaponry covers every tile of the map (i.e., everything that enters the map can be shot)
 - Bonus: Build several other ships, maybe dedicated to a specific product (food, ammo etc.)
@@ -202,9 +208,9 @@ Build a huge hall - at least 3 z-levels high. Leave few pillars symmetrically pl
 
 Bonus: cast the walls of the hall out of obsidian using water and magma
 
-Megabonus: Trap goblins and a megabeast in the various lower levels
+MegaBonus: Trap goblins and a megabeast in the various lower levels
 
-**\\>**: Build the real [Moria
+UltraMultiverseDwarfyBonus: Build the real Moria
 
 ### Mountain audit/core sample
 
@@ -218,11 +224,14 @@ CandyFlossBonus: Rebuild the mountain out of candy floss.
 
 HeavyMetalBonus: Rebuild the mountain out of steel.
 
+ArmokBonus: Use adventure mode to raid multiple candy storages and rebuild it out of Armok's favorite stuff.
+
 ### Project Mayhem
 
 - You do not talk about project Mayhem
+- YOU do not talk about project Mayhem
 - Build a series of towers, at least 10 z-levels high, of different size and shape. They must be supported by a series of supports linked to a lever.
-- Store all your riches in the towers : crafts, precious metal bars, gems, artifacts, everything. You may also want to house your nobles on top of the towers.
+- Store all your riches in the towers : crafts, precious metal bars, gems, artifacts, everything. You may also want to house your nobles on top of the towers.
 - Pull the lever and watch the collapse of financial history.
 
 Bonus: make the towers' walls out of glass!
@@ -294,6 +303,8 @@ Build a giant statue, spanning 10-20 z-levels and make it in the shape of say, a
 
 ### Surveillance Track
 
+A site-wide surveillance track
+
 Build an elevated minecart track around the edges of the map, and send out civilians riding minecarts to spot ambushers and distract enemy archers.
 
 - Bonus: Use minecart jumps to physically isolate the track from your fortress.
@@ -308,7 +319,7 @@ Bonus Points:
 
 - If the clock has a mechanical effect in the fortress proper to announce new days
 - If the clock creates seasonally appropriate effects at the change of months and/or seasons.
-- If the clock is used to aid in the operation of the fortress in addition to its role as a clock (automatically controls farmland irrigation at particular times, automatically opens the pod bay doors blast doors floodgates Magma Channels Gate in time for those evil friendly merchants, etc...).
+- If the clock is used to aid in the operation of the fortress in addition to its role as a clock (automatically controls farmland irrigation at particular times, automatically opens the ~~pod bay doors~~ ~~blast doors~~ ~~floodgates~~ ~~Magma Channels~~ Gate in time for those ~~evil~~ friendly merchants, etc...).
 - If the clock governs the schedule of a working rail station (which is always on time). (Definitions of 'working' and 'rail station' are subject to player imagination).
 - If the clock takes measures to protect itself. *"I can't let you do that, Urist."*
 
@@ -321,16 +332,16 @@ Designing a temple to Armok. Aesthetics count - the god will be very angry if th
 - Bonus: Make the glass windows stained with blood.
 - Bonus: Spill blood everywhere.
 - AztecBonus: Make it so it's a stepped pyramid. Perform sacrifice with your priests on top of the statue, preferably with obsidian short swords.
-- WarhammerBonus: Also fill your temple with skulls. BLOOD FOR THE BLOOD GOD ! SKULLS FOR THE SKULL THRONE !
+- WarhammerBonus: Also fill your temple with skulls. BLOOD FOR THE BLOOD GOD ! SKULLS FOR THE SKULL THRONE !
 - MagmaBonus: Decorate the temple with molten magma. Also good for sacrifices.
-- Bonus: Made it out of cast obsidian and engrave everything. Cast obsidian only !
+- Bonus: Made it out of cast obsidian and engrave everything. Cast obsidian only !
 - Bonus: Add menacing spikes.
   - BrutalBonus: Impale elf, goblin, and kobold corpses on the spikes.
-- SuperBonus: Make it out of soap iron steel ! (At least partially since you can't engrave steel)
+- SuperBonus: Make it out of ~~soap~~ ~~iron~~ steel ! (At least partially since you can't engrave steel)
 - SuperBonus: Make it needlessly complicated. Use lots of power and mechanisms. Magma waterfalls powered by dwarven water reactors. Fill it with devious traps and use mechanisms, levers, and power galore.
 - SuperMagmaBonus: All of the above, but make it inside a volcano.
 - TrueBelieverBonus: Same, but make it inside the magma sea.
-- ArmokFanaticBonus: Same, but make it inside HFS. Sacrifice it's denizens for Armok! Alternatively, make it inside an adamantine spire and enjoy your engraved, all-natural raw adamantine walls.
+- ArmokFanaticBonus: Same, but make it inside HFS. Sacrifice its denizens for Armok! Alternatively, make it inside an adamantine spire and enjoy your engraved, all-natural raw adamantine walls.
 
 ### The cube
 
@@ -352,7 +363,7 @@ Disaster has struck the kingdom. A strangely glowing ‼peasant‼ visited the g
 
 Build a dwarven great wall of china that splits the map in half. Must be at least 10 tiles thick and reach the highest z-level.
 
-- BONUS: Make it block the Mongols goblins out of your half of the map.
+- BONUS: Make it block the ~~Mongols~~ goblins out of your half of the map.
 - BONUS: Make it out of obsidian.
   - BONUS+: Embark on a map without obsidian.
 - BONUS: Find a way to make it touch the boundaries.
@@ -360,7 +371,7 @@ Build a dwarven great wall of china that splits the map in half. Must be at leas
 - BONUS: Arm it with ballistas.
   - MEGABONUS: Once you have split your embark in half, abandon the fortress and embark adjacent to it, and continue the wall until it splits the continent in half.
 
-Someone should make a bonus for this but I'd like to point out that the actual wall was made from (compressed) dirt with on outer layer of stone and that the bodies of those who died from exhaustion while building it, were put into it.
+Someone should make a bonus for this but I'd like to point out that the actual wall was made from (compressed) dirt with an outer layer of stone and that the bodies of those who died from exhaustion while building it, were put into it.
 
 - - BONUS+: Encase all workers who died during building in caskets built into the wall. Possibly with traps to protect them from grave robbers
 
@@ -422,6 +433,8 @@ Turn cave-ins off in the init, then build a flying fortress. Perhaps some flying
 
 The kingdom's coffers need lining, so hop to! Found a fort and start accumulating wealth as fast as possible. Attain as high a fortress value as possible, and make most of your wealth into coins for the vault. Try to beat your record for one year, two years, or five years.
 
+\
+
 BONUS Create capitalism in your fortress!
 
 ### We Are Dorf
@@ -445,15 +458,16 @@ You will receive bonus points for making a more realistic World Domination setup
     - Bonus: Use modding to create a pet creature for the mastermind with the "opposed to life" tag.
 - Have a science lab. Use living creatures and people as test subjects.
 
+\
 Doomsday device suggestions:
 
 - Flood the map with water/magma (may require building walls around the edge of the map)
-  - BONUS: the water has carp in it.
+  - BONUS: the water has carp in it. (You can edit the raws to bring them back to their former glory)
     - BONUSMOD: Carp with *frickin' laser beams* attached to their heads.
     - BONUSMOD2.0: Give the carp the ability to spawn undead dragons for every limb they tear off a dwarf.
 - Build an "Earthquake Machine" (the entire map is supported by a single support, which is connected to a lever)
-- Build an extensive holding cell network for "scientific purposes". Fill it with megabeasts and elephants unicorns, skeletal carp in secret. Have a lever that lets everything free to feed on the general population.
-- Embark in an evil area, and capture and tame all those undead animals ^(if possible) to create your own undead army
+- Build an extensive holding cell network for "scientific purposes". Fill it with megabeasts and ~~elephants~~ ~~unicorns,~~ skeletal carp in secret. Have a lever that lets everything free to feed on the general population.
+- Embark in an evil area, and capture and tame all those undead animals if possible to create your own undead army
 - Bonus: Eliminate the dwarves who constructed your device before you set it off. They must not be allowed to warn the rest of the citizens.
 - Build an orbital weapons platform in space (which should be 12-15 stories above the ground, use your imagination), then arm it with magma bombs (droppable tank of magma) to glass the planet, rendering it uninhabitable for a few years.
 - Build a door (or hatch) in every space of your fortress. Have all the doors set to lock at the flip of a switch. Have the switch kill the person who pulls it. Give the nobility their toy.
@@ -489,6 +503,10 @@ MEGABONUS-(Re)Make: The Seven Seals have been broken and the Apocalypse arrives.
 3.  All bodies of water turn bloody.
 4.  Dig into the HFS and have a battle between Heaven and Hell.
 5.  Sorry for any spoilers\
+
+ULTRAKILLBONUS: During the Apocalypse, now that MANKIND IS DEAD\*. Unleash a modded Iron/BLOOD Man amalgam which IS FUELed by absorbing the blood of its enemies upon HELL. ItS FULL after all. (May or may not pose a threat to any angelic dwarves trying to get in its way.)
+
+1.  \*By how things usually go, the goblins have probably genocided them a couple decades before you got done building dwarf heaven anyway.
 
 ### City of Ember
 
@@ -556,6 +574,8 @@ Bonus: Cast the entire thing in Obsidian using magma and water and engrave all t
 
 Bonus: make an underground minecart track that detonates it. Bonus: make a metal statue at the top which gets exploded.
 
+UnfortunateBonus: Make your nobles live inside the building to be destroyed.
+
 MegaBonus: send burning graphite or lignite flying into the (strangely always daytime) sky.
 
 CosmicBonus: Have an important Dwarf in a coffin play a role in detonating it.
@@ -578,21 +598,6 @@ Bonus:
 
 -BONUS: make it self-cleaning so it can be reused over and over!
 
--Double bonus: make it flood the map with lava if anything ever reaches the end of their maze, meaning their victory is for all time - as well as the last thing the world will ever see before the end.
-
-### The doomsday temple of greed
-
-1- Prepare a game with the poorest-skill starting dwarves and nothing on embark.
-
-2- Edit files to add a little castle with 10 switches, some of which open up to desirable stuff, or a mild trap. Have the lineup fairly obvious, so people know which prize/trap pair they're going for.
-
-3- After learning the principle and getting say a starting pick, 100 wood, 10 obsidian, 10 slade, freeing an angry elephant, an artifact crossbow, alcohol for 10 years, freeing a carp guarding the exit (simple enough puzzle, dig yourself another exit), getting an anvil and 7 bronze armor sets, and avoiding the one trap/prize which has a dragon... let them look up the stairs to the next bit on the next floor...
-
-4- THIS floor has mild traps/good prizes again, but one of them frees 7 goblins AS WELL AS trigger an unannounced very distant magma-flooding system of immense power and speed (they think the goblins are all there is to the trap, mwa ha ha). Make sure the slope means the greedy player will get what's coming at him fully...
-
-5- Share this fun map without announcing what's on it. Surprise!!!
-
-### To the Bottom and Beyond
 
 ---
-⚠️ Conteúdo truncado (62788 bytes = ~15697 tokens). Para o artigo completo, visite [Megaproject](https://dwarffortresswiki.org/index.php/Megaproject).
+*Parte 1 de 2 de «Megaproject». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Megaproject*

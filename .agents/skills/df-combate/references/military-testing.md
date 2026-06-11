@@ -1,11 +1,12 @@
 # Military testing
 
-> Fonte: [Military testing](https://dwarffortresswiki.org/index.php/Military_testing) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Military testing](https://dwarffortresswiki.org/index.php/Military_testing) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 - @ Wiki Editors: *As a rule, Wiki-ettiquette does not allow "personalizing" an article, or part of it (specific citations and quotes being a notable exception). Edits made on public pages are exactly that, "public", so no "ownership" is attached to any text. Editors usually do not add their names to a page or subsection - "anonymous" editing is the rule. This page allows for exceptions to that rule, but that does not prevent future editors from making changes to another's "research".*
 
 *If you don't want it edited, put it on your Home page and link to it.*
 
+\
 This page on the wiki houses trials run within the game by players, with the intention of arriving at conclusions on how certain combat situations work, or just combat in general.
 
 If you want to know more about how to do your own testing, go to the DF2010:Arena wiki article. To learn more about the military and how it works in *Dwarf Fortress*, go to the DF2010:Military article.
@@ -20,11 +21,21 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Side & Creature | Number | Skills | Items |
+| \#1: Dwarf | 6 | Grand Master Swordsdwarf / Grand Master Elf-hater | Tower-cap stake |
+| \#2: Corinthian Magma Weasel | 6 | -no skills- | -no items- |
+| \#3: Tea cup | 6 | Legendary Absurdist | Mustard |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 0 | Severed limbs / Bruised internal organs | Tired / Bored / Extreme Pain | Infection |
+| \#2: Corinthian Magma Weasel | 3 | Broken nose / Broken toes | Nauseous | Severed head |
+| \#3: Tea cup | 1 | Cracked handle | -none- | Slippage |
 
 **Notes:** The creatures were placed in tight groups, spaced equally apart. The dwarves died fast from injuries caused by the tea cups the magma weasels were throwing. The weasels died from friendly fire.
 
@@ -38,13 +49,21 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Side & Creature | Number | Skills | Items |
+| \#1: Dwarf | 6 | -no skills- | full iron armor (with chain leggings and mail shirt), / shield and longsword |
+| \#2: Skeletal Horse | 3 | -no skills- | -no items- |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags1 | Most common cause of death |
+| \#1: Dwarves | 6 | 4 have no injuries / 2 badly wounded | Unconscious / Extreme Pain | -N/A- |
+| \#2: Skeletal Horse | 0 | -N/A- | -N/A- | Fatal injuries |
 
-¹Refers only to those injured.
+1Refers only to those injured.
 
 **Notes:** I did this test to see if dwarves can survive horses if they've got full iron armor and weapons. The fight was short and it looks like the skeletal horses charge hard and if they hit, they stun and can kill pretty fast if they're not stopped. I tried it 6:3 because I didn't expect the dwarves to survive a 1:1 ratio against the horses anyway. And yes the amount of trials is pathetic :P
 
@@ -56,15 +75,17 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                   | Items       |
+|                 |        |                          |             |
 |-----------------|--------|--------------------------|-------------|
+| Side & Creature | Number | Skills                   | Items       |
 | \#1: Dwarf      | 4      | Grand Master Shield User | iron shield |
 | \#2: Fire imp   | 6      | -no skills-              | -no items-  |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Dwarves | 4 | -no injuries- | -no tags- | -N/A- |
 | \#2: Fire imp | 0 | -N/A- | -N/A- | Fatal damage from shield attacks |
 
@@ -78,14 +99,19 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                   | Items       |
+|                 |        |                          |             |
 |-----------------|--------|--------------------------|-------------|
+| Side & Creature | Number | Skills                   | Items       |
 | \#1: Dwarf      | 4      | Grand Master Shield User | iron shield |
 | \#2: Dragon     | 1      | -no skills-              | -no items-  |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 0 | -N/A- | -N/A- | Severing of the body when incapable of blocking a biting attack |
+| \#2: Dragon | 1 | All toes broken, nose broken / Severe bruising on the rest of the body | Pain | -N/A- |
 
 **Notes:** This is a test intended to test fire blocking with shields, in lieu of the previous test which failed at it. Dwarves can block fire breath fine with iron shields and the shields do not get worn.
 
@@ -97,14 +123,19 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                   | Items           |
+|                 |        |                          |                 |
 |-----------------|--------|--------------------------|-----------------|
+| Side & Creature | Number | Skills                   | Items           |
 | \#1: Dwarf      | 4      | Grand Master Shield User | chestnut shield |
 | \#2: Dragon     | 1      | -no skills-              | -no items-      |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 3 | -no injuries- | -no tags- | Severing of the body when incapable of blocking a biting attack |
+| \#2: Dragon | 0 | All toes broken, nose broken / Severe bruising on the rest of the body / Severe bruising of internal organs | Extreme Pain / Nauseous | Suffocation |
 
 **Notes:** This test was made to test the effectiveness of non-firesafe material shields against fire. Other than that, the setup is entirely identical to the previous test.
 
@@ -116,15 +147,17 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature     | Number | Skills                   | Items           |
+|                     |        |                          |                 |
 |---------------------|--------|--------------------------|-----------------|
+| Side & Creature     | Number | Skills                   | Items           |
 | \#1: Dwarf          | 6      | Grand Master Shield User | chestnut shield |
 | \#2: Skeletal Horse | 3      | -no skills-              | -no items-      |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Dwarves | 6 | -no injuries- | -no tags- | -N/A- |
 | \#2: Skeletal Horses | 0 | -N/A- | -N/A- | Fatal injuries |
 
@@ -138,15 +171,17 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills              | Items           |
+|                 |        |                     |                 |
 |-----------------|--------|---------------------|-----------------|
+| Side & Creature | Number | Skills              | Items           |
 | \#1: Dwarf      | 6      | Skilled Shield User | chestnut shield |
 | \#2: Horse      | 3      | -no skills-         | -no items-      |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Dwarves | 0 | -N/A- | -N/A- | Fatal injuries |
 | \#2: Horses | 3 | Light bruising | -no tags- | -N/A- |
 
@@ -160,15 +195,17 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                   | Items           |
+|                 |        |                          |                 |
 |-----------------|--------|--------------------------|-----------------|
+| Side & Creature | Number | Skills                   | Items           |
 | \#1: Dwarf      | 6      | Grand Master Shield User | chestnut shield |
 | \#2: Horse      | 3      | -no skills-              | -no items-      |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Dwarves | 3 | -no injuries- | -no tags- | Fatal injuries |
 | \#2: Horses | 0 | -N/A- | -N/A- | Fatal injuries |
 
@@ -182,20 +219,27 @@ Here's an example of how to present your test's information. If you're not sure 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                   | Items           |
-|-----------------|--------|--------------------------|-----------------|
-| \#1: Dwarf      | 3¹     | Grand Master Shield User | chestnut shield |
-| \#2: Hydra      | 1      | -no skills-              | -no items-      |
+|                 |               |                          |                 |
+|-----------------|---------------|--------------------------|-----------------|
+| Side & Creature | Number        | Skills                   | Items           |
+| \#1: Dwarf      | 31 | Grand Master Shield User | chestnut shield |
+| \#2: Hydra      | 1             | -no skills-              | -no items-      |
 
-¹These are the dwarves that survived the previous test. They're completely unharmed, but I thought it good to mention this.
+1These are the dwarves that survived the previous test. They're completely unharmed, but I thought it good to mention this.
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 1 | Lost a leg | Tired | Fatal injuries / Severing of the body when incapable of blocking a biting attack |
+| \#2: Hydra | 1 | Severe bodily bruising / Internal organs bruised | Over-Exerted / Nauseous | -N/A- |
 
 **Notes:** This test was not completed, but the eventual outcome is fairly obvious. It was begun right after the previous one in order to compare how a stronger monster would fare against grand master shieldwarves.
 
 **Tester's conclusion:** Like the dragon, the hydra has a very hard time with the dwarves. The fight is long and even though it can kill them all eventually, the damage it takes in the meantime is definitive. A slightly higher number of dwarves might have killed it and even if a whole squad dies, the threat the hydra poses is practically eliminated as it will probably eventually die on its own anyway.
+
+\
 
 ### Bronze vs. Iron
 
@@ -205,14 +249,19 @@ To simulate Fortress mode, 8 battles of 8 vs. 8. Since goblins only use iron, bo
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 8 | Proficient Swordsdwarf | Full iron set minus breastplate and shield, iron short sword |
 | \#2: Dwarf | 8 | Proficient Swordsdwarf | Full iron set minus breastplate and shield, bronze short sword |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Iron team | 4 lost rounds, 20 of 14 wounded | Severed limbs / cuts | Tired / Pale / Faint | Bleeding |
+| \#2: Bronze team | 4 lost rounds, 24 of 21 wounded | Severed limbs / cuts | Tired / Pale / Faint | Bleeding |
 
 **Tester's conclusion:** Casualty/wounded(bruises and missing tooth/broken noses etc not counting)/intact rates of 67/30/3% for bronze and vs. 72/19/8% for iron would suggest that while bronze might be better in bigger and longer fights, as in all but 1 of the battles the first casualty was for the bronze team. This is probably because all attacks, both edged attacks and both blunt attacks the short sword has were seen to be used and because good part of the attacks that hit armour were deflected(and effectively became blunt attacks), and because bronze as a heavier material works slightly better in blunting, while the iron seems to have a slight edge in edged attacks. This is also supported by the comparably much higher amount of wounded dwarves(presumably having been hit early in the battle, lots of missing feet, at times lower legs, hands, lower arms, ears and noses) in the bronze team, despite them losing less as KIA.
 
@@ -224,15 +273,17 @@ A 52 vs 52 fight was also tested to see how much difference there would be when 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills                 | Items                     |
+|                 |        |                        |                           |
 |-----------------|--------|------------------------|---------------------------|
+| Side & Creature | Number | Skills                 | Items                     |
 | \#1: Dwarf      | 10     | Grandmaster All Skills | Only silver war hammer    |
 | \#2: Dwarf      | 10     | Grandmaster All Skills | Only adamantine battleaxe |
 
 **Results:**
 
-| Side & Creature  | Wins               |
+|                  |                    |
 |------------------|--------------------|
+| Side & Creature  | Wins               |
 | \#1: Hammer team | Won 5 of 10 rounds |
 | \#2: Axe team    | Won 5 of 10 rounds |
 
@@ -240,18 +291,25 @@ This study seems to show that (for legendary dwarves), silver war hammers are ab
 
 (Is that because a grandmaster dwarf can disable or kill an unarmored dwarf with just one hit with either weapon? Might be worth examining the combat logs.) Bognor 09:08, 3 June 2011 (UTC)
 
+\
+
 ### Dwarves against Skeletal Horses (3) (tested by: Stormtemplar)
 
 **Times run:** 1
 
 **Initial setup:**
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Side & Creature | Number | Skills | Items |
+| \#1: Dwarves | 6 | Proficient Fighter and swordsdwarf, skilled Dodger, Armor and Shield user | Full iron armor&Shortsword |
+| \#2: Skeletal horse | 6 | None | none |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Dwarves | 6 | 1 with minor wounds, one with head bruising and some broken parts | 1 unconscious (Dwarf with head bruising) |  |
 | \#2: Skeletal horse | 0 |  |  |  |
 
@@ -267,18 +325,21 @@ This study seems to show that (for legendary dwarves), silver war hammers are ab
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills      | Items            |
+|                 |        |             |                  |
 |-----------------|--------|-------------|------------------|
+| Side & Creature | Number | Skills      | Items            |
 | \#1: Human male | 12     | -no skills- | Silver mace      |
 | \#2: Human male | 12     | -no skills- | Silver warhammer |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Macemen | 0 | -N/A- | -N/A- | Getting their skulls jammed trough their heads |
 | \#2: Warhammermen | 12 | Some broken hands and fingers. Some smashed open. A few bruises. Some cuts. | 1 Unconscious | -N/A- |
 
+\
 **Notes:** I want to figure out how good the different blunt weapons are in relation to each other. For now I will test with silver only. I placed them in two groups on different z-levels with 6 from each side in each group. Each side was ordered in lines (parallel to the y axis) with no space between the individuals. The lines from each side was place right next to each other in each group. Group one had the 6 macemen on left (on the x axis) and the 6 hammermen on the right. Group two had mace on the right and hammer on left.
 
 **Tester's conclusion:**
@@ -291,16 +352,19 @@ Leaves little doubt that in case of naked men fighting each other with warhammer
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items              |
+|                 |        |        |                    |
 |-----------------|--------|--------|--------------------|
+| Side & Creature | Number | Skills | Items              |
 | \#1: Dwarves    | 1      | None   | Copper Battle Axe  |
 | \#2: Dwarves    | 1      | None   | Crossbow (No ammo) |
 
 **Results:**
 
-| Side & Creature | Rounds won | Injury level  | Worse Health tags | Cause of death   |
-|-----------------|------------|---------------|-------------------|------------------|
-| \#1: Dwarves    | 4          | Mild Bruising | None              | Torn Brain \|-ea |
+|                 |            |               |                   |                |
+|-----------------|------------|---------------|-------------------|----------------|
+| Side & Creature | Rounds won | Injury level  | Worse Health tags | Cause of death |
+| \#1: Dwarves    | 4          | Mild Bruising | None              | Torn Brain     |
+| \#2: Dwarves    | 1          | Cuts          | None              | Torn Brain     |
 
 **Notes:** I am doing a 1 on 1 with every dwarf weapon to see what weapons are best against what weapons while unskilled. Not counting armor. I will only be recording Injury/Health tags to the winners.
 
@@ -308,16 +372,19 @@ Leaves little doubt that in case of naked men fighting each other with warhammer
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items             |
+|                 |        |        |                   |
 |-----------------|--------|--------|-------------------|
+| Side & Creature | Number | Skills | Items             |
 | \#1: Dwarves    | 1      | None   | Copper Battle Axe |
 | \#2: Dwarves    | 1      | None   | None              |
 
 **Results:**
 
-| Side & Creature | Rounds won | Injury level | Worse Health tags | Cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Dwarves | 5 | Minor to Major Bruising & Cuts, one lost ear | Nauseous, Pale, Pain | None \|-ea |
+| Side & Creature | Rounds won | Injury level | Worse Health tags | Cause of death |
+| \#1: Dwarves | 5 | Minor to Major Bruising & Cuts, one lost ear | Nauseous, Pale, Pain | None |
+| \#2: Dwarves | 0 | -N/A- | -N/A- | 3 Torn Brain, 2 Bleeding |
 
 **Notes:** This is to see if the one kill was pure luck or if unarmed was better.
 
@@ -325,16 +392,19 @@ Leaves little doubt that in case of naked men fighting each other with warhammer
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items             |
+|                 |        |        |                   |
 |-----------------|--------|--------|-------------------|
+| Side & Creature | Number | Skills | Items             |
 | \#1: Dwarves    | 1      | None   | Copper Battle Axe |
 | \#2: Dwarves    | 1      | None   | Copper Mace       |
 
 **Results:**
 
-| Side & Creature | Rounds won | Injury level | Worse Health tags | Cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Dwarves | 2 | 1 with no injuries, 1 with upper leg bruising | -N/A- | 1 Suffocation, 1 Torn Brain, 1 Punch out. \|-ea |
+| Side & Creature | Rounds won | Injury level | Worse Health tags | Cause of death |
+| \#1: Dwarves | 2 | 1 with no injuries, 1 with upper leg bruising | -N/A- | 1 Suffocation, 1 Torn Brain, 1 Punch out. |
+| \#2: Dwarves | 3 | 1 with no injuries, 1 with upper arm bruising, 1 with moderate lower arm/hand cuts & disarmed | -N/A- | 2 Disarmed & Bleed out. |
 
 **Notes:** Decided to get in detail for injuries since it was pretty evenly matched.
 
@@ -348,35 +418,41 @@ Leaves little doubt that in case of naked men fighting each other with warhammer
 
 **Initial setup:**
 
-| Side & Creature    | Number | Skills      | Items           |
+|                    |        |             |                 |
 |--------------------|--------|-------------|-----------------|
+| Side & Creature    | Number | Skills      | Items           |
 | \#1: Speardwarves  | 9      | -no skills  | iron spear      |
 | \#2: Hammerdwarves | 9      | -no skills- | iron war hammer |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Speardwarves | 6 | Minor injuries | None | Brain damage \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Speardwarves | 6 | Minor injuries | None | Brain damage |
+| \#2: Hammerdwarves | 0 | Brain damage |  |  |
 
-Notes : Each team was in a 3x1 line. Spears won easily. Now let's try better weapons and skill.
+Notes : Each team was in a 3x1 line. Spears won easily. Now let's try better weapons and skill.
 
 **Times run:** 1
 
 **Initial setup:**
 
-| Side & Creature    | Number | Skills                  | Items             |
+|                    |        |                         |                   |
 |--------------------|--------|-------------------------|-------------------|
+| Side & Creature    | Number | Skills                  | Items             |
 | \#1: Speardwarves  | 9      | High Master Speardwarf  | steel spear       |
 | \#2: Hammerdwarves | 9      | High Master Hammerdwarf | silver war hammer |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Speardwarves | 0 | Brain damage \|-ea | \#2: Hammerdwarves | 5 |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Speardwarves | 0 | Brain damage |  |  |
+| \#2: Hammerdwarves | 5 | 3 had multiple fractures, 1 had multiple fractures and a lost hand, 1 had nothing | 1 pale |  |
 
-Notes : Each team was right next to each other, no more stacking dwarves like before. Hammerdwarves now won.
+Notes : Each team was right next to each other, no more stacking dwarves like before. Hammerdwarves now won.
 
 ### 3 v 1 Mail Shirts (tested by: Waladil)
 
@@ -384,16 +460,19 @@ Notes : Each team was right next to each other, no more stacking dwarves like be
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarves | 12 | Grand Master Armor User | Steel gauntlets/greaves/high boots/helm, iron battle axe, 1 iron mail shirt |
 | \#2: Dwarves | 12 | Grand Master Armor User | Steel gauntlets/greaves/high boots/helm, iron battle axe, 3 iron mail shirts |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Dwarves | 0 |  |  | Suffocation/Bleeding out \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 0 |  |  | Suffocation/Bleeding out |
+| \#2: Dwarves | 12 | Minor cuts and bruises | 3 faint, 1 pale |  |
 
 So I've been wanting to test the common knowledge that more armor layering = better, so this is the test I set up. Both sides were identical, except that one team wore three mail shirts rather than one. Using steel as the rest of the armor and iron axes ensured that everything important happened around the iron armor. The battle was slow, almost every hit being stopped by armor. Over time, team one's thinner armor let more blows through, and they eventually bled out or suffocated from lung damage. This test proved that wearing more armor increases protection. However...
 
@@ -401,20 +480,25 @@ So I've been wanting to test the common knowledge that more armor layering = bet
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarves | 12 | None | Steel gauntlets/greaves/high boots/helm, iron battle axe, 1 iron mail shirt |
 | \#2: Dwarves | 12 | None | Steel gauntlets/greaves/high boots/helm, iron battle axe, 3 iron mail shirts |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Dwarves | 9 | Minor cuts and bruises | Some faint/pale \|-ea | \#2: Dwarves |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 9 | Minor cuts and bruises | Some faint/pale |  |
+| \#2: Dwarves | 0 |  |  | Suffocation/Bleeding out |
 
 This test was very similar to the last, except that the skill of armor user was set to zero. And that reversed the results. While team two was more protected, they were also considerably slower (606 v. 788) and I think they were also quicker to over-exert and pass out.
 
 Overall results: The added armor is only useful at higher levels of training. I didn't calibrate enough to find the actual midpoint, but it seems that the added layers drop off in efficiency and are not as useful, potentially being harmful if the user is unable to handle the weight.
+
+\
 
 ### Steel vs. Wooden Shield (tested by: apostle602)
 
@@ -422,16 +506,19 @@ Overall results: The added armor is only useful at higher levels of training. I 
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarves | 1\*11 | Proficient Fighter, Proficient Swordsdwarf, Proficient Shield User, Proficient Armor User | Full adamantine armor set, iron short sword, steel shield |
 | \#2: Dwarves | 1\*11 | Proficient Fighter, Proficient Swordsdwarf, Proficient Shield User, Proficient Armor User | Full adamantine armor set, iron short sword, cedar shield |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Dwarves | 3 | 2 unscratched, 1 missing both hands and a foot | 1 pale | Bleeding out \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Dwarves | 3 | 2 unscratched, 1 missing both hands and a foot | 1 pale | Bleeding out |
+| \#2: Dwarves | 9 | Mostly unscratched, 1 with hands cut open | 1 unconscious | Bleeding out |
 
 This is a test to determine what would be the best material for shields. Tested with 22 independent dwarves at different places of the arena, it was a long battle and in the end one of the winner dwarves found his way to a still fighting couple, hence total 12 alive dwarves at the end.
 
@@ -447,17 +534,19 @@ So at the end the only important parameter for a shield is its weight.
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 1 | Grand Master Axedwarf, Grand Master Dodger, Grand Master Armor User | Full steel armor set (3 mail shirts), adamantine battle axe |
 | \#2: Dwarf | 1 | Grand Master Speardwarf, Grand Master Dodger, Grand Master Armor User | Full steel armor set (3 mail shirts), adamantine spear |
-|  |  |  |  |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Axedwarf | 0, 1 | Severed hand, Torn ligaments and tendons, Severed Nerves, Fractured bones, Opened arteries | -N/A-, -no tags- | Bleeding out \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Axedwarf | 0, 1 | Severed hand, Torn ligaments and tendons, Severed Nerves, Fractured bones, Opened arteries | -N/A-, -no tags- | Bleeding out |
+| \#2: Speardwarf | 1, 0 | Severed limbs, Torn muscle, Severed Nerves, Open artery | -no tags-, -N/A- | Bleeding out |
 
 **Notes:** In the first round, speardwarf got his weapon stuck several times. Axedwarf attacked later, and only twice, missing both times. Speardwarf devastated axedwarf in this round. In the second round, axedwarf charges and topples speardwarf initially, then severs several limbs. Speardwarf landed only one bruising hit. Both made many misses. Axedwarf devastated speardwarf in this round. The victor barely got injured at all in both rounds, and the loser gets mutilated. Because of these polarising results, two rounds were deemed sufficient.
 
@@ -469,17 +558,19 @@ In conclusion, both axes and spears are edged weapons that give a great advantag
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 1 | Grand Master Axedwarf, Grand Master Dodger, Grand Master Armor User | Full adamantine armor set (3 mail shirts), adamantine battle axe |
 | \#2: Dwarf | 1 | Grand Master Speardwarf, Grand Master Dodger, Grand Master Armor User | Full adamantine armor set (3 mail shirts), adamantine spear |
-|  |  |  |  |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Axedwarf | 1 | -no injuries- | -no tags- | -N/A- \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Axedwarf | 1 | -no injuries- | -no tags- | -N/A- |
+| \#2: Speardwarf | 1 | -no injuries- | -no tags- | -N/A- |
 
 **Notes:** Lots of misses. Every attack that hit got deflected by the armor.
 
@@ -491,17 +582,19 @@ Both axes and spears appear pretty useless against equal or better material armo
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 3 | Grand Master Axedwarf, Grand Master Dodger, Grand Master Armor User | Full steel armor set (3 mail shirts), adamantine battle axe |
 | \#2: Dwarf | 3 | Grand Master Speardwarf, Grand Master Dodger, Grand Master Armor User | Full steel armor set (3 mail shirts), adamantine spear |
-|  |  |  |  |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
-| \#1: Axedwarf | 0, 1 | Torn ligaments and tendons, Severed nerves, Fractured bones, Opened arteries, Torn internal organs | -N/A-, -no tags- | Shattered skull and torn brain \|-ea |
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Axedwarf | 0, 1 | Torn ligaments and tendons, Severed nerves, Fractured bones, Opened arteries, Torn internal organs | -N/A-, -no tags- | Shattered skull and torn brain |
+| \#2: Speardwarf | 3, 0 | Torn muscle, Severed nerve, Opened arteries, Torn internal organs, Severed limbs | -no tags-, -N/A- | Bleeding out |
 
 **Notes:** Lots of misses again, but relatively less. Though the first fight was concluded with speardwarves ganging up on the surviving axedwarves, in each individual fight from the start, speardwarves dominated. In the second fight, the surviving axedwarf was moderately injured to two limbs. Each individual fight was dominated by one side. Speardwarf kills were faster.
 
@@ -513,15 +606,17 @@ Though again polarizing, these results do show that axes and spears are approxim
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 5 | Proficient armor user, Proficient Dodger, Proficient Axedwarf | full iron armor (with mail shirt), iron axe |
 | \#2: Dwarf | 5 | Proficient armor user, Proficient Dodger, Proficient Swordsdwarf | full iron armor (with mail shirt), iron sword |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Axedwarf | 0, 3, 1, 4 | Torn muscle, Severed nerve, Opened arteries, Severed limbs, Missing Limbs | -N/A-; Pale, Unconscious; Pale; Pale, Unconscious | Bled to death |
 | \#2: Swordswarf | 5, 0, 0, 0 | Torn muscle, Severed nerve, Opened arteries, Severed limbs, Missing Limbs | Pale, -N/A- | Bled to death |
 
@@ -535,14 +630,19 @@ Third time last axedwarf actually fall into martial trance and finished three re
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 5 | Adequate in all relevant skills | Full iron armor including shield, iron battle axe |
 | \#2: Dwarf | 5 | Adequate in all relevant skills | Full iron armor including shield, iron short sword |
 
 **Results:**
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+| \#1: Axedwarves | 2 | Severed limbs / Bruised internal organs, mangled body parts | Tired, Extreme Pain, Pale | Bled to death |
+| \#2: Swordsdwarves | 0 | NA | NA | Head smashed by shield bash |
 
 **Notes:** In both tests, all 5 swordsdwarves were killed by a single axedwarf after he lost his weapon arm and began favoring shield bashing attacks. No axe attacks appeared to have caused major injury.
 
@@ -554,15 +654,17 @@ Third time last axedwarf actually fall into martial trance and finished three re
 
 **Initial setup:**
 
-| Side & Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Side & Creature | Number | Skills | Items |
 | \#1: Dwarf | 5 | Adequate in all relevant skills | Full leather armor, wooden shield, iron battle axe |
 | \#2: Dwarf | 5 | Adequate in all relevant skills | Full leather armor, wooden shield, iron short sword |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Axedwarves | 0, 0, 4, 0 | Severed limbs, mangled body parts | Extreme Pain, Pale | Beheading or bisection |
 | \#2: Swordsdwarves | 5, 5, 0, 5 | Severed limbs, mangled body parts | Extreme Pain, Pale | Beheading or bisection |
 
@@ -576,15 +678,17 @@ Third time last axedwarf actually fall into martial trance and finished three re
 
 **Initial setup:** 2 groups of 8 dwarves 7 tiles away
 
-| Side & Creature | Number | Skills                          | Items          |
+|                 |        |                                 |                |
 |-----------------|--------|---------------------------------|----------------|
+| Side & Creature | Number | Skills                          | Items          |
 | \#1: Dwarf      | 8      | Adequate in all relevant skills | NOTHING        |
 | \#2: Dwarf      | 8      | Adequate in all relevant skills | 2 wooden maces |
 
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: UNARMED MASTERS | 7 ,8 | broken bones, bruising | unconscious nocious | head shot |
 | \#2: Master Maces | 0 | extreamley dead | dead | head explosion |
 
@@ -594,15 +698,18 @@ Third time last axedwarf actually fall into martial trance and finished three re
 
 TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests with 2 tiles between them
 
-| Side & Creature        | Number    | Skills                          | Items   |
+|                        |           |                                 |         |
 |------------------------|-----------|---------------------------------|---------|
+| Side & Creature        | Number    | Skills                          | Items   |
 | \#1: Dwarf             | See ABOVE | Adequate in all relevant skills | NOTHING |
 | \#2: Giant Cave Spider | 2         | NOTHING                         | NOTHING |
 
+\
 **Results:**
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: left overs of last 2 tests | 6, 8 | no change | no change | Bleeding |
 | \#2: Giant Cave Spider | 0 | extreamley dead | dead | Brain bruised |
 
@@ -620,8 +727,9 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Information:**
 
-| Creature | Number | Skills | Items |
+|  |  |  |  |
 |----|----|----|----|
+| Creature | Number | Skills | Items |
 | 1solo-s: Dwarf | 1 | Master in Fighter, Hammer, Dodge, Shield and Armor user | Full set of steel armor plus a steel shield, with a silver war hammer |
 | 1solo-g: Dwarf | 1 | Master in Fighter, Hammer, Dodge, Shield and Armor user | Full set of steel armor plus a steel shield, with a gold war hammer |
 | 1group-s: Dwarf | 5 | Master in Fighter, Hammer, Dodge, Shield and Armor user | Full set of steel armor plus a steel shield, with a silver war hammer |
@@ -637,8 +745,9 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Results:**
 
-| Winners | Win percentage | Sample size | Comments |
+|  |  |  |  |
 |----|----|----|----|
+| Winners | Win percentage | Sample size | Comments |
 | 1solo-g: Duelists using Gold War Hammer | 56.47% | 1792 | Slight but consistent edge (more adequately flat) for gold hammers, it is reasonable to estimate gold's superiority over silver to be within 3-8% range. |
 | 1group-g: Team of 5 using Gold War Hammer | 55.3% | 168 | Borderline standard error, more tests are needed. Duel results suggest a slight advantage for gold hammers. |
 | 2solo-s: Duelists using Silver War Hammer | 53.57% | 1792 | Slight advantage for silver hammers, sample size too small and falls within standard error. For practical intents and purposes copper is equal to silver when used against unarmored opponents. |
@@ -648,6 +757,8 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Results:** Based on the above 3 tests there's a slight ~5-6% advantage of gold war hammers over silver and by extension copper ones. There is no significant advantage of silver over copper against unarmored and ironclad opponents and whatever advantage there might be it falls within mean error range and requires a bigger sample size. I hope someone found this useful, I sure did when I was doing the tests out of curiosity. In the future I'm planning to include platinum hammers, adamantine armors and increasing the sample size of all tests.
 
+\
+
 ### Scourge versus Whip (Tested By Admiral Obvious)
 
 **Test description:** Fiddling around in the arena after installing DF on a public PC which is wiped daily. Attempting to determine which weapon is more effective, and why. Unarmored targets were used for this test. A separate test set will/should be make with armored specimens.
@@ -656,13 +767,15 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Initial setup:** Single unskilled human, versus unskilled human, given weapons. Test saved prior to start, and restarted after each result.
 
-| Side & Creature | Number | Skills      | Items                  |
+|                 |        |             |                        |
 |-----------------|--------|-------------|------------------------|
+| Side & Creature | Number | Skills      | Items                  |
 | \#1: Human Male | 1      | -no skills- | Iron Whip, no armor    |
 | \#2: Human Male | 1      | -no skills- | Iron Scourge, no armor |
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Human Male | 1 | Chipped Bones | Tired, Extreme Pain | Passing out from broken limb, followed up by head cave in. |
 | \#2: Human Male | 9 | None | Tired | Upper spine shattered in the one instance of death, suffocation. |
 
@@ -674,13 +787,15 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Initial setup:** Single unskilled human, versus unskilled human, given weapons. Test saved prior to start, and restarted after each result.
 
-| Side & Creature | Number | Skills      | Items                        |
+|                 |        |             |                              |
 |-----------------|--------|-------------|------------------------------|
+| Side & Creature | Number | Skills      | Items                        |
 | \#1: Human Male | 1      | -no skills- | Adamantine Whip, no armor    |
 | \#2: Human Male | 1      | -no skills- | Adamantine Scourge, no armor |
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Human Male | 0 | Sensory and motor nerves severed, lots of parts cut open. | Pale, Severe Bleeding | Crippled due to loss of motor ability, bones almost never damaged. Bleeds to death on every test. |
 | \#2: Human Male | 10 | Bruising, occasional broken fingers and toes. | Tired, Pain | Reset of the universe. |
 
@@ -692,124 +807,18 @@ TEST#2 **Times run:** 2 **Initial setup:** The remains of the previous tests wit
 
 **Initial setup:** Single unskilled human, versus unskilled human, given weapons. Test saved prior to start, and restarted after each result.
 
-| Side & Creature | Number | Skills      | Items                      |
+|                 |        |             |                            |
 |-----------------|--------|-------------|----------------------------|
+| Side & Creature | Number | Skills      | Items                      |
 | \#1: Human Male | 1      | -no skills- | Platinum Whip, no armor    |
 | \#2: Human Male | 1      | -no skills- | Platinum Scourge, no armor |
 
-| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
+|  |  |  |  |  |
 |----|----|----|----|----|
+| Side & Creature | Survived | Injury level | Health tags | Most common cause of death |
 | \#1: Human Male | 6 | Many cuts, and broken/fractured bones. | Pale, Severe Bleeding, Severe Pain | Typical death caused by bruising of the brain. |
 | \#2: Human Male | 4 | Either completely unharmed, or completely crippled. | Tired, Trouble Breathing | Head "explodes into gore" usually. One other death was caused by ribs puncturing the heart causing a bleedout. |
 
-**Results:** This was a far fairer fight, I assume if I run the test more, the results would average out to be nearly equal. Whip impacts are absolutely devastating, in many instances involving the total collapse of the impacted area. The Scourge is also equally dangerous, but with much less one shot potential, and a quite high tendency to chip, and break bones. The Scourge is inferior in this case compared to the whip, but this is made up with an apparent higher attack frequency.
-
-# DF 2018 (v0.44.09) Tests
-
-## Unarmored Peasant Best Weapon Test (Tested by: RoyalAssassin3)
-
-**Test description:** My goal in this series of test is to identify the “best” natively producible weapons for random unskilled unarmored peasants. This might be used to stockpile the “best” weapons around the base that can be grabbed in an emergency situation where enemies have breached the fortress and you need to start conscripting everyone to grab something and fight. I did not test maces because previous tests (by hostergaard) have established that maces are in all respects worse versions of war hammers. I also did not test crossbows because they require more finesse to be effective, in close range cells, like my testing environment (or a goblin breach of the main fortress), they are pretty much just glorified clubs. I used iron weapons to simulate the best goblins. After a few slow and tedious tests, I created a modified arena with 20 adjacent 5x12 dueling cells (enough space to dodge and maneuver) with the combatants starting 4 paces apart. Injury Level, Health tags, and Cause of death data were too tedious to tabulate on this scale and so have been excluded.
-
-### Unarmed v. Short Sword
-
-**Test description:** Baseline test. If all is right in the world unarmed unskilled peasants should get slaughtered by swords.
-
-**Times run:** 25
-
-| Side & Creature    | Number | Skills      | Items            |
-|--------------------|--------|-------------|------------------|
-| \#1: Unarmed Dwarf | 1      | -no skills- | Unarmed          |
-| \#2: Sword Dwarf   | 1      | -no skills- | Iron Short Sword |
-
-| Side & Creature    | Wins (ties)      | Percentage Win (ties) |
-|--------------------|------------------|-----------------------|
-| \#1: Unarmed Dwarf | 0 wins (0 ties)  | 0% (0% ties)          |
-| \#2: Sword Dwarf   | 25 wins (0 ties) | 100% (0% ties)        |
-
-**Results:** Unarmed Peasants predictably slaughtered by armed peasants
-
-### Unarmed v. Hammer
-
-**Test description:** Gitaxias in a prior test found that unarmed was superior to wooden maces. Could unarmed peasants be better than Warhammer equipped peasants? Perhaps the warhammerers would get exhausted and pass out before doing enough damage with their inept swings?
-
-**Times run:** 25
-
-| Side & Creature    | Number | Skills      | Items          |
-|--------------------|--------|-------------|----------------|
-| \#1: Unarmed Dwarf | 1      | -no skills- | Unarmed        |
-| \#2: Hammer Dwarf  | 1      | -no skills- | Iron Warhammer |
-
-| Side & Creature    | Wins (ties)      | Percentage Win (ties) |
-|--------------------|------------------|-----------------------|
-| \#1: Unarmed Dwarf | 5 wins (9 ties)  | 20% (36% ties)        |
-| \#2: Hammer Dwarf  | 11 wins (9 ties) | 44% (36% ties)        |
-
-**Results:** Close, slight edge to hammer. Two stalemates ended with both dead, 7 both sides passing out.
-
-### Axe v. Sword
-
-**Test description:** We already established above that swords \> warhammers vs. unarmored. But what about swords v. axes? I read axes have a larger cutting effect. Perhaps that will prove advantageous against unarmored peasants?
-
-**Times run:** 25
-
-| Side & Creature  | Number | Skills      | Items            |
-|------------------|--------|-------------|------------------|
-| \#1: Axe Dwarf   | 1      | -no skills- | Iron Battleaxe   |
-| \#2: Sword Dwarf | 1      | -no skills- | Iron Short Sword |
-
-| Side & Creature  | Wins (ties)      | Percentage Win (ties) |
-|------------------|------------------|-----------------------|
-| \#1: Axe Dwarf   | 10 wins (1 ties) | 40% (4% ties)         |
-| \#2: Sword Dwarf | 14 wins (1 ties) | 56% (4% ties)         |
-
-**Results:** Close, slight edge to sword.
-
-### Sword v. Spear
-
-**Test description:** The best weapon tournament continues with the previous round’s winner (swords) facing the challenger (spears). I expect that swords will be superior with their cutting effect.
-
-**Times run:** 25
-
-| Side & Creature  | Number | Skills      | Items            |
-|------------------|--------|-------------|------------------|
-| \#1: Sword Dwarf | 1      | -no skills- | Iron short sword |
-| \#2: Spear Dwarf | 1      | -no skills- | Iron spear       |
-
-| Side & Creature  | Wins (ties)      | Percentage Win (ties) |
-|------------------|------------------|-----------------------|
-| \#1: Sword Dwarf | 13 wins (0 ties) | 52% (0% ties)         |
-| \#2: Spear Dwarf | 12 wins (0 ties) | 48% (0% ties)         |
-
-**Results:** Although swords won, but this is really too close to call. I’m calling this a tie.
-
-### Hammer v. Spear
-
-**Test description:** Hammer performed pretty poorly vs. unarmed. Was that a fluke? I decided to test vs. the spear which was pretty much the same as the sword so far.
-
-**Times run:** 25
-
-| Side & Creature   | Number | Skills      | Items          |
-|-------------------|--------|-------------|----------------|
-| \#1: Hammer Dwarf | 1      | -no skills- | Iron Warhammer |
-| \#2: Spear Dwarf  | 1      | -no skills- | Iron spear     |
-
-| Side & Creature   | Wins (ties)      | Percentage Win (ties) |
-|-------------------|------------------|-----------------------|
-| \#1: Hammer Dwarf | 4 wins (1 ties)  | 16% (4% ties)         |
-| \#2: Spear Dwarf  | 20 wins (1 ties) | 80% (4% ties)         |
-
-**Results:** Clear win for Spears (and presumably swords). Untrained peasants shouldn’t be wielding hammers vs. unarmored enemies.
-
-### Pick v. Spear
-
-**Test description:** Picks are often overlooked, but very “dwarfy.” I don’t expect these to fare well vs. a military weapon.
-
-**Times run:** 35
-
-| Side & Creature  | Number | Skills      | Items      |
-|------------------|--------|-------------|------------|
-| \#1: Pick Dwarf  | 1      | -no skills- | Iron Pick  |
-| \#2: Spear Dwarf | 1      | -no skills- | Iron spear |
 
 ---
-⚠️ Conteúdo truncado (95880 bytes = ~23970 tokens). Para o artigo completo, visite [Military testing](https://dwarffortresswiki.org/index.php/Military_testing).
+*Parte 1 de 3 de «Military testing». Demais partes em arquivos `...-part-{1..3}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Military_testing*

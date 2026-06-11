@@ -1,16 +1,18 @@
 # Design strategies
 
-> Fonte: [Design strategies](https://dwarffortresswiki.org/index.php/Design_strategies) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Design strategies](https://dwarffortresswiki.org/index.php/Design_strategies) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 There are at least three basic factors to consider when designing your fort.
 
-- **Security:** Every fort needs some basic security measures. Without them you won't survive the first serious kobold attack, much less a full-blown goblin siege. These include basic things like digging and using construction to direct invaders, setting up traps to injure or capture them, as well as setting up burrows to keep vulnerable dwarves in safer areas or to keep troublemakers away from civilized folk.
+- **Security:** Every fort needs some basic security measures, otherwise you won't survive the first serious kobold attack, much less a full-blown goblin siege.
 - **Efficiency:** Whether hauling rocks, making a booze run, or just checking the contents of a cabinet, dwarves do a lot of walking. A good fortress layout -- especially the proper placement of workshops and stockpiles -- can significantly reduce the time your dwarves spend walking.
 - **Aesthetics:** Hey, everybody wants a fortress that looks good.
 
-In addition to the considerations above, it's also important to remember that long-term design strategies can easily be disrupted by the discovery of underground terrain features. Don't plan *too* far ahead, as you might need to adapt to unforeseen obstacles. As a beginner try to focus on modular and compact designs as they're the most easily adapted to new situations.
+In addition to the considerations above, it's also important to remember that long-term design strategies can easily be disrupted by the discovery of underground terrain features. Don't plan *too* far ahead, as you might need to adapt to unforeseen obstacles.
 
-Also, there are several design idioms of common usage like pump stacks.
+Also, there are several design idioms of common usage like pump stacks and water reactors.
 
 ## Security
 
@@ -20,7 +22,9 @@ The single most important thing to remember is that in an emergency, your dwarve
 
 ### Walls
 
-Walls are, by far and away, the single most powerful tool you have to combat enemies. Walls are currently invincible against any known force but the mighty dwarven pick. Putting a wall between your vulnerable and valuable civilians (and the others, too, why not?) and the things trying to kill them is the highest priority you have.
+A steel wall blocking a corridor
+
+Walls are a very powerful tool to protect your fortress against all but the most determined attackers. Putting a wall between your vulnerable and valuable civilians (and the others, too, why not?) and the things trying to kill them is one of the highest priorities you have. Following recent advances in Goblin siege technology there are reports of attackers building ramps to overcome walls and even destroying the walls themselves.
 
 Building walls can take time and micromanagement, but building a maze (and stuffing it with traps) is a good way to slow invaders down, especially if you get forewarning from scouts. The longer invaders take to reach you, the more time you have to get your militia in place. However, since the advent of climbing, keep in mind that just having 1-z-level walls are not enough. Place fortifications at the tops to stop climbers.
 
@@ -35,6 +39,8 @@ Have a way to lock down your fortress. In the event of an attack by hostiles you
 For small forts, this could be as simple as placing doors at all the entrances to your fort. Doors can be locked instantly in an emergency. Don't rely on doors alone for security, though, as you'll eventually encounter enemies that can break down doors and pick locks.
 
 Doors are important even within your fortress. Tantruming dwarves are the bane of every established fort. Having a way to segregate your dwarves so that they don't run into a dwarf on a rampage can save whole forts, much less individual lives. Doors can also stop flooding, and act as bulkheads that isolate breaches if you accidentally flood your fort. Having secondary hallways to route around problem areas is also a sound strategy for making doubly sure your fortress can survive a breach of defenses. If everything in your fort must travel through a single hallway or central staircase, anything that reaches that point can almost be guaranteed to kill your fort.
+
+A bridge, and a lever connected to it
 
 For more security, place drawbridges at all the entrances. You don't need a moat; the bridge itself is sufficient since it functions as a wall when raised. Just be sure to connect it to a lever that your dwarves can access quickly *and safely* in an emergency. Unfortunately, even drawbridges can be rendered inoperable in rare circumstances....
 
@@ -64,6 +70,8 @@ A caravan needs a 3-tile-wide entrance (preferably a road where you aren't placi
 
 ### Traps
 
+A serrated disc trap
+
 Traps are a great way to protect your fort from small groups of attackers. When designing your fort, think about where you want to place traps. Choke points at major entrances (including entrances to the caverns) make good trap locations. However, be warned that some enemies are immune to traps....
 
 Spikes/spear traps set to levers you order dwarves to repeatedly pull or attach to a repeater are capable of hurting creatures that can avoid traps, but require great stretches of killzone to operate effectively.
@@ -78,7 +86,7 @@ Many players like to design their forts with a militia staging area at the main 
 
 If you want to rely on marksdwarves, consider fortress entrance designs that favor their method of attack. Make the only entrance a snaking series of bridges that force invaders to zig-zag in front of your marksdwarves. If that doesn't provide enough time to kill them all, stack several floors of snaking bridges, and let your marksdwarves simply climb a couple stairs to get to the next killzone between rounds. If you rely heavily on marksdwarves, remember that sieges can also contain elite archers that fire through fortifications. Prepare a 1-tile-wide drawbridge "shutter" that can block sight in front of the fortifications to protect vulnerable marksdwarves or allow for recovery of the wounded if you want to try out-shooting an elite archer.
 
-Some players also like to place a training barracks near the entrance to the fort so that the militia can quickly respond to attackers. Putting it outside is even better as it also prevents cave adaption on your soldiers which can give you an edge in a siege, as more serious cases of cave adaption severely cut the speed of the affected dwarf. If you don't let your military dwarves outside that often, let them fight in the shade; Make your staging area underground, and just wait for the siege to roll into your staging area, instead.
+Some players also like to place a training barracks near the entrance to the fort so that the militia can quickly respond to attackers. Putting it outside is even better as it also prevents cave adaption on your soldiers which can give you an edge in a siege, as more serious cases of cave adaptation severely cut the speed of the affected dwarf. If you don't let your military dwarves outside that often, let them fight in the shade; Make your staging area underground, and just wait for the siege to roll into your staging area, instead.
 
 Staging areas can also come with some extra help - a cage filled with every random potentially dangerous creature you don't need pastured can, when released, provide a massive (and potentially hilarious) distraction. Even a barrage of 40 kittens can bog down invaders enough that a lone swordsdwarf can fight enemies one-by-one.
 
@@ -105,6 +113,8 @@ There are a few other things to consider for basic fortress efficiency:
 - Blocks can substitute for raw rock for construction purposes, but are much lighter. If you are digging in a depth of 100z and need many rocks for building structures at the surface, you should set up a rock storage and a mason´s workshop at 100z to permanently make blocks, and use the blocks for the construction. This is a full-time job for one mason, but the speed of the construction dwarves is increased a lot.
 
 ## Aesthetics
+
+two symmetrical rooms
 
 Aesthetics are completely subjective, of course, but it's still something you may want to consider when designing your fort.
 

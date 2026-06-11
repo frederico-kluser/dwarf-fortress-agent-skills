@@ -1,8 +1,10 @@
 # Objects
 
-> Fonte: [Objects](https://dwarffortresswiki.org/index.php/Objects) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Objects](https://dwarffortresswiki.org/index.php/Objects) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-The Objects status screen contains four tabs (Artifacts, Symbols, Named objects, and Written content), each of which is a list of special, named, or unique items.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+The **Objects status screen** contains four tabs (Artifacts, Symbols, Named objects, and Written content), each of which is a list of special, named, or unique items.
 
 Each list entry contains the following columns (from left to right):
 

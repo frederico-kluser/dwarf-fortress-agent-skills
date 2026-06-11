@@ -1,6 +1,8 @@
 # Fortress Location
 
-> Fonte: [Fortress Location](https://dwarffortresswiki.org/index.php/Fortress_Location) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Fortress Location](https://dwarffortresswiki.org/index.php/Fortress_Location) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Searching for a good **location** for your fortress is extremely important. If you neglect this, you may find your dwarves dying off from dehydration, starvation or the other dangers that lurk about. Different players consider different sorts of locations to be ideal.
 

@@ -1,12 +1,12 @@
 # Offset Finding Methods
 
-> Fonte: [Offset Finding Methods](https://dwarffortresswiki.org/index.php/Offset_Finding_Methods) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Offset Finding Methods](https://dwarffortresswiki.org/index.php/Offset_Finding_Methods) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 ## Tools
 
 - Process Table Access (i.e. Win32::Process::List in Perl)
 - Memory Access (i.e. Win32::Process::Memory in Perl; ReadProcessMemory in C++)
-- Cheat Engine:
+- Cheat Engine: http://www.cheatengine.org/
 
 ## how to identify version
 
@@ -41,5 +41,3 @@ Find the function using the string "Stocks". It should look like that:
     mov eax, offset
     call something
     cmp offset_economy, 0
-
-\]\] \]\]

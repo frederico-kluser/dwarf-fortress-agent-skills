@@ -1,6 +1,8 @@
 # Villain
 
-> Fonte: [Villain](https://dwarffortresswiki.org/index.php/Villain) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Villain](https://dwarffortresswiki.org/index.php/Villain) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Villain** is a catch-all term for all intelligent historical figures with nefarious intent, making use of intrigue to plot more-or-less undercover for a given goal, which may range from rather prosaic (artifact theft, or abstract embezzling) to extremely nefarious (taking over the world with an undead empire). Likewise, the means and NPCs involved may vary accordingly. In the current version, it is not possible for one's adventurer (*or adventuring party*) to become a villain (or *villainous organization*), though they may attempt to expose them.
 
@@ -20,7 +22,7 @@ Starting wars involves corrupting leaders, advisors and generals associated to c
 
 ### Supernatural
 
-Necromancers may plot to take over the world - up-and-coming necromancers may raid old battlefields or infiltrate cities for corpses to build up their army, but once the necromancer is feeling powerful enough, they usually attack the outlying villages of a market town, and if the 'snowball' gets big enough, the market town as well, all in the same invasion during a given year.
+Necromancers may plot to take over the world – up-and-coming necromancers may raid old battlefields or infiltrate cities for corpses to build up their army, but once the necromancer is feeling powerful enough, they usually attack the outlying hamlets of a market town, and if the "snowball" gets big enough, the market town as well, all in the same invasion during a given year.
 
 Mummies store artifacts in tombs, and if worldgen thieves go for them, this can cause disturbances, as in adventure mode. The resulting mummies form a grudge against the thieves, but also generally take up necromantic and villainous ways.
 

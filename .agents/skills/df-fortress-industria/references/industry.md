@@ -1,6 +1,10 @@
 # Industry
 
-> Fonte: [Industry](https://dwarffortresswiki.org/index.php/Industry) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Industry](https://dwarffortresswiki.org/index.php/Industry) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Industry cheat sheet. Don't let the teacher know you have this.
 
 All dwarves love money, and a complete **industry** in all its glory is the easiest way to make lots and lots of money.
 
@@ -9,6 +13,8 @@ Traditionally, industries have been broken into primary (resource extraction), s
 Industries can be broken into the following categories. These categories are based on Economy Sectors. Note that the end products of one industry are often the inputs to another, and some industries can fit into more than one category.
 
 ### Primary industries
+
+A still next to a farm plot
 
 - Wood industry: Growing and cutting wood to produce items, including furniture and fuel. To start wood crafting, a carpenter's workshop is needed. Wood can be used for making pretty much anything, and is the only material that can be used to create beds in particular, but note that wooden weapons will become training weapons instead (and danger rooms are no longer very viable) and that wood is definitely not magma-safe (obvious). Those tree-hugging elves will whine and send a diplomat begging you to stop if you chop too many trees down.
 - Stone industry: Exploration and mining of stone to produce buildings and items. Stone is a versatile material and can be used to make many types of furniture, crafts, and other useful objects, or turned into blocks and used as a cheap and abundant material for constructions to protect your squishier dwarves. Sure, constructions of any material are all but indestructible to invaders, but a stone fortress is certainly the dwarfy option.
@@ -20,6 +26,8 @@ Industries can be broken into the following categories. These categories are bas
 
 ### Secondary industries
 
+A craftsdwarf workshop. They produce crafts and trinkets which can be traded in a Depot.
+
 - Alcohol industry: The production of alcohol to keep dwarves hydrated and content. Dwarves drink as many times as you blink per day. They are also massive alcoholics, and if you cut their supply of booze they will get very cranky and show withdrawal symptoms. Alcohol is made at the still and can itself be cooked into food. Somehow.
 - Armor industry: Metal, wood, leather, and bone are used to produce armor to keep your dwarves safe. Wood, leather, and bone provide minimal protection, but can suffice early on if a military presence is critical. Metal makes for much more effective armor, and well-crafted steel gear can massively increase the lifespan of your dwarves.
 - Ceramic industry: Clay is used to create moderate quality containers, bricks, crafts, and statues, offering a slightly more complex but slightly more valuable alternative to stone. Kilns are also used to produce gypsum plaster for Healthcare and pearlash for the Glass industry.
@@ -29,7 +37,7 @@ Industries can be broken into the following categories. These categories are bas
 - Furniture industry: Using stone, wood, and metal to produce furniture, primarily for installation in your outpost. Beds are a must to keep dwarves happy, and everyone likes to have their own cabinet and chest. Doors are invaluable for security, many nobles demand proper furniture arrangements, and all of the above can be improved by craftsdwarves to make lavish statue gardens or generally impressive fortress layouts.
 - Glass industry: Sand is used to create several types of glass. Green glass is low value, but can be mass-produced with nothing but fuel and a sand deposit, allowing for a cheap source of furniture, trap components, and gems to train jewelers. With secondary materials, more valuable clear or crystal glass can also be created.
 - Gem industry: Raw gems are cut, some into finished goods, while most are then used to decorate ("encrust") a multitude of items. With a bit of practice, jewelers can greatly improve the quality of goods and furniture with high-value, masterfully-cut gemstones, or add lower-value gems to crafts for trading.
-- Metal industry: Raw ore is refined into metal bars, which may be used for weapons, armor, furniture, and crafts. Prioritize your weapon-grade metals (bronze, steel, iron, etc...) to make weapons and tools. Gold, aluminum and platinum are useful if you want to bump up the value of certain rooms or satisfy your roleplaying needs (gold throne, gold chains that hold the most exotic pets, gold doors leading to your monarch's room, etc...), while several alloys exist for the aesthetic-minded dwarf.
+- Metal industry: Raw ore is refined into metal bars, which may be used for weapons, armor, furniture, and crafts. Prioritize your weapon-grade metals (bronze, steel, iron, etc...) to make weapons and armor. Gold, aluminum and platinum are useful if you want to bump up the value of certain rooms or satisfy your roleplaying needs (gold throne, gold chains that hold the most exotic pets, gold doors leading to your monarch's room, etc...), while several alloys exist for the aesthetic-minded dwarf.
 - Soap industry: The production of soap to be used in healthcare. A few bars of soap can save your dwarves from infection, and even the hairiest of cavern-dwellers enjoy being clean sometimes.
 - Textile industry: Plant fiber, spider silk, and wool/hair thread are woven into cloth to produce clothing, rope, bags, and bandages, and to decorate crafts. Clothing worn by dwarves will degrade over time and result in unhappiness, so being able to produce replacements can be important after the first year or two of a fortress' lifespan, especially when sewn into high-quality garments by experienced clothiers.
 - Extract industry: Vermin and plants can be processed into valuable extracts for export. Most extracts have no real use beyond selling, but they can provide a bit of money in a pinch.
@@ -37,6 +45,8 @@ Industries can be broken into the following categories. These categories are bas
 - Paper industry: Papyrus, cloth plants, or animal hide with milk of lime are processed into paper sheets. These are used for quires and scrolls. Written-on quires and parchments can be bound into a book, allowing your scholars to slowly build up a wonderful library of imported and copied books or hand-written intellectual diatribes.
 
 ### Tertiary industries
+
+A trade depot
 
 - Administration: Dwarves who process work orders, keep the inventory, administer justice, and meet with foreign diplomats. Also good at pulling levers and encountering truly unforeseeable career-altering incidents.
 - Healthcare: Patching up your inevitably-wounded dwarves. With the power of thread, splints, crutches, cloth, soap, and a little dwarven ingenuity, citizens and military dwarves can be saved from injuries that would otherwise cripple them for life (or at the very least, patched up enough to keep hauling your garbage around the fortress).

@@ -1,6 +1,36 @@
 # Crossbowman
 
-> Fonte: [Crossbowman](https://dwarffortresswiki.org/index.php/Crossbowman) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Crossbowman](https://dwarffortresswiki.org/index.php/Crossbowman) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Skill: Crossbowman
+
+Association
+ 
+
+Profession
+Military
+
+Job Title
+Crossbowman
+
+Labor
+None
+
+Tasks
+
+Wielding a crossbow in ranged combat
+
+Workshop
+
+None
+
+Attributes
+
+Agility / Focus / Spatial Sense / Kinesthetic Sense
+
+Prefers iron bolts.
 
 **Crossbowman** is the combat skill associated with using crossbows in battle. Higher skill levels grant better accuracy and a higher rate of fire. Additionally, they significantly reduce the probability of the enemy dodging. A dwarf with this skill is given the name of **marksdwarf**.
 
@@ -20,7 +50,7 @@ It is believed that marksdwarves won't fire through fortifications unless direct
 
 ## Bugs
 
-- Marksdwarves may not grab bolts if there were no bolts available on squad creation.
+- Marksdwarves may not grab bolts if there were no bolts available on squad creation. Bug:0012008
 
 ## See also
 

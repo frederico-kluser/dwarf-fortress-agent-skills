@@ -1,8 +1,8 @@
 # Guide to intelligent wilderness creatures in adventurer mode
 
-> Fonte: [Guide to intelligent wilderness creatures in adventurer mode](https://dwarffortresswiki.org/index.php/Guide_to_intelligent_wilderness_creatures_in_adventurer_mode) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Guide to intelligent wilderness creatures in adventurer mode](https://dwarffortresswiki.org/index.php/Guide_to_intelligent_wilderness_creatures_in_adventurer_mode) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Intelligent Wilderness Creatures** are playable wild animals - any creature with fits into this category. A wilderness creature can be played as long as a population exists in an civilization. Most wilderness creatures are animal people.
+**Intelligent Wilderness Creatures**v0.42.01 are playable wild animals - any creature with [`[LOCAL_POPS_CONTROLLABLE]`](/index.php/Creature_token#LOCAL_POPS_CONTROLLABLE "Creature token") fits into this category. A wilderness creature can be played as long as a population exists in an `[ALL_MAIN_POPS_CONTROLLABLE]` civilization. Most wilderness creatures are animal people.
 
 ### Size
 

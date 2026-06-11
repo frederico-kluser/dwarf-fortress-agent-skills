@@ -1,22 +1,19 @@
 # Machine component
 
-> Fonte: [Machine component](https://dwarffortresswiki.org/index.php/Machine_component) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Machine component](https://dwarffortresswiki.org/index.php/Machine_component) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-**Machines** are an advanced concept in *Dwarf Fortress*, but although they can be infinitely complex, no fundamental part is very complicated. There are several different types of **machine components**, all available from the achine Components screen in the uild menu. These components can be used to create custom-designed **machinery** of more or less complexity, depending on the situation and the player's design.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+**Machines** are an advanced concept in *Dwarf Fortress*, but although they can be infinitely complex, no fundamental part is very complicated. There are several different types of **machine components**, all available from the Machine Components screen in the build menu. These components can be used to create custom-designed **machinery** of more or less complexity, depending on the situation and the player's design.
 
 In the order listed in the machine components sub-menu, these are:
 
-:\* Screw pump
-
-:\* Water wheel
-
-:\* Windmill
-
-:\* Gear assembly
-
-:\* Horizontal and Vertical axle
-
-:\* Rollers
+- Screw pump
+- Water wheel
+- Windmill
+- Gear assembly
+- Horizontal and Vertical axle
+- Rollers
 
 Another important component to most machines are levers, but they are not, technically, "machine components", nor are they needed for many "always on" machine designs. (But a way to turn a machine off quickly, "just in case", is often a good plan.)
 
@@ -28,23 +25,23 @@ Machines are mostly used for pumping water or magma, or running rail systems. So
 
 ### Power generators
 
-Windmills and water wheels are the machine components that provide limited power. Power generators can be chained together using axles or gear assemblies to combine their power along the same power conduit. Additionally, water wheels can be combined by placing them adjacent to one another in parallel, thereby requiring no extra materials to perform the linkage.
+Windmills m and water wheels w are the machine components that provide limited power. Power generators can be chained together using axles or gear assemblies to combine their power along the same power conduit. Additionally, water wheels can be combined by placing them adjacent to one another in parallel, thereby requiring no extra materials to perform the linkage.
 
 ### Uses for power
 
-Currently, the screw pump and the roller are the only machine components that consume power to achieve a purpose. A millstone also requires power to operate, although it is classified as a workshop rather than a machine component.
+Currently, the screw pump s and the roller r are the only machine components that consume power to achieve a purpose. A millstone also requires power to operate, although it is classified as a workshop rather than a machine component.
 
 Screw pumps can also be operated using dwarf labor in place of mechanical power. The millstone likewise has an unpowered alternative, the quern.
 
 ### Power conduits
 
-A gear assembly is used to link multiple machine components together. Additionally, a gear assembly can be linked to levers and pressure plates, which can then be used to disengage the gearbox from any linked items. For example, screw pumps can be switched on and off in this way.
+A gear assembly g is used to link multiple machine components together. Additionally, a gear assembly can be linked to levers and pressure plates, which can then be used to disengage the gearbox from any linked items. For example, screw pumps can be switched on and off in this way.
 
-Axles are used to transport power over a distance. A horizontal axle ( ) transports power within a z-level, while a vertical axle ( ) transports power across z-levels.
+Axles are used to transport power over a distance. A horizontal axle ( h ) transports power within a z-level, while a vertical axle ( v ) transports power across z-levels.
 
 ## Construction
 
-Machine components have two basic states in which they can be built: "stable foundation" or "hanging". This state is visible when looking at the constructed machine with .
+Machine components have two basic states in which they can be built: "stable foundation" or "hanging". This state is visible when looking at the constructed machine with q.
 
 A machine with a "stable foundation" is just what it sounds like; the machine component has been built on solid ground, and so it has a solid base on which to rest. A "hanging" component is not built on solid ground, but instead has been built beside or on top of an existing machine or component. Its only support comes from the adjacent component. This can be daisy-chained, so that it is possible to build machines which have only one component on solid ground, with the rest hanging out into empty space.
 
@@ -72,15 +69,15 @@ The simplest machine use of a mechanism is the trigger, usually a lever. Both le
 
 #### Levers
 
-A mechanism is placed as a lever using uild raps/Levers ever, and then once that's been completed, you go into that "building's" menu ( ) and link it to something else - this takes 2 more mechanisms, one at the object end (first chosen), one at the lever end (second chosen), for a total of 3 mechanisms used: one lever plus a link at each end. Link the same lever to something else and you need 2 more mechanisms, etc. etc. No limit. One pull, they're all activated.
+A mechanism is placed as a lever using build Traps/Levers lever, and then once that's been completed, you go into that "building's" menu ( q ) and link it to something else - this takes 2 more mechanisms, one at the object end (first chosen), one at the lever end (second chosen), for a total of 3 mechanisms used: one lever plus a link at each end. Link the same lever to something else and you need 2 more mechanisms, etc. etc. No limit. One pull, they're all activated.
 
 Main Article: **Lever**
 
 #### Pressure plates
 
-A pressure plate works like a lever, but is based on either being stepped on, or fluid reaching a certain depth. The triggering process (and problems) are the same, but you have some variables you can designate when placing the plate - whether friend/foe triggers it and what size they must be (min and max), or fluid depth (1/7, 2/7, 7/7), etc.
+A pressure plate works like a lever, but is based on either being stepped on, or fluid reaching a certain depth. The triggering process (and problems) are the same, but you have some variables you can designate when placing the plate - whether friend/foe triggers it and what size they must be (min and max), or fluid depth (1/7, 2/7, 7/7, etc.).
 
-A pressure plate is placed with uild raps/Levers ressure plate, and is otherwise identical to the lever - one mechanism, two more to link it, etc.
+A pressure plate is placed with build Traps/Levers pressure plate, and is otherwise identical to the lever - one mechanism, two more to link it, etc.
 
 Main Article: **Pressure plate**
 
@@ -112,7 +109,7 @@ You can run a **pump** manually (or use querns instead of millstones for milling
 
 #### Windmills
 
-A windmill provides 0, 20 or 40 power - it depends on the "wind" on your map, you either have it or you don't - it's constant across a map and time, and you don't know until you build your first windmill. shows you the power for that windmill on your map. Power comes out the bottom, via a gear or axle. Or you can build it directly over the item to be powered - that works too (but there's no way to shut it off then - see below).
+A windmill provides 0, 20 or 40 power - it depends on the "wind" on your map, you either have it or you don't - it's constant across a map and time, and you don't know until you build your first windmill. q shows you the power for that windmill on your map. Power comes out the bottom, via a gear or axle. Or you can build it directly over the item to be powered - that works too (but there's no way to shut it off then - see below).
 
 Main Article: **Windmill**
 
@@ -134,13 +131,13 @@ Main Articles: **Axle, Gear assembly**
 
 Pumps and mills consume 10 power each (as do water wheels, powered or not). Gear assemblies use 5 power each, and axles 1 per tile. So you can have a windmill that pumps 40 power, and 4 axles over, a gear, 3 axles up, another gear, and a pump and mill adjacent to that gear - that's 4+5+3+5+(10+10) = 37 - no problem. If you wanted more power, you'd need another windmill or a water wheel, and connect it in to the grid.
 
-Wheels, windmills, pumps, mills, axles and gears will all show the power they have and the power the assembly needs when viewed with . If no power, you've done something wrong.
+Wheels, windmills, pumps, mills, axles and gears will all show the power they have and the power the assembly needs when viewed with q. If no power, you've done something wrong.
 
 #### Turning powered machinery on/off
 
 Now, you can also link a trigger to a gear assembly, to disengage that gear in the power train - this is how you turn on/off pumps that are attached to power, and how you create fluid traps that "turn on" automatically when their target is in the desired location.
 
-Notes: If powering pumps, build the gear and lever and link them **first**, then throw the lever to disengage the gear before connecting the power - or you'll find your fluid of choice pumping merrily into your fortress until you find a way to shut off what you just built.)''
+Notes: If powering pumps, build the gear and lever and link them **first**, then throw the lever to disengage the gear before connecting the power - or you'll find your fluid of choice pumping merrily into your fortress until you find a way to shut off what you just built.)
 
 Also, be aware that disengaging a gear that's directly under a windmill will cause the windmill to collapse, and the same will happen if you disengage a gear assembly that provides the only support to a water wheel. A "disengaging" gear has to be located later in the power train, or the wheel must be supported from the other side, for instance by an axle.
 
@@ -151,6 +148,8 @@ Main Article: **Gear assembly**
 There are also quirks to what are "adjacent" items - sometimes floors get in the way, sometimes they don't, depending on the building - read articles on each piece of machinery for those details.
 
 None of these are that hard to build or connect, and doing it is the best way to learn. Plan a little, expect it not to be 100% optimal the first try, and you'll get it right the second time.
+
+\
 
 - **Switching by "Load"**
 
@@ -166,19 +165,18 @@ As you might expect, machinery that is submerged in water comes to a halt if tha
 
 **Machinery** (including axles, gear assemblies, and screw pumps) acts differently from other constructions. It can be built in one of two states:
 
-:\* **Stable Foundation** - The machinery is built on top of a floor, either natural or constructed.
+- **Stable Foundation** - The machinery is built on top of a floor, either natural or constructed.
+- **Hanging** - The machinery is built attached to another piece of machinery, typically on top of a gear assembly (to transfer power further down or out horizontally) or a pump. No additional support is required (except for screw pumps, which have their own requirements for support - see below). The supporting machinery needs only to have been designated for the hanging machinery to be built - it doesn't have to be completed, but might need to be before the power-connection is complete (depending on your design). If the supporting machinery is canceled, disabled, or removed the hanging machinery will collapse to base materials.
 
-:\* **Hanging** - The machinery is built attached to another piece of machinery, typically on top of a gear assembly (to transfer power further down or out horizontally) or a pump. No additional support is required (except for screw pumps, which have their own requirements for support - see below). The supporting machinery needs only to have been designated for the hanging machinery to be built - it doesn't have to be completed, but might need to be before the power-connection is complete (depending on your design). If the supporting machinery is canceled, disabled, or removed the hanging machinery will collapse to base materials.
+- **Windmills** may only connect to machinery directly below their center tile, or to adjacent windmills.
 
-- **Windmills** may only connect to machinery directly below their center tile.
-
-:\* Windmills built on floors sometimes transfer power through them, but it seems to depend on the build order - for maximum reliability, channel out the floor.
+- Windmills built on floors sometimes transfer power through them, but it seems to depend on the build order - for maximum reliability, channel out the floor.
 
 - **Water wheels** may only connect to machinery on either side of their center tile.
 - **Screw pumps** may connect to machinery from any tile in any direction. (However, the walkable tile of the screw pump MUST have a floor under it, so it cannot connect directly below the walkable tile)
 - **Gear assemblies** connect in all directions.
 
-:\* A gear assembly which has been disconnected by a lever does not support machinery. No machinery can hang on top of it, and anything already hanging on it will fall apart. In \#2 (below), disconnecting the gear assembly would dismantle the windmill and prevent another from being built until it was reconnected.
+- A gear assembly which has been disconnected by a lever does not support machinery. No machinery can hang on top of it, and anything already hanging on it will fall apart. In \#2 (below), disconnecting the gear assembly would dismantle the windmill and prevent another from being built until it was reconnected.
 
 - **Horizontal axles** connect to either end, or a gear assembly or machine.
 - **Vertical axles** connect directly above and below, or a gear assembly or machine.
@@ -187,20 +185,22 @@ As you might expect, machinery that is submerged in water comes to a halt if tha
 
 In the diagram below, brown is the windmill and the floor it stands on, black is floor from another level, the star is a gear assembly. Windmills offer power only to the tile immediately below their central spot.
 
-:\* \#1 will not work if the gear assembly is installed before the windmill is finished. If the gear assembly was installed later **or** if it gets disengaged and re-engaged (e.g. by a lever), it receives power from the windmill. The unbroken floor will always provide support to the windmill and means invaders cannot use the mill-machinery connection to enter the fort.
+- \#1 will not work if the gear assembly is installed before the windmill is finished. If the gear assembly was installed later **or** if it gets disengaged and re-engaged (e.g. by a lever), it receives power from the windmill. The unbroken floor will always provide support to the windmill and means invaders cannot use the mill-machinery connection to enter the fort.
+- \#2 works as long as dwarves can reach the building site - any tile adjacent to the windmill will do. It's the same as 1), but is "hanging", the windmill is supported by the gear assembly. You cannot "disengage" this gear without causing the windmill to deconstruct, and flying or climbing attackers can use the tile of open space to get into your machinery.
 
-:\* \#2 works as long as dwarves can reach the building site - any tile adjacent to the windmill will do. It's the same as 1), but is "hanging", the windmill is supported by the gear assembly. You cannot "disengage" this gear without causing the windmill to deconstruct, and flying or climbing attackers can use the tile of open space to get into your machinery.
+\
 
-{\|style="border: 1px solid \#0b0; background: \#dfd"
+|     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| \-  | =   | \-  |     | \-  | =   | \-  |     |     |
+|     | \*  |     |     |     | \*  |     |     |     |
+|     | 1   |     |     |     | 2   |     |     |     |
 
-\|+**Side view** \|- style="font-family: monospace; font-weight: bold; font-size: 135%" \|style="color: \#970; padding: 0; text-decoration: underline"\|- \|style="color: \#970; padding: 0; text-decoration: underline"\|= \|style="color: \#970; padding: 0; text-decoration: underline"\|- \|  \|style="color: \#970; padding: 0"\|- \|style="color: \#970; padding: 0"\|= \|style="color: \#970; padding: 0"\|- \|  \|  \|- style="font-family: monospace; font-weight: bold; font-size: 135%" \|style="text-decoration: underline"\|  \|style="text-decoration: underline"\|\* \|style="text-decoration: underline"\|  \| \|style="text-decoration: underline"\|  \|style="text-decoration: underline"\|\* \|style="text-decoration: underline"\|  \|- style="font-family: monospace; font-weight: bold; font-size: 135%" \| \|1 \| \| \| \|2 \| \|}
+**Side view** {style="border: 1px solid #0b0; background: #dfd"}
 
 ## See also
 
-:\* Trigger
-
-:\* Repeater
-
-:\* Computing
-
-:\* Trap design
+- Trigger
+- Repeater
+- Computing
+- Trap design

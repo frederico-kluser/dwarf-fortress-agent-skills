@@ -1,6 +1,6 @@
 # Weapon
 
-> Fonte: [Weapon](https://dwarffortresswiki.org/index.php/Weapon) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Weapon](https://dwarffortresswiki.org/index.php/Weapon) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 *This page deals entirely with manufactured weapons. For natural weapons, see Natural weapon.*
 
@@ -8,7 +8,7 @@ A **weapon**, in the sense described on this page, is any item specifically desi
 
 (\* No "wooden handle" is required for most non-wooden weapons. The unique obsidian option for short swords is the sole exception to this. Any metal weapons, including short swords made from metal, need no wood for their production.)
 
-Graphically, each weapon's color palette will change according to the material used to make them, though this is currently the case with only dwarves. With kobolds, humans and goblins, all wielded weapons will appear as steel-made. A slight exception to this is elves, where they can also appear with grown wood weapons.
+Graphically, each weapon's color palette will change according to the material used to make them.
 
 Many creatures with a humanoid form (giant, magma men, animal people, etc.), or even some non-humanoid creatures with hands can also wield weapons, which can be seen in the items tab after clicking on a creature, although their sprite will not reflect this. This is because only dwarves, humans, elves, goblins and kobolds currently have dedicated sprites to resemble what they're wearing and wielding.
 
@@ -16,7 +16,7 @@ Many creatures with a humanoid form (giant, magma men, animal people, etc.), or 
 
 ### Native vs. foreign
 
-In fortress mode, weapons can be split into two categories: those that you can produce, and those that you can't. Weaponsmiths can produce seven types of native weapons at a metalsmith's forge, but there are also fourteen foreign weapons that can be found in the hands of enemy combatants, or bought from trading caravans (note, however, that due to bugs, several foreign weapons currently are effectively unusable by dwarves). These may use skills your dwarves are unfamiliar with, it is impossible to buy them in bulk, and they are of variable quality and material. Like all weapons, they tend to be expensive as trade goods. They may be worth using if you can secure a high-quality specimen (see Quality below). Since they are common for other nations, it is important to understand their properties when you have to fight enemies wielding them.
+In fortress mode, weapons can be split into two categories: those that you can produce, and those that you can't. Weaponsmiths can produce seven types of native weapons at a metalsmith's forge, but there are also fourteen foreign weapons that can be found in the hands of enemy combatants, or bought from trading caravans (note, however, that due to bugs, several foreign weapons currently are effectively unusable by dwarves). These may use skills your dwarves are unfamiliar with, it is impossible to buy them in bulk, and they are of variable quality and material. Like all weapons, they tend to be expensive as trade goods, and may be worth using if you can secure a high-quality specimen (see Quality below). Since they are common for other nations, it is important to understand their properties when you have to fight enemies wielding them.
 
 ### Types of weapons
 
@@ -45,7 +45,7 @@ Also known as "blunt" or "bludgeoning" weapons, these work by concentrating thei
 
 #### Piercing weapons
 
-- spears, picks, crossbow bolts *(also daggers, pikes "pikes"), morningstar, arrows and blowdarts)*
+- spears, picks, crossbow bolts *(also daggers, pikes "Pike (weapon)"), morningstar, arrows and blowdarts)*
 
 These work by concentrating their force at a point, allowing them to punch through armor and damage internal organs. They often get stuck in the opponent, forcing their wielder to spend valuable time pulling the weapon back out between uses.
 
@@ -53,7 +53,9 @@ These work by concentrating their force at a point, allowing them to punch throu
 
 - crossbows *(also bows and blowguns)*
 
-These are effectively lightweight piercing weapons which work from a distance. When opponents engage the user in melee, the users are then forced to wield these weapons as melee weapons. Bows and crossbows both do extremely bad blunt damage over a contact area 100 times as wide as a war hammer, meaning it's far less likely for them to get through armor than such weapons.
+These are effectively lightweight piercing weapons which work from a distance. When opponents engage the user in melee, the users are then forced to wield these weapons as melee weapons. Ranged weapons depend on shoot force and the material composition of the ammunition to deal damage. Best used against light to medium armored targets. All ranged ammunition deals "edged" damage. Wielding any of these as melee weapons is not recommended.
+
+#### Training weapons
 
 There exists one more umbrella category of weapon: the so-called "**training weapon**". Training weapons are wooden, and are made at a carpenter's workshop. Training axes, spears, and short swords can be constructed in fortress mode. They all do blunt impact damage, but only a tiny amount due to the poor material properties of wood for a combat weapon. While every weapon is actually safe to use in sparring, the primary purpose of training weapons in fortress mode is to allow your dwarves to start training before you have a working metal industry. They can also be used during live combat exercises (beating upon a disarmed goblin, etc.) to extend the training session's length. Finally, they may be issued to the guards to reduce the lethality of a criminal beating.
 
@@ -61,7 +63,7 @@ There exists one more umbrella category of weapon: the so-called "**training wea
 
 Every type of weapon has its own associated military skill. The higher a dwarf is in his skill with a weapon, the better he will be able to use it in combat, connecting hammer blows to more advantageous sweet spots and sending spears right through enemy hearts and lungs with greater accuracy. The higher the weapon skill, the better at fighting the dwarf will be.
 
-Once a dwarf has reached "Great" skill in a certain weapon, they become **\[weapon\] lords** for that specific weapon. They are listed as such on the status screen, will love fighting, and will no longer complain about long patrol duties. Weapon skill is trained in fighting enemies in combat, demonstrations, and combat drills, but if you leave your dwarves shield-less, a danger room will train their skill very, very quickly. Note that this does not quite work for marksdwarves - danger rooming ranged weapons increases their melee skill, increasing their hammerdwarf skill, although this may be the point.
+Once a dwarf has reached "Great" skill in a certain weapon, they become **\[weapon\] lords** for that specific weapon. They will love fighting and will no longer complain about long patrol duties. Weapon skill is trained in fighting enemies in combat, demonstrations, and combat drills.
 
 ### Attachment
 
@@ -73,13 +75,89 @@ In addition, dwarves that reach a certain number or level of kills, or train lon
 
 The quality of a weapon has a significant impact on its combat performance, as well as its value.
 
+Designation
+Description
+Value / Multiplier / (item)
+Value / Bonus / (item)
+Sharpness
+Weapon To-Hit / Armor Deflect / Modifier
+Mining / Speed
+
+Item Name
+—
+1×
++0
+50%
+1×
+100%
+
+-Item Name-
+Well-crafted
+1.1×
++3
+60%
+1.2×
+120%
+
++Item Name+
+Finely-crafted
+1.2×
++6
+70%
+1.4×
+140%
+
+*Item Name*
+Superior quality
+1.333×
++10
+80%
+1.6×
+160%
+
+≡Item Name≡
+Exceptional
+1.5×
++15
+90%
+1.8×
+180%
+
+☼Item Name☼
+Masterful
+2×
++30
+100%
+2×
+200%
+
+Unique name
+Artifact
+20×
++300
+100%
+3×
+200%[Verify]
+
+«Item Name»
+Decorated object
+Varies
+Varies
+no effect
+
 Weaponsmithing is a moodable profession, which means that you can get artifact weapons. Artifact weapons have a 3x combat bonus and can be made out of a wide range of materials; ordinarily a hippo bone spear is impossible, but a moody dwarf can create one with a stack of hippo bone. Artifact weapons made of totally inappropriate materials are inferior to regular ones made of weapons-grade metal, although the exact balance is still under discussion. As with other moodable skills, a dwarf who creates an artifact using the weaponsmith skill stands a high chance of becoming a legendary weaponsmith.
+
+#### Moods and other metals
+
+Some (old, 2011) dwarven science has also been conducted on the slashing value, using picks made from non-weapons-grade materials. These (somewhat limited) results seem to indicate the following *rough* order of preference in terms of *slashing* weapon properties (but take note of the artifact To-Hit multiplier as well) (weapons-grade metals are underlined): Adamantine, Steel, Iron/Pig Iron\*, Bronze/Bismuth Bronze\*, Platinum, Brass, Black Bronze, Billon, Rose Gold, Electrum, Bismuth, Aluminum, Gold, Copper, Tin, Sterling Silver, Silver, Nickel, Zinc, Lead, Nickel Silver, Trifle Pewter, Fine Pewter, Lay Pewter.
+
+(\* The RAWs show identical values for for Bronze and Bismuth Bronze. *At the time of this testing* (2011), Iron and Pig Iron were likewise identical, but pig iron has since become noticeably inferior to iron.)
 
 ### Weapons as tools
 
-Hunters use crossbows, wood cutters use battle axes (wooden training axes worked prior to version 0.43.01), and miners use picks. They must be in possession of these items to do their jobs, and it's as simple as that.
+Hunters use crossbows, wood cutters use battle axes, and miners use picks. They must be in possession of these items to do their jobs, and it's as simple as that.
 
-Hunters gain marksdwarf skill from hunting, but wood cutters do not gain axedwarf weapon skill from cutting trees. Miners gain mining skill, which is not considered a military skill, but is used as a weapon skill when fighting with a pick. A dwarf using a weapon as a tool will not use the same tool as a military weapon, instead dropping their tool to pick up another for military use. Dwarves may carry only one weapon as a tool at a time; for example, woodcutters/hunters will drop their axes then go and pick up crossbows every time they begin hunting.
+Hunters gain marksdwarf skill from hunting, but wood cutters do not gain axedwarf weapon skill from cutting trees. Miners gain mining skill, which is not considered a military skill, but is used as a weapon skill when fighting with a pick. A dwarf using a weapon as a tool will not use the same tool as a military weapon, instead dropping their tool to pick up another for military use.Bug:1451 Dwarves may carry only one weapon as a tool at a time; for example, woodcutters/hunters will drop their axes then go and pick up crossbows every time they begin hunting.
 
 ### Ammunition
 
@@ -103,18 +181,26 @@ As a general rule, if a weapon slashes or pierces, it wants to be made from a "b
 
 Also, note that this effectively works in steps - copper is weak against bronze/iron targets, but feeble against steel.
 
-(Note: In this section, if 2 metals are equivalent to each other, they will be placed together in parentheses for ease of comparison.)
+(Note: In this section, if 2 metals are equivalent to each other, they will be placed together in parentheses for ease of comparison. Bronze and Bismuth Bronze are identical for all combat values.)
 
 - steel, the clear best\*
-- (bronze or iron), very respectable, roughly equivalent\*\* to each other
+- (bronze/bismuth bronze or iron), very respectable, roughly equivalent\*\* to each other
 - copper, a distant third
-- silver, a *very* distant last (included only because silver is listed to make slashing/piercing weapons)
+- silver, for slashing/piercing, a *very* distant last. For bludgeoning (hammers/maces), a rough equivalent to steel, but also much heavier, quickly tiring any but the strongest and/or most enduring dwarves. Note that silver *cannot* be used for crossbows (which use the Hammerdwarf skill in melee).
 
-(\* There is also adamantine, which is late game only, in a different league from the rest. That is not the subject of a "basic" discussion.)
+(\* There are also adamantine and divine metals, which are late game only, and a league above steel. These are not the subject of a "basic" discussion.)
 
-(\*\* There are some "X weapon vs Y armor" situations where iron is slightly better, but a couple where bronze is actually better than iron - but each is a very specific case. "Roughly equivalent" is a good rule of thumb.)
+(\*\* There are some "X weapon vs Y armor" situations where iron is slightly better than bronzes, but also a couple situations where bronze is actually slightly better than iron - but each is a very specific case. "Roughly equivalent" is a good rule of thumb.)
 
 Ranged attacks (for dwarves, crossbows, but also bows and arrows for enemies) are also piercing, and suffer even more from the "superior metal" rule, especially since everything except adamantine has essentially equal density when it comes to bolts due to their max velocity and force. It can be very disheartening to see all those cheap bolts bounce off their armored targets when it matters most.
+
+Note that blunt weapons, such as maces or war hammers, do ***not*** follow this rule. For them, generally speaking, "heavier is better", so denser metals, such as silver, perform well, although the hardness of steel makes it another strong performer. In terms of which is actually better, it depends on the skill level of the dwarf swinging the weapon. Unskilled dwarves are much better off using steel because of its lower weight; silver tires them out far too quickly. This means blunt weapons made of steel are good for militias, or any squad that doesn't do much dedicated training. For more skilled dwarves, however, silver's weight tends to tire the wielder out much slower now, and the extra damage per hit makes it better than steel in this case. This means that if you have a squad that trains for most of the year, they will make much better use of a silver blunt weapon than a steel one. For the other weapons-grade metals, they are all a close third to these and are perfectly serviceable, as the small differences in density do not matter that much. Rare heavy artifact blunt weapons from gold or, better, platinum, do only slightly more damage (despite being 273% the density of steel, platinum only gets about 1% more momentum), but with the greater weight comes a greater risk of tiring out the wielder in a long fight.[1]
+
+#### Shields and Crossbows
+
+Two atypical "blunt weapons" are of particular note - both shields and (once engaged in melee) crossbows are used to bash enemies, using the basic principles outlined above. Heavier metal shields and crossbows are superior to wooden versions for bashing damage; "typical" Wood has a density of ~500, vs. Iron (and Steel) 7850, vs. Bronze/Bismuth Bronze 8250, so metal is simply more effective. Also metal is harder when striking, adding slightly more to the damage, and making it far more durable - wooden versions will take XXwearXX more quickly and eventually break (which is always awkward in the middle of combat, and annoying to replace either way). Note that Silver weighs in at 10,490, but is not available for Shields or Crossbows outside of rare moods.
+
+Note also that the Shield skill not only increases both offensive and defensive effectiveness but also reduces effective Encumbrance of an equipped shield. While for a Novice a lighter weight wooden Shield is highly recommended to avoid fatigue, skilled shield wielders can reduce effective metal shield weight down close to wooden values without cause for concern.
 
 #### vs. unarmored
 
@@ -151,12 +237,12 @@ Blunt weapons work on flexible chain just as well as against an unarmored oppone
 
 Slashing weapons really suffer here, and especially so against non-chain targets. It's critical that they be superior metal if you want any chance of them having much reliable effect against heavy armor. A lucky blow can still take a limb, but often slashing blows just do little more than anger the target, even with steel.
 
-Crossbows suffer doubly from superior metal issues against chain, and it only gets worse against plate ^(3)
+Crossbows suffer doubly from superior metal issues against chain, and it only gets worse against plate 3
 
 #### vs. undead
 
-- recommended weapon: mace only if you want to have a single corpse, axe if you want effiency.
-- other choices: sword and spear will do a fine job.
+- recommended weapon: mace or war hammer if you want to have a single corpse, axe if you want efficiency.
+- other choices: sword will do a fine job.
 
 u/MrNorrelDoesHisPart:
 
@@ -164,15 +250,17 @@ u/MrNorrelDoesHisPart:
 
 - Newest Dwarven !!Science!! shows that while axe create a messy pile of reanimated corpse, the axe generally takes only 1/3 the time to kill all the reanimated bits. Therefore without considering the extra hauling labor, battle axe is the superior solution to reanimated corpse.
 
-#### vs. Undead Megabeast and other large fleshy creature
+War hammers can be preferable to maces when fighting living enemies that you don't want to resurrect. Killing a living enemy with a war hammer will usually result in a mangled corpse just like in the case of maces, but a war hammer will deal more damage due to its superior ability to penetrate outer layers and damage internal organs and bones, as well as better ability to stun enemies. An axe can still kill unarmored living creatures faster, but it will cut off limbs and head which can later resurrect. Resurrected body parts are often easy to kill, even for unarmed dwarves (although sometimes they are significantly stronger, such as a resurrected neck killing multiple dwarves), but can generate job cancellation spam and unhappy thoughts from being attacked by the dead. Also, resurrected body parts may need to be killed many times before they are mangled, even when using maces or war hammers.
 
-- - recommend weapon: if has access to steel: large army with steel spears.
-  - recommend weapon: if has access to adamantine: adamantine axe.
-  - not recommend weapon: anything inferior than steel.
+#### vs. Undead megabeast and other large fleshy creatures
 
-The result varies between axe, spear and sword. When a squad of 4 armored dwarves fight an undead cyclops with metal inferior to adamantine, only the ones armored with steel spear has a chance of winning. The squads with axe, mace and sword stand no fighting chance.
+- - recommended weapon if has access to steel: large army with steel spears.
+  - recommended weapon if has access to adamantine: adamantine axe.
+  - unrecomended weapon: anything inferior than steel.
 
-With an adamantine weapon however, axe and sword outperforms spear. Even one grandmaster axe dwarf with an adamantine axe stands a chance to defeat the undead cyclops.
+The result varies between axe, spear and sword. When a squad of 4 armored dwarves fight an undead cyclops with metal inferior to adamantine, only the ones armed with steel spears have a chance of winning. The squads with axe, mace and sword stand no fighting chance.
+
+With an adamantine weapon, however, axe and sword outperforms spear. Even one grandmaster axedwarf with an adamantine axe stands a chance to defeat the undead cyclops.
 
 #### vs. others
 
@@ -191,11 +279,11 @@ Ranged attacks are useful for taking care of the ones who are unapproachable the
 
 Now, all that said, overall, if you had to choose one "least worst" weapon, it would probably have to be... the steel short sword. It has no true counters, no enemy it cannot ever defeat - while axes falls to iron men and copper armor and maces/hammers/spears falls to big creatures. If you cannot get steel, a second option would be the goblin-made whip, which is still somewhat effective against bronze colossuses and big beasts, and maces and hammers will always be effective no matter what they're made of.
 
-Outside that, for edged/piercing weapons (axe, spear, bolts, and sword) against unarmored (and non-"unusual" targets) any metal will be overpowered, easily cutting/chopping/piercing all equally. Soft targets aside, make edged/piercing weapons out of the best metal you can (steel \> iron \> bronze \> copper \> silver) for use against armor, if/when you meet that. Crushing weapons (in order: hammer, mace, and crossbow in melee) can be any metal, with silver or steel each *slightly* preferable. If you want to add megabeasts into the consideration, go with steel to be safe, for any weapon type.
+Outside that, for edged/piercing weapons (axe, spear, bolts, and sword) against unarmored (and non-"unusual" targets) any metal will be overpowered, easily cutting/chopping/piercing all equally. Soft targets aside, make edged/piercing weapons out of the best metal you can (steel \> iron \> bronze \> copper \> silver) for use against armor, if/when you meet that. Crushing weapons (in order: hammer, mace, and crossbow in melee) can be any metal, steel being quite a bit better for untrained dwarves, and silver being the best for trained dwarves. If you want to add megabeasts into the consideration, go with steel to be safe, for any weapon type.
 
 # Technical
 
-From here down, there are tables of values pulled from the raws, some technical analyses, a few statistical observations, and some solid and some speculative inferences and conclusions.
+From here down, there are tables of values pulled from the raws, some technical analyses, a few statistical observations, and some solid and speculative inferences and conclusions.
 
 Insert obligatory "math warning" here.
 
@@ -203,15 +291,169 @@ Insert obligatory "math warning" here.
 
 ### Native weapons
 
-[TABLE]
+Type
+Graphic
+Size
+Attack
+Attack type
+Contact Area
+Penetration
+Velocity
+Skill Used
+Hands / Used
+Metal
+Wood
+Bone
+Obsidian
 
-Note that although the pick is a foreign weapon, it can be produced by dwarves and is therefore considered native.
+Battle Axe
+
+800
+Hack
+Edge
+40000
+6000
+1.25×
+Axe
+one
+Yes
+No
+No
+No
+
+Flat slap
+Blunt
+40000
+(6000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Crossbow (Melee)
+
+400
+Bash
+Blunt
+10000
+(4000)
+1.25×
+Hammer
+two
+Yes
+Yes
+Yes
+No
+
+Mace
+
+800
+Bash
+Blunt
+20
+(200)
+2.0×
+Mace
+one
+Yes
+No
+No
+No
+
+Pick (foreign)
+
+500
+Strike
+Edge
+100
+4000
+2.0×
+Mining
+one
+Yes
+No
+No
+No
+
+Short Sword
+
+300
+Slash
+Edge
+20000
+4000
+1.25×
+Sword
+one
+Yes
+No
+No
+Yes
+
+Stab
+Edge
+50
+2000
+1.0×
+
+Flat slap
+Blunt
+20000
+(4000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Spear
+
+400
+Stab
+Edge
+20
+10000
+1.0×
+Spear
+one
+Yes
+No
+No
+No
+
+Shaft bash
+Blunt
+10000
+(6000)
+1.25×
+
+War Hammer
+
+400
+Bash
+Blunt
+10
+(200)
+2.0×
+Hammer
+one
+Yes
+No
+No
+No
+
+Note that although the pick is a foreign weapon, it can be produced by dwarves and is therefore considered native.Bug:680
 
 ### Details
 
-- If you find your dwarves wearing more than one weapon – or any unwanted armor, for that matter – one way to get rid of them is to dump the weapon from their - inventory screen. This does not always work, as they might re-equip the item. Another option is to remove any weapons and/or shields listed on their military equip screen. This too does not always work. At least "left-handedness" seems to not pose a problem. If you cancel the work by - and selecting a job that needs a tool they will sometimes put it back in the pile. Example: Miners use picks, cancel their mining job and they will put the pick away AFTER you ordered it to be dumped.
+- If you find your dwarves wearing more than one weapon – or any unwanted armor, for that matter – one way to get rid of them is to dump the weapon from their inventory screen (click on the dwarf -\> Items tab -\> choose the item on  -\>  or ). This does not always work, as they might re-equip the item. Another option is to remove any weapons and/or shields listed on their military equip screen. This too does not always work. At least "left-handedness" seems to not pose a problem. If you cancel the work and selecting a job that needs a tool they will sometimes put it back in the pile. Example: Miners use picks, cancel their mining job and they will put the pick away AFTER you ordered it to be dumped.
 - Using weapons is much more effective than unarmed combat – an untrained swordsdwarf with an iron weapon can defeat a grand master wrestler, provided neither is wearing armor. Larger weapons tend to do more damage due to the momentum formula
-- The size for a weapon is its volume in cm³.
+- The size for a weapon is its volume in cm3.
 - Attacks of type EDGE will either slice or pierce their target, depending on the contact area and penetration depth, while BLUNT attacks tend to damage internal organs without necessarily causing significant damage to outer layers.
 - The contact area represents the area of contact of the weapon, and the penetration determines how deep the attack goes (and is apparently ignored entirely for BLUNT attacks – indicated by numbers in parentheses). The game does not distinguish between "piercing" and "slashing" attacks, despite this page using those terms often--the only difference is that piercing weapons have small contact area and slashing ones have large contact area. Penetration tends to be the same between either, but large contact area makes it much more difficult for weapons to get through armor--armor that a spear can barely pierce would require **400 times** as much momentum for an axe to pierce.
 - The velocity is a direct multiplier on the attack's momentum - for example, war hammers have a 2x velocity multiplier, presumably to model the fact that the hammer's mass is concentrated at the tip which, when combined with a long handle, permits swinging it harder than a weapon whose mass is evenly distributed (such as a sword).
@@ -222,74 +464,507 @@ Note that although the pick is a foreign weapon, it can be produced by dwarves a
 
 All training weapons must be made of wood at the carpenter's workshop.
 
-| Type | Graphic | Size | Attack | Attack type | Contact Area | Penetration | Velocity | Skill Used |
-|----|----|----|----|----|----|----|----|----|
-| Training Axe |  | 800 | Hack | Blunt | 30000 | \(6000\) | 1.25× | Axe |
-|  |  |  | Flat slap | Blunt | 30000 | \(6000\) | 1.25× |  |
-|  |  |  | Pommel strike | Blunt | 100 | \(1000\) | 1.0× |  |
-| Training Sword |  | 300 | Slash | Blunt | 20000 | \(4000\) | 1.25× | Sword |
-|  |  |  | Stab | Blunt | 50 | \(2000\) | 1.0× |  |
-|  |  |  | Flat slap | Blunt | 20000 | \(4000\) | 1.25× |  |
-|  |  |  | Pommel strike | Blunt | 100 | \(1000\) | 1.0× |  |
-| Training Spear |  | 400 | Stab | Blunt | 200 | \(10000\) | 1.0× | Spear |
-|  |  |  | Shaft bash | Blunt | 10000 | \(6000\) | 1.25× |  |
+Type
+Graphic
+Size
+Attack
+Attack type
+Contact Area
+Penetration
+Velocity
+Skill Used
+
+Training Axe
+
+800
+Hack
+Blunt
+30000
+(6000)
+1.25×
+Axe
+
+Flat slap
+Blunt
+30000
+(6000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Training Sword
+
+300
+Slash
+Blunt
+20000
+(4000)
+1.25×
+Sword
+
+Stab
+Blunt
+50
+(2000)
+1.0×
+
+Flat slap
+Blunt
+20000
+(4000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Training Spear
+
+400
+Stab
+Blunt
+200
+(10000)
+1.0×
+Spear
+
+Shaft bash
+Blunt
+10000
+(6000)
+1.25×
 
 ### Foreign weapons
 
-Using any multi-grasp weapon in a single hand (i.e. with a shield in the other hand) gives you a disability to hit - do not equip two-handed swords with a shield, for instance. **The game will not stop you from doing this**, so be wary about it.
+Using any multi-grasp weapon in a single hand (i.e. with a shield in the other hand) without being of the proper size/broadness (which dwarves in Fortress Mode almost never are), gives you a disability to hit - do not equip two-handed swords with a shield, for instance. **The game will not stop you from doing this**, so be wary about it.
 
-In adventurer mode, however, it is possible to wield a two-handed sword, or any multi-grasp weapon, in one hand without penalty (allowing for the simultaneous use of a shield) if your character passes the one-handed check for single-handing a multi-grasp weapon. For example, if you create a human character, and manage to spawn into a world with a "broad body" or a "tall body" in the character description, you will be able to single-hand any multi-grasp weapon (and will be forced to, much like you are forced to single-hand any single-grasp weapon), which allows for the simultaneous, disability-free use of a shield, thus making your damage and defensive capabilities much higher than they would be with a single-grasp weapon and shield. Note that upping Strength to Superior (and eventually Superhuman) will make all attacks more likely to deal extra damage, making cutting off the limbs of your enemies much easier.
+In Adventurer Mode, however, if your character passes the one-handed check for single-handing a multi-grasp weapon, it is possible to wield a two-handed sword, or any multi-grasp weapon, in one hand without penalty (allowing for the simultaneous use of a shield). For example, if you create a human character, and manage to spawn into a world with a "broad body" or a "tall body" in the character description, you will be able to single-hand any multi-grasp weapon (and will be forced to, much like you are forced to single-hand any single-grasp weapon), which allows for the simultaneous, disability-free use of a shield, thus making your damage and defensive capabilities much higher than they would be with a single-grasp weapon and shield. Note that upping Strength to Superior (and eventually Superhuman) will make all attacks more likely to deal extra damage, making cutting off the limbs of your enemies much easier.
 
-| Type | Graphic | Size | Attack | Attack type | Contact Area | Penetration | Velocity | Skill Used | Used by | Hands Used (average human) |
-|----|----|----|----|----|----|----|----|----|----|----|
-| Two-handed sword |  | 900 | Slash | Edge | 100000 | 8000 | 1.25× | Sword | Goblin, Human | Multi-grasp |
-|  |  |  | Stab | Edge | 50 | 4000 | 1.0× |  |  |  |
-|  |  |  | Flat slap | Blunt | 100000 | \(8000\) | 1.25× |  |  |  |
-|  |  |  | Pommel strike | Blunt | 100 | \(1000\) | 1.0× |  |  |  |
-| Blowgun (Melee) |  | 150 | Bash | Blunt | 10000 | \(4000\) | 1.25× | Sword | Subterranean animal people | Single-grasp |
-| Bow (Melee) |  | 300 | Bash | Blunt | 10000 | \(4000\) | 1.25× | Sword | Elf, Goblin, Human, Kobold | Single-grasp |
-| Flail |  | 500 | Bash | Blunt | 200 | \(4000\) | 2.5× | Mace | Goblin, Human | Single-grasp |
-| Great Axe |  | 1300 | Hack | Edge | 60000 | 8000 | 1.25× | Axe | Goblin, Human | Multi-grasp |
-|  |  |  | Flat slap | Blunt | 60000 | \(8000\) | 1.25× |  |  |  |
-|  |  |  | Pommel strike | Blunt | 100 | \(1000\) | 1.0× |  |  |  |
-| Halberd |  | 1200 | Slash | Edge | 20000 | 8000 | 1.25× | Axe | Goblin, Human | Multi-grasp |
-|  |  |  | Stab | Edge | 50 | 2000 | 1.0× |  |  |  |
-|  |  |  | Shaft bash | Blunt | 20000 | \(6000\) | 1.25× |  |  |  |
-| Dagger (Large) |  | 200 | Slash | Edge | 1000 | 800 | 1.25× | Dagger | Goblin, Kobold | Single-grasp |
-|  |  |  | Stab | Edge | 5 | 1000 | 1.0× |  |  |  |
-|  |  |  | Pommel strike | Blunt | 20 | \(600\) | 1.0× |  |  |  |
-| Long Sword |  | 700 | Slash | Edge | 60000 | 6000 | 1.25× | Sword | Elf, Goblin, Human | Single-grasp |
-|  |  |  | Stab | Edge | 50 | 3000 | 1.0× |  |  |  |
-|  |  |  | Flat slap | Blunt | 60000 | \(6000\) | 1.25× |  |  |  |
-|  |  |  | Pommel strike | Blunt | 100 | \(1000\) | 1.0× |  |  |  |
-| Maul |  | 1300 | Bash | Blunt | 100 | \(6000\) | 2.0× | Hammer | Goblin, Human | Multi-grasp |
-| Morningstar |  | 500 | Bash | Edge | 10 | 500 | 2.0× | Mace | Goblin, Human | Single-grasp |
-|  |  |  | Pommel strike | Blunt | 50 | \(1000\) | 1.0× |  |  |  |
-| Pike "Pike") |  | 800 | Stab | Edge | 20 | 12000 | 1.0× | Pike | Goblin, Human | Multigrasp |
-|  |  |  | Shaft bash | Blunt | 10000 | \(6000\) | 1.25× |  |  |  |
-| Scimitar |  | 300 | Slash | Edge | 20000 | 4000 | 1.25× | Sword | Goblin, Human | Single-grasp |
-|  |  |  | Stab | Edge | 50 | 2000 | 1.0× |  |  |  |
-|  |  |  | Flat slap | Blunt | 20000 | \(4000\) | 1.25× |  |  |  |
-|  |  |  | Pommel strike | Blunt | 50 | \(1000\) | 1.0× |  |  |  |
-| Scourge |  | 300 | Lash | Edge | 10 | 50 | 2.0× | Whip | Goblin | Single-grasp |
-| Whip |  | 100 | Lash | Blunt | 1 | \(10\) | 5.0× | Whip | Goblin, Human | Single-grasp |
-| Stone axe |  | 400 | Hack | Edge | 800 | 400 | 1.25× | Axe | Player in adventurer mode | Single-grasp |
-|  |  |  | Slap | Blunt | 800 | 400 | 1.25× |  |  |  |
-|  |  |  | Strike | Blunt | 20 | 400 | 1.0× |  |  |  |
-| Carving knife |  | 150 | Slash | Edge | 800 | 600 | 1.25× | Dagger | Non-warrior NPCs in adventurer mode | Single-grasp |
-|  |  |  | Stab | Edge | 4 | 800 | 1.0× |  |  |  |
-|  |  |  | Strike | Blunt | 15 | 400 | 1.0× |  |  |  |
-| Boning knife |  | 50 | Slash | Edge | 500 | 300 | 1.25× | Dagger | Non-warrior NPCs in adventurer mode | Single-grasp |
-|  |  |  | Stab | Edge | 2 | 400 | 1.0× |  |  |  |
-|  |  |  | Strike | Blunt | 10 | 200 | 1.0× |  |  |  |
-| Slicing knife |  | 150 | Slash | Edge | 900 | 700 | 1.25× | Dagger | Non-warrior NPCs in adventurer mode | Single-grasp |
-|  |  |  | Stab | Edge | 3 | 900 | 1.0× |  |  |  |
-|  |  |  | Strike | Blunt | 15 | 400 | 1.0× |  |  |  |
-| Meat cleaver |  | 300 | Hack | Edge | 800 | 400 | 1.25× | Axe | Non-warrior NPCs in adventurer mode | Single-grasp |
-|  |  |  | Clap | Blunt | 800 | 400 | 1.25× |  |  |  |
-|  |  |  | Strike | Blunt | 20 | 400 | 1.0× |  |  |  |
-| Carving fork |  | 150 | Stab | Edge | 1 | 100 | 1.25× | Dagger | Non-warrior NPCs in adventurer mode | Single-grasp |
-|  |  |  | Strike | Blunt | 15 | 400 | 1.0× |  |  |  |
+Type
+Graphic
+Size
+Attack
+Attack type
+Contact Area
+Penetration
+Velocity
+Skill Used
+Used by
+Hands Used (average human)
+
+Two-handed sword
+
+900
+Slash
+Edge
+100000
+8000
+1.25×
+Sword
+Goblin, Human
+Multi-grasp
+
+Stab
+Edge
+50
+4000
+1.0×
+
+Flat slap
+Blunt
+100000
+(8000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Blowgun (Melee)
+
+150
+Bash
+Blunt
+10000
+(4000)
+1.25×
+Sword
+Subterranean animal people
+Single-grasp
+
+Bow (Melee)
+
+300
+Bash
+Blunt
+10000
+(4000)
+1.25×
+Sword
+Elf, Goblin, Human, Kobold
+Single-grasp
+
+Flail
+
+500
+Bash
+Blunt
+200
+(4000)
+2.5×
+Mace
+Goblin, Human
+Single-grasp
+
+Great Axe
+
+1300
+Hack
+Edge
+60000
+8000
+1.25×
+Axe
+Goblin, Human
+Multi-grasp
+
+Flat slap
+Blunt
+60000
+(8000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Halberd
+
+1200
+Slash
+Edge
+20000
+8000
+1.25×
+Axe
+Goblin, Human
+Multi-grasp
+
+Stab
+Edge
+50
+2000
+1.0×
+
+Shaft bash
+Blunt
+20000
+(6000)
+1.25×
+
+Dagger (Large)
+
+200
+Slash
+Edge
+1000
+800
+1.25×
+Dagger
+Goblin, Kobold
+Single-grasp
+
+Stab
+Edge
+5
+1000
+1.0×
+
+Pommel strike
+Blunt
+20
+(600)
+1.0×
+
+Long Sword
+
+700
+Slash
+Edge
+60000
+6000
+1.25×
+Sword
+Elf, Goblin, Human
+Single-grasp
+
+Stab
+Edge
+50
+3000
+1.0×
+
+Flat slap
+Blunt
+60000
+(6000)
+1.25×
+
+Pommel strike
+Blunt
+100
+(1000)
+1.0×
+
+Maul
+
+1300
+Bash
+Blunt
+100
+(6000)
+2.0×
+Hammer
+Goblin, Human
+Multi-grasp
+
+Morningstar
+
+500
+Bash
+Edge
+10
+500
+2.0×
+Mace
+Goblin, Human
+Single-grasp
+
+Pommel strike
+Blunt
+50
+(1000)
+1.0×
+
+Pike
+
+800
+Stab
+Edge
+20
+12000
+1.0×
+Pike
+Goblin, Human
+Multigrasp
+
+Shaft bash
+Blunt
+10000
+(6000)
+1.25×
+
+Scimitar
+
+300
+Slash
+Edge
+20000
+4000
+1.25×
+Sword
+Goblin, Human
+Single-grasp
+
+Stab
+Edge
+50
+2000
+1.0×
+
+Flat slap
+Blunt
+20000
+(4000)
+1.25×
+
+Pommel strike
+Blunt
+50
+(1000)
+1.0×
+
+Scourge
+
+300
+Lash
+Edge
+10
+50
+2.0×
+Whip
+Goblin
+Single-grasp
+
+Whip
+
+100
+Lash
+Blunt
+1
+(10)
+5.0×
+Whip
+Goblin, Human
+Single-grasp
+
+Stone axe
+
+400
+Hack
+Edge
+800
+400
+1.25×
+Axe
+Player in adventurer mode
+Single-grasp
+
+Slap
+Blunt
+800
+400
+1.25×
+
+Strike
+Blunt
+20
+400
+1.0×
+
+Carving knife
+
+150
+Slash
+Edge
+800
+600
+1.25×
+Dagger
+Non-warrior NPCs in adventurer mode
+Single-grasp
+
+Stab
+Edge
+4
+800
+1.0×
+
+Strike
+Blunt
+15
+400
+1.0×
+
+Boning knife
+
+50
+Slash
+Edge
+500
+300
+1.25×
+Dagger
+Non-warrior NPCs in adventurer mode
+Single-grasp
+
+Stab
+Edge
+2
+400
+1.0×
+
+Strike
+Blunt
+10
+200
+1.0×
+
+Slicing knife
+
+150
+Slash
+Edge
+900
+700
+1.25×
+Dagger
+Non-warrior NPCs in adventurer mode
+Single-grasp
+
+Stab
+Edge
+3
+900
+1.0×
+
+Strike
+Blunt
+15
+400
+1.0×
+
+Meat cleaver
+
+300
+Hack
+Edge
+800
+400
+1.25×
+Axe
+Non-warrior NPCs in adventurer mode
+Single-grasp
+
+Clap
+Blunt
+800
+400
+1.25×
+
+Strike
+Blunt
+20
+400
+1.0×
+
+Carving fork
+
+150
+Stab
+Edge
+1
+100
+1.0×
+Dagger
+Non-warrior NPCs in adventurer mode
+Single-grasp
+
+Strike
+Blunt
+15
+400
+1.0×
 
 ### Special variations
 
@@ -297,16 +972,19 @@ Some rare entities have their own procedurally generated variations of weapons. 
 
 ## Size
 
-Weapons have a minimum size to use at all, and a minimum size to use one-handed. Adult dwarves vary in size between 33750 and 93750 (average 60000) based on their height and broadness. Unfortunately, this is currently bugged in fortress mode. 'One-handed' vs. 'two-handed' checks are performed correctly, but 'can wield' vs. 'can't wield' ignores height and broadness modifiers. So dwarves in fortress mode will never equip two-handed swords, great axes, halberds, mauls, or pikes. Other weapons have a minimum wielding size of less than 60000, and are wielded one-handed if the individual dwarf is large enough. See this forum post.
+Weapons have a minimum size to use at all, and a minimum size to use one-handed. Adult dwarves vary in size between 33750 and 93750 (average 60000) based on their height and broadness. Unfortunately, this is currently bugged in fortress mode.Bug:0005812 'One-handed' vs. 'two-handed' checks are performed correctly, but 'can wield' vs. 'can't wield' ignores height and broadness modifiers. So dwarves in fortress mode will never equip two-handed swords, great axes, halberds, mauls, or pikes. Other weapons have a minimum wielding size of less than 60000, and are wielded one-handed if the individual dwarf is large enough. See this forum post.
 
 The following table shows approximately how many dwarves *should be* able to use each weapon one- or two-handed (see this forum post for details), with all fractional numbers being approximate. While there are seven categories each for height and broadness, the number used is chosen randomly from within each category.
+
+Note that there are other factors (such as fat and muscle mass) affecting dwarf size, and e.g. DFHack Alt+I will take them into account, but (at least in adventure mode) only base height and broadness appear to determine weapon wieldability.
 
 Additionally, even if a creature is large enough to wield a weapon with one hand/appendage, it is still possible to wield it with both/more through wrestling by first lodging it into a target, then grabbing it with a free hand/appendage, and then pulling it free.
 
 Where the size checking bug affects weapon wielding for dwarves, correct approximate figures are given in brackets.
 
-| Type | Min Size (Two-Handed) | Min Size (One-Handed) | Dwarves Can't Wield | Dwarves Wield Two-Handed | Dwarves Wield One-Handed |
+|  |  |  |  |  |  |
 |----|----|----|----|----|----|
+| Type | Min Size / (Two-Handed) | Min Size / (One-Handed) | Dwarves / Can't Wield | Dwarves Wield / Two-Handed | Dwarves Wield / One-Handed |
 | Battle Axe | 42500 | 47500 | 1/49 (0) | 10/49 (11/49) | 38/49 |
 | Crossbow (Melee) | 15000 | 0 | \- | \- | 49/49 |
 | Mace | 32500 | 37500 | \- | 1/49 | 48/49 |
@@ -327,24 +1005,43 @@ Where the size checking bug affects weapon wielding for dwarves, correct approxi
 | Long Sword | 52500 | 57500 | 11/49 (0) | 7/49 (18/49) | 31/49 |
 | Maul | 62500 | 77500 | 32/49 (ALL) | 14/49 (0) | 3/49 (0) |
 | Morningstar | 32500 | 37500 | \- | 1/49 | 48/49 |
-| Pike "Pike") | 62500 | 77500 | 32/49 (ALL) | 14/49 (0) | 3/49 (0) |
+| Pike "Pike (weapon)") | 62500 | 77500 | 32/49 (ALL) | 14/49 (0) | 3/49 (0) |
 | Scimitar | 32500 | 37500 | \- | 1/49 | 48/49 |
 | Scourge | 22500 | 27500 | \- | \- | 49/49 |
 | Whip | 22500 | 27500 | \- | \- | 49/49 |
 
 ## Material
 
-Weapons and armor (with a few exceptions) can only be forged from weapon-grade metals (adamantine, steel, iron, silver, bronze, bismuth bronze, copper, and divine metal), wood, or bone. The exceptions include obsidian short-swords and items created during a strange mood.
+As a general rule, weapons and armor can only be forged from weapon-grade metals: copper, bronze/bismuth bronze, iron, steel, adamantine, and divine metal. Most weapons (not crossbows) can also be made from silver, and training weapons *(axe, sword and spear only)* can be made from wood (though these are *not* needed nor recommended). Leather, wood, shell or bone can be used to make a very light form of standard armor pieces. Other exceptions include obsidian short swords, trap weapons (which can also be forged from any wood or any glass), and items created during a strange mood.
 
-\|}
+|  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|
+| Metal | Value | Density | Impact yield | Impact fracture | Impact elasticity | Shear yield | Shear fracture | Shear elasticity | Notes |
+| Adamantine | 300 | 0.200 | 5000 | 5000 | 0 | 5000 | 5000 | 0 |  |
+| Divine metal | 300 | 1.0 | 1000 | 2000 | 0 | 1000 | 2000 | 0 |  |
+| Steel | 30 | 7.85 | 1505 | 2520 | 940 | 430 | 720 | 215 |  |
+| Bismuth bronze | 6 | 8.25 | 602 | 843 | 547 | 172 | 241 | 156 |  |
+| Bronze | 5 | 8.25 | 602 | 843 | 547 | 172 | 241 | 156 |  |
+| Iron | 10 | 7.85 | 542 | 1080 | 319 | 155 | 310 | 189 |  |
+| Copper | 2 | 8.93 | 245 | 770 | 175 | 70 | 220 | 145 |  |
+| Silver | 10 | 10.49 | 350 | 595 | 350 | 100 | 170 | 333 |  |
+| Platinum | 40 | 21.4 | 350 | 700 | 152 | 100 | 200 | 164 | Only available as artifact weapons. |
+| Bone | 1 | 0.50 | 200 | 200 | 100 | 115 | 130 | 100 |  |
+| Wood | 1 | 0.50 | 10 | 10 | 1000 | 40 | 40 | 1000 |  |
+| Shell | 1 | 0.50 | 200 | 200 | 100 | 115 | 130 | 100 | Only available as artifact weapons. |
+| Leather | 1 | 0.50 | 10 | 10 | 50000 | 25 | 25 | 50000 | Material data added for comparison. |
+| Obsidian | 3 | 2.67 | 1000 | 1000 | 2222 | 35 | 35 | 114 | Only available for Short Swords. |
+| Crystal glass | 10 | 2.6 | 1000 | 1000 | 2222 | 33 | 33 | 113 | Only available as trap components. |
+| Clear glass | 5 | 2.6 | 1000 | 1000 | 2222 | 33 | 33 | 113 | Only available as trap components. |
+| Green glass | 2 | 2.6 | 1000 | 1000 | 2222 | 33 | 33 | 113 | Only available as trap components. |
 
 - *Combat information* is used internally by the game to determine the combat properties of weapons and armor made from this metal:
-  - **Density**: Used in conjunction with other factors - heavier weapons (higher numbers) hit with a bit more force, very light weapons tend to have less penetration. Value shown here is g/cm³, which is the raw value divided by 10³
-  - **Impact yield**: Used for blunt-force combat; *higher* is better for blunt weapons, but *lower* is better for armor. This is the raw value divided by 10³ (i.e., kPa).
-  - **Impact fracture**: Used for blunt-force combat; *higher* is better. This is the raw value divided by 10³ (i.e., kPa).
+  - **Density**: Used in conjunction with other factors - heavier weapons (higher numbers) hit with a bit more force, very light weapons tend to have less penetration. Value shown here is g/cm3, which is the raw value divided by 103
+  - **Impact yield**: Used for blunt-force combat; *higher* is better for blunt weapons, but *lower* is better for armor. This is the raw value divided by 103 (i.e., kPa).
+  - **Impact fracture**: Used for blunt-force combat; *higher* is better. This is the raw value divided by 103 (i.e., kPa).
   - **Impact elasticity** (or **strain at yield**): Used for blunt-force combat; *lower* is better. This is the raw value.
-  - **Shear yield**: Used for cutting calculations in combat; *higher* is better. This is the raw value divided by 10³ (i.e., kPa).
-  - **Shear fracture**: Used for cutting calculations in combat; *higher* is better. This is the most important indicator of edged strength. This is the raw value divided by 10³ (i.e., kPa).
+  - **Shear yield**: Used for cutting calculations in combat; *higher* is better. This is the raw value divided by 103 (i.e., kPa).
+  - **Shear fracture**: Used for cutting calculations in combat; *higher* is better. This is the most important indicator of edged strength. This is the raw value divided by 103 (i.e., kPa).
   - **Shear elasticity** (or **strain at yield**): Used for cutting calculations in combat; *lower* is better. This is the raw value.
 
 - General Term Explanations (from Wikipedia)
@@ -365,22 +1062,22 @@ Yield strength combined with strain at yield can tell what a material will do un
 
 ## Combat formulae
 
-Penetration is poorly understood, but most of the rest of combat is fairly well understood. Maybe it defines how deep blade may go thru layers of armor and flesh and bones and even cut off limbs. This may explain why it does not apply for blunt attacks that do not go thru layers.
+Penetration is poorly understood, but most of the rest of combat is fairly well understood. Maybe it defines how deep a blade may go through layers of armor and flesh and bones and even cut off limbs. This may explain why it does not apply for blunt attacks that do not go through layers.
 
 First, you need to calculate your weapon's momentum.
 
-Melee Weapon Momentum: M = Skill \* Size \* Str \* Vel / (10⁶ \* (1 + i_Size/(w_density\*w_size) ))
+Melee Weapon Momentum: M = Skill \* Size \* Str \* Vel / (106 \* (1 + i_Size/(w_density\*w_size) ))
 
 - Dwarf Melee Momentum: M = 0.06 \* Str \* Vel / (1 + i_Size/(w_density\*w_size) )
 - Quick attacks halve melee momentum, wild and heavy attacks multiply it by 1.5
 - Attacking a prone opponent in melee doubles momentum.
 
-Ranged Weapon Momentum: M = (w_density\*w_size)/10⁵ \* min(10⁵\*(SHOOT_FORCE/20)/(w_density\*w_size), SHOOT_MAXVEL/10)
+Ranged Weapon Momentum: M = (w_density\*w_size)/105 \* min(105\*(SHOOT_FORCE/20)/(w_density\*w_size), SHOOT_MAXVEL/10)
 
-- Bow and Crossbow Momentum: M = (w_density\*150)/10⁵ \* min(10⁵/(w_density\*3), 20)
+- Bow and Crossbow Momentum: M = (w_density\*150)/105 \* min(105/(w_density\*3), 20)
   - If 20 is smaller because the ammunition is density 1666 or less, M = w_density\*3/100 = w_density\*0.03
   - If 20 is larger because the ammunition is density 1667 or larger, M = 50
-- Blowgun Momentum: M = (w_density\*20)/10⁵ \* min(10⁵/(w_density\*4), 100)
+- Blowgun Momentum: M = (w_density\*20)/105 \* min(105/(w_density\*4), 100)
   - If 100 is smaller because the ammunition is density 250 or less, M = w_density/50 = w_density\*0.02
   - If 100 is larger because the ammunition is density 251 or more, M = 5
 
@@ -393,7 +1090,6 @@ where:
 - **Size** is the average creature size (e.g. 60000 for dwarves)
 - **i_Size** is the specific creature's size
   - Dwarves range from a minimum size of 33750 to a maximum size of 93750, with an average size of 60000.
-- **F** is "fatness modifier" (also includes muscle) = i_Size/Size; dwarf with size of 66150 will have F=66150/60000=1.1025
 - **w_density** is the weapon's material's density for melee weapons, or the ammunition's density for ranged weapons
 - **w_size** is the weapon's size for melee weapons, or the ammunition's size for ranged weapons
 - **SHOOT_FORCE** is the ranged weapon's SHOOT_FORCE constant, which is used to determine its maximum momentum.
@@ -411,7 +1107,7 @@ where:
 - **wSF** is the weapon's SHEAR_FRACTURE, which is based on its material
 - **A** is attack contact area
 - **Sha** is weapon material sharpness multiplier (1x for most metals, 1.2x for divine metal, 1.5x for glass, 2x for obsidian, 10x for adamantine and 0.1x for all other materials)
-- **w_quality** is weapon quality multiplier (1x for normal quality, 1.4x for fine, 2x for masterwork, etc.)
+- **w_quality** is weapon quality sharpness multiplier (0.5x for normal quality, 0.7x for fine, 1x for masterwork, etc.)
 - **a_quality** is armor quality multiplier
 
 Expressed in the above terms,
@@ -431,53 +1127,6 @@ If the attack is blunt, either due to starting off blunt or due to failing the a
 where:
 
 - **a_density** is the armor material's density
-- **wIY** is the weapon's impact yield in MPa (i.e. raw value divided by 10⁶).
-
-Failure means the attack bounces off, meaning denser, larger armor resists blunt attacks better, but larger blunt weapons with smaller contact areas and higher impact yields get through armor better. This also means adamantine armor is some of the worst in the game at outright deflecting attacks, due to its poor density, but this is not typically relevant, as impact yields are typically at least 10 times larger than density values for the actual metals available, so this step is routinely passed by most weapons regardless of relative materials.
-
-On success, the following test is applied:
-
-M \>= (2\*aIF - aIY) \* (2 + 0.4\*a_quality) \* A,
-
-where:
-
-- **aIF** is the armor's impact fracture in MPa (i.e. raw value divided by 10⁶)
-- **aIY** is the armor's impact yield in MPa (i.e. raw value divided by 10⁶).
-
-Note that the armor wants as high impact fracture as possible to make this test fail. The armor also wants low impact yield, although the weapon's impact fracture does not matter, and high quality and high contact area.
-
-On a success, attack momentum is decreased by some 5% and the layer is considered punctured/severed, and the process continues to the next layer, including working through layers of the defender's body. If the attack was edged, it becomes edged again. On a failure, the momentum is multiplied by SHEAR_STRAIN_AT_YIELD/50000 for edged attacks or IMPACT_STRAIN_AT_YIELD/50000 for blunt attacks, then it becomes \*permanently\* blunt, and is passed on to the next layer. This means most rigid metal armor will reduce blocked attacks by 98%-99%, but elastic armor, such as a mail shirt, has both strain at yield values raised to 50000, so it multiplies by 1 at this step (i.e. does nothing to the momentum, but does still convert it to blunt) regardless of material.
-
-## Combat testing
-
-In regards to edged weaponry: adamantine and steel take first and a distant second place respectively, with iron a slightly less distant third best material in the game, nearly matched by the bronzes. Beyond that is copper, the second worst material, and silver is the worst weapon material available (and due to the existence of training weapons, not even useful in that regard).
-
-Additionally, with regards to blunt weapons, almost all of the non-adamantine materials perform equally well, with a very slight edge towards steel and silver. Here is the thread with the details: 1.
-
-Keep in mind with how unbelievably complicated this system is very little should be taken as word of law yet.
-
-|  | Best | Better | Good | Fair | Poor | Terrible | Notes |
-|----|----|----|----|----|----|----|----|
-| Armor | Adamantine | Steel | Iron | Bronze, Bismuth Bronze | Copper |  |  |
-| Edged Weapons | Adamantine | Steel | Iron | Bronze, Bismuth Bronze | Copper | Silver | For piercing iron armor, copper is better than bronze, but when piercing copper or bronze armor, bronze is better than copper. |
-| Ammunition | Steel, Iron, Bronze, Bismuth Bronze, Copper, Silver |  | Adamantine |  |  |  | Adamantine bolts deflect off of adamantine armor, but otherwise their performance is on par with bolts made out of other metals. |
-| Blunt Weapons | Platinum, Slade | Steel, Silver | Copper, Bismuth Bronze, Bronze, Iron |  |  | Adamantine | All six standard weapon metals perform nearly identically. Steel has a slightly higher rate of critical wounds, while silver is slightly more likely to penetrate armor. Platinum (only available as artifact weapons) has twice the density of silver and several other improved properties, making it the best metal for impact weapons, though very limited in production. Adamantine's light weight makes it a terrible choice for blunt weapons, roughly the same as making a weapon out of featherwood or cork. |
-
-Cross referencing this table with the table at the top of this section seems to indicate that low densities, high impact fractures, and high shear fractures contribute to the killing power of edged weapons.
-
-### Analysis
-
-Testing of weapons (15 dwarves-versus-15 dwarves combat) in the object testing arena shows that the best dwarven-made weapon against unarmored humanoids is the battle axe, while the war hammer performs the best against armored targets. .
-
-Even in 15×(steel armor+silver war hammer) versus 15×(adamantine armor+adamantine battle axe) matches, hammerdwarves won with less than 50% casualties (mostly one-strike kills). However, when the dwarves in question were without armor or only wearing leather/cloth, the result was inverted — axedwarves won with less than 50% casualties. In battles against megabeasts, 6 silver hammerdwarves were barely able to scratch a bronze colossus (attacks were glancing away) due to bronze being a better "weapon" material.
-
-This is because silver has the highest solid density of all materials that can regularly be made into weapons by dwarves. Tests show that indeed gold and platinum (increasingly dense) do increasing amounts of damage, and that war hammers remain the tool of choice, however they can only be produced by a moody dwarf (and a very lucky one at that).
-
-For more on ranged ammunition see the forum thread Dwarven Research: A Comparison Study on the Effectiveness of Bolts vs Armors.
-
-More arena tests are available in the Military testing article.
-
-## Bugs
 
 ---
-⚠️ Conteúdo truncado (48481 bytes = ~12120 tokens). Para o artigo completo, visite [Weapon](https://dwarffortresswiki.org/index.php/Weapon).
+*Parte 1 de 2 de «Weapon». Demais partes em arquivos `...-part-{1..2}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Weapon*

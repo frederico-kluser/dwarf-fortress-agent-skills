@@ -1,34 +1,52 @@
 # Screw pump
 
-> Fonte: [Screw pump](https://dwarffortresswiki.org/index.php/Screw_pump) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Screw pump](https://dwarffortresswiki.org/index.php/Screw_pump) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-A **screw pump** is a small building that can lift liquids (water or magma) from one level below onto the same Z-level as the pump. It is two tiles by one tile in size, and it can be either manually operated by a dwarf allowed to do the the pump operating work (by default there is no work detail for this labor, and everyone is allowed to do it) or by being powered by water wheels and/or windmills. A screw pump both accepts and transfers power using either tile of the pump, in all orthogonal directions, including above and below.
+## Dados (infobox)
 
-A screw pump has two sides. One side is the "input" side which accepts dwarven labor from the pump operator, and which obtains the fluid that the machine will pump. The other side is the "output" side, which outputs the fluid being pumped. In previous versions of *Dwarf Fortress*, the input side showed up as a light-colored tile, and the output side was a dark-colored tile, which will likely be a method of differentiating the two sides that you will encounter in descriptions and illustrations. In v50 a screw pump's orientation will be displayed by clicking on the pump. In the premium edition of *Dwarf Fortress* (v50), a pump has detailed graphics, which visually shows the orientation of the pump. The input side has many gears, and the output side has jutting pipes.
+- **b - m - p**
+- **÷ ÷ X X**
+- **X**
+- **X**
+- **Icon**
+- **Job Requirement**
+- **Pump operator**
+- **Construction**
+- **Materials:** Labors
+- **Block Enormous corkscrew Pipe section:** Stone: Masonry Wood: Carpentry Metal: Blacksmithing , Weaponsmithing , Armoring , or Metalcrafting
+- **Power**
+- **Needs 10 power.**
 
-The direction you want the fluid to travel must be chosen at the time of construction. Pumping only occurs in a straight line, and involves a total of 4 tiles in a row - 1) the liquid source, two for the pump, and the output (details below, under Construction).
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-The "rise" in levels occurs on the first tile, the intake side, from one level below up to the level of the pump. Pumped fluids can and will flow immediately after being pumped, as normal for that fluid. Pumped fluids will have a pressure equal to the exit z-level - a pump never "forces" water to a higher z-level than the output tile.
+A **screw pump** is a small building that can lift fluids (water or magma) up to the same Z-level as the pump and can be either manually operated by a dwarf or powered by machinery. Pumping salt water or stagnant water can also produce clean water.
 
-Salt water pumped through a pump will desalinate and become drinkable, but only if the cistern has never contained salty water. Stagnant water pumped through a pump will become clean, letting dwarves drink it without getting an unhappy thought and letting doctors clean wounds without causing an infection. As with desalination, this only works if the cistern has never contained stagnant water.
+## Layout
 
-*For a basic overview of how the different machine parts work and work together, see machinery.*
+**Basic Side View of a Pump**.\
+This pump "pumps from the west to east", flowing from left to right. The area to the right may fill to the top of that level, but no more (See pressure; and pump stack). Note that the entire space required is 4 tiles long by 1 tile wide, not including any retaining walls for the outflow. If pumped manually, the pump operator stands in the input side, as the output tile is impassable to both fluid and movement.\
+\
+*(Although this "liquid" is shown as blue, this can work for magma as well, with the appropriate precautions.)*
+
+A pump is two tiles by one tile in size, though since the pumping only occurs in a straight line, it requires a total of 4 tiles in a row: the fluid source, two for the pump, and the fluid output (see diagram, "Basic Side View of a Pump", right). The direction you want the fluid to travel must be chosen at the time of construction.
+
+The two tiles of the pump are the **input** side where the fluid enters the pump, which is also where a pump operator stands, and the **output** side where the fluid exits the pump. In premium Graphics mode the input tile has many gears, and the output tile has jutting pipes, while in ASCII mode the input is the light-colored tile and the output is dark-colored.
+
+The fluid is taken from one level below the tile next to the input, and moved to the tile next to the output. Pumped fluids will start flowing immediately after being pumped, as normal for that fluid, and thus the output tile of the pump is impassable so it won't flow back into the pump. Pumped fluids will have a pressure equal to the exit z-level - a pump never forces fluid to a higher z-level than the pump itself.
+
+When operated manually the pump operator will need to be able to path to the input tile. When powered mechanically, the screw pump both accepts and transfers power using either tile of the pump, in all orthogonal directions, including above and below, meaning a properly aligned pump stack only needs one power input.
 
 ## Construction
 
 Building a screw pump requires an enormous corkscrew, a block, and a pipe section. These can be made of any material if the pump is intended to move water, but each component must be magma-safe if the pump is to be used to move magma. As with construction of other buildings, a dwarf first brings all materials to the planned site, then construction can begin. Both bringing the materials and the construction labor requires that the dwarf is allowed to do carpentry, metalsmithing, or masonry, depending on the material of the block. The constructing dwarf will finish the labor by standing on the input side of the pump, and so will require access to that tile. Deconstructing a screw pump requires the same labor as it took to construct it.
 
-Although the screw itself is only 2 tiles long by 1 tile wide, the entire system must be thought of as 4 tiles long (see diagram, "Basic Side View of a Pump", right). This consists of (left to right)... 1) a liquid-source tile (where the liquid is, -1 z-level below), 2) the input end of the pump itself, 3) the output end of the pump, and 4) the tile where the liquid will be deposited, which is on the same level as the pump.
+To build a pump, open the build menu, select machines/fluids and then Screw pump. When clicking the map to choose a location for a pump, the tile you select will be the output side of the pump. It's important to choose the proper orientation for your pump (to specify the source and destination tiles) using the sub-menu that appears in the upper-right of the screen. In Dwarf Fortress Classic v50, the arrows on this menu point in the direction of the source of the pump's fluid, not in the direction the fluid will be pumped (for instance, if you click on the →→ symbol, the machine will be built to pump from east to west). These same buttons in Dwarf Fortress Premium show an icon that more intuitively displays the movement of fluid by the machine, and are in an opposite layout. The default (as shown above in the sidebar), "pumps from the north", which is the center-bottom button in Dwarf Fortress Premium, and the center-top option in *Dwarf Fortress Classic*.
 
-It's easily possible to allow that output liquid to drain away to lower z-levels, but it *starts* on the same level as the pump, 1 z-level above where it started. It's also possible to use walls to prevent the liquid from spreading, and this is recommended if you do not have a reliable drain system.
+Having specified the direction of travel, you must ensure that the source side of the pump is placed adjacent to and above (in the z-axis) a liquid. That end of the pump is **not** directly over the source - it is one level above but adjacent to it. The screw pump will draw the liquid up from below its level, and distribute it out of the other side of the pump. It's easy to allow that output liquid to drain away to lower z-levels, but it *starts* on the same level as the pump, 1 z-level above where it came from. It's also possible to use walls to prevent the liquid from spreading, and this is recommended if you do not have a reliable drain system.
 
-To build a pump, open the uild menu, select achines/fluids and then Screw ump. It's important to choose the proper orientation for your pump (to specify the source and destination tiles) using the sub-menu that appears in the upper-right of the screen. In Dwarf Fortress Classic v50, the arrows on this menu point in the direction of the source of the pump's fluid, not in the direction the fluid will be pumped (for instance, if you click on the →→ symbol, the machine will be built to pump from east to west). These same buttons in Dwarf Fortress Premium show an icon that more intuitively displays the movement of fluid by the machine, and are in an opposite layout. The default (as shown above in the sidebar), "pumps from the north", which is the center-bottom button in Dwarf Fortress Premium, and the center-top option in *Dwarf Fortress Classic*. When clicking the map to choose a location for a pump, the tile you select will be the output side of the pump.
+Construction of a screw pump can be prohibited with a "needs screw trap component" message if your enormous corkscrews are in a bin which has *any* current tasks attached to it (such as the relocation of a newly constructed corkscrew, or a military member moving a weapon). One workaround is to create a separate weapon stockpile for your corkscrews, and for best effectiveness, disallow the use of bins in that stockpile. This will force your corkscrew storage to work as smoothly (and space-consumingly) as a furniture stockpile. The use of a minecart quantum stockpile should also be possible, if the input stockpile is only allowed to take from the workshop.
 
-If pumped manually, the pump operator stands on the input tile, as the output tile is impassable. After construction is complete, orientation of the pump will be displayed by clicking on the pump. Orientation of a pump cannot be changed after being constructed, but, as with any building, it can be deconstructed into its component parts and rebuilt with a new orientation, and/or a new location.
-
-Having specified the direction of travel, you must ensure that the source side of the pump is placed adjacent to and above (in the z-axis) a liquid. That end of the pump is **not** directly over the source - it is one level above but adjacent to it. The screw pump will draw the liquid up from below its level, and distribute it out of the other side of the pump.
-
-Construction of a screw pump can be prohibited with a "needs screw trap component" message if your enormous corkscrews are in a bin which has *any* current tasks attached to it (such as the relocation of a newly constructed corkscrew, or a military member moving a weapon). One workaround is to create a separate weapon stockpile for your corkscrews, and for best effectiveness, disallow the use of bins in that stockpile. This will force your corkscrew storage to work as smoothly (and space-consumingly) as a furniture stockpile.
+After construction is complete, orientation of the pump will be displayed by clicking on the pump. Orientation of a pump cannot be changed after being constructed, but, as with any building, it can be deconstructed into its component parts and rebuilt with a new orientation, and/or a new location.
 
 ## Notes
 
@@ -52,7 +70,7 @@ Construction of a screw pump can be prohibited with a "needs screw trap componen
 - If a pump's output tile contains magma and the pump is pumping water or vice versa, the output tile will be turned into obsidian.
 - Pumps operate in the reverse order in which they were built-- the most recently built will try to pump, then the next recent, and so on. You can use this to your advantage for mist generation, to maximize fluid throughput, or for advanced repeater design.
 - Screw pumps continue to operate for a short period (49 ticks) after losing power-- that is, a screw pump supplied power for exactly 1 tick will actually pump for 50 ticks.
-- Screw pumps attempt to pump everything from the inlet tile to the outlet tile on every turn (so long as there is more than 1/7 liquid in the square). Actual pump rate tends to be slower than this, due to liquid needing to flow to the pump inlet, which can take a few turns depending on the source.
+- Screw pumps attempt to pump everything from the inlet tile to the outlet tile on every turn (so long as there is more than 1/7 liquid in the square). Actual pump rate tends to be slower than this, due to liquid needing to flow to the pump inlet, which can take a few turns depending on the source. A pump whose input tile is pressurized (e.g. at the bottom of a tall water tank) can move liquids at an alarmingly high rate.
 - In previous versions, in adventure mode; if you brought your adventurer to a site with working pumps, the pumps would run as long as you were close enough to the fortress, but once you moved far enough away, the site got offloaded, causing the pumps to stop.
 
 #### Common mistakes
@@ -69,7 +87,17 @@ Construction of a screw pump can be prohibited with a "needs screw trap componen
 
 ### Single pump
 
+This screw pump delivers water (or magma) from the lower level (on the right in this diagram) to the same z-level as the screw pump (on the left). When placing the screw pump to be built, the output tile would be on the left - that entire tile is impassible to movement and fluids.
+
+\
+
 ### Pump stack
+
+**Illustrated Side View of a Pump Stack.**
+
+**Illustrated Top View of a Pump Stack Layer.**
+
+**Animation showing the general construction.**
 
 A pump stack is a method used to draw water or magma vertically across multiple z-levels requiring a minimum of parts. The basic functionality is possible because the output side of the pump can be built over open space with a machine component located directly below, in this case another screw pump. Note that for power to properly transfer, the input side of the pump must line up with the output side of the pump on the floor above it through a space in the floor, as in the illustration. While pumps can transfer power to and from either tile, you need flooring below the pump's input side, because that's where the dwarf stands to construct the pump.
 
@@ -102,4 +130,12 @@ Because a pump stack pumping magma is known to cause significant lag, a new type
 
 Newer breakthroughs in magma pump design have since made the 3x3 reservoir design obsolete. Testing has found a 1x3 head-over-tail variation (which is very similar to the typical 1 by 1 pump stack) as well as a 2x3 head-over-head variation. Both of these new designs require less space and work as effectively as his original 3x3 reservoir head-over-head design, with no significant drop in FPS. The 1x3 head-over-tail design has the advantages of requiring the least amount of space and being simple to refit from the standard 1 by 1 water pump stack.
 
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
 From the components used in construction, a DF pump can be imagined as a simple archimedes screw. However, given its effect on contaminated water, the lack of pump components \*in\* the water itself, and general dwarven mechanical aptitude, it seems more accurate - and more dwarfy - to infer the speed of rotation to be high enough that the building actually operates as a turbopump using the principle of vacuum distillation to simultaneously transfer and purify water. Some Dwarven historians say that ancient screw pumps were also used as a torture device used to interrogate goblins and hippies.
+
+A modern era screw pump, though still mechanically different than the game's.

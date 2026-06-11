@@ -1,6 +1,19 @@
 # Cloth
 
-> Fonte: [Cloth](https://dwarffortresswiki.org/index.php/Cloth) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Cloth](https://dwarffortresswiki.org/index.php/Cloth) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Construction**
+- **Used for**
+- **Textile industry Wound dressing Can be worn**
+- **Base value:** Size
+- **7☼:** 1-200 cm³
+- **Dimensions**
+- **1-15000 ***
+- **Browse other items**
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Cloth** is a versatile crafting and medical good, vital to the long-term health of almost any fort.
 
@@ -32,10 +45,18 @@ Sheep, llamas, and alpacas can be sheared for their wool at a farmer's workshop,
 
 ## Trade
 
+Cloth of many colors.
+
 Cloth is a common trade good brought by all civilizations, particularly if your fortress is running low on clothing. Elves tend to bring rope reed cloth, humans bring wool, and dwarves bring pig tail. It is entirely possible to run your clothing industry off of the cloth imports brought by these caravans, but it can be rather expensive.
 
 ## Storage
 
-Normally, cloth will be stored in designated cloth stockpiles, with multiple units of cloth fitting into bins if any are available. Hospitals will instead store cloth in chests or bags if you build those within its boundaries, though you may instead use cloth stockpiles if you prefer.
+Normally, cloth will be stored in designated cloth stockpiles, with multiple units of cloth fitting into bins if any are available. Hospitals will instead store cloth in chests if you build those within its boundaries, though you may instead use cloth stockpiles if you prefer.
+
+|  |
+|:--:|
+|   This article or section contains **minor spoilers**. You may want to avoid reading it. |
+
+\
 
 Additionally, you may also make cloth by weaving adamantine thread. However, this is generally seen as a wasteful practice; adamantine clothing wears out just as quickly as mundane clothing, while adamantine wound dressings offer no additional health benefits.

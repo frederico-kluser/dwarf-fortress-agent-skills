@@ -1,8 +1,12 @@
 # Gizzard stone
 
-> Fonte: [Gizzard stone](https://dwarffortresswiki.org/index.php/Gizzard_stone) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Gizzard stone](https://dwarffortresswiki.org/index.php/Gizzard_stone) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-A **gizzard stone** is a rock obtainable by butchering or slaughtering specific animals, usually large birds or reptiles. Gizzard stones are treated as cut stone gems, suitable for encrusting goods and furniture. The material of the gem is a randomly selected type of stone, and may include materials not otherwise available on the map. Not all creatures with a gizzard body part drop gizzard stones when butchered, however.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Native gold gizzard stone.
+
+A **gizzard stone** is a rock obtainable by butchering or slaughtering specific animals, usually large birds or reptiles. The task to use them for encrusting furniture, ammo, or finished goods is "Encrust (x) with polished stones". The material of the gem is a randomly selected type of stone, and may include materials not otherwise available on the map. Gizzard stones are stored in stockpiles as Gems / Cut stone. Not all creatures with a gizzard body part drop gizzard stones when butchered, however.
 
 Creatures that drop gizzard stones on butchering:
 

@@ -1,23 +1,31 @@
 # Insanity
 
-> Fonte: [Insanity](https://dwarffortresswiki.org/index.php/Insanity) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Insanity](https://dwarffortresswiki.org/index.php/Insanity) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Insanity** describes any of the conditions that cause a dwarf or other creature to immediately stop what they were doing and go mad. Dwarves that are insane are unable to sleep, eat, drink, follow orders or perform any job. Insanity is permanent, and comes in four flavors: "Melancholy," "Stark Raving Mad," "Berserk", and "Catatonic". Each of these will inevitably end with the death of the afflicted dwarf. Tantruming, obliviousness or depression may be a sign that the unfortunate dwarf may go insane unless something makes the dwarf happy.
 
-Traveling merchants and their pack animals can also go insane. If this happens, the accompanying guard/s will kill the merchant and/or his animals. If this rare case does happen, the merchant's goods will be free for you to take.
+Traveling merchants and their pack animals can also go insane. If this happens, the accompanying guard/s will kill the merchant and/or their animals. If this rare case does happen, the merchant's goods will be free for you to take.
 
-Children (even babies) may become insane. This, in a smaller fortress without a military, will usually lead to much Fun.
+Cilob Nisgakdeler, Merchant has gone berserk!
+
+Horse is stricken by melancholy!
+
+Even children can go insane, and in a smaller fortress without a military, this will usually lead to much Fun.
 
 ## Causes
+
+Don't let it go to your head\
+*Art by kruggsmash*
 
 The following events/conditions can drive a creature insane:
 
 - A dwarf enters a strange mood but is waiting inside the claimed workshop for the next item (or hasn't yet claimed a workshop) for a month and a half.
 - A strange mood is cancelled for some reason (e.g. the claimed workshop is destroyed, forbidden by burrow restrictions, or a magma forge loses power)
-- A dwarf is forced to stay awake for over 6 months ("Very Drowsy" for a month and a half).
-- A dwarf is under excessively high stress. Dwarves who have completed a strange mood and created a legendary artifact **cannot** go insane this way.
+- A dwarf is forced to stay awake for over 6 months ("Very Drowsy" for a month and a half) or is under excessively high stress (Dwarves who have completed a strange mood and created a legendary artifact **cannot** go insane this way).
 - A diplomat is trapped inside your fortress for a long time after having completed their meeting. (Being trapped inside a fortress without having completed their meeting will not cause a diplomat to go insane.)
-- A diplomat is attacked by sieging forces.
+- A diplomat is attacked by besieging forces.
 - A merchant is trapped within your fortress or otherwise disrupted (e.g. by being attacked by invaders).
 - A diplomat or merchant is trapped inside a cage.
 
@@ -25,13 +33,15 @@ The following events/conditions can drive a creature insane:
 
 There are four known types of insanity, but a dwarf may only be afflicted by one at a time (one is enough). The personality of the dwarf influences the type of insanity.
 
-**Stark raving mad**
+ **Stark raving mad**
 
-/
+has gone stark raving mad!
+
+Running around babbling! / Crawling around babbling!
 
 The afflicted will strip naked and drop each of their items one by one, and then wander your halls aimlessly (or sometimes stick to their room or burrow), babbling incoherently until they eventually die of dehydration or starvation. They do not *actively* seek out their own deaths, but death does a pretty good job at finding them anyway, as they ignore any and all hazards they encounter while milling about.
 
-Dwarves with high are more likely to go stark raving mad, typically after stumbling around obliviously one too many times.
+Dwarves with high [`[ANXIETY_PROPENSITY]`](/index.php/Personality_facet#ANXIETY_PROPENSITY "Personality facet") are more likely to go stark raving mad, typically after stumbling around obliviously one too many times.
 
 "I've been feeling anxious."
 
@@ -39,11 +49,15 @@ Dwarves with high are more likely to go stark raving mad, typically after stumbl
 
 "Everything is all piling up at once!"
 
-**Melancholy**
+ **Melancholy**
+
+is stricken by melancholy!
+
+Stricken by melancholy...
 
 The afflicted is overcome by depression and will seek out ways to end their life, considerably slowing their movement in the process. If they cannot find a cliff to jump off of, or water/magma to drown/burn up in, they will simply starve or dehydrate themselves to death. Be warned that a melancholy mother may take her baby's life along with her own, if she still carries it.
 
-Dwarves with high are more likely to be stricken by melancholy, typically after slipping into depression one too many times. Or, during world generation, dwarves may also be stricken by melancholy after failing to create an artifact, with the expected consequences for dwarven melancholia. (Leapt from great height, as stated in legends mode).
+Dwarves with high [`[DEPRESSION_PROPENSITY]`](/index.php/Personality_facet#DEPRESSION_PROPENSITY "Personality facet") are more likely to be stricken by melancholy, typically after slipping into depression one too many times. Or, during world generation, dwarves may also be stricken by melancholy after failing to create an artifact, with the expected consequences for dwarven melancholia. (Leapt from great height, as stated in legends mode).
 
 "It's all starting to get me down."
 
@@ -51,15 +65,19 @@ Dwarves with high are more likely to be stricken by melancholy, typically after 
 
 "I cannot stand the world any longer..."
 
-**Berserk**
+ **Berserk**
 
-The afflicted attacks friend and foe alike in a blind rage, which can be dangerous if it happens to an experienced dwarf (especially one carrying an artifact weapon). Luckily, war dogs can quickly bring down an unskilled dwarf.
+has gone berserk!
+
+In a berserk rage!
+
+The afflicted attacks friend and foe alike in a blind rage, which can be dangerous if it happens to an experienced (*military?*) dwarf (especially one carrying an artifact weapon). Luckily, war dogs can quickly bring down an unskilled dwarf.
 
 Berserk dwarves are even known to kill their own newborn baby right after the baby is born.
 
 The dwarf in question becomes an enemy to your civilization, meaning it will set off traps and engage your military.
 
-Dwarves with high are more likely to go berserk, typically after throwing one too many tantrums. They can also be identified by what they say:
+Dwarves with high [`[ANGER_PROPENSITY]`](/index.php/Personality_facet#ANGER_PROPENSITY "Personality facet") are more likely to go berserk, typically after throwing one too many tantrums. They can also be identified by what they say:
 
 "I get fed up sometimes."
 
@@ -67,7 +85,11 @@ Dwarves with high are more likely to go berserk, typically after throwing one to
 
 "I'm*(sic)* feel like I'm about to snap."
 
-**Catatonic**
+ **Catatonic**
+
+has stopped responding to the world...
+
+Staring off into space...
 
 The afflicted does nothing but stare blankly into space, until they inevitably starve to death.
 
@@ -75,11 +97,17 @@ Catatonia is special in that it will **override** other types of insanity - dwar
 
 "I've been under some pressure."
 
-"Im feeling really worn down."
+"I'm feeling really worn down."
 
 "I just don't care anymore..."
 
 ## Treatments for Insanity
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
 
 As stated, there is no cure for a dwarf who has fallen into one of the aforementioned forms of madness. Preventative measures may be considered, since a dwarf may show certain signs of psychological illness before it has fully taken hold. Luckily, recent advancements in health care have led to an exciting new field of medicine specifically meant to improve the overall mental welfare of the sanity-impaired. As with all experimental treatments, efficacy and safety are not guaranteed, but early applications of the listed techniques have yielded promising results.
 
@@ -139,6 +167,10 @@ Sometimes the best method to resolve hard feelings is talking your differences o
 
 Any new developments or experimental procedures should be reported to the mountainhomes immediately for verification and cataloguing. If even a single dwarf is spared the indignity of madness in this way, it will be worth it.
 
-Recent research suggests that mad necromancers are cured from their madness if killed and reanimated as a necromancer. Note that the necromancer who raises the other must be very powerful.
+Recent research suggests that mad necromancers are cured from their madness if killed and reanimated as a necromancer. [1] Note that the necromancer who raises the other must be very powerful.
 
 Dwarves must put a significant amount of research into the phases of the moon and their ability to cause or cure madness. Tentatively there is a Lunar-Amontillado Combinatory treatment which shows great promise. This treatment also appears to require no additional use of foodstuffs
+
+|  |
+|----|
+| "Insanity" in other / Languages / Dwarven / : / zarut / Elven / : / ÿaralo / Goblin / : / naslo / Human / : / zulen |

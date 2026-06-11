@@ -1,10 +1,38 @@
 # Wood
 
-> Fonte: [Wood](https://dwarffortresswiki.org/index.php/Wood) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Wood](https://dwarffortresswiki.org/index.php/Wood) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+## Dados (infobox)
+
+- **Construction**
+- **Used for**
+- **Building Wood industry Wood burning**
+- **Base value:** Size
+- **3☼:** 50,000 cm³
+- **Browse other items**
+
+## Dados (infobox)
+
+- **Wood FAQ**
+- **Do I really need wood?**
+- **Where can I get wood?**
+- **Where can I get even more wood?**
+- **Is it possible to grow trees underground?**
+- **How long do tower-caps take to grow?**
+- **Do dead trees spawn new trees?**
+- **How much protection does wood armor provide?**
+- **Add a question to this FAQ**
+- **Back to the Main FAQ**
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 *"Timber" redirects here. For the month, see Calendar.*
 
-**Wood** is a hard material found in nearly all trees. It currently does not form the actual material of tree tiles, which are composed of generic plant material, but is instead dropped from trees as **logs** / , the raw item form of wood, when they are cut down. For the most part, different kinds of wood are identical, except for differences in density and color. It is generally weaker and more lightweight than other heavy-duty materials, such as stone or metal. All wood is flammable, with an ignition point of . Only nether-cap wood is magma-safe, due to its fixed temperature. The harvesting and use of wood to make products is known as the wood industry.
+**Wood** is a hard material found in nearly all trees. It currently does not form the actual material of tree tiles, which are composed of generic structural plant material, however, when trees are cut down, it drops as **logs**  / `▬`, the raw and usable item form of wood. Logs are stored in a "Wood" stockpile.
+
+For the most part, different kinds of wood are identical except for differences in density and color. Wood is generally weaker and more lightweight than other heavy-duty materials, such as stone or metal. Almost\* all wood is flammable, with an ignition point of 10508 °U . The harvesting and use of wood to make products is known as the wood industry.
+
+(\* The sole semi-exception is nether-cap wood, which exhibits unique responses to magma and fire due to its fixed temperature. This gives *some* objects made from nether cap a magma-safe quality, although it can be turned to ash or charcoal at a wood furnace. See article for details.)
 
 "**Timber**" is the name of the ninth month of the dwarven calendar, covering late Autumn, the only month of the dwarven calendar to not be named after a stone.
 
@@ -12,7 +40,11 @@
 
 ### Chopping down trees
 
-Wood is obtained by esignating rees to be chopped down. Any dwarf with the wood cutting labor enabled and access to a battle axe will cut down a tree, producing a variable number of 'logs' dependent upon the tree's size and composition. In general, bigger trees yield more logs than smaller ones, though relevant plant tokens can have a significant impact on the total. Trees start their lives as saplings. Saplings cannot be cut down until they mature into full-grown trees, which can take several years. Creatures frequently moving on a tile with a sapling will eventually kill the sapling, leaving you with a dead sapling occupying the square for a time before it disappears and another plant starts growing.
+Workshops made of every single type of wood.[1]
+
+Wood is obtained by l designating trees to be chopped down. Any dwarf with the wood cutting labor enabled and access to a battle axe will cut down a tree, producing a variable number of 'logs' dependent upon the tree's size and composition. In general, bigger trees yield more logs than smaller ones, though relevant plant tokens can have a significant impact on the total.
+
+Trees start their lives as saplings. Saplings cannot be cut down until they mature into full-grown trees, which can take several years. Creatures frequently moving on a tile with a sapling will eventually kill the sapling, leaving you with a dead sapling occupying the square for a time before it disappears and another plant starts growing.
 
 Saplings will randomly appear in above-ground soil, only if the tiles underneath them are unmined and have at least another z-level of open space above them. If the soil does not have an immediate support for the roots, no saplings will appear. If there is no open space above, saplings will not grow. Underground saplings will begin to randomly appear in soil and muddy underground rock only once one of the caverns is exposed. Unlike above-ground saplings, underground saplings don't require the level below them to be unmined. However, they also require open space on the z-levels directly above them, otherwise the saplings will never grow.
 
@@ -20,19 +52,93 @@ It is recommended to clear trees out of active corridors - tree trunks act as wa
 
 ### Civilizations
 
-Entities with and use wood from above-ground and underground trees respectively from their local environment for their products. Additionally, and allow entities to use wood from good or evil-aligned trees: feather trees and glumprongs. Except for kobolds, all civilizations use some type of wood.
+Entities with [`[OUTDOOR_WOOD]`](/index.php/Entity_token#OUTDOOR_WOOD "Entity token") and [`[INDOOR_WOOD]`](/index.php/Entity_token#INDOOR_WOOD "Entity token") use wood from above-ground and underground trees respectively from their local environment for their products. Additionally, [`[USE_GOOD_WOOD]`](/index.php/Entity_token#USE_GOOD_WOOD "Entity token") and [`[USE_EVIL_WOOD]`](/index.php/Entity_token#USE_EVIL_WOOD "Entity token") allow entities to use wood from good or evil-aligned trees: feather trees and glumprongs. Except for kobolds, all civilizations use some type of wood.
 
-permits the availability of certain wood-derived products: lye, charcoal, and potash. Dwarves, humans, and goblins possess this. Entities with and will use wooden weapons and armor - elves and subterranean animal people possess these tokens.
+[`[USE_MISC_PROCESSED_WOOD_PRODUCTS]`](/index.php/Entity_token#USE_MISC_PROCESSED_WOOD_PRODUCTS "Entity token") permits the availability of certain wood-derived products: lye, charcoal, and potash. Dwarves, humans, and goblins possess this. Entities with [`[WOOD_WEAPONS]`](/index.php/Entity_token#WOOD_WEAPONS "Entity token") and [`[WOOD_ARMOR]`](/index.php/Entity_token#WOOD_ARMOR "Entity token") will use wooden weapons and armor - elves and subterranean animal people possess these tokens.
 
 Logs and wooden products are available from trading by any friendly civilizations. Wood can also be brought before embarking. Logs are quite inexpensive, costing only three points per log, and bringing a large number can help jump-start the wood industry immediately.
 
 ### Other sources
 
-"Wagon wood" can be obtained from wagons. The initial wagon after embark "initial wagon after embark") (an entirely different wagon) can be dismantled for three free logs of any type.
+"Wagon wood" can be obtained from wagons. The initial wagon after embark "Wagon (embark)") (an entirely different wagon) can be dismantled for three free logs of any type.
 
 ## Types
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Wood | Density / (kg / m³) | Weight (Γ) / per log | Color / (ASCII) | Graphic |
+| Feather | 100 | 5 | Cream |   |
+| Papaya | 130 | 6.5 | Taupe pale |   |
+| Candlenut | 140 | 7 | Ochre |   |
+| Kapok | 260 | 13 | Tan |   |
+| Custard-apple | 360 | 18 | Tan |   |
+| Willow | 390 | 19.5 | Tan |   |
+| Alder | 410 | 20.5 | Tan |   |
+| Cherry | 425 | 21.25 | Gold |   |
+| Cacao | 430 | 21.5 | Chocolate |   |
+| Chestnut | 430 | 21.5 | Dark chestnut |   |
+| Saguaro | 430 | 21.5 | Ecru |   |
+| Cashew | 450 | 22.5 | Dark chestnut |   |
+| Ginkgo | 450 | 22.5 | Peach |   |
+| Rubber | 490 | 24.5 | Flax |   |
+| *Default wood* | 500 | 25 | Brown |   |
+| Highwood | 500 | 25 | Brown |   |
+| Tunnel tube | 500 | 25 | Violet |   |
+| Wagon | 500 | 25 | Brown |  |
+| Pine | 510 | 25.5 | Beige |   |
+| Durian | 520 | 26 | Taupe pale |   |
+| Mango | 520 | 26 | Burnt sienna |   |
+| Avocado | 540 | 27 | Chestnut |   |
+| Maple | 540 | 27 | Rust |   |
+| Carambola | 550 | 27.5 | Flax |   |
+| Nether-cap | 550 | 27.5 | Dark indigo |   |
+| Tea | 550 | 27.5 | Taupe pale |   |
+| Walnut | 562 | 28.1 | Dark tan |   |
+| Cedar | 570 | 28.5 | Olive |   |
+| Hazel | 580 | 29 | Taupe pale |   |
+| Bitter orange | 590 | 29.5 | Taupe pale |   |
+| Desert lime | 590 | 29.5 | Tan |   |
+| Finger lime | 590 | 29.5 | Tan |   |
+| Kumquat | 590 | 29.5 | Taupe pale |   |
+| Larch | 590 | 29.5 | Light brown |   |
+| Lime | 590 | 29.5 | Tan |   |
+| Orange | 590 | 29.5 | Burnt sienna |   |
+| Pomelo | 590 | 29.5 | Ash gray |   |
+| Round lime | 590 | 29.5 | Tan |   |
+| Acacia | 600 | 30 | Peach |   |
+| Ash "Ash (tree)") | 600 | 30 | Pale brown |   |
+| Fungiwood | 600 | 30 | Lemon |   |
+| Goblin-cap | 600 | 30 | Red |   |
+| Mahogany | 600 | 30 | Mahogany |   |
+| Pear | 600 | 30 | Buff |   |
+| Spore | 600 | 30 | Teal |   |
+| Tower-cap | 600 | 30 | White |   |
+| Guava | 610 | 30.5 | Tan |   |
+| Coffee | 620 | 31 | Taupe pale |   |
+| Rambutan | 620 | 31 | Bronze |   |
+| Birch | 650 | 32.5 | Burnt umber |   |
+| Black-cap | 650 | 32.5 | Black |   |
+| Coconut palm | 680 | 34 | Dark taupe |   |
+| Sand pear | 690 | 34.5 | Buff |   |
+| Bayberry | 700 | 35 | Pale brown |   |
+| Citron | 700 | 35 | Ash gray |   |
+| Oak | 700 | 35 | Auburn |   |
+| Macadamia | 705 | 35.25 | Pale brown |   |
+| Pecan | 735 | 36.75 | Peach |   |
+| Apple | 745 | 37.25 | Chocolate |   |
+| Apricot | 745 | 37.25 | Light brown |   |
+| Pomegranate | 770 | 38.5 | Peach |   |
+| Almond | 795 | 39.75 | Copper |   |
+| Peach | 795 | 39.75 | Dark tan |   |
+| Plum | 795 | 39.75 | Pale brown |   |
+| Date palm | 820 | 41 | Burnt sienna |   |
+| Paradise nut | 820 | 41 | Light brown |   |
+| Mangrove | 830 | 41.5 | Dark taupe |   |
+| Persimmon | 835 | 41.75 | Tan |   |
+| Lychee | 880 | 44 | Taupe sandy |   |
+| Olive | 990 | 49.5 | Pale brown |   |
+| Glumprong | 1200 | 60 | Purple |   |
+| Blood thorn | 1250 | 62.5 | Crimson |   |
 
 Comparison of density, weight, color and sprites.
 
@@ -42,11 +148,11 @@ The density of the material is the most important factor when choosing different
 
 ### Weight of logs
 
-Each log has a volume of 5,000 or 50 litres. The weight can be derived by dividing the density (kg/m³) of the material by 20. An oak log will thus weigh 35Γ, a feather wood log 5Γ and a blood thorn log 62.5Γ. Weight is displayed in integers in-game, so a blood thorn log's weight will be displayed as just 62Γ. Wood has a default of 500 kg/m³, about five times lighter than most stone and fifteen times lighter than iron. Feather wood is the lightest at 100, and blood thorn wood is the heaviest at 1,250. Papaya (130) and glumprong (1,200) wood are also notable.
+Each log has a volume of 5,000 or 50 litres. The weight can be derived by dividing the density (kg/m³) of the material by 20. An oak log will thus weigh 35Γ, a feather wood log 5Γ and a blood thorn log 62.5Γ. Weight is displayed in integers in-game, so a blood thorn log's weight will be displayed as just 62Γ. Wood has a default [`[SOLID_DENSITY]`](/index.php/Material_definition_token#SOLID_DENSITY "Material definition token") of 500 kg/m³, about five times lighter than most stone and fifteen times lighter than iron. Feather wood is the lightest at 100, and blood thorn wood is the heaviest at 1,250. Papaya (130) and glumprong (1,200) wood are also notable.
 
 ### Grown wood
 
-All wooden items made by elves are referred to as "grown". It is assumed that elves use an unknown (and unimplemented) magic to grow their products from trees without chopping them down. Elven caravans only accept wooden products made from grown wood.
+All wooden items made by elves are referred to as "grown". It is assumed that elves use an unknown (and unimplemented) magic to grow their products from trees without chopping them down. Elven caravans only accept wooden products made from grown wood. Graphically, grown wood weapons will appear as standard wooden items, but with small branches and leaves stemming out of them.
 
 ## Applications
 
@@ -62,7 +168,7 @@ Once magma is acquired, charcoal becomes obsolete as a fuel source for workshops
 
 ### Beds
 
-Beds can only be made from wood, with the exception of artifact beds created from strange moods. Without beds, citizens get unhappy thoughts from sleeping on the ground (*if not smoothed, per se*).
+Beds can only be made from wood, with the exception of artifact beds created via strange moods. A quality bed can give a dwarf sleeping there a happy thought, the higher the quality the better. Without beds, citizens get unhappy thoughts from sleeping on the ground (or no thoughts if, by chance, they fall asleep on a smoothed section of floor). Dwarves will *not* seek to sleep in beds in hospital zones. (See sleep for more information.)
 
 ### Machine components
 
@@ -78,23 +184,33 @@ In addition, it only takes one log to produce a bin, cage, wheelbarrow or mineca
 
 ### Weapons and armor
 
-''See also: Weapon § Material
+*See also: Weapon § Material*
 
-Wood is an extremely terrible material for combat. It has the worst impact and shear properties out of the standard weapons-grade materials (even against bone), making it ineffective in dealing substantial damage, both blunt or cutting. Denser wood has a small effect on its force power, but it remains weak compared to metal. A creature's natural weapons can be more lethal than a wooden weapon. Wooden armor provides little to no protection. Wood durability is low, and breaks very quickly from repeated hits against harder materials. Its weakness serves as an advantage in situations where damage is desired to be kept to a minimum. In justice, inflicting punishment with wooden weapons deals very little damage to the accused, which reduces the chance of accidental deaths.
+Wood is an extremely terrible material for combat; this cannot be over emphasized. It has the worst impact and shear properties out of the standard weapons-grade materials (even against bone), making it ineffective in dealing substantial damage, both blunt or cutting. Denser wood\* has a small improvement on its force power, but it remains weak compared to metal. A creature's natural weapons can be more lethal than a wooden weapon. Wooden armor provides little to no protection. Wood durability is low, and it breaks very quickly from repeated hits against harder materials.
 
-Shields and bucklers can be made from wood. Bashes with wooden shields in melee combat are weaker than those delivered by metal shields. The material does not affect a shield's ability to block, and even dragonfire can be blocked without getting burned at all. Taking in their lower weight, wooden shields are more effective over metal ones for their maneuverability. There is still the drawback of wood breaking faster than metal.
+(\* The densest woods are blood thorn (1250 ) followed by glumprong (1200), both more than twice as dense as "average" wood (500). However, these are a poor comparison to the "lightest" of the weapons-grade metals, Iron, at 7850.)
 
-Dwarves can only create wooden melee weapons in the form of training weapons, which are used in the military for training. They are useful for live training and danger rooms, but are not necessary. Training weapons can also be bought from caravans at a cheap price.
+Dwarves can only create wooden melee weapons in the form of training weapons, and then only training axes, swords and spears, which can be\* used in the military for training not only that weapon but also other combat skills. They are useful for live training and danger rooms, but are not necessary. Training weapons can also be bought from caravans at a cheap price.
+
+(\* Dwarves will **not** hurt each each other when training with "real" weapons, making training weapons even less useful. Worse, it's possible that a dwarf will become "attached" to a wooden weapon, rendering them almost useless as a soldier (except as as a damage sponge), so wooden weapons are *not* recommended.)
+
+However, this weakness serves as an advantage in situations where damage is desired to be kept to a minimum. In justice, inflicting punishment with wooden weapons deals very little damage to the accused, which reduces the chance of accidental deaths. Wooden weapons can also be used in weapon traps, as "better than nothing" since they can hold up to 10 weapons. And every trap attack requires the target to dodge, which can be useful for creative players.
+
+Large trap weapons can be made early in a fortress before a metal industry is up and running, and can be perfectly adequate against unarmored targets such as animals and child snatchers. However these too are notably inferior across the board, and will tend to disappoint against anything armored. The large spiked ball may be the best bet here, but, again, wood's light weight works against them in this capacity. Even glass would be noticeably better, with a density of 2600 and better combat material properties.
+
+Shields and bucklers can be made from wood. As a lighter material, attacks (bashing) with wooden shields in melee combat are weaker than those delivered by metal shields. The material does not affect a shield's ability to block, and even dragonfire can be blocked without getting burned at all. Taking in their lower weight, wooden shields are less cumbersome than metal ones for early military that has not developed the armor user skill. There is still the drawback of wood wearing out and breaking faster than metal.
 
 Short swords made of obsidian require one log in production. They are more or less a novelty, as metal weapons are superior.
 
-Crossbows can be made from wood by a bowyer. Wooden crossbows suffer reduced damage in comparison to metal crossbows if they are used to bash enemies in melee combat. However, since even metal crossbows are spectacularly bad melee weapons, this is a fairly unimportant consideration. The lighter wooden crossbow should be prioritized over metal ones for its lesser weight, minimizing encumbrance. Bone has a density of 500 kg/m³, so bone crossbows should replace wood whenever the type of wood being used is over 500 kg/m³.
+Crossbows can be made from wood by a bowyer. Wooden crossbows are the equal to metal (or bone) bows when used at range, but suffer reduced damage in comparison to metal crossbows if they are used to bash enemies in melee combat. However, since even metal crossbows are spectacularly bad melee weapons, this may be a fairly unimportant consideration. If you are concerned about encumbrance, lighter wooden crossbows can be prioritized over metal ones for less weight. Bone has a density of 500, as as "average" wood, so bone crossbows should replace wood whenever the density of the wood available is over 500.
 
-A stack of 25 bolts is made from a single log. In comparison, 5 bolts are made from a single bone. Wooden bolts are sufficient for training and hunting, although significantly less effective against armored opponents than metal bolts.
+A stack of 25 bolts is made from a single log. In comparison, 5 bolts are made from a single bone. Wooden bolts are sufficient for training and hunting, although significantly less effective against armored opponents than metal bolts. This can be useful if training against live targets that have been trapped in a cage and then tossed into an arena, as experience comes with each shot, not the damage done.
 
 ### Siege engines
 
-Siege engine parts can only be made from wood. Although siege engines require lots of effort to manage, they can be very effective defenses when traps and soldiers fail. Both wooden and metal ballista arrows also need a log to be made. Wooden ballista arrows are inferior to metal ones. Wooden ballista arrows made from denser wood deal more damage than lighter wood.
+Siege engine parts can only be made from wood. Although siege engines require lots of effort to manage, they can be very effective defenses when traps and soldiers fail. Both wooden and metal ballista arrows also need a log to be made; the "metal" ones simply add a metal head to an existing wooden ballista arrow. Wooden ballista arrows made from denser wood deal more damage than lighter ones, but purely wooden ballista arrows are inferior to the metal upgrade.
+
+Since the siege operator skill can be trained equally with catapults, and catapults use stones, which are free and (typically) plentiful, it's not recommended to make ballista arrows for the purpose of training.
 
 ### Trading
 
@@ -106,10 +222,65 @@ Wood can be used to make most finished goods, furniture, and tools. Items can be
 
 Wooden constructions can safely hold magma, but wooden buildings will burn so using other materials is recommended where fire is a potential risk. Floors constructed using lightweight wood will reduce the damage from falls. The lighter the wood, the softer the impact.
 
-Building destroyers prioritize destroying wooden doors and floor hatches. Wooden buildings can be used in trap designs as cheap, affordable bait to lure them toward traps.
+Building destroyers prioritize destroying wooden doors and floor hatches.\[Verify\] Wooden buildings can be used in trap designs as cheap, affordable bait to lure them toward traps.
 
 ## See also
 
 - Driftwood
 
- \|0 Ru:Wood
+|  |
+|----|
+| "Wood" in other / Languages / Dwarven / : / lolum / Elven / : / ave / Goblin / : / dôr / Human / : / pado |
+
+    [MATERIAL_TEMPLATE:WOOD_TEMPLATE]
+        [STATE_COLOR:ALL_SOLID:BROWN]
+        [STATE_NAME:ALL_SOLID:wood]
+        [STATE_ADJ:ALL_SOLID:wooden]
+        [STATE_COLOR:LIQUID:BROWN]
+        [STATE_NAME:LIQUID:n/a]
+        [STATE_ADJ:LIQUID:n/a]
+        [STATE_COLOR:GAS:BROWN]
+        [STATE_NAME:GAS:n/a]
+        [STATE_ADJ:GAS:n/a]
+        [DISPLAY_COLOR:6:0:0]
+        [MATERIAL_VALUE:1]
+        [SPEC_HEAT:420]
+        [IGNITE_POINT:10508]
+        [MELTING_POINT:NONE]
+        [BOILING_POINT:NONE]
+        [HEATDAM_POINT:10250]
+        [COLDDAM_POINT:9900]
+        [MAT_FIXED_TEMP:NONE]
+        [SOLID_DENSITY:500]
+        [LIQUID_DENSITY:NONE]
+        [MOLAR_MASS:NONE]
+        [IMPACT_YIELD:10000]
+        [IMPACT_FRACTURE:10000]
+        [IMPACT_STRAIN_AT_YIELD:1000]
+        [COMPRESSIVE_YIELD:10000]
+        [COMPRESSIVE_FRACTURE:10000]
+        [COMPRESSIVE_STRAIN_AT_YIELD:1000]
+        [TENSILE_YIELD:10000]
+        [TENSILE_FRACTURE:10000]
+        [TENSILE_STRAIN_AT_YIELD:1000]
+        [TORSION_YIELD:10000]
+        [TORSION_FRACTURE:10000]
+        [TORSION_STRAIN_AT_YIELD:1000]
+        [SHEAR_YIELD:40000] used pine
+        [SHEAR_FRACTURE:40000]
+        [SHEAR_STRAIN_AT_YIELD:1000]
+        [BENDING_YIELD:10000]
+        [BENDING_FRACTURE:10000]
+        [BENDING_STRAIN_AT_YIELD:1000]
+        [MAX_EDGE:1000]
+        [ABSORPTION:0]
+        [ITEMS_HARD]
+        [ITEMS_WEAPON]
+        [ITEMS_WEAPON_RANGED]
+        [ITEMS_AMMO]
+        [ITEMS_ARMOR]
+        [ITEMS_SIEGE_ENGINE]
+        This general material classifier determines various in-game behaviors.  There are several others below.
+        [WOOD]
+
+\

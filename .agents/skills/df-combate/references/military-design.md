@@ -1,8 +1,10 @@
 # Military design
 
-> Fonte: [Military design](https://dwarffortresswiki.org/index.php/Military_design) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Military design](https://dwarffortresswiki.org/index.php/Military_design) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-''This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. **Military design** focuses on the training, organization and deployment of your military and how to prepare them for any situation. For a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense, see the **defense guide**. For tips on laying out your architecture to protect your military, see **security design**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*This page is one of several inter-related articles on the broader topic of defending your fortress and your dwarves. **Military design** focuses on the training, organization and deployment of your military and how to prepare them for any situation. For a general overview of the threats that will challenge your fortress and things to consider when preparing a standard defense, see the **defense guide**. For tips on laying out your architecture to protect your military, see **security design**. For complex traps that are not a minor/optional part of a larger defensive plan (but might be adapted or plugged into one), see **trap design**.*
 
 The role of a military force in fortress defense can be extremely varied depending on the player's overall approach and strategy; it can be central, non-existent, or anywhere in between. One of their advantages is their mobility — they can go where no static defenses exist, to rescue or support other dwarves, or escort a caravan through unknown or deadly threats. Only military can take the fight to the enemy (doomsday devices excepted).
 
@@ -20,7 +22,7 @@ Combat skill is arguably the most important factor. Combat skill training can be
 
 See cross-training for suggestions on various attribute training plans.
 
-The danger room method is a quick and effective way of training shield user, dodger, and any weapon skills. Another very effective way of training is sending the military to actively fight captured invaders or wildlife, especially with training weapons equipped so that the combat takes longer. Certain creatures, such as flesh balls, are more suitable for combat training than others. See also mass pitting.
+One very effective way of training is sending the military to actively fight captured invaders or wildlife, especially with training weapons equipped so that the combat takes longer. Certain creatures, such as flesh balls, are more suitable for combat training than others. See also mass pitting.
 
 Dwarves armed with picks use mining as their weapon skill, so an all-pick army can simply mine out tunnels to train, although they will still need to train normally to develop shield and armor skills.
 
@@ -48,6 +50,34 @@ A couple tips/troubleshooting for training your ranged military:
 #### Live targets
 
 Building a goblin shooting range where live goblins are shot at can increase the speed of ranged training. The caged prisoners, obtained from cage traps, are dropped down a shaft 4-5 z-levels down, enough to break their legs but hopefully no more. Then have your marksdwarves shoot the stunned and immobile goblins from 14-18 steps away. The further away you place your marksdwarves, the higher probability that they might miss, thereby prolonging their target practice. Remember to add a lever and a bridge to enable retrieving the goblin corpses and items, and cleaning up the mess you just made. The bridge should connect the platforms where the goblins stand with the floor on the middle of the room. Sometimes, it might be necessary to send in meleedwarves to finish off a goblin. Therefore, place the lever to the bridge **outside** the shooting range as civilian dwarves will see the goblins and run away.
+
+\
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|  |  |  |  |  |  |  | z |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | z |  | \+ |  | 4 |  |  |  |  |  |  |  |  |
+|  | ║ | . | . | . | . | . | . | . | . | . | . | . | ║ |  |  | g | o | b | l | i | n | s |  | f | a | l | l |  |  | ╔ | ═ | ╦ | ═ | ╦ | ═ | ╦ | ═ | ╦ | ═ | ╗ |  |  |  |  |  |
+|  | ║ | . | \+ | . | \+ | . | g | . | \+ | . | \+ | . | ║ |  | \< | \- | \- | \- | \- | \- | \- | \- | \- | \- | \- | \- | \- | \- |  | ║ | . | ║ | . | ║ | . | ║ | . | ║ | . | ║ |  |  |  |  |  |
+|  | ║ | . | . | . | . | . | . | . | . | . | . | . | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ║ | \+ | ║ | \+ | ║ | \+ | ║ | \+ | ║ | \+ | ║ |  |  |  |  |  |
+|  | ║ | ▼ | . | . | . | . | . | . | . | . | . | ▼ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  | ║ | D | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  | ║ | \+ | ║ |  | \- |  | L | o | c | k | e | d |  | t | u | n | n | e | l |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  | z |  | \- |  | 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  | ║ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  | ║ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  | ║ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  | ╔ | ═ | ═ | ═ | ═ | ╝ | D | ╚ | ═ | ═ | ═ | ═ | ╗ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | . | . | . | . | . | . | . | . | . | . | . | ║ |  |  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ▼ | ║ |  |  | ║ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ▲ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | ☺ | \+ | \+ | \+ | ☺ | \+ | \+ | ☺ | \+ | ║ |  |  | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | ☺ | \+ | \+ | ☺ | \+ | \+ | ☺ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ║ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | \+ | ║ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | ╚ | ═ | ═ | ═ | ═ | \+ | \+ | \+ | ═ | ═ | ═ | ═ | ╝ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  | ò |  | \- |  | L | e | v | e | r |  | t | o |  | b | r | i | d | g | e |  | ( | n | o | t |  | r | e | p | r | e | s | e | n | t | e | d | ) |
 
 ## Squad management
 
@@ -83,7 +113,7 @@ Use the starter outfits in the armor article. They are maxed out protection for 
 5.  Metal greaves
 6.  Metal high boots
 7.  Metal gauntlets
-8.  Metal breastplate
+8.  Metal breast plate
 9.  optionally Silk/Yarn dress/robe
 10. optionally Silk/Yarn trousers
 11. optionally Silk/Yarn hoods

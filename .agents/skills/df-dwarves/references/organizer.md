@@ -1,7 +1,36 @@
 # Organizer
 
-> Fonte: [Organizer](https://dwarffortresswiki.org/index.php/Organizer) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Organizer](https://dwarffortresswiki.org/index.php/Organizer) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Skill: Organizer
+
+Association
+ 
+
+Profession
+Administrator
+
+Job Title
+Administrator
+
+Labor
+Noble/Admin
+
+Tasks
+
+Manage Work Orders
+
+Workshop
+
+Office
+
+Attributes
+
+Analytical Ability / Creativity / Social Awareness
+
+\
 The **organizer** skill is used by some military dwarves, by managers (an appointed noble position), and by scholars. Higher skill reduces the time taken for:
 
 - military dwarves to organize training

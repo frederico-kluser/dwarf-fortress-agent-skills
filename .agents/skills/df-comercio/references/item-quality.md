@@ -1,28 +1,124 @@
 # Item quality
 
-> Fonte: [Item quality](https://dwarffortresswiki.org/index.php/Item_quality) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Item quality](https://dwarffortresswiki.org/index.php/Item_quality) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+*For information on room/zone quality, see Room/Quality.*
+
+*For article quality ratings, see DF:Quality.*
+
+*For the Masterwork Mod, see the Masterwork Mod wiki.*
 
 **Quality** is - by definition - the standard of something as measured against other things of a similar kind; the degree of excellence of something. Within the world(s) of *Dwarf Fortress*, the primary factors of the quality of something are determined by the skill of the creator, as well as the materials used to make it. Quality also determines an object's financial value, and can strongly dictate someone's reception of said object when using it.
 
+The value of some goods can be further improved by other means. For example, some goods can be encrusted with gems, and clay goods can be glazed with ash.
+
 ## Quality grades
 
-All crafted items (e.g. furniture, armor, clothes and prepared meals, but not drinks) have quality levels. If the quality of their craftsdwarfship is above-standard, the item name is bracketed by characters that show it (see table below). Coins are an unusual case. The image on the coin may have a quality level, but this does not affect the value of the coin, and the coin's quality level is not shown by special characters.
+All crafted items (e.g. furniture, armor, clothes and prepared meals, but not drinks) have quality levels. If the quality of their craftsdwarfship is above-standard, the item name is bracketed by special symbols that reflect that quality (see table below). Coins are an unusual case; the image on the coin may have a quality level, but this does not affect the value of the coin, and the coin's quality level is not shown by special characters.
 
-Item quality depends on the skill and attributes of the crafter. Past a certain skill level they will almost always make at least level 4 (exceptional) quality items. Level 5 (masterworks) are capped to a flat 1/3rd chance.
+Item quality depends on the skill and attributes of the crafter, as well as any preferences the crafter has for the item or its makeup. Certain deleterious statuses of the crafter cause effective skill level to be lower than the level determined by experience alone through skill penalties, resulting in lower item quality. Notwithstanding any penalties, past a certain high skill level a dwarf will almost always make at least ≡exceptional≡ quality items. ☼Masterworks☼ are capped to a maximum 1/3 (33.3%) chance.
 
-Images on floors or walls that are engraved by an engraver have quality levels, which can be seen by examining the engraving. Note that engraving values are calculated differently than crafted items (they still use pre-v50 values), and while a wall will appear to be engraved on all four sides, the only rooms that benefit from a wall engraving are those containing the square the engraver was standing on at the time of engraving. Keep this in mind if you want to improve a specific room or improve multiple rooms!
+Designation
+Description
+Value / Multiplier / (item)
+Value / Bonus / (item)
+Sharpness
+Weapon To-Hit / Armor Deflect / Modifier
+Mining / Speed
 
-Raw materials used for crafting items (e.g. stones, logs, bars, thread, dye, food) have no quality levels, with the exception of cloth. Blocks, an intermediary building material, also lack quality levels, as do smoothed floor tiles, walls, and carved fortifications.
+Item Name
+—
+1×
++0
+50%
+1×
+100%
+
+-Item Name-
+Well-crafted
+1.1×
++3
+60%
+1.2×
+120%
+
++Item Name+
+Finely-crafted
+1.2×
++6
+70%
+1.4×
+140%
+
+*Item Name*
+Superior quality
+1.333×
++10
+80%
+1.6×
+160%
+
+≡Item Name≡
+Exceptional
+1.5×
++15
+90%
+1.8×
+180%
+
+☼Item Name☼
+Masterful
+2×
++30
+100%
+2×
+200%
+
+Unique name
+Artifact
+20×
++300
+100%
+3×
+200%[Verify]
+
+«Item Name»
+Decorated object
+Varies
+Varies
+no effect
 
 For named weapons that are not artifacts, see here.
 
-**Note:** Items may also be surrounded by braces , which indicates the item is forbidden, or parentheses (), which indicates the item came from off-site (i.e. it arrived as Goblinite, was purchased in a trade, or was part of the original embark supplies). See Item designations for a summary.
+**Note:** Items may also be surrounded by braces {}, which indicates the item is forbidden, or parentheses (), which indicates the item came from off-site (i.e. it arrived as Goblinite, was purchased in a trade, or was part of the original embark supplies). See Item designations for a summary.
 
-Almost all decorations have quality levels, too. An item of any quality (except artifact-level) can have a decoration of any quality. (Artifacts can't be decorated manually, but have inherent decorations depending on the materials used to make them.) The quality level of a decoration is shown by the same signs (-, +, \*, ≡, ☼) just outside the double angle-brackets («,»). Thus, a \*«+steel battle axe+»\* is a finely-crafted steel battle axe with superior decorations on it, and a «☼steel battle axe☼» is a masterfully crafted steel battle axe with decorations of standard quality. Each decoration imparts its flat bonus and multiplier, so high-quality decorations can quickly create extremely-valuable items, even if those items were low-quality to begin with.
+Images on floors or walls that are engraved by an engraver have quality levels, which can be seen by examining the engraving. Note that engraving values are calculated differently than crafted items (they still use pre-v50 values), and while a wall will appear to be engraved on all four sides, the only rooms that benefit from a wall engraving are those containing the square the engraver was standing on at the time of engraving. Keep this in mind if you want to improve a specific room or improve multiple rooms!
 
-Dyeing is considered a (type of) decoration with quality levels, as are glazes, the latter having the effect of making an earthenware jug or pot waterproof and capable of holding liquid. For example, some rope reed thread may be finely dyed with emerald dye. Dye can be applied to either thread or cloth, but not other goods made of cloth. If thread is dyed, and then woven into cloth, the new cloth will retain the dye and whatever quality level the dye had. The same is true for cloth made into clothes and other goods.
+Raw materials used for crafting items (e.g. stones, logs, bars, thread, dye, food) have no quality levels, with the exception of cloth (see next). Blocks, an intermediary building material, also lack quality levels, as do smoothed floor tiles, walls, and carved fortifications.
 
-Note that destroying a ☼masterwork☼ item (e.g. by melting) may cause the dwarf who made it to get unhappy thoughts. Covering an engraved image on the floor with water will remove the image, and cause an unhappy thought if the image was masterwork. The same is true for mining through a wall with a masterwork image on it. An unhappy thought can also happen if a thief steals a masterwork item. It also happens in the unusual case where a creature was shot with a masterwork crossbow bolt and the bolt gets stuck in the creature when they leave the map. Eating a masterwork prepared meal will not cause an unhappy thought, similarly to dismantling a masterwork building Having a masterwork building destroyed by a cave-in or building destroyer, however, will.
+#### Decorations and dyeing
+
+Almost all decorations have quality levels, too. An item of any quality (except artifact-level) can have a decoration of any quality. (Artifacts can't be decorated manually, but have inherent decorations depending on the materials used to make them.) The quality level of a decoration is shown by the same signs (**-**, **+**, **\***, **≡**, or **☼**) just outside the double angle-brackets («,»). Thus, a \*«+steel battle axe+»\* is a +finely-crafted steel battle axe+ with \*superior decorations\* on it, while a «☼steel battle axe☼» is a ☼masterfully crafted steel battle axe☼ with «decorations» of standard (low) quality (i.e. no visible symbol). Each decoration imparts its flat bonus and multiplier, so high-quality decorations can quickly create extremely-valuable items, even if those items were low-quality to begin with.
+
+Dyeing is considered a (type of) decoration with quality levels, as are glazes, the latter having the additional effect of making an earthenware jug or pot waterproof and capable of holding liquid. For example, some rope reed thread may be +finely dyed+ with emerald dye. Dye can be applied to either thread or cloth, but not other, finished goods made of cloth. If thread is dyed, and then woven into cloth, the new cloth will retain both the dye and whatever quality level it had. The same is true for cloth made into clothes and other goods. However, unlike other improvements, their quality levels will be displayed on the base item itself, but only if there are no other visible improvements - for example, a piece of superior rope reed cloth with exceptional dimple dye will appear as ≡rope reed cloth≡, and a finely-crafted sock made from superior cave spider silk will appear as a \*cave spider silk sock\* (but will become a \*«+cave spider silk cloth+»\* once a low-quality *visible* decoration is added). The same thing happens with ingredients on prepared meals - a well-prepared mule tallow roast containing superiorly-minced ingredients will show up as a \*mule tallow roast\*.
+
+#### Masterpiece
+
+Rarely, a dwarf will produce an item that excels beyond normal expectations; this item is "masterfully crafted", and commonly referred to as a masterwork, or a masterpiece item. Masterpiece items are noticeably more valuable than any other quality, and masterpiece weapons boast an edge the equal of artifact equivalents in their sharpness. Aside from artifacts, masterworks are the optimal a fortress can achieve, and many mature fortresses can boast of masterwork items for every useful feature, in bedrooms, in their dining halls, for their military weapons and armor, everywhere that "better" is helpful. And special rules apply to them.
+
+Destroying a ☼masterwork☼ item (e.g. by melting) may cause the dwarf who made it to get unhappy thoughts. Allowing an engraved image on the floor to get wet (and thus muddy) will allow vegetation to grow on it and destroy the image, and cause an unhappy thought if the image was masterwork. The same is true for mining through a wall with a masterwork image on it. An unhappy thought can also happen if a thief steals a masterwork item. It also happens in the unusual case where a creature was shot with a masterwork crossbow bolt and the bolt gets stuck in the creature when they leave the map.\[Verify\] Eating a masterwork prepared meal will not cause an unhappy thought, similarly to dismantling a masterwork building. Having a masterwork building destroyed by a cave-in or building destroyer, however, will.
+
+If a dwarf has created many masterpieces in their lifetime, the loss of a single item will affect them proportionally less. This is especially fortunate, for example, in the case of masterpiece crossbow crossbow bolts (which are made in multiples), but it applies to any- and everything else as well.
+
+#### Adventure mode
+
+In Adventure mode, the quality of upper body clothes can be seen in portraits of some individuals, such as the created characters, the graphics reflecting the quality of the worn item. Before starting a game in Adventure mode, the player can choose any quality of wearable item (i.e. armor) for themselves, at the cost of points. In these character portraits, the quality of clothes and armor can be easily seen, as the piece of clothing will appear to be more lavishly decorated the higher the quality is. This can be seen in the example image below:
+
+From left to right, the quality levels of the human's coat (upper) and the dwarf's armor (lower) are standard, -well-crafted-, +finely-crafted+, \*superior quality\*, =exceptional=, ☼masterful☼ and artifact.
+
+The player has the choice of choosing the quality of some clothing and weapons by clicking  and , with higher qualities costing more points. Note that some articles of clothing will not show a unique graphic for every level of quality. A player can never choose "artifact" quality from the start.
 
 ## Quality levels of imported goods
 

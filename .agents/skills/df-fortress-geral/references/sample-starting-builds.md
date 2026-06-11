@@ -1,6 +1,8 @@
 # Sample Starting Builds
 
-> Fonte: [Sample Starting Builds](https://dwarffortresswiki.org/index.php/Sample_Starting_Builds) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Sample Starting Builds](https://dwarffortresswiki.org/index.php/Sample_Starting_Builds) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+\
 
 This is a collection of **starting builds** (or embark setups) which individual players find useful and generally worth trying.
 
@@ -8,7 +10,7 @@ These can be found in embark_profiles.txt. Each one begins with a \[PROFILE\] ta
 
 ## *Dwarf Fortress* Starter Pack
 
-The *Dwarf Fortress* Starter Pack includes a large number of basic embark profiles, including scenarios adapted from the Masterwork mod. If you don't want to download the whole pack, you can also find many of the profiles at
+The *Dwarf Fortress* Starter Pack includes a large number of basic embark profiles, including scenarios adapted from the Masterwork mod. If you don't want to download the whole pack, you can also find many of the profiles at https://pastebin.com/vsQgfWNH
 
 ## Nagidal's Allrounder
 
@@ -57,6 +59,110 @@ Before you start thinking of having some military, build a well and a hospital.
 
 ## ELLIOTTCABLE's Twerking Band
 
+This is my tweaked alternative to Tatter's build.
+
+ELLIOTTCABLE's Twerking Band™
+
+Primary skill(s)
+Secondary skill(s)
+Tertiary skill(s)
+Relevant attributes*
+
+Commander / Broker: / This will primarily be your mining dwarf, for the first few months of the game. Train up that pickaxe skill! Once your first / traders / arrive, this dwarf will act as your / broker / . Later on, they'll be your first military-oriented dwarf, leading your army to / Greatness™! / Although they don't / start / with any / mining / skill, they'll level that up extremely quickly after your embarkation. / At the moment, we don't really know what / social skills / affect your broker's effectiveness to what extent. Given that the only skills we / know / affect his performance are / Appraiser / and / Judge of intent / , I've chosen to focus on those two, instead of shot-gunning all the social skills.
+
+Miner†: 0
+Appraiser / : / 3 / Judge of Intent / : / 2
+Armor user: 5
+Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Analytical / ‘a sharp intellect’ / Intuition / , / Memory / Strength / , / Toughness / , / Willpower
+
+Carpenter / Brewer: / Getting everybody properly smashed, and then providing the beds for them to sleep on. What a considerate dwarf-gal. / Keeping your dwarves / in drink / , and building all of the furniture, are rather important (and time-intensive!) tasks. Try and keep this dwarf focused on his tasks; if you can afford the dwarf-time, get others to do the hauling for the Carpenter.
+
+Carpenter: 5
+Brewer: 5
+
+Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Creativity / Agility / , / Strength
+
+Primary skill(s)
+Secondary skill(s)
+Tertiary skill(s)
+Relevant attributes*
+
+Farmer / Jeweler: / Generating riches for your dwarves' happiness (and for trading with the outside world) is generally a low-priority task that can be done in batches. That's a good thing, because farming is absolutely crucial; and one slip-up can cost you a harvest. / Make sure this dwarf, as well, stays on-task. Disable their hauling labors (except perhaps for ‘food’), and make sure they get to the fields on-time when the seasons hit. / I chose Gem / Setting / over the Gem / Cutting / from Tatter's build, because the skill-level in Cutting has no effect on value; whereas high skill-levels in / Setting / add value to the final product.
+
+Grower: 5
+Gem setter: 5
+
+Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Creativity / , / Focus / Agility / , / Strength
+
+Doctor: / This is going to be one of your more idle dwarves at first (at least, we hope!) This one's a good candidate for all the hauling / wood-cutting labors that you've probably disabled on your other dwarves at first. (Poor Doc, kept running around doing the menial labour for everybody else!) / Your record-keeping doctor will need an office to do their best work. Why not tack one on your hospital? :P
+
+Diagnostician: 5
+Bone doctor / : / 1 / Surgeon / : / 1 / Suturer / : / 1 / Wound dresser / : / 1
+Record keeper: 1
+Analytical / ‘a sharp intellect’ / Empathy / ‘an ability to read emotions’ / Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Intuition / , / Memory / Agility / , / Strength / , / Toughness / , / Willpower
+
+Primary skill(s)
+Secondary skill(s)
+Tertiary skill(s)
+Relevant attributes*
+
+Armorsmith / Cook: / Until your food-economy really gets up steam, and your miners manage to strike metals, this dwarf might be a little bored. They're another good candidate for temporary hauling duty. / Once you / do / have access to metals, make sure to disable this one's hauling! This is too valuable a dwarf to waste on that, and should be either pumping out metal goods, or occasionally cooking lavish meals, at all times.
+
+Armorsmith: 5
+Cook: 5
+
+Analytical / ‘a sharp intellect’ / Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Creativity / Agility / , / Strength
+
+Mason / Architect: / In general, this dwarf will need to be kept free to immediately respond to any / b / uilding requests you may have. Especially with an early fortress, your Architect will be doing basically nothing but running around, constructing buildings. / This dwarf, specifically, will need the / stone hauling / labor enabled; that way, it can both plan / and / construct many buildings all by its lonesome.
+
+Mason: 5
+Building designer: 5
+
+Analytical / ‘a sharp intellect’ / Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Creativity / Agility / , / Strength
+
+Weaponsmith / Mechanic: / As / mechanisms / are crucial to any functioning fortress, you should have this dwarf pumping them out at the earliest opportunity. Once you have enough of them stockpiled, and until you strike metal, you can have the Mechanic contribute to your general hauling / maintenance tasks.
+
+Weaponsmith: 5
+Mechanic: 5
+
+Analytical / ‘a sharp intellect’ / Endurance / ‘slow to tire’, ‘indefatigable’ / Kinesthetic / ‘sense of the position of own body’ / Spatial / ‘feel for the surrounding space’ / Creativity / Agility / , / Strength
+
+**Key:**
+***Intensive skills**:* Skills which can easily consume most of a dwarf's available time
+
+Moodable skills: Skills which can generate a strange mood
+
+### Post-embark preparation:
+
+As soon as your dwarves reach the site, you can **follow these steps** to optimally configure your (currently) few dwarven resources.
+
+1.  Turn on the **mining** labor for your Commander (u, select dwarf, c, p-l, select labor, return).
+2.  Choose at least one (temporary) secondary miner; probably either the Doctor or Carpenter. Enable **Mining** for them as well.
+3.  Immediately disable the various **Hauling** labors for your most important dwarves, that have better things to be doing (definitely the Architect, and probably the Farmer).
+4.  Set the Commander as your **militia commander** and **broker** in the nobles screen. (They'll probably already be your **expedition leader**, but you can't control that.) Set the Doctor as your **chief medical dwarf**.
+5.  Choose a couple of the more tough and/or strong dwarves, and add them to a squad with your Commander. If you get attacked before anything is really prepared, you can follow these ‘simple’ instructions.
+6.  The exact order of initial tasks you undertake can vary on circumstances; but you have the skills in this set to do all of the following important tasks:
+    - Plant some underground farms with the seeds you brought (right?).
+    - Start cooking lavish meals from any food you brought.
+    - Get a Carpenter's workshop or Mason's workshop built, whichever material is more abundant for you; start churning out high-quality furniture for the basics of your fortress (chairs, tables, beds.)
+    - If you chose to DIY your embarkation (i.e. didn't bring any pre-built weapons or picks or axes with you), get your Wood furnace, Smelter, and Metalsmith's forge built to start pumping out those items. You may temporarily enable the **Wood burning** and **Furnace operating** labors on one of your dwarves (Doctor, or one of the Armorsmith / Weaponsmith, are good choices for this).
+    - Get your Mechanic's workshop up, and start churning out the dozens of Mechanisms you'll need to construct all the trap-related items one needs for a functioning, safe fortress.
+7.  As soon as you can (i.e. after you receive otherwise-useless immigrants), disable all of the hauling labors for most of the rest of these dwarves, as they should be forming the backbone of your economy.
+8.  Ditto military duties: all of the above, save the Commander, are industry-oriented. Remove them from your military squad(s) as soon as more suitable fighters arrive or can be trained.
+
+### Notes:
+
+- (**\***) I've cross-referenced the relevant attributes here only as a reference. Don't stress too much over matching each dwarf's attributes to the attributes listed here in minute detail ... just try and avoid making an *‘abysmally clumsy’* dwarf your Carpenter `:P`
+- (**†**) Mining is so easy to train that it's not worth spending at-embark levels on; nonetheless, it is both an intensive task, and the primary (intensive) labor of the Commander.
+- As with the original build, I try to optimized such that each starting dwarf has A) only one **moodable skill**, and B) basically only one **‘time-intensive’ labor**. (Only the Mechanic has two moodable labors. I couldn't figure out a way around this.)
+- This makes no provision for immediate defense, other, perhaps, than the Commander. If you're embarking to a dangerous location, this may not be the best build. :P
+- As with Tatter's build, the caveat about Armor User applies: we're simply spending our extra points on our Commander, trying to make them a better combatant. If you prefer to give them a specific weapon skill, go ahead. (The advantage of Armor User is being able to later promote them to Sheriff, without them being über-deadly to your criminals.) Similarly, it's debatable whether Armor User (which basically makes them faster in that full suit of steel armor that you're embarking with (right?)) or Shield User (which makes their blocks more successful) is a better choice.
+- Leatherworking, Bowyer, or Clothier may be almost as desirable as Armorsmith or Weaponsmith, in some circumstances. If it applies to you (map with few metals, but may trees, for instance), you may consider those as replacements.
+- Similarly, Engraver is an extremely valuable skill for engendering happiness in your dwarves; I decided on Mason over it, simply because it's less wasteful to train Engraver up (have them follow your miners around, engraving all your exploratory-mining tunnels, before they go and engrave your living quarters) after embark. However, it's still worth considering switching them out.
+- Dwarf Builder for OS X hasn't been updated to `v0.40` yet, so I haven't tested this there. I'm not sure if enough has changed to make any of this advice irrelevant; but I don't believe so.
+
+> `~~` Thanks for reading! If you liked my build, or have suggestions, let me know! `<3`
+
 ## Albedo's 7
 
 This balance works for me, and has (built-in) some room for flexibility. I've tried to give each dwarf just one dominant moodable skill, something that would produce a desirable end product (rather than an Artifact Left Sock) - but 2 dwarves have "moodable tbd" so that any 1 task of your choice will provide that for them (if they don't do any others).\*
@@ -69,15 +175,15 @@ If you're embarking in a dangerous area, lean toward more military. I find that 
 
 2\) "Dirty": **Planter** +5/Wrestler +5 (or ???)\*
 
-3\) "Stoney": **Mason** +5/Stone Crafter +5 (or ???)
+3\) "Stoney": **Mason** +5/Stone Crafter +5 (or ???)
 
-4\) "Cutter": **Weaponsmith** +5/Brewer +5 (or ???)
+4\) "Cutter": **Weaponsmith** +5/Brewer +5 (or ???)
 
 5\) "Hardpan": **Armorsmith** +5/Cook +5
 
 6\) "Cagey" **Mechanic** +5/Carpenter +5
 
-7\) "Striker": **Miner** +5/Siege Engineer +5 or ???)
+7\) "Striker": **Miner** +5/Siege Engineer +5 or ???)
 
 *(\* moodable skill tbd)*
 
@@ -85,7 +191,7 @@ If you're embarking in a dangerous area, lean toward more military. I find that 
 
 To start, your **Planter** and **Miner** are the only ones using their main profession close to full time. For your Haulers and misc. tasks, you can choose from the Boss, Mason, Weaponsmith, Armorsmith and Mechanic, as they follow their profession only the minimal to get the fortress started, and it takes 100+ of any one task to threaten their initial moodable skill. Later (by year 2), you'll have migrants to do the hauling and misc. tasks, and these dwarves can move toward working as full-time professionals and becoming Legendary, just like Armok intended.
 
-The 4 "(or ???)" skills can be tweaked to suit the target environment or your own playstyle/preference. They could be military, or something else if you think you need some other starting skill more. Ymmv, and that's fine.
+The 4 "(or ???)" skills can be tweaked to suit the target environment or your own playstyle/preference. They could be military, or something else if you think you need some other starting skill more. Ymmv, and that's fine.
 
 Against most early animal threats, the **leader** dwarf should be able to crush most anything non-ambush level if you give him a decent axe\*. Add some quick chain armor (and some back-up!) if something serious shows up.
 

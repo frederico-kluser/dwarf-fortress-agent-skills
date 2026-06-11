@@ -1,6 +1,8 @@
 # Material science
 
-> Fonte: [Material science](https://dwarffortresswiki.org/index.php/Material_science) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Material science](https://dwarffortresswiki.org/index.php/Material_science) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Materials have a number of properties representing real-world variables that describe how they respond to inputs. In particular, the game has a number of variables that describe what happens to a material when it's put under stress.
 
@@ -50,7 +52,7 @@ Bending: Force applied by bending a material.
 
 The *Dwarf Fortress* combat system does not use all material properties at present (0.40.05). Weapon and armor damage/wear/decay is implemented.
 
-The formulae below have been reverse-engineered 1 2 and experimentally proven 3 4 by several independent researchers. Below are the simplified results; for more details see links above.
+The formulae below have been reverse-engineered [1] [2] and experimentally proven [3] [4] by several independent researchers. Below are the simplified results; for more details see links above.
 
 ### Attack Types
 
@@ -64,49 +66,51 @@ Wrestling moves are special: **breaking bones** uses \[BENDING\_\*\] values, **p
 
 Attack contact area is the minimum of weapon contact area and armor/layer contact area. Body parts have areas dependent on their size, as with non-weapon items; part size is creature size **times** relative size of the part in proportion to whole body.
 
-| Body part     | Relative size (human) | Kobold | Elf   | Human | Troll  |
-|---------------|-----------------------|--------|-------|-------|--------|
-| \| Total      | 100%                  | 20000  | 60000 | 70000 | 250000 |
-| \| Upper body | 18%                   | 3599   | 10818 | 12621 | 43133  |
-| \| Lower body | 18%                   | 3599   | 10818 | 12621 | 43133  |
-| \| Neck       | 1.8%                  | 359    | 1081  | 1262  | 4313   |
-| \| Head       | 5.4%                  | 1079   | 3245  | 3786  | 12939  |
-| \| Upper arm  | 3.6%                  | 719    | 2163  | 2524  | 8626   |
-| \| Lower arm  | 3.6%                  | 719    | 2163  | 2524  | 8626   |
-| \| Hand       | 1.4%                  | 287    | 865   | 1009  | 3450   |
-| \| Upper leg  | 9.0%                  | 1799   | 5409  | 6310  | 21566  |
-| \| Lower leg  | 7.2%                  | 1439   | 4327  | 5048  | 17253  |
-| \| Foot       | 2.2%                  | 431    | 1298  | 1514  | 5175   |
+|  |  |  |  |  |  |
+|----|----|----|----|----|----|
+| Body part | Relative size (human) | Kobold | Elf/Goblin | Human | Troll |
+| Total | 100% | 20000 | 60000 | 70000 | 250000 |
+| Upper body | 18% | 3599 | 10818 | 12621 | 43133 |
+| Lower body | 18% | 3599 | 10818 | 12621 | 43133 |
+| Neck | 1.8% | 359 | 1081 | 1262 | 4313 |
+| Head | 5.4% | 1079 | 3245 | 3786 | 12939 |
+| Upper arm | 3.6% | 719 | 2163 | 2524 | 8626 |
+| Lower arm | 3.6% | 719 | 2163 | 2524 | 8626 |
+| Hand | 1.4% | 287 | 865 | 1009 | 3450 |
+| Upper leg | 9.0% | 1799 | 5409 | 6310 | 21566 |
+| Lower leg | 7.2% | 1439 | 4327 | 5048 | 17253 |
+| Foot | 2.2% | 431 | 1298 | 1514 | 5175 |
 
-Armor size is calculated as underlying body part size **times** coverage/100% **times** size/100 **times** 1+(UPSTEP+UBSTEP+LBSTEP)/4; MAX count as 3 in the last sum.
+Armor size is calculated as underlying body part size **times** size multiplier, where size multiplier is calculated as coverage/100% **times** Layer_Size/100 **times** (1+(UPSTEP+UBSTEP+LBSTEP)/4); "MAX" counts as "3" in the last sum.
 
-| Item | Size multiplier | Body part | Dwarf | Human | Extra body parts covered (humanoid) | Notes |
+|  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|
-| \| Cap | 0.05 | Head | 162 | 189 | none | Cloth |
-| \| Mask | 0.1 | Head | 324 | 378 | none | Cloth |
-| \| Helm | 0.3 | Head | 973 | 1135 | none |  |
-| \| Leather armor | 0.3 | Upper body | 3245 | 3786 | Lower body, neck, upper arms, upper legs | leather |
-| \| Mail shirt | 0.225 | Upper body | 2434 | 2839 | Lower body, neck, upper arms, upper legs | Chain |
-| \| Breastplate | 0.2 | Upper body | 2163 | 2524 | Lower body |  |
-| \| Gauntlets | 0.25 | Hands | 216 | 252 | Lower arms, fingers |  |
-| \| Leggings | 0.2625 | Lower body | 2839 | 3313 | Upper legs, lower legs, toes | Chain |
-| \| Greaves | 0.2625 | Lower body | 2839 | 3313 | Upper legs, lower legs, toes |  |
-| \| Low boots | 0.25 | Feet | 324 | 378 | Toes |  |
-| \| High boots | 0.3125 | Feet | 405 | 473 | Lower legs, toes |  |
+| Item | Size multiplier | Body part | Dwarf | Human | Extra body parts covered (humanoid) | Notes |
+| Cap | 0.05 | Head | 162 | 189 | none | Cloth |
+| Mask | 0.1 | Head | 324 | 378 | none | Cloth |
+| Helm | 0.3 | Head | 973 | 1135 | none |  |
+| Leather armor | 0.3 | Upper body | 3245 | 3786 | Lower body, neck, upper arms, upper legs | leather |
+| Mail shirt | 0.225 | Upper body | 2434 | 2839 | Lower body, neck, upper arms, upper legs | Chain |
+| Breastplate | 0.2 | Upper body | 2163 | 2524 | Lower body |  |
+| Gauntlets | 0.25 | Hands | 216 | 252 | Lower arms, fingers |  |
+| Leggings | 0.2625 | Lower body | 2839 | 3313 | Upper legs, lower legs, toes | Chain |
+| Greaves | 0.2625 | Lower body | 2839 | 3313 | Upper legs, lower legs, toes |  |
+| Low boots | 0.25 | Feet | 324 | 378 | Toes |  |
+| High boots | 0.3125 | Feet | 405 | 473 | Lower legs, toes |  |
 
 ### Attack Momentum
 
-DF uses momentum-based combat physics, so the momentum plays central role in calculations. Since momentum = velocity \* mass, and lighter items can be swung faster, attack momentum is largely independent from weapon weight. The simplified formula is as follows:
+DF uses momentum-based combat physics, so the momentum plays a central role in calculations. Since momentum = velocity \* mass, and lighter items can be swung faster, attack momentum is largely independent from weapon weight. The simplified formula is as follows:
 
-M = Str \* Vel / ( 10⁶/Size + 10\*F/W ),
-
-or
-
-M = Size \* Str \* Vel / (10 \* (( 10⁵ + i_Size)/W )),
+M = Str \* Vel / ( 106/Size + 10\*F/W ),
 
 or
 
-M = Size \* Str \* Vel / (10⁶ \* (1 + i_Size/(w_density\*w_size) )
+M = Size \* Str \* Vel / (10 \* (( 105 + i_Size)/W ))\[Verify\],
+
+or
+
+M = Size \* Str \* Vel / (106 \* (1 + i_Size/(w_density\*w_size) )
 
 where:
 
@@ -126,7 +130,7 @@ A stronger, smaller creature from a larger species wielding a more massive weapo
 
 For dwarves, the formula becomes
 
-M = 6\*10⁴ \* Str \* Vel / (10 \* ( 10⁵ + i_Size/W )) = 6\*10⁴ \* Str \* Vel / ( 10⁵ + i_Size/W )
+M = 6\*104 \* Str \* Vel / (10 \* ( 105 + i_Size/W )) = 6\*104 \* Str \* Vel / ( 105 + i_Size/W )
 
 or
 
@@ -134,8 +138,9 @@ M = 0.06 \* Str \* Vel / (1 + i_Size/(w_density\*w_size) )
 
 There are 28 possible sizes for your dwarves from 33750 to 93750; strength can vary from 0 to 5000 with an average of 1250; velocity can vary from 1 (pommel strikes) to 5 (whip lashes); weapon size can vary from 100 (whips) to 1300 (great axes, which are unwieldable by dwarves; the largest wieldable weapon is size 800, in the form of battle axes and maces).
 
-| Dwarf Size | Adamantine | Divine metal | Steel | Iron | Bismuth bronze | Bronze | Copper | Silver |
+|  |  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|----|
+| Dwarf Size | Adamantine | Divine metal | Steel | Iron | Bismuth bronze | Bronze | Copper | Silver |
 | 33750 | 77.4194 | 89.9550 | 93.2489 | 93.2489 | 93.2730 | 93.2730 | 93.3092 | 93.3745 |
 | 42750 | 73.9827 | 88.9944 | 93.1161 | 93.1161 | 93.1467 | 93.1467 | 93.1923 | 93.2748 |
 | 44100 | 73.4934 | 88.8520 | 93.0963 | 93.0963 | 93.1277 | 93.1277 | 93.1748 | 93.2599 |
@@ -181,8 +186,9 @@ Momentum can be further increased with weapon skill, status effects, attack modi
 
 Attacks from missile launchers are entirely dependent on the launcher's \[SHOOT_FORCE\] and \[SHOOT_MAXVEL\] tags:
 
-|  | SHOOT_FORCE | SHOOT_MAXVEL | Maximum Velocity | Magic Density / Constant Momentum |
+|  |  |  |  |  |
 |----|----|----|----|----|
+|  | SHOOT_FORCE | SHOOT_MAXVEL | Maximum Velocity | Magic Density / Constant Momentum |
 | Bows and Crossbows | 1000 | 200 | 20 | 1666 / 50 |
 | Blowguns | 100 | 1000 | 100 | 250 / 5 |
 
@@ -206,14 +212,20 @@ where:
 - **rSF** is ditto with SHEAR_FRACTURE
 - **A** is attack contact area
 - **S** is weapon material sharpness multiplier (1x for most metals, 1.2x for divine metal, 1.5x for glass, 2x for obsidian, 10x for adamantine and 0.1x for all other materials)
-- **Qw** is quality sharpness multiplier (1x for normal quality, 1.4x for fine, 2x for masterwork (or artifact) etc.)
+- **Qw** is quality sharpness multiplier (0.5x for normal quality, 0.7x for fine, 1x for masterwork (or artifact) etc.)
 - **Qa** is armor quality multiplier (same but x3 for artifacts)
 
 Should it exceed this value, attack momentum is decreased by some 5% and the layer is considered punctured/severed. Calculations then repeat for the underlying layer. Otherwise damage is converted to blunt *just for this layer* and proceeds as following.
 
 **Blunt attacks** can be entirely deflected by armor if weapon's IMPACT_YIELD is especially low relative to armor's density:
 
-2 \* Sw \* IYw \= (2\*IF - IY) \* (2 + 0.4\*Qa) \* A,
+2 \* Sw \* IYw \< A \* Da,
+
+where **Da** is armor material's density (in g/cm3), **A** is attack contact area, **Sw** is weapon size and **IYw** is its impact yield in MPa (i.e. raw value divided by 106).
+
+Otherwise, attack must have minimum momentum of:
+
+M \>= (2\*IF - IY) \* (2 + 0.4\*Qa) \* A,
 
 where **IF** and **IY** are layer's impact fracture and impact yield in MPa, **Qa** is armor quality multiplier and **A** is contact area as above. Again, on success layer is considered thrashed, momentum is reduced by about 5% and next layer is tested.
 
@@ -225,11 +237,11 @@ Clothing with \[STRUCTURAL_ELASTICITY\_\*\] tokens has its stress properties mod
 
 Items with \[STRUCTURAL_ELASTICITY_CHAIN_ALL\] or metallic items with \[STRUCTURAL_ELASTICITY_CHAIN_METAL\] have their \[\*\_STRAIN_AT_YIELD\] increased to 50000, which means that blocked attack will not be dampened; it still may be converted to *blunt*, however. Metal leggings and chainmail shirts have this property in vanilla.
 
-Items made of cloth (including adamantine!) with \[STRUCTURAL_ELASTICITY_WOVEN_THREAD\] additionally have their SHEAR values reduced to negligible 20-30 kPa. This makes candy clothing especially useless in combat. Caps and all clothing have this tag in vanilla.
+Items made of cloth with \[STRUCTURAL_ELASTICITY_WOVEN_THREAD\] additionally have their SHEAR values reduced to negligible 20-30 kPa. (Adamantine fabric seems to be an exception, however: unlike in v0.34, it's observed to be at least as protective as chain.) Caps and all clothing have this tag in vanilla.
 
 ### Penetration Depth
 
-Penetration depth affect how deep stabs go. Unlike contact area, penetration depth is the maximum shear distance the weapon can go before an edged force stops and converts into a blunt force. If the penetration depth is greater than the size of the struck body part, the body part may be sliced off entirely. This means that weapons like morningstars mainly deal surface damage but can still damage arteries, nerves, tendons, toes, and the like.
+Penetration depth affect how deep stabs go. Unlike contact area, penetration depth is the maximum shear distance the weapon can go before an edged force stops and converts into a blunt force. If the penetration depth is greater than the size of the struck body part, the body part may be sliced off entirely. This means that weapons like morningstars mainly deal surface damage but can still damage arteries, nerves, tendons, toes, and the like.\[Verify\]
 
 ### Pulping
 
@@ -255,31 +267,36 @@ As can be seen from above, importance of different material/item properties grea
   - Most dedicated blunt weapons cannot be deflected by anything but slade, so their impact yield can in fact be ignored.
 - Chain mail cannot block attacks via momentum cost thresholds; it still can blunt slashing attacks and then deflect them. Thus, the best defence can be reached by wearing *dense* (like copper) mail shirt under a *rigid* (like candy) one.
 - **Strain at yield** values are used in comparison to 50000. Since all metals have much less strain values than this, they all can be considered to have *zero* elasticity.
-- Adamantine clothing is *absolutely useless* as armor.
 - Armor quality doesn't matter much: masterwork armor provides only about 15% more protection than low-quality one.
 - Blunt weapon quality appears to not affect damage at all.
+- Silk is superior to plant fiber in that it is both stronger and lighter, though the difference is unlikely to be significant in most cases.
 
-With that in mind, here are some numbers for vanilla weapon/armor materials:
+With that in mind, here are some numbers for vanilla weapon/armor materials:\[Verify\]
 
-| Material | Density | Impact Yield | 2\*(Impact Fracture) - Impact Yield | Shear Fracture | Elasticity | Sharpness |  | Bolt | adj. | Sword | adj. | Mace | min M |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| \| Adamantine | 0.20 | 5.00 | 5.00 | 5.00 | 0 | 10 |  | 6 | 300 | 9 | 450 | 31 | 200 |
-| \| Bone/shell | 0.50 | 0.20 | 0.20 | 0.13 | \<1% | 0.1 |  | 15 | 0.20 | 19 | 0.25 | 60 | 8 |
-| \| Bronze | 8.25 | 0.60 | 1.08 | 0.24 | \<=1% | 1 |  | 49 | 12 | 75 | 18 | 138 | 43 |
-| \| Copper | 8.93 | 0.25 | 1.30 | 0.22 | \<1% | 1 |  | 49 | 11 | 77 | 17 | 138 | 52 |
-| \| Divine metal | 1.00 | 1.00 | 3.00 | 2.00 | 0 | 1.2 |  | 30 | 72 | 31 | 74 | 86 | 120 |
-| \| Glass | 2.6 | 1.00 | 1.00 | 0.04 | 4%/\<1% | 1.5 |  | -- | -- | 53 | 3.2 | 116 | 40 |
-| \| Iron | 7.85 | 0.54 | 1.62 | 0.31 | \<1% | 1 |  | 49 | 15 | 75 | 23 | 137 | 65 |
-| \| Leather | 0.50 | 0.01 | 0.01 | 0.03 | 100% | -- |  | -- | -- | -- | -- | -- | 0.4 |
-| \| Obsidian | 2.67 | 1.00 | 1.00 | 0.04 | 4%/\<1% | 2 |  | -- | -- | 54 | 4.3 | 117 | 40 |
-| \| Platinum | 21.4 | 0.35 | 1.05 | 0.20 | \<1% | 1 |  | -- | -- | 86 | 17 | 145 | 42 |
-| \| Silver | 10.49 | 0.35 | 0.84 | 0.17 | \<1% | 1 |  | 49 | 8.3 | 79 | 13 | 140 | 34 |
-| \| Slade | 200 | 4.00 | 6.00 | 5.00 | \<1% | 0.1 |  | -- | -- | 93 | 46 | 149 | 240 |
-| \| Steel | 7.85 | 1.51 | 3.54 | 0.72 | 2%/\<1% | 1 |  | 49 | 35 | 75 | 54 | 137 | 142 |
-| \| Wood | 0.50 | 0.01 | 0.01 | 0.04 | 2% | 0.1 |  | 15 | 0.06 | 19 | 0.076 | 60 | 0.4 |
+| Material | Density | Impact Yield | 2\*(Impact Fracture) - Impact Yield | Shear Fracture | Elasticity | Sharpness |  | Bolt | adj. | Sword | adj. | Mace | min M |
+| Adamantine | 0.20 | 5.00 | 5.00 | 5.00 | 0 | 10 |  | 6 | 300 | 9 | 450 | 31 | 200 |
+| Bone/Shell | 0.50 | 0.20 | 0.20 | 0.13 | \<1% | 0.1 |  | 15 | 0.20 | 19 | 0.25 | 60 | 8 |
+| Bronze | 8.25 | 0.60 | 1.08 | 0.24 | \<=1% | 1 |  | 49 | 12 | 75 | 18 | 138 | 43 |
+| Copper | 8.93 | 0.25 | 1.30 | 0.22 | \<1% | 1 |  | 49 | 11 | 77 | 17 | 138 | 52 |
+| Divine metal | 1.00 | 1.00 | 3.00 | 2.00 | 0 | 1.2 |  | 30 | 72 | 31 | 74 | 86 | 120 |
+| Glass | 2.6 | 1.00 | 1.00 | 0.04 | 4%/\<1% | 1.5 |  | -- | -- | 53 | 3.2 | 116 | 40 |
+| Iron | 7.85 | 0.54 | 1.62 | 0.31 | \<1% | 1 |  | 49 | 15 | 75 | 23 | 137 | 65 |
+| Leather | 0.50 | 0.01 | 0.01 | 0.03 | 100% | -- |  | -- | -- | -- | -- | -- | 0.4 |
+| Obsidian | 2.67 | 1.00 | 1.00 | 0.04 | 4%/\<1% | 2 |  | -- | -- | 54 | 4.3 | 117 | 40 |
+| Plant Thread | 1.52 | 0.01 | 0.01 | 0.6 | 100% | -- |  | -- | -- | -- | -- | -- | -- |
+| Platinum | 21.4 | 0.35 | 1.05 | 0.20 | \<1% | 1 |  | -- | -- | 86 | 17 | 145 | 42 |
+| Silk | 0.50 | 0.01 | 0.01 | 1.2 | 100% | -- |  | -- | -- | -- | -- | -- | -- |
+| Silver | 10.49 | 0.35 | 0.84 | 0.17 | \<1% | 1 |  | 49 | 8.3 | 79 | 13 | 140 | 34 |
+| Slade | 200 | 4.00 | 6.00 | 5.00 | \<1% | 0.1 |  | -- | -- | 93 | 46 | 149 | 240 |
+| Steel | 7.85 | 1.51 | 3.54 | 0.72 | 2%/\<1% | 1 |  | 49 | 35 | 75 | 54 | 137 | 142 |
+| Wood | 0.50 | 0.01 | 0.01 | 0.04 | 2% | 0.1 |  | 15 | 0.06 | 19 | 0.076 | 60 | 0.4 |
 
 Clarifications:
 
 On the left side of the table there are some raw values. Density and impact yield are important for a blunt weapon; 4th column is adjusted impact fracture that appears in the formula for blunt defense. Shear fracture is important for edged attacks and defense. Elasticity is in %s of 100000; as you can see, it is universally low.
 
 On the right side there are some typical weapon momenta. From left to right: bolt momentum; ditto multiplied by SF and sharpness (signifies piercing ability); short sword momentum in dwarven hands; ditto multiplied by sharpness and SF; dwarf swinging a mace; and minimum momentum **some** mace needs to break through armor of **this** material.
+
+Materials such as bone, shell, wood, silk, and plant fiber can theoretically be overwritten by more specific variations, but this is generally not the case in practice. Wood varies only in color and weight; lighter wood is as strong as heavier wood. Plant fibers are all identical. All forms of silk have the same performance; the only advantage of Giant Cave Spider silk is a higher value multiplier. Bone and shell are distinct materials with the same performance.

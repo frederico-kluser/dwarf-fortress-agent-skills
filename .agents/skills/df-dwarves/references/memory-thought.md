@@ -1,16 +1,20 @@
 # Memory (thought)
 
-> Fonte: [Memory (thought)](https://dwarffortresswiki.org/index.php/Memory_(thought)) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Memory (thought)](https://dwarffortresswiki.org/index.php/Memory_(thought)) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+The memories of a scholar.
 
 **Memories** are recipients for a dwarf's thoughts. They are essentially an evolution of the old trauma system from previous versions.
 
 Each dwarf has eight short-term memory slots and eight long-term memory slots. During a year-long period, the dwarf will "dwell upon/relive/remember" the eight events that evoked the strongest emotions (negative or positive) and receive an additional stress change. After a year in one of the short-term slots, a memory will then be moved to the long-term memory slots if it is stronger than the ones there, otherwise it is discarded. Long-term memory slots are retained forever and keep haunting the dwarf periodically (for better or for worse), until they are overwritten by even stronger memories or enter the dwarf's core memory. In order to avoid redundant and similar trauma that piles up and clogs your dwarf's slots (e.g. multiple instances of horror in battle when seeing many creatures die), memories are grouped into categories, and only the strongest emotion in each category will get a specific slot.
 
-The emotion evoked by the memory may change in nature as time passes, and this may cause permanent personality changes in a dwarf's facets and values. When this happens, it will be indicated in the thoughts and preferences screen in bright magenta: which way the facet or value changed, what event caused the change and when.
+The emotion evoked by the memory may change in nature as time passes, and this may cause permanent personality changes in a dwarf's traits and values. When this happens, it will be indicated in the thoughts and preferences screen in bright magenta: which way the trait or value changed, what event caused the change and when.
 
 ## Mechanics
 
-Dwarves have thoughts based on their experiences, which provoke emotions of varying degrees of strength, creating memories. Each type of memory falls into a group. Each dwarf has three memory storage systems: short-term, long term memory, and core memory. You can see what has recently been in a dwarf's memory by looking at their thoughts and preferences screen. If an experience is immediate: "" it has affected their short-term memory, but if an experience is recalled: "" it has affected their long-term memory. Core memories are shown in detail, alongside the year of the event and a personality change that came about as a result. ""
+Dwarves have thoughts based on their experiences, which provoke emotions of varying degrees of strength, creating memories. Each type of memory falls into a group. Each dwarf has three memory storage systems: short-term, long term memory, and core memory. You can see what has recently been in a dwarf's memory by looking at their thoughts and preferences screen. If an experience is immediate: "She felt satisfied at work." it has affected their short-term memory, but if an experience is recalled: "She felt satisfied remembering work." it has affected their long-term memory. Core memories are shown in detail, alongside the year of the event and a personality change that came about as a result. "She can easily fall in love or develop positive sentiments, after gaining a sibling in 351."
 
 ### Short-term memories
 
@@ -38,7 +42,9 @@ When a dwarf thinks about a long-term memory, it has a 1:3 chance of being promo
 
 Core memories are less impactful than long-term memories, as they are rarely, if ever, revisited. However, the change that is made to the personality of the dwarf is permanent, and this can be for good or bad.
 
-The majority of long-term memories that will be promoted to core memory are negative thoughts. The ones that have been found so far are: seeing a dead body, seeing somebody die, having a loved one die, being uncovered, experiencing trauma, experiencing miasma, rain, freakish weather or being made nauseous by the sun; and on the positive side: becoming a parent and gaining a sibling. A query to Toady about this tendency to promote only certain long-term memories to core memory confirmed that he thinks that there is an exclusion list, but couldn't recall what was on it at the time of the Q&A.
+The majority of long-term memories that will be promoted to core memory are negative thoughts. The ones that have been found so far are: seeing a dead body, seeing somebody die, having a loved one die, being uncovered, wearing old/tattered clothing, experiencing trauma, experiencing miasma, rain, freakish weather or being made nauseous by the sun; and on the positive side: new romance, getting married, becoming a parent and gaining a sibling. A query to Toady about this tendency to promote only certain long-term memories to core memory confirmed that he thinks that there is an exclusion list, but couldn't recall what was on it at the time of the Q&A.
+
+In fact the event becoming a parent comes in pairs (for the parents only): the mother gets the additional "giving birth to a boy/girl/twins/triplets" while the father gets two instances of becoming a parent. And both usually end up as core memories and only in one case it was observed that the event did not become a long-term memory for the parents (possibly because the mother was already carrying a baby around at the time).
 
 The effect of mostly negative memories being promoted to core means that the long-term memory slots of a dwarf can become clogged with relatively positive emotions, if care is taken. Only the weakest long-term memory will be cycled out by short-term memories being promoted, meaning that it is possible to maintain dwarves in an ecstatic state.
 

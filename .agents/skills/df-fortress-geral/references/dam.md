@@ -1,6 +1,8 @@
 # Dam
 
-> Fonte: [Dam](https://dwarffortresswiki.org/index.php/Dam) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Dam](https://dwarffortresswiki.org/index.php/Dam) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 A **dam** can be built across a river or brook. This may negatively impact the game's performance, but has several uses:
 
@@ -35,6 +37,8 @@ If you wish to avoid loss of dwarven life then use staircases instead of channel
 
 One other possible method of disposing of that water is channelling it to an aquifer lower than the river, it will absorb the pressurized water. The best part of this method is that the aquifer will likely be almost directly under the river, minimizing the needed construction.
 
+An example of how to construct a magma dam.
+
 ### Magma method
 
 If you have access to a magma source, you can pump magma into the flowing water. When the magma and water collide, the result is a tile of obsidian- an added bonus if you're in the market for making obsidian items. Pump enough magma into the river to reach both banks for a stretch at least 3-4 tiles wide in order to give your dwarves enough space to channel out the obsidian and place floodgates.\
@@ -44,7 +48,7 @@ If you wish to move magma over a brook without damming it, constructed floors ov
 
 ### Natural cave-in
 
-If your river is underground, you can use channeling to collapse a section of rock into it. If this rock was constructed (i.e., you built it as walls or floors), it will revert to its component stones and sink to the bottom, not blocking the river at all. However, if the rock is **natural**, it will retain its shape and block the flow of water.
+If your river is underground, you can use channeling to collapse a section of rock into it.\[Verify\] If this rock was constructed (i.e., you built it as walls or floors), it will revert to its component stones and sink to the bottom, not blocking the river at all. However, if the rock is **natural**, it will retain its shape and block the flow of water.
 
 Since above-ground rivers normally do not pass beneath natural rock, this strategy is difficult to apply to them. But dwarven ingenuity should never be underestimated.
 
@@ -62,6 +66,8 @@ However, if your dwarves have access to the river bed they can 'mine' the bed ou
 
 ### Further possibilities
 
+Baboonanza's Unfillable Dam megaproject
+
 - Most of the above techniques can be used to puncture oceans and lakes, for dikes or random under-water bunkers.
 - You can create a massive flood if you build a dam out of floodgates and open them all at once. Good for traps. Works with magma.
-- Being in control of your local river/brook makes you more of a man dwarf.
+- Being in control of your local river/brook makes you more of a ~~man~~ dwarf.

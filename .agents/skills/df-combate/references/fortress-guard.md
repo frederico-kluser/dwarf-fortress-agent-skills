@@ -1,8 +1,14 @@
 # Fortress guard
 
-> Fonte: [Fortress guard](https://dwarffortresswiki.org/index.php/Fortress_guard) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Fortress guard](https://dwarffortresswiki.org/index.php/Fortress_guard) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-The **fortress guard** is the military squad in charge of delivering justice within a fort. Headed by the captain of the guard, the fortress guard is otherwise completely identical to a standard military squad, and can be treated as such. The fortress guard, once available, is always listed as the first squadron in your list of military units (including when you haven't got any guards - then it'll be either an empty squad or a not-created squad with no shown positions at all). It can be equipped like any other unit, given a schedule and assigned to barracks for training.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+The **fortress guard** is the military squad in charge of justice within a fort, along with the hammerer.
+
+## Fortress mode
+
+Headed by the captain of the guard, the fortress guard is otherwise completely identical to a standard military squad, and can be treated as such. The fortress guard, once available, is always listed as the first squadron in your list of military units (including when you haven't got any guards - then it'll be either an empty squad or a not-created squad with no shown positions at all). It can be equipped like any other unit, given a schedule and assigned to barracks for training.
 
 As the agents of dwarven justice, the fortress guard are responsible for dragging dwarves to jail and for the application of beatings, which typically are doled out when not enough chains and cages are available. Your fortress guard can therefore easily end up badly hurting an innocent dwarf whose only crime was carrying a good to the trading post that was forbidden for exports after the caravan had already left the fortress.
 
@@ -10,8 +16,18 @@ To prevent excessive harm from the justice system, you should make sure there's 
 
 Alternatively, you can simply not create a fortress guard, and deal with possible crimes without falling back on dwarven justice. An existing guard can be dissolved, disabling the justice system again.
 
+## Adventure mode
+
+Adventurers can start as a member of the fortress guard when starting at a dwarven fortress, though only "ordinary" adventurers can start at those. Any adventure may also be able to join in game, given enough reputation and (possibly) an empty guard position. This is the dwarven equivalent of a hearthperson, see that page for details.
+
 ## See also
 
+- Captain of the guard
+- Hammerer
+- Hearthperson
 - Justice
 - Military
-- Captain of the guard
+
+|  |
+|----|
+| "Fortress guard" in other / Languages / Dwarven / : / geshud duthnur / Elven / : / abeco ino / Goblin / : / snusp totsnost / Human / : / thrathdad ocgi |

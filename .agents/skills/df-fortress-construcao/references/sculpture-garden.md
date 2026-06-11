@@ -1,10 +1,18 @@
 # Sculpture garden
 
-> Fonte: [Sculpture garden](https://dwarffortresswiki.org/index.php/Sculpture_garden) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Sculpture garden](https://dwarffortresswiki.org/index.php/Sculpture_garden) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-[TABLE]
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
-A **sculpture garden** is a room defined around a statue, unengraved slab or museum. A **memorial hall** is a room defined around a memorial slab, functionally identical to a sculpture garden. Sculpture gardens can be assigned to specific dwarves, locations (such as a tavern, temple or library) or left unassigned, for communal enjoyment. A communal (non-assigned) garden is similar to a meeting hall in that it provides a place for idle dwarves and animals to congregate and socialize - however, there are some important differences.
+|     |     |     |         |     |     |     |     |
+|-----|-----|-----|---------|-----|-----|-----|-----|
+| `╔` | `═` | `═` | `┼`     | `═` | `═` | `═` | `═` |
+| `║` | `♫` | `,` | `.`     | `☺` | `,` | `'` | `~` |
+| `║` | `'` | `X` | `` ` `` | `Ω` | `.` | `≈` | `≈` |
+| `║` | `.` | `☺` | `π`     | `,` | `≈` | `~` | `≈` |
+| `║` | `'` | `,` | `d`     | `d` | `☺` | `≈` | `~` |
+
+A **sculpture garden** is a meeting area containing at least one statue, unengraved slab or museum. Sculpture gardens can be assigned to locations (such as a tavern, temple or library) or left unassigned, for communal enjoyment. A communal (non-assigned) garden, being a meeting area, provides a place for idle dwarves and animals to congregate and socialize.
 
 ## Advantages over dining rooms
 
@@ -12,8 +20,12 @@ The biggest advantage a sculpture garden has over a dining room is simplicity. S
 
 ## Disadvantages
 
-Unassigned sculpture gardens don't possess the same interactivity and bonuses of locations. Before version 0.42.01, dwarves would also waste much of their time throwing parties in sculpture gardens, though these particular activities no longer exist. Having a sculpture garden separate from other locations ultimately comes down to player preference.
+Unassigned sculpture gardens don't possess the same interactivity and bonuses of locations. Having a sculpture garden separate from other locations ultimately comes down to player preference.
 
 ## Private gardens
 
-If a sculpture garden is private (assigned to a particular dwarf) then that dwarf will hang out there, in preference to communal meeting places. This is useful if you want a particular dwarf to hang out at a particular place when idle, also increasing the emotional response the owner gets from admiring the furniture inside it (on top of the existing bonus for being "tastefully arranged").
+Zulban enjoying her own completely sublime statue
+
+If a statue is placed in a private zone (assigned to a particular dwarf) it will increase the emotional response the owner gets from admiring the furniture inside it (on top of the existing bonus for being "tastefully arranged").
+
+Hirshhorn Museum Sculpture Garden. A product of humans many years in the future.

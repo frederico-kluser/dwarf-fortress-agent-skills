@@ -1,6 +1,8 @@
 # Clean self
 
-> Fonte: [Clean self](https://dwarffortresswiki.org/index.php/Clean_self) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Clean self](https://dwarffortresswiki.org/index.php/Clean_self) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 The **clean self** job is a special job in that it is enabled automatically and cannot be disabled. Dwarves that have been contaminated, be it by dirt, grime, or goblin blood, will take a bit of time off at some point to clean themselves if possible; dwarves that haven't had a bath in a while will do so as well on occasion. They can do this with access to a water source, be it a murky pool, a brook, or a well (but not rivers as they will be swept away). In the absence of such an area, or if the water source(s) are forbidden, they will not perform this job.
 

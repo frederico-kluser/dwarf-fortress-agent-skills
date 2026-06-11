@@ -1,12 +1,12 @@
 # Hybrid playstyle
 
-> Fonte: [Hybrid playstyle](https://dwarffortresswiki.org/index.php/Hybrid_playstyle) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Hybrid playstyle](https://dwarffortresswiki.org/index.php/Hybrid_playstyle) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
 A **hybrid playstyle** is one that combines both Fortress and Adventure mode in order to achieve some durable, persistent goals in one's world. In hybrid play, one chains fortresses and adventurers in order to have a specific effect on a world and unlock new features in either mode, and generally improve one's immersion in a given world.
 
 # History
 
-In the earliest versions of *Dwarf Fortress*, a hybrid playstyle was the norm: you were supposed to build a fortress, which would inevitably die because the game was much harsher and less unforgiving back then. Then an adventurer would explore the ruins of the fortress and slay monsters there. The wealth created by the fortress would set a maximum high score, and the wealth looted by the adventurer from that fortress would be the final score.
+In the earliest versions of *Dwarf Fortress*, a hybrid playstyle was the norm: you were supposed to build a fortress, which would inevitably die because the game was much harsher and less forgiving back then. Then an adventurer would explore the ruins of the fortress and slay monsters there. The wealth created by the fortress would set a maximum high score, and the wealth looted by the adventurer from that fortress would be the final score.
 
 However, as Fortress mode got increased attention, the game took an increasingly simulationist bent and much of the simulation occurred in Fortress mode, while in Adventure mode more or less nothing happened on its own. The fact that you couldn't leave a fortress without abandoning it to ruins severely limited any kind of transition between game modes.
 
@@ -30,7 +30,7 @@ Tired of goblins harassing you? Can't afford those precious military dwarves in 
 
 ## Super-soldier army
 
-Training takes time, dwarves are fickle... why not have tailor-made soldiers? Start an adventuring party of demigods with maxed out military skills, train them as long as necessary and retire at the fortress you want to play. As a bonus, your adventuring party can be made of any available race, so you can fully enjoy the bonuses offered by some, such as goblins' no need for food or drink, giant elephant people's tremendous size, spider people's lack of fear, and so on.
+Training takes time, dwarves are fickle... why not have tailor-made soldiers? Start an adventuring party of chosen ones with maxed-out military skills, train them as long as necessary and retire at the fortress you want to play. As a bonus, your adventuring party can be made of any available race, so you can fully enjoy the bonuses offered by some of those, such as goblins' foodless (or \[NO_FOOD\]) and drinkless (\[NO_DRINK\]) qualities, giant elephant people's tremendous size, spider people's lack of fear, and so on.
 
 ## Necromancer fortress
 
@@ -46,6 +46,8 @@ If the body of one of your dead adventurers gets raised as intelligent undead, f
 
 ## Playable demon
 
+http://www.bay12forums.com/smf/index.php?topic=51245.msg8077356#msg8077356 http://www.bay12forums.com/smf/index.php?topic=51245.msg8077330#msg8077330
+
 - Make a fort.
 - Retire.
 - Make a (flying) adventurer with the background be part of the fort
@@ -60,7 +62,7 @@ That kind of demon should now be playable.
 
 ## Recruit literally anyone to your fort or party
 
-Giving intelligent creatures nobility titles seems to bypass their base hostility and have them behave as a proper entity member, so the above trick can be used to recruit literally any intelligent creature that can talk to your fortress (or adventuring party) and make its race playable. That includes bogeymen.  And night trolls.
+Giving intelligent creatures nobility titles seems to bypass their base hostility and have them behave as a proper entity member, so the above trick can be used to recruit literally any intelligent creature that can talk to your fortress (or adventuring party) and make its race playable, including bogeymen and night trolls.
 
 ## Missions and quests
 

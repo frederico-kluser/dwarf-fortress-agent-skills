@@ -1,49 +1,60 @@
 ---
 name: df-materiais
-description: Metais, pedras, minérios, gemas, madeira, tecidos, couro, conchas, extratos e propriedades físicas de material — magma-safe, valor, peso. Use para comparar ou escolher materiais, saber do que algo é feito, ou propriedades de uma substância. Funciona para Adventure Mode e Fortress Mode.
+description: >-
+  Materiais do Dwarf Fortress: metais, pedras, minérios, gemas, ligas, aço, adamantine, madeira, couro, conchas, extratos e propriedades físicas (magma-safe, valor, peso, densidade). Use quando o usuário perguntar (inclusive em português) sobre material, metal, pedra, minério, gema, aço, liga, do que algo é feito, ou "how to make steel". Termos EN: metal, stone, ore, gem, alloy, steel, iron, bronze, adamantine, leather, magma safe. Funciona para Adventure Mode e Fortress Mode.
+metadata:
+  source: dwarffortresswiki.org namespace 0 (v50 / Premium)
+  snapshot: "2026-06"
+  license: GFDL & MIT
+  mode: both
 ---
 
-# Df Materiais (Dwarf Fortress)
+# DF Materiais (Dwarf Fortress)
 
-Metais, pedras, minérios, gemas, madeira, tecidos, couro, conchas, extratos e propriedades físicas de material — magma-safe, valor, peso. Use para comparar ou escolher materiais, saber do que algo é feito, ou propriedades de uma substância. Funciona para Adventure Mode e Fortress Mode.
+Os artigos em `references/` estão em **inglês** (fonte: wiki oficial). O usuário pode
+perguntar em português: traduza a pergunta para os termos de jogo em inglês (veja
+`../scripts/glossary-pt-en.tsv`), busque em inglês e **responda no idioma do usuário**.
+Leia **apenas** o artigo relevante — não pré-carregue tudo.
 
-Leia **apenas** o artigo relevante em `references/`. Não pré-carregue tudo.
+## Como buscar (faça isto primeiro)
+Busca full-text rankeada (BM25, com stemming e tradução PT→EN automática):
 
-## Como buscar
-Se não souber o arquivo exato, rode a busca local:
-`bash scripts/search.sh "df-materiais" "termo de busca"`
-Ela varre todos os artigos desta categoria e retorna os mais relevantes.
+    python3 ../scripts/search.py --skill df-materiais "steel smelting"     # use --json para saída estruturada
 
-## Índice de artigos (principais 30 de 147)
-- Material science → `references/material-science.md`
-- Gem setter → `references/gem-setter.md`
-- Textile industry → `references/textile-industry.md`
-- Clothing → `references/clothing.md`
+Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice:
+
+    grep -ril "TERMO" references/ | head
+
+## Índice (principais 30 de 759 artigos — use o search.py para o resto)
 - Stone → `references/stone.md`
+- Meat → `references/meat.md`
+- Item value → `references/item-value.md`
+- Fat → `references/fat.md`
 - Wood → `references/wood.md`
-- Goblinite → `references/goblinite.md`
-- Stone management → `references/stone-management.md`
-- Metal → `references/metal.md`
-- Steel → `references/steel.md`
-- Names and symbols → `references/names-and-symbols.md`
 - Gem → `references/gem.md`
-- Obsidian → `references/obsidian.md`
-- Gem cutter → `references/gem-cutter.md`
-- Ice → `references/ice.md`
-- Wood industry → `references/wood-industry.md`
-- Raw adamantine → `references/raw-adamantine.md`
-- Fuel → `references/fuel.md`
-- Bone → `references/bone.md`
-- Shell → `references/shell.md`
-- Magma-safe → `references/magma-safe.md`
-- Sand → `references/sand.md`
-- Blood → `references/blood.md`
-- Millstone → `references/millstone.md`
-- The Non-Dwarf's Guide to Rock → `references/the-non-dwarf-s-guide-to-rock.md`
-- Ore → `references/ore.md`
-- Mud → `references/mud.md`
-- Cloth → `references/cloth.md`
-- Divine metal → `references/divine-metal.md`
+- Alcohol → `references/alcohol.md`
+- Color → `references/color.md`
+- Metal → `references/metal.md`
+- Magma → `references/magma.md`
 - Glass → `references/glass.md`
+- Water → `references/water.md`
+- Plant → `references/plant.md`
+- Mangrove → `references/mangrove.md`
+- Opal → `references/opal.md`
+- Feather tree → `references/feather-tree.md`
+- Glumprong → `references/glumprong.md`
+- Nether-cap → `references/nether-cap.md`
+- Blood thorn → `references/blood-thorn.md`
+- Olive → `references/olive.md`
+- Highwood → `references/highwood.md`
+- Oak → `references/oak.md`
+- Papaya → `references/papaya.md`
+- Persimmon → `references/persimmon.md`
+- Willow → `references/willow.md`
+- Apricot → `references/apricot.md`
+- Tower-cap → `references/tower-cap.md`
+- Apple → `references/apple.md`
+- Cherry → `references/cherry.md`
+- Custard-apple → `references/custard-apple.md`
 
-*...e mais 117 artigos (use o search.sh para encontrá-los)*
+*…e mais 729 artigos (use o search.py).*

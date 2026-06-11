@@ -1,19 +1,23 @@
 # Worldgen examples
 
-> Fonte: [Worldgen examples](https://dwarffortresswiki.org/index.php/Worldgen_examples) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Worldgen examples](https://dwarffortresswiki.org/index.php/Worldgen_examples) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 This article contains, in no particular order, parameter sets for use with advanced world generation. You may find one of them useful if you are trying to create worlds with specific types of features.
 
 ## Using Examples
 
-To use a worldgen example, open *prefs/world_gen.txt* with a text editor (notepad.exe *or notepad++* is fine) and copy/paste the parameter set text into it, then start *Dwarf Fortress* and select "Design New World With Advanced Parameters". The world parameters will appear in the list on the right of the screen. Select the name of the parameter set with the arrow keys and hit .
+To use a worldgen example, open *prefs/world_gen.txt* with a text editor (notepad.exe *or notepad++* is fine) and copy/paste the parameter set text into it, then start *Dwarf Fortress* and select "Design New World With Advanced Parameters". The world parameters will appear in the list on the right of the screen. Select the name of the parameter set with the arrow keys and hit Enter.
+
+If *prefs/world_gen.txt* is missing, open the menu to create a new world in detailed mode in Dwarf Fortress, then click *Save* on the top right-hand corner of the screen. This will create the file. Backing the file up before making any changes to it is recommended!
 
 ## Posting Examples
 
 The following is the best way to post an example as it ensures the seed values used in your world are copied exactly as used in your world. This will make sure people can reproduce your exact results (or, if they want, they can delete the seed values to get their own variation).
 
 1.  Load the world up in Legends mode.
-2.  Hit to "export map/gen info."
+2.  Hit p to "export map/gen info."
 3.  Look for a file called *regionX-world_gen_param.txt* in your main *Dwarf Fortress* folder.
     1.  Open it in a text editor (notepad is good)
     2.  Copy and paste the text into the wiki page using the template hidden at the top of the wiki editing text
@@ -127,6 +131,8 @@ Features:
 
 This example world is filled with badlands. It has one dwarven civ, and one goblin civ. In a typical embark, there will be no surface trees, at all. This was accomplished by having rainfall set to zero minimum and zero maximum.
 
+Generated in DF v0.43.05.
+
     Created in DF v0.34.11.
 
     [WORLD_GEN]
@@ -224,6 +230,8 @@ This example world is filled with badlands. It has one dwarven civ, and one gobl
 
 This world is nothing but swamps and rivers. This was accomplished by adjusting rainfall to 100 minimum, 100 maximum, and setting drainage minimum to zero and drainage maximum to zero. This world has a single dwarven civilization and a single goblin civilization.
 
+Generated in DF v0.43.05.
+
     [WORLD_GEN]
         [TITLE:SWAMP]
         [SEED:wAm6yQeMie8YoCsAUkyg]
@@ -315,9 +323,13 @@ This world is nothing but swamps and rivers. This was accomplished by adjusting 
         [SAVAGERY_RANGES:0:0:0]
         [VOLCANISM_RANGES:0:0:0]
 
+\
+
 ### Ice Age
 
 This world is experiencing an Ice Age. There is an advancing wall of ice covering much of the world, and the dwarven civilization is currently within the Ice. There are greener areas to the north, however, with rivers and forests available. Again, one dwarven civlization and one goblin civilization.
+
+Generated in DF v0.43.05.
 
     Created in DF v0.34.11.
     [WORLD_GEN]
@@ -1088,9 +1100,9 @@ This is an almost exact replica of Earth. Russia is on the left, Australia is in
         [SAVAGERY_RANGES:16512:8256:0]
         [VOLCANISM_RANGES:2016:4032:2016]
 
-### Dead Dwarven Civilization
+### Dead Dwarven Civilization =
 
-= This worldgen creates a dead dwarven civ, so when you embark, all you get are the two hardcoded migrant waves, and no other contact. No liaisons, no caravans, nothing. You are on your own. Also, positions like monarch or baron are not selected. You can remove the seeds and get similar worlds, of course. However, during worldgen, you'll have the greatest chances of the dwarven civ being DEAD if the fortress is conquered within the first 50 years, so watch for that during worldgen. No editing of raws is required, this works in vanilla DF.
+This worldgen creates a dead dwarven civ, so when you embark, all you get are the two hardcoded migrant waves, and no other contact. No liaisons, no caravans, nothing. You are on your own. Also, positions like monarch or baron are not selected. You can remove the seeds and get similar worlds, of course. However, during worldgen, you'll have the greatest chances of the dwarven civ being DEAD if the fortress is conquered within the first 50 years, so watch for that during worldgen. No editing of raws is required, this works in vanilla DF.
 
 The way this works is that there are a LOT of goblins in the world (over 100,000), apparently so many that they repeatedly siege and pillage the initial mountainhome, sometimes 50, 80 or more times, to the point where the civ is considered dead. The elevation PSV ensures only a single initial dwarven civ. If more than one dwarven civ is placed, it's unlikely the Dwarven civ will be dead. (posted by vjek in the forums)
 
@@ -1305,11 +1317,40 @@ I decided I wanted a more 'normal' looking world, with all of the civs except dw
         [SAVAGERY_RANGES:0:0:0]
         [VOLCANISM_RANGES:0:0:0]
 
+\
+
 ### Dunes
 
 Dunes! A world composed mostly of sand desert, with a few scattered mountains. Only dwarves and goblins can be found in these worlds.
 
+Generated in DF v0.43.05.
+
     Created in DF v0.43.05.
 
+    [WORLD_GEN]
+        [TITLE:DUNES]
+        [DIM:65:65]
+        [EMBARK_POINTS:1504]
+        [END_YEAR:100]
+        [BEAST_END_YEAR:100:80]
+        [REVEAL_ALL_HISTORY:1]
+        [CULL_HISTORICAL_FIGURES:0]
+        [ELEVATION:200:300:800:800]
+        [RAINFALL:0:0:101:101]
+        [TEMPERATURE:25:75:101:101]
+        [DRAINAGE:0:0:101:101]
+        [VOLCANISM:0:100:101:101]
+        [SAVAGERY:0:100:101:101]
+        [ELEVATION_FREQUENCY:3:2:0:1:0:1]
+        [RAIN_FREQUENCY:1:1:1:1:1:1]
+        [DRAINAGE_FREQUENCY:1:1:1:1:1:1]
+        [TEMPERATURE_FREQUENCY:1:1:1:1:1:1]
+        [SAVAGERY_FREQUENCY:1:1:1:1:1:1]
+        [VOLCANISM_FREQUENCY:1:1:1:1:1:1]
+        [POLE:NONE]
+        [MINERAL_SCARCITY:2500]
+        [MEGABEAST_CAP:4]
+        [SEMIMEGABEAST_CAP:9]
+
 ---
-⚠️ Conteúdo truncado (100131 bytes = ~25032 tokens). Para o artigo completo, visite [Worldgen examples](https://dwarffortresswiki.org/index.php/Worldgen_examples).
+*Parte 1 de 3 de «Worldgen examples». Demais partes em arquivos `...-part-{1..3}.md` na mesma pasta. Fonte: https://dwarffortresswiki.org/index.php/Worldgen_examples*

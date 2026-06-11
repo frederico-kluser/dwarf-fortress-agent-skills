@@ -1,6 +1,8 @@
 # Cross-training
 
-> Fonte: [Cross-training](https://dwarffortresswiki.org/index.php/Cross-training) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Cross-training](https://dwarffortresswiki.org/index.php/Cross-training) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Cross-training** is the process of training your civilian dwarves in military pursuits, or vice versa, and can offer several benefits. First and most importantly, it can be a good way of raising attributes, leading to stronger, tougher, faster dwarves. Secondly, it provides a handy pool of recruits for when your military takes a beating or gives your civilians a halfway-decent chance of defending themselves. Thirdly, it can provide useful replacements for when your legendary mason accidentally blunders into a troll and gets all their limbs broken. Finally, it's a more productive use of time than standing around idling.
 
@@ -123,7 +125,7 @@ Analytical Ability, Memory, Focus
 
 ### Gulag (miner)
 
-The gulag is basically a strip mine that is located far away from your main fortress (so you don't have to worry about accidentally screwing up your own building plans; if you are careful in planning, it may be placed closer to your fortress). Take a big square and start leveling it; it's really no more complicated than that. Since picks can actually be used as weapons, it's worthwhile to give the reservists who will be working in the gulag picks made out of bronze, or, if you are really living large, iron or even steel. Note that you will have to turn your usual mining corps (the civilian miners who are already experienced with mining) off or designate separate mining burrows for this setup to work properly. It might be convenient to use a locked door to isolate the gulag from the main fortress, once a batch of trainees is inside. If you wish to train all of your miners equally and still get real work done on the fort, you can designate the gulag area with a lower priority than any actual important work.\
+The gulag is basically a strip mine that is located far away from your main fortress (so you don't have to worry about accidentally screwing up your own building plans; if you are careful in planning, it may be placed closer to your fortress). Take a big square and start leveling it; it's really no more complicated than that. Since picks can actually be used as weapons, it's worthwhile to give the reservists who will be working in the gulag picks made out of bronze, or, if you are really living large, iron or even steel (Note that as of v53, pickaxe material actually matters now, so it may be a good idea to equip your dwarves with steel picks regardless). Note that you will have to turn your usual mining corps (the civilian miners who are already experienced with mining) off or designate separate mining burrows for this setup to work properly. It might be convenient to use a locked door to isolate the gulag from the main fortress, once a batch of trainees is inside. If you wish to train all of your miners equally and still get real work done on the fort, you can designate the gulag area with a lower priority than any actual important work.\
 **Pros:**
 
 - Soldiers can be equipped with picks from the military screen, and use the Miner skill in combat - militia squads of highly skilled miners can provide a decent defense from early threats
@@ -167,13 +169,17 @@ Another convenient way to buff up your dwarves, assigning your reservists to mas
 
 Agility, Creativity, Spatial Sense, Kinesthetic Sense
 
-### Sweatshop (mason)
+### Sweatshop (Stone carver)
 
-Make one or more mason's workshops in an area with a bunch of junk stone you don't care about, or that you're actively looking to clear. Change the workshop settings to allow only your reservists to use it, then tell the workshop to churn out crafts, junk furniture, stone blocks, and trade goods that you can trade en-masse. Alternatively, forbid your reservists from working in your real mason's workshops, order lots of stone constructions built, and pray that your real masons stay too occupied with the workshops to intrude. Works well in conjunction with a gulag. Alternate ideas for sweatshops include a mechanic's workshop, craftsdwarf's workshop, magma kiln, or a magma glass furnace to train mechanic, stonecrafter, potter and glassmaker respectively. *Note: Do NOT try this with the carpenter skill unless you have a large supply, or any other resource you don't have in near-limitless abundance. Sweatshops will consume huge amounts of their associated resources, and if you run out mid-way you have probably wasted your time. This includes coke or charcoal used in the normal (non-magma) glass furnace.*\
+Make one or more stoneworker's workshops in an area with a bunch of junk stone you don't care about, or that you're actively looking to clear. Change the workshop settings to allow only your reservists to use it, then tell the workshop to churn out junk furniture and trade goods that you can trade en-masse. Alternatively, forbid your reservists from working in your real stoneworker's workshops, order lots of stone constructions built, and pray that your real stone carvers stay too occupied with the workshops to intrude. Can also be done with Stone Crafts (although that levels a less valuable moodable skill). Works well in conjunction with a gulag. Alternate ideas for sweatshops include a mechanic's workshop, craftsdwarf's workshop, magma kiln, or a magma glass furnace to train mechanic, stonecrafter, potter and glassmaker respectively.
+
+Mass-producing stone blocks trains Stone **Cutter**, not Stone Carver, another less valuable moodable skill. While stone blocks have their use in a fortress, they have no "quality", so give half the experience to leveling up that skill (though attributes increase just as fast).
+
+*Note: Do NOT try this with the carpenter skill unless you have a large supply of trees/logs, nor with any other resource you don't have in near-limitless abundance. Sweatshops will consume huge amounts of their associated resources, and if you run out mid-way you have probably wasted your time. This includes coke or charcoal used in normal (non-magma) smelters and glass furnaces.*\
+
 **Pros:**
 
 - Quantitatively turns a profit. The inferior trade goods can be dumped on the next caravan for more useful commodities like bags, seeds, and logs. Logs are especially useful, since you'll inevitably stamp out lots of bins to support the trade good output.
-- Mass-producing blocks makes your constructions higher value.
 - Unlike many other training programs, Sweatshops train a skill that is very useful.
 
 **Cons:**
@@ -182,26 +188,26 @@ Make one or more mason's workshops in an area with a bunch of junk stone you don
 - Hard to keep the reservists on task, since they'll need to do plenty of hauling to keep their workshop from becoming chokingly cluttered.
 - Can be a logistical nightmare; making bins and organizing hauling for the finished goods can be insane if you're working from a gulag.
 - Can be dangerous depending on the biome and location of your sweatshops.
-- Note also that stone blocks cannot be made into furniture or stone crafts. This may or may not be an issue depending on where you're putting your gulag.
 
+\
 **Attributes Trained:**
 
 Strength, Agility, Endurance, Creativity, Spatial Sense, Kinesthetic Sense
 
 ### Dwarf-powered mill (grower, cook, miller)
 
-Start off by creating a surplus of longland grass, cave wheat, and/or whip vine and some bags. Create multiple quern all close to the food stockpile which contains the millable plants. Next to this area make a kitchen assigned to an experienced cook. Enable milling for the dwarves you wish to cross-train and order the cook to make lavish meals. As long as your growers provide a steady supply of millable plants and your cook can empty out bags quick enough, the milling jobs will continue.\
+Start off by creating a surplus of longland grass, cave wheat, and/or whip vine, and some bags. Create multiple querns all close to the food stockpile which contains the millable plants. Next to this area, make a kitchen assigned to an experienced cook. Enable milling for the dwarves you wish to cross-train and order the cook to make lavish meals. As long as your growers provide a steady supply of millable plants and your cook can empty out bags quick enough, the milling jobs will continue.\
 **Pros:**
 
-- Produces a lot of wealth as flour is a high value ingredient
+- Produces a lot of wealth, as flour is a high value ingredient
 - Produces high amounts of food
-- Sustains the training of non cross-training dwarves such as the cook and growers
+- Sustains the training of non cross-training dwarves, such as the cook and growers
 
 **Cons:**
 
 - Requires a surplus of millable plants to ensure continuous milling, thus you may need to increase the number of plots/growers
 - If you don't have enough bags, you may end up having job cancellations for the millers
-- Dedicated haulers will be required to keep all workshops clutter free
+- Dedicated haulers will be required to keep all workshops clutter-free
 
 **Attributes Trained:**
 
@@ -209,7 +215,7 @@ Strength, Agility, Endurance, Kinesthetic Sense (grower and miller)
 
 Agility, Analytical Ability, Creativity, Kinesthetic Sense (cook)
 
-#### Clear Cutting
+### Clear Cutting
 
 As long as wood hauling is turned off, dwarves will move from one tree to the next without stopping to bring the wood back. On a heavily forested map, this means that dedicated wood cutters can skill up quickly, though the total number of trees to chop has been drastically reduced from previous versions.
 
@@ -224,12 +230,13 @@ Of course, this training strategy isn't going to endear you with the elves.
 
 **Cons:**
 
-- Can cause problems with elves
+- Can cause problems with elves, as above
 - Can agitate the wildlife
 - Map dependent
 - Trees are limited, and regrow slowly
 - Unless care is taken to only designate a small area for cutting, trainees and haulers can be spread out all over the map, making them vulnerable to creatures and ambushes.
 
+\
 **Attributes Trained:**
 
 Strength, Agility, Endurance, Willpower, Spatial Sense, Kinesthetic Sense
@@ -254,7 +261,7 @@ When a herbalist picks some plants, he will carry them to the food stockpile him
 
 ### Dwarf Scouts (ambusher, hunter, marksdwarf)
 
-Marksdwarves are an important part of any military. A bum rush of low level marksdwarves is good, but not as effective as an elite backup squad! Here is what you can do: Draft a comfortable number of dwarves to hunting, give them all cheap crossbows. Your dwarves should hunt as usual. But you are really training an elite squad of assassins, that will one day hunt goblins instead of groundhogs.
+Marksdwarves are an important part of any military. A bum rush of low-level marksdwarves is good, but not as effective as an elite backup squad! Here is what you can do: Draft a comfortable number of dwarves to hunting, give them all no-quality crossbows and no-quality, lightweight wooden bolts to make them less effective killers, and so keep them out hunting longer. Put them in heavy armor, both to slow them down even more and to protect them against the occasional danger. Your dwarves should hunt as usual - but you are really training an elite squad of assassins, that will one day hunt goblins instead of groundhogs.
 
 **Pros:**
 
@@ -265,8 +272,8 @@ Marksdwarves are an important part of any military. A bum rush of low level mark
 **Cons:**
 
 - Doesn't work on some maps.
-- Hunting is dangerous!
-- Evil areas may result in the deer your dwarves bagged waking up and ripping your hunter's face off!
+- Hunting can be dangerous!
+- Evil areas may result in the deer your dwarves "bagged" rising up as undead and ripping your hunters' faces off!
 - Not as economically productive as some other methods.
 
 **Attributes Trained:**
@@ -275,7 +282,7 @@ Agility, Focus, Spatial Sense, Kinesthetic Sense (ambusher)
 
 ### Art School (weaver)
 
-Collecting spider webs is normally a slow way to train weaving, but that's because the aspiring weaver spends most of his time hiking out to the spiderweb and then back to the loom. If you manage to create a convenient local source of webs near a loom, your weavers-in-training will rapidly gain experience. The abundant silk thread can then be woven by your more experienced weavers for clothing and trade.
+Collecting spider webs is normally a slow way to train weaving, but that's because the aspiring weaver spends most of their time hiking out to the spiderweb(s) and then back to the loom. If you manage to create a convenient local source of webs near a loom, your weavers-in-training will rapidly gain experience. The abundant silk thread can then be woven by your more experienced weavers for clothing and trade.
 
 **Pros:**
 
@@ -293,32 +300,11 @@ Collecting spider webs is normally a slow way to train weaving, but that's becau
 
 Agility, Creativity, Spatial Sense, Kinesthetic Sense
 
-### Construction Crew (architect)
-
-Designate a number of supports or archery targets to be constructed. These are a two step process: first, an architect is needed to place the object. Second, a mason, carpenter, or blacksmith finishes the job, depending on the material used to build the support or archery target.
-
-**Pros:**
-
-- Probably the easiest way to train architects, should you want some high value buildings
-- Does not use up resources because supports and archery targets can be deconstructed
-- Can train two different dwarves in two different skills at once, or the same dwarf in two different skills
-- A decent way to train Blacksmith, should metal be limited
-
-**Cons:**
-
-- Building Designer only trains marginally useful soul attributes
-- It is tedious to designate a bunch of supports for construction and deconstruction, since each one needs to be done manually
-- Ties up resources from other productive uses
-- There are easier ways to train masons and carpenters, so this is probably more useful for blacksmiths
-
-**Attributes Trained:**
-
-- Analytical Ability, Creativity, Spatial Sense (building designer labor only)
-- Strength, Agility, Endurance, Creativity, Spatial Sense, Kinesthetic Sense (blacksmith labor only)
+\
 
 ### Dwarven Arena (n̶o̶b̶l̶e̶s̶)
 
-Find a way to put civilians near an arena, perhaps a dining room. Lock them in. Let your gobbos and "worthy champions" fight to the death while they are forced to watch, gaining discipline. Unlock room. Find a way to dispose of survivors. Revel upon your new well-disciplined dwarves!
+Find a way to put civilians near an arena, perhaps a dining room. Lock them in. Let your gobbos and "worthy champions" fight to the death while they are forced to watch, gaining discipline. Unlock the room. Find a way to dispose of survivors. Revel upon your new well-disciplined dwarves!
 
 **Pros:**
 
@@ -327,6 +313,7 @@ Find a way to put civilians near an arena, perhaps a dining room. Lock them in. 
 - If you have a military, you can double it as live training
 - With good safety procedures, little future oversight is required
 - Watching gobbos getting their internal organs thrashed out is hilarious
+- Satisfies "Fight" need for dwarves who won't spar
 - Useful for disposing of pesky nobles and dorfs that survive hammerings.
 - Could be helpful for training discipline with your engineers
 
@@ -349,7 +336,9 @@ Occasionally, a training program stops working. This section is for programs tha
 
 ### Gym (pump operator)
 
-Previously, building a bunch of screw pumps connected to nothing and ordering them to be operated was an effective way to train endurance. However, the attribute gain from Pump Operation has been so drastically reduced in various patches since its discovery that it can't be considered an effective training routine any longer1, and the problem it was once meant to solve, keeping dwarves from partying all the time, tends not to be a problem anymore. Quite the contrary. If anything, Dwarves of today seem to be unable to take care of any of their emotional needs at all unless they have no jobs to do whatsoever, making this method counter-productive and prone to accumulating Distraction penalties from loneliness and a lack of creativity, crafting, learning, praying, and merrymaking, which will slow down any and all work and skill gains until those needs are met, usually requiring you go out of your way to do so. Don't use this in any serious capacity, military training is several times better in every way.
+Previously, building a bunch of screw pumps connected to nothing and ordering them to be operated was an effective way to train endurance. However, the attribute gain from Pump Operation has been so drastically reduced in various patches since its discovery that it can't be considered an effective training routine any longer[1], and the problem it was once meant to solve, keeping dwarves from partying all the time, tends not to be a problem anymore. Quite the contrary. If anything, Dwarves of today seem to be unable to take care of any of their emotional needs at all unless they have no jobs to do whatsoever, making this method counter-productive and prone to accumulating Distraction penalties from loneliness and a lack of creativity, crafting, learning, praying, and merrymaking, which will slow down any and all work and skill gains until those needs are met, usually requiring you go out of your way to do so. Don't use this in any serious capacity, military training is several times better in every way.
+
+\
 
 ## Overview
 

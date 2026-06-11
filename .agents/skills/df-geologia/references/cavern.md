@@ -1,10 +1,20 @@
 # Cavern
 
-> Fonte: [Cavern](https://dwarffortresswiki.org/index.php/Cavern) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Cavern](https://dwarffortresswiki.org/index.php/Cavern) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |
+|:--:|
+|   This article or section contains **minor spoilers**. You may want to avoid reading it. |
+
+A cavern found underground.
+
+A deeper, more colorful layer of a cavern.
 
 *Not to be confused with Cave.*
 
-**Caverns** are *huge* natural underground tunnel systems, inhabited by strange and dangerous creatures. They go up, down, left, right, and just about anywhere else. Vanilla worlds provide three cavern layers. Number, size and z-position can be altered in the world generation parameters.
+**Caverns** are *huge* natural underground tunnel systems, inhabited by strange and dangerous creatures. In the vanilla game, worlds have three cavern layers. Number, size and z-position can be altered in the world generation parameters.
 
 The caverns will usually have open map edges, allowing all sorts of creatures to migrate into and from them. By exploring the caverns in adventure mode it is possible to travel large distances below the surface - the caverns effectively connect all sites that access them.
 
@@ -16,7 +26,7 @@ Upon reclaiming a fort, all mud in the caverns is removed.
 
 The top of the first cavern usually resides about 10-11 z-levels below the surface. Each cavern layer spans multiple z-levels. Beneath the third layer lies the magma sea.
 
-If you hit caverns too often, then you can create a custom world with a higher number for 'Z Levels Above Layer 1' - Levels of stone above the first cavern layer. Making this higher will guarantee at least this many levels to build your fortress, but will have no impact on how many z-levels thick the surface layer is. Also, the top of a cavern may be higher than the rest of a cavern, so in practice there will be more levels than this.
+If you hit caverns too often, you can create a custom world with a higher number for 'Z Levels Above Layer 1'—i.e. the levels of stone above the first cavern layer. Making this higher will guarantee at least this many levels to build your fortress, but will have no impact on how many z-levels thick the surface layer is. Also, the top of a cavern may be higher than the rest of a cavern, so in practice there will be more levels than this.
 
 Generating worlds using the ISLAND template tends to produce much deeper caverns (hundreds of z-levels down) than those with the REGION template, where only 50-60 z levels will separate the surface from the Underworld.
 
@@ -24,11 +34,11 @@ Generating worlds using the ISLAND template tends to produce much deeper caverns
 
 Usually, most cavern layers are filled with water to a certain degree. This can range from a few pools (similar to, but distinct from murky pools) at the bottom level to the whole layer being submerged, forming a gigantic underground sea, including fish and possibly camps of olm men and other fun aquatic creatures. If a body of water in a cavern connects to the map edge, creatures native to subterranean/underground biomes, that can swim, are able to spawn there, which maybe be considered a danger or a benefit.
 
-The average amount of water cavern layers feature depends on your world generation settings, specifically
+The average amount of water cavern layers feature depends on your world generation settings, specifically:
 
-`   [CAVERN_LAYER_WATER_MIN:0]`
+\[CAVERN_LAYER_WATER_MIN:0\]
 
-`   [CAVERN_LAYER_WATER_MAX:100]`
+\[CAVERN_LAYER_WATER_MAX:100\]
 
 ### Features
 
@@ -40,7 +50,7 @@ If your map has an unseen cave-in at the beginning of embark, the caverns may ha
 
 **Magma pools:** Despite the name, magma pools are not actual pools, but tubes extending up from the magma sea. Their shape is fixed and their presence random. A magma tube might extend all the way to the top cavern, or merely a few z-levels. Magma pools can be distinguished from the magma sea even if they are only a single Z-level high due to two important features: they will always be walled by obsidian as opposed to the standard stone of the layer and, more importantly, will (very slowly) refill to their top if any magma is drained.
 
-**Passages:** Passages are natural tunnels connecting two layers by ramps and short, twisted tunnel sections. The announcement window will let you know you've found a downward passage even if you happen to discover it from the bottom.
+**Passages:** Passages are natural tunnels connecting two layers by ramps and short, twisted tunnel sections. The announcement window will let you know you've found a downward passage, even if you happen to discover it from the bottom.
 
 ## Wildlife
 
@@ -50,17 +60,91 @@ Forgotten beasts are a special type of procedurally-generated megabeast found on
 
 ### Creatures
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Level 1 | Level 2 | Level 3 | Level 4 |
+|  / `M` Amethyst man |  |  | ✔ |  |
+|  / `a` Amphibian man1 | ✔ | ✔ | ✔ |  |
+|  / `a` Antman1 | ✔ | ✔ | ✔ |  |
+|  / `b` Bat man1 | ✔ | ✔ |  |  |
+|  / `B` Blind cave bear | ✔ | ✔ |  |  |
+|  / `O` Blind cave ogre |  | ✔ | ✔ |  |
+|  / `M` Blood man |  |  | ✔ |  |
+|  / `b` Bugbat |  | ✔ | ✔ |  |
+|  / `o` Cave blob |  |  | ✔ |  |
+|  / `C` Cave crocodile | ✔ | ✔ |  |  |
+|  / `D` Cave dragon |  |  | ✔ |  |
+|  / `f` Cave fish man1 | ✔ | ✔ |  |  |
+|  / `f` Cave floater |  | ✔ | ✔ |  |
+|  / `s` Cave swallow man1 | ✔ | ✔ |  |  |
+|  / `e` Creeping eye |  |  | ✔ |  |
+|  / `c` Crundle |  | ✔ | ✔ |  |
+|  / `D` Draltha | ✔ | ✔ |  |  |
+|  / `d` Drunian | ✔ | ✔ |  |  |
+|  / `E` Elk bird | ✔ | ✔ | ✔ |  |
+|  / `i` Fire imp | ✔ | ✔ | ✔ | ✔ |
+|  / `M` Fire man |  |  | ✔ | ✔ |
+|  / `o` Flesh ball |  |  | ✔ |  |
+|  / `%` Floating guts |  | ✔ | ✔ |  |
+|  / `?` Forgotten beast2 | ✔ | ✔ | ✔ |  |
+|  / `M` Gabbro man |  |  | ✔ |  |
+|  / `B` Giant bat | ✔ | ✔ |  |  |
+|  / `S` Giant cave spider |  | ✔ | ✔ |  |
+|  / `C` Giant cave swallow | ✔ | ✔ |  |  |
+|  / `T` Giant cave toad | ✔ | ✔ |  |  |
+|  / `W` Giant earthworm | ✔ | ✔ |  |  |
+|  / `m` Giant mole | ✔ | ✔ |  |  |
+|  / `O` Giant olm | ✔ | ✔ |  |  |
+|  / `R` Giant rat | ✔ | ✔ |  |  |
+|  / `g` Gorlak | ✔ | ✔ | ✔ |  |
+|  / `G` Green devourer |  | ✔ | ✔ |  |
+|  / `g` Gremlin | ✔ | ✔ | ✔ |  |
+|  / `s` Helmet snake | ✔ | ✔ |  |  |
+|  / `h` Hungry head |  |  | ✔ |  |
+|  / `M` Iron man |  |  | ✔ |  |
+|  / `J` Jabberer |  | ✔ | ✔ |  |
+|  / `r` Large rat | ✔ |  |  |  |
+|  / `C` Magma crab |  |  | ✔ | ✔ |
+|  / `M` Magma man |  |  | ✔ | ✔ |
+|  / `m` Manera |  | ✔ |  |  |
+|  / `M` Molemarian |  | ✔ | ✔ |  |
+|  / `M` Mud man |  |  | ✔ |  |
+|  / `n` Naked mole dog | ✔ |  |  |  |
+|  / `o` Olm man1 | ✔ | ✔ |  |  |
+|  / `m` Plump helmet man |  | ✔ | ✔ |  |
+|  / `p` Pond grabber | ✔ | ✔ |  |  |
+|  / `R` Reacher |  | ✔ | ✔ |  |
+|  / `r` Reptile man1 | ✔ | ✔ | ✔ |  |
+|  / `r` Rodent man1 | ✔ | ✔ | ✔ |  |
+|  / `R` Rutherer |  | ✔ | ✔ |  |
+|  / `s` Serpent man1 | ✔ | ✔ | ✔ |  |
+|  / `t` Troglodyte | ✔ | ✔ |  |  |
+|  / `T` Troll | ✔ | ✔ | ✔ |  |
+|  / `C` Voracious cave crawler |  | ✔ | ✔ |  |
 
-¹ Subterranean animal people may occasionally launch ambushes into a fortress from any of the cavern levels.
+1 Subterranean animal people may occasionally launch ambushes into a fortress from any of the cavern levels.
 
-² Forgotten beasts are a special type of invader who serve as subterranean megabeasts.
+2 Forgotten beasts are a special type of invader who serve as subterranean megabeasts.
 
 ### Vermin
 
-[TABLE]
+|  |  |  |  |  |
+|----|----|----|----|----|
+| Name | Level 1 | Level 2 | Level 3 | Level 4 |
+|  / `∙` Bat | ✔ | ✔ |  |  |
+|  / `∙` Cap hopper | ✔ | ✔ |  |  |
+|  / `α` Cave fish | ✔ | ✔ |  |  |
+|  / `¥` Cave lobster | ✔ | ✔ |  |  |
+|  / `∙` Cave spider | ✔ | ✔ |  |  |
+|  / `∙` Cave swallow | ✔ | ✔ |  |  |
+|  / `*` Creepy crawler |  |  | ✔ |  |
+|  / `∙` Fire snake |  | ✔ | ✔ | ✔ |
+|  / `∙` Olm | ✔ | ✔ |  |  |
+|  / `{` Purring maggot |  | ✔ | ✔ |  |
 
 ## Vegetation
+
+Rendering of cavern Vegetation
 
 Any cavern layer without a pool of water will have only muddy dense floor fungus, and no plants or trees except blood thorns.
 
@@ -68,23 +152,48 @@ Removing a layer will cause the layer above to randomly pick from trees that the
 
 ### Shrubs
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Name | Level 1 | Level 2 | Level 3 |
+|  / `:` Cave wheat | ✔ | ✔ | ✔ |
+|  / `:` Dimple cup | ✔ | ✔ | ✔ |
+|  / `:` Pig tail | ✔ | ✔ | ✔ |
+|  / `:` Plump helmet | ✔ | ✔ | ✔ |
+|  / `:` Quarry bush | ✔ | ✔ | ✔ |
+|  / `:` Sweet pod | ✔ | ✔ | ✔ |
 
 ### Trees
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Name | Level 1 | Level 2 | Level 3 |
+|  / `♠` Black-cap |  | ✔ | ✔ |
+|  / `╡` Blood thorn |  |  | ✔ |
+|  / `♣` Fungiwood | ✔ | ✔ |  |
+|  / `♠` Goblin-cap |  | ✔ | ✔ |
+|  / `♠` Nether-cap |  |  | ✔ |
+|  / `♣` Spore tree |  | ✔ | ✔ |
+|  / `♠` Tower-cap | ✔ | ✔ |  |
+|  / `│` Tunnel tube |  | ✔ | ✔ |
 
 ### Grasses
 
-[TABLE]
+|  |  |  |  |
+|----|----|----|----|
+| Name | Level 1 | Level 2 | Level 3 |
+| `.` Floor fungus | ✔ |  |  |
+| `.` Cave moss |  | ✔ |  |
+| `.` Underlichen |  |  | ✔ |
 
 ## Dangers
 
-Though digging down can be tempting, coupled with the fact that caverns can provide some helpful resources, there are many, many dangerous fun animals in a cavern. This includes giant cave spiders, giant olms, trolls and cave crocodiles, but even the seemingly harmless ones can provide great fun.
+Though digging down can be tempting, coupled with the fact that caverns can provide some helpful resources, there are many, many ~~dangerous~~ fun animals in a cavern. This includes giant cave spiders, giant olms, trolls and cave crocodiles, but even the seemingly harmless ones can provide great fun.
 
-Cavern level one is as good as things get, and the following levels will only be worse. If you can't stand level one, you won't be able to stand level two or three. Flying creatures can ruin your day provide some fun if your main stairwell leads directly into the cavern (the bottom of up-down/down stairs can be passed by flying creatures). Also, any cavern of sufficient size will be inhabited by giant cave spiders, which can be both a benefit and a hazard.
+Cavern level one is as good as things get, and the following levels will only be worse. If you can't stand level one, you won't be able to stand level two or three. Flying creatures can ~~ruin your day~~ provide some fun if your main stairwell leads directly into the cavern (the bottom of up-down/down stairs can be passed by flying creatures). Also, any cavern of sufficient size will be inhabited by giant cave spiders, which can be both a benefit and a hazard.
 
 Opening the caverns will make it possible for your fortress to be attacked by forgotten beasts, which range in lethality from "not much" to "nigh unkillable". One thing you really have to watch out for is having your main stairwell lead into a cavern. It doesn't have to be so walking creatures can get in, but just so there's an open hole. Any hostile creature sitting under your open stairway will spook any dwarves trying to use it, causing a flood of job cancellation messages as they keep trying to reach their destination. When this happens, it can lead to all your dwarves starving themselves to death. Only build stairs on the side, preferably with a hatch.
+
+You aren't the only civilization in the caverns - subterranean animal people live down there too, and they aren't happy with sharing.
 
 And of course, digging too deep will lead the player to encounter certain overwhelmingly fun things.
 
@@ -102,7 +211,7 @@ NOTE: walls come with floors above them, which means that creatures may still sp
 
 Cage traps placed in the caverns can capture wild animals to potentially tame. As with above-ground creatures, subterranean groups of creatures are limited to one group at a time. Many of the more interesting creatures appear in groups of one and have small populations, so you'll have to clear out a lot of bugbats and crundles before being able to grab every giant cave spider or jabberer your site can produce.
 
-These small populations may result in all spawned individuals being of the same sex, making breeding programs impossible even for creatures that have the necessary tags. Adding the \[CHILD:1\] to a creature is a relatively easy mod, but sex changes require the application of a transformational syndrome, and possibly changing the creature from an egg-layer to a live-birther.
+These small populations may result in all spawned individuals being of the same sex, making breeding programs impossible even for creatures that have the necessary tags. Adding the `[``CHILD``:1]` token to a creature is a relatively easy mod, but sex changes require the application of a transformational syndrome, and possibly changing the creature from an egg-layer to a live-birther.
 
 ## When should I start exploring?
 
@@ -112,7 +221,7 @@ Alternatively, you might want to breach the caverns as early as possible, then w
 
 Another alternative approach is to breach the caverns on a separate tunnel from your main fortress, so that beasts found inside have to path through the surface to reach your citizens, much in the way regular wild animals and invaders have to. Watch out for automatically created 'collect silk' jobs though, since dwarves assigned to them will be all the more in danger.
 
-Not all parts of a cavern are immediately visible; a good portion of a cavern is revealed once you breach it, but other parts remain hidden until your dwarves explore them. Since you often don't know what you'll find in a cavern, they can be exciting places, but also very dangerous fun.
+Not all parts of a cavern are immediately visible; a good portion of a cavern is revealed once you breach it, but other parts remain hidden until your dwarves explore them. Since you often don't know what you'll find in a cavern, they can be exciting places, but also very ~~dangerous~~ fun.
 
 ## Methods of exploration
 
@@ -120,7 +229,7 @@ Not all parts of a cavern are immediately visible; a good portion of a cavern is
 
 There are many different methods of exploring, some less fun than others.
 
-**Military squads**: You can order your squads into the cavern with move orders. This way you can have dwarves manually explore the cavern by foot. The caverns are dangerous and unpredictable; well equipped dwarves will live longer. The quad:ttack:ist command will help you find and kill enemy creatures which may be located on many different z-levels inside the cavern.
+**Military squads**: You can order your squads into the cavern with move orders. This way you can have dwarves manually explore the cavern by foot. The caverns are dangerous and unpredictable; well equipped dwarves will live longer. The squad:attack:list command will help you find and kill enemy creatures which may be located on many different z-levels inside the cavern.
 
 Note that creatures may wander into the cavern from the edges, so, if you want to start collecting silk, gems, ore and the other valuable loot in a cavern, and you want to do so safely, you should first kill or capture the creatures in the cavern, then wall off the edges to keep new creatures from wandering in. Note that, if you want to keep flying creatures out, your walls will need to cover the edge of the cavern from the floor to the ceiling. If you'd still like to fight or capture wandering creatures, but don't want them killing your workers, you can leave some room for creatures to get in, and build doors or cages as necessary.
 
@@ -146,10 +255,16 @@ This method works in conjunction with the "Digging from above" method. Placing t
 
 You can enter a cavern with an adventurer and explore it. Ways to enter them include caves, dwarven fortresses that connect to tunnels, starting in Mountain halls, and goblin dark pits that have pits that can be climbed down. You can also encounter downward passages or deep pits that connect the different cavern levels.
 
-The dangers are obvious; Nasty creatures, pitfalls, etc. You also have to watch out because you can't fast-travel underground, unless you are in a generated tunnel, and you can only start fast travel on those if you are not in a mountain tile or hostile site. That means no easy healing, so you have to be very careful. Make sure you stock up on food, water and (if you use it) ammunition before you head in, though, as caverns are quite massive and it can be difficult to find your way back. Worse, there are tribes of animal men underground, and unlike in the good old days they'll attack on sight. If you're lucky, you'll find a gremlin or other non-hostile intelligent wildlife, and those can potentially be recruited. Since you can't fast-travel, you have to rely on sleeping to heal, which can be dangerous due to the nature of caverns. You're on your own against whatever shows up, unless you brought or find allies. Escaping from the caverns by the same route used as an entrance can be very difficult, though if you manage to reach a cavern area immediately underneath a town you will be able to fast-travel to the surface.
+The dangers are obvious: nasty creatures, pitfalls, and so on. You need to be careful, since you can't fast-travel underground, unless you are in a generated tunnel, where you can only fast-travel if not in a mountain tile or a hostile site. Make sure to stock up on food, water, and (if necessary) ammunition before you go. Caverns are very big—finding your way back can be hard.
+
+There are tribes of animal men underground, who will attack you on sight. If you're lucky, you might find a gremlin or other non-hostile intelligent wildlife, which can be recruited. Because you can't fast-travel, you can only heal by sleeping, which can be dangerous due to the nature of caverns. You're on your own against whatever shows up, unless you brought or find allies. Escaping from the caverns by the same route used as an entrance can be very difficult; though if you manage to reach a cavern area right below, there is a town where you can fast-travel to the surface.
 
 If you discover the underground caves in Adventure mode, then retire and start a fortress, the fortress will grow subterranean plants as if a passage to the underground had already been opened on that map.
 
-## Caravan and embark item availability
+## Caravan and Embark Item Availability
 
-Embarkation and dwarven caravans will only provide resources available in the first cavern level. Since purring maggots don't appear in the first cavern level, unlike in 40d, you can't buy dwarven cheese or dwarven milk . A workaround is to edit the global raw files to make purring maggots appear on level one or be ALWAYS_PRESENT as pets of dwarven civilization, generate a new world, then edit the raws of the new world to change the maggots back to normal before embark.
+Embarkation and dwarven caravans only provide the resources available in the first cavern level. Since purring maggots don't appear in the first cavern level, unlike in 40d, you can't buy dwarven cheese or dwarven milk Bug:1449. A workaround is to edit the global raw files to make purring maggots appear on level one or be ALWAYS_PRESENT as pets of dwarven civilization, generate a new world, then edit the raws of the new world to change the maggots back to normal before embark.
+
+|  |
+|----|
+| "Cavern" in other / Languages / Dwarven / : / kor / Elven / : / nunòre / Goblin / : / aspâd / Human / : / rushan |

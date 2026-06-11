@@ -1,12 +1,14 @@
 # Computing
 
-> Fonte: [Computing](https://dwarffortresswiki.org/index.php/Computing) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Computing](https://dwarffortresswiki.org/index.php/Computing) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Computing in *Dwarf Fortress* is the practice of setting up complex constructions to perform logical operations and calculations; ideally, to control some functionality of your fortress. Even if it isn't a young concept anymore, there is still much room for improvement and development. One reason is that there are many ways to solve one problem. Innovation and invention are encouraged.
 
 ### Binary information
 
-Binary information can have one of two possible states: true or false, respectively 1 or 0. In dwarf fortress they can be represented by different entities:
+Binary information can have one of two possible states: true or false, respectively 1 or 0. In *Dwarf Fortress* they can be represented by different entities:
 
 - on/off state or signal of a trigger (pressure plate or lever)
 - power or connection state of a machine component
@@ -41,8 +43,9 @@ Basic binary logic takes one or two input bits and creates an output based on th
 
 - NOT - takes one input and returns the opposite of the input
 
-| input A | NOT |
+|         |     |
 |---------|-----|
+| input A | NOT |
 | 0       | 1   |
 | 1       | 0   |
 
@@ -53,8 +56,9 @@ Basic binary logic takes one or two input bits and creates an output based on th
 - NOR - takes two inputs and returns true if both inputs are false
 - XNOR - takes two inputs and returns true if both inputs are identical
 
-| input A | input B | AND | OR  | XOR | NAND | NOR | NXOR |
+|         |         |     |     |     |      |     |      |
 |---------|---------|-----|-----|-----|------|-----|------|
+| input A | input B | AND | OR  | XOR | NAND | NOR | NXOR |
 | 0       | 0       | 0   | 0   | 0   | 1    | 1   | 1    |
 | 0       | 1       | 0   | 1   | 1   | 1    | 0   | 0    |
 | 1       | 0       | 0   | 1   | 1   | 1    | 0   | 0    |
@@ -66,7 +70,7 @@ The most human-understandable logic system requires NOT, AND and OR gates, but h
 
 - Latch - storing and reading a single binary value
 - Repeater - sending a repeating signal
-- Counter/Adder "Counter/Adder") - binary calculation
+- Counter/Adder "Adder (Computing)") - binary calculation
 
 ## Disciplines
 
@@ -113,27 +117,29 @@ There are a few examples of a really useful dwarfputer and some concepts which h
 
 - Magma trap
   - This is an example of a useful dwarfputer controlling a magma trap. It automatically floods an area with lava, cleans up and resets afterwards. The timing is perfectly adjusted to let the victims vanish only leaving their valuable metal behind
-    - video:
-    - design:
+    - video: http://mkv25.net/dfma/movie-1808-perfectmagmatrap
+    - design: http://i576.photobucket.com/albums/ss208/kanddak/magmatrap.png
 
 ### Concepts
 
 - repeater
-  - mechanical logic
+  - mechanical logic http://mkv25.net/dfma/movie-1370-pump-basedautorepeater
 - adding machine
-  - mechanical logic, 6-bit:
-  - fluid logic, 8-bit:
+  - mechanical logic, 6-bit: http://mkv25.net/dfma/movie-1561-addingmachine
+  - fluid logic, 8-bit: http://mkv25.net/dfma/movie-1084-numberabbeydemonstration
+
+*Armok Invaders, a playable game*
 
 ### Such a doddle
 
 - decimal display for 4-bit binary input
-  - mechanical logic, decimal with overflow-bit:
-  - probably fluid logic:
-  - fluid logic, hexadecimal:
+  - mechanical logic, decimal with overflow-bit: http://mkv25.net/dfma/movie-1745-dwarfputerv01
+  - probably fluid logic: http://mkv25.net/dfma/movie-1657-7segmentlcddisplay
+  - fluid logic, hexadecimal: http://mkv25.net/dfma/movie-1092-7-segmentdisplaydemonstration
 - tic tac toe
-  - mechanical logic
+  - mechanical logic http://mkv25.net/dfma/movie-1813-tictactoev10simple
 - Armok Invaders
-  - mechanical & minecart logic:
+  - mechanical & minecart logic: https://www.youtube.com/watch?v=j2cMHwo3nAU
 
 ## Related user pages
 

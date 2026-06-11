@@ -1,10 +1,24 @@
 # Catsplosion
 
-> Fonte: [Catsplosion](https://dwarffortresswiki.org/index.php/Catsplosion) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Catsplosion](https://dwarffortresswiki.org/index.php/Catsplosion) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-The **catsplosion** is a mighty force of nature and a serious concern at the Mountainhome. Much like the captain of a popular starship and his *Trouble with Tribbles*, dwarves fall prey to the fecund habits of the furry, lovable creatures known as furiously fornicating fantastically fecund felines cats.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|  |  |
+|:--:|----|
+| [](/index.php/Category:D_for_Dwarf "Category:D for Dwarf") | This article or section has been rated **D for Dwarf**. It may include witty humour, not-so-witty humour, bad humour, in-jokes, pop culture references, and references to the Bay12 forums. Don't believe everything you read, and if you miss some of the references, don't worry. It was inevitable. |
+
+\
+
+Before.
+
+After.
+
+The **catsplosion** is a mighty force of nature and a serious concern at the Mountainhome. Much like one of the captains of a popular starship and his *Trouble with Tribbles*, dwarves fall prey to the fecund habits of the furry, lovable creatures known as ~~furiously fornicating fantastically fecund felines~~ cats.
 
 ## Conventional catsplosion
+
+Anyone know a talented butcher?
 
 A **conventional catsplosion** is an uncontrolled overpopulation of cats.
 
@@ -30,13 +44,12 @@ Do not leave stray cats wandering around or they will surely appropriate one of 
 
 The options are as follows:
 
-- Butchering. This still has a certain risk that the cat will infect a worker dwarf with CWS (although he may still butcher *other* cats) on the way to the butcher's shop, so care must be taken to ensure that the distance is short. It is highly recommended that the cage intended for stray cat containment is built right next to a couple of butcher's shops. You can quickly assign any newborn kittens to be slaughtered through the animals section of the ()status menu.
+- Butchering. This still has a certain risk that the cat will infect a worker dwarf with CWS (although he may still butcher *other* cats) on the way to the butcher's shop, so care must be taken to ensure that the distance is short. It is highly recommended that the cage intended for stray cat containment is built right next to a couple of butcher's shops. You can quickly assign any newborn kittens to be slaughtered through the animals section of the (z)status menu.
 - Trading. This is the only 100% safe way to get rid of stray cats in a cage. When a trader approaches your fortress, de-construct the cat cage to move it to the animal stockpile. Then set the cat cage for trading at the depot to move it there. Once at the depot, convert the cats into cash, or even just offer it outright to get rid of it. WARNING: there are confirmed bugs with trading creatures in cages. See the cage article for further details.
 - Execution Traps. A deep drop into magma, water, or a very hard floor will usually do the job.\
   Since the introduction of pen/pasture zones a cat owner will happily place their cat in the pen/pasture, pull the adjacent lever and walk away while the soft splat of a kitten's cruel end is lost in a sound of thunder.
 - Using a dump zone to throw items off cliffs or buildings and pasturing cats below it will often seriously injure cats - especially if the drop is at least 20 z-levels. Cobaltite, cinnabar, and other heavy materials usually work best.
-- As cats appear to be attracted to vermin inside a food stockpile, putting a pet impassable door in the entrance of the food stockpile and constructing an upright spike on either side of this door and then connecting a lever to these spikes can kill the already "pet" cats in a relatively safe manner. NOTE: Be sure to check the door for dwarves before pulling the lever or they might be harmed. A really fun way to kill cats is to put a pit over a volcano or other deadly fall and simply assign a kitten to the pit. A group of unsuspecting dwarves will drag your cuddly pets and drop them straight into the mouth of the volcano, or even your very own moat! With magma, you get to see a large flare of smoke to assure the destruction of your cuddly friends.
-- Modding. Removing the creature token \[ADOPTS_OWNER\] will, yes, stop cats from adopting owners. If you're feeling vindictive, however, you can instead remove one or more of the cats' vital organs, causing them all to cease being alive. Note that this solution will lead to negative thoughts on all cat owners.
+- Modding. Removing the creature token [`[ADOPTS_OWNER]`](/index.php/Creature_token#ADOPTS_OWNER "Creature token") will, yes, stop cats from adopting owners. If you're feeling vindictive, however, you can instead remove one or more of the cats' vital organs, causing them all to cease being alive. Note that this solution will lead to negative thoughts on all cat owners.
 
 #### Part 4: Sexism
 
@@ -54,11 +67,9 @@ P.P.S.: Every time you use a cage on a cat the blood god is deprived from killin
 
 ## Thermonuclear catsplosion
 
-Thanks to the Scamps Conventions of 0.28.181.40d and 0.31.03, the number of Thermonuclear Catsplosions has been drastically reduced, for the ignition keys are now by law hidden in a very Fun place after worldgen. They are, therefore, unavailable to prospective modders elf-fondling terrorists to use after then without causing drastic, system-wide instability to their computer networks.
+Thanks to the Scamps Conventions of 0.28.181.40d and 0.31.03, the number of Thermonuclear Catsplosions has been drastically reduced, for the ignition keys are now by law hidden in a very Fun place after worldgen. They are, therefore, unavailable to prospective ~~modders~~ elf-fondling terrorists to use after then without causing drastic, system-wide instability to their computer networks.
 
 As a warning, here's the only video footage ever recovered from the horrible aftermath of a thermonuclear catsplosion.
-
-youtube link since modern browsers disable flash
 
 ## Other -splosions
 
@@ -68,7 +79,7 @@ Another problem is little adorable furry things running everywhere. **Cavies**, 
 
 ### Birdsplosion
 
-Many domestic animals, such as chickens, ducks and geese, use the nest box to lay eggs. The huge number of eggs they lay means that, if fertilized by a male, they tend to create their own birdsplosion, in which millions of fuzzy ducklings take over your fort. Although this is not as much a concern as the catsplosion, due to not being adopted as pets, there are still FPS concerns. The best known method to prevent a birdsplosion is to run a campaign on the benefits of eggs for your dwarves. Also? Battery farms. One cage is enough. Don't tell PETA EETA. Unlike cats, birds cannot be gelded, which should be kept in mind.
+Many domestic animals, such as chickens, ducks and geese, use the nest box to lay eggs. The huge number of eggs they lay means that, if fertilized by a male, they tend to create their own birdsplosion, in which millions of fuzzy ducklings take over your fort. Although this is not as much a concern as the catsplosion, due to not being adopted as pets, there are still FPS concerns. The best known method to prevent a birdsplosion is to run a campaign on the benefits of eggs for your dwarves. Also? Battery farms. One cage is enough. Don't tell ~~PETA~~ EETA. Unlike cats, birds cannot be gelded, which should be kept in mind.
 
 ### Crocsplosion
 

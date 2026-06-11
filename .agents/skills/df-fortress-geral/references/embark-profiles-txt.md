@@ -1,12 +1,20 @@
 # Embark profiles.txt
 
-> Fonte: [Embark profiles.txt](https://dwarffortresswiki.org/index.php/Embark_profiles.txt) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Embark profiles.txt](https://dwarffortresswiki.org/index.php/Embark_profiles.txt) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+|                                                    |
+|----------------------------------------------------|
+| File |
+| prefs                                              |
+| embark_profiles.txt                                |
 
 *See Starting build for detailed information on planning an embark.*
 
 *See Embark profile repository for a collection of embark profiles.*
 
-The **embark_profiles.txt** file contains any embark profiles (or starting builds) you have created. It is found at **data/init/embark_profiles.txt**, but only exists once you've saved a profile. Most of these can be transferred between minor versions (e.g. v0.34.10 to v0.34.11), but you need to remember to do so.
+The **embark_profiles.txt** file contains any embark profiles (or starting builds) you have created. It is found in the `prefs/` folder, the location of that depends on the portable mode setting, but the file only exists once you've saved a profile. Most of these can be transferred between minor versions (e.g. v0.34.10 to v0.34.11), but you need to remember to do so.
 
 ## Format
 
@@ -16,7 +24,7 @@ Each profile begins with a \[PROFILE\] tag, followed by a \[TITLE:*name*\] tag.
 
 Skills are identified by their skill token. The syntax for skills is:
 
-`[SKILL:`*`#`*`:`*`skill name`*`:`*`level`*`]`
+    [SKILL:#:skill name:level]
 
 where \# is the dwarf (1-7), "skill name" is the skill, and "level" is the number representing how skilled the dwarf is.
 
@@ -26,7 +34,7 @@ Note that skills are capped at Proficient (5), and this is checked by the game o
 
 Items are identified by their material and item tokens, the same format as reactions:
 
-`[ITEM:`*`quantity`*`:`*`(material token)`*`:`*`(item token)`*`]`
+    [ITEM:quantity:(material token):(item token)]
 
 For examples, see reaction, item token, material token, or DFHack createitem.
 
@@ -34,7 +42,7 @@ Be aware that profiles cannot add any items that the player's civilization does 
 
 ### Pets
 
-`[PET:`*`quantity`*`:`*`creature name`*`:`*`caste`*`:`*`age`*`]`
+    [PET:quantity:creature name:caste:age]
 
 - "Creature" is the creature ID found in the raws (e.g. CAT for cats).
 - "Caste" is the caste ID, which can also be found in the raws. Most creatures have MALE and FEMALE castes.

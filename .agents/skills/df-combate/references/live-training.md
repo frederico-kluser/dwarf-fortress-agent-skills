@@ -1,6 +1,8 @@
 # Live training
 
-> Fonte: [Live training](https://dwarffortresswiki.org/index.php/Live_training) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Live training](https://dwarffortresswiki.org/index.php/Live_training) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Live training** is the process of attacking creatures with military dwarves (and being attacked by these creatures as well) with minimal or nonexistent wounds in order to train your military's skills, if you consider danger rooms an exploit or don't want to randomly lose children or pets, and find sparring and military training too slow.
 
@@ -95,7 +97,7 @@ You must first catch one or several necromancers, or use a friendly necromancer,
   - decent skill increases
   - only little hauling needed
   - use for necromancers
-  - Does not require low-quality weapons, allowing dwarves to become attached to better weapons then other methods
+  - Does not require low-quality weapons, allowing dwarves to become attached to better weapons than other methods
   - requires little oversight
   - trains every skill
   - controllable training aspects: difficulty level, depending on corpse (from dropping llama wool to dropping a cave dragon corpse) and number of corpses animated

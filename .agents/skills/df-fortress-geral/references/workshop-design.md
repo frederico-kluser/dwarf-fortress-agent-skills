@@ -1,10 +1,14 @@
 # Workshop design
 
-> Fonte: [Workshop design](https://dwarffortresswiki.org/index.php/Workshop_design) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Workshop design](https://dwarffortresswiki.org/index.php/Workshop_design) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-Most workshops in the game are represented by 9 squares in a 3 by 3 square pattern. Some are 5 by 5 (Siege workshop), or 1 by 1 (Quern, Screw press, and Millstone). Getting a proper workflow is very important to the success and wealth of your fortress.
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Most workshops in the game are represented by 9 squares in a 3 by 3 square pattern. Some are 5 by 5 (Siege workshop and Vermin catcher's shop), or 1 by 1 (Quern, Screw press, and Millstone). Getting a proper workflow is very important to the success and wealth of your fortress.
 
 Laying out your workshops in the most efficient way possible is quite a scientific discipline. There are several points that should be considered.
+
+\
 
 ## Industries
 
@@ -36,13 +40,20 @@ When the very worst happens and your triple-legendary dwarf fails their strange 
 
 This design gives workshops easy access to input and output stockpiles.
 
-`  Level 1:              Level 2 (below, as shown, but could be above as well)`\
-
-`╔══════╦══════╗            ╔══════╦══════╗`\
-`║WWWWWW║WWWWWW║            ║iiiiii║iiiiii║`\
-`║WWWWWW║WWWWWW║            ║iiiiii║iiiiii║`\
-`║WWWWWW║WWWWWW║            OiiiiiiOiiiiiiO`\
-`║..>>..║..>>..║            ...
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   | L | e | v | e | l |   | 1 | : |   |   |   |   |   |   |   |   |   |   |   |   |   |   | L | e | v | e | l |   | 2 |   | ( | b | e | l | o | w | , |   | a | s |   | s | h | o | w | n | , |   | b | u | t |   | c | o | u | l | d |   | b | e |   | a | b | o | v | e |   | a | s |   | w | e | l | l | ) |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ╦ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ╦ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | W | W | W | ║ | W | W | W | W | W | W | ║ |   |   |   |   |   |   |   |   |   |   |   |   | ║ | i | i | i | i | i | i | ║ | i | i | i | i | i | i | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | W | W | W | ║ | W | W | W | W | W | W | ║ |   |   |   |   |   |   |   |   |   |   |   |   | ║ | i | i | i | i | i | i | ║ | i | i | i | i | i | i | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | W | W | W | ║ | W | W | W | W | W | W | ║ |   |   |   |   |   |   |   |   |   |   |   |   | O | i | i | i | i | i | i | O | i | i | i | i | i | i | O |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | . | . | \> | \> | . | . | ║ | . | . | \> | \> | . | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   | . | . | . | \ | \ | . | . | . | . | . | \ | \ | . | . | . |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ╩ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   | O | o | o | o | o | o | o | O | o | o | o | o | o | o | O |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | o | o | o | o | o | o | ║ | o | o | o | o | o | o | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | W |   | = |   | w | o | r | k | s | h | o | p |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | ║ | o | o | o | o | o | o | ║ | o | o | o | o | o | o | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | i |   | = |   | i | n | p | u | t |   | i | t | e | m |   |   |   |   |   |   |   |   |   |   |   |   |   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ╩ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | o |   | = |   | o | u | t | p | u | t |   | i | t | e | m |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 Alternatively you can place input above and output below the workshops or the other way round, depending, for example, on the location of your trade depot, or other workshops involved in the chain of production. Additional stairs may be useful.
 
@@ -50,48 +61,49 @@ Alternatively you can place input above and output below the workshops or the ot
 
 This design makes it easier to contain berserk dwarves.
 
-(Beware access may be blocked depending on a workshop's pattern of internal impassable tiles. Different workshops have different internal patterns of passable and impassable floor tiles. When building a workshop, Dwarf Fortress indicates which tiles are passable/impassable by pattern of light/dark green X's. The central tile is always passable, so for those using tilesets, similar tiles to the middle tile are passable.) \
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ╔ | ═ | ═ | ═ | ╦ | ═ | ═ | ═ | ┼ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ╩ | ═ | ═ | ┼ | ╩ | ┼ | ═ | ═ | ┼ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | X | . | . | . | . | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ╦ | ═ | ═ | ┼ | ╦ | ┼ | ═ | ═ | ┼ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | W | W | W | ║ | W | W | W | ║ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | ╚ | ═ | ═ | ═ | ╩ | ═ | ═ | ═ | ┼ | . | . |   |   |   |   |   |   |   |   |   |   |
+|   | W |   | = |   | w | o | r | k | s | h | o | p |   |   |   |   |   |   |   |   |   |
+|   | X |   | = |   | u | p | / | d | o | w | n |   | s | t | a | i | r | c | a | s | e |
+|   | . |   | = |   | f | l | o | o | r |   |   |   |   |   |   |   |   |   |   |   |   |
 
-`╔═══╦═══┼..`\
-`║WWW║WWW║..`\
-`║WWW║WWW║..`\
-`║WWW║WWW║..`\
-`╩══┼╩┼══┼..`\
-`....X......`\
-`╦══┼╦┼══┼..`\
-`║WWW║WWW║..`\
-`║WWW║WWW║..`\
-`║WWW║WWW║..`\
-`╚═══╩═══┼..`
+Access and stockpiles are placed above and below the room. Similar workshops can be grouped together for easier checking on, and doors can be locked should a moody dwarf's wishes be unmet. This concept can be used for your entire fortress:
 
-`W = workshop`\
-`X = up/down staircase`\
-`. = floor`
+Below you can see a piece from around the central staircase, to see how the design should start. Notice that it is pretty modular, you can have two workshops pushed together, or you can separate them all, and you have a couple options on how you set up your entrances, connecting two workshops with one door, or leaving them with separate entrances. Up to you. Notice the initial diagonal terminates at a workshop, and starts the grid pattern.
 
-\ Access and stockpiles are placed above and below the room. Similar workshops can be grouped together for easier checking on, and doors can be locked should a moody dwarf's wishes be unmet. This concept can be used for your entire fortress:
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ║ | W | W | W | ║ | . | ║ | \` | \` | \` | ║ | . | ║ | W | W | W | ║ | \` |
+|   | ║ | W | W | W | ║ | . | ╠ | ═ | ═ | ═ | ╣ | . | ║ | W | W | W | ║ | \` |
+|   | ║ | W | W | W | ║ | . | ║ | W | W | W | ║ | . | ║ | W | W | W | ║ | \` |
+|   | ╩ | ═ | ═ | ═ | ┼ | . | ║ | W | W | W | ║ | . | ┼ | ═ | ═ | ═ | ╩ | ═ |
+|   | . | . | . | . | . | . | ║ | W | W | W | ║ | . | . | . | . | . | . | . |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ┼ | ═ | ╦ | ═ | ┼ | ═ | ═ | ═ | ┼ | ═ | ═ | ═ |
+|   | W | W | W | W | W | W | ║ | . | O | . | ║ | W | W | W | ║ | W | W | W |
+|   | W | W | W | W | W | W | ╠ | O | X | O | ╣ | W | W | W | ║ | W | W | W |
+|   | W | W | W | W | W | W | ║ | . | O | . | ║ | W | W | W | ║ | W | W | W |
+|   | ═ | ═ | ═ | ═ | ═ | ═ | ┼ | ═ | ╩ | ═ | ┼ | ═ | ═ | ═ | ┼ | ═ | ═ | ═ |
+|   | . | . | . | . | . | . | ║ | W | W | W | ║ | . | . | . | . | . | . | . |
+|   | ╦ | ═ | ═ | ═ | ┼ | . | ║ | W | W | W | ║ | . | ┼ | ═ | ═ | ═ | ╦ | ═ |
+|   | ║ | W | W | W | ║ | . | ║ | W | W | W | ║ | . | ║ | W | W | W | ║ | \` |
+|   | ║ | W | W | W | ║ | . | ╠ | ═ | ═ | ═ | ╣ | . | ║ | W | W | W | ║ | \` |
+|   | ║ | W | W | W | ║ | . | ┼ | W | W | W | ┼ | . | ║ | W | W | W | ║ | \` |
+|   | ╚ | ═ | ═ | ═ | ╣ | . | ║ | W | W | W | ║ | . | ╠ | ═ | ═ | ═ | ╝ | \` |
+|   | \` | \` | \` | \` | ║ | . | ║ | W | W | W | ║ | . | ║ | \` | \` | \` | \` | \` |
+|   | \` | \` | \` | \` | ║ | . | ╠ | ═ | ═ | ═ | ╣ | . | ║ | \` | \` | \` | \` | \` |
 
-Below you can see a piece from around the central staircase, to see how the design should start. Notice that it is pretty modular, you can have two workshops pushed together, or you can separate them all, and you have a couple options on how you set up your entrances, connecting two workshops with one door, or leaving them with separate entrances. Up to you. Notice the initial diagonal terminates at a workshop, and starts the grid pattern. \
-
-```` ║WWW║.║```║.║WWW║` ````\
-`` ║WWW║.╠═══╣.║WWW║` ``\
-`` ║WWW║.║WWW║.║WWW║` ``\
-`╩═══┼.║WWW║.┼═══╩═`\
-`......║WWW║.......`\
-`══════┼═╦═┼═══┼═══`\
-`WWWWWW║.O.║WWW║WWW`\
-`WWWWWW╠OXO╣WWW║WWW`\
-`WWWWWW║.O.║WWW║WWW`\
-`══════┼═╩═┼═══┼═══`\
-`......║WWW║.......`\
-`╦═══┼.║WWW║.┼═══╦═`\
-`` ║WWW║.║WWW║.║WWW║` ``\
-`` ║WWW║.╠═══╣.║WWW║` ``\
-`` ║WWW║.┼WWW┼.║WWW║` ``\
-`` ╚═══╣.║WWW║.╠═══╝` ``\
-`````` ````║.║WWW║.║````` ``````\
-`````` ````║.╠═══╣.║````` ``````
-
-\ The floors alternate workshop/storage. On workshop floors the diagonals immediate to the main stairway are mined out a couple spaces to make room for the first workshops; around those you can start mining in straight lines and start a grid pattern. For storage floors you can leave a wall of stone around the staircase with only one or two walls mined out for access; then mine out everything around it. On the ground level you start by mining into a cave, clear out space for a trade depot, and mine out one spot where you build a single downward staircase; here the entire fortress starts. It works great and is very efficient, though it takes a while to get setup right.
+The floors alternate workshop/storage. On workshop floors the diagonals immediate to the main stairway are mined out a couple spaces to make room for the first workshops; around those you can start mining in straight lines and start a grid pattern. For storage floors you can leave a wall of stone around the staircase with only one or two walls mined out for access; then mine out everything around it. On the ground level you start by mining into a cave, clear out space for a trade depot, and mine out one spot where you build a single downward staircase; here the entire fortress starts. It works great and is very efficient, though it takes a while to get setup right.
 
 ### Decentralized Workshop Complex
 
@@ -105,9 +117,7 @@ Total workshop loadout for 1 floor:
 
 Maximum walk to stockpile on same wing: 18.
 
-The light gray crosses are optional doors. They can be useful for sealing off a Kitchen or Butcher's Shop to keep miasma from annoying the neighbors. Beyond that, the blue field is the stairwell access (recommend separate up stairs and down stairs for safety reasons), and the gray fields are stockpiles.
-
-4x3 workshops are useful for workshops with strange blocked square formations (the Bowyer's shop is an example). They can also be nice for setting up a tiny 1x2 or 1x3 stockpile for a specific workshop - with bins, this can be a significant reserve of material. Imagine a Clothier or Leatherworker with 3 full bins of cloth or leather right next to them.
+The light gray crosses are optional doors. They can be useful for sealing off a Kitchen or Butcher's Shop to keep miasma from annoying the neighbors. Beyond that, the blue field is the stairwell access (recommend separate up stairs and down stairs for safety reasons), and the gray fields are stockpiles. The 4x3 workshops were intended for workshops that had unusual blocked tiles, but workshops no longer have blocked tiles. They instead can be nice for setting up a tiny 1x2 or 1x3 stockpile for a specific workshop - with bins, this can be a significant reserve of material. Imagine a Clothier or Leatherworker with 3 full bins of cloth or leather right next to them.
 
 The 5x5 workshops are useful for shops, kennels, and siege workshops. You can even put your trade depot in one of them if you've got a mind to. Maintaining proper security can be a nightmare in that situation (remember that trolls and others can break down doors and floodgates), but if you manage to get it done it can be a trader's dream come true. They can also be useful for making a specialty shop with a few stockpiles designed to accomplish only one thing (encrusting statues with gems, for example).
 
@@ -117,21 +127,23 @@ Finally, this design offers lots and lots of wall space for smoothing and engrav
 
 ### Interconnected 6x6 rooms with stockpiles
 
-`╬══┼┼══╬══┼┼══╬`\
-`║.****.║.****.║`\
-`║**..**║**..**║`\
-`┼*....*┼*....*┼`\
-`┼*....*┼*....*┼`\
-`║**..**║**..**║`\
-`║.****.║.****.║`\
-`╬══┼┼══╬══┼┼══╬`\
-`║.****.║.****.║`\
-`║**..**║**..**║`\
-`┼*....*┼*....*┼`\
-`┼*....*┼*....*┼`\
-`║**..**║**..**║`\
-`║.****.║.****.║ * = pathway`\
-`╬══┼┼══╬══┼┼══╬`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | . | \* | \* | \* | \* | . | ║ | . | \* | \* | \* | \* | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | \* | \* | . | . | \* | \* | ║ | \* | \* | . | . | \* | \* | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ┼ | \* | . | . | . | . | \* | ┼ | \* | . | . | . | . | \* | ┼ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ┼ | \* | . | . | . | . | \* | ┼ | \* | . | . | . | . | \* | ┼ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | \* | \* | . | . | \* | \* | ║ | \* | \* | . | . | \* | \* | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | . | \* | \* | \* | \* | . | ║ | . | \* | \* | \* | \* | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | . | \* | \* | \* | \* | . | ║ | . | \* | \* | \* | \* | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | \* | \* | . | . | \* | \* | ║ | \* | \* | . | . | \* | \* | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ┼ | \* | . | . | . | . | \* | ┼ | \* | . | . | . | . | \* | ┼ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ┼ | \* | . | . | . | . | \* | ┼ | \* | . | . | . | . | \* | ┼ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | \* | \* | . | . | \* | \* | ║ | \* | \* | . | . | \* | \* | ║ |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ║ | . | \* | \* | \* | \* | . | ║ | . | \* | \* | \* | \* | . | ║ |   | \* |   | = |   | p | a | t | h | w | a | y |
+|   | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ | ═ | ═ | ┼ | ┼ | ═ | ═ | ╬ |   |   |   |   |   |   |   |   |   |   |   |   |
 
 In this design, each room functions as workshop, hallway, and stockpile. A workshop is placed near the center of each room, preferably so that only a walkable tile overlaps the (\*) pathways. The pathways form a virtual double-wide diagonal hallway, allowing dwarves to move through the fortress easily. The pathways, as well as the remainder of each room, are filled with the appropriate stockpiles. Each room should have at least one set of stairs for easy access to adjacent z-levels.
 
@@ -145,46 +157,49 @@ Alternatively, you can employ a "work site" methodology where workshops are cons
 
 In very resource-heavy maps, 10-12 smelters may be necessary to keep up with mining operations. The stairways lead down into a high Z-level mining operation (keeps the noise away from the bedrooms, too), with additional bar storage 1-2 levels below. One or more magma forges would be down the hall from the bar stockpiles.
 
-`     ╔════════════╗`\
-`     ║SMSSMSSMSSMS║`\
-`     ║SSSSSSSSSSSS║`\
-`     ║SSSSSSSSSSSS║`\
-`     ║OOOOOOOOOOOO║`\
-`     ║OOOOOOOOOOOO║`\
-`     ║OOOOOOOOOOOO║`\
-`     ╠┼┼═══┼┼═══┼┼╣`\
-`     ║............║`\
-`     ║............╠══════╗`\
-`     ║..╔═....═╗..┼OOOSMS║`\
-`     ║..║>>BBBB║..┼OOOSSS║`\
-`═════╝...>>BBBB...║OOOSSS║`\
-`.........BBBBBB...║OOOSMS║`\
-`.........BBBBBB...║OOOSSS║`\
-`.........BBBBBB...║OOOSSS║`\
-`═════╗...BBBB>>...║OOOSMS║`\
-`     ║..║BBBB>>║..┼OOOSSS║`\
-`     ║..╚═....═╝..┼OOOSSS║`\
-`     ║............╠══════╝`\
-`     ║............║`\
-`     ╠┼┼═══┼┼═══┼┼╣`\
-`     ║OOOOOOOOOOOO║`\
-`     ║OOOOOOOOOOOO║`\
-`     ║OOOOOOOOOOOO║`\
-`     ║SMSSMSSMSSMS║`\
-`     ║SSSSSSSSSSSS║`\
-`     ║SSSSSSSSSSSS║`\
-`     ╚════════════╝`
-
-`*S = Smelter`\
-`*M = Magma access (lines up with unpassable tile on magma smelter)`\
-`*B = Bar Stockpile`\
-`*O = Ore Stockpile`
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|   |   |   |   |   |   | ╔ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | M | S | S | M | S | S | M | S | S | M | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | S | S | S | S | S | S | S | S | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | S | S | S | S | S | S | S | S | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ╠ | ┼ | ┼ | ═ | ═ | ═ | ┼ | ┼ | ═ | ═ | ═ | ┼ | ┼ | ╣ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | . | . | . | . | . | . | . | . | . | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | . | . | . | . | . | . | . | . | . | . | ╠ | ═ | ═ | ═ | ═ | ═ | ═ | ╗ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | ╔ | ═ | . | . | . | . | ═ | ╗ | . | . | ┼ | O | O | O | S | M | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | ║ | \> | \> | B | B | B | B | ║ | . | . | ┼ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ╝ | . | . | . | \> | \> | B | B | B | B | . | . | . | ║ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | . | . | . | . | . | B | B | B | B | B | B | . | . | . | ║ | O | O | O | S | M | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | . | . | . | . | . | B | B | B | B | B | B | . | . | . | ║ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | . | . | . | . | . | . | . | . | . | B | B | B | B | B | B | . | . | . | ║ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | ═ | ═ | ═ | ═ | ═ | ╗ | . | . | . | B | B | B | B | \> | \> | . | . | . | ║ | O | O | O | S | M | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | ║ | B | B | B | B | \> | \> | ║ | . | . | ┼ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | ╚ | ═ | . | . | . | . | ═ | ╝ | . | . | ┼ | O | O | O | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | . | . | . | . | . | . | . | . | . | . | ╠ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | . | . | . | . | . | . | . | . | . | . | . | . | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ╠ | ┼ | ┼ | ═ | ═ | ═ | ┼ | ┼ | ═ | ═ | ═ | ┼ | ┼ | ╣ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | O | O | O | O | O | O | O | O | O | O | O | O | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | M | S | S | M | S | S | M | S | S | M | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | S | S | S | S | S | S | S | S | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ║ | S | S | S | S | S | S | S | S | S | S | S | S | ║ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   | ╚ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ═ | ╝ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \* | S |   | = |   | S | m | e | l | t | e | r |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \* | M |   | = |   | M | a | g | m | a |   | a | c | c | e | s | s |   | ( | l | i | n | e | s |   | u | p |   | w | i | t | h |   | u | n | p | a | s | s | a | b | l | e |   | t | i | l | e |   | o | n |   | m | a | g | m | a |   | s | m | e | l | t | e | r | ) |
+|   | \* | B |   | = |   | B | a | r |   | S | t | o | c | k | p | i | l | e |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   | \* | O |   | = |   | O | r | e |   | S | t | o | c | k | p | i | l | e |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 
 ### Pillars
 
 See Midna's page on pillar design.
 
 ### Organics processing complex
+
+Big squares are 7x7, smaller squares are 3x3, black squares are workshops and colored rectangles are stockpiles
 
 This is a nice, rectangular design which puts the food/drink industry, and the many other industries that feed of its by-products, together in one neat arrangement.
 

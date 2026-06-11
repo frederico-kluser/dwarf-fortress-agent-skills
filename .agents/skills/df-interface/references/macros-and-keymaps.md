@@ -1,8 +1,12 @@
 # Macros and keymaps
 
-> Fonte: [Macros and keymaps](https://dwarffortresswiki.org/index.php/Macros_and_keymaps) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Macros and keymaps](https://dwarffortresswiki.org/index.php/Macros_and_keymaps) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
 
-Playing *Dwarf Fortress* means lots of typing. The game has an internal macro/keymap system. Using it or any external program can save you a great deal of time when dumping, rewalling, designating, and so forth.
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
+
+Playing *Dwarf Fortress* means lots of clicking and/or typing. The game has an internal macro/keymap system. Using it or any external program can save you a great deal of time when dumping, rewalling, designating, and so forth. In game settings you could toggle "Keyboard cursor enabled" to yes for macro mining designation. Unfortunately macros can only do keyboard inputs, meaning that with the v50 mouse/UI overhaul macros are far more limited than they used to be. Allegedly there are plans to reintroduce more keyboard controls, but that is not yet implemented.
+
+**Remember that many of the features and techniques listed on this page have yet to be tested in v50 versions.**
 
 ## DF macros
 
@@ -10,19 +14,15 @@ Playing *Dwarf Fortress* means lots of typing. The game has an internal macro/ke
 
 The controls for creating macros within DF are as follows:
 
-- \+ = record (and finish recording)
+- Ctrl+r = record (the REC will be shown at top left of screen and Ctrl+r again to finish recording)
+- Ctrl+s = save (name the macro then Enter)
+- Ctrl+l = load
+- Ctrl+u+number = set to repeat \[number\] of times (maximum of 99) - Note that this seems to be broken as of v50.05
+- Ctrl+p = play (the PLAY will be shown at top left of screen, repeat when hold, repeating macro will stop after the mouse cursor leaves the game screen)
 
-- \+ = save
+To create a macro, press Ctrl+r to begin recording your actions. When you have recorded all the actions that you want, stop recording by hitting Ctrl+r again and save (Ctrl+s) the macro. The macro is then added to your macro list. To load a macro from the list just press Ctrl+l. If you just recorded the macro, it is loaded even without saving. You can then play the macro by pressing Ctrl+p whenever you want. You can also set a macro to repeat by pressing Ctrl+u, typing a two digit number, and then pressing Ctrl+p to begin the playback session. Moving your mouse from the playing window, or otherwise losing focus on Dwarf Fortress, is an annoying way ~~a good way~~ to interrupt a macro session from continuing (also the only known method).
 
-- \+ = load
-
-- \++number = set to repeat \[number\] of times (maximum of 99)
-
-- \+ = play
-
-To create a macro, press + to begin recording your actions. When you have recorded all the actions that you want, stop recording by hitting + again and save (+) the macro. The macro is then added to your macro list. To load a macro from the list just press +. If you just recorded the macro, it is loaded even without saving. You can then play the macro by pressing + whenever you want. You can also set a macro to repeat by pressing +, typing a two digit number, and then pressing + to begin the playback session. Moving your mouse from the playing window, or otherwise losing focus on Dwarf Fortress, is an annoying way a good way to interrupt a macro session from continuing (also the only known method).
-
-There is a directory data/init/macros for them. The macros are saved in .mak format. The first line of the macro file must match the filename, or the file will not be recognized as a valid macro. Even a recorded file for a simple macro - for example to create a 3 tiles wide ramp - may already consist of up to 50 commands listed. This is because every possible binding of the key pressed is included in the macro and put in a block (and for ramp has many by default).
+The macros are stored in the `/prefs/macros/` folder. The macros are saved in .mak format. The first line of the macro file must match the filename, or the file will not be recognized as a valid macro. Even a recorded file for a simple macro - for example to create a 3 tiles wide ramp - may already consist of up to 50 commands listed. This is because every possible binding of the key pressed is included in the macro and put in a block (and r for ramp has many by default).
 
     pressing_enter_recorded
             SELECT
@@ -62,9 +62,10 @@ When creating or editing your own macros it is a good idea to use only those com
 
 This selfmade example will designate a 3 tiles wide ramp one z-level below and place the cursor to make the next execution of the macro continue the way down. The first line has to be the name of the file. You can see that there are grouping tags for every single keypress. These are important for a working macro.\
 It is unknown if there is the possibility of creating loops/iterations, other programming features or comments.\
-Removing macros in-game can be done by pressing and then selecting Keybindings \> Macros. Press on the macros you want to delete, then press and select "Save and Exit". This will also delete the corresponding macro file permanently. Otherwise, you can delete the corresponding .mak file from the init/macros/ folder, although that will only take effect the next time DF is run.
 
-Changing macros while the game is running uses a counter-intuitive process. After editing the macro file, create a backup of it and remove the macro as described earlier. However, before saving the changes, place the backup file on the init/macros/ folder. Then save the changes and reload the macro with +.
+Removing macros in-game can be done by pressing Esc and then selecting Keybindings \> Macros. Press Backspace on the macros you want to delete, then press Esc and select "Save and Exit". This will also delete the corresponding macro file permanently. Otherwise, you can delete the corresponding .mak file from the init/macros/ folder, although that will only take effect the next time DF is run.
+
+Changing macros while the game is running uses a counter-intuitive process. After editing the macro file, create a backup of it and remove the macro as described earlier. However, before saving the changes, place the backup file on the init/macros/ folder. Then save the changes and reload the macro with Ctrl+l.
 
 Adding macros is also possible, resorting to the macro changing process. A "dummy" macro would be recorded and saved, then deleted. The macro that would be added would replace the dummy file.
 
@@ -85,9 +86,9 @@ Adding macros is also possible, resorting to the macro changing process. A "dumm
 
 ### Tuning macros
 
-The fewer commands a macro consists of, the faster it runs. This means you should avoid unnecessary steps by optimizing the "path" of your designations.
+The fewer commands a macro consists of, the faster it runs. This means the first way to speed them up is to avoid unnecessary steps by optimizing the "path" of your designations.
 
-The second and most effective way to increase speed is to remove all unnecessary commands DF recorded. These may be found in the init/macros folder and edited with any basic text editing program. The extra commands are ignored by the game but they still take time to be processed. To move a cursor 3 (up/down) or 4 (right/left) commands are recorded, most other keys are bound to more commands. Pressing for example records more than 30 commands.
+The second and most effective way to increase speed is to remove all unnecessary commands DF recorded. The macros you save are found in the `prefs/macros` folder (see game folders and files for where that can be) and edited with any basic text editing program. The extra commands are ignored by the game but they still take time to be processed. To move a cursor 3 (up/down) or 4 (right/left) commands are recorded, most other keys are bound to more commands. Pressing d for example records more than 30 commands.
 
 For example the code below is a simple macro that selects the digging designation, moves one square to the right, and then designates that tile to be dug.
 
@@ -176,21 +177,15 @@ Here is the same code but optimized through removal of all the excess commands. 
         End of group
     End of macro
 
-The third way to increase the speed of macros is to change settings in the init-files. In the base init file (data/init/init.txt)") you will find the follow lines:
-
-    If you set KEY_REPEAT_ACCEL_LIMIT above one, then after KEY_REPEAT_ACCEL_START repetitions
-    the repetition delay will smoothly decrease until repetition is this number of times faster
-    than at the start.
+\
+The third way to increase the speed of macros is to change settings in the game or in the `init.txt` file, there you need to find the following lines:
 
     [KEY_REPEAT_ACCEL_LIMIT:8]
     [KEY_REPEAT_ACCEL_START:10]
-
-    This controls the number of milliseconds between macro instructions.
-
     [MACRO_MS:15]
 
-- The `MACRO_MS` setting is the number of milliseconds between macro instructions (the default, 15, allows 1000/15 instructions per second, or about 66). Decreasing this makes macros run **faster**, although decreasing it too far can make the game unresponsive while the macro is running.
-- The `KEY_REPEAT_ACCEL_START` and `KEY_REPEAT_ACCEL_LIMIT` settings are unrelated to macros (except while recording). See Technical tricks for more information.
+- The `MACRO_MS` setting is the number of milliseconds between macro instructions (the default, 15, allows 1000/15 instructions per second, or about 66). Decreasing this makes macros run **faster**, although decreasing it too far can make the game unresponsive while the macro is running, or skip macro commands.
+- The `KEY_REPEAT_ACCEL_START` and `KEY_REPEAT_ACCEL_LIMIT` settings are only related to macros while recording them.
 
 ## External utilities
 
@@ -233,23 +228,15 @@ The following are macro ideas that other players have found useful, and may make
 
 Bedrooms, especially larger ones or large blocks of identical ones, involve a lot of designations and build orders. These macros are designed to streamline the process. For all of these mass-building macros you may wish to temporarily forbid any of your artifact or masterwork furniture, to avoid giving overly-valuable items to your dwarf peasantry.
 
-#### Placing Beds
+#### Placing Beds and Furnitures
 
-So you've recorded a macro to dig out a series of bedrooms, and now you have to fill them. Bring up the uild menu, select ed, and go the first position you want to place a bed in.
+Before placing any beds or furnitures it has some problems as the keyboard cursor will back to the middle tile of the screen the every time designate the construction.
 
-Start a new macro (+) and place the bed (selecting the first bed from the list), then move to the next bedroom in sequence. Repeat this until you reach the end of the row. If you are placing beds into multiple long rows of bedrooms, move the cursor to the first bed in the next row to make things faster. Turn off macro recording (+), but don't exit the build menu. You can then save your macro if you wish, though it's not necessary. Play the macro (+), and you have just laid out another row. Repeat until you have enough bedrooms or you run out of beds.
+So you've recorded a macro to dig out a series of bedrooms, and now you have to fill them. Bring up the build menu, select f urniture bed, Select "use closest material" and "keep building after placement", and go the first position you want to place a bed in.
 
-#### Placing Coffers
+Start a new macro (Ctrl+r) and place the bed (selecting the first bed from the list), then move to the next bedroom in sequence. Repeat this until you reach the end of the row. If you are placing beds into multiple long rows of bedrooms, move the cursor to the first bed in the next row to make things faster. Use w/a/s/d to make the macro loop froward it will move 11 tiles away from start from the macro you record. Turn off macro recording (Ctrl+r), but don't exit the build menu. You can then save your macro if you wish, though it's not necessary.
 
-Placing coffers (but *not* bags) requires an extra step. Pause the game (you *did* remember to pause before playing macros, didn't you?) and go to the Stocks menu. Forbid all bags, regardless of what's inside them or what they're being used for (this is temporary). Exit to main screen and repeat the steps above, this time placing containers in your rooms. You will end up placing only chests / coffers / boxes, ignoring any bags. Repeat and play back for the rest of your bedrooms, then un-forbid your bags before un-pausing the game.
-
-#### Resizing Rooms
-
-If the bedroom is finished (at least all the beds are hauled to place), you may want to create a new macro to designate each room as a bedroom. uery the building and select the first bed. Start a new macro and press to designate it as a bedroom, then press + a few times to fill the available space. If you are fine with the size of the bedroom you can press enter, move on to the next bed, and repeat this for the whole row. If you want bedrooms that fill all the room and not all your bedrooms are the same size, you may have to press + a bit more or less for the larger cases. Repeat this for the rest of the rows as above.
-
-### Mass Selector
-
-With this macro you can select a lot of things at once. Extremely helpful if you want to sell a lot of junk to the caravans. Record , then about 10-25 times in a row. (For some menus you may wish to use , then ) When the caravan arrives, your dwarves haul all the bins to your Trade Depot for sale as normal. At the trade menu, load the macro and play it as many times as you like. The macro will select all the items in your "for sale" list, saving the bins you carried them in for later use. Be sure to at least browse through the final list once you're done to avoid selling items you didn't wish to sell, i.e. items that were in the same bin as your trade goods that you wish to keep, or non-wood items if you're trading with the Elves.
+Play the macro (Ctrl+p), and you have just laid out another row. Repeat until you have enough bedrooms or you run out of beds.
 
 ### Mass Trap Builder
 
@@ -287,11 +274,11 @@ For added awesomeness, trim out the extra commands in a text editor as described
 Users may experience some issues in getting external scripts to work, particularly when using looping scripts when experiencing low frame-rates.
 
 - If experiencing low frame-rates, try adding delays ("Sleep 100" to pause for 100 milliseconds for example) within macros to allow the interface to keep up. If there are nested loops, sometimes adding a pause at the end of an inner loop is all that is needed to flush the keyboard buffer.
-- Another way to add delay during and after each simulated key press is to put SetKeyDelay, 40, 40 at the start of the macro.
+- Another way to add delay during and after each simulated key press is to put **SetKeyDelay, 40, 40** at the start of the macro.
 - Make sure that Dwarf Fortress maintains focus. IM windows are the enemy! Who needs friends anyhow? You've got Dwarf Fortress.
 - This may go without saying, but most macros assume standard key-mappings. If you're using non-standard ones, you may have to edit the macro to get it to work.
 - Visiting liaisons can bring up screens that eat keystrokes, throwing a long-looping script out-of-phase with where it expects the game to be. Wait for the farewell screen before running a long script, or just pause the game beforehand.
-- The SendPlay function supports keys that the Send function does not, for example . According to the AutoHotKey documentation, SendPlay may also be better at preventing dropped keystrokes.
+- The **SendPlay** function supports keys that the **Send** function does not, for example Shift-Enter. According to the AutoHotKey documentation, **SendPlay** may also be better at preventing dropped keystrokes.
 
 ### General Fortress Mode Hotkeys Script
 

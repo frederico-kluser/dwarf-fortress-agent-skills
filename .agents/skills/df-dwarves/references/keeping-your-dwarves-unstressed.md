@@ -1,6 +1,8 @@
 # Keeping your dwarves unstressed
 
-> Fonte: [Keeping your dwarves unstressed](https://dwarffortresswiki.org/index.php/Keeping_your_dwarves_unstressed) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Keeping your dwarves unstressed](https://dwarffortresswiki.org/index.php/Keeping_your_dwarves_unstressed) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+!!UNKNOWN!!  · xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 Some tips on how to **keep your dwarves stress-free**, thus reducing the chances of tantrums, depressions and obliviousness:
 
@@ -12,7 +14,7 @@ Some tips on how to **keep your dwarves stress-free**, thus reducing the chances
 
 ## Specific Dwarves
 
-- Dwarves that are highly prone to stress, i.e. a high STRESS_VULNERABILITY trait, are not suitable for the military or as nobles. You will have to remove them from these duties and, in extreme cases, isolate them with burrows to insulate them from stress-inducing stimuli. You might be able to get away with giving high-stress dwarves a "vacation" by disabling their labors or demote them for example from a captain to a mere soldier. Also, don't give high-stress dwarves the Refuse Hauling labor, since they often handle dead bodies.
+- Dwarves that are highly prone to stress, i.e. a high STRESS_VULNERABILITY facet, are not suitable for the military or as nobles. You will have to remove them from these duties and, in extreme cases, isolate them with burrows to insulate them from stress-inducing stimuli. You might be able to get away with giving high-stress dwarves a "vacation" by disabling their labors or demote them for example from a captain to a mere soldier. Also, don't give high-stress dwarves the Refuse Hauling labor, since they often handle dead bodies.
 - Dwarves who have to go outside for extended periods of time (like fisherdwarves who work near the local lake or river) become stressed due to constant exposure to rain and long periods away from fun (not that kind) and their friends. You can give these workers their own little vacation by disabling their labors and letting them spend some time inside at the tavern until they regain their composure. Let an unstressed dwarf take care of the job for a while.
 - Unless an overstressed dwarf is particularly important, it's often better to retire them to one of your holdings and replace them with a fresh, unstressed migrant.
 - **Dwarf Therapist now works with v50 as of 2023-01-26.** Using a tool such as Dwarf Therapist, you can sort dwarves by stress level. There you can hold the mouse over the stress square to see the reasons why the dwarves are stressed and address them. Look up their preferences, assign them jobs that match their preferences, and build stuff they like, especially in their rooms.

@@ -1,6 +1,8 @@
 # Egg production
 
-> Fonte: [Egg production](https://dwarffortresswiki.org/index.php/Egg_production) — Dwarf Fortress Wiki (GFDL/MIT)
+> Fonte: [Egg production](https://dwarffortresswiki.org/index.php/Egg_production) — Dwarf Fortress Wiki (GFDL & MIT). Snapshot 2026-06.
+
+xTATTEREDx  · +FINE+  · \*SUPERIOR\*  · ≡EXCEPTIONAL≡  · ☼MASTERWORK☼
 
 **Egg production**, like the meat industry, beekeeping industry, fishing industry, and farming, creates food. In egg production, collection and cooking of eggs is the primary activity, as, over time, domestic poultry, such as chickens, can produce much more food as eggs than the same animal produces as meat when butchered (1 egg = 1 meat = 1 meal). When starting out a new fortress, raising poultry can be an excellent way to quickly fill up your food barrels as it requires very little set-up for your dwarves. As a by-product of egg production, older or excess animals can be butchered as part of the meat industry.
 
@@ -44,9 +46,9 @@ Egg-laying animals that are caught in a cage trap need to be tamed by an animal 
 
 *Requires: One or more adult females and one adult male of each species, one or more nest boxes, and time*
 
-If a compatible male and a female of the same species are adjacent to each other and there is an open constructed nest box for the female to occupy and lay a clutch of eggs in, then sooner or later (and probably sooner) the male will fertilize the eggs laid by the female. A female can lay a clutch of eggs again immediately after the last clutch hatches. A female that cannot claim a nest box *will not* lay a clutch of eggs.
+If a compatible male and a female of the same species are adjacent to each other and there is an open constructed nest box for the female to occupy and lay a clutch of eggs in, then sooner or later (and probably sooner) the male will "impregnate" the female which will allow it to lay fertilized eggs. A female can lay a clutch of eggs again immediately after the last clutch hatches. A female that cannot claim a nest box *will not* lay a clutch of eggs.
 
-A fertilized clutch will only hatch if they are left in the nest box undisturbed and their mother is allowed to incubate the eggs. Collecting the eggs, slaughtering or training the mother, or deconstructing the nest box will all prevent the eggs from hatching. A clutch of eggs to be used for breeding should be forbidden to prevent their collection. Even if the eggs and mother are left undisturbed, it is possible that clutch was not fertilized. Eggs that don't hatch after two seasons will likely never hatch. To make sure that the eggs are left undisturbed, make sure that no stockpiles accept that type of egg, and if you cook any meals make sure that that type of egg is turned off in the kitchen sub-screen of the status screen. Alternatively, you can put the nest boxes in a room behind a door and forbid the door to keep your dwarves away from the eggs.
+A fertilized clutch will only hatch if they are left in the nest box undisturbed. Collecting the eggs or deconstructing the nest box will prevent the eggs from hatching. A clutch of eggs to be used for breeding should be forbidden while still in the nest boxes to prevent their collection. Alternatively, you can put the nest boxes in a room behind a door and lock the door to keep your dwarves away from the eggs. For insurance, you can set no stockpiles to accept that type of egg, and forbid cooking that type of egg in the kitchen tab of the labor menu. Even if the eggs are left undisturbed, it is possible that clutch was not fertilized. Eggs that don't hatch after two seasons will likely never hatch, and the eggs will need to be collected in order to allow the female to lay another clutch of (hopefully fertilized) eggs, otherwise the female will continue incubating the unfertilized clutch in perpetuity.
 
 As a large number of free-roaming animals will reduce your game speed, a common strategy is to cage all your young poultry until they mature. Keep in mind, though, that some tamed wild species take more than a year to mature, unlike most domestic animals. For example, it may be excusable to butcher a saltwater crocodile hatchling right away, rather than wait 3 years for it to mature and produce more meat and bones.
 
@@ -60,51 +62,172 @@ Through the use of expeditions, a player can capture animals not otherwise avail
 
 *Requires: A tame adult female egg-laying animal, a nest box, and food hauling*
 
-Once you have at least one tame adult female egg-laying animal, you need to build a nest box to begin production of delicious and filling eggs. Every so often, the adult females will claim a nest box and lay a clutch of eggs. Then, a food hauler will collect the eggs and move them to a food stockpile. Food hauling is an unskilled labor, so any dwarf in the fortress can do it. Egg collection is a great way to use those peasants that otherwise just move boulders around the fortress.
+Once you have at least one tame adult female egg-laying animal, you need to build a nest box to begin production of delicious and filling eggs. Every so often, the adult females will claim a nest box and lay a clutch of eggs. Then, a food hauler will collect the eggs and move them to a food stockpile. Food hauling is an unskilled labor, so any dwarf in the fortress can do it. Egg collection is a great way to use those peasants that otherwise just move boulders around the fortress. This is a small guide aimed towards egg farming, I hope this helps and makes it easy to understand the egg industry... likewise an egg industry can be implemented towards a meat/leather/bone industry at any time with patience. Here's the guide : https://steamcommunity.com/sharedfiles/filedetails/?id=2975716340
 
 Eggs must be cooked into prepared meals at a kitchen before they can be eaten by dwarves.
 
 ## Egg-laying animals
 
-[TABLE]
+|  |  |  |  |  |  |  |  |
+|----|----|----|----|----|----|----|----|
+| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+| Adder |  | 150 | 0\* | 15-20 | 3-10 | 16 |  |
+| Albatross |  | 8,000 | 1 | 40-50 | 1 | 305 |  |
+| Alligator |  | 400,000 | 1 | 60-100 | 10-30 | 80 |  |
+| Alligator snapping turtle |  | 80,000 | 0\* | 30-70 | 5-10 | 70 |  |
+| Barn owl |  | 500 | 1 | 10-20 | 3-6 | 32 |  |
+| Beak dog |  | 150,000 | 1 | 10-20 | 5-10 | 1600 | Domestic in / goblin / civilizations. / Not tameable until / v0.44.07 / . |
+| Black mamba |  | 5,000 | 0\* | 10-15 | 10-30 | 50 |  |
+| Blue peafowl |  | 4,000 | 1 | 15-30 | 6-8 | 102 | Domestic |
+| Bushmaster |  | 8,500 | 0\* | 12-24 | 10-20 | 22 |  |
+| Buzzard |  | 1,400 | 1 | 10-20 | 2-3 | 60 |  |
+| Cassowary |  | 50,000 | 1 | 40-50 | 3-6 | 550 |  |
+| Chicken |  | 3,000 | 1 | 7-15 | 4-15 | 62 | Domestic |
+| Common snapping turtle |  | 30,000 | 0\* | 30-50 | 5-10 | 50 |  |
+| Desert tortoise |  | 5,500 | 1 | 80-100 | 3-5 | 40 |  |
+| Duck |  | 1,000 | 1 | 7-9 | 8-13 | 52 | Domestic |
+| Eagle |  | 4,000 | 1 | 20-30 | 1-3 | 142 |  |
+| Echidna |  | 10,000 | 1 | 10-20 | 1 | 1 |  |
+| Emperor penguin |  | 30,000 | 1 | 20-50 | 1 | 465 | Not tameable |
+| Emu |  | 35,000 | 1 | 15-25 | 5-15 | 805 |  |
+| Giant adder |  | 201,049 | 0\* | 15-20 | 3-10 | 16 |  |
+| Giant albatross |  | 256,320 | 1 | 40-50 | 1 | 305 |  |
+| Giant alligator |  | 3,268,000 | 1 | 60-100 | 10-30 | 80 |  |
+| Giant anole |  | 200,629 | 0\* | 5-7 | 1-2 | 10 |  |
+| Giant barn owl |  | 203,500 | 1 | 10-20 | 3-6 | 32 |  |
+| Giant black mamba |  | 235,100 | 0\* | 10-15 | 10-30 | 50 |  |
+| Giant bluejay |  | 200,700 | 1 | 10-20 | 2-7 | 11 |  |
+| Giant bushmaster |  | 259,845 | 0\* | 12-24 | 10-20 | 22 |  |
+| Giant bushtit |  | 200,035 | 1 | 1-2 | 5-13 | 1 |  |
+| Giant buzzard |  | 209,804 | 1 | 10-20 | 2-3 | 60 |  |
+| Giant cardinal |  | 200,350 | 1 | 10-20 | 2-5 | 9 |  |
+| Giant cassowary |  | 560,000 | 1 | 40-50 | 3-6 | 550 |  |
+| Giant chameleon |  | 201,049 | 0\* | 5-10 | 40-50 | 10 |  |
+| Giant cockatiel |  | 200,629 | 1 | 15-30 | 2-8 | 11 |  |
+| Giant crow |  | 203,500 | 1 | 10-15 | 4-6 | 21 |  |
+| Giant desert tortoise |  | 238,645 | 1 | 80-100 | 3-5 | 40 |  |
+| Giant eagle |  | 228,040 | 1 | 20-30 | 1-3 | 142 |  |
+| Giant echidna |  | 270,500 | 1 | 10-20 | 1 | 1 |  |
+| Giant emu |  | 450,100 | 1 | 15-25 | 5-15 | 805 |  |
+| Giant gila monster |  | 214,020 | 1 | 20-30 | 2-12 | 32 |  |
+| Giant grackle |  | 200,840 | 1 | 10-20 | 1-7 | 12 |  |
+| Giant great horned owl |  | 214,020 | 1 | 15-20 | 1-5 | 51 |  |
+| Giant grey parrot |  | 202,800 | 1 | 40-60 | 1-5 | 40 |  |
+| Giant hornbill |  | 217,525 | 1 | 35-40 | 1-4 | 50 |  |
+| Giant iguana |  | 228,040 | 1 | 10-20 | 40-50 | 15 |  |
+| Giant kakapo |  | 221,040 | 7 | 60-120 | 1-4 | 52 |  |
+| Giant kea |  | 207,010 | 1 | 30-50 | 2-5 | 62 |  |
+| Giant kestrel |  | 201,750 | 1 | 10-20 | 3-6 | 32 |  |
+| Giant king cobra |  | 242,160 | 0\* | 15-25 | 10-30 | 5 |  |
+| Giant kingsnake |  | 210,510 | 0\* | 20-30 | 5-12 | 20 |  |
+| Giant kiwi |  | 217,525 | 1 | 20-50 | 1-2 | 450 |  |
+| Giant loon |  | 242,160 | 1 | 25-30 | 2-4 | 152 |  |
+| Giant lorikeet |  | 201,400 | 1 | 15-30 | 2 | 11 |  |
+| Giant magpie |  | 201,400 | 1 | 10-20 | 2-5 | 11 |  |
+| Giant masked lovebird |  | 200,629 | 1 | 10-15 | 4-5 | 7 |  |
+| Giant monitor lizard |  | 933,000 | 1 | 20-30 | 15-25 | 70 |  |
+| Giant oriole |  | 200,280 | 1 | 10-20 | 3-7 | 8 |  |
+| Giant osprey |  | 214,020 | 1 | 20-30 | 2-4 | 60 |  |
+| Giant ostrich |  | 857,700 | 1 | 35-45 | 10-15 | 2000 |  |
+| Giant parakeet |  | 200,840 | 1 | 15-25 | 2-4 | 11 |  |
+| Giant peach-faced lovebird |  | 200,419 | 1 | 10-15 | 4-6 | 9 |  |
+| Giant peregrine falcon |  | 113,292 | 1 | 12-15 | 3-4 | 46 |  |
+| Giant platypus |  | 214,020 | 1 | 10-20 | 1-3 | 11 |  |
+| Giant pond turtle |  | 203,500 | 0\* | 40-100 | 1-15 | 6 |  |
+| Giant puffin |  | 205,252 | 1 | 15-20 | 1 | 30 |  |
+| Giant python |  | 1,700,000 | 0\* | 10-20 | 10-30 | 50 |  |
+| Giant raven |  | 208,404 | 1 | 20-40 | 3-7 | 52 |  |
+| Giant red-winged blackbird |  | 200,350 | 1 | 10-20 | 2-4 | 11 |  |
+| Giant saltwater crocodile |  | 6,440,000 | 3 | 60-100 | 20-70 | 100 |  |
+| Giant skink |  | 203,500 | 0\* | 15-20 | 10-30 | 10 |  |
+| Giant snapping turtle |  | 414,000 | 0\* | 30-50 | 5-10 | 50 |  |
+| Giant snowy owl |  | 214,020 | 1 | 10-30 | 5-10 | 62 |  |
+| Giant sparrow |  | 200,210 | 1 | 5-10 | 2-7 | 3 |  |
+| Giant swan |  | 270,500 | 1 | 10-25 | 5-7 | 340 |  |
+| Giant tortoise |  | 300,000 | 1 | 100-200 | 5-10 | 82 |  |
+| Giant vulture |  | 263,430 | 1 | 10-20 | 1-3 | 60 |  |
+| Giant white stork |  | 221,040 | 1 | 20-40 | 1-7 | 110 |  |
+| Giant wren |  | 200,280 | 1 | 5-7 | 3-10 | 5 |  |
+| Gigantic tortoise |  | 2,478,000 | 1 | 100-200 | 5-10 | 82 |  |
+| Gila monster |  | 2,000 | 1 | 20-30 | 2-12 | 32 |  |
+| Goose |  | 4,500 | 1 | 10-24 | 3-8 | 152 | Domestic |
+| Great horned owl |  | 2,000 | 1 | 15-20 | 1-5 | 51 |  |
+| Grey parrot |  | 400 | 1 | 40-60 | 1-5 | 40 |  |
+| Guineafowl |  | 1,500 | 1 | 10-15 | 4-15 | 42 | Domestic |
+| Hornbill |  | 2,500 | 1 | 35-40 | 1-4 | 50 |  |
+| Iguana |  | 4,000 | 1 | 10-20 | 40-50 | 15 |  |
+| Kakapo |  | 3,000 | 7 | 60-120 | 1-4 | 52 |  |
+| Kea |  | 1,000 | 1 | 30-50 | 2-5 | 62 |  |
+| Kestrel |  | 250 | 1 | 10-20 | 3-6 | 32 |  |
+| King cobra |  | 6,000 | 0\* | 15-25 | 10-30 | 5 |  |
+| Kingsnake |  | 1,500 | 0\* | 20-30 | 5-12 | 20 |  |
+| Kiwi |  | 2,500 | 1 | 20-50 | 1-2 | 450 |  |
+| Kobold |  | 20,000 | 12 | 150-170 | 1-2 | 1100 | Forms crude civilizations, not tameable |
+| Little penguin |  | 1,500 | 1 | 20-30 | 2 | 53 | Not tameable |
+| Loon |  | 6,000 | 1 | 25-30 | 2-4 | 152 |  |
+| Monitor lizard |  | 100,000 | 1 | 20-30 | 15-25 | 70 |  |
+| Osprey |  | 2,000 | 1 | 20-30 | 2-4 | 60 |  |
+| Ostrich |  | 90,000 | 1 | 35-45 | 10-15 | 2,000 |  |
+| Penguin |  | 4,000 | 1 | 20-30 | 2 | 125 | Not tameable |
+| Peregrine falcon |  | 600 | 1 | 12-15 | 3-4 | 46 |  |
+| Platypus |  | 2,000 | 1 | 10-20 | 1-3 | 11 |  |
+| Puffin |  | 750 | 1 | 15-20 | 1 | 30 |  |
+| Python |  | 200,000 | 0\* | 10-20 | 10-30 | 50 |  |
+| Raven |  | 1,200 | 1 | 20-40 | 3-7 | 52 |  |
+| Saltwater crocodile |  | 800,000 | 3 | 60-100 | 20-70 | 100 |  |
+| Sea serpent |  | 9,000,000 | 6 | 150-175 | 1 | 6100 | Aquatic, cannot lay eggs due to a bug.Bug:4105 |
+| Snowy owl |  | 2,000 | 1 | 10-30 | 5-10 | 62 |  |
+| Swan |  | 10,000 | 1 | 10-25 | 5-7 | 340 |  |
+| Turkey |  | 5,000 | 1 | 7-10 | 10-14 | 87 | Domestic |
+| Vulture |  | 9,000 | 1 | 10-20 | 1-3 | 60 |  |
+| White stork |  | 3,000 | 1 | 20-40 | 1-7 | 110 |  |
 
-style="border:1px \#AAA solid;background:#EEE;"\| **Outdoor Animals**
+**Outdoor Animals**
 
 \* *This creature cannot be fully tamed by dwarves, and thus will require frequent training.*
 
 \*\* *Egg size does not currently affect food quantity.*
 
-| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+\
+
+|  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|
+| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
 | Cave crocodile |  | 600,000 | 3 | 60-100 | 20-60 | 80 |  |
 | Cave dragon |  | 15,000,000 | 0\* | Immortal | 1-3 | 6100 |  |
 | Crundle |  | 10,000 | 0\* | 10-20 | 5-20 | 60 |  |
-| Elk bird |  | 100,000 | 1 | 10-20 | 2-10 | 60 | Grazer, may starve itself to death while incubating eggs. |
+| Elk bird |  | 100,000 | 1 | 10-20 | 2-10 | 60 | Grazer, may starve itself to death while incubating eggs.Bug:4637 |
 | Giant cave swallow |  | 200,000 | 1 | 10-20 | 2-3 | 2100 |  |
 | Helmet snake |  | 50,000 | 0\* | 40-60 | 10-30 | 50 |  |
 | Jabberer |  | 4,500,000 | 1 | 10-20 | 1-2 | 5100 |  |
 
-style="border:1px \#AAA solid;background:#EEE;"\| **Subterranean Animals**
+**Subterranean Animals**
 
 \* *This creature cannot be fully tamed by dwarves, and thus will require frequent training.*
 
 \*\* *Egg size does not currently affect food quantity.*
 
-| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+\
+
+|  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|
-| Dragon |  | 25,000,000 | 0\* | Immortal | 1-3 | 6100 |  |
+| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+| Dragon |  | 25,000,000 | 10 | Immortal | 1-3 | 6100 |  |
 | Roc |  | 20,000,000 | 1 | Immortal | 1-2 | 201000 |  |
 
-style="border:1px \#AAA solid;background:#EEE;"\| **Megabeasts**
+**Megabeasts**
 
 \* *This creature cannot be fully tamed by dwarves, and thus will require frequent training.*
 
 \*\* *Egg size does not currently affect food quantity.*
+
+\
 
 ## Animal people
 
-| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+|  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|
+| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
 | Adder man |  | 35,075 | 0 | 60-80 | 3-10 | 16 |  |
 | Albatross man |  | 39,000 | 1 | 60-80 | 1 | 305 |  |
 | Alligator man |  | 235,000 | 1 | 60-80 | 10-30 | 80 |  |
@@ -167,14 +290,17 @@ style="border:1px \#AAA solid;background:#EEE;"\| **Megabeasts**
 | White stork man |  | 36,500 | 1 | 60-80 | 1-7 | 110 |  |
 | Wren man |  | 35,020 | 1 | 60-80 | 3-10 | 5 |  |
 
-style="border:1px \#AAA solid;background:#EEE;"\| **Animal People\***
+**Animal People\***
 
 \* *Animal people cannot be tamed, but they can join civilizations during worldgen and later arrive as visitors.*
 
-\*\* ''Egg size does not currently affect food quantity.'
+\*\* *Egg size does not currently affect food quantity.'*
 
-| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
+\
+
+|  |  |  |  |  |  |  |  |
 |----|----|----|----|----|----|----|----|
+| Animal | Graphic | Body Size (max) | Maturation Time (years) | Max Age (years) | Number of Eggs | Egg Size\*\* | Notes |
 | Anole |  | 90 | 0 | 5-7 | 1-2 | 10 |  |
 | Blue jay |  | 100 | 1 | 10-20 | 2-7 | 11 |  |
 | Bushtit |  | 5 | 1 | 1-2 | 5-13 | 1 |  |
@@ -196,14 +322,13 @@ style="border:1px \#AAA solid;background:#EEE;"\| **Animal People\***
 | Sparrow |  | 30 | 1 | 5-10 | 2-7 | 3 |  |
 | Two-legged rhino lizard |  | 1,000 | 1 | 2-3 | 10-30 | 40 |  |
 | Wren |  | 40 | 1 | 5-7 | 3-10 | 5 |  |
-|  |  |  |  |  |  |  |  |
 
-style="border:1px \#AAA solid;background:#EEE;"\| **Vermin\***
+**Vermin\***
 
 \* *Vermin cannot currently be used for egg production in fortress mode.*
 
-\*\* ''Egg size does not currently affect food quantity.'
+\*\* *Egg size does not currently affect food quantity.'*
 
 ## Bugs
 
-Aquatic egg-laying animals will not claim a nest box. It doesn't matter if the box is built underwater or on land.
+Aquatic egg-laying animals will not claim a nest box. It doesn't matter if the box is built underwater or on land. Bug:4105
