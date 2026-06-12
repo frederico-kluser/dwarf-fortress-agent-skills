@@ -101,6 +101,8 @@ python3 .agents/skills/scripts/df_bridge.py status --json     # game found? read
 python3 .agents/skills/scripts/df_bridge.py log --new --json  # events since the last check (category-tagged)
 python3 .agents/skills/scripts/df_bridge.py watch --seconds 15
 python3 .agents/skills/scripts/df_bridge.py state all         # structured JSON: adventurer, threats, date
+python3 .agents/skills/scripts/df_bridge.py act screen        # read the visible screen text (menus)
+python3 .agents/skills/scripts/df_bridge.py act move n        # act: walk, press keys (adventure)
 python3 .agents/skills/scripts/df_bridge.py pause             # lua "dfhack.world.SetPauseState(true)"
 python3 .agents/skills/scripts/df_bridge.py run prospect all  # any DFHack console command
 

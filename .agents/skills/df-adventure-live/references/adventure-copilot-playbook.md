@@ -75,6 +75,34 @@ blow-by-blow and travel notices. Narrate the 2–3 most relevant, translated.
 Four lines of situation + one concrete suggestion beats a data dump. Always answer in
 the user's language; the JSON is English.
 
+## Acting in the game (`act` layer) — field notes from live play
+
+Verified live on 53.14 by actually playing through the bridge:
+
+- **Focus names**: the map is `dungeonmode/Default`; menus stack on top of it
+  (`dungeonmode/Announcements` = the `a` log screen). `act move` refuses to run
+  unless the map is foreground; `act key LEAVESCREEN` closes the top menu.
+- **`act screen` semantics**: date sits at the top-right ("15th Granite, 100");
+  the left margin shows ambient direction indicators (`æ W`, `SSE`…) = sounds and
+  conversations nearby with their compass direction; the right panel shows active
+  quest widgets (e.g. "Offer Service / Gili"). Reading the screen is how you see
+  MENUS — game state itself comes cheaper from `state …`.
+- **`act move` semantics**: one call = one adventure-mode turn; NPCs move too.
+  Walking into an adjacent unit's tile can swap/displace — verify with the
+  `pos_before`/`pos_after` echo instead of assuming. Re-scan `state threats`
+  every few steps; stop on any `danger:true`.
+- **Time advances when you act**: every step ticks needs timers and lets the world
+  act. Do not grind steps with the user away from the keyboard.
+
+## Skill backlog discovered by playing (next cycles)
+
+1. **Conversation navigator** — `act key` + `act screen` loop over the talk menus
+   (greet, ask directions, quest dialogs). Highest value: quests live here.
+2. **Travel assistant** — `A_TRAVEL` world-map reading + route narration.
+3. **Needs macros** — eat/drink/sleep action sequences with container detection.
+4. **Combat copilot** — attack menu reading, target advice, retreat triggers.
+5. **Character sheet reader** — skills/attributes via Lua (extend `dfb-state`).
+
 ## When something fails
 
 - exit 12 = game closed / DFHack not loaded → run `status`, tell the user to launch via `./dfhack`.

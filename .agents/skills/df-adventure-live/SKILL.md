@@ -46,6 +46,20 @@ conversa, combate) são a skill `df-adventure` (wiki).
    perto, o que mudou. Depois **um** conselho concreto de próximo passo.
    Interpretação dos campos: `references/adventure-copilot-playbook.md`.
 
+## Agindo no jogo (camada `act`)
+
+O copiloto também **vê a tela e age** — sempre narrando ANTES de agir, e só agindo
+quando o usuário pedir ajuda ativa:
+
+    python3 .agents/skills/scripts/df_bridge.py act focus                 # que tela está aberta?
+    python3 .agents/skills/scripts/df_bridge.py act screen                # lê o texto visível
+    python3 .agents/skills/scripts/df_bridge.py act key LEAVESCREEN       # fecha menu (qualquer tecla de df.interface_key)
+    python3 .agents/skills/scripts/df_bridge.py act move n --times 3      # anda (n s e w ne nw se sw up down wait)
+
+Regras: `move` só funciona com o mapa em primeiro plano (`dungeonmode/Default`) — feche
+menus antes; um lote pequeno de passos por vez, reavaliando `state threats` entre lotes;
+NUNCA mova o personagem sem o usuário ter pedido ajuda ativa naquele momento.
+
 ## Níveis de ação (segurança)
 
 - **Nível 1 — sempre ok**: todas as leituras acima; tools de informação

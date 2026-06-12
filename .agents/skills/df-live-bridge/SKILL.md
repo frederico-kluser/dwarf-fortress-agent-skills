@@ -44,6 +44,13 @@ Estado estruturado em JSON (instala sozinho o `dfb-state.lua` no jogo na 1ª cha
     python3 .agents/skills/scripts/df_bridge.py state inventory         # equipamento e mochila
     # interpretação campo a campo: skill df-adventure-live, references/adventure-copilot-playbook.md
 
+Observar a tela e agir (adventure; regras de uso na skill df-adventure-live):
+
+    python3 .agents/skills/scripts/df_bridge.py act focus               # que tela está aberta
+    python3 .agents/skills/scripts/df_bridge.py act screen              # texto visível (menus!)
+    python3 .agents/skills/scripts/df_bridge.py act key LEAVESCREEN     # simula teclas
+    python3 .agents/skills/scripts/df_bridge.py act move n --times 3    # anda com o aventureiro
+
 Controlar o jogo (o DFHack precisa estar rodando — o `status` mostra):
 
     python3 .agents/skills/scripts/df_bridge.py pause                   # pausa (seguro)

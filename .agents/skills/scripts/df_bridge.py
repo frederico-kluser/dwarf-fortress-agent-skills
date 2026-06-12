@@ -12,6 +12,8 @@ Uso:
   python3 df_bridge.py log --new --json         # só o que aconteceu desde a última checagem
   python3 df_bridge.py watch --seconds 15       # segue eventos novos por 15s (termina sozinho)
   python3 df_bridge.py state all                # estado estruturado em JSON (aventureiro, ameaças, data)
+  python3 df_bridge.py act screen               # lê o texto visível na tela do jogo
+  python3 df_bridge.py act move n --times 3     # anda 3 passos para o norte (adventure)
   python3 df_bridge.py run prospect all         # comando arbitrário do console DFHack
   python3 df_bridge.py pause | unpause          # atalhos seguros (lua SetPauseState)
 
@@ -19,7 +21,7 @@ Flags comuns (logo após o subcomando): --df-path, --port, --json, --via auto|ru
 Códigos de saída: 0 ok · 10 DF não encontrado · 11 gamelog ausente ·
 12 DFHack/RPC inalcançável (jogo fechado?) · 13 o comando falhou dentro do jogo.
 """
-import argparse, json, os, re, socket, struct, subprocess, sys, time
+import argparse, glob, json, os, re, socket, struct, subprocess, sys, time
 
 # ---------- protocolo remoto do DFHack (fonte: RemoteClient.h / CoreProtocol.proto) ----------
 DEFAULT_PORT = 5000                 # default real do DFHack (remote-server.json)
@@ -597,36 +599,38 @@ def cmd_pause(args, state):
     return cmd_run(args)
 
 
-def ensure_state_script(df):
-    """Instala/atualiza o dfb-state.lua no script-path do DF (dfhack-config/scripts)."""
-    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dfb-state.lua")
-    if not os.path.isfile(src):
-        raise BridgeError("dfb-state.lua não encontrado ao lado do df_bridge.py",
+def ensure_game_scripts(df):
+    """Instala/atualiza todos os dfb-*.lua deste diretório no script-path do DF."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    srcs = sorted(glob.glob(os.path.join(here, "dfb-*.lua")))
+    if not srcs:
+        raise BridgeError("nenhum dfb-*.lua ao lado do df_bridge.py",
                           EXIT_CMD_FAILED, "instalação das skills incompleta?")
     dst_dir = os.path.join(df, "dfhack-config", "scripts")
-    dst = os.path.join(dst_dir, "dfb-state.lua")
-    with open(src, "rb") as f:
-        want = f.read()
-    try:
-        with open(dst, "rb") as f:
-            if f.read() == want:               # já instalado e atual
-                return
-    except OSError:
-        pass
-    try:
-        os.makedirs(dst_dir, exist_ok=True)
-        with open(dst, "wb") as f:
-            f.write(want)
-    except OSError as e:
-        raise BridgeError("não consegui instalar dfb-state.lua em %s (%s)" % (dst_dir, e),
-                          EXIT_CMD_FAILED)
+    for src in srcs:
+        dst = os.path.join(dst_dir, os.path.basename(src))
+        with open(src, "rb") as f:
+            want = f.read()
+        try:
+            with open(dst, "rb") as f:
+                if f.read() == want:           # já instalado e atual
+                    continue
+        except OSError:
+            pass
+        try:
+            os.makedirs(dst_dir, exist_ok=True)
+            with open(dst, "wb") as f:
+                f.write(want)
+        except OSError as e:
+            raise BridgeError("não consegui instalar %s em %s (%s)"
+                              % (os.path.basename(src), dst_dir, e), EXIT_CMD_FAILED)
 
 
-def cmd_state(args):
-    df = require_df(args)
-    ensure_state_script(df)
+def run_game_script(args, df, argv):
+    """Roda um script dfb-* dentro do jogo e devolve (JSON impresso, via)."""
+    ensure_game_scripts(df)
     port = resolve_port(args, df)
-    res = send_command(df, port, ["dfb-state", args.what, str(args.radius)], args.via)
+    res = send_command(df, port, argv, args.via)
     text = res["text"].strip()
     # o script imprime só JSON ({...} ou [...]); extrai pelo delimitador que ABRE primeiro
     brace, bracket = text.find("{"), text.find("[")
@@ -635,18 +639,51 @@ def cmd_state(args):
     else:
         start, end = brace, text.rfind("}")
     if start < 0 or end <= start:
-        raise BridgeError("resposta sem JSON do dfb-state: %s" % (text[:200] or "(vazia)"),
+        raise BridgeError("resposta sem JSON de %s: %s" % (argv[0], text[:200] or "(vazia)"),
                           EXIT_CMD_FAILED, "há um mundo carregado? rode status")
     try:
-        data = json.loads(text[start:end + 1])
+        return json.loads(text[start:end + 1]), res["via"]
     except ValueError as e:
-        raise BridgeError("JSON inválido do dfb-state (%s): %s" % (e, text[:200]),
+        raise BridgeError("JSON inválido de %s (%s): %s" % (argv[0], e, text[:200]),
                           EXIT_CMD_FAILED)
+
+
+def emit_data(args, data, via, what):
     if args.json:
-        print(json.dumps({"ok": True, "via": res["via"], "what": args.what, "data": data},
+        print(json.dumps({"ok": True, "via": via, "what": what, "data": data},
                          ensure_ascii=False, indent=2))
     else:
         print(json.dumps(data, ensure_ascii=False, indent=2))
+
+
+def cmd_state(args):
+    df = require_df(args)
+    data, via = run_game_script(args, df, ["dfb-state", args.what, str(args.radius)])
+    emit_data(args, data, via, args.what)
+    return EXIT_OK
+
+
+def cmd_act(args):
+    df = require_df(args)
+    if args.action == "move":
+        if not args.args:
+            raise BridgeError("uso: act move <n|s|e|w|ne|nw|se|sw|up|down|wait> [--times N]",
+                              EXIT_CMD_FAILED)
+        direction, data, via = args.args[0], None, None
+        for i in range(max(1, args.times)):
+            data, via = run_game_script(args, df, ["dfb-act", "move", direction])
+            time.sleep(args.delay)             # cada passo é 1 turno; deixa o frame rodar
+        after, _ = run_game_script(args, df, ["dfb-state", "adventurer", "1"])
+        data["pos_after"] = after.get("pos")
+        data["steps"] = max(1, args.times)
+        emit_data(args, data, via, "move")
+    else:
+        data, via = run_game_script(args, df, ["dfb-act", args.action] + list(args.args))
+        if args.action == "screen" and not args.json:
+            print("\n".join(data.get("lines", [])))
+            print("· focus: %s" % "/".join(data.get("focus", [])))
+            return EXIT_OK
+        emit_data(args, data, via, args.action)
     return EXIT_OK
 
 
@@ -690,6 +727,15 @@ def main():
                    help="qual recorte do estado ler")
     p.add_argument("--radius", type=int, default=25,
                    help="raio de varredura para units/threats (padrão 25)")
+    p = sub.add_parser("act", parents=[common],
+                       help="observa a tela e age no jogo (camada de copiloto)")
+    p.add_argument("action", choices=("focus", "screen", "key", "move"),
+                   help="focus=tela atual · screen=ler texto da tela · key=simular teclas · move=andar")
+    p.add_argument("args", nargs="*",
+                   help="move: direção · key: nomes de df.interface_key · screen: [y1 y2]")
+    p.add_argument("--times", type=int, default=1, help="repete o passo (move) N vezes")
+    p.add_argument("--delay", type=float, default=0.4,
+                   help="pausa entre passos e antes de ler o efeito (padrão 0.4s)")
 
     args = ap.parse_args()
     handlers = {
@@ -700,6 +746,7 @@ def main():
         "pause": lambda a: cmd_pause(a, True),
         "unpause": lambda a: cmd_pause(a, False),
         "state": cmd_state,
+        "act": cmd_act,
     }
     try:
         sys.exit(handlers[args.cmd](args))
