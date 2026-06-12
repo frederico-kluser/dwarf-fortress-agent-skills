@@ -177,9 +177,8 @@ download_and_extract() {
   { have curl || have wget; } || die "nem curl nem wget encontrados — instale um deles"
   [[ -w $dir ]] || die "sem permissão de escrita em: $dir"
 
-  local tmp
-  tmp=$(mktemp -d)
-  trap 'rm -rf "$tmp"' EXIT
+  tmp=$(mktemp -d)                 # global de propósito: o trap EXIT roda fora da função
+  trap 'rm -rf "${tmp:-}"' EXIT
 
   log "Baixando ${asset} …"
   if have curl; then
