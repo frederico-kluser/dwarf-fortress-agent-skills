@@ -433,6 +433,7 @@ def run_via_binary(df, port, argv, timeout=20):
         raise BridgeError("dfhack-run não respondeu em %ds (jogo travado?)" % timeout,
                           EXIT_UNREACHABLE)
     out = (proc.stdout or "") + (proc.stderr or "")
+    out = re.sub(r"\x1b\[[0-9;]*m", "", out)   # o console do DFHack vaza cores ANSI
     if proc.returncode != 0:
         low = out.lower()
         if "connect" in low or "socket" in low or not out.strip():
