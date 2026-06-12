@@ -3,7 +3,7 @@
 /*
  * df-skills — instala as Dwarf Fortress Agent Skills no diretório atual.
  *
- * Copia as 13 skills (wiki v50 → markdown + busca FTS5 local) para o local de
+ * Copia as 14 skills (13 da wiki v50 + ponte DFHack ao vivo) para o local de
  * descoberta do agente de código escolhido, gera a "cola" específica de cada
  * agente (.cursor/rules, AGENTS.md, INSTRUCTIONS.md) e mostra como referenciar
  * a skill inicial. Zero dependências — só Node >= 16.
@@ -59,7 +59,7 @@ ${bold('Uso:')}
   df-skills --force              sobrescreve instalação existente sem perguntar
 
 ${bold('O que faz:')}
-  Copia 13 skills (~3.7k artigos da wiki, infoboxes e tabelas preservadas) para o
+  Copia 14 skills (~3.7k artigos da wiki + ponte DFHack ao vivo) para o
   local de descoberta do seu agente + busca local FTS5 (Python stdlib, sem deps),
   e mostra como referenciar a skill inicial no agente escolhido.
 `);
@@ -69,14 +69,14 @@ ${bold('O que faz:')}
 const SKILL_LIST =
   'df-fortress-geral · df-criaturas · df-combate · df-materiais · df-geologia · ' +
   'df-saude · df-dwarves · df-comercio · df-interface · df-adventure · ' +
-  'df-modding · df-fortress-industria · df-fortress-construcao';
+  'df-modding · df-fortress-industria · df-fortress-construcao · df-live-bridge';
 
 /* Texto-roteador compartilhado (Cursor rule, AGENTS.md, INSTRUCTIONS.md). */
 function routerMarkdown(root) {
   return `Quando a pergunta for sobre **Dwarf Fortress** (mecânicas, criaturas, combate,
 materiais, construção, modding, interface, fortaleza ou adventure mode):
 
-1. Escolha a skill mais específica em \`${root}/\` — 13 disponíveis:
+1. Escolha a skill mais específica em \`${root}/\` — 14 disponíveis:
    ${SKILL_LIST}.
 2. Leia o \`SKILL.md\` dela (description, índice e instruções) e depois **apenas**
    o artigo relevante em \`references/\` — nunca carregue tudo.
@@ -84,7 +84,9 @@ materiais, construção, modding, interface, fortaleza ou adventure mode):
    \`python3 ${root}/scripts/search.py "steel smelting"\`
 4. Os artigos são em inglês — **responda no idioma do usuário**.
 5. Para perguntas gerais ou de iniciante, comece por
-   \`${root}/df-fortress-geral/SKILL.md\`.`;
+   \`${root}/df-fortress-geral/SKILL.md\`.
+6. Para o jogo AO VIVO (ler eventos, pausar, enviar comandos DFHack no Linux), use
+   \`${root}/df-live-bridge/SKILL.md\` + \`python3 ${root}/scripts/df_bridge.py status\`.`;
 }
 
 /* ───────── agentes suportados ───────── */
@@ -238,7 +240,7 @@ function writeCursorRule(root) {
   fs.mkdirSync(dir, { recursive: true });
   const file = path.join(dir, 'dwarf-fortress-skills.mdc');
   fs.writeFileSync(file, `---
-description: Base de conhecimento do Dwarf Fortress (wiki v50, 13 skills em ${root}/). Use sempre que o usuário perguntar qualquer coisa sobre Dwarf Fortress.
+description: Base de conhecimento e ponte ao vivo do Dwarf Fortress (wiki v50 + DFHack, 14 skills em ${root}/). Use sempre que o usuário perguntar qualquer coisa sobre Dwarf Fortress ou quiser controlar o jogo rodando.
 alwaysApply: false
 ---
 
@@ -347,7 +349,7 @@ function finalTips(agentId, root, extraNote) {
 /* ───────── main ───────── */
 (async function main() {
   console.log(`\n${bold('🏰 Dwarf Fortress Agent Skills')} ${dim('v' + pkg.version)}`);
-  console.log(dim('Wiki v50 como skills p/ agentes de código · 13 skills · busca FTS5 local\n'));
+  console.log(dim('Wiki v50 + ponte DFHack ao vivo · 14 skills · busca FTS5 local\n'));
 
   const source = findSource();
   if (!source) die('conteúdo das skills não encontrado dentro do pacote (instalação corrompida?)');

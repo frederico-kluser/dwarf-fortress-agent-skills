@@ -238,3 +238,25 @@ masmorra	dungeon
 sitio	site
 sítio	site
 conversa	conversation talk
+# --- dfhack / ponte ao vivo (df-live-bridge) ---
+pausar	pause
+pausa	pause
+pausado	paused pause
+despausar	unpause resume
+comando	command console
+comandos	command console
+registro	log gamelog
+registros	log gamelog
+anuncio	announcement
+anúncio	announcement
+anuncios	announcements
+anúncios	announcements
+conectar	connect remote
+conexao	connection remote
+conexão	connection remote
+porta	port socket
+instalar	install
+instalacao	install installation
+instalação	install installation
+monitorar	watch monitor tail
+vivo	live realtime
