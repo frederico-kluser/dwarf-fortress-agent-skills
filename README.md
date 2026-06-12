@@ -4,12 +4,12 @@
 
 [![npm](https://img.shields.io/npm/v/dwarf-fortress-agent-skills)](https://www.npmjs.com/package/dwarf-fortress-agent-skills)
 [![License: GFDL & MIT](https://img.shields.io/badge/wiki_license-GFDL%20%26%20MIT-blue)](#license)
-[![Skills](https://img.shields.io/badge/skills-14-orange)](#skill-categories)
+[![Skills](https://img.shields.io/badge/skills-15-orange)](#skill-categories)
 [![Source](https://img.shields.io/badge/source-v50%20wiki%20(2026--06)-green)](https://dwarffortresswiki.org)
 
 ## What is this?
 
-14 flat Agent Skills (progressive-disclosure pattern) that any LLM agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki ground-truth accuracy** instead of inventing mechanics from memory (13 wiki skills) — and to read/control a **running game** through DFHack (1 [live-bridge skill](#live-bridge-dfhack)).
+15 flat Agent Skills (progressive-disclosure pattern) that any LLM agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki ground-truth accuracy** instead of inventing mechanics from memory (13 wiki skills) — and to read/control/**copilot** a running game through DFHack (2 live skills: the [bridge](#live-bridge-dfhack) and an adventure-mode copilot).
 
 The agent discovers skills by their `description` in the system prompt. When a task matches, it loads the skill's `SKILL.md` (a short index), then either reads the specific article from `references/` or runs the bundled full-text search. The descriptions are **bilingual** (Portuguese framing + English game keywords) so the skills trigger whether the user writes in Portuguese or English.
 
@@ -18,8 +18,8 @@ The agent discovers skills by their `description` in the system prompt. When a t
 pi/Claude Code skill discovery is **flat and recursive** — every directory with a `SKILL.md` becomes a **peer** in the system prompt, discovered only by its `description`. There is no built-in routing; the `description` *is* the router. Consequences this repo respects:
 
 - **Strict YAML.** Descriptions are emitted as YAML folded scalars (`>-`), so colons/quotes never break the parser (a `description:` with an unquoted `:` silently fails to load).
-- **Unique names.** Name collisions keep only the first discovery, so all 14 names are unique.
-- **No dispatcher.** A greedy catch-all skill would just compete with the 14 specific ones in flat discovery, so there is none.
+- **Unique names.** Name collisions keep only the first discovery, so all 15 names are unique.
+- **No dispatcher.** A greedy catch-all skill would just compete with the 15 specific ones in flat discovery, so there is none.
 
 ## How the content is built (and why it's trustworthy)
 
@@ -49,7 +49,8 @@ This version fetches **server-rendered HTML from the live wiki's MediaWiki API**
 | `df-dwarves` | fortress | labors, skills, strange moods, nobles, justice, psychology |
 | `df-comercio` | fortress | trade, caravans, depot, wealth, economy |
 | `df-fortress-geral` | fortress | defense, embarks, physics (water/magma/pressure), guides, FAQs |
-| `df-live-bridge` | both | **live DFHack bridge**: read/translate gamelog events, send console commands (pause, quickfort, prospect) to a running game |
+| `df-live-bridge` | both | **live DFHack bridge**: read/translate gamelog events, structured JSON state, send console commands to a running game |
+| `df-adventure-live` | adventure | **adventure copilot**: narrates the live session (health, nearby units, threats, inventory), advises next steps, curated adventure tools |
 
 Descriptions are bilingual; article content is the original English wiki text
 (`df-live-bridge`'s references are hand-written from DFHack docs, not wiki extracts).
@@ -57,7 +58,7 @@ Descriptions are bilingual; article content is the original English wiki text
 ## How an agent uses it
 
 ```
-1. System prompt includes the 14 descriptions. Agent sees the user's question.
+1. System prompt includes the 15 descriptions. Agent sees the user's question.
 2. Agent picks the relevant skill by description match (PT or EN triggers).
 3. Agent loads that skill's SKILL.md (short index + search instructions).
 4. Agent searches, then reads the specific references/*.md article:
@@ -99,6 +100,7 @@ Dwarf Fortress on Linux through [DFHack](https://github.com/DFHack/dfhack).
 python3 .agents/skills/scripts/df_bridge.py status --json     # game found? readable? controllable?
 python3 .agents/skills/scripts/df_bridge.py log --new --json  # events since the last check (category-tagged)
 python3 .agents/skills/scripts/df_bridge.py watch --seconds 15
+python3 .agents/skills/scripts/df_bridge.py state all         # structured JSON: adventurer, threats, date
 python3 .agents/skills/scripts/df_bridge.py pause             # lua "dfhack.world.SetPauseState(true)"
 python3 .agents/skills/scripts/df_bridge.py run prospect all  # any DFHack console command
 
@@ -107,8 +109,11 @@ bash .agents/skills/scripts/install_dfhack_linux.sh --dry-run # guided DFHack in
 
 **READ** works without DFHack (it tails `gamelog.txt`); **WRITE** needs the game running
 with DFHack — commands go through `dfhack-run` when available, with a stdlib-only TCP
-client for the DFHack RPC protocol (localhost:5000) as fallback. Everything degrades to
-clear Portuguese errors and distinct exit codes when the game is closed.
+client for the DFHack RPC protocol (localhost:5000) as fallback. `state` auto-installs a
+bundled Lua script (`dfb-state.lua`) into the game's `dfhack-config/scripts/` and returns
+JSON snapshots of the live save. Everything degrades to clear Portuguese errors and
+distinct exit codes when the game is closed. The `df-adventure-live` skill builds a
+narrating, advising **copilot** on top of these reads.
 
 ## Installation
 

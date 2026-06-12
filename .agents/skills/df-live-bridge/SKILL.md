@@ -37,6 +37,13 @@ Ler eventos (anúncios do jogo, em inglês — traduza ao responder):
     python3 .agents/skills/scripts/df_bridge.py log --lines 30          # últimas 30 linhas
     python3 .agents/skills/scripts/df_bridge.py watch --seconds 15      # acompanha por 15s (sempre termina sozinho)
 
+Estado estruturado em JSON (instala sozinho o `dfb-state.lua` no jogo na 1ª chamada):
+
+    python3 .agents/skills/scripts/df_bridge.py state all               # aventureiro + ameaças + data
+    python3 .agents/skills/scripts/df_bridge.py state units --radius 12 # quem está por perto (nome, direção, perigo)
+    python3 .agents/skills/scripts/df_bridge.py state inventory         # equipamento e mochila
+    # interpretação campo a campo: skill df-adventure-live, references/adventure-copilot-playbook.md
+
 Controlar o jogo (o DFHack precisa estar rodando — o `status` mostra):
 
     python3 .agents/skills/scripts/df_bridge.py pause                   # pausa (seguro)

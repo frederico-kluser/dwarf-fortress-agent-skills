@@ -11,6 +11,7 @@ Uso:
   python3 df_bridge.py log --lines 30           # últimas linhas do gamelog
   python3 df_bridge.py log --new --json         # só o que aconteceu desde a última checagem
   python3 df_bridge.py watch --seconds 15       # segue eventos novos por 15s (termina sozinho)
+  python3 df_bridge.py state all                # estado estruturado em JSON (aventureiro, ameaças, data)
   python3 df_bridge.py run prospect all         # comando arbitrário do console DFHack
   python3 df_bridge.py pause | unpause          # atalhos seguros (lua SetPauseState)
 
@@ -596,6 +597,59 @@ def cmd_pause(args, state):
     return cmd_run(args)
 
 
+def ensure_state_script(df):
+    """Instala/atualiza o dfb-state.lua no script-path do DF (dfhack-config/scripts)."""
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dfb-state.lua")
+    if not os.path.isfile(src):
+        raise BridgeError("dfb-state.lua não encontrado ao lado do df_bridge.py",
+                          EXIT_CMD_FAILED, "instalação das skills incompleta?")
+    dst_dir = os.path.join(df, "dfhack-config", "scripts")
+    dst = os.path.join(dst_dir, "dfb-state.lua")
+    with open(src, "rb") as f:
+        want = f.read()
+    try:
+        with open(dst, "rb") as f:
+            if f.read() == want:               # já instalado e atual
+                return
+    except OSError:
+        pass
+    try:
+        os.makedirs(dst_dir, exist_ok=True)
+        with open(dst, "wb") as f:
+            f.write(want)
+    except OSError as e:
+        raise BridgeError("não consegui instalar dfb-state.lua em %s (%s)" % (dst_dir, e),
+                          EXIT_CMD_FAILED)
+
+
+def cmd_state(args):
+    df = require_df(args)
+    ensure_state_script(df)
+    port = resolve_port(args, df)
+    res = send_command(df, port, ["dfb-state", args.what, str(args.radius)], args.via)
+    text = res["text"].strip()
+    # o script imprime só JSON ({...} ou [...]); extrai pelo delimitador que ABRE primeiro
+    brace, bracket = text.find("{"), text.find("[")
+    if bracket >= 0 and (brace < 0 or bracket < brace):
+        start, end = bracket, text.rfind("]")
+    else:
+        start, end = brace, text.rfind("}")
+    if start < 0 or end <= start:
+        raise BridgeError("resposta sem JSON do dfb-state: %s" % (text[:200] or "(vazia)"),
+                          EXIT_CMD_FAILED, "há um mundo carregado? rode status")
+    try:
+        data = json.loads(text[start:end + 1])
+    except ValueError as e:
+        raise BridgeError("JSON inválido do dfb-state (%s): %s" % (e, text[:200]),
+                          EXIT_CMD_FAILED)
+    if args.json:
+        print(json.dumps({"ok": True, "via": res["via"], "what": args.what, "data": data},
+                         ensure_ascii=False, indent=2))
+    else:
+        print(json.dumps(data, ensure_ascii=False, indent=2))
+    return EXIT_OK
+
+
 def fail(msg, code, hint, as_json):
     if as_json:
         print(json.dumps({"ok": False, "error": msg, "hint": hint, "exit_code": code},
@@ -630,6 +684,12 @@ def main():
                    help="comando e argumentos (ex.: prospect all) — flags vêm ANTES dele")
     sub.add_parser("pause", parents=[common], help="pausa o jogo (lua SetPauseState)")
     sub.add_parser("unpause", parents=[common], help="despausa o jogo")
+    p = sub.add_parser("state", parents=[common],
+                       help="estado estruturado do jogo em JSON (script Lua embarcado)")
+    p.add_argument("what", choices=("adventurer", "threats", "units", "inventory", "date", "all"),
+                   help="qual recorte do estado ler")
+    p.add_argument("--radius", type=int, default=25,
+                   help="raio de varredura para units/threats (padrão 25)")
 
     args = ap.parse_args()
     handlers = {
@@ -639,6 +699,7 @@ def main():
         "run": cmd_run,
         "pause": lambda a: cmd_pause(a, True),
         "unpause": lambda a: cmd_pause(a, False),
+        "state": cmd_state,
     }
     try:
         sys.exit(handlers[args.cmd](args))
