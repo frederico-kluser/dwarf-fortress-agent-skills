@@ -19,7 +19,8 @@ the agent offers when the user asks for help. All skills are routed by `df-centr
 | 1 | `f6a222d` | `state` subcommand + dfb-state.lua (adventurer/threats/units/inventory/date/all as JSON), df-adventure-live skill (copilot playbook + tools catalog), glossary +12 |
 | 2 | `ecd1dc3` | ACTION layer: dfb-act.lua + `act focus|screen|key|move` (read visible screen text, simulate keys, walk with focus guard); played for real (closed a menu, read quest sidebar, walked) |
 | 3 | `f6d59a9` | dfb-nav.lua (BFS router) + `act goto x y` (per-step verification, route recomputation); synthetic mouse recipe; v50 conversation flow mapped; **crash post-mortem + safety rules** |
-| 4 | (this) | df-central mission control skill + PROMPT.md continuation prompt (XML) |
+| 4 | `e2f20ad` | df-central mission control skill + PROMPT.md continuation prompt (XML) |
+| 5 | (this) | **act batch** (array de ações, DSL+JSON, autonomia total) + primitivo `click` + `dfb-common.lua` (version guard / safe field) + `test_bridge.py` (1º teste offline, servidor RPC falso) + `action-catalog.md` (151 teclas verificadas) + journal JSONL. df-central orquestra ações. |
 
 ## Capability inventory (all live-tested on DF 53.14 + DFHack 53.14-r2)
 
@@ -28,9 +29,17 @@ the agent offers when the user asks for help. All skills are routed by `df-centr
   (JSON from in-game Lua; field semantics in the df-adventure-live playbook) ·
   `act screen` (visible UI text) · `act focus` (which screen is open).
 - **Act**: `run <any DFHack command>` · `pause/unpause` · `act key <interface_key>` ·
+  `act click <x> <y>` (synthetic mouse, screen-tile coords, bounds-checked) ·
   `act move <dir>` (guarded) · `act goto <x> <y>` (BFS route + verification) ·
-  synthetic mouse (`gps.mouse_x/y` + `precise_mouse_*` via `tile_pixel_*` +
-  `simulateInput('_MOUSE_L')` — map clicks verified).
+  **`act batch "<DSL>"`** = array of actions (goto/move/key/click/wait/read/expect/sleep;
+  flags before `batch`; `--dry-run`; per-step verify; threats always reported; stops only
+  on real error / travel-barrier; JSONL journal in `$XDG_STATE_HOME/df-bridge/journal/`).
+- **Verbs verified** (151 `A_*` keys live): see `action-catalog.md` — talk/trade
+  (`A_TALK`+click+`CUSTOM_*`, `A_BARTER_*`), travel (`A_TRAVEL*`), needs (`A_INV_EATDRINK`,
+  `A_SLEEP*`), combat (`A_ATTACK`/`A_THROW`/`A_SHOOT`/`A_YIELD`), inventory (`A_INV_*`), log (`A_LOG_*`).
+- **Quality**: `dfb-common.lua` (shared via reqscript: json/utf/focus/`safe` pcall field/
+  `version_guard` substring-match/adventurer) — refactored into state/act/nav, fixes the
+  counters2 crash. `test_bridge.py` = first offline test (fake RPC server; 17 cases).
 - **Conversation (v50 flow, mapped live)**: `A_TALK` → click a creature on the map →
   lettered options (`CUSTOM_A`..`Z`): continue conversation / shout / talk to deity /
   assume identity → topic menu (trade lives here — "the ability to trade in shops").

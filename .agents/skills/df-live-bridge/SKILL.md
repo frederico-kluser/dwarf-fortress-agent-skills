@@ -50,7 +50,10 @@ Observar a tela e agir (adventure; regras de uso na skill df-adventure-live):
     python3 .agents/skills/scripts/df_bridge.py act focus               # que tela está aberta
     python3 .agents/skills/scripts/df_bridge.py act screen              # texto visível (menus!)
     python3 .agents/skills/scripts/df_bridge.py act key LEAVESCREEN     # simula teclas
+    python3 .agents/skills/scripts/df_bridge.py act click 26 9          # clique sintético (coords de tela)
     python3 .agents/skills/scripts/df_bridge.py act move n --times 3    # anda com o aventureiro
+    python3 .agents/skills/scripts/df_bridge.py act --json batch "goto 88,72; key A_TALK; read screen"  # ARRAY de ações
+    # vocabulário/receitas do batch: skill df-central, references/action-catalog.md
 
 Controlar o jogo (o DFHack precisa estar rodando — o `status` mostra):
 

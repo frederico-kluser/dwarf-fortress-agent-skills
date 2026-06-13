@@ -32,20 +32,30 @@ Mantenha este arquivo atualizado ao fim de cada ciclo (o agente faz isso).
     LANÇAR SEMPRE VIA: cd "&lt;dir do DF&gt;" &amp;&amp; ./dfhack   (Steam direto = sem DFHack = ponte cega)
     Ponte: python3 .agents/skills/scripts/df_bridge.py
       status | log --new | watch | state &lt;all|adventurer|threats|units|inventory|date&gt; |
-      act &lt;focus|screen|key|move|goto&gt; | run &lt;comando dfhack&gt; | pause | unpause
-    Scripts Lua dfb-*.lua auto-instalam em dfhack-config/scripts/ na 1ª chamada.
+      act &lt;focus|screen|key|click|move|goto&gt; | act [flags] batch "&lt;DSL&gt;" |
+      run &lt;comando dfhack&gt; | pause | unpause
+    act batch = ARRAY de ações (DSL: goto X,Y; move DIR; key NOME; click X,Y; wait; read; expect).
+      Flags ANTES de 'batch'. --dry-run valida sem pressionar. Vocabulário verificado:
+      .agents/skills/df-central/references/action-catalog.md (151 teclas A_* reais).
+    Scripts Lua dfb-*.lua (state/act/nav/common) auto-instalam em dfhack-config/scripts/ (1x/processo).
+    Testes offline: python3 .agents/skills/scripts/test_bridge.py (servidor RPC falso, sem o jogo).
   </environment>
 
   <hard_rules>
+    Técnicas (IMUTÁVEIS — anti-crash, não de permissão):
     1. SÓ leituras e input simulado (teclas df.interface_key / mouse sintético:
        gps.mouse_x/y + precise_mouse via tile_pixel + simulateInput('_MOUSE_L')).
        NUNCA mutar estrutura de UI via Lua (dfhack.screen.dismiss em tela vanilla
        CRASHOU o jogo e perdeu um mundo não-salvo em 2026-06-12).
-    2. Ações que mudam o jogo só com pedido explícito; narrar antes de agir.
     3. Sugerir save ao usuário após cada marco; nunca experimentar em sessão não-salva.
-    4. Executar rotas SEMPRE verificando posição por passo (use act goto, não replay cego).
+    4. Executar rotas/sequências SEMPRE verificando por passo (act goto / act batch, não replay cego).
     5. Overlay de Help (1ª vez): come teclado, deixa cliques passarem — opere por clique.
     6. "Could not read handshake header" no dfhack-run = o jogo morreu no meio da chamada.
+    Comportamento:
+    2. Narrar antes de agir. AUTONOMIA DO BATCH = TOTAL (decisão do usuário): o batch pode
+       encadear qualquer ação, inclusive destrutiva; não barra nem auto-aborta em ameaça,
+       só REPORTA; para só em erro real (jogo caiu / sem progresso / expect / barreira de viagem).
+       Cautela opcional: --stop-on-threat. A_TRAVEL invalida coords (barreira) → 2 batches.
   </hard_rules>
 
   <how_to_resume>
@@ -59,13 +69,14 @@ Mantenha este arquivo atualizado ao fim de cada ciclo (o agente faz isso).
   </how_to_resume>
 
   <backlog_topo>
-    1. Conversation navigator (FINALIZAR: já abrimos conversa e fomos cumprimentados —
-       falta selecionar tópico de comércio e ler a resposta; fluxo mapeado:
-       A_TALK → clicar criatura no mapa → opções CUSTOM_A..Z → menu de tópicos).
-    2. Travel assistant (A_TRAVEL + leitura do mapa-múndi).
-    3. Needs macros (comer/beber/dormir).
-    4. Combat copilot. 5. Character sheet. 6. Fortress-mode state.
-    7. df-dfhack-tools (337 tools de docs.dfhack.org). 8. eventful.onReport → JSONL.
+    Infra de ação PRONTA (ciclo 5): act batch + catálogo de verbos verificados. Agora é
+    EXERCITAR cada verbo ao vivo e virar receita no action-catalog.md:
+    1. Conversa/comércio (FINALIZAR a pedido original do usuário: sair do prédio, achar
+       alguém na rua, abrir conversa e perguntar de comércio — receita já no catálogo,
+       falta rodar end-to-end num save salvo e capturar as letras de tópico reais).
+    2. Travel assistant (A_TRAVEL + leitura do mapa-múndi; lembrar da barreira de coords).
+    3. Needs (A_INV_EATDRINK / A_SLEEP*). 4. Combat (A_ATTACK… T3). 5. Character sheet (Lua).
+    6. Fortress-mode state. 7. df-dfhack-tools (337 tools). 8. eventful.onReport → JSONL.
   </backlog_topo>
 
   <constraints>

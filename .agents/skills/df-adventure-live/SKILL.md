@@ -57,12 +57,21 @@ quando o usuário pedir ajuda ativa:
     python3 .agents/skills/scripts/df_bridge.py act key LEAVESCREEN       # fecha menu (qualquer tecla de df.interface_key)
     python3 .agents/skills/scripts/df_bridge.py act move n --times 3      # anda (n s e w ne nw se sw up down wait)
 
-Regras: `move` só funciona com o mapa em primeiro plano (`dungeonmode/Default`) — feche
-menus antes; um lote pequeno de passos por vez, reavaliando `state threats` entre lotes;
-NUNCA mova o personagem sem o usuário ter pedido ajuda ativa naquele momento.
-**PROIBIDO mexer na estrutura da UI via Lua** (`dfhack.screen.dismiss` etc.) — só input
-simulado (teclas/mouse). Já custou um mundo inteiro: `references/adventure-copilot-playbook.md`
-seção "Hard-won safety rules".
+Sequências (array de ações) em vez de uma por vez — é a forma segura de encadear, porque
+verifica por passo e reporta ameaças. Vocabulário e receitas: skill `df-central`,
+`references/action-catalog.md`.
+
+    python3 .agents/skills/scripts/df_bridge.py act --json batch "goto 77,80; key A_TALK; click 26,9; read screen"
+
+Regras: `move`/`goto` só com o mapa em primeiro plano (`dungeonmode/Default`) — feche menus
+antes (`key LEAVESCREEN`). **PROIBIDO mexer na estrutura da UI via Lua**
+(`dfhack.screen.dismiss` etc.) — só input simulado (teclas/mouse). Já custou um mundo:
+`references/adventure-copilot-playbook.md` seção "Hard-won safety rules".
+
+**Autonomia (decisão do usuário 2026-06): TOTAL.** As regras TÉCNICAS acima são imutáveis
+(input simulado, sem mutar UI, verificar por passo, salvar após marcos). Mas o *gate* "só
+com pedido explícito" fica **relaxado para batch**: o usuário pré-autorizou encadear ações,
+inclusive destrutivas — narre antes de agir, e o batch só para em erro real.
 
 ## Níveis de ação (segurança)
 

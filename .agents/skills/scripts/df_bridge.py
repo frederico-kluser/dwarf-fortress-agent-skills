@@ -14,6 +14,7 @@ Uso:
   python3 df_bridge.py state all                # estado estruturado em JSON (aventureiro, ameaças, data)
   python3 df_bridge.py act screen               # lê o texto visível na tela do jogo
   python3 df_bridge.py act move n --times 3     # anda 3 passos para o norte (adventure)
+  python3 df_bridge.py act batch "goto 88,72; key A_TALK; wait short; read screen"  # array de ações
   python3 df_bridge.py run prospect all         # comando arbitrário do console DFHack
   python3 df_bridge.py pause | unpause          # atalhos seguros (lua SetPauseState)
 
@@ -67,6 +68,17 @@ EVENT_PATTERNS = (
     ("season", re.compile(r"^It is now|has arrived on the calendar|"
                           r"^(Spring|Summer|Autumn|Winter) has arrived", re.I)),
 )
+
+# ---------- camada de AÇÃO (act batch) ----------
+MOVE_DIRS = frozenset("n s e w ne nw se sw up down wait".split())
+WAIT_KEYS = {"short": "A_SHORT_WAIT", "long": "A_WAIT"}
+# teclas que invalidam coordenadas locais (viagem recarrega o mapa/sítio)
+TRAVEL_VERBS = frozenset(("A_TRAVEL", "A_TRAVEL_MAP", "A_TRAVEL_SLEEP", "A_END_TRAVEL"))
+COORD_OPS = frozenset(("goto", "move", "click"))
+ACTION_OPS = frozenset(("goto", "move", "key", "click", "wait"))   # ops que mexem no jogo
+READ_WHATS = frozenset(("screen", "adventurer", "threats", "units",
+                        "inventory", "date", "all", "state"))
+_KEY_SHAPE = re.compile(r"^[A-Z_][A-Z0-9_]*$")    # forma de um df.interface_key
 
 
 class BridgeError(Exception):
@@ -599,8 +611,15 @@ def cmd_pause(args, state):
     return cmd_run(args)
 
 
+_SCRIPTS_INSTALLED = False
+
+
 def ensure_game_scripts(df):
-    """Instala/atualiza todos os dfb-*.lua deste diretório no script-path do DF."""
+    """Instala/atualiza todos os dfb-*.lua no script-path do DF (1x por processo).
+    DF_BRIDGE_SKIP_INSTALL=1 pula tudo (testes offline / DF remoto)."""
+    global _SCRIPTS_INSTALLED
+    if _SCRIPTS_INSTALLED or os.environ.get("DF_BRIDGE_SKIP_INSTALL"):
+        return
     here = os.path.dirname(os.path.abspath(__file__))
     srcs = sorted(glob.glob(os.path.join(here, "dfb-*.lua")))
     if not srcs:
@@ -624,6 +643,7 @@ def ensure_game_scripts(df):
         except OSError as e:
             raise BridgeError("não consegui instalar %s em %s (%s)"
                               % (os.path.basename(src), dst_dir, e), EXIT_CMD_FAILED)
+    _SCRIPTS_INSTALLED = True
 
 
 def run_game_script(args, df, argv):
@@ -700,7 +720,23 @@ def _goto(args, df, tx, ty, max_steps):
             "note": "orçamento de passos esgotado" if steps_taken >= max_steps else None}
 
 
+def _do_move(args, df, direction, times):
+    """Anda `times` passos numa direção, relê a posição e devolve (data, via).
+    Usado pelo `act move` e pelo executor de batch."""
+    times = max(1, times)
+    data, via = None, None
+    for _ in range(times):
+        data, via = run_game_script(args, df, ["dfb-act", "move", direction])
+        time.sleep(args.delay)                 # cada passo é 1 turno; deixa o frame rodar
+    after, _ = run_game_script(args, df, ["dfb-state", "adventurer", "1"])
+    data["pos_after"] = after.get("pos")
+    data["steps"] = times
+    return data, via
+
+
 def cmd_act(args):
+    if args.action == "batch":
+        return cmd_act_batch(args)
     df = require_df(args)
     if args.action == "goto":
         if len(args.args) < 2:
@@ -712,13 +748,7 @@ def cmd_act(args):
         if not args.args:
             raise BridgeError("uso: act move <n|s|e|w|ne|nw|se|sw|up|down|wait> [--times N]",
                               EXIT_CMD_FAILED)
-        direction, data, via = args.args[0], None, None
-        for i in range(max(1, args.times)):
-            data, via = run_game_script(args, df, ["dfb-act", "move", direction])
-            time.sleep(args.delay)             # cada passo é 1 turno; deixa o frame rodar
-        after, _ = run_game_script(args, df, ["dfb-state", "adventurer", "1"])
-        data["pos_after"] = after.get("pos")
-        data["steps"] = max(1, args.times)
+        data, via = _do_move(args, df, args.args[0], args.times)
         emit_data(args, data, via, "move")
     else:
         data, via = run_game_script(args, df, ["dfb-act", args.action] + list(args.args))
@@ -728,6 +758,297 @@ def cmd_act(args):
             return EXIT_OK
         emit_data(args, data, via, args.action)
     return EXIT_OK
+
+
+# ---------- act batch: parsing ----------
+def _parse_dsl_line(line):
+    """Uma linha do DSL → passo normalizado. Ex.: 'goto 88,72' 'key A_TALK' 'wait short'."""
+    parts = line.split()
+    op = parts[0].lower()
+    rest = parts[1:]
+    try:
+        if op == "goto":
+            nums = " ".join(rest).replace(",", " ").split()
+            step = {"op": "goto", "x": int(nums[0]), "y": int(nums[1])}
+            for tok in nums[2:]:
+                if tok.startswith("maxsteps="):
+                    step["maxsteps"] = int(tok.split("=", 1)[1])
+            return step
+        if op == "move":
+            step = {"op": "move", "dir": rest[0].lower(), "times": 1}
+            for tok in rest[1:]:
+                if tok.startswith("times="):
+                    step["times"] = int(tok.split("=", 1)[1])
+            return step
+        if op == "key":
+            return {"op": "key", "keys": list(rest)}
+        if op == "click":
+            nums = " ".join(rest).replace(",", " ").split()
+            button = "right" if any(t.lower() == "right" for t in nums[2:]) else "left"
+            return {"op": "click", "x": int(nums[0]), "y": int(nums[1]), "button": button}
+        if op == "wait":
+            return {"op": "wait", "kind": (rest[0].lower() if rest else "short")}
+        if op == "read":
+            return {"op": "read", "what": (rest[0].lower() if rest else "screen")}
+        if op == "expect":
+            return {"op": "expect", "kind": rest[0].lower(), "needle": " ".join(rest[1:])}
+        if op == "sleep":
+            return {"op": "sleep", "ms": int(rest[0])}
+    except (IndexError, ValueError):
+        raise BridgeError("passo mal formado: %r" % line, EXIT_CMD_FAILED,
+                          "sintaxe: goto X,Y | move DIR | key NOME | click X,Y | wait short | read screen")
+    raise BridgeError("passo desconhecido: %r" % line, EXIT_CMD_FAILED)
+
+
+def _validate_step(s, i):
+    op = s.get("op")
+    if op == "move":
+        if s.get("dir") not in MOVE_DIRS:
+            raise BridgeError("passo %d move: direção inválida %r" % (i, s.get("dir")), EXIT_CMD_FAILED)
+        s["times"] = int(s.get("times", 1))
+    elif op == "goto":
+        s["x"], s["y"] = int(s["x"]), int(s["y"])
+    elif op == "click":
+        s["x"], s["y"] = int(s["x"]), int(s["y"])
+        s["button"] = s.get("button", "left")
+    elif op == "key":
+        keys = s.get("keys") or ([s["key"]] if s.get("key") else [])
+        if not keys:
+            raise BridgeError("passo %d key: sem teclas" % i, EXIT_CMD_FAILED)
+        for k in keys:
+            if not _KEY_SHAPE.match(k):
+                raise BridgeError("passo %d key: nome inválido %r" % (i, k), EXIT_CMD_FAILED,
+                                  "use nomes de df.interface_key, ex.: A_TALK, SELECT, CUSTOM_A")
+        s["keys"] = keys
+    elif op == "wait":
+        s["kind"] = str(s.get("kind", "short"))
+    elif op == "read":
+        if s.get("what", "screen") not in READ_WHATS:
+            raise BridgeError("passo %d read: alvo inválido %r" % (i, s.get("what")), EXIT_CMD_FAILED)
+        s["what"] = s.get("what", "screen")
+    elif op == "expect":
+        if s.get("kind") not in ("focus", "text"):
+            raise BridgeError("passo %d expect: use 'focus' ou 'text'" % i, EXIT_CMD_FAILED)
+        if not s.get("needle"):
+            raise BridgeError("passo %d expect: falta o texto a procurar" % i, EXIT_CMD_FAILED)
+    elif op == "sleep":
+        s["ms"] = int(s.get("ms", 0))
+    else:
+        raise BridgeError("passo %d: op desconhecido %r" % (i, op), EXIT_CMD_FAILED)
+    return s
+
+
+def parse_batch(text_or_obj):
+    """DSL (linhas/`;`, `#` comentário) OU lista JSON → lista de passos validados."""
+    if isinstance(text_or_obj, list):
+        raw_steps = text_or_obj
+    else:
+        text = text_or_obj.strip()
+        if text.startswith("["):
+            try:
+                raw_steps = json.loads(text)
+            except ValueError as e:
+                raise BridgeError("JSON de batch inválido: %s" % e, EXIT_CMD_FAILED)
+            if not isinstance(raw_steps, list):
+                raise BridgeError("batch JSON deve ser uma lista de passos", EXIT_CMD_FAILED)
+        else:
+            raw_steps = []
+            for chunk in re.split(r"[;\n]", text):
+                line = chunk.split("#", 1)[0].strip()
+                if line:
+                    raw_steps.append(_parse_dsl_line(line))
+    steps = [_validate_step(dict(s), i) for i, s in enumerate(raw_steps)]
+    if not steps:
+        raise BridgeError("batch vazio (nada para executar)", EXIT_CMD_FAILED)
+    return steps
+
+
+# ---------- act batch: journal ----------
+def journal_dir():
+    base = os.environ.get("XDG_STATE_HOME") or os.path.expanduser("~/.local/state")
+    d = os.path.join(base, "df-bridge", "journal")
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+def journal_append(path, record):
+    try:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except OSError as e:
+        print("aviso: journal falhou (%s)" % e, file=sys.stderr)
+
+
+# ---------- act batch: execução ----------
+def _threat_summary(args, df):
+    """Lê ameaças ao redor (sempre reportado; não aborta salvo --stop-on-threat)."""
+    try:
+        data, _ = run_game_script(args, df, ["dfb-state", "threats", str(args.threat_radius)])
+    except BridgeError:
+        return {"count": 0, "error": "scan de ameaça falhou"}
+    threats = data.get("threats", [])
+    return {"count": len(threats), "nearest": threats[0] if threats else None}
+
+
+def emit_batch(args, report):
+    if args.json:
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return
+    for r in report["steps"]:
+        line = "  [%d] %s" % (r["i"], r["op"])
+        if r.get("would"):
+            line += " (dry-run)"
+        if "error" in r:
+            line += " ERRO: " + r["error"]
+        elif r.get("ok") is False:
+            line += " (falhou)"
+        t = r.get("threats") or {}
+        if t.get("count"):
+            line += " ⚠ %d ameaça(s)" % t["count"]
+        print(line)
+    s = report["summary"]
+    if report.get("reason"):
+        print("ABORTADO no passo %s: %s" % (report["aborted_at"], report["reason"]))
+    print("resumo: %d ok / %d passos · %d falhou%s"
+          % (s.get("ok", 0), s.get("total", 0), s.get("failed", 0),
+             ("\njournal: " + report["journal"]) if report.get("journal") else ""))
+
+
+def cmd_act_batch(args):
+    df = require_df(args)
+    if args.file:
+        with open(args.file, encoding="utf-8") as f:
+            text = f.read()
+    elif args.stdin:
+        text = sys.stdin.read()
+    else:
+        text = " ".join(args.args or [])
+    if not text.strip():
+        raise BridgeError("act batch: nada para executar", EXIT_CMD_FAILED,
+                          'passe DSL ("goto 10,10; key A_TALK"), --file ou --stdin')
+    steps = parse_batch(text)
+
+    if args.dry_run:
+        report = {"ok": True, "via": "dry-run", "dry_run": True,
+                  "steps": [{"i": i, "op": s["op"], "would": s} for i, s in enumerate(steps)],
+                  "summary": {"total": len(steps), "validated": len(steps)},
+                  "aborted_at": None, "reason": None, "journal": None}
+        emit_batch(args, report)
+        return EXIT_OK
+
+    jpath = None
+    if not args.no_journal:
+        jpath = os.path.join(journal_dir(), time.strftime("%Y%m%dT%H%M%S") + ".jsonl")
+
+    results = []
+    summary = {"total": len(steps), "executed": 0, "ok": 0, "failed": 0, "move_steps": 0}
+    aborted_at, reason, via, traveled, last_screen = None, None, "auto", False, ""
+    try:
+        baseline_focus = run_game_script(args, df, ["dfb-act", "focus"])[0].get("focus")
+    except BridgeError:
+        baseline_focus = None
+
+    def finish(rec, is_ok):
+        results.append(rec)
+        summary["executed"] += 1
+        summary["ok" if is_ok else "failed"] += 1
+        if jpath:
+            journal_append(jpath, rec)
+
+    for i, s in enumerate(steps):
+        op = s["op"]
+        rec = {"i": i, "op": op}
+        # barreira de viagem: coords ficam inválidas após A_TRAVEL
+        if op in COORD_OPS and traveled and not args.allow_travel_barrier:
+            rec.update({"ok": False, "skipped": "coords inválidas após viagem"})
+            finish(rec, False)
+            aborted_at, reason = i, "travel_barrier"
+            break
+        try:
+            if op == "goto":
+                data = _goto(args, df, s["x"], s["y"], s.get("maxsteps", args.max_steps))
+                rec.update(data)
+                summary["move_steps"] += data.get("steps", 0)
+            elif op == "move":
+                data, via = _do_move(args, df, s["dir"], s["times"])
+                rec.update({"ok": data["pos_after"] != data.get("pos_before"),
+                            "dir": s["dir"], "pos_after": data["pos_after"],
+                            "steps": data["steps"], "focus": data.get("focus")})
+                summary["move_steps"] += s["times"]
+            elif op == "key":
+                data, via = run_game_script(args, df, ["dfb-act", "key"] + s["keys"])
+                rec.update({"ok": True, "pressed": s["keys"], "focus": data.get("focus")})
+                if any(k in TRAVEL_VERBS for k in s["keys"]):
+                    traveled = True
+            elif op == "click":
+                data, via = run_game_script(args, df,
+                                            ["dfb-act", "click", str(s["x"]), str(s["y"]), s["button"]])
+                rec.update({"ok": True, "clicked": data.get("clicked"), "focus": data.get("focus")})
+            elif op == "wait":
+                kind = s["kind"]
+                keys = [WAIT_KEYS[kind]] if kind in WAIT_KEYS else ["A_SHORT_WAIT"] * max(1, int(kind))
+                for k in keys:
+                    data, via = run_game_script(args, df, ["dfb-act", "key", k])
+                    time.sleep(args.delay)
+                rec.update({"ok": True, "waited": kind})
+            elif op == "read":
+                what = s["what"]
+                if what == "screen":
+                    data, via = run_game_script(args, df, ["dfb-act", "screen"])
+                    last_screen = "\n".join(data.get("lines", []))
+                    rec.update({"ok": True, "lines": data.get("lines"), "focus": data.get("focus")})
+                else:
+                    data, via = run_game_script(args, df,
+                                                ["dfb-state", "all" if what == "state" else what,
+                                                 str(args.threat_radius)])
+                    rec.update({"ok": True, "state": data})
+            elif op == "expect":
+                cur = run_game_script(args, df, ["dfb-act", "focus"])[0].get("focus", [])
+                hay = "/".join(cur) if s["kind"] == "focus" else last_screen
+                ok = s["needle"].lower() in hay.lower()
+                rec.update({"ok": ok, "kind": s["kind"], "needle": s["needle"],
+                            "saw": "/".join(cur) if s["kind"] == "focus" else None})
+                finish(rec, ok)
+                if not ok:
+                    aborted_at, reason = i, "expect_failed"
+                    break
+                continue
+            elif op == "sleep":
+                time.sleep(s["ms"] / 1000.0)
+                rec.update({"ok": True, "ms": s["ms"]})
+        except BridgeError as e:
+            rec.update({"ok": False, "error": str(e)})
+            finish(rec, False)
+            if e.exit_code == EXIT_UNREACHABLE:          # jogo morreu no meio
+                aborted_at, reason = i, "game_lost"
+                break
+            continue                                     # erro de passo isolado: segue (autonomia total)
+
+        # após ações: deixa o frame rodar e SEMPRE reporta ameaças
+        if op in ACTION_OPS:
+            time.sleep(args.delay)
+            rec["threats"] = _threat_summary(args, df)
+            cur_focus = rec.get("focus")
+            finish(rec, rec.get("ok", True))
+            if args.stop_on_threat and rec["threats"]["count"] > 0:
+                aborted_at, reason = i, "threat"
+                break
+            if (args.stop_on_focus_change and baseline_focus is not None
+                    and cur_focus and cur_focus != baseline_focus):
+                aborted_at, reason = i, "focus_changed"
+                break
+        else:
+            finish(rec, rec.get("ok", True))
+
+    report = {"ok": aborted_at is None, "via": via, "dry_run": False, "steps": results,
+              "summary": summary, "aborted_at": aborted_at, "reason": reason, "journal": jpath}
+    if jpath:
+        journal_append(jpath, {"final": True, "summary": summary,
+                               "aborted_at": aborted_at, "reason": reason})
+    emit_batch(args, report)
+    if reason == "game_lost":
+        return EXIT_UNREACHABLE
+    return EXIT_OK if aborted_at is None else EXIT_CMD_FAILED
 
 
 def fail(msg, code, hint, as_json):
@@ -772,15 +1093,29 @@ def main():
                    help="raio de varredura para units/threats (padrão 25)")
     p = sub.add_parser("act", parents=[common],
                        help="observa a tela e age no jogo (camada de copiloto)")
-    p.add_argument("action", choices=("focus", "screen", "key", "move", "goto"),
-                   help="focus=tela atual · screen=ler texto · key=simular teclas · move=andar · goto=andar até (x,y) com rota")
+    p.add_argument("action", choices=("focus", "screen", "key", "click", "move", "goto", "batch"),
+                   help="focus/screen/key/click/move/goto · batch=array de ações (DSL ou JSON)")
     p.add_argument("args", nargs="*",
-                   help="move: direção · key: nomes de df.interface_key · screen: [y1 y2] · goto: x y")
+                   help="move: dir · key: teclas · click: x y [right] · screen: [y1 y2] · goto: x y · batch: passos DSL")
     p.add_argument("--times", type=int, default=1, help="repete o passo (move) N vezes")
     p.add_argument("--delay", type=float, default=0.4,
                    help="pausa entre passos e antes de ler o efeito (padrão 0.4s)")
     p.add_argument("--max-steps", type=int, default=120,
-                   help="orçamento de passos do goto (padrão 120)")
+                   help="orçamento de passos do goto/batch (padrão 120)")
+    # batch (array de ações):
+    p.add_argument("--dry-run", action="store_true",
+                   help="batch: valida e ecoa o plano sem pressionar nada")
+    p.add_argument("--stop-on-threat", action="store_true",
+                   help="batch: aborta se aparecer ameaça (padrão: só reporta)")
+    p.add_argument("--stop-on-focus-change", action="store_true",
+                   help="batch: aborta se a tela mudar sozinha")
+    p.add_argument("--threat-radius", type=int, default=10,
+                   help="batch: raio do scan de ameaças por passo (padrão 10)")
+    p.add_argument("--allow-travel-barrier", action="store_true",
+                   help="batch: permite passos de coordenada após uma viagem (coords ficam inválidas)")
+    p.add_argument("--file", help="batch: lê o plano (DSL ou JSON) de um arquivo")
+    p.add_argument("--stdin", action="store_true", help="batch: lê o plano do stdin")
+    p.add_argument("--no-journal", action="store_true", help="batch: não grava o journal JSONL")
 
     args = ap.parse_args()
     handlers = {

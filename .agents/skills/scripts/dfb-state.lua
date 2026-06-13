@@ -4,16 +4,14 @@
 -- Saída: UMA linha/bloco JSON em stdout (consumida por `df_bridge.py state ...`).
 -- Licença: MIT (dwarf-fortress-agent-skills).
 
-local json = require('json')
+local C = reqscript('dfb-common')
+local utf = C.utf
+C.version_guard()
 
 local args = {...}
 local what = args[1] or 'all'
 local radius = tonumber(args[2]) or 25
 local Z_RADIUS = 5                       -- ameaças: poucos níveis acima/abaixo importam
-
-local function utf(s)
-  return s and dfhack.df2utf(s) or nil
-end
 
 -- ---------- data do mundo ----------
 local MONTHS = { 'Granite','Slate','Felsite','Hematite','Malachite','Galena',
@@ -35,39 +33,39 @@ local function state_date()
 end
 
 -- ---------- aventureiro ----------
-local function adventurer_unit()
-  local u = dfhack.world.getAdventurer and dfhack.world.getAdventurer()
-  if not u then qerror('sem aventureiro (o jogo está em adventure mode?)') end
-  return u
+local adventurer_unit = C.adventurer
+
+-- timers sobem com o tempo; rótulos pelos limiares clássicos dos anúncios.
+-- C.safe blinda contra campos que mudam de nome entre versões (counters2 já crashou).
+local function needs_block(c2)
+  local hunger = C.safe(c2, 'hunger_timer', 0)
+  local thirst = C.safe(c2, 'thirst_timer', 0)
+  local sleep = C.safe(c2, 'sleepiness_timer', 0)
+  return {
+    hunger_timer = hunger, hungry = hunger >= 75000, starving = hunger >= 150000,
+    thirst_timer = thirst, thirsty = thirst >= 25000, dehydrated = thirst >= 50000,
+    sleepiness_timer = sleep, drowsy = sleep >= 57600,
+  }
 end
 
 local function state_adventurer()
   local u = adventurer_unit()
-  local c, c2 = u.counters, u.counters2
+  local c, c2, body = u.counters, u.counters2, u.body
   return {
     name = utf(dfhack.units.getReadableName(u)),
     race = utf(dfhack.units.getRaceReadableName(u)),
     profession = utf(dfhack.units.getProfessionName(u)),
     pos = { x = u.pos.x, y = u.pos.y, z = u.pos.z },
     health = {
-      blood = u.body.blood_count, blood_max = u.body.blood_max,
-      wounds = #u.body.wounds,
-      pain = c.pain, nausea = c.nausea, dizziness = c.dizziness,
-      winded = c.winded, stunned = c.stunned, unconscious = c.unconscious,
-      webbed = c.webbed, paralysis = c2.paralysis, fever = c2.fever,
-      exhaustion = c2.exhaustion,
+      blood = C.safe(body, 'blood_count', 0), blood_max = C.safe(body, 'blood_max', 0),
+      wounds = #body.wounds,
+      pain = C.safe(c, 'pain', 0), nausea = C.safe(c, 'nausea', 0),
+      dizziness = C.safe(c, 'dizziness', 0), winded = C.safe(c, 'winded', 0),
+      stunned = C.safe(c, 'stunned', 0), unconscious = C.safe(c, 'unconscious', 0),
+      webbed = C.safe(c, 'webbed', 0), paralysis = C.safe(c2, 'paralysis', 0),
+      fever = C.safe(c2, 'fever', 0), exhaustion = C.safe(c2, 'exhaustion', 0),
     },
-    -- timers sobem com o tempo; rótulos pelos limiares clássicos dos anúncios
-    needs = {
-      hunger_timer = c2.hunger_timer,
-      hungry = c2.hunger_timer >= 75000,
-      starving = c2.hunger_timer >= 150000,
-      thirst_timer = c2.thirst_timer,
-      thirsty = c2.thirst_timer >= 25000,
-      dehydrated = c2.thirst_timer >= 50000,
-      sleepiness_timer = c2.sleepiness_timer,
-      drowsy = c2.sleepiness_timer >= 57600,
-    },
+    needs = needs_block(c2),
     kills = dfhack.units.getKillCount(u),
     stress_category = dfhack.units.getStressCategory(u),
   }
@@ -155,4 +153,4 @@ else
   qerror('uso: dfb-state <adventurer|threats|units|inventory|date|all> [raio]')
 end
 
-print(json.encode(result))
+print(C.json.encode(result))

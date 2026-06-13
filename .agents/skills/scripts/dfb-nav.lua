@@ -3,7 +3,9 @@
 -- Uso: dfb-nav route <x> <y> <z> [max_nos]   → {ok, steps:["s","se",...], len}
 -- Licença: MIT (dwarf-fortress-agent-skills).
 
-local json = require('json')
+local C = reqscript('dfb-common')
+local json = C.json
+C.version_guard()
 
 local args = {...}
 if args[1] ~= 'route' then qerror('uso: dfb-nav route <x> <y> <z> [max_nos]') end
@@ -11,8 +13,7 @@ local tx, ty, tz = tonumber(args[2]), tonumber(args[3]), tonumber(args[4])
 local maxn = tonumber(args[5]) or 25000
 if not (tx and ty and tz) then qerror('coordenadas inválidas') end
 
-local adv = dfhack.world.getAdventurer()
-if not adv then qerror('sem aventureiro') end
+local adv = C.adventurer()
 local sx, sy, sz = adv.pos.x, adv.pos.y, adv.pos.z
 if tz ~= sz then qerror('v1 só roteia no mesmo z (você z=' .. sz .. ', alvo z=' .. tz .. ')') end
 

@@ -4,22 +4,18 @@
 --   dfb-act focus                     → {focus:[...]}            que tela está aberta
 --   dfb-act screen [y1] [y2]          → {focus, lines:[...]}     texto visível na tela
 --   dfb-act key KEY [KEY...]          → simula teclas (nomes de df.interface_key)
+--   dfb-act click X Y [left|right]    → clique de mouse sintético no tile (x,y) da tela
 --   dfb-act move <n|s|e|w|ne|nw|se|sw|up|down|wait>  → 1 passo do aventureiro
 -- Licença: MIT (dwarf-fortress-agent-skills).
 
-local json = require('json')
+local C = reqscript('dfb-common')
+local json = C.json
 local gui = require('gui')
+local focus_strings = C.focus_strings
+C.version_guard()
 
 local args = {...}
 local what = args[1] or 'focus'
-
-local function focus_strings()
-  local t = {}
-  for _, f in ipairs(dfhack.gui.getFocusStrings(dfhack.gui.getCurViewscreen())) do
-    t[#t + 1] = f
-  end
-  return t
-end
 
 local function read_screen(y1, y2)
   local w, h = dfhack.screen.getWindowSize()
@@ -68,6 +64,22 @@ elseif what == 'key' then
   press(keys)
   result = { ok = true, pressed = keys, focus = focus_strings() }
 
+elseif what == 'click' then
+  -- mouse sintético: posiciona em coords de TILE da tela (mesmas de `screen`) e clica.
+  local x, y = tonumber(args[2]), tonumber(args[3])
+  local btn = (args[4] or 'left'):lower()
+  if not (x and y) then qerror('uso: dfb-act click <x> <y> [left|right]') end
+  local w, h = dfhack.screen.getWindowSize()
+  if x < 0 or y < 0 or x >= w or y >= h then
+    qerror(('clique fora da tela %dx%d: %d,%d'):format(w, h, x, y))
+  end
+  local gps = df.global.gps
+  gps.mouse_x, gps.mouse_y = x, y
+  gps.precise_mouse_x = x * gps.tile_pixel_x + gps.tile_pixel_x // 2
+  gps.precise_mouse_y = y * gps.tile_pixel_y + gps.tile_pixel_y // 2
+  press({ btn == 'right' and '_MOUSE_R' or '_MOUSE_L' })
+  result = { ok = true, clicked = { x = x, y = y }, button = btn, focus = focus_strings() }
+
 elseif what == 'move' then
   local key = MOVE_KEYS[(args[2] or ''):lower()]
   if not key then qerror('uso: dfb-act move n|s|e|w|ne|nw|se|sw|up|down|wait') end
@@ -85,7 +97,7 @@ elseif what == 'move' then
              focus = focus_strings() }
 
 else
-  qerror('uso: dfb-act <focus|screen|key|move> ...')
+  qerror('uso: dfb-act <focus|screen|key|click|move> ...')
 end
 
 print(json.encode(result))

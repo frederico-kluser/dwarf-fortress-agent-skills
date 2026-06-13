@@ -41,6 +41,26 @@ O detalhe de cada área mora na skill correspondente — leia o SKILL.md dela de
 `df_bridge.py` (ponte), `dfb-state.lua`/`dfb-act.lua`/`dfb-nav.lua` (instalados no jogo
 automaticamente), `install_dfhack_linux.sh`.
 
+## Orquestrador de ações (act batch)
+
+df-central controla não só o *retrieve* de conhecimento, mas **as ações de jogar**. O
+loop de ação é: **planejar um batch → `--dry-run` → narrar → executar verificando passo a
+passo → ler o relatório → próximo**. As ações de movimento aceitam um **array** (não uma
+por vez):
+
+    python3 .agents/skills/scripts/df_bridge.py act --dry-run batch "goto 88,72; key A_TALK; read screen"
+    python3 .agents/skills/scripts/df_bridge.py act --json   batch "goto 77,80; key A_TALK; click 26,9; read screen"
+
+O vocabulário completo (verbo → tecla verificada → tier → receita) está em
+`references/action-catalog.md`. As "skills de ação" que faltavam (conversa/comércio,
+viagem, comer/beber/dormir, combate, inventário, habilidades) são **verbos/macros do
+catálogo + batch**, não skills novas — o discovery segue flat (16 dirs).
+
+**Autonomia (decisão do usuário): TOTAL.** O batch não barra verbos destrutivos nem
+auto-aborta em ameaça; **sempre reporta** ameaças e para só em erro real (jogo caiu / sem
+progresso / `expect` falhou / barreira de viagem). Imutável: só input simulado e leituras
+(nunca mutar UI via Lua), verificação por passo, salvar após marcos; narrar antes de agir.
+
 ## Cenário → skill (e combinações)
 
 | Cenário | Use | Combine com |
@@ -50,6 +70,7 @@ automaticamente), `install_dfhack_linux.sh`.
 | "Pausa/roda comando/lê eventos" | `df-live-bridge` | — |
 | Instalar/consertar DFHack | `df-live-bridge` (setup ref) | — |
 | Jogar por mim / me ajuda a agir | `df-adventure-live` (níveis de ação!) + `act goto/key/screen` da `df-live-bridge` | `df-adventure` para a mecânica da ação |
+| Jogar uma SEQUÊNCIA (ir até X, falar, comerciar, comer) | **esta skill** → `references/action-catalog.md` + `act batch` | `df-adventure-live` (narração/segurança) |
 | "Continue a missão do copiloto" / retomar projeto | **esta skill** → seção "Missão permanente" + `PROMPT.md` na raiz do repo | `df-adventure-live` + `df-live-bridge` |
 | Pergunta ampla/iniciante sem jogo aberto | `df-fortress-geral` | — |
 
@@ -94,5 +115,6 @@ Em 0 resultados o script afrouxa sozinho (AND → OR → prefixo). Sem o índice
 
     grep -ril "TERMO" references/ | head
 
-## Índice (1 artigo)
+## Índice (2 artigos)
+- Action catalog — verbos, teclas verificadas, tiers, receitas de batch → `references/action-catalog.md`
 - Mission, cycle history, capability inventory & roadmap → `references/mission-and-roadmap.md`
