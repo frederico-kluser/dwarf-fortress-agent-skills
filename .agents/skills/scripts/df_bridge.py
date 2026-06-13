@@ -663,8 +663,51 @@ def cmd_state(args):
     return EXIT_OK
 
 
+def _goto(args, df, tx, ty, max_steps):
+    """Anda até (tx,ty) com verificação por passo e recomputação de rota ao travar."""
+    steps_taken, recomputes = 0, 0
+    adv, _ = run_game_script(args, df, ["dfb-state", "adventurer", "1"])
+    pos = adv["pos"]
+    while steps_taken < max_steps:
+        if max(abs(pos["x"] - tx), abs(pos["y"] - ty)) <= 1:
+            return {"ok": True, "arrived": True, "pos": pos, "steps": steps_taken,
+                    "recomputes": recomputes}
+        route, _ = run_game_script(args, df, ["dfb-nav", "route",
+                                              str(tx), str(ty), str(pos["z"])])
+        if not route.get("ok"):
+            return {"ok": False, "error": "sem rota até o alvo", "pos": pos,
+                    "steps": steps_taken, "detail": route}
+        progressed = False
+        for step in route["steps"]:
+            run_game_script(args, df, ["dfb-act", "move", step])
+            time.sleep(args.delay)
+            after, _ = run_game_script(args, df, ["dfb-state", "adventurer", "1"])
+            steps_taken += 1
+            if after["pos"] == pos:        # bloqueado (NPC/porta): recomputa a rota
+                break
+            pos = after["pos"]
+            progressed = True
+            if max(abs(pos["x"] - tx), abs(pos["y"] - ty)) <= 1 \
+                    or steps_taken >= max_steps:
+                break
+        recomputes += 1
+        if not progressed and recomputes >= 5:
+            return {"ok": False, "error": "preso: 5 rotas seguidas sem progresso",
+                    "pos": pos, "steps": steps_taken}
+    return {"ok": max(abs(pos["x"] - tx), abs(pos["y"] - ty)) <= 1,
+            "arrived": max(abs(pos["x"] - tx), abs(pos["y"] - ty)) <= 1,
+            "pos": pos, "steps": steps_taken, "recomputes": recomputes,
+            "note": "orçamento de passos esgotado" if steps_taken >= max_steps else None}
+
+
 def cmd_act(args):
     df = require_df(args)
+    if args.action == "goto":
+        if len(args.args) < 2:
+            raise BridgeError("uso: act goto <x> <y> [--max-steps N]", EXIT_CMD_FAILED)
+        data = _goto(args, df, int(args.args[0]), int(args.args[1]), args.max_steps)
+        emit_data(args, data, "auto", "goto")
+        return EXIT_OK if data.get("ok") else EXIT_CMD_FAILED
     if args.action == "move":
         if not args.args:
             raise BridgeError("uso: act move <n|s|e|w|ne|nw|se|sw|up|down|wait> [--times N]",
@@ -729,13 +772,15 @@ def main():
                    help="raio de varredura para units/threats (padrão 25)")
     p = sub.add_parser("act", parents=[common],
                        help="observa a tela e age no jogo (camada de copiloto)")
-    p.add_argument("action", choices=("focus", "screen", "key", "move"),
-                   help="focus=tela atual · screen=ler texto da tela · key=simular teclas · move=andar")
+    p.add_argument("action", choices=("focus", "screen", "key", "move", "goto"),
+                   help="focus=tela atual · screen=ler texto · key=simular teclas · move=andar · goto=andar até (x,y) com rota")
     p.add_argument("args", nargs="*",
-                   help="move: direção · key: nomes de df.interface_key · screen: [y1 y2]")
+                   help="move: direção · key: nomes de df.interface_key · screen: [y1 y2] · goto: x y")
     p.add_argument("--times", type=int, default=1, help="repete o passo (move) N vezes")
     p.add_argument("--delay", type=float, default=0.4,
                    help="pausa entre passos e antes de ler o efeito (padrão 0.4s)")
+    p.add_argument("--max-steps", type=int, default=120,
+                   help="orçamento de passos do goto (padrão 120)")
 
     args = ap.parse_args()
     handlers = {

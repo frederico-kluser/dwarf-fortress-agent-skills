@@ -94,6 +94,33 @@ Verified live on 53.14 by actually playing through the bridge:
 - **Time advances when you act**: every step ticks needs timers and lets the world
   act. Do not grind steps with the user away from the keyboard.
 
+## Hard-won safety rules (crash post-mortem, 2026-06-12)
+
+A live session was lost to a copilot mistake. The rules below are NON-NEGOTIABLE:
+
+1. **NEVER mutate UI structure from Lua** — `dfhack.screen.dismiss()` on a vanilla
+   v50 screen crashed the game and destroyed an unsaved world. The v50 interface is
+   one big viewscreen with widgets; "dismissing" it kills the game. The ONLY allowed
+   interaction levels are: reads (state/screen) and **simulated input**
+   (`gui.simulateInput` with interface keys or synthetic mouse) — those are exactly
+   what a player could do.
+2. **Synthetic mouse recipe** (map clicks verified): set `df.global.gps.mouse_x/y`
+   (tile) AND `precise_mouse_x/y` (= tile * `gps.tile_pixel_x/y` + half tile), then
+   `gui.simulateInput(vs, '_MOUSE_L')`.
+3. **The first-time Help overlay** (`dungeonmode/Help` in focus): it EATS keyboard
+   input but lets mouse clicks pass through to the screen below — so keep operating
+   by mouse with it up, or have the USER click it away. Do not fight it with Lua.
+4. **Conversation flow (v50)**: `A_TALK` → *click a creature on the map* → lettered
+   options appear (`a Continue conversation…`, `c Start new conversation with <deity>`)
+   selected via `CUSTOM_A`..`CUSTOM_Z` (keyboard works once Help is gone) or clicks.
+   Conversations persist across screen closes ("Continue conversation with…").
+5. **Unsaved worlds die with the process**: adventure worlds/characters may have NO
+   on-disk save until the game saves (sleep/retire/quit). After any milestone,
+   suggest the user save. Never run experimental probes against a session with
+   unsaved progress — that is what throwaway saves are for.
+6. `dfhack-run` failing with "Could not read handshake header" mid-command = the
+   game process died during the call.
+
 ## Skill backlog discovered by playing (next cycles)
 
 1. **Conversation navigator** — `act key` + `act screen` loop over the talk menus

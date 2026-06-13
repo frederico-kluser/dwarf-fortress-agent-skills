@@ -59,6 +59,9 @@ quando o usuário pedir ajuda ativa:
 Regras: `move` só funciona com o mapa em primeiro plano (`dungeonmode/Default`) — feche
 menus antes; um lote pequeno de passos por vez, reavaliando `state threats` entre lotes;
 NUNCA mova o personagem sem o usuário ter pedido ajuda ativa naquele momento.
+**PROIBIDO mexer na estrutura da UI via Lua** (`dfhack.screen.dismiss` etc.) — só input
+simulado (teclas/mouse). Já custou um mundo inteiro: `references/adventure-copilot-playbook.md`
+seção "Hard-won safety rules".
 
 ## Níveis de ação (segurança)
 
