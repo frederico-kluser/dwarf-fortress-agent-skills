@@ -24,6 +24,7 @@ Esta skill **opera um jogo aberto** (não é uma skill de wiki): lê os eventos 
 `gamelog.txt` e envia comandos ao console do DFHack. Os artigos em `references/` e os
 anúncios do gamelog estão em **inglês** — **traduza os eventos ao reportar** e responda
 no idioma do usuário (glossário: `.agents/skills/scripts/glossary-pt-en.tsv`).
+Comportamento de copiloto: skill `df-adventure-live`. Mapa do ecossistema: `df-central`.
 
 ## Uso ao vivo (faça isto primeiro)
 

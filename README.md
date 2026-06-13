@@ -4,12 +4,12 @@
 
 [![npm](https://img.shields.io/npm/v/dwarf-fortress-agent-skills)](https://www.npmjs.com/package/dwarf-fortress-agent-skills)
 [![License: GFDL & MIT](https://img.shields.io/badge/wiki_license-GFDL%20%26%20MIT-blue)](#license)
-[![Skills](https://img.shields.io/badge/skills-15-orange)](#skill-categories)
+[![Skills](https://img.shields.io/badge/skills-16-orange)](#skill-categories)
 [![Source](https://img.shields.io/badge/source-v50%20wiki%20(2026--06)-green)](https://dwarffortresswiki.org)
 
 ## What is this?
 
-15 flat Agent Skills (progressive-disclosure pattern) that any LLM agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki ground-truth accuracy** instead of inventing mechanics from memory (13 wiki skills) — and to read/control/**copilot** a running game through DFHack (2 live skills: the [bridge](#live-bridge-dfhack) and an adventure-mode copilot).
+16 flat Agent Skills (progressive-disclosure pattern) that any LLM agent — pi, Claude Code, Cursor, Codex, or a custom OpenRouter agent — can load to answer Dwarf Fortress gameplay questions with **wiki ground-truth accuracy** instead of inventing mechanics from memory (13 wiki skills) — and to read/control/**copilot** a running game through DFHack (the [bridge](#live-bridge-dfhack), an adventure-mode copilot, and `df-central`: the mission-control skill that routes scenarios to skills and carries the play-learn-build mission; resume it any time with the XML prompt in [`PROMPT.md`](PROMPT.md)).
 
 The agent discovers skills by their `description` in the system prompt. When a task matches, it loads the skill's `SKILL.md` (a short index), then either reads the specific article from `references/` or runs the bundled full-text search. The descriptions are **bilingual** (Portuguese framing + English game keywords) so the skills trigger whether the user writes in Portuguese or English.
 
@@ -18,8 +18,8 @@ The agent discovers skills by their `description` in the system prompt. When a t
 pi/Claude Code skill discovery is **flat and recursive** — every directory with a `SKILL.md` becomes a **peer** in the system prompt, discovered only by its `description`. There is no built-in routing; the `description` *is* the router. Consequences this repo respects:
 
 - **Strict YAML.** Descriptions are emitted as YAML folded scalars (`>-`), so colons/quotes never break the parser (a `description:` with an unquoted `:` silently fails to load).
-- **Unique names.** Name collisions keep only the first discovery, so all 15 names are unique.
-- **No dispatcher.** A greedy catch-all skill would just compete with the 15 specific ones in flat discovery, so there is none.
+- **Unique names.** Name collisions keep only the first discovery, so all 16 names are unique.
+- **One deliberate router, no greedy catch-all.** Knowledge questions route purely by description match. `df-central` exists for a different job — mission control for the live copilot (which skill for which scenario, how to combine them) — and its description is scoped to meta/copilot asks so it does not compete with the 13 wiki skills on content questions.
 
 ## How the content is built (and why it's trustworthy)
 
@@ -51,6 +51,7 @@ This version fetches **server-rendered HTML from the live wiki's MediaWiki API**
 | `df-fortress-geral` | fortress | defense, embarks, physics (water/magma/pressure), guides, FAQs |
 | `df-live-bridge` | both | **live DFHack bridge**: read/translate gamelog events, structured JSON state, send console commands to a running game |
 | `df-adventure-live` | adventure | **adventure copilot**: narrates the live session (health, nearby units, threats, inventory), advises next steps, curated adventure tools |
+| `df-central` | both | **mission control**: capability map, scenario→skill routing, skill combinations, the play-learn-build mission and roadmap |
 
 Descriptions are bilingual; article content is the original English wiki text
 (`df-live-bridge`'s references are hand-written from DFHack docs, not wiki extracts).
@@ -58,7 +59,7 @@ Descriptions are bilingual; article content is the original English wiki text
 ## How an agent uses it
 
 ```
-1. System prompt includes the 15 descriptions. Agent sees the user's question.
+1. System prompt includes the 16 descriptions. Agent sees the user's question.
 2. Agent picks the relevant skill by description match (PT or EN triggers).
 3. Agent loads that skill's SKILL.md (short index + search instructions).
 4. Agent searches, then reads the specific references/*.md article:

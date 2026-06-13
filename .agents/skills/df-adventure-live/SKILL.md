@@ -24,7 +24,8 @@ metadata:
 Esta skill define **como ser o copiloto** de uma sessão ao vivo: ler o estado real do
 save, narrar/explicar no idioma do usuário e aconselhar a próxima ação. A canalização
 (status/log/run/state) é a skill `df-live-bridge`; as mecânicas de jogo (viagem,
-conversa, combate) são a skill `df-adventure` (wiki).
+conversa, combate) são a skill `df-adventure` (wiki). Mapa geral do ecossistema,
+combinações e a missão do projeto: skill `df-central`.
 
 ## O ciclo do copiloto (faça nesta ordem)
 

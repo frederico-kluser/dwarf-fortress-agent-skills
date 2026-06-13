@@ -3,7 +3,7 @@
 /*
  * df-skills — instala as Dwarf Fortress Agent Skills no diretório atual.
  *
- * Copia as 15 skills (13 da wiki v50 + ponte DFHack e copiloto adventure ao vivo) para o local de
+ * Copia as 16 skills (13 da wiki v50 + ponte DFHack, copiloto adventure e central) para o local de
  * descoberta do agente de código escolhido, gera a "cola" específica de cada
  * agente (.cursor/rules, AGENTS.md, INSTRUCTIONS.md) e mostra como referenciar
  * a skill inicial. Zero dependências — só Node >= 16.
@@ -59,7 +59,7 @@ ${bold('Uso:')}
   df-skills --force              sobrescreve instalação existente sem perguntar
 
 ${bold('O que faz:')}
-  Copia 15 skills (~3.7k artigos da wiki + ponte DFHack e copiloto ao vivo) para o
+  Copia 16 skills (~3.7k artigos da wiki + ponte DFHack, copiloto ao vivo e central) para o
   local de descoberta do seu agente + busca local FTS5 (Python stdlib, sem deps),
   e mostra como referenciar a skill inicial no agente escolhido.
 `);
@@ -70,14 +70,15 @@ const SKILL_LIST =
   'df-fortress-geral · df-criaturas · df-combate · df-materiais · df-geologia · ' +
   'df-saude · df-dwarves · df-comercio · df-interface · df-adventure · ' +
   'df-modding · df-fortress-industria · df-fortress-construcao · df-live-bridge · ' +
-  'df-adventure-live';
+  'df-adventure-live · df-central';
 
 /* Texto-roteador compartilhado (Cursor rule, AGENTS.md, INSTRUCTIONS.md). */
 function routerMarkdown(root) {
   return `Quando a pergunta for sobre **Dwarf Fortress** (mecânicas, criaturas, combate,
 materiais, construção, modding, interface, fortaleza ou adventure mode):
 
-1. Escolha a skill mais específica em \`${root}/\` — 15 disponíveis:
+1. Escolha a skill mais específica em \`${root}/\` — 16 disponíveis (em dúvida sobre
+   qual usar, leia \`${root}/df-central/SKILL.md\`, o mapa do ecossistema):
    ${SKILL_LIST}.
 2. Leia o \`SKILL.md\` dela (description, índice e instruções) e depois **apenas**
    o artigo relevante em \`references/\` — nunca carregue tudo.
@@ -89,7 +90,9 @@ materiais, construção, modding, interface, fortaleza ou adventure mode):
 6. Para o jogo AO VIVO (ler eventos, pausar, enviar comandos DFHack no Linux), use
    \`${root}/df-live-bridge/SKILL.md\` + \`python3 ${root}/scripts/df_bridge.py status\`.
 7. Para COPILOTAR uma sessão de Adventure Mode (narrar, aconselhar, ler estado em JSON):
-   \`${root}/df-adventure-live/SKILL.md\`.`;
+   \`${root}/df-adventure-live/SKILL.md\`.
+8. Para retomar a MISSÃO do copiloto (jogar, aprender e criar skills) ou combinar
+   várias skills: \`${root}/df-central/SKILL.md\` + \`PROMPT.md\` na raiz do repo.`;
 }
 
 /* ───────── agentes suportados ───────── */
@@ -243,7 +246,7 @@ function writeCursorRule(root) {
   fs.mkdirSync(dir, { recursive: true });
   const file = path.join(dir, 'dwarf-fortress-skills.mdc');
   fs.writeFileSync(file, `---
-description: Base de conhecimento e ponte ao vivo do Dwarf Fortress (wiki v50 + DFHack, 15 skills em ${root}/). Use sempre que o usuário perguntar qualquer coisa sobre Dwarf Fortress ou quiser controlar/copilotar o jogo rodando.
+description: Base de conhecimento e ponte ao vivo do Dwarf Fortress (wiki v50 + DFHack, 16 skills em ${root}/). Use sempre que o usuário perguntar qualquer coisa sobre Dwarf Fortress ou quiser controlar/copilotar o jogo rodando.
 alwaysApply: false
 ---
 
@@ -352,7 +355,7 @@ function finalTips(agentId, root, extraNote) {
 /* ───────── main ───────── */
 (async function main() {
   console.log(`\n${bold('🏰 Dwarf Fortress Agent Skills')} ${dim('v' + pkg.version)}`);
-  console.log(dim('Wiki v50 + DFHack ao vivo (ponte + copiloto) · 15 skills · busca FTS5 local\n'));
+  console.log(dim('Wiki v50 + DFHack ao vivo (ponte + copiloto + central) · 16 skills · busca FTS5 local\n'));
 
   const source = findSource();
   if (!source) die('conteúdo das skills não encontrado dentro do pacote (instalação corrompida?)');

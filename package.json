@@ -1,6 +1,6 @@
 {
   "name": "dwarf-fortress-agent-skills",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "description": "Dwarf Fortress wiki (v50) as Agent Skills for Claude Code, pi, Cursor, Codex and custom agents — interactive installer (df-skills).",
   "bin": {
     "df-skills": "bin/cli.js",
